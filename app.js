@@ -25,11 +25,6 @@ const sourceNote = document.getElementById("source-note");
 const randomBtn = document.getElementById("random-btn");
 const backBtn = document.getElementById("back-btn");
 
-/* ---- Layout constants (carried from Chant of the Day) -------------------- */
-
-const CHANT_SCALE = 1.2;      // px per Exsurge layout unit
-const MIN_LAYOUT_WIDTH = 220; // floor so very narrow panels still lay out
-
 /* ---- Build the chant list ------------------------------------------------
    Walk the six data globals into one flat list, deduped by chant identity so a
    chant reused on many feasts (e.g. Annunciation reuses the Advent "rorate")
@@ -81,156 +76,20 @@ function collectChants() {
   return Array.from(byId.values());
 }
 
-/* ---- Exsurge workarounds (verbatim from Chant of the Day — see ROADMAP
-   "Standing constraints"; do not remove) ----------------------------------- */
-
-// Force ragged-right layout; default full-justify strands the custos at the margin.
-if (window.exsurge && window.exsurge.ChantLine) {
-  window.exsurge.ChantLine.prototype.justifyElements = function () {};
-}
-
-// The minified bundle references AccidentalType as a free global; re-export it.
-if (typeof window.AccidentalType === "undefined") {
-  window.AccidentalType = { Flat: -1, Natural: 0, Sharp: 1 };
-}
-
-// Strip a mid-chant courtesy custos ("f+::c4") that crashes Exsurge's parser and
-// renders a blank staff; keep the bar + new clef.
-function sanitizeGabc(gabc) {
-  return gabc.replace(/[a-m]\+(?=::)/g, "");
-}
-
-// Fix NaN neume heights before layoutChantLines derives line heights.
-function repairNotationBounds(score) {
-  score.notations.forEach(function (n) {
-    if (isFinite(n.bounds.height)) return;
-    var top = Infinity, bottom = -Infinity;
-    (n.notes || []).forEach(function (note) {
-      if (isFinite(note.bounds.y)) {
-        top = Math.min(top, note.bounds.y);
-        bottom = Math.max(bottom, note.bounds.y + (note.bounds.height || 0));
-      }
-    });
-    if (isFinite(top) && isFinite(bottom)) {
-      if (!isFinite(n.bounds.y)) n.bounds.y = top;
-      n.bounds.height = bottom - top;
-    } else {
-      n.bounds.height = 0;
-    }
-  });
-}
-
-// The synchronous part of Exsurge's ChantScore.performLayout.
-function layoutPreamble(ctxt, score) {
-  score.startingClef.performLayout(ctxt);
-  if (score.dropCap) score.dropCap.recalculateMetrics(ctxt);
-  if (score.annotation) score.annotation.recalculateMetrics(ctxt);
-}
-
-// Drop-in for score.performLayout (+ its compileElement loop) that can fail.
-// Exsurge lays notations out in setTimeout chunks, so a crash there (e.g. a note
-// with no glyph -> "reading 'setStaffPosition'") is uncaught and the callback
-// never fires, leaving a blank score. Same chunking, but errors reach onFail.
-function layoutScore(ctxt, score, onDone, onFail) {
-  try {
-    layoutPreamble(ctxt, score);
-  } catch (err) {
-    onFail(err);
-    return;
-  }
-  const notations = score.notations;
-  let i = 0;
-  (function step() {
-    try {
-      if (i === 0) notations.forEach(function (n) { n.hasLyric(); });
-      const deadline = Date.now() + 50;
-      while (i < notations.length && Date.now() < deadline) {
-        notations[i++].performLayout(ctxt);
-      }
-    } catch (err) {
-      onFail(err);
-      return;
-    }
-    if (i < notations.length) {
-      setTimeout(step, 0);
-    } else {
-      score.compiled = true;
-      onDone();
-    }
-  })();
-}
-
 /* ---- The chant list -------------------------------------------------------
    A few chants carry gabc the minified Exsurge build can't parse or lay out.
    Don't pre-flight them at boot: parsing costs ~150 ms per chant, so checking all
    ~500 froze the page for seconds (Chant of the Day only ever parses one).
-   Instead renderChant reports failures and showChant skips/flags them lazily. */
+   Instead the renderer reports failures and showChant skips/flags them lazily.
+   Rendering itself -- the Exsurge workarounds, gabc sanitizing and the neume
+   repair -- is Chant of the Day's chant-render.js (window.ChantRender), shared
+   verbatim so the two apps can't drift apart again. */
 
 const CHANTS = collectChants();
 
 // O(1) id -> entry lookup for chip/deep-link navigation. An id missing here
 // (not in the repertoire) must no-op rather than throw.
 const chantsById = new Map(CHANTS.map((c) => [c.id, c]));
-
-/* ---- Rendering (Exsurge) ------------------------------------------------- */
-
-// Renders the gabc into #score. Layout is async; the finished score + svg are
-// handed back through onReady(score, svg) once the SVG is in the DOM, so playback
-// can drive audio + the follow-along highlight off the same score object.
-// onFail(err) runs instead if Exsurge can't lay the chant out. A render
-// superseded by a newer one (fast "Another chant" clicks) is silently dropped.
-let renderToken = 0;
-
-function renderChant(gabc, onReady, onFail) {
-  const token = ++renderToken;
-  const current = function () { return token === renderToken; };
-  scoreEl.innerHTML = "";
-  const fail = function (err) {
-    if (!current()) return;
-    console.warn("Exsurge render failed:", err);
-    scoreEl.textContent = "Couldn't render this chant's notation.";
-    if (onFail) onFail(err);
-  };
-  try {
-    gabc = sanitizeGabc(gabc);
-    const ctxt = new window.exsurge.ChantContext();
-    const score = window.exsurge.Gabc.loadChantScore(ctxt, gabc, true);
-    // Lay the score out to the panel width. Guard against an implausibly small
-    // clientWidth (0 or a sub-pixel transient before the parchment card has been
-    // laid out): that would collapse layoutWidth to the floor and cram/overlap the
-    // first line. A real narrow phone is still well above 200px, so fall back to a
-    // sensible default only when the reading is clearly pre-layout.
-    let containerPx = scoreEl.clientWidth;
-    if (!containerPx || containerPx < 200) containerPx = 660;
-    const layoutWidth = Math.max(MIN_LAYOUT_WIDTH, containerPx / CHANT_SCALE);
-    layoutScore(ctxt, score, function () {
-      if (!current()) return;
-      try {
-        repairNotationBounds(score);
-        score.layoutChantLines(ctxt, layoutWidth, function () {
-          if (!current()) return;
-          scoreEl.innerHTML = score.createDrawable(ctxt);
-          const svg = scoreEl.querySelector("svg");
-          if (svg) {
-            const PAD = 4;
-            const bb = svg.getBBox();
-            const vbW = bb.width + PAD * 2;
-            const vbH = bb.height + PAD * 2;
-            svg.setAttribute("viewBox", (bb.x - PAD) + " " + (bb.y - PAD) + " " + vbW + " " + vbH);
-            svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-            svg.removeAttribute("height");
-            svg.setAttribute("width", Math.round(vbW * CHANT_SCALE));
-          }
-          if (onReady) onReady(score, svg);
-        });
-      } catch (err) {
-        fail(err);
-      }
-    }, fail);
-  } catch (err) {
-    fail(err);
-  }
-}
 
 function renderText(entry) {
   titleEl.textContent = entry.title || "";
@@ -400,7 +259,7 @@ function onPlaybackStatus(text) {
   playBtn.textContent = window.ChantPlayback.isPlaying() ? PAUSE_LABEL : PLAY_LABEL;
 }
 
-// renderChant's onReady: hand the freshly rendered score to the engine.
+// renderChantInto's onReady: hand the freshly rendered score to the engine.
 function prepareAudio(score, svg) {
   const playable = window.ChantPlayback.load(score, svg, onPlaybackStatus, null);
   playBtn.textContent = PLAY_LABEL;
@@ -436,7 +295,7 @@ function showChant(entry, random) {
   renderUsages(entry);
   renderRelated(entry);
   renderCommentary(entry);
-  renderChant(entry.gabc, prepareAudio, function () {
+  window.ChantRender.renderChantInto(scoreEl, entry.gabc, prepareAudio, function () {
     badIds.add(entry.id);
     if (random) pickRandom(true);
   });
