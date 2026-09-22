@@ -120,6 +120,46 @@ function repairNotationBounds(score) {
   });
 }
 
+// The synchronous part of Exsurge's ChantScore.performLayout.
+function layoutPreamble(ctxt, score) {
+  score.startingClef.performLayout(ctxt);
+  if (score.dropCap) score.dropCap.recalculateMetrics(ctxt);
+  if (score.annotation) score.annotation.recalculateMetrics(ctxt);
+}
+
+// Drop-in for score.performLayout (+ its compileElement loop) that can fail.
+// Exsurge lays notations out in setTimeout chunks, so a crash there (e.g. a note
+// with no glyph -> "reading 'setStaffPosition'") is uncaught and the callback
+// never fires, leaving a blank score. Same chunking, but errors reach onFail.
+function layoutScore(ctxt, score, onDone, onFail) {
+  try {
+    layoutPreamble(ctxt, score);
+  } catch (err) {
+    onFail(err);
+    return;
+  }
+  const notations = score.notations;
+  let i = 0;
+  (function step() {
+    try {
+      if (i === 0) notations.forEach(function (n) { n.hasLyric(); });
+      const deadline = Date.now() + 50;
+      while (i < notations.length && Date.now() < deadline) {
+        notations[i++].performLayout(ctxt);
+      }
+    } catch (err) {
+      onFail(err);
+      return;
+    }
+    if (i < notations.length) {
+      setTimeout(step, 0);
+    } else {
+      score.compiled = true;
+      onDone();
+    }
+  })();
+}
+
 /* ---- Build the renderable chant list ------------------------------------
    A few chants in the repertoire carry gabc that the minified Exsurge build can't
    parse (e.g. a GregoBase spacing hint it mistakes for a custos → "Custod is not
@@ -132,9 +172,11 @@ function isRenderable(gabc) {
   try {
     const ctxt = new window.exsurge.ChantContext();
     const score = window.exsurge.Gabc.loadChantScore(ctxt, sanitizeGabc(gabc), true);
-    // The fatal cases (e.g. "Custod is not defined") throw here, synchronously,
-    // not at parse — so performLayout is the check that actually catches them.
-    score.performLayout(ctxt, function () {});
+    // The fatal cases (e.g. "Custod is not defined") throw in performLayout's
+    // synchronous preamble, not at parse. Run only that preamble: the full
+    // score.performLayout would queue a multi-second async layout of every chant
+    // in the background and starve the chant actually being shown.
+    layoutPreamble(ctxt, score);
     return true;
   } catch (_) {
     return false;
@@ -169,8 +211,20 @@ const chantsById = new Map(CHANTS.map((c) => [c.id, c]));
 // Renders the gabc into #score. Layout is async; the finished score + svg are
 // handed back through onReady(score, svg) once the SVG is in the DOM, so playback
 // can drive audio + the follow-along highlight off the same score object.
-function renderChant(gabc, onReady) {
+// onFail(err) runs instead if Exsurge can't lay the chant out. A render
+// superseded by a newer one (fast "Another chant" clicks) is silently dropped.
+let renderToken = 0;
+
+function renderChant(gabc, onReady, onFail) {
+  const token = ++renderToken;
+  const current = function () { return token === renderToken; };
   scoreEl.innerHTML = "";
+  const fail = function (err) {
+    if (!current()) return;
+    console.warn("Exsurge render failed:", err);
+    scoreEl.textContent = "Couldn't render this chant's notation.";
+    if (onFail) onFail(err);
+  };
   try {
     gabc = sanitizeGabc(gabc);
     const ctxt = new window.exsurge.ChantContext();
@@ -183,28 +237,32 @@ function renderChant(gabc, onReady) {
     let containerPx = scoreEl.clientWidth;
     if (!containerPx || containerPx < 200) containerPx = 660;
     const layoutWidth = Math.max(MIN_LAYOUT_WIDTH, containerPx / CHANT_SCALE);
-    score.performLayout(ctxt, function () {
-      repairNotationBounds(score);
-      score.layoutChantLines(ctxt, layoutWidth, function () {
-        scoreEl.innerHTML = score.createDrawable(ctxt);
-        const svg = scoreEl.querySelector("svg");
-        if (svg) {
-          const PAD = 4;
-          const bb = svg.getBBox();
-          const vbW = bb.width + PAD * 2;
-          const vbH = bb.height + PAD * 2;
-          svg.setAttribute("viewBox", (bb.x - PAD) + " " + (bb.y - PAD) + " " + vbW + " " + vbH);
-          svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
-          svg.removeAttribute("height");
-          svg.setAttribute("width", Math.round(vbW * CHANT_SCALE));
-        }
-        if (onReady) onReady(score, svg);
-      });
-    });
+    layoutScore(ctxt, score, function () {
+      if (!current()) return;
+      try {
+        repairNotationBounds(score);
+        score.layoutChantLines(ctxt, layoutWidth, function () {
+          if (!current()) return;
+          scoreEl.innerHTML = score.createDrawable(ctxt);
+          const svg = scoreEl.querySelector("svg");
+          if (svg) {
+            const PAD = 4;
+            const bb = svg.getBBox();
+            const vbW = bb.width + PAD * 2;
+            const vbH = bb.height + PAD * 2;
+            svg.setAttribute("viewBox", (bb.x - PAD) + " " + (bb.y - PAD) + " " + vbW + " " + vbH);
+            svg.setAttribute("preserveAspectRatio", "xMidYMid meet");
+            svg.removeAttribute("height");
+            svg.setAttribute("width", Math.round(vbW * CHANT_SCALE));
+          }
+          if (onReady) onReady(score, svg);
+        });
+      } catch (err) {
+        fail(err);
+      }
+    }, fail);
   } catch (err) {
-    console.error("Exsurge render failed:", err);
-    scoreEl.textContent = "Couldn't render this chant's notation.";
-    if (onReady) onReady(null, null);
+    fail(err);
   }
 }
 
@@ -397,8 +455,12 @@ async function onPlayClick() {
 
 let currentId = null;
 const backStack = [];
+// Chants whose layout crashed this session; random picks skip them.
+const badIds = new Set();
 
-function showChant(entry) {
+// `random` marks a random pick: if it can't render, quietly swap in another
+// (replacing its history entry) instead of showing the failure message.
+function showChant(entry, random) {
   currentId = entry.id;
   window.ChantPlayback.stop();
   playBtn.disabled = true;
@@ -408,19 +470,23 @@ function showChant(entry) {
   renderUsages(entry);
   renderRelated(entry);
   renderCommentary(entry);
-  renderChant(entry.gabc, prepareAudio);
+  renderChant(entry.gabc, prepareAudio, function () {
+    badIds.add(entry.id);
+    if (random) pickRandom(true);
+  });
   backBtn.hidden = backStack.length === 0;
 }
 
-function pickRandom() {
-  if (CHANTS.length === 0) return;
-  let entry;
-  do {
-    entry = CHANTS[Math.floor(Math.random() * CHANTS.length)];
-  } while (CHANTS.length > 1 && entry.id === currentId);
+// `replace` swaps the current history entry (used when replacing a random
+// pick that failed to render) rather than pushing a new one.
+function pickRandom(replace) {
+  const pool = CHANTS.filter(function (c) { return !badIds.has(c.id) && c.id !== currentId; });
+  if (pool.length === 0) return;
+  const entry = pool[Math.floor(Math.random() * pool.length)];
   backStack.length = 0;
-  showChant(entry);
-  history.pushState({ id: entry.id }, "", location.pathname);
+  showChant(entry, true);
+  if (replace === true) history.replaceState({ id: entry.id }, "", location.pathname);
+  else history.pushState({ id: entry.id }, "", location.pathname);
 }
 
 // Chip clicks + deep-link resolution funnel here. `push` is false when
