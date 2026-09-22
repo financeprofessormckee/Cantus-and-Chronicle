@@ -10,9 +10,29 @@
  *   latin       the full antiphon text shown beneath the score
  *   translation an English rendering of the antiphon
  *   mode        the church mode (the "use" line)
+ *   reference   the Scripture citation the text quotes/paraphrases, Hebrew/
+ *               modern numbering (the NAB / current Catholic lectionary's
+ *               numbering, e.g. "Ps. 25, 1-3"); "Cf. " prefix for a free
+ *               paraphrase/centonization; "" for non-scriptural (composed
+ *               liturgical) texts. Note this differs from the Vulgate/
+ *               Septuagint numbering used by GregoBase, the Graduale, and
+ *               the chant tradition itself — where a blurb below names a
+ *               psalm whose number differs between the two systems, it
+ *               gives the Hebrew number with the Vulgate number glossed in
+ *               parentheses. See sources/translation-audit-worklist.md
+ *               (whose citations are recorded in Vulgate numbering, the
+ *               convention in force when that verification pass was done).
  *   gabc        square-note source for Exsurge display (https://gregobase.selapa.net/)
  *   abc         pre-baked playback for abcjs (M:none L:1/4 K:C body only)
  *   source      provenance note / GregoBase id
+ *   blurb       OPTIONAL { text, source } — the chant's history/famous settings,
+ *               shown in the "About this chant" panel (app.js's renderAboutChant)
+ *               alongside an always-derived mode-character note. Piloted on a
+ *               handful of especially well-documented, famous Introits only —
+ *               see sources/gregobase/about-chant-worklist.md for the rest of
+ *               the corpus (unauthored; the panel simply omits this paragraph).
+ *               Real citations only, never invented prose — this project's
+ *               standing "documented, not fabricated" policy.
  *
  * --------------------------------------------------------------------------
  * NOTE TO THE MUSICIAN: these are the FULL ANTIPHONS (no psalm verse / Gloria
@@ -32,8 +52,15 @@ window.INTROITS = {
     latin: "Stabant juxta crucem Jesu mater ejus, et soror matris ejus María Cléophae, et Salóme, et María Magdaléne.",
     translation: "There stood by the cross of Jesus his mother, and his mother's sister, Mary of Cleophas, and Salome, and Mary Magdalene.",
     mode: "Introit · Our Lady of Sorrows · Mode I",
+    reference: "John 19:25",
     gabc: "(c4) STA(ixdh'!iv)BANT(h) *(,) jux(h)ta(h) cru(gfh)cem(h) Je(ixhg/ih)su(h.) (,) ma(h)ter(jj) e(jk)jus,(h.) (;) et(h) so(fg'h)ror(hg) ma(h)tris(ji) e(j)jus(h.) (,) Ma(jj)rí(j)a(kvJ'Ij') Clé(h)o(h_[oh:h]i_[oh:h]h_[oh:h])phae,(h.) (:) et(h) Sa(f)ló(gh)me,(hghvGFD'ewf.) (;) et(d!fff) Ma(fd)rí(fh)a(g) Ma(g)gda(hfgvFE)lé(d!ewfef)ne.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #149)"
+    source: "Graduale Romanum (GregoBase #149)",
+    fullGabc: "(c4) STA(ixdh'!iv)BANT(h) *(,) jux(h)ta(h) cru(gfh)cem(h) Je(ixhg/ih)su(h.) (,) ma(h)ter(jj) e(jk)jus,(h.) (;) et(h) so(fg'h)ror(hg) ma(h)tris(ji) e(j)jus(h.) (,) Ma(jj)rí(j)a(kvJ'Ij') Clé(h)o(h_[oh:h]i_[oh:h]h_[oh:h])phae,(h.) (:) et(h) Sa(f)ló(gh)me,(hghvGFD'ewf.) (;) et(d!fff) Ma(fd)rí(fh)a(g) Ma(g)gda(hfgvFE)lé(d!ewfef)ne.(e[ll:1]d..) (::) ℣. Mú(f)li(gh)er,(h) ec(h)ce(h) fí(h)li(h)us(h) tu(h)us,(h) di(hj)xit(h) Je(hg)sus;(gh..) *(:) ad(gf~) di(gh)scí(h)pu(h)lum(h) au(h)tem :(h.) (,) Ec(h)ce(hjh) ma(g')ter(f) tu(fff)a.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Múlier, ecce fílius tuus, dixit Jesus; ad discípulum autem : Ecce mater tua.", translation: "Woman, behold thy son, said Jesus; then to the disciple: Behold thy mother.", gloriaPatri: true },
+    blurb: {
+      text: "Stabant juxta crucem and its verse together stage the whole of John 19:25-27 in miniature: the antiphon sets the scene of Mary and the other women standing at the cross, and the verse then quotes Christ's own words from it, entrusting his mother to the disciple John. That verse is traditionally counted among the Seven Last Words of Christ from the cross, sometimes labeled the word of relationship, since it is the one saying addressed not to God but to two of the people standing before him.",
+      source: "USCCB, New American Bible, John 19; Wikipedia, \"Sayings of Jesus on the cross.\"",
+    },
   },
   /* ===================================================================
    * New fixed-date sanctoral feasts (not previously in the calendar):
@@ -47,64 +74,174 @@ window.INTROITS = {
     latin: "Suscépimus, Deus, misericórdiam tuam in médio templi tui : secúndum nomen tuum Deus, ita et laus tua in fines terrae : justítia plena est déxtera tua.",
     translation: "We have received your mercy, O God, in the midst of your temple: according to your name, O God, so also is your praise unto the ends of the earth: your right hand is full of justice.",
     mode: "Introit · The Presentation of the Lord · Mode I",
+    reference: "Ps. 48:10-11",
     gabc: "(c4) SUs(cd)cé(ixdh'!iv)pi(h)mus,(h.) *(,) De(hjh)us,(ghg.) (,) mi(hf)se(g)ri(h)cór(hjj)di(g_[oh:h]f)am(hfh) tu(h!iwjh)am(h.) (;) in(h) mé(f!hfg)di(hg)o(g) tem(h)pli(jh/jg) tu(fhG'Fgf)i :(f.) (:) se(f)cún(hg~)dum(j) no(jlk)men(j) tu(jjj)um(j) De(jkJ'H)us,(h.) (;) i(jj)ta(j_[hl:1]k_[hl:1]h_[hl:1]) et(hi~) laus(h_g) tu(h/jjh!iwjh)a(h.) (,) in(j) fi(fg'h)nes(jh/jg) ter(fhG'Fgf)rae :(f.e[ub:0;6mm]) (:) ju(d)stí(ffg)ti(f)a(f) ple(fg/h_g)na(gf) est(f.) (,) déx(f)te(fg)ra(gffd) tu(d!ewf_d)a.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1254)"
+    source: "Graduale Romanum (GregoBase #1254)",
+    fullGabc: "(c4) SUs(cd)cé(ixdh'!iv)pi(h)mus,(h.) *(,) De(hjh)us,(ghg.) (,) mi(hf)se(g)ri(h)cór(hjj)di(g_[oh:h]f)am(hfh) tu(h!iwjh)am(h.) (;) in(h) mé(f!hfg)di(hg)o(g) tem(h)pli(jh/jg) tu(fhG'Fgf)i :(f.) (:) se(f)cún(hg~)dum(j) no(jlk)men(j) tu(jjj)um(j) De(jkJ'H)us,(h.) (;) i(jj)ta(j_[hl:1]k_[hl:1]h_[hl:1]) et(hi~) laus(h_g) tu(h/jjh!iwjh)a(h.) (,) in(j) fi(fg'h)nes(jh/jg) ter(fhG'Fgf)rae :(f.e[ub:0;6mm]) (:) ju(d)stí(ffg)ti(f)a(f) ple(fg/h_g)na(gf) est(f.) (,) déx(f)te(fg)ra(gffd) tu(d!ewf_d)a.(d.) (::) Ps. Ma(f)gnus(gh) Dó(h)mi(h)nus,(h) et(h) lau(h)dá(hj)bi(h)lis(h) ni(hg)mis :(gh..) *(:) in(gf~) ci(gh)vi(h)tá(h)te(h) De(h)i(h) no(h)stri,(h.) (,) in(h) mon(h)te(hjh) san(g')cto(f) e(fff)jus.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Magnus Dóminus, et laudábilis nimis : in civitáte Dei nostri, in monte sancto ejus.", translation: "Great is the Lord, and exceedingly to be praised in the city of our God, in his holy mountain.", gloriaPatri: true },
+    blurb: {
+      text: "An anonymous polyphonic setting of this Introit was printed in the 1528 Lyons Contrapunctus as part of a complete set of Candlemas Mass propers; more recently the contemporary composer Robert Hugill wrote a five-voice (SATTB) setting, published in 2011.",
+      source: "CPDL ChoralWiki, \"Suscepimus Deus (Lyon 1528) (Anonymous)\"; CPDL ChoralWiki, \"Suscepimus, Deus (Robert Hugill).\"",
+    },
   },
   "visitation": {
     title: "Salve sancta Parens",
     latin: "Salve sancta Parens, eníxa puérpera Regem, qui caelum terrámque regit in saécula saeculórum.",
     translation: "Hail, holy Mother, who brought forth the King who rules heaven and earth for ever and ever.",
     mode: "Introit · The Visitation of the Blessed Virgin Mary · Mode II",
+    reference: "",
     gabc: "(f3) SAl(ce!fg)ve(f.) *(,) san(f)cta(fe) Pa(f!gwh_f)rens,(f.) (;) e(ef)ní(hhi)xa(h) pu(h)ér(h)pe(h)ra(hiHG') Re(hggfg)gem,(gf..) (:) qui(eh) cae(h)lum(hhh) ter(fe~)rám(f!hhf/gf)que(ef) re(fhhfgv_[oh:h]F~E~)git(fe..) (;) in(ef) saé(hh)cu(hi)la(f.) (,) sae(f!h'i)cu(hiHG')ló(hggfg)rum.(gf..) (::)",
-    source: "Graduale Romanum (GregoBase #1140)"
+    source: "Graduale Romanum (GregoBase #1140)",
+    fullGabc: "(f3) SAl(ce!fg)ve(f.) *(,) san(f)cta(fe) Pa(f!gwh_f)rens,(f.) (;) e(ef)ní(hhi)xa(h) pu(h)ér(h)pe(h)ra(hiHG') Re(hggfg)gem,(gf..) (:) qui(eh) cae(h)lum(hhh) ter(fe~)rám(f!hhf/gf)que(ef) re(fhhfgv_[oh:h]F~E~)git(fe..) (;) in(ef) saé(hh)cu(hi)la(f.) (,) sae(f!h'i)cu(hiHG')ló(hggfg)rum.(gf..) (::) T. P. Al(ef'h~)le(h_g)lú(hih){ia},(hhhffe.) (,) al(fh~)le(hghf)lú(f_[oh:h]g_[oh:h]f_[oh:h]){ia}.(f.) (::) Ps. E(e)ru(fe)ctá(eh)vit(h) cor(h) me(h)um(hg) ver(hi)bum(i) bo(hi)num :(h.) (:) * di(hf)co(fh) e(h)go(h) ó(h)pe(h')ra(i) me(hf)a(h) re(ge)gi.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: true },
+    blurb: {
+      text: "Unusually for an Introit, this text isn't drawn from Scripture: it's two lines lifted from Sedulius's 5th-century Latin poem Carmen Paschale (Book II, lines 63-64), adapted in the late Middle Ages to enrich a Marian chant repertoire that was otherwise thin. By tradition it is sung to the same melody as the Introit for Epiphany.",
+      source: "Liturgia Latina blog, \"Our Lady on Saturday.\"",
+    },
   },
   "nativity-mary": {
     title: "Gaudeamus ... Nativitate",
     latin: "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre Maríae Vírginis : de cujus Nativitáte gaudent Angeli, et colláudant Fílium Dei.",
     translation: "Let us all rejoice in the Lord, celebrating a feast day in honor of the Virgin Mary: at whose Nativity the Angels rejoice, and give praise to the Son of God.",
     mode: "Introit · The Nativity of the Blessed Virgin Mary · Mode I",
+    reference: "",
     gabc: "(c4) GAU(c)DE(d)Á(ixdh'!iv)MUS(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) Ma(f)rí(h)ae(gjj) Vír(h)gi(h_[oh:h]i_[oh:h]h_[oh:h])nis :(h.) (:) de(fg) cu(fg)jus(f) Na(f)ti(g)vi(g)tá(g./hjh)te(ghg.) (,) gau(fg)dent(f) An(fg/hgh)ge(gvFE'fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(ed..) (::)",
-    source: "Graduale Romanum (GregoBase #18120)"
+    source: "Graduale Romanum (GregoBase #18120)",
+    fullGabc: "(c4) GAU(c)DE(d)Á(ixdh'!iv)MUS(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) Ma(f)rí(h)ae(gjj) Vír(h)gi(h_[oh:h]i_[oh:h]h_[oh:h])nis :(h.) (:) de(fg) cu(fg)jus(f) Na(f)ti(g)vi(g)tá(g./hjh)te(ghg.) (,) gau(fg)dent(f) An(fg/hgh)ge(gvFE'fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(ed..) (::) Ps. E(f)ru(gh)ctá(h)vit(h) cor(h) me(h)um(h) ver(hj)bum(h) bo(hg)num :(gh..) *(:) di(gf)co(gh) e(h)go(h) ó(h)pe(h)ra(hjh) me(g')a(f) re(fff)gi.(dc/df..) (::) Gló(f)ri(gh)a(h) Pa(h)tri,(h) et(h) Fí(h)li(h)o,(h.) (,) et(h) Spi(h)rí(hj)tu(h)i(h) San(hg~)cto.(gh..) *(:) Sic(gf)ut(gh) e(h)rat(h) in(h) prin(h)cí(h)pi(h)o,(h.) (,) et(h) nunc,(hj) et(h) sem(hg~)per,(gh..) (:) et(gf) in(gh) s'ae(h)cu(h)la(h) sae(h)cu(hjh)ló(g')rum.(f) A(fff)men.(dc/df..) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: true },
+    blurb: {
+      text: "\"Gaudeamus omnes in Domino\" is a reusable festal formula whose melody and text shape remain the same while the saint's name and feast are swapped in for different occasions. This Nativity-of-Mary version is one of the formula's historical uses documented from the 11th century onward, as is the All Saints version noted elsewhere in this app.",
+      source: "chantblog, \"The Introit for the Solemnity of All Saints: Gaudeamus Omnes.\"",
+    },
   },
   "archangels": {
     title: "Benedicite Dominum",
     latin: "Benedícite Dóminum omnes Angeli ejus : poténtes virtúte, qui fácitis verbum ejus, ad audiéndam vocem sermónum ejus.",
     translation: "Bless the Lord, all you his Angels: mighty in strength, who do his word, hearkening to the voice of his commands.",
     mode: "Introit · Sts. Michael, Gabriel and Raphael, Archangels · Mode III",
+    reference: "Ps. 103:20",
     gabc: "(c4) BE(g)NE(g)DÍ(hj)CI(j)TE(j) Dó(ij)mi(j)num(j.) *(,) o(j)mnes(j) An(j)ge(jjj_h)li(hk) e(kj~)jus :(jkjji.) (;) pot(g)én(gh~)tes(h) vir(h)tú(jj)te,(i_[oh:h]h) (;) qui(gfg) fá(hg/ji)ci(j)tis(j) ver(hj~)bum(jj) e(gh~)jus,(h_[oh:h]i_[oh:h]h._[oh:h]) (:) ad(g) au(h)di(hkj)én(i)dam(jj//jj) vo(h_g)cem(g_[oh:h]f) (,) ser(fh~)mó(h_g/jjvH'G)num(g_[oh:h]e) e(fgF~'E~)jus.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #985)"
+    source: "Graduale Romanum (GregoBase #985)",
+    fullGabc: "(c4) BE(g)NE(g)DÍ(hj)CI(j)TE(j) Dó(ij)mi(j)num(j.) *(,) o(j)mnes(j) An(j)ge(jjj_h)li(hk) e(kj~)jus :(jkjji.) (;) pot(g)én(gh~)tes(h) vir(h)tú(jj)te,(i_[oh:h]h) (;) qui(gfg) fá(hg/ji)ci(j)tis(j) ver(hj~)bum(jj) e(gh~)jus,(h_[oh:h]i_[oh:h]h._[oh:h]) (:) ad(g) au(h)di(hkj)én(i)dam(jj//jj) vo(h_g)cem(g_[oh:h]f) (,) ser(fh~)mó(h_g/jjvH'G)num(g_[oh:h]e) e(fgF~'E~)jus.(e.) (::) T. P. Al(gj~)le(jjj_g)lú(ikj){ia},(j_i) (,) al(j)le(jjghvGE)lú(fgF~'E~){ia}.(e.) (::) Ps. Bé(g)ne(hj)dic(j) á(j)ni(j)ma(j) me(k)a(j) Dó(j)mi(ih)no :(jjj) *(:) et(ig) ó(hj)mni(j)a(j) quae(j) in(j)tra(j) me(j) sunt,(j.) (,) nó(j)mi(j)ni(jji) san(hg)cto(h') e(i)jus.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Bénedic ánima mea Dómino : et ómnia quae intra me sunt, nómini sancto ejus.", translation: "For David himself. Bless the Lord, O my soul: and let all that is within me bless his holy name.", gloriaPatri: true },
+    blurb: {
+      text: "The Mass for Michaelmas reuses this same Psalm 103:20 (102 in the Vulgate numbering) text twice over: once as the Introit, and again, verbatim, as the day's Gradual. A polyphonic setting of that Gradual text survives from the 18th-century Brazilian composer José Maurício Nunes Garcia, chapel master of the royal chapel in Rio de Janeiro under the Portuguese court-in-exile.",
+      source: "chantblog, \"The Feast of St. Michael and All Angels (September 29): Benedicite Dominum\"; Wikipedia, \"José Maurício Nunes Garcia.\"",
+    },
+  },
+  "gregory-great": {
+    title: "In medio Ecclesiae",
+    latin: "In médio Ecclésiae apéruit os ejus : et implévit eum Dóminus spíritu sapiéntiae, et intelléctus : stolam glóriae índuit eum.",
+    translation: "In the midst of the Church he opened his mouth: and the Lord filled him with the spirit of wisdom and understanding: he clothed him with a robe of glory.",
+    mode: "Introit · St. Gregory the Great, Pope and Doctor of the Church · Mode VI",
+    reference: "Ecclus. 15:5",
+    gabc: "(c4) IN(df~) mé(fff)di(f)o(f) *() Ec(f)clé(gfg)si(f)ae(fff) (,) a(cd)pé(fff)ru(f)it(f) os(g_[oh:h]f) e(f_[oh:h]g_[oh:h]f_[oh:h])jus :(f.) (:) et(f) im(f)plé(ixf!gwh'!iv)vit(h) e(hjjh)um(h.) Dó(gh)mi(gf)nus(f.) (,) spí(fh)ri(g)tu(f) sa(fgf)pi(ef'g)én(gh~)ti(f)ae,(fgf.) (,) et(f) in(ef'g)tel(hghf)lé(f)ctus :(fffc..) (:) sto(fdf)lam(f) gló(ghf)ri(f_d)ae(d_c) (,) ín(ff)du(f)it(ff) e(f_[oh:h]g_[oh:h]f_[oh:h])um.(f.) (::)",
+    source: "Graduale Romanum (GregoBase #233)",
+    blurb: {
+      text: "Gregorian chant carries Gregory's own name, but the connection includes legend and history. A story that spread a couple of centuries after his death pictured a dove, representing the Holy Spirit, perched on his shoulder, dictating the melodies into his ear, as if the entire chant repertoire had come from him fully formed; musical notation did not yet exist in his lifetime (590-604), so no such dictation could have been written down as chant in the way the legend imagines. What he did do, historically, was reorganize the papal schola cantorum and pull together chants then circulating in different regional traditions into something closer to a single body of practice. It was real, important work in fostering chant that later generations then built on and eventually named after him.",
+      source: "Wikipedia, \"Gregorian chant.\"",
+    },
+  },
+  "thomas-aquinas": {
+    title: "In medio Ecclesiae",
+    latin: "In médio Ecclésiae apéruit os ejus : et implévit eum Dóminus spíritu sapiéntiae, et intelléctus : stolam glóriae índuit eum.",
+    translation: "In the midst of the Church he opened his mouth: and the Lord filled him with the spirit of wisdom and understanding: he clothed him with a robe of glory.",
+    mode: "Introit · St. Thomas Aquinas, Priest and Doctor of the Church · Mode VI",
+    reference: "Ecclus. 15:5",
+    gabc: "(c4) IN(df~) mé(fff)di(f)o(f) *() Ec(f)clé(gfg)si(f)ae(fff) (,) a(cd)pé(fff)ru(f)it(f) os(g_[oh:h]f) e(f_[oh:h]g_[oh:h]f_[oh:h])jus :(f.) (:) et(f) im(f)plé(ixf!gwh'!iv)vit(h) e(hjjh)um(h.) Dó(gh)mi(gf)nus(f.) (,) spí(fh)ri(g)tu(f) sa(fgf)pi(ef'g)én(gh~)ti(f)ae,(fgf.) (,) et(f) in(ef'g)tel(hghf)lé(f)ctus :(fffc..) (:) sto(fdf)lam(f) gló(ghf)ri(f_d)ae(d_c) (,) ín(ff)du(f)it(ff) e(f_[oh:h]g_[oh:h]f_[oh:h])um.(f.) (::)",
+    source: "Graduale Romanum (GregoBase #233)",
+    blurb: {
+      text: "Aquinas himself is a chant author, not just a subject of one: around 1264, Pope Urban IV asked him to write the texts for the brand-new feast of Corpus Christi, including the sequence Lauda Sion Salvatorem. Its Gregorian melody is not original, as it reuses, note for note, an existing eleventh-century tune called Laetabundi iubilemus, credited to the poet Adam of Saint Victor. The closing stanzas of Lauda Sion are also sung separately, under the title Ecce panis Angelorum.",
+      source: "Wikipedia, \"Lauda Sion.\"",
+    },
+  },
+  "cecilia": {
+    title: "Loquebar de testimoniis",
+    latin: "Loquébar de testimóniis tuis in conspéctu regum, et non confundébar : et meditábar in mandátis tuis, quae diléxi nimis.",
+    translation: "I spoke of your testimonies before kings, and was not ashamed: and I meditated on your commandments, which I loved exceedingly.",
+    mode: "Introit · St. Cecilia, Virgin and Martyr · Mode V",
+    reference: "Ps. 119:46-47",
+    gabc: "(c3) LO(df)qué(hhi)bar(h.) *(,) de(h) te(h)sti(h)mó(i)ni(h.f!gwh)is(h) tu(hi!jvIH'i)is(ih..) (;) in(h) con(iji~)spé(j)ctu(h) re(hjIH'i)gum,(h.) (,) et(fdf) non(hh) con(ijh)fun(hh)dé(h_[oh:h]i_[oh:h]h_[oh:h])bar :(h.) (:) et(h_) me(e)di(f)tá(hhi)bar(h.) (,) in(hihh) man(ef)dá(hhi)tis(h) tu(hh/ijh)is,(f/hhfh.) (;) quae(d) di(ef)lé(f/hhf)xi(e) ni(ef/hfh)mis.(d.) (::)",
+    source: "Graduale Romanum (GregoBase #510)",
+    blurb: {
+      text: "Cecilia's patronage of music rests on a single line in her Acts of Passion, compiled in the fifth or sixth century: as musicians played at her wedding, she was said to have sung to God in her heart rather than to the bridegroom. Her familiar image at the organ appears to be a later mistranslation, not anything in that original text. The formal musical cult took centuries to catch up: the first festival in her honor was documented at Évreux in 1570, and her November 22 feast has since drawn new music from Purcell's Hail! Bright Cecilia (1692) to Britten's Hymn to St Cecilia, Britten himself having been born on her feast day.",
+      source: "Wikipedia, \"Cecilia of Rome\"; Wikipedia, \"St Cecilia's Day.\"",
+    },
   },
   "andrew": {
     title: "Mihi autem nimis",
     latin: "Mihi autem nimis honoráti sunt amíci tui, Deus : nimis confortátus est principátus eórum.",
     translation: "But to me your friends, O God, are made exceedingly honorable: their principality is exceedingly strengthened.",
     mode: "Introit · St. Andrew, Apostle · Mode II",
+    reference: "Ps. 139:17",
     gabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::)",
-    source: "Graduale Romanum (GregoBase #475)"
+    source: "Graduale Romanum (GregoBase #475)",
+    fullGabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::) Ps. Dó(e)mi(fe)ne(eh) pro(h)bá(h)sti(h) me,(h) et(hg~) co(hi)gno(i)ví(hi)sti(h) me :(h.) *(:) tu(hf) co(fh)gno(h)ví(h)sti(h) ses(h)si(h)ó(h)nem(h) me(h)am,(h.) (,) et(h) re(h)sur(h)re(h')cti(i)ó(hf)nem(h) me(ge)am.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Dómine probásti me, et cognovísti me : tu cognovísti sessiónem meam, et resurrectiónem meam.", translation: "Unto the end, a psalm of David. Lord, thou hast proved me, and known me: Thou hast known my sitting down, and my rising up.", gloriaPatri: true },
+    blurb: {
+      text: "Shared by every apostle's feast (it also serves St. Thomas, Dec. 21), this text attracted an unusually large polyphonic tradition: settings survive by Dufay, Isaac, Stolzer, Carissimi, Palestrina (Offertoria totius anni, 1593), and Thomas Tallis, whose 1575 Latin motet (published in his and Byrd's joint Cantiones Sacrae) was later given new English words and sung as the anthem \"Blessed be thy name.\"",
+      source: "CPDL ChoralWiki, \"Mihi autem nimis\"; CPDL ChoralWiki, \"Blessed be thy name (Thomas Tallis).\"",
+    },
+  },
+  "luke": {
+    title: "Mihi autem nimis",
+    latin: "Mihi autem nimis honoráti sunt amíci tui, Deus : nimis confortátus est principátus eórum.",
+    translation: "But to me your friends, O God, are made exceedingly honorable: their principality is exceedingly strengthened.",
+    mode: "Introit · St. Luke, Evangelist · Mode II",
+    reference: "Ps. 139:17",
+    gabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::)",
+    source: "Graduale Romanum (GregoBase #475)",
+    fullGabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::) Ps. Dó(e)mi(fe)ne(eh) pro(h)bá(h)sti(h) me,(h) et(hg~) co(hi)gno(i)ví(hi)sti(h) me :(h.) *(:) tu(hf) co(fh)gno(h)ví(h)sti(h) ses(h)si(h)ó(h)nem(h) me(h)am,(h.) (,) et(h) re(h)sur(h)re(h')cti(i)ó(hf)nem(h) me(ge)am.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Dómine probásti me, et cognovísti me : tu cognovísti sessiónem meam, et resurrectiónem meam.", translation: "Unto the end, a psalm of David. Lord, thou hast proved me, and known me: Thou hast known my sitting down, and my rising up.", gloriaPatri: true },
+    blurb: {
+      text: "Luke's own Gospel supplies three of the texts sung every single day in the Divine Office: the Magnificat (Mary's song, Luke 1:46-55) at Vespers, the Benedictus (Zechariah's song, Luke 1:68-79) at Lauds, and the Nunc dimittis (Simeon's song, Luke 2:29-32) at Compline. No other evangelist contributed so much standing repertoire to the Hours, and each canticle went on to draw its own vast setting tradition apart from this shared Apostles' Introit, with Monteverdi's and Bach's Magnificats and Rachmaninoff's Nunc dimittis among them.",
+      source: "Wikipedia, \"Magnificat\"; Wikipedia, \"Benedictus (canticle)\"; Wikipedia, \"Nunc dimittis.\"",
+    },
   },
   "stephen": {
     title: "Etenim sederunt principes",
     latin: "Etenim sedérunt príncipes, et advérsum me loquebántur : et iníqui persecúti sunt me : ádjuva me, Dómine Deus meus, quia servus tuus exercebátur in tuis justificatiónibus.",
     translation: "For princes sat, and spoke against me: and the wicked persecuted me: help me, O Lord my God, for your servant was employed in your justifications.",
     mode: "Introit · St. Stephen, the First Martyr · Mode I",
+    reference: "Ps. 119:23, 86",
     gabc: "(c4) ET(ff)E(d_c)NIM(fdf) *() se(gfg)dé(hgh)runt(h) prín(h)ci(g)pes,(f_h) (;) et(ixhih) ad(g)vér(fe~)sum(g) me(ixgih) lo(g)que(f)bán(ff//ff)tur :(d.) (;) et(fe) in(f)í(ghg)qui(d) per(d!fff)se(d)cú(df/gf/g_[uh:l]h)ti(fe) sunt(cd~) me :(d.) (:) ád(d)ju(d)va(fe) me,(fg) (,) Dó(g)mi(ghg)ne(fgf.) De(hg)us(g) me(gjjh)us,(h.) (;) qui(f)a(f) ser(h)vus(g) tu(ixgiH'G)us(g.) ex(f)er(f)ce(g)bá(ixhg/hiG'F)tur(g.) (;) in(hgh) tu(ixhiH'F)is(f.) ju(f)sti(f)fi(gvFD')ca(d!f'g)ti(gf)ó(fgFE')ni(feede)bus.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #1321)"
+    source: "Graduale Romanum (GregoBase #1321)",
+    fullGabc: "(c4) ET(ff)E(d_c)NIM(fdf) *() se(gfg)dé(hgh)runt(h) prín(h)ci(g)pes,(f_h) (;) et(ixhih) ad(g)vér(fe~)sum(g) me(ixgih) lo(g)que(f)bán(ff//ff)tur :(d.) (;) et(fe) in(f)í(ghg)qui(d) per(d!fff)se(d)cú(df/gf/g_[uh:l]h)ti(fe) sunt(cd~) me :(d.) (:) ád(d)ju(d)va(fe) me,(fg) (,) Dó(g)mi(ghg)ne(fgf.) De(hg)us(g) me(gjjh)us,(h.) (;) qui(f)a(f) ser(h)vus(g) tu(ixgiH'G)us(g.) ex(f)er(f)ce(g)bá(ixhg/hiG'F)tur(g.) (;) in(hgh) tu(ixhiH'F)is(f.) ju(f)sti(f)fi(gvFD')ca(d!f'g)ti(gf)ó(fgFE')ni(feede)bus.(e[ll:1]d..) (::) Ps. Be(f)á(gh)ti(h) im(h)ma(h)cu(h)lá(hj)ti(h) in(h) vi(hg)a :(gh..) *(:) qui(gf) ám(gh)bu(h)lant(h) in(h) le(hjh)ge(g') Dó(f)mi(fff)ni.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Beáti immaculáti in via : qui ámbulant in lege Dómini.", translation: "Blessed are the undefiled in the way, who walk in the law of the Lord.", gloriaPatri: true },
+    blurb: {
+      text: "Under its variant title Sederunt principes, this same text was set polyphonically by the Notre-Dame composer Pérotin (c. 1160-1230) as one of only a handful of surviving organa quadrupla — four-voice polyphony, among the most complex music written anywhere in Europe up to that point.",
+      source: "chantblog, \"Sederunt principes (Pérotin)\"; chantblog, \"The Introit for St. Stephen: Etenim sederunt.\"",
+    },
   },
   "john-evangelist": {
     title: "In medio Ecclesiae",
     latin: "In médio Ecclésiae apéruit os ejus : et implévit eum Dóminus spíritu sapiéntiae, et intelléctus : stolam glóriae índuit eum.",
     translation: "In the midst of the Church he opened his mouth: and the Lord filled him with the spirit of wisdom and understanding: he clothed him with a robe of glory.",
     mode: "Introit · St. John, Apostle and Evangelist · Mode VI",
+    reference: "Ecclus. 15:5",
     gabc: "(c4) IN(df~) mé(fff)di(f)o(f) *() Ec(f)clé(gfg)si(f)ae(fff) (,) a(cd)pé(fff)ru(f)it(f) os(g_[oh:h]f) e(f_[oh:h]g_[oh:h]f_[oh:h])jus :(f.) (:) et(f) im(f)plé(ixf!gwh'!iv)vit(h) e(hjjh)um(h.) Dó(gh)mi(gf)nus(f.) (,) spí(fh)ri(g)tu(f) sa(fgf)pi(ef'g)én(gh~)ti(f)ae,(fgf.) (,) et(f) in(ef'g)tel(hghf)lé(f)ctus :(fffc..) (:) sto(fdf)lam(f) gló(ghf)ri(f_d)ae(d_c) (,) ín(ff)du(f)it(ff) e(f_[oh:h]g_[oh:h]f_[oh:h])um.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #233)"
+    source: "Graduale Romanum (GregoBase #233)",
+    fullGabc: "(c4) IN(df~) mé(fff)di(f)o(f) *() Ec(f)clé(gfg)si(f)ae(fff) (,) a(cd)pé(fff)ru(f)it(f) os(g_[oh:h]f) e(f_[oh:h]g_[oh:h]f_[oh:h])jus :(f.) (:) et(f) im(f)plé(ixf!gwh'!iv)vit(h) e(hjjh)um(h.) Dó(gh)mi(gf)nus(f.) (,) spí(fh)ri(g)tu(f) sa(fgf)pi(ef'g)én(gh~)ti(f)ae,(fgf.) (,) et(f) in(ef'g)tel(hghf)lé(f)ctus :(fffc..) (:) sto(fdf)lam(f) gló(ghf)ri(f_d)ae(d_c) (,) ín(ff)du(f)it(ff) e(f_[oh:h]g_[oh:h]f_[oh:h])um.(f.) (::) T. P. Al(d)le(f_e)lú(fgf){ia},(fffddc.) (,) al(d)le(ff)lú(fhG~'F~){ia}.(f.) (::) Ps. Bo(fg)num(gf) est(gh) con(h)fi(g)té(ixi)ri(h) Dó(g)mi(f)no :(f.) *(:) et(h) psál(hj)le(g)re(f) nó(f)mi(f)ni(f') tu(g)o,(fd) Al(f')tís(g)si(f)me.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Bonum est confitéri Dómino : et psállere nómini tuo, Altíssime.", translation: "It is good to give praise to the Lord: and to sing to thy name, O most High.", gloriaPatri: true },
+    blurb: {
+      text: "This Introit appears in one of the earliest surviving accounts of musical elaboration in Western chant: a 9th-century commentary by Amalarius of Metz describes a neuma triplex, a threefold untexted melisma, inserted on the word intellectus (\"understanding\") at the close of this very chant during the St. John's Day night vigil — a wordless flourish Amalarius reads as a sign of realities beyond ordinary human understanding.",
+      source: "Eastman School of Music, Musicus Online Museum, \"In medio ecclesiae.\"",
+    },
   },
   "holy-innocents": {
     title: "Ex ore infantium",
     latin: "Ex ore infántium, Deus, et lacténtium perfecísti laudem propter inimícos tuos.",
     translation: "Out of the mouths of infants, O God, and of sucklings, you have perfected praise because of your enemies.",
     mode: "Introit · The Holy Innocents, Martyrs · Mode II",
+    reference: "Ps. 8:3",
     gabc: "(f3) EX(f!gwh) o(egf)re(f.) *() in(fhg)fán(hi~)ti(i)um,(hi~) De(i_[oh:h]f)us,(f.) (,) et(fi) la(i)ctén(ij)ti(ih)um(hv.gih.) (;) per(fg)fe(f_e)cí(fhg)sti(hi) lau(fgF~'E~)dem(e.) (:) pro(h)pter(hhh) in(f)i(fi)mí(iv.hji)cos(ihhf) tu(fg/eh//ghf/ggf)os.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #350)"
+    source: "Graduale Romanum (GregoBase #350)",
+    fullGabc: "(f3) EX(f!gwh) o(egf)re(f.) *() in(fhg)fán(hi~)ti(i)um,(hi~) De(i_[oh:h]f)us,(f.) (,) et(fi) la(i)ctén(ij)ti(ih)um(hv.gih.) (;) per(fg)fe(f_e)cí(fhg)sti(hi) lau(fgF~'E~)dem(e.) (:) pro(h)pter(hhh) in(f)i(fi)mí(iv.hji)cos(ihhf) tu(fg/eh//ghf/ggf)os.(f.) (::) Ps. Dó(e)mi(fe)ne(eh) Dó(hg)mi(hi)nus(i) no(hi)ster :(h.) *(:) quam(hf~) ad(fh)mi(h)rá(h)bi(h)le(h) est(h) no(h)men(h) tu(h)um(h.) (,) in(h) u(h')ni(i)vér(hf)sa(h) ter(ge)ra!(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Dómine Dóminus noster : quam admirábile est nomen tuum in univérsa terra!.", translation: "O Lord, our Lord, how admirable is thy name in the whole earth! For thy magnificence is elevated above the heavens.", gloriaPatri: true },
+    blurb: {
+      text: "A feast attested since roughly the 5th century, honoring the infants Herod killed while trying to eliminate the newborn Christ. This Introit reads Psalm 8's \"out of the mouths of infants\" as the murdered children's own silent testimony against their killer, a paradox the day's older liturgy underscored by keeping mourning (violet) vestments and dropping the Gloria and Alleluia even within the otherwise joyful Christmas octave.",
+      source: "Liturgia Latina blog, \"28th December, The Holy Innocents, Martyrs.\"",
+    },
   },
 
   /* ---- Advent ---------------------------------------------------------- */
@@ -113,35 +250,63 @@ window.INTROITS = {
     latin: "Ad te levávi ánimam meam: Deus meus, in te confído, non erubéscam: neque irrídeant me inimíci mei: étenim univérsi qui te exspéctant, non confundéntur.",
     translation: "To you have I lifted up my soul: O my God, in you I trust, let me not be put to shame; neither let my enemies laugh at me: for none who wait for you shall be confounded.",
     mode: "Introit · 1st Sunday of Advent · Mode VIII",
+    reference: "Ps. 25:1-3",
     gabc: "(c4) AD(gd~) te(f) le(gh)vá(h)vi(g.) *(,) á(gjj)ni(h)mam(gh) me(fg)am :(ghggf.0) (;) De(h)us(jj) me(jj/kj)us(jk..) (,) in(fg~) te(g) con(f)fí(fh/ji)do,(i_[oh:h]h_[oh:h]) (,) non(jjj) e(hg)ru(ghfg)bé(ghg___)scam :(g.) (:) ne(j)que(jv.jjj/h_[oh:h]i_[oh:h]h_[oh:h]) ir(h)rí(jkj)de(ih)ant(jjj) me(g.) (,) in(g)i(g)mí(g.h!iwj)ci(j_h) me(h_f)i :(f.) (:) ét(fh)e(hg)nim(g.) u(g)ni(g)vér(g!ihi)si(g.) (,) qui(g) te(g) ex(hji)spé(i/jkj)ctant,(hih.) (;) non(gh~) con(h)fun(hfhg)dén(ghg___)tur.(g.) (::)",
     abc: "G D F G a a G G c c a G a F G G a G G F | a c c c c d c c d F G G F F a c b b a c c c a G G a F G G a G G | c c c c c a b a a c d c b a c c c G G G G a b c c a a F F | F a a G G G G G b a b G G G a c b b c d c a b a | G a a a F a G G a G G |]",
-    source: "Graduale Romanum (GregoBase #132)"
+    source: "Graduale Romanum (GregoBase #132)",
+    fullGabc: "(c4) AD(gd~) te(f) le(gh)vá(h)vi(g.) *(,) á(gjj)ni(h)mam(gh) me(fg)am :(ghggf.0) (;) De(h)us(jj) me(jj/kj)us(jk..) (,) in(fg~) te(g) con(f)fí(fh/ji)do,(i_[oh:h]h_[oh:h]) (,) non(jjj) e(hg)ru(ghfg)bé(ghg___)scam :(g.) (:) ne(j)que(jv.jjj/h_[oh:h]i_[oh:h]h_[oh:h]) ir(h)rí(jkj)de(ih)ant(jjj) me(g.) (,) in(g)i(g)mí(g.h!iwj)ci(j_h) me(h_f)i :(f.) (:) ét(fh)e(hg)nim(g.) u(g)ni(g)vér(g!ihi)si(g.) (,) qui(g) te(g) ex(hji)spé(i/jkj)ctant,(hih.) (;) non(gh~) con(h)fun(hfhg)dén(ghg___)tur.(g.) (::) Ps. Vi(g)as(hg) tu(gj)as,(j) Dó(j)mi(j)ne,(j) de(ji)món(jk)stra(k) mi(jk)hi :(j.) (:) * et(jh~) sé(hj)mi(j)tas(j) tu(j)as(jji) é(gh)do(ji)ce(h) me.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) sae(j)cu(jji)ló(gh)rum.(ji) A(h)men.(ghd___/ffg.) (::)",
+    verse: { latin: "Vias tuas, Dómine, demónstra mihi : et sémitas tuas édoce me.", translation: "Let all them be confounded that act unjust things without cause. Shew, O Lord, thy ways to me, and teach me thy paths.", gloriaPatri: true },
+    blurb: {
+      text: "Ad te levávi is the Introit for the First Sunday of Advent, and so it opens not only the liturgical year but the entire Graduale Romanum, standing as the first chant on the first page of the medieval chant books. The modern Graduale Novum edition stamps this Introit's opening notes in gold on its front cover.",
+      source: "PrayTell blog, “Introitus: 1st Sunday of Advent.”"
+    }
   },
   "populus-sion": {
     title: "Populus Sion",
     latin: "Populus Sion, ecce Dóminus véniet ad salvándas gentes : et audítam fáciet Dóminus glóriam vocis suae, in laetítia cordis vestri.",
     translation: "People of Sion, behold, the Lord shall come to save the nations: and the Lord shall make the glory of his voice to be heard, in the joy of your heart.",
     mode: "Introit · 2nd Sunday of Advent · Mode VII",
+    reference: "Is. 30:30",
     gabc: "(c3) PO(ehhi)pu(h)lus(h) Si(hi)on,(hgh.) *(;) ec(hihi)ce(e.) Dó(e.f!gwhhi)mi(h)nus(h) vé(hi)ni(ig/ih)et(h.) (,) ad(iv.hig) sal(fe~)ván(ghg)das(fg) gen(efe___)tes :(e.) (:) et(e) au(eh)dí(hhi)tam(i) fá(kjki)ci(i)et(i) Dó(ij)mi(ihi)nus(iv.hiHF.1) (,) gló(hi'j)ri(jikvJI)am(ij~) vo(j.i!jwk)cis(j_i) su(iji___)ae,(i.) (;) in(e) lae(e)tí(ef'h)ti(h)a(hi!jvji) cor(gh!ijI~'H~)dis(ihhf!gwh) ve(efe___)stri.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #356)"
+    source: "Graduale Romanum (GregoBase #356)",
+    fullGabc: "(c3) PO(ehhi)pu(h)lus(h) Si(hi)on,(hgh.) *(;) ec(hihi)ce(e.) Dó(e.f!gwhhi)mi(h)nus(h) vé(hi)ni(ig/ih)et(h.) (,) ad(iv.hig) sal(fe~)ván(ghg)das(fg) gen(efe___)tes :(e.) (:) et(e) au(eh)dí(hhi)tam(i) fá(kjki)ci(i)et(i) Dó(ij)mi(ihi)nus(iv.hiHF.1) (,) gló(hi'j)ri(jikvJI)am(ij~) vo(j.i!jwk)cis(j_i) su(iji___)ae,(i.) (;) in(e) lae(e)tí(ef'h)ti(h)a(hi!jvji) cor(gh!ijI~'H~)dis(ihhf!gwh) ve(efe___)stri.(e.) (::) Ps. Qui(ehg) re(hi)gis(i) Is(i)ra(i)el,(ik) in(j)tén(ji~)de :(ij..) *(:) qui(ig) de(hi)dú(i)cis(i) vel(i)ut(i!jwk) o(i')vem(h) Jo(hhh)seph.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Qui regis Israel, inténde : qui dedúcis velut ovem Joseph.", translation: "Give ear, O thou that rulest Israel: thou that leadest Joseph like a sheep. Thou that sittest upon the cherubims, shine forth", gloriaPatri: true },
+    blurb: {
+      text: "Populus Sion pairs Isaiah's prophecy of God's coming to save Zion's people with Psalm 80 (79 in the Vulgate numbering)'s \"Qui regis Israel,\" turning a warning of judgment against the nations that ravaged Jerusalem into a chant of joyful anticipation. The melody's transmission is unusually well attested: a Düsseldorf manuscript copied around 1393 preserves it almost note-for-note as it stands in the modern Vatican Edition, a span of well over five centuries with barely any drift.",
+      source: "Corpus Christi Watershed, \"Advent, 2nd Sunday: Introit 'Pópulus Sion' Sung According to the Official Rhythm.\"",
+    },
   },
   "gaudete": {
     title: "Gaudete",
     latin: "Gaudéte in Dómino semper: íterum dico, gaudéte. Modéstia vestra nota sit ómnibus homínibus: Dóminus enim prope est. Nihil sollíciti sitis: sed in omni oratióne petitiónes vestrae innotéscant apud Deum.",
     translation: "Rejoice in the Lord always; again I say, rejoice. Let your moderation be known to all men: for the Lord is near. Have no anxiety, but in everything by prayer let your petitions be made known to God.",
     mode: "Introit · 3rd Sunday of Advent (Gaudete) · Mode I",
+    reference: "Phil. 4:4-6",
     gabc: "(c4) GAU(dc~)DE(ec/ed)TE(d!ewf) *(,) in(f) Dó(fgh)mi(h)no(ghg) sem(ixivHGhi)per:(h) (;) í(f)te(d)rum(ff) di(f)co,(f) (,) gau(fgFEf)dé(ded)te:(d) (:) mo(d)dé(d!fg)sti(gf)a(f) ve(ixf!gwh!iv)stra(h) (,) no(h)ta(fgf) sit(g) ó(hgh)mni(h)bus(h) ho(h)mí(ixhiHG)ni(hggfg)bus:(gf) (:) Dó(h)mi(gfg)nus(g) pro(hgh)pe(ixhg!hwihi) est.(ih) (;) Ni(jj)hil(ixhih) sol(gf~)lí(fgh)ci(h)ti(ixhiHG) si(hggfg)tis:(fg) (:) sed(c) in(d) o(d!ffd/ec~)mni(c) o(c)ra(e)ti(g)ó(ixeg/hig)ne(g) (,) pe(f)ti(f)ti(f)ó(fgf)nes(ed) ve(ded)strae(dc) (,) in(c)no(d)té(ff)scant(d) a(decd)pud(d) De(ded)um.(d) (::)",
     abc: "D C E C E D D E F F F G a a G a G _b a G a _b a | F D F F F F F G F E F D E D D | D D F G G F F F G a _b a a F G F G a G a a a a a _b a G a G G F G G F | a G F G G a G a a G a _b a _b _b a | c c a _b a G F F G a a a _b a G a G G F G F G | C D D F F D E C C C E G E G a _b G G F F F F G F E D D E D D C C D F F D D E C D D D E D D |]",
-    source: "Graduale Romanum (GregoBase #1767)"
+    source: "Graduale Romanum (GregoBase #1767)",
+    fullGabc: "(c4) GAU(dc~)DE(ec/ed)TE(d!ewf) *(,) in(f) Dó(fgh)mi(h)no(ghg) sem(ixivHGhi)per:(h) (;) í(f)te(d)rum(ff) di(f)co,(f) (,) gau(fgFEf)dé(ded)te:(d) (:) mo(d)dé(d!fg)sti(gf)a(f) ve(ixf!gwh!iv)stra(h) (,) no(h)ta(fgf) sit(g) ó(hgh)mni(h)bus(h) ho(h)mí(ixhiHG)ni(hggfg)bus:(gf) (:) Dó(h)mi(gfg)nus(g) pro(hgh)pe(ixhg!hwihi) est.(ih) (;) Ni(jj)hil(ixhih) sol(gf~)lí(fgh)ci(h)ti(ixhiHG) si(hggfg)tis:(fg) (:) sed(c) in(d) o(d!ffd/ec~)mni(c) o(c)ra(e)ti(g)ó(ixeg/hig)ne(g) (,) pe(f)ti(f)ti(f)ó(fgf)nes(ed) ve(ded)strae(dc) (,) in(c)no(d)té(ff)scant(d) a(decd)pud(d) De(ded)um.(d) (::) Ps. Be(f)ne(gh)di(h)xí(h)sti,(h) Dó(h)mi(h)ne,(h) ter(hj)ram(h) tu(hg)am:(gh) *(:) a(gf)ver(gh)tí(h)sti(h) ca(h)pti(h)vi(hjh)tá(g)tem(f) Ja(fff)cob.(d) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g) u(f) a(fff) e.(d) (::)",
+    verse: { latin: "Benedixísti, Dómine, terram tuam: avertísti captivitátem Jacob.", translation: "Lord, thou hast blessed thy land: thou hast turned away the captivity of Jacob.", gloriaPatri: true },
+    blurb: {
+      text: "The opening word of this Introit gives the Third Sunday of Advent its own name, Gaudete Sunday. Its chorus melody was first printed in the 1582 Finnish/Swedish songbook Piae Cantiones, and went on to a life well beyond the liturgy as the popular carol \"Gaudete,\" most famously recorded by the British folk-rock band Steeleye Span in 1973.",
+      source: "Wikipedia, “Gaudete”; California Bach Society program notes, “Program notes for Gaudete.”"
+    }
   },
   "rorate": {
     title: "Rorate caeli",
     latin: "Roráte caéli désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem.",
     translation: "Drop down dew, ye heavens, from above, and let the clouds rain down the Just One: let the earth be opened, and bud forth a Saviour.",
     mode: "Introit · 4th Sunday of Advent / Rorate Mass · Mode I",
+    reference: "Is. 45:8",
     gabc: "(c4) RO(cd)rá(ixdh'!iv)te(h') (,) * cae(hjjh)li(h_g) dé(h!iwj)su(j.i!jwkjk)per,(kj..) (;) et(f) nu(ixhih)bes(g) plu(jjh)ant(h.) ju(g_[oh:h]fhvGFgf)stum :(f.) (:) a(f)pe(g)ri(h)á(h!iwj)tur(g) ter(fgF'D)ra,(d.) (;) et(dfe) gér(fg)mi(g)net(fgFD.1) Sal(d!ewf)va(ced)tó(d_[oh:h]e_[oh:h]d_[oh:h])rem.(d.) (::)",
     abc: "C D D a _b a a c c a a G a b c c b c d c d d c | F a _b a G c c a a G F a G F G F F | F G a a b c G F G F D D | D F E F G G F G F D D E F C E D D E D D |]",
-    source: "Graduale Romanum (GregoBase #79)"
+    source: "Graduale Romanum (GregoBase #79)",
+    fullGabc: "(c4) RO(cd)rá(ixdh'!iv)te(h') (,) * cae(hjjh)li(h_g) dé(h!iwj)su(j.i!jwkjk)per,(kj..) (;) et(f) nu(ixhih)bes(g) plu(jjh)ant(h.) ju(g_[oh:h]fhvGFgf)stum :(f.) (:) a(f)pe(g)ri(h)á(h!iwj)tur(g) ter(fgF'D)ra,(d.) (;) et(dfe) gér(fg)mi(g)net(fgFD.1) Sal(d!ewf)va(ced)tó(d_[oh:h]e_[oh:h]d_[oh:h])rem.(d.) (::) Ps. Cae(f)li(gh) e(h)nár(h)rant(h) gló(hj)ri(h)am(h) De(hg)i :(gh..) *(:) et(gf) ó(gh)pe(h)ra(h) má(h)nu(h)um(h) e(h)jus(h.) (,) an(h)nún(h)ti(h)at(hjh) fir(g')ma(f)mén(fff)tum.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Caeli enárrant glóriam Dei : et ópera mánuum ejus annúntiat firmaméntum.", translation: "The heavens shew forth the glory of God, and the firmament declareth the work of his hands.", gloriaPatri: true },
+    blurb: {
+      text: "This Advent text (Isaiah's prophecy of dew falling from the heavens) gave its name to the “Rorate Mass,” a votive Mass of Our Lady sung before dawn by candlelight during Advent, especially in German-speaking Europe — a tradition already old by the 11th century, when this chant became the fixed Introit for the Fourth Sunday of Advent. Palestrina, Jacob Handl, William Byrd (in his 1605 Gradualia), and Heinrich Schütz all set the text polyphonically.",
+      source: "Wikipedia, “Rorate caeli”; CPDL ChoralWiki entries for the Byrd and Palestrina settings."
+    }
   },
 
   /* ---- Christmas / Epiphany ------------------------------------------- */
@@ -150,42 +315,77 @@ window.INTROITS = {
     latin: "Puer natus est nobis, et fílius datus est nobis: cujus impérium super húmerum ejus: et vocábitur nomen ejus, magni consílii Angelus.",
     translation: "Unto us a child is born, and unto us a son is given: whose government is upon his shoulder: and his name shall be called the Angel of great counsel.",
     mode: "Introit · The Nativity of the Lord (Mass of the Day) · Mode VII",
+    reference: "Is. 9:6",
     gabc: "(c3) PU(ei)ER(i.) *() na(iji)tus(h) est(hhh) no(ih/ji)bis,(i.) (;) et(ei~) fí(iji)li(hg)us(f) da(hhi)tus(h) est(h) no(hihh)bis :(efe.) (:) cu(e)jus(f) im(h)pé(gi!jk)ri(ih)um(h.) (,) su(h)per(h) hú(ih/ji)me(h_g)rum(hhh) e(h_f//hghvG~F~)jus :(gf..) (:) et(hg) vo(h)cá(hji)bi(h)tur(hhh) no(h)men(hhh) e(highvG~F~)jus,(gf..) (;) ma(hj)gni(i) con(eh~)sí(h)li(hhh_f)i(f) An(fhf___!gwh)ge(efe___)lus.(e.) (::)",
     abc: "G d d d e d c c c c d c e d d | G d d e d c b a c c d c c c d c c G a G | G a c b d e f d c c c c d c e d c b c c c c a c b c b a b a | c b c c e d c c c c c c c c c d b c b a b a | c e d G c c c c c a a a c a b c G a G G |]",
-    source: "Graduale Romanum (GregoBase #72)"
+    source: "Graduale Romanum (GregoBase #72)",
+    fullGabc: "(c3) PU(ei)ER(i.) *() na(iji)tus(h) est(hhh) no(ih/ji)bis,(i.) (;) et(ei~) fí(iji)li(hg)us(f) da(hhi)tus(h) est(h) no(hihh)bis :(efe.) (:) cu(e)jus(f) im(h)pé(gi!jk)ri(ih)um(h.) (,) su(h)per(h) hú(ih/ji)me(h_g)rum(hhh) e(h_f//hghvG~F~)jus :(gf..) (:) et(hg) vo(h)cá(hji)bi(h)tur(hhh) no(h)men(hhh) e(highvG~F~)jus,(gf..) (;) ma(hj)gni(i) con(eh~)sí(h)li(hhh_f)i(f) An(fhf___!gwh)ge(efe___)lus.(e.) (::) Ps. Can(ehg)tá(hi)te(i) Dó(i)mi(i)no(i) cán(ik)ti(j)cum(j) no(ji)vum :(ij..) *(:) qui(ig)a(hi) mi(i)ra(i)bí(i!jwk)li(i')a(h) fe(hhh)cit.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Cantáte Dómino cánticum novum : quia mirabília fecit.", translation: "A psalm for David himself. Sing ye to the Lord a new canticle: because he hath done wonderful things. His right hand hath wrought for him salvation, and his arm is holy.", gloriaPatri: true },
+    blurb: {
+      text: "This is the Introit of Christmas Day's principal Mass (the “Mass of the Day”). Thomas Tallis built an entire seven-voice Mass, the Missa Puer natus est nobis, around its melody as a cantus firmus — sung, by tradition, at the English royal court for Christmas 1554, before Queen Mary I and King Philip of Spain.",
+      source: "Wikipedia, “Missa Puer natus est nobis.”"
+    }
   },
   "ecce-advenit": {
     title: "Ecce advenit",
     latin: "Ecce advénit dominátor Dóminus: et regnum in manu ejus, et potéstas, et impérium.",
     translation: "Behold, the Lord the Ruler is come: and the kingdom is in his hand, and power, and dominion.",
     mode: "Introit · The Epiphany of the Lord · Mode II",
+    reference: "Mal. 3:1; 1 Par. 29:12",
     gabc: "(f3) EC(ce!fg)CE(f.) *(,) ad(fe~)vé(f!gwh_f)nit(f.) (,) do(e)mi(hh)ná(h)tor(h) Dó(hiHG')mi(hggfg)nus :(gf..) (:) et(eh~) re(h)gnum(hhh) (,) in(fe~) ma(f!hhf/gf)nu(ef) e(fhhfgv_[oh:h]F~E~)jus,(fe..) (:) et(f) pot(hh)é(hi)stas,(f.) (,) et(fh'!iv) im(i)pé(hiHG')ri(hggfg)um.(gf..) (::)",
     abc: "a c d e d d c d e f d d c f f f f f G' f e f e e d e e d | c f f f f f d c d f f d e d c d d f f d e d c d c | d f f f G' d d f G' G' f G' f e f e e d e e d |]",
-    source: "Graduale Romanum (GregoBase #403)"
+    source: "Graduale Romanum (GregoBase #403)",
+    fullGabc: "(f3) EC(ce!fg)CE(f.) *(,) ad(fe~)vé(f!gwh_f)nit(f.) (,) do(e)mi(hh)ná(h)tor(h) Dó(hiHG')mi(hggfg)nus :(gf..) (:) et(eh~) re(h)gnum(hhh) (,) in(fe~) ma(f!hhf/gf)nu(ef) e(fhhfgv_[oh:h]F~E~)jus,(fe..) (:) et(f) pot(hh)é(hi)stas,(f.) (,) et(fh'!iv) im(i)pé(hiHG')ri(hggfg)um.(gf..) (::) Ps. De(e)us,(fe) ju(eh)dí(h)ci(h)um(hg) tu(hi)um(i) Re(hi)gi(h) da :(h.) *(:) et(hf~) ju(fh)stí(h)ti(h)am(h) tu(h)am(h') Fí(i)li(hf)o(h) Re(ge)gis.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Deus, judícium tuum Regi da : et justítiam tuam Fílio Regis.", translation: "Give to the king thy judgment, O God, and to the king's son thy justice: To judge thy people with justice, and thy poor with judgment.", gloriaPatri: true },
+    blurb: {
+      text: "Set for four voices (AATB) by William Byrd as no. 10 of Gradualia II (1607); the Polish composer Mikołaj Zieleński also set the text, in his 1611 polychoral collection Offertoria et Communiones totius anni.",
+      source: "CPDL ChoralWiki, \"Ecce advenit dominator Dominus (William Byrd)\"; Wikipedia, \"Mikołaj Zieleński.\"",
+    },
   },
   "holy-family": {
     title: "Deus in loco sancto suo",
     latin: "Deus in loco sancto suo : Deus, qui inhabitáre facit unánimes in domo : ipse dabit virtútem et fortitúdinem plebi suae.",
     translation: "God is in his holy place: God, who makes men of one mind to dwell in a house: he shall give power and strength to his people.",
     mode: "Introit · The Holy Family · Mode V",
+    reference: "Ps. 68:6-7, 36",
     gabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1026); the diocese assigns the Holy Family the same introit as the 17th Sunday in Ordinary Time."
+    source: "Graduale Romanum (GregoBase #1026); the diocese assigns the Holy Family the same introit as the 17th Sunday in Ordinary Time.",
+    fullGabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::) Ps. Ex(d)súr(f)gat(h) De(h)us,(h.) et(h) dis(h)si(h)pén(h)tur(h) in(h)i(h)mí(h)ci(i) e(i)jus :(h.) (:) * et(f) fú(h)gi(h)ant,(h) qui(h) o(h)dé(h)runt(h) e(h)um,(h.) a(h) fá(i)ci(g)e(g) e(h)jus.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Exsúrgat Deus, et dissipéntur inimíci ejus : et fúgiant, qui odérunt eum, a fácie ejus.", translation: "Let God arise, and let his enemies be scattered: and let them that hate him flee from before his face.", gloriaPatri: true },
+    blurb: {
+      text: "Deus in loco sancto suo is a case study in how the modern calendar recycles old chant for new feasts. When the Feast of the Holy Family was added in 1893, suppressed, then restored in 1921 by Pius X, it was given an introit already in use elsewhere, \"In excelso throno\". After the Second Vatican Council's calendar reform, the feast's introit changed to this one, borrowed from the 17th Sunday in Ordinary Time, as this app's own source note records.",
+      source: "PrayTellBlog, \"Introitus: From St. Stephen to Holy Family.\"",
+    },
   },
   "dum-medium-silentium": {
     title: "Dum medium silentium",
     latin: "Dum médium siléntium tenérent ómnia, et nox in suo cursu médium iter habéret, omnípotens sermo tuus, Dómine, de caelis a regálibus sédibus venit.",
     translation: "While all things were in quiet silence, and the night was in the midst of her course, your almighty Word, O Lord, leapt down from heaven, from your royal throne.",
     mode: "Introit · 2nd Sunday after the Nativity · Mode VIII",
+    reference: "Wis. 18:14-15",
     gabc: "(c4) DUM(cd) mé(dgf/gh)di(g)um(g) *() si(g)lén(ixgih)ti(hggfg)um(gf..) (;) te(fg)né(g/hji)rent(ih) ó(jjj)mni(hg)a,(ghgh.) (:) et(fg) nox(gj) in(j) su(j)o(h) cur(jj)su(g.) (,) mé(h)di(hfhg)um(g) i(jj)ter(j_[hl:1]k_[hl:1]j_[hl:1]) ha(h)bé(h!jjvH'G)ret,(gf..) (:) o(f)mní(fg'h)pot(h)ens(h) ser(h)mo(f) tu(fg'h)us,(h) (,) Dó(ixhiHG')mi(hggfg)ne,(fg..) (:) de(cd) cae(fg)lis(ixgiggf.0) (,) a(g) re(hj)gá(iij)li(g)bus(h_g) sé(jj)di(hji)bus(jjvIH'iw!jvIH) ve(gh!ivHG'h)nit.(hg..) (::)",
-    source: "Graduale Romanum (GregoBase #564)"
+    source: "Graduale Romanum (GregoBase #564)",
+    fullGabc: "(c4) DUM(cd) mé(dgf/gh)di(g)um(g) *() si(g)lén(ixgih)ti(hggfg)um(gf..) (;) te(fg)né(g/hji)rent(ih) ó(jjj)mni(hg)a,(ghgh.) (:) et(fg) nox(gj) in(j) su(j)o(h) cur(jj)su(g.) (,) mé(h)di(hfhg)um(g) i(jj)ter(j_[hl:1]k_[hl:1]j_[hl:1]) ha(h)bé(h!jjvH'G)ret,(gf..) (:) o(f)mní(fg'h)pot(h)ens(h) ser(h)mo(f) tu(fg'h)us,(h) (,) Dó(ixhiHG')mi(hggfg)ne,(fg..) (:) de(cd) cae(fg)lis(ixgiggf.0) (,) a(g) re(hj)gá(iij)li(g)bus(h_g) sé(jj)di(hji)bus(jjvIH'iw!jvIH) ve(gh!ivHG'h)nit.(hg..) (::) Ps. Dó(g)mi(hg)nus(gj) re(j)gná(j)vit,(j) de(j)có(ji)rem(jk) in(k)dú(jk)tus(j) est :(j.) (:) * in(jh~)dú(hj)tus(j) est(j) Dó(j)mi(j)nus(j) for(j)ti(j)tú(j)di(j)nem,(jji) et(gh) prae(ji)cín(h)xit(h) se.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) E(j) u(jji) o(gh) u(ji) a(h) e.(ghd___/ffg.) (::)",
+    verse: { latin: "Dóminus regnávit, decórem indútus est : indútus est Dóminus fortitúdinem, et praecínxit se.", translation: "The Lord hath reigned, he is clothed with beauty: the Lord is clothed with strength, and hath girded himself. For he hath established the world which shall not be moved.", gloriaPatri: true },
+    blurb: {
+      text: "Vytautas Miškinis, a contemporary Lithuanian composer born in 1954, set this text in 2008, commissioned by the vocal ensemble Calycanthus. One reviewer described the work as a \"lyrical minimalism,\" with repetitive rhythmic fragments and sustained lines against the pulse, broken by occasional homophonic outbursts. It was recorded by the Choir of Royal Holloway under Rupert Gough on their 2010 Miškinis album Time is Endless.",
+      source: "Hyperion Records, CDA67818 (Miškinis, \"Time is Endless\"), track note for \"Dum medium silentium.\"",
+    },
   },
   "baptism-lord": {
     title: "Dilexisti justitiam",
     latin: "Dilexísti justítiam, et odísti iniquitátem : proptérea unxit te Deus, Deus tuus, óleo laetítiae prae consórtibus tuis.",
     translation: "You have loved justice, and hated iniquity: therefore God, your God, has anointed you with the oil of gladness above your fellows.",
     mode: "Introit · The Baptism of the Lord · Mode VIII",
+    reference: "Ps. 45:8",
     gabc: "(c4) DI(g)le(g)xí(hjg)sti(g_[oh:h]f) *() ju(g)stí(g.h!iwjjk)ti(j)am,(j.) (;) et(j) o(j)dí(jkj)sti(jjj) in(gh)i(h)qui(hfhg)tá(ghg___)tem :(g.) (:) pro(fg)ptér(gjj)e(hg)a(ghggf.0) (,) un(gh/i.h!iwj)xit(hjg) te(g) De(ghG'F)us,(f.) (,) De(fg'h)us(h) tu(ixhgivHG'hf)us,(f.) (;) ó(g)le(fg)o(g) lae(h)tí(jj)ti(hg)ae(g/jjh/jggf.0) (;) prae(g) con(hi~)sór(i.h!iwj)ti(hg)bus(gv.f!hfg) tu(ghg___)is.(g.) (::)",
-    source: "Graduale Romanum (GregoBase #629)"
+    source: "Graduale Romanum (GregoBase #629)",
+    fullGabc: "(c4) DI(g)le(g)xí(hjg)sti(g_[oh:h]f) *() ju(g)stí(g.h!iwjjk)ti(j)am,(j.) (;) et(j) o(j)dí(jkj)sti(jjj) in(gh)i(h)qui(hfhg)tá(ghg___)tem :(g.) (:) pro(fg)ptér(gjj)e(hg)a(ghggf.0) (,) un(gh/i.h!iwj)xit(hjg) te(g) De(ghG'F)us,(f.) (,) De(fg'h)us(h) tu(ixhgivHG'hf)us,(f.) (;) ó(g)le(fg)o(g) lae(h)tí(jj)ti(hg)ae(g/jjh/jggf.0) (;) prae(g) con(hi~)sór(i.h!iwj)ti(hg)bus(gv.f!hfg) tu(ghg___)is.(g.) (::) T. P. Al(f)le(fg)lú(gh~){ia},(hgh.) (,) al(h!iwj)le(jv.ijH'G)lú(ghg___){ia}.(g.) (::) (z)Ps. E(g)ru(hg)ctá(gj)vit(j) cor(j) me(j)um(ji) ver(jk)bum(k) bo(jk)num :(j.) *(:) di(jh)co(hj) e(j)go(j) ó(j)pe(j)ra(jji) me(gh)a(ji) re(h)gi.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) E(j) u(jji) o(gh) u(ji) a(h) e.(g.) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: true },
+    blurb: {
+      text: "Set for unaccompanied SATB choir by the contemporary composer Robert Hugill (2004) as part of Tempus per Annum, his ongoing sequence of motets setting the Latin Introit for every Sunday and major feast of the church year.",
+      source: "CPDL ChoralWiki, \"Dilexisti justitiam (Robert Hugill).\"",
+    },
   },
 
   "christmas-vigil": {
@@ -193,32 +393,60 @@ window.INTROITS = {
     latin: "Hódie sciétis, quia véniet Dóminus, et salvábit nos : et mane vidébitis glóriam ejus.",
     translation: "Today you shall know that the Lord will come, and save us: and in the morning you shall see his glory.",
     mode: "Introit · The Nativity of the Lord (Vigil Mass) · Mode VI",
+    reference: "Ex. 16:6, 7",
     gabc: "(c4) HO(d/fff)di(f)e(f) sci(g)é(ixgiH'G)tis,(gf..) *(;) qui(fd)a(d) vé(d!f'g)ni(gf)et(f) Dó(f)mi(d)nus,(cd/e_[oh:h][ll:1]d) (;) et(c) sal(d)vá(ff)bit(fgf) nos :(f.) (:) et(df~) ma(fgf)ne(fef.) (,) vi(d)dé(fef)bi(deDC'd)tis(d_c) gló(ff)ri(f)am(f) e(fg~)jus.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #150)"
+    source: "Graduale Romanum (GregoBase #150)",
+    fullGabc: "(c4) HO(d/fff)di(f)e(f) sci(g)é(ixgiH'G)tis,(gf..) *(;) qui(fd)a(d) vé(d!f'g)ni(gf)et(f) Dó(f)mi(d)nus,(cd/e_[oh:h][ll:1]d) (;) et(c) sal(d)vá(ff)bit(fgf) nos :(f.) (:) et(df~) ma(fgf)ne(fef.) (,) vi(d)dé(fef)bi(deDC'd)tis(d_c) gló(ff)ri(f)am(f) e(fg~)jus.(f.) (::) Ps. Dó(fg)mi(gf)ni(gh) est(h) ter(h)ra,(h) et(h) ple(h)ni(g)tú(ixi)do(h) e(g)jus :(f.) *(:) or(f)bis(gh) ter(h)rá(hj)rum,(g.) (,) et(f) u(f)ni(f)vér(f)si(f) qui(f) há(f')bi(g)tant(fd) in(f') e(g)o.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Dómini est terra, et plenitúdo ejus : orbis terrárum, et univérsi qui hábitant in eo.", translation: "On the first day of the week, a psalm for David. The earth is the Lord's and the fulness thereof: the world, and all they that dwell therein.", gloriaPatri: true },
+    blurb: {
+      text: "Sung on the evening of December 24th, this anonymous chant's own transmission history mirrors its promise of something not-yet-fully-arrived: a comparison of the surviving manuscripts suggests the 8th-century original ended a step lower than the melody now in use, meaning generations of scribes let the final cadence drift a whole tone sharp over the centuries before it settled into today's version.",
+      source: "AllMusic, \"Hodie scietis, introit (for Christmas Vigil Mass).\"",
+    },
   },
   "dominus-dixit": {
     title: "Dominus dixit ad me",
     latin: "Dóminus dixit ad me : Fílius meus es tu, ego hódie génui te.",
     translation: "The Lord said to me: You are my Son, this day have I begotten you.",
     mode: "Introit · The Nativity of the Lord (Mass during the Night) · Mode II",
+    reference: "Ps. 2:7",
     gabc: "(f3) DO(fh/ih)MI(hhh)NUS(f.) *(,) di(f!hh)xit(f!hh) ad(eg~) me :(f.) (;) Fí(fgf)li(fe)us(f) me(h_g)us(h_i) es(fgF'E) tu,(e.) (:) e(fh/ih)go(hhh) hó(f/hhh)di(fe)e(e.) (,) gé(fge)nu(hh)i(ivH'Gh) te.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #1175)"
+    source: "Graduale Romanum (GregoBase #1175)",
+    fullGabc: "(f3) DO(fh/ih)MI(hhh)NUS(f.) *(,) di(f!hh)xit(f!hh) ad(eg~) me :(f.) (;) Fí(fgf)li(fe)us(f) me(h_g)us(h_i) es(fgF'E) tu,(e.) (:) e(fh/ih)go(hhh) hó(f/hhh)di(fe)e(e.) (,) gé(fge)nu(hh)i(ivH'Gh) te.(f.) (::) Ps. Qua(e)re(fe) fre(eh)mu(hg)é(hi)runt(i) gen(hi)tes :(h.) *(:) et(hf~) pó(fh)pu(h)li(h) me(h)di(h)tá(h)ti(h') sunt(i) in(hf)á(h)ni(ge)a?(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Quare fremuérunt gentes : et pópuli meditáti sunt inánia?.", translation: "Why have the Gentiles raged, and the people devised vain things?", gloriaPatri: true },
+    blurb: {
+      text: "This Introit — Psalm 2's declaration “You are my Son, this day have I begotten you” — opens the Church's oldest Christmas liturgy, the Mass at Midnight, traditionally celebrated by the Pope at Rome's Basilica of Saint Mary Major beside the relic of the Holy Crib, a practice tracing back to Pope Sixtus III (r. 432–440).",
+      source: "Basilica of Saint Mary Major official site; Wikipedia, “Midnight Mass.”"
+    }
   },
   "lux-fulgebit": {
     title: "Lux fulgebit",
     latin: "Lux fulgébit hódie super nos : quia natus est nobis Dóminus : et vocábitur Admirábilis, Deus, Princeps pacis, Pater futúri saéculi : cujus regni non erit finis.",
     translation: "A light shall shine upon us this day: for the Lord is born to us: and he shall be called Wonderful, God, the Prince of peace, the Father of the world to come: of whose reign there shall be no end.",
     mode: "Introit · The Nativity of the Lord (Mass at Dawn) · Mode VIII",
+    reference: "Is. 9:2, 6",
     gabc: "(c4) LUX(d!f'g) ful(gh~)gé(fh/ji)bit(ih) *(,) hó(jjj)di(hg)e(ghG'F) su(ixhiH'G)per(ghg___) nos :(g.) (:) qui(j)a(h) na(j)tus(jjj) est(gh) no(h)bis(hfh) Dó(ixhiH'G)mi(ghg___)nus :(g.) (:) et(g) vo(gfh)cá(h_g)bi(ghg___)tur(g.) (,) Ad(g)mi(g)rá(gh/ji)bi(jjj)lis,(gh) (,) De(ixhiH'F)us,(f.) (;) Prin(f)ceps(g) pa(h)cis,(g.) (,) Pa(h)ter(g) fu(f)tú(fg'h)ri(h) saé(hf)cu(ixgih)li :(h.) (:) cu(jh~)jus(hkj) re(jjjhh)gni(f.) (,) non(g_[oh:h]f) e(fh/ji)rit(jvvIH'iw!jvIH) fi(gh!ivHG'h)nis.(hg..) (::)",
-    source: "Graduale Romanum (GregoBase #917)"
+    source: "Graduale Romanum (GregoBase #917)",
+    fullGabc: "(c4) LUX(d!f'g) ful(gh~)gé(fh/ji)bit(ih) *(,) hó(jjj)di(hg)e(ghG'F) su(ixhiH'G)per(ghg___) nos :(g.) (:) qui(j)a(h) na(j)tus(jjj) est(gh) no(h)bis(hfh) Dó(ixhiH'G)mi(ghg___)nus :(g.) (:) et(g) vo(gfh)cá(h_g)bi(ghg___)tur(g.) (,) Ad(g)mi(g)rá(gh/ji)bi(jjj)lis,(gh) (,) De(ixhiH'F)us,(f.) (;) Prin(f)ceps(g) pa(h)cis,(g.) (,) Pa(h)ter(g) fu(f)tú(fg'h)ri(h) saé(hf)cu(ixgih)li :(h.) (:) cu(jh~)jus(hkj) re(jjjhh)gni(f.) (,) non(g_[oh:h]f) e(fh/ji)rit(jvvIH'iw!jvIH) fi(gh!ivHG'h)nis.(hg..) (::) Ps. Dó(g)mi(hg)nus(gj) re(j)gná(j)vit,(j) de(j)có(ji)rem(jk) in(k)dú(jk)tus(j) est :(j.) *(:) in(jh~)dú(hj)tus(j) est(j) Dó(j)mi(j)nus(j) for(j)ti(j)tú(j)di(j)nem,(jji) et(gh) prae(ji)cín(h)xit(h) se.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) E(j) u(jji) o(gh) u(ji) a(h) e.(ghd___/ffg.) (::)",
+    verse: { latin: "Dóminus regnávit, decórem indútus est : indútus est Dóminus fortitúdinem, et praecínxit se.", translation: "The Lord hath reigned, he is clothed with beauty: the Lord is clothed with strength, and hath girded himself. For he hath established the world which shall not be moved.", gloriaPatri: true },
+    blurb: {
+      text: "Two 16th-century composers set this Christmas Dawn Mass text as independent motets: the Flemish-trained Philippe de Monte for five voices, published 1574, and the Venetian organist Claudio Merulo for six voices, published 1593 in his Secondo libro de motetti a sei voci.",
+      source: "CPDL ChoralWiki, \"Lux fulgebit hodie (Philippe de Monte)\"; CPDL ChoralWiki, \"Lux fulgebit hodie (Claudio Merulo).\"",
+    },
   },
   "mary-mother-of-god": {
     title: "Salve sancta Parens",
     latin: "Salve, sancta Parens, eníxa puérpera Regem : qui caelum terrámque regit in saécula saeculórum.",
     translation: "Hail, holy Mother, who brought forth the King who rules heaven and earth for ever and ever.",
     mode: "Introit · Mary, the Holy Mother of God · Mode II",
+    reference: "",
     gabc: "(f3) SAl(ce!fg)ve(f.) *(,) san(f)cta(fe) Pa(f!gwh_f)rens,(f.) (;) e(ef)ní(hhi)xa(h) pu(h)ér(h)pe(h)ra(hiHG') Re(hggfg)gem,(gf..) (:) qui(eh) cae(h)lum(hhh) ter(fe~)rám(f!hhf/gf)que(ef) re(fhhfgv_[oh:h]F~E~)git(fe..) (;) in(ef) saé(hh)cu(hi)la(f.) (,) sae(f!h'i)cu(hiHG')ló(hggfg)rum.(gf..) (::)",
-    source: "Graduale Romanum (GregoBase #1140)"
+    source: "Graduale Romanum (GregoBase #1140)",
+    fullGabc: "(f3) SAl(ce!fg)ve(f.) *(,) san(f)cta(fe) Pa(f!gwh_f)rens,(f.) (;) e(ef)ní(hhi)xa(h) pu(h)ér(h)pe(h)ra(hiHG') Re(hggfg)gem,(gf..) (:) qui(eh) cae(h)lum(hhh) ter(fe~)rám(f!hhf/gf)que(ef) re(fhhfgv_[oh:h]F~E~)git(fe..) (;) in(ef) saé(hh)cu(hi)la(f.) (,) sae(f!h'i)cu(hiHG')ló(hggfg)rum.(gf..) (::) T. P. Al(ef'h~)le(h_g)lú(hih){ia},(hhhffe.) (,) al(fh~)le(hghf)lú(f_[oh:h]g_[oh:h]f_[oh:h]){ia}.(f.) (::) Ps. E(e)ru(fe)ctá(eh)vit(h) cor(h) me(h)um(hg) ver(hi)bum(i) bo(hi)num :(h.) (:) * di(hf)co(fh) e(h)go(h) ó(h)pe(h')ra(i) me(hf)a(h) re(ge)gi.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: true },
+    blurb: {
+      text: "The same non-Scriptural Sedulius text already noted on this app's Visitation entry, reused here for January 1st; traditionally it is sung to the same melody as the Epiphany Introit \"Ecce advenit\" (also in this app), pairing two texts about a newborn King's universal rule. A modern polyphonic setting was published by the contemporary composer Robert Hugill.",
+      source: "Liturgia Latina blog, \"Our Lady on Saturday\"; CPDL ChoralWiki, \"Salve, sancta parens (Robert Hugill).\"",
+    },
   },
 
   /* ---- Lent ------------------------------------------------------------ */
@@ -227,65 +455,119 @@ window.INTROITS = {
     latin: "Invocábit me, et ego exáudiam eum : erípiam eum, et glorificábo eum : longitúdine diérum adimplébo eum.",
     translation: "He shall call upon me, and I will hear him: I will deliver him, and I will glorify him: I will fill him with length of days.",
     mode: "Introit · 1st Sunday of Lent · Mode VIII",
+    reference: "Ps. 91:15, 16",
     gabc: "(c3) IN(e[ll:1]d~)vo(e)cá(e!hgh)bit(fd~) me,(e.) *(,) et(fde) e(ef/hg)go(h) ex(h)áu(hhh)di(fe)am(e.f!gwh) e(hfge)um :(e.) (:) e(fde)rí(ehh)pi(f)am(fdf) e(fgFE'f)um,(fe..) (;) et(ef~) glo(e)ri(ef/hg)fi(g)cá(gi/jhhf)bo(h_g) e(hghf)um :(f.) (:) lon(hg~)gi(h)tú(i)di(h)ne(hhh) di(f)é(fgFE'f)rum(fe..) (;) ad(ef'g)im(gf~)plé(fgE'C)bo(c!e'f) e(fgFE'f)um.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #327)"
+    source: "Graduale Romanum (GregoBase #327)",
+    fullGabc: "(c3) IN(e[ll:1]d~)vo(e)cá(e!hgh)bit(fd~) me,(e.) *(,) et(fde) e(ef/hg)go(h) ex(h)áu(hhh)di(fe)am(e.f!gwh) e(hfge)um :(e.) (:) e(fde)rí(ehh)pi(f)am(fdf) e(fgFE'f)um,(fe..) (;) et(ef~) glo(e)ri(ef/hg)fi(g)cá(gi/jhhf)bo(h_g) e(hghf)um :(f.) (:) lon(hg~)gi(h)tú(i)di(h)ne(hhh) di(f)é(fgFE'f)rum(fe..) (;) ad(ef'g)im(gf~)plé(fgE'C)bo(c!e'f) e(fgFE'f)um.(fe..) (::) Ps. Qui(e) há(fe)bi(eh)tat(h) in(h) ad(h)ju(h)tó(h)ri(hg)o(hi) Al(i)tís(hi)si(h)mi,(h.) *(:) in(hf~) pro(fh)te(h)cti(h)ó(h)ne(h) De(h)i(h) cae(h)li(hhg) com(ef)mo(hg)rá(f)bi(f)tur.(e.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h) u(hhg) o(ef) u(hg) a(f) e.(e.) (::)",
+    verse: { latin: "Qui hábitat in adjutório Altíssimi, in protectióne Dei caeli commorábitur.", translation: "The praise of a canticle for David. He that dwelleth in the aid of the most High, shall abide under the protection of the God of Jacob.", gloriaPatri: true },
+    blurb: {
+      text: "Giovanni Matteo Asola (Giammateo Asola, c. 1532-1609), a prolific late-Renaissance Italian composer of liturgical music, set this text for four voices (ATTB); a modern edition of his introit settings was published by Donemus in 2020.",
+      source: "CPDL ChoralWiki, \"Invocabit me (Giovanni Matteo Asola)\"; Donemus, Asola introit-cycle edition (2020).",
+    },
   },
   "lent-2": {
     title: "Tibi dixit cor meum",
     latin: "Tibi dixit cor meum, quaesívi vultum tuum, vultum tuum Dómine requíram : ne avértas fáciem tuam a me.",
     translation: "My heart has said to you: I have sought your face; your face, O Lord, will I seek: turn not your face away from me.",
     mode: "Introit · 2nd Sunday of Lent · Mode III",
+    reference: "Ps. 27:8-9",
     gabc: "(c4) TI(gj)bi(j) di(j)xit(jjj//jv.jjj) ()* cor(hj~) me(jvIH)um,(h.) (;) quae(gh)sí(fg)vi(g) vul(g!jjh/jjj)tum(gh) tu(hkj)um,(jkjj'j) (:) vul(gj~)tum(j) tu(jvIH)um(h.) Dó(h)mi(g)ne(h) re(hi)quí(gh)ram :(gh/igh.) (;) ne(g) a(i)vér(gh~)tas(h) fá(h)ci(g)em(ef) tu(g)am(g.) a(ghG'FgvFE) me.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #751); the diocese's modern 2nd-Sunday-of-Lent introit (shared with the Transfiguration)."
+    source: "Graduale Romanum (GregoBase #751); the diocese's modern 2nd-Sunday-of-Lent introit (shared with the Transfiguration).",
+    fullGabc: "(c4) TI(gj)bi(j) di(j)xit(jjj//jv.jjj) ()* cor(hj~) me(jvIH)um,(h.) (;) quae(gh)sí(fg)vi(g) vul(g!jjh/jjj)tum(gh) tu(hkj)um,(jkjj'j) (:) vul(gj~)tum(j) tu(jvIH)um(h.) Dó(h)mi(g)ne(h) re(hi)quí(gh)ram :(gh/igh.) (;) ne(g) a(i)vér(gh~)tas(h) fá(h)ci(g)em(ef) tu(g)am(g.) a(ghG'FgvFE) me.(e.) (::) Ps. Dó(g)mi(hj)nus(j) il(j)lu(j)mi(j)ná(k)ti(j)o(j) me(ih)a,(jjj) *(:) et(ig~) sa(hj)lus(j) me(j)a :(jji) quem(hg~) ti(h')mé(i)bo?(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Dóminus illuminátio mea, et salus mea : quem timébo?.", translation: "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?", gloriaPatri: true },
+    blurb: {
+      text: "This Introit is a reform-era transplant: it is also the proper chant for the Feast of the Transfiguration (Aug. 6), reused here because the Second Sunday of Lent's Gospel reading is the Transfiguration story itself (Matt. 17:1-9). The older, pre-1969 Missal instead assigned this Sunday a different Introit, \"Reminiscere miserationum\" (Ps. 25, or Ps. 24 in the Vulgate numbering), so the Transfiguration text is a distinctly modern-rite pairing.",
+      source: "chantblog, \"The Introit for the Second Sunday in Lent: Tibi dixit cor meum.\"",
+    },
   },
   "lent-3": {
     title: "Oculi mei",
     latin: "Oculi mei semper ad Dóminum, quia ipse evéllet de láqueo pedes meos : réspice in me, et miserére mei, quóniam únicus et pauper sum ego.",
     translation: "My eyes are ever toward the Lord: for he shall pluck my feet out of the snare: look upon me, and have mercy on me, for I am alone and poor.",
     mode: "Introit · 3rd Sunday of Lent · Mode VII",
+    reference: "Ps. 25:15-16",
     gabc: "(c3) O(ei)cu(i)li(i) me(i)i(i) *(,) sem(i_j_i_2/j_hhi)per(g_[oh:h]f) ad(h) Dó(hgh)mi(fe)num,(e./fhe/fee[ll:1]d.0) (;) qui(d)a(f) i(hi)pse(i) e(h)vél(i!kjk)let(ji__) (,) de(i) lá(iji)que(h)o(hf) pe(h)des(ij) me(j_h/jiigh)os :(hg..) (:) ré(i)spi(hjh/ij)ce(i) in(hi) me,(hihh/efe.___) (;) et(ef~) mi(ef)se(e)ré(d.0f!gwh)re(h) me(hhhf/heede)i,(e[ll:1]d..) (:) quó(f)ni(hhf)am(g_[oh:h]f) ú(h)ni(hhh)cus(fhe/fee[ll:1]d.0) (;) et(fd~) pau(ef!hhhffe~)per(fgE'D) sum(f!gwh) e(efe___)go.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #916)"
+    source: "Graduale Romanum (GregoBase #916)",
+    fullGabc: "(c3) O(ei)cu(i)li(i) me(i)i(i) *(,) sem(i_j_i_2/j_hhi)per(g_[oh:h]f) ad(h) Dó(hgh)mi(fe)num,(e./fhe/fee[ll:1]d.0) (;) qui(d)a(f) i(hi)pse(i) e(h)vél(i!kjk)let(ji__) (,) de(i) lá(iji)que(h)o(hf) pe(h)des(ij) me(j_h/jiigh)os :(hg..) (:) ré(i)spi(hjh/ij)ce(i) in(hi) me,(hihh/efe.___) (;) et(ef~) mi(ef)se(e)ré(d.0f!gwh)re(h) me(hhhf/heede)i,(e[ll:1]d..) (:) quó(f)ni(hhf)am(g_[oh:h]f) ú(h)ni(hhh)cus(fhe/fee[ll:1]d.0) (;) et(fd~) pau(ef!hhhffe~)per(fgE'D) sum(f!gwh) e(efe___)go.(e.) (::) Ps. Ad(ehg) te(hi) Dó(i)mi(i)ne(i) le(i)vá(i)vi(i) á(ik)ni(j)mam(j) me(ji)am :(ij..) *(:) De(ig)us(hi) me(i)us,(i) in(i) te(i) con(i)fí(i)do,(i.) (,) non(i!jwk) e(i')ru(h)bé(hhh)scam.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Ad te Dómine levávi ánimam meam : Deus meus, in te confído, non erubéscam.", translation: "Unto the end, a psalm for David. To thee, O Lord, have I lifted up my soul. In thee, O my God, I put my trust; let me not be ashamed.", gloriaPatri: true },
+    blurb: {
+      text: "Orlande de Lassus set this text for six voices in Cantica sacra sex et octo vocibus (Munich, 1585), later reprinted in his posthumous collected edition Magnum opus musicum (1604), one of the towering figures of the late Renaissance turning to a text most listeners today know only as this Sunday's chant.",
+      source: "CPDL ChoralWiki, \"Oculi mei semper ad Dominum (Orlando di Lasso)\"; IMSLP, \"Oculi mei semper ad Dominum, LV 837 (Lassus, Orlande de).\"",
+    },
   },
   "laetare": {
     title: "Laetare Jerusalem",
     latin: "Laetáre Jerúsalem: et convéntum fácite omnes qui dilígitis eam: gaudéte cum laetítia, qui in tristítia fuístis: ut exsultétis, et satiémini ab ubéribus consolatiónis vestrae.",
     translation: "Rejoice, O Jerusalem: and come together all you that love her: rejoice with joy, you that have been in sorrow: that you may exult, and be filled from the breasts of your consolation.",
     mode: "Introit · 4th Sunday of Lent (Laetare) · Mode V",
+    reference: "Is. 66:10, 11",
     gabc: "(c3) LAE(d)TÁ(gxdgef)RE(ed) *() Je(d)rú(e)sa(f)lem:(hh) (;) et(h) con(hf~)vén(hji)tum(hg) fá(hji)ci(hg)te(hhh/fgf) (;) o(f)mnes(hiHFfd) qui(gxg) di(gxg)lí(g)gi(egf)tis(ggvFEfw!gvFE) e(de!fvEDe)am:(ed) (:) gau(fh~)dé(h)te(f) cum(hgh) lae(e)tí(gxfgf)ti(ded)a,(d) (;) qui(d) in(e) tri(gxg)stí(f/ghf)ti(fe!fwgfg)a(gf) (,) fu(f!hhivHGF)í(gxfe!fwgfg)stis:(gf) (:) ut(f) ex(fe)sul(h)té(hji)tis,(ih) (,) et(hhh) sa(e)ti(g)é(gi/jij)mi(hiHGFg)ni(gf) (;) ab(d) u(gxeg)bé(ffg)ri(e)bus(hh) (,) con(d)so(ef)la(f)ti(h)ó(hiHEf)nis(gxfhFEfw!gvFE) ves(de!fvEDe)trae.(ed) (::)",
     abc: "F F _b G a G F F G a c c | c c a c e d c b c e d c b c c c a b a | a c d c a a F _b _b _b G _b a _b _b a G a _b a G F G a G F G G F | a c c a c b c G a _b a F G F F | F G _b a _b c a a G a _b a _b _b a a c c d c b a a G a _b a _b _b a | a a G c c e d d c c c c G b b d e d e c d c b a b b a | F G _b a a _b G c c F G a a c c d c G a a c a G a _b a G F G a G F G G F |]",
-    source: "Graduale Romanum (GregoBase #1581)"
+    source: "Graduale Romanum (GregoBase #1581)",
+    fullGabc: "(c3) LAE(d)TÁ(gxdgef)RE(ed) *() Je(d)rú(e)sa(f)lem:(hh) (;) et(h) con(hf~)vén(hji)tum(hg) fá(hji)ci(hg)te(hhh/fgf) (;) o(f)mnes(hiHFfd) qui(gxg) di(gxg)lí(g)gi(egf)tis(ggvFEfw!gvFE) e(de!fvEDe)am:(ed) (:) gau(fh~)dé(h)te(f) cum(hgh) lae(e)tí(gxfgf)ti(ded)a,(d) (;) qui(d) in(e) tri(gxg)stí(f/ghf)ti(fe!fwgfg)a(gf) (,) fu(f!hhivHGF)í(gxfe!fwgfg)stis:(gf) (:) ut(f) ex(fe)sul(h)té(hji)tis,(ih) (,) et(hhh) sa(e)ti(g)é(gi/jij)mi(hiHGFg)ni(gf) (;) ab(d) u(gxeg)bé(ffg)ri(e)bus(hh) (,) con(d)so(ef)la(f)ti(h)ó(hiHEf)nis(gxfhFEfw!gvFE) ves(de!fvEDe)trae.(ed) Ps.(::) Lae(d)tá(f)tus(h) sum(h) in(h) his(h) quae(h) di(h)cta(h) sunt(i) mi(i)hi:(h) *(:) in(f) do(h)mum(h) Dó(i)mi(g)ni(g) í(h)bi(f)mus.(f) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(fefvEDe) (::)",
+    verse: { latin: "Laetátus sum in his quae dicta sunt mihi: in domum Dómini íbimus.", translation: "A gradual canticle.", gloriaPatri: true },
+    blurb: {
+      text: "Laetare Sunday takes its name from this Introit, and it is also traditionally called Dominica de Rosa. Lent's rose vestments and relaxed penance belong to this one day. Popes historically blessed the Golden Rose, a gift for a Catholic sovereign, at Rome's station church of Santa Croce in Gerusalemme on this day.",
+      source: "Liturgical Arts Journal, \"The Tradition of the Rosa d'Oro (Golden Rose) of Laetare Sunday\"; Catholic Encyclopedia, \"Laetare Sunday.\"",
+    },
   },
   "lent-5": {
     title: "Judica me",
     latin: "Judica me Deus, et discérne causam meam de gente non sancta : ab hómine iníquo et dolóso éripe me : quia tu es Deus meus, et fortitúdo mea.",
     translation: "Do me justice, O God, and distinguish my cause from the nation that is not holy: deliver me from the unjust and deceitful man: for you are my God and my strength.",
     mode: "Introit · 5th Sunday of Lent (Passion Sunday) · Mode IV",
+    reference: "Ps. 43:1-2",
     gabc: "(c4) JU(egf)di(f)ca(ef'g) me(g) * De(ixgiH'G)us,(gf..) (;) et(f) dis(fffd)cér(fg~)ne(g) cau(jj)sam(h_g) me(gh/ji)am(ih) (,) de(jj) gen(hi~)te(g_[oh:h]f) non(ef'g) san(egff)cta :(fe..) (:) ab(fgf) hó(e!fwg'!hv)mi(g)ne(g) in(g)í(ixhg/hig)quo(gf..) (,) et(hj) do(j)ló(ji/jhi)so(g.) (,) é(ii)ri(h)pe(h!iwj/kjj) me :(ji..) (:) qui(gh)a(h) tu(h.0/[-0.5]ijh) es(h.) De(giH'G)us(gh) me(ff//efd)us,(e[ll:1]d..) (;) et(fd~) for(ef)ti(g)tú(ixg./hig)do(g_[oh:h]fhvGF'g) me(egff)a.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #78)"
+    source: "Graduale Romanum (GregoBase #78)",
+    fullGabc: "(c4) JU(egf)di(f)ca(ef'g) me(g) * De(ixgiH'G)us,(gf..) (;) et(f) dis(fffd)cér(fg~)ne(g) cau(jj)sam(h_g) me(gh/ji)am(ih) (,) de(jj) gen(hi~)te(g_[oh:h]f) non(ef'g) san(egff)cta :(fe..) (:) ab(fgf) hó(e!fwg'!hv)mi(g)ne(g) in(g)í(ixhg/hig)quo(gf..) (,) et(hj) do(j)ló(ji/jhi)so(g.) (,) é(ii)ri(h)pe(h!iwj/kjj) me :(ji..) (:) qui(gh)a(h) tu(h.0/[-0.5]ijh) es(h.) De(giH'G)us(gh) me(ff//efd)us,(e[ll:1]d..) (;) et(fd~) for(ef)ti(g)tú(ixg./hig)do(g_[oh:h]fhvGF'g) me(egff)a.(fe..) (::) Ps. E(hg)mít(gh)te(h) lu(h)cem(h) tu(h)am,(h) et(h) ve(h)ri(hg)tá(gi)tem(i) tu(hi)am :(h.) *(:) i(hg)psa(gh) me(h) de(h)du(h)xé(h)runt,(h.) (,) et(h) ad(h)du(h)xé(h)runt(h) in(h) mon(h)tem(h) san(h)ctum(h) tu(h)um,(h.) (,) et(h) in(h) ta(h)ber(h)ná(h)cu(gf)la(gh) tu(g)a.(e.) (::) Jú(egf)di(f)ca.(ef'g) (::)",
+    verse: { latin: "Emítte lucem tuam, et veritátem tuam : ipsa me deduxérunt, et adduxérunt in montem sanctum tuum, et in tabernácula tua.", translation: "Sent forth thy light and thy truth: they have conducted me, and brought me unto thy holy hill, and into thy tabernacles.", gloriaPatri: false },
+    blurb: {
+      text: "The older name for this Sunday, Judica Sunday, comes straight from the opening word of this Introit, Judica. The same naming pattern appears elsewhere in this app's calendar, in Laetare and Gaudete. That particular name was retired for this Sunday when the 1969 reform moved the name Passion Sunday to Palm Sunday instead. Heinrich Isaac set the text for four voices in his Choralis Constantinus, printed in Nuremberg in 1550.",
+      source: "chantblog, \"The Introit for the Fifth Sunday in Lent: Judica Me ('Vindicate Me')\"; CPDL ChoralWiki, \"Judica me, Deus (Introit) (Heinrich Isaac).\"",
+    },
   },
   "palm": {
     title: "Domine ne longe",
     latin: "Domine, ne longe fácias auxílium tuum a me, ad defensiónem meam áspice : líbera me de ore leónis, et a córnibus unicornuórum humilitátem meam.",
     translation: "O Lord, remove not your help to a distance from me; look toward my defense: save me from the lion's mouth, and my lowness from the horns of the unicorns.",
     mode: "Introit · Palm Sunday of the Passion of the Lord · Mode VIII",
+    reference: "Ps. 22:20, 22",
     gabc: "(c4) DO(d!f'g~)mi(g)ne,(ghg.___) *(,) ne(cd) lon(fg~)ge(g) fá(g)ci(ghg___)as(g.) (;) au(gh~)xí(h)li(hfhg)um(g) tu(gjjh)um(h) a(h.f!gwhgh) me,(hg..) (:) ad(ghg) de(gd)fen(g)si(hj)ó(ij)nem(j) me(j_i)am(jjj/h_[oh:h]i_[oh:h]h._[oh:h]) (,) á(kl)spi(j_i)ce :(jj) (:) lí(jj)be(j_i)ra(j_h) me(h!jjjhhg.) (,) de(gh) o(h.f!gwhgh)re(h_g) le(h)ó(hjI'H)nis,(ghGF.) (;) et(f) a(gh) cór(h)ni(h.f!gwhgh)bus(h_g) u(ghg)ni(gf)cor(gh~)nu(g)ó(gjj)rum(h_i) (,) hu(gf)mi(g)li(hj)tá(iij)tem(hjjvIH'iw!jvIH) me(gh!ivHG'h)am.(hg..) (::)",
-    source: "Graduale Romanum (GregoBase #1171)"
+    source: "Graduale Romanum (GregoBase #1171)",
+    fullGabc: "(c4) DO(d!f'g~)mi(g)ne,(ghg.___) *(,) ne(cd) lon(fg~)ge(g) fá(g)ci(ghg___)as(g.) (;) au(gh~)xí(h)li(hfhg)um(g) tu(gjjh)um(h) a(h.f!gwhgh) me,(hg..) (:) ad(ghg) de(gd)fen(g)si(hj)ó(ij)nem(j) me(j_i)am(jjj/h_[oh:h]i_[oh:h]h._[oh:h]) (,) á(kl)spi(j_i)ce :(jj) (:) lí(jj)be(j_i)ra(j_h) me(h!jjjhhg.) (,) de(gh) o(h.f!gwhgh)re(h_g) le(h)ó(hjI'H)nis,(ghGF.) (;) et(f) a(gh) cór(h)ni(h.f!gwhgh)bus(h_g) u(ghg)ni(gf)cor(gh~)nu(g)ó(gjj)rum(h_i) (,) hu(gf)mi(g)li(hj)tá(iij)tem(hjjvIH'iw!jvIH) me(gh!ivHG'h)am.(hg..) (::) Ps. De(g)us,(hg) De(gj)us(j) me(j)us,(j) ré(ji)spi(jk)ce(k) in(jk) me,(j.) *(:) qua(jh)re(hj) me(j) de(j)re(j)li(j)quí(j)sti?(j.) (,) lon(j)ge(j) a(j) sa(j)lú(j)te(j) me(j)a(j) (,) ver(j)ba(j) de(j)li(j)ctó(jji)rum(gh) me(ji)ó(h)rum.(ghd___/ffg.) (::) ()Repetitur : Dómine, ne longe.()",
+    verse: { latin: "Deus, Deus meus, réspice in me, quare me dereliquísti? longe a salúte mea verba delictórum meórum.", translation: "O God my God, look upon me: why hast thou forsaken me? Far from my salvation are the words of my sins.", gloriaPatri: false },
+    blurb: {
+      text: "Drawn from the same Psalm 22 (21 in the Vulgate numbering) that supplies Palm Sunday's Tract, \"Deus, Deus meus,\" the psalm Christ himself quotes from the Cross, this Introit was already the Mass's opening chant long before Pius XII's 1955 Holy Week reform added the Palm-blessing procession and its own antiphon, \"Hosanna filio David,\" in front of it. Voiced as if in Christ's own words, its plea for rescue from \"the lion's mouth\" completes the day's turn from the procession's triumph into the Passion narrative that follows.",
+      source: "Chant Café, \"The Changing Moods in the Chants for Palm Sunday\"; New Liturgical Movement, coverage of the 1955 Holy Week reform.",
+    },
   },
   "misereris": {
     title: "Misereris omnium",
     latin: "Miseréris ómnium, Dómine, et nihil odísti eórum quae fecísti, dissímulans peccáta hóminum propter paeniténtiam, et parcens illis : quia tu es Dóminus Deus noster.",
     translation: "You have mercy upon all, O Lord, and hate none of the things which you have made, overlooking the sins of men for the sake of repentance, and sparing them: for you are the Lord our God.",
     mode: "Introit · Ash Wednesday · Mode I",
+    reference: "Wis. 11:24, 25, 27",
     gabc: "(c4) MI(f)se(ghg')ré(h)ris(g') * ó(fg'h)mni(h)um,(h) Dó(gfg)mi(f)ne,(f.d!ewf.) (;) et(f) ni(f!gwhgh)hil(g_[oh:h]f) o(f)dí(fg)sti(gff) (`) e(d)ó(d_c/d!ewff)rum(e_[oh:h][ll:1]d) quae(dg) fe(fgff)cí(d_[oh:h]e_[oh:h]d_[oh:h])sti,(d.) (:) dis(d)sí(f)mu(fg)lans(ghg) pec(gd)cá(fg)ta(h) hó(ixgiHG')mi(hggfg)num(gf..) (;) pro(fg)pter(gh) pae(h!iwj)ni(ki/j_i)tén(h)ti(hi!jvIH'i)am,(ih..) (:) et(f@h!gh~) par(h_fh)cens(hvGF'f) il(h_g/hfg)lis :(d/ffdf.) (:) qui(c)a(d) tu(dgffvEC//d!ew!fvED'e) es(e[ll:1]d..) (;) Dó(dgf/gh)mi(g)nus(gh) De(hv.fhghvF'ED)us(d!ewf/ge/f_e) no(de!fvED'e)ster.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #533); same chant as the 31st Sunday in Ordinary Time, Year C."
+    source: "Graduale Romanum (GregoBase #533); same chant as the 31st Sunday in Ordinary Time, Year C.",
+    fullGabc: "(c4) MI(f)se(ghg')ré(h)ris(g') * ó(fg'h)mni(h)um,(h) Dó(gfg)mi(f)ne,(f.d!ewf.) (;) et(f) ni(f!gwhgh)hil(g_[oh:h]f) o(f)dí(fg)sti(gff) (`) e(d)ó(d_c/d!ewff)rum(e_[oh:h][ll:1]d) quae(dg) fe(fgff)cí(d_[oh:h]e_[oh:h]d_[oh:h])sti,(d.) (:) dis(d)sí(f)mu(fg)lans(ghg) pec(gd)cá(fg)ta(h) hó(ixgiHG')mi(hggfg)num(gf..) (;) pro(fg)pter(gh) pae(h!iwj)ni(ki/j_i)tén(h)ti(hi!jvIH'i)am,(ih..) (:) et(f@h!gh~) par(h_fh)cens(hvGF'f) il(h_g/hfg)lis :(d/ffdf.) (:) qui(c)a(d) tu(dgffvEC//d!ew!fvED'e) es(e[ll:1]d..) (;) Dó(dgf/gh)mi(g)nus(gh) De(hv.fhghvF'ED)us(d!ewf/ge/f_e) no(de!fvED'e)ster.(e[ll:1]d..) (::) Ps. Mi(f)se(gh)ré(h)re(h) me(h)i(h) De(h)us,(h.) mi(h)se(h)ré(hj)re(h) me(hg)i :(gh..) *(:) quó(gf)ni(gh)am(h) in(h) te(h) con(h)fí(h)dit(h) á(hjh)ni(g')ma(f) me(fff)a.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Miserére mei Deus, miserére mei : quóniam in te confídit ánima mea.", translation: "Have mercy on me, O God, have mercy on me: for my soul trusteth in thee. And in the shadow of thy wings will I hope, until iniquity pass away.", gloriaPatri: true },
+    blurb: {
+      text: "The Neapolitan composer Leonardo Leo set the full sequence of Ash Wednesday's Mass propers, Introit, Gradual, and Tract, in a polyphonic Misereris omnium written for the Royal Chapel in Naples in 1744, the year of his death.",
+      source: "Cantata Editions, \"Leo: Misereris omnium Dominum.\"",
+    },
   },
   "nos-autem": {
     title: "Nos autem gloriari",
     latin: "Nos autem gloriári opórtet in Cruce Dómini nostri Jesu Christi.",
     translation: "But it behooves us to glory in the Cross of our Lord Jesus Christ.",
     mode: "Introit · Holy Thursday (Mass of the Lord's Supper) · Mode VII",
+    reference: "Gal. 6:14",
     gabc: "(c3) NOS(ig/ij) au(i_[uh:l]j)tem(i'_[oh:h]) *(,) glo(i)ri(g')á(h)ri(f') o(g)pór(ff)tet(e.) (;) in(e) Cru(h')ce(h) Dó(h')mi(h)ni(f') no(h)stri(gv_[oh:h]FE) Je(fg)su(f) Chri(e.)sti.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #2945)"
+    source: "Graduale Romanum (GregoBase #2945)",
+    blurb: {
+      text: "Nos autem gloriári is shared with the Introit for the Exaltation of the Holy Cross, set there by Heinrich Isaac. For Holy Thursday itself it was set as a four-voice motet by Palestrina, first published in 1564 in his Motecta festorum totius anni liber primus, and again separately by Felice Anerio.",
+      source: "CPDL ChoralWiki, \"Nos autem gloriari (Giovanni Pierluigi da Palestrina)\"; CPDL ChoralWiki, \"Nos autem gloriari (Felice Anerio).\"",
+    },
   },
 
   /* ---- Easter / Pentecost --------------------------------------------- */
@@ -294,82 +576,152 @@ window.INTROITS = {
     latin: "Resurréxi, et adhuc tecum sum, allelúia: posuísti super me manum tuam, allelúia: mirábilis facta est sciéntia tua, allelúia, allelúia.",
     translation: "I arose, and am still with you, alleluia: you have laid your hand upon me, alleluia: your knowledge is become wonderful, alleluia, alleluia.",
     mode: "Introit · Easter Sunday of the Resurrection · Mode IV",
+    reference: "Ps. 139:18, 5-6",
     gabc: "(c4) RE(d)SUR(dfd)RÉ(f)XI,(fff/ded.) *(;) et(fe) ad(fg)huc(g) te(g)cum(f) sum,(ef/gfg.) (,) al(gv.!fff)le(dfe)lú(egff){ia} :(fe..) (:) po(fgf)su(ff)í(f!gwh)sti(ghg) su(gv.!fff)per(d!ewf/gf) me(f.) (,) ma(fff)num(d!ewf) tu(fgF'E)am,(f.) (;) al(fff)le(dfe)lú(fgff){ia} :(d//ffdf.) (:) mi(c)rá(cd/fef)bi(f)lis(f) fa(fffg)cta(deDC'd) est(dc..) (,) sci(e!fwg)én(ghg)ti(f)a(fff) tu(gfhg)a,(g.) (;) al(gf~)le(e/f'g)lú(gf~){ia},(e/fgfg.) (,) al(gv.!fff)le(dfe)lú(egff){ia}.(fe..) (::)",
     abc: "D D F D F F F F D E D | F E F G G G F E F G F G G F F F D F E E G F F F E | F G F F F F G a G a G G F F F D E F G F F F F F D E F F G F E F | F F F D F E F G F F D F F D F | C C D F E F F F F F F G D E D C D D C E F G G a G F F F F G F a G G | G F E F G G F E F G F G G F F F D F E E G F F F E |]",
-    source: "Graduale Romanum (GregoBase #1043)"
+    source: "Graduale Romanum (GregoBase #1043)",
+    fullGabc: "(c4) RE(d)SUR(dfd)RÉ(f)XI,(fff/ded.) *(;) et(fe) ad(fg)huc(g) te(g)cum(f) sum,(ef/gfg.) (,) al(gv.!fff)le(dfe)lú(egff){ia} :(fe..) (:) po(fgf)su(ff)í(f!gwh)sti(ghg) su(gv.!fff)per(d!ewf/gf) me(f.) (,) ma(fff)num(d!ewf) tu(fgF'E)am,(f.) (;) al(fff)le(dfe)lú(fgff){ia} :(d//ffdf.) (:) mi(c)rá(cd/fef)bi(f)lis(f) fa(fffg)cta(deDC'd) est(dc..) (,) sci(e!fwg)én(ghg)ti(f)a(fff) tu(gfhg)a,(g.) (;) al(gf~)le(e/f'g)lú(gf~){ia},(e/fgfg.) (,) al(gv.!fff)le(dfe)lú(egff){ia}.(fe..) (::) Ps. Dó(hg)mi(gh)ne(h) pro(h)bá(h)sti(h) me,(h) et(hg) co(gi)gno(i)ví(hi)sti(h) me :(h.) *(:) tu(hg) co(gh)gno(h)ví(h)sti(h) ses(h)si(h)ó(h)nem(h) me(h)am,(h.) (,) et(h) re(h)sur(h)re(h)cti(h)ó(gf)nem(gh) me(g)am.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(egff) (::)",
+    verse: { latin: "Dómine probásti me, et cognovísti me : tu cognovísti sessiónem meam, et resurrectiónem meam.", translation: "Unto the end, a psalm of David. Lord, thou hast proved me, and known me: Thou hast known my sitting down, and my rising up.", gloriaPatri: true },
+    blurb: {
+      text: "The Church's Easter Sunday Mass has opened with this Introit since at least the 11th or 12th century, when it appears in some of the earliest surviving chant manuscripts to use precise pitch notation. The English composer Thomas Preston set it alternatim, its organ verses answering the choir's plainsong, and Heinrich Isaac wove it into the Easter Mass of his great cycle, the Choralis Constantinus.",
+      source: "chantblog, “The Introit for Easter Day: Resurrexi Et Adhuc”; Choralis Constantinus contents, Center for the History of Music Theory and Literature, Indiana University."
+    }
   },
   "easter-2": {
     title: "Quasi modo",
     latin: "Quasi modo géniti infántes, allelúia : rationábiles, sine dolo lac concupíscite, allelúia, allelúia, allelúia.",
     translation: "As newborn infants, alleluia: desire the rational milk without guile, alleluia, alleluia, alleluia.",
     mode: "Introit · 2nd Sunday of Easter (Divine Mercy) · Mode VI",
+    reference: "1 Pet. 2:2",
     gabc: "(c4) QU{a}(c)si(d) mo(d)do(d) *() gé(d!fffg)ni(f)ti(f) in(f)fán(f)tes,(c.) (,) al(f)le(gef)lú(fhG~'F~){ia} :(f.) (:) ra(fd)ti(f)o(g)ná(ixgih)bi(gf)les,(f.) (,) si(f)ne(ef'g) do(gf)lo(fgff/ded.) (,) lac(d!f'g) con(gh~)cu(f)pí(fgf)sci(d)te,(dcd.) (;) al(c)le(ff)lú(fhG~'F~){ia},(f.) (,) al(df~)le(f_e)lú(fgf){ia},(fffddc.) (,) al(d)le(ff)lú(fhG~'F~){ia}.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #25)"
+    source: "Graduale Romanum (GregoBase #25)",
+    fullGabc: "(c4) QU{a}(c)si(d) mo(d)do(d) *() gé(d!fffg)ni(f)ti(f) in(f)fán(f)tes,(c.) (,) al(f)le(gef)lú(fhG~'F~){ia} :(f.) (:) ra(fd)ti(f)o(g)ná(ixgih)bi(gf)les,(f.) (,) si(f)ne(ef'g) do(gf)lo(fgff/ded.) (,) lac(d!f'g) con(gh~)cu(f)pí(fgf)sci(d)te,(dcd.) (;) al(c)le(ff)lú(fhG~'F~){ia},(f.) (,) al(df~)le(f_e)lú(fgf){ia},(fffddc.) (,) al(d)le(ff)lú(fhG~'F~){ia}.(f.) (::) Ps. Ex(fg)sul(gf)tá(gh)te(h) De(h)o(h) ad(h)ju(g)tó(ixi)ri(h) no(g)stro :(f.) *(:) ju(f)bi(f)lá(f')te(g) De(fd)o(f') Ja(g)cob.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f'/ghg.) (::)",
+    verse: { latin: "Exsultáte Deo adjutóri nostro : jubiláte Deo Jacob.", translation: "Rejoice to God our helper: sing aloud to the God of Jacob.", gloriaPatri: true },
+    blurb: {
+      text: "Quasi modo géniti infántes opens with words that gave the world a famous name: in Victor Hugo's The Hunchback of Notre-Dame, the foundling abandoned on the cathedral steps is discovered on this Sunday and christened for it, Quasimodo.",
+      source: "wordhistories.net, \"the liturgical origin of 'Quasimodo'\"; Wikipedia, \"Quasimodo.\"",
+    },
   },
   "easter-3": {
     title: "Jubilate Deo",
     latin: "Jubiláte Deo omnis terra, allelúia : psalmum dícite nómini ejus, allelúia : date glóriam laudi ejus, allelúia, allelúia, allelúia.",
     translation: "Shout with joy to God, all the earth, alleluia: sing a psalm to his name, alleluia: give glory to his praise, alleluia, alleluia, alleluia.",
     mode: "Introit · 3rd Sunday of Easter · Mode VIII",
+    reference: "Ps. 66:1-2",
     gabc: "(c4) JU(g)bi(g)lá(hjg)te(f) De(gh)o(h.) *(,) o(jj)mnis(g) ter(h)ra,(g.) (,) al(h)le(g)lú(ghg___){ia} :(g.) (:) psal(gj~)mum(jv.jjj_h) dí(h!iwj)ci(h_g)te(g_[oh:h]f) nó(h!iwj)mi(hvGF')ni(h) e(hi~)jus,(g.) (;) al(gj~)le(jv.jjj_h)lú(hjI~'H~){ia} :(h.) (:) da(iij)te(ghG'F) gló(h!iwj)ri(h)am(fg~) lau(g_[oh:h]f~)di(hfhg) e(ghg___)jus,(g.) (:) al(g)le(g)lú(fef){ia},(d/ffdf.) (,) al(cd)le(fg)lú(gh~){ia},(hgh.) (,) al(h!iwj)le(jv.ijH'G)lú(ghg___){ia}.(g.) (::)",
-    source: "Graduale Romanum (GregoBase #536)"
+    source: "Graduale Romanum (GregoBase #536)",
+    fullGabc: "(c4) JU(g)bi(g)lá(hjg)te(f) De(gh)o(h.) *(,) o(jj)mnis(g) ter(h)ra,(g.) (,) al(h)le(g)lú(ghg___){ia} :(g.) (:) psal(gj~)mum(jv.jjj_h) dí(h!iwj)ci(h_g)te(g_[oh:h]f) nó(h!iwj)mi(hvGF')ni(h) e(hi~)jus,(g.) (;) al(gj~)le(jv.jjj_h)lú(hjI~'H~){ia} :(h.) (:) da(iij)te(ghG'F) gló(h!iwj)ri(h)am(fg~) lau(g_[oh:h]f~)di(hfhg) e(ghg___)jus,(g.) (:) al(g)le(g)lú(fef){ia},(d/ffdf.) (,) al(cd)le(fg)lú(gh~){ia},(hgh.) (,) al(h!iwj)le(jv.ijH'G)lú(ghg___){ia}.(g.) (::) Ps. Dí(g)ci(hg)te(gj) De(j)o,(j.) (,) quam(j) ter(j)ri(j)bí(j)li(j)a(j) sunt(j) ó(j)pe(j)ra(ji) tu(jk)a,(k) Dó(jk)mi(j)ne!(j.) *(:) in(jh~) mul(hj)ti(j)tú(j)di(j)ne(j) vir(j)tú(j)tis(j) tu(j)ae(j.) (,) men(j)ti(j)én(j)tur(j) ti(j)bi(j) in(j)i(jji)mí(gh)ci(ji) tu(h)i.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) E(j) u(jji) o(gh) u(ji) a(h) e.(g.) (::)",
+    verse: { latin: "Dícite Deo, quam terribília sunt ópera tua, Dómine! in multitúdine virtútis tuae mentiéntur tibi inimíci tui.", translation: "Say unto God, How terrible are thy works, O Lord! in the multitude of thy strength thy enemies shall lie to thee.", gloriaPatri: true },
+    blurb: {
+      text: "Like this app's own Laetare and Gaudete entries, this Sunday takes its traditional name, \"Jubilate Sunday,\" straight from the opening word of its Introit, one of a whole family of Sundays across the Church year named this way.",
+      source: "Catholic Encyclopedia, \"Jubilate Sunday\" (newadvent.org).",
+    },
   },
   "easter-4": {
     title: "Misericordia Domini",
     latin: "Misericórdia Dómini plena est terra, allelúia : verbo Dei caeli firmáti sunt, allelúia, allelúia.",
     translation: "The mercy of the Lord fills the earth, alleluia: by the word of the Lord the heavens were established, alleluia, alleluia.",
     mode: "Introit · 4th Sunday of Easter · Mode IV",
+    reference: "Ps. 33:5-6",
     gabc: "(c4) MI(d)se(fe)ri(f)cór(ef~)di(f)a(f) *() Dó(ef/gf)mi(fff)ni(e[ll:1]d..) (,) ple(f)na(fff) est(fd) ter(fg~)ra,(f.) (,) al(gf~)le(f)lú(fhG~'F~){ia} :(fgff) (:) ver(dg~)bo(g) De(gdgvFE'f)i(e.) (,) cae(fffd)li(fe) fir(fg~)má(gh)ti(fvED) sunt,(d.) (;) al(f)le(fh/jh)lú(ghg){ia},(e.) (,) al(g)le(ixg./hiG'FhvGF'g)lú(egff){ia}.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #135)"
+    source: "Graduale Romanum (GregoBase #135)",
+    fullGabc: "(c4) MI(d)se(fe)ri(f)cór(ef~)di(f)a(f) *() Dó(ef/gf)mi(fff)ni(e[ll:1]d..) (,) ple(f)na(fff) est(fd) ter(fg~)ra,(f.) (,) al(gf~)le(f)lú(fhG~'F~){ia} :(fgff) (:) ver(dg~)bo(g) De(gdgvFE'f)i(e.) (,) cae(fffd)li(fe) fir(fg~)má(gh)ti(fvED) sunt,(d.) (;) al(f)le(fh/jh)lú(ghg){ia},(e.) (,) al(g)le(ixg./hiG'FhvGF'g)lú(egff){ia}.(fe..) (::) Ps. Ex(hg)sul(gh)tá(h)te(h) ju(hg)sti(gi) in(i) Dó(hi)mi(h)no :(h.) *(:) re(hg)ctos(gh) de(h)cet(h) col(h)lau(gf~)dá(gh)ti(g)o.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(egff) (::)",
+    verse: { latin: "Exsultáte justi in Dómino : rectos decet collaudátio.", translation: "A psalm for David. Rejoice in the Lord, O ye just: praise becometh the upright.", gloriaPatri: true },
+    blurb: {
+      text: "This is the Introit for Good Shepherd Sunday. The Roman composer Giuseppe Ottavio Pitoni, maestro di cappella at St. Peter's Basilica, set it as a four-voice (SATB) motet-introit published in 1736.",
+      source: "CPDL ChoralWiki, \"Misericordia Domini (Giuseppe Pitoni).\"",
+    },
   },
   "easter-5": {
     title: "Cantate Domino",
     latin: "Cantáte Dómino cánticum novum, allelúia : quia mirabília fecit Dóminus, allelúia : ante conspéctum géntium revelávit justítiam suam, allelúia, allelúia.",
     translation: "Sing to the Lord a new song, alleluia: for the Lord has done wonderful things, alleluia: he has revealed his justice in the sight of the nations, alleluia, alleluia.",
     mode: "Introit · 5th Sunday of Easter · Mode VI",
+    reference: "Ps. 98:1, 2",
     gabc: "(c4) CAn(df~)tá(f)te(ef'g) Dó(g_[oh:h]f)mi(f_[oh:h]g_[oh:h]f_[oh:h])no(f.) (,) * cán(h)ti(gf)cum(g) no(fhg)vum,(fgFD.1) (,) al(f)le(gef)lú(fhG~'F~){ia} :(f.) (:) qui(f)a(fd) mi(f)ra(g)bí(ixgih)li(gf)a(f.) (,) fe(f)cit(ef'g) Dó(g_[oh:h]f)mi(f_[oh:h]g_[oh:h]f_[oh:h])nus,(f.) (,) al(fg)le(ef'g)lú(gf~){ia} :(fgff/cdc.___) (:) an(c)te(cfe) con(fg~)spé(g)ctum(f) gén(fhg)ti(f)um(fff) (,) re(f)ve(d)lá(d!fffddcd)vit(d_c) ju(d)stí(ffg)ti(f)am(fe~) su(ixgih)am,(h.) (;) al(f)le(fh)lú(ixgh/if){ia},(d.) (,) al(f)le(fff)lú(fhG~'F~){ia}.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #42)"
+    source: "Graduale Romanum (GregoBase #42)",
+    fullGabc: "(c4) CAn(df~)tá(f)te(ef'g) Dó(g_[oh:h]f)mi(f_[oh:h]g_[oh:h]f_[oh:h])no(f.) (,) * cán(h)ti(gf)cum(g) no(fhg)vum,(fgFD.1) (,) al(f)le(gef)lú(fhG~'F~){ia} :(f.) (:) qui(f)a(fd) mi(f)ra(g)bí(ixgih)li(gf)a(f.) (,) fe(f)cit(ef'g) Dó(g_[oh:h]f)mi(f_[oh:h]g_[oh:h]f_[oh:h])nus,(f.) (,) al(fg)le(ef'g)lú(gf~){ia} :(fgff/cdc.___) (:) an(c)te(cfe) con(fg~)spé(g)ctum(f) gén(fhg)ti(f)um(fff) (,) re(f)ve(d)lá(d!fffddcd)vit(d_c) ju(d)stí(ffg)ti(f)am(fe~) su(ixgih)am,(h.) (;) al(f)le(fh)lú(ixgh/if){ia},(d.) (,) al(f)le(fff)lú(fhG~'F~){ia}.(f.) (::) Ps. Sal(fg)vá(gf)vit(gh) si(h)bi(g) déx(ixi)te(h)ra(h) e(g)jus :(f.) *(:) et(h) brá(hj)chi(g)um(f) san(fd~)ctum(f') e(g)jus.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Salvávit sibi déxtera ejus : et bráchium sanctum ejus.", translation: "A psalm for David himself. Sing ye to the Lord a new canticle: because he hath done wonderful things. His right hand hath wrought for him salvation, and his arm is holy.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 98 (97 in the Vulgate numbering)'s command to \"sing a new song\" was a favorite text for composers well beyond the chant repertory: Claudio Monteverdi, Marc-Antoine Charpentier, Dieterich Buxtehude, and Michel-Richard de Lalande all wrote independent concert settings of the same words, and more recently the English composer Robert Hugill published a new SATB setting of it in 2008.",
+      source: "CPDL ChoralWiki, \"Cantate Domino (Robert Hugill).\"",
+    },
   },
   "easter-6": {
     title: "Vocem jucunditatis",
     latin: "Vocem jucunditátis annuntiáte, et audiátur, allelúia : nuntiáte usque ad extrémum terrae : liberávit Dóminus pópulum suum, allelúia, allelúia.",
     translation: "Declare the voice of joy, and let it be heard, alleluia: declare it even to the ends of the earth: the Lord has delivered his people, alleluia, alleluia.",
     mode: "Introit · 6th Sunday of Easter · Mode III",
+    reference: "Is. 48:20",
     gabc: "(c4) VO(eef)cem(dge) ju(eg)cun(gh)di(hji)tá(j)tis(j.) *(,) an(hj~)nun(j)ti(jjjh)á(h_g)te,(ghgg/efe.) (;) et(e) au(ef'h)di(h!iwjg)á(g_[oh:h]f)tur,(fgff/ded.) (,) al(ef)le(dfe)lú(egff){ia} :(fe..) (:) nun(e_[uh:l]f)ti(dge)á(eg)te(gh) (,) us(hkJI'j)que(i.) ad(j) ex(j)tré(j_i/j_i/jlk)mum(k_[hl:1]i) ter(ikj)rae :(iki/jhhg.) (:) li(g)be(h!iwj)rá(j)vit(ih~) Dó(jjj)mi(hg)nus(g.) (,) pó(gih)pu(g)lum(g) su(ef'h)um,(h.) (;) al(h!iwjg~)le(h_g)lú(gefv_E~D~){ia},(e[ll:1]d..) (,) al(de)le(gh//g.h!iwj_ijvIG//h!iw!jvIH/!i.g!hw!ivHG)lú(egff){ia}.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #585)"
+    source: "Graduale Romanum (GregoBase #585)",
+    fullGabc: "(c4) VO(eef)cem(dge) ju(eg)cun(gh)di(hji)tá(j)tis(j.) *(,) an(hj~)nun(j)ti(jjjh)á(h_g)te,(ghgg/efe.) (;) et(e) au(ef'h)di(h!iwjg)á(g_[oh:h]f)tur,(fgff/ded.) (,) al(ef)le(dfe)lú(egff){ia} :(fe..) (:) nun(e_[uh:l]f)ti(dge)á(eg)te(gh) (,) us(hkJI'j)que(i.) ad(j) ex(j)tré(j_i/j_i/jlk)mum(k_[hl:1]i) ter(ikj)rae :(iki/jhhg.) (:) li(g)be(h!iwj)rá(j)vit(ih~) Dó(jjj)mi(hg)nus(g.) (,) pó(gih)pu(g)lum(g) su(ef'h)um,(h.) (;) al(h!iwjg~)le(h_g)lú(gefv_E~D~){ia},(e[ll:1]d..) (,) al(de)le(gh//g.h!iwj_ijvIG//h!iw!jvIH/!i.g!hw!ivHG)lú(egff){ia}.(fe..) (::) Ps. Ju(g)bi(hj)lá(j)te(j) De(j)o(j) o(k)mnis(j) ter(ih)ra :(jjj) *(:) psal(ig~)mum(hj) dí(j)ci(j)te(j) nó(j)mi(j)ni(j) e(j)jus,(j.) (,) da(j)te(j) gló(j)ri(j)am(jji) lau(hg~)di(h') e(i)jus.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Jubiláte Deo omnis terra : psalmum dícite nómini ejus, date glóriam laudi ejus.", translation: "Unto the end, a canticle of a psalm of the resurrection. Shout with joy to God, all the earth, Sing ye a psalm to his name; give glory to his praise.", gloriaPatri: true },
+    blurb: {
+      text: "Heinrich Isaac set this Introit in the same Choralis Constantinus that gave this app's own Judica me, from the 5th Sunday of Lent, its polyphonic setting. Because the feast of the Immaculate Conception, comparatively young and without its own ancient chant, has no melody of its own, its Introit \"Gaudens gaudebo\", this app's own Immaculate Conception entry, was assembled as a contrafact of this very antiphon, adapting Vocem jucunditatis's older words and melody to new text.",
+      source: "CPDL ChoralWiki, \"Vocem jucunditatis (Heinrich Isaac)\"; Tonus Peregrinus blog, \"Gaudens gaudébo: Introit for the Immaculate Conception\" (same source already cited on immaculate-conception).",
+    },
   },
   "easter-7": {
     title: "Exaudi Domine",
     latin: "Exáudi, Dómine, vocem meam, qua clamávi ad te, allelúia : tibi dixit cor meum, quaesívi vultum tuum, vultum tuum Dómine requíram : ne avértas fáciem tuam a me, allelúia, allelúia.",
     translation: "Hear, O Lord, my voice, with which I have cried to you, alleluia: my heart has said to you, I have sought your face; your face, O Lord, will I seek: turn not your face away from me, alleluia, alleluia.",
     mode: "Introit · 7th Sunday of Easter (after the Ascension) · Mode I",
+    reference: "Ps. 27:7, 8, 9",
     gabc: "(c2) EX(exdde)áu(cf)di,(f) *() Dó(ghg/hi)mi(h)ne,(h.) (,) vo(h)cem(f) me(ghg)am,(g.) (,) qua(f) cla(fd)má(fh)vi(g) ad(fg~) te,(f.) (,) al(f)le(feg)lú(fgff){ia} :(d.) (:) ti(dg)bi(g) di(h)xit(g) cor(f) me(fvED)um,(d!ewf.) (;) quae(fd)sí(fh)vi(ghG'F) vul(hig~)tum(hg) tu(fg!hvGF'g)um,(gf..) (;) vul(g)tum(g) tu(g)um(g) Dó(h)mi(g)ne(f) re(e)quí(cd)ram :(d.) (:) ne(dfED'ewf) a(fd)vér(fh)tas(g) fá(gh)ci(f)em(e[ll:1]d~) tu(fg)am(f_e) a(de) me,(d.) (;) al(hi)le(h)lú(hgh){ia},(f_d) (,) al(fg)le(efghfgvFE)lú(d!ewfef){ia}.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #990)"
+    source: "Graduale Romanum (GregoBase #990)",
+    fullGabc: "(c2) EX(exdde)áu(cf)di,(f) *() Dó(ghg/hi)mi(h)ne,(h.) (,) vo(h)cem(f) me(ghg)am,(g.) (,) qua(f) cla(fd)má(fh)vi(g) ad(fg~) te,(f.) (,) al(f)le(feg)lú(fgff){ia} :(d.) (:) ti(dg)bi(g) di(h)xit(g) cor(f) me(fvED)um,(d!ewf.) (;) quae(fd)sí(fh)vi(ghG'F) vul(hig~)tum(hg) tu(fg!hvGF'g)um,(gf..) (;) vul(g)tum(g) tu(g)um(g) Dó(h)mi(g)ne(f) re(e)quí(cd)ram :(d.) (:) ne(dfED'ewf) a(fd)vér(fh)tas(g) fá(gh)ci(f)em(e[ll:1]d~) tu(fg)am(f_e) a(de) me,(d.) (;) al(hi)le(h)lú(hgh){ia},(f_d) (,) al(fg)le(efghfgvFE)lú(d!ewfef){ia}.(e[ll:1]d..) (::) Ps. Dó(f)mi(gh)nus(h) il(h)lu(h)mi(h)ná(hj)ti(h)o(h) me(hg)a,(gh..) *(:) et(gf~) sa(gh)lus(h) me(h)a :(hjh) quem(g') ti(f)mé(fff)bo?(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Dóminus illuminátio mea, et salus mea : quem timébo?.", translation: "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?", gloriaPatri: true },
+    blurb: {
+      text: "This last Sunday of Eastertide, between Ascension Thursday and Pentecost, drew its older name, Exaudi Sunday, from the opening word of this Introit. The body of the text takes in verses from Psalm 27 (Psalm 26 in the Vulgate numbering), the same verses, \"tibi dixit cor meum, quaesivi vultum tuum,\" that form the entire text of this app's 2nd-Sunday-of-Lent Introit, here extended and brought to a close with the season's double Alleluia.",
+      source: "chantblog, \"The Introit for the Seventh Sunday of Easter: Exaudi, Domine.\"",
+    },
   },
   "spiritus-domini": {
     title: "Spiritus Domini",
     latin: "Spíritus Dómini replévit orbem terrárum, allelúia: et hoc quod cóntinet ómnia, sciéntiam habet vocis, allelúia, allelúia, allelúia.",
     translation: "The Spirit of the Lord has filled the whole world, alleluia: and that which contains all things has knowledge of the voice, alleluia, alleluia, alleluia.",
     mode: "Introit · Pentecost Sunday · Mode VIII",
+    reference: "Wis. 1:7",
     gabc: "(c4) SPí(d)ri(fhg)tus(gh~) Dó(h)mi(ghGF'g)ni(gf..) *(,) re(fh)plé(jjk)vit(j) or(kl~)bem(j) ter(jjj)rá(g)rum,(jj) (,) al(h)le(hv.fhg)lú(ghg___){ia} :(g.) (:) et(fg) hoc(gjj) quod(g) cón(g!jij)ti(hiHG'h)net(h_g) ó(gh'j~)mni(j)a,(j.) (;) sci(i)én(jk~)ti(k_[hl:1]j)am(jjj/h_[oh:h]i_[oh:h]h._[oh:h]) ha(kl)bet(j) vo(jjj)cis,(h.) (;) al(hg~)le(fg'h)lú(hghv_G~F~){ia},(f.) (,) al(f!h'j~)le(j)lú(jijV!hj~){ia},(ijHG.) (,) al(gh~)le(hv.fhg)lú(ghg___){ia}.(g.) (::)",
     abc: "D F a G G a a G a G F G G F F a c c d c d e c c c c G c c a a F a G G a G G | F G G c c G G c b c a b a G a a G G a c c c | b c d d c c c c a b a d e c c c c a | a G F G a a G a G F F F a c c c b c a c b c a G G a a F a G G a G G |]",
-    source: "Graduale Romanum (GregoBase #861)"
+    source: "Graduale Romanum (GregoBase #861)",
+    fullGabc: "(c4) SPí(d)ri(fhg)tus(gh~) Dó(h)mi(ghGF'g)ni(gf..) *(,) re(fh)plé(jjk)vit(j) or(kl~)bem(j) ter(jjj)rá(g)rum,(jj) (,) al(h)le(hv.fhg)lú(ghg___){ia} :(g.) (:) et(fg) hoc(gjj) quod(g) cón(g!jij)ti(hiHG'h)net(h_g) ó(gh'j~)mni(j)a,(j.) (;) sci(i)én(jk~)ti(k_[hl:1]j)am(jjj/h_[oh:h]i_[oh:h]h._[oh:h]) ha(kl)bet(j) vo(jjj)cis,(h.) (;) al(hg~)le(fg'h)lú(hghv_G~F~){ia},(f.) (,) al(f!h'j~)le(j)lú(jijV!hj~){ia},(ijHG.) (,) al(gh~)le(hv.fhg)lú(ghg___){ia}.(g.) (::) Ps. Ex(g)súr(hg)gat(gj) De(j)us,(j.) (,) et(j) dis(j)si(j)pén(j)tur(j) in(j)i(ji)mí(jk)ci(k) e(jk)jus :(j.) *(:) et(jh~) fú(hj)gi(j)ant,(j) qui(j) o(j)dé(j)runt(j) e(j)um,(j.) (,) a(j) fá(jji)ci(gh)e(ji) e(h)jus.(g.) (::) Gló(g)ri(hg)a(gj) Pa(j)tri.(j) (::) E(j) u(jji) o(gh) u(ji) a(h) e.(ghd___/ffg.) (::)",
+    verse: { latin: "Exsúrgat Deus, et dissipéntur inimíci ejus : et fúgiant, qui odérunt eum, a fácie ejus.", translation: "Let God arise, and let his enemies be scattered: and let them that hate him flee from before his face.", gloriaPatri: true },
+    blurb: {
+      text: "Spíritus Dómini, proclaiming the Spirit filling the whole world, has drawn composers across the centuries. William Byrd published a five-voice setting in his 1607 Gradualia II, and Heinrich Isaac included it in the Pentecost Mass of his Choralis Constantinus.",
+      source: "CPDL ChoralWiki, “Spiritus Domini (William Byrd)”; Choralis Constantinus contents, Center for the History of Music Theory and Literature, Indiana University."
+    }
   },
   "viri-galilaei": {
     title: "Viri Galilaei",
     latin: "Viri Galilaéi, quid admirámini aspiciéntes in caelum? allelúia : quemádmodum vidístis eum ascendéntem in caelum, ita véniet, allelúia, allelúia, allelúia.",
     translation: "You men of Galilee, why do you wonder, looking up to heaven? alleluia: he shall so come as you have seen him going up into heaven, alleluia, alleluia, alleluia.",
     mode: "Introit · The Ascension of the Lord · Mode VII",
+    reference: "Acts 1:11",
     gabc: "(c3) VI(e)RI(e) Ga(ehg)li(h)laé(ih/ji)i,(i.) *(,) quid(i) ad(i)mi(i)rá(ijI'H)mi(hhhi)ni(h.) (,) a(h)spi(g)ci(hi)én(i)tes(e') in(f) cae(hih)lum?(hgh.) (,) al(f)le(fv.dfe)lú(efe___){ia} :(e.) (:) quem(f)ád(hhi)mo(h)dum(h.) vi(h)dí(g)stis(hi) e(ih)um(h) (,) a(g)scen(hi~)dén(i)tem(hg) in(fh~) cae(hiH'G)lum,(h.) (,) i(h)ta(h) vé(hhh)ni(fe)et,(e.) (:) al(f)le(hi)lú(kikvJ~I~){ia},(i.) (,) al(ef~)le(fv.efd)lú(ef~){ia},(f.) (,) al(f)le(hih//ghF'E)lú(efe___){ia}.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #1355)"
+    source: "Graduale Romanum (GregoBase #1355)",
+    fullGabc: "(c3) VI(e)RI(e) Ga(ehg)li(h)laé(ih/ji)i,(i.) *(,) quid(i) ad(i)mi(i)rá(ijI'H)mi(hhhi)ni(h.) (,) a(h)spi(g)ci(hi)én(i)tes(e') in(f) cae(hih)lum?(hgh.) (,) al(f)le(fv.dfe)lú(efe___){ia} :(e.) (:) quem(f)ád(hhi)mo(h)dum(h.) vi(h)dí(g)stis(hi) e(ih)um(h) (,) a(g)scen(hi~)dén(i)tem(hg) in(fh~) cae(hiH'G)lum,(h.) (,) i(h)ta(h) vé(hhh)ni(fe)et,(e.) (:) al(f)le(hi)lú(kikvJ~I~){ia},(i.) (,) al(ef~)le(fv.efd)lú(ef~){ia},(f.) (,) al(f)le(hih//ghF'E)lú(efe___){ia}.(e.) (::) Ps. O(ehg)mnes(hi) gen(i)tes(i) pláu(ik)di(j)te(j) má(j)ni(ji)bus :(ij..) *(:) ju(ig)bi(hi)lá(i)te(i) De(i)o(i) in(i) vo(i)ce(i) ex(i)sul(i!jwk)ta(i')ti(h)ó(hhh)nis.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Omnes gentes pláudite mánibus : jubiláte Deo in voce exsultatiónis.", translation: "O clap your hands, all ye nations: shout unto God with the voice of joy,", gloriaPatri: true },
+    blurb: {
+      text: "Viri Galilaei, the opening words of this Introit, come from Acts 1:11. Palestrina set the same text as his six-voice motet Viri Galilaei (1569), a dramatic, homophonic work written for the same Ascension text shared by this Introit, the day's Offertory, and the first antiphon of Second Vespers.",
+      source: "CPDL ChoralWiki, “Viri Galilaei / Ascendit Deus (Giovanni Pierluigi da Palestrina).”"
+    }
   },
   "dum-sanctificatus": {
     title: "Dum sanctificatus fuero",
     latin: "Dum sanctificátus fúero in vobis, congregábo vos de univérsis terris : et effúndam super vos aquam mundam, et mundabímini ab ómnibus inquinaméntis vestris : et dabo vobis spíritum novum.",
     translation: "When I shall be sanctified in you, I will gather you together out of all the lands: and I will pour upon you clean water, and you shall be cleansed from all your filthiness: and I will give you a new spirit.",
     mode: "Introit · Pentecost Sunday (Vigil Mass) · Mode III",
+    reference: "Cf. Ezech. 36:23-27",
     gabc: "(c4) DUM(e./fff) san(e[ll:1]d~)cti(gh)fi(g)cá(hj)tus(j) *() fú(j)e(j)ro(jjj) in(h) vo(h!iwj/kjj)bis,(ji..) (;) con(g)gre(gh)gá(h)bo(hg/hgh) vos(e.) (,) de(e[ll:1]d) u(g)ni(hj)vér(iij)sis(hk) ter(jkjj)ris :(ji..) (:) et(j) ef(j)fún(jj//jjh~)dam(i_[oh:h]h) su(g)per(fg/hg/hi) vos(h.) (;) a(gh/ji)quam(jvvIH'iw!jvIH) mun(gh!ivHG'h)dam,(hg..) (:) et(h_) mun(g)da(h)bí(hkj)mi(kjjh)ni(h.) (;) ab(g) ó(gh/ihj)mni(gh_G'_FE'f)bus(fe..) (,) in(ef~)qui(ef)na(e)mén(ef'h)tis(h!iwj) ve(g_[oh:h]fgvFD)stris :(d.) (:) et(gj~) da(jv.jjj)bo(g') vo(h)bis(f.) (,) spí(fh)ri(g)tum(hggf/ghg) no(egff)vum.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #418)"
+    source: "Graduale Romanum (GregoBase #418)",
+    fullGabc: "(c4) DUM(e./fff) san(e[ll:1]d~)cti(gh)fi(g)cá(hj)tus(j) *() fú(j)e(j)ro(jjj) in(h) vo(h!iwj/kjj)bis,(ji..) (;) con(g)gre(gh)gá(h)bo(hg/hgh) vos(e.) (,) de(e[ll:1]d) u(g)ni(hj)vér(iij)sis(hk) ter(jkjj)ris :(ji..) (:) et(j) ef(j)fún(jj//jjh~)dam(i_[oh:h]h) su(g)per(fg/hg/hi) vos(h.) (;) a(gh/ji)quam(jvvIH'iw!jvIH) mun(gh!ivHG'h)dam,(hg..) (:) et(h_) mun(g)da(h)bí(hkj)mi(kjjh)ni(h.) (;) ab(g) ó(gh/ihj)mni(gh_G'_FE'f)bus(fe..) (,) in(ef~)qui(ef)na(e)mén(ef'h)tis(h!iwj) ve(g_[oh:h]fgvFD)stris :(d.) (:) et(gj~) da(jv.jjj)bo(g') vo(h)bis(f.) (,) spí(fh)ri(g)tum(hggf/ghg) no(egff)vum.(fe..) (::) T. P. Al(e)le(f)lú(gh){ia},(g.) (,) al(gh)le(g.h!iwjjvIH'G)lú(g_[oh:h]e/fgF~'E~){ia}.(e.) (::) Ps. Be(g)ne(hj)dí(j)cam(j) Dó(j)mi(j)num(j) in(j) o(k)mni(j) tém(j)po(ih)re :(jjj) (:) * sem(ig~)per(hj) laus(j) e(j)jus(j) in(jji) o(hg)re(h') me(i)o.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Benedícam Dóminum in omni témpore : semper laus ejus in ore meo.", translation: "I will bless the Lord at all times, his praise shall be always in my mouth.", gloriaPatri: true },
+    blurb: {
+      text: "Dum sanctificátus fúero in vobis was later reused, with new words, as the Introit for Christ the King, found in this app's own Dignus est Agnus entry. Christ the King is a young 20th-century feast, and its chant was adapted from this older baptismal Introit rather than newly composed.",
+      source: "MusicaSacra Church Music Forum, \"Dignus est Agnus\" (citing Dom Johner) — same source already cited on christ-king.",
+    },
   },
 
   /* ---- Ordinary Time solemnities + Sundays ---------------------------- */
@@ -378,18 +730,32 @@ window.INTROITS = {
     latin: "Cibávit eos ex ádipe fruménti, allelúia: et de petra, melle saturávit eos, allelúia, allelúia, allelúia.",
     translation: "He fed them with the fat of wheat, alleluia: and filled them with honey out of the rock, alleluia, alleluia, alleluia.",
     mode: "Introit · The Body and Blood of Christ (Corpus Christi) · Mode II",
+    reference: "Ps. 81:17",
     gabc: "(f3) CI(c)bá(efe)vit(f) e(fhf)os(efe.) *(,) ex(f) á(h)di(hhh)pe(f) fru(e)mén(egf'/ge)ti,(c.) (,) al(eh~)le(hghf)lú(f_[oh:h]g_[oh:h]f_[oh:h]){ia} :(f.) (:) et(e) de(f) pe(hh)tra,(hi~) mel(ih~)le(hihh/fgf.) (,) sa(f)tu(fi)rá(i_[oh:h]h)vit(hi'j) e(ih)os,(h.) (;) al(hi~)le(i)lú(ihi){ia},(f.) (,) al(g!hwi)le(i_[oh:h]h)lú(hfgv_[oh:h]F~E~){ia},(fe..) (,) al(f!gwh)le(hvGF'gwh/ig/h_g)lú(fg!hvGF'g){ia}.(gf..) (::)",
     abc: "a c d c d d f d c d c d f f f f d c c e d e c a c f f e f d d e d d | c d f f f G' G' f f G' f f d e d d d G' G' f f G' a' G' f f | f G' G' G' f G' d e f G' G' f f d e d c d c d e f f e d e f G' e f e d e f e d e e d |]",
-    source: "Graduale Romanum (GregoBase #715)"
+    source: "Graduale Romanum (GregoBase #715)",
+    fullGabc: "(f3) CI(c)bá(efe)vit(f) e(fhf)os(efe.) *(,) ex(f) á(h)di(hhh)pe(f) fru(e)mén(egf'/ge)ti,(c.) (,) al(eh~)le(hghf)lú(f_[oh:h]g_[oh:h]f_[oh:h]){ia} :(f.) (:) et(e) de(f) pe(hh)tra,(hi~) mel(ih~)le(hihh/fgf.) (,) sa(f)tu(fi)rá(i_[oh:h]h)vit(hi'j) e(ih)os,(h.) (;) al(hi~)le(i)lú(ihi){ia},(f.) (,) al(g!hwi)le(i_[oh:h]h)lú(hfgv_[oh:h]F~E~){ia},(fe..) (,) al(f!gwh)le(hvGF'gwh/ig/h_g)lú(fg!hvGF'g){ia}.(gf..) (::) Ps. Ex(e)sul(fe)tá(eh)te(h) De(h)o(h) ad(h)ju(hg)tó(hi)ri(i) no(hi)stro :(h.) *(:) ju(hf)bi(fh)lá(h')te(i) De(hf)o(h) Ja(ge)cob.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Exsultáte Deo adjutóri nostro : jubiláte Deo Jacob.", translation: "Rejoice to God our helper: sing aloud to the God of Jacob.", gloriaPatri: true },
+    blurb: {
+      text: "William Byrd set this Introit's text — the biblical wheat and honey of the wilderness feeding, read as a figure of the Eucharist — as a four-voice motet in his 1605 Gradualia I (no. 33), choosing the bright, cheerful mixolydian mode to match the text's radiant tone.",
+      source: "CPDL ChoralWiki, “Cibavit eos (William Byrd).”"
+    }
   },
   "ot-11": {
     title: "Exaudi Domine",
     latin: "Exáudi, Dómine, vocem meam, qua clamávi ad te: adjútor meus esto, ne derelínquas me, neque despícias me, Deus salutáris meus.",
     translation: "Hear, O Lord, my voice, with which I have cried to you: be my helper, forsake me not, neither despise me, O God my Saviour.",
     mode: "Introit · 11th Sunday in Ordinary Time · Mode IV",
+    reference: "Ps. 27:7, 8, 9",
     gabc: "(c4) EX(f)áu(fg~)di(f) Dó(f_e)mi(dc)ne(c.) *(,) vo(ded)cem(d) me(ef'g)am,(g.) (;) qua(gh) cla(f_d)má(d_c)vi(e_[oh:h][ll:1]d) ad(fgf) te :(eef.) (:) ad(de)jú(ixghg/hi)tor(h) me(hg)us(g) e(gh!jj)sto,(g.) (;) ne(g) de(ghg)re(f)lín(e_[uh:l]f)quas(g_[uh:l]h) me(f.) (;) ne(e!fwg'!hv)que(g) de(g)spí(ghgh)ci(fd)as(e!gef) me,(e[ll:1]d..) (;) De(f_!h_f_g_)us(gv.ff/cdc.) (,) sa(ded)lu(dc)tá(dfe/ggh)ris(fg) me(egff)us.(fe..) (::)",
     abc: "F F G F F E D C C D E D D E F G G | G a F D D C E D F G F E E F | D E G a G a _b a a G G G a c c G | G G a G F E F G a F | E F G a G G G a G a F D E G E F E D | F a F G G F F C D C D E D D C D F E G G a F G E G F F F E |]",
-    source: "Graduale Romanum (GregoBase #396)"
+    source: "Graduale Romanum (GregoBase #396)",
+    fullGabc: "(c4) EX(f)áu(fg~)di(f) Dó(f_e)mi(dc)ne(c.) *(,) vo(ded)cem(d) me(ef'g)am,(g.) (;) qua(gh) cla(f_d)má(d_c)vi(e_[oh:h][ll:1]d) ad(fgf) te :(eef.) (:) ad(de)jú(ixghg/hi)tor(h) me(hg)us(g) e(gh!jj)sto,(g.) (;) ne(g) de(ghg)re(f)lín(e_[uh:l]f)quas(g_[uh:l]h) me(f.) (;) ne(e!fwg'!hv)que(g) de(g)spí(ghgh)ci(fd)as(e!gef) me,(e[ll:1]d..) (;) De(f_!h_f_g_)us(gv.ff/cdc.) (,) sa(ded)lu(dc)tá(dfe/ggh)ris(fg) me(egff)us.(fe..) (::) Ps. Dó(hg)mi(gh)nus(h) il(h)lu(h)mi(h)ná(hg)ti(gi)o(i) me(hi)a,(h.) *(:) et(hg~) sa(gh)lus(h) me(h)a :(h) quem(gf) ti(gh)mé(g)bo?(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Dóminus illuminátio mea, et salus mea : quem timébo?.", translation: "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?", gloriaPatri: true },
+    blurb: {
+      text: "Drawn from later in Psalm 27 (26 in the Vulgate numbering) than the year's other Introit built on the same psalm (Dominus illuminatio, from its opening verse), this text's plea to \"seek his face\" was set by Giovanni Paolo Cima, in his 1610 Concerti ecclesiastici, and again nearly three centuries later by Lorenzo Perosi, longtime director of music at the Sistine Chapel. Two composers separated by three hundred years set the same request that God not turn away his face.",
+      source: "Bible as Music, “Exáudi, Dómine, vocem meam (Giovanni Paolo Cima).”",
+    },
   },
   /* ---- Ordinary Time Sundays (Tempus per annum) ----------------------
    * Sunday-to-introit assignment per the Graduale Romanum / Gregorian Missal
@@ -401,272 +767,510 @@ window.INTROITS = {
     latin: "Omnis terra adóret te, Deus, et psallat tibi : psalmum dicat nómini tuo, Altíssime.",
     translation: "Let all the earth adore you, O God, and sing to you: let it sing a psalm to your name, O Most High.",
     mode: "Introit · Ordinary Time · Mode IV",
+    reference: "Ps. 66:4",
     gabc: "(c4) O(fff)mnis(dfe') ter(e!g'h~)ra(h.) *(,) ad(gh)ó(hjjg)ret(hgff/ded.) te,(e.f!gwh) De(ghffef)us,(fe..) (;) et(fff) psal(e.f!gwh)lat(h_g) ti(gef)bi :(e[ll:1]d..) (:) psal(fv.fff)mum(dfe') di(ef'h)cat(h.) (,) nó(hg/h!jj)mi(hjg)ni(h_g) tu(ixef!hig)o,(g.) (,) Al(fff)tís(ef'g)si(fhG'FgvFE)me.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #13)"
+    source: "Graduale Romanum (GregoBase #13)",
+    fullGabc: "(c4) O(fff)mnis(dfe') ter(e!g'h~)ra(h.) *(,) ad(gh)ó(hjjg)ret(hgff/ded.) te,(e.f!gwh) De(ghffef)us,(fe..) (;) et(fff) psal(e.f!gwh)lat(h_g) ti(gef)bi :(e[ll:1]d..) (:) psal(fv.fff)mum(dfe') di(ef'h)cat(h.) (,) nó(hg/h!jj)mi(hjg)ni(h_g) tu(ixef!hig)o,(g.) (,) Al(fff)tís(ef'g)si(fhG'FgvFE)me.(e.) (::) Ps. Ju(hg)bi(gh)lá(h)te(h) De(h)o(hg) o(gi)mnis(i) ter(hi)ra,(h.) (:) * psal(hg~)mum(gh) dí(h)ci(h)te(h) nó(h)mi(h)ni(h) e(h)jus :(h.) (,) da(h)te(h) gló(h)ri(h)am(h) lau(gf~)di(gh) e(g)jus.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Jubiláte Deo omnis terra, psalmum dícite nómini ejus : date glóriam laudi ejus.", translation: "Unto the end, a canticle of a psalm of the resurrection. Shout with joy to God, all the earth, Sing ye a psalm to his name; give glory to his praise.", gloriaPatri: true },
+    blurb: {
+      text: "This Introit's summons for \"all the earth\" to sing God's praise comes from Psalm 66 (65 in the Vulgate numbering), a communal hymn of thanksgiving whose universal scope suited Epiphany's theme of a light for every nation: before the 1970 calendar reform folded most of the year into \"Ordinary Time,\" the same chant served as the Introit for the Second Sunday after Epiphany. Its Mode IV melody lingers over \"adoret\" and \"nomini,\" the two words carrying the verse's invitation to worship.",
+      source: "chantblog, “The Introit for the Second Sunday after Epiphany: Omnis terra.”",
+    },
   },
   "ot-3-a": {
     title: "Dominus secus mare",
     latin: "Dominus secus mare Galilaéae vidit duos fratres, Petrum et Andréam, et vocávit eos : Veníte post me : fáciam vos fíeri piscatóres hóminum.",
     translation: "The Lord, walking by the Sea of Galilee, saw two brothers, Peter and Andrew, and he called them: Come after me: I will make you fishers of men.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Cf. Matt. 4:18-19",
     gabc: "(c4) DO(fef)MI(dc)NUS(c.) *(,) se(f)cus(gh) ma(ixhvGF'gwhg/hi)re(h) Ga(h)li(h)laé(hjjk)ae(hhg.) (;) vi(ixgiH'G)dit(h_g) du(fv.dgf)os(f_e) fra(fv.efd)tres,(d.) (,) Pe(df!gh)trum(g) et(g) An(gh~)dré(h_g)am,(ghggf.0) (;) et(fg'h) vo(h_f)cá(fg'h)vit(jj) e(ixh_givHGhf)os :(f.) (:) Ve(fh)ní(h)te(g) post(fg) me :(ef'g) (;) fá(h)ci(fg)am(g) vos(dgf) fí(ff//ff)e(deDC'd)ri(dc..) (,) pi(d)sca(dgf)tó(fv.dgf)res(gvF'Ef') hó(d)mi(d_[oh:h]e_[oh:h]d_[oh:h])num.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #693)"
+    source: "Graduale Romanum (GregoBase #693)",
+    fullGabc: "(c4) DO(fef)MI(dc)NUS(c.) *(,) se(f)cus(gh) ma(ixhvGF'gwhg/hi)re(h) Ga(h)li(h)laé(hjjk)ae(hhg.) (;) vi(ixgiH'G)dit(h_g) du(fv.dgf)os(f_e) fra(fv.efd)tres,(d.) (,) Pe(df!gh)trum(g) et(g) An(gh~)dré(h_g)am,(ghggf.0) (;) et(fg'h) vo(h_f)cá(fg'h)vit(jj) e(ixh_givHGhf)os :(f.) (:) Ve(fh)ní(h)te(g) post(fg) me :(ef'g) (;) fá(h)ci(fg)am(g) vos(dgf) fí(ff//ff)e(deDC'd)ri(dc..) (,) pi(d)sca(dgf)tó(fv.dgf)res(gvF'Ef') hó(d)mi(d_[oh:h]e_[oh:h]d_[oh:h])num.(d.) (::) Ps. Cae(f)li(gh) e(h)nár(h)rant(h) gló(hj)ri(h)am(h) De(hg)i :(gh..) *(:) et(gf) ó(gh)pe(h)ra(h) má(h)nu(h)um(h) e(h)jus(h.) (,) an(h)nún(h)ti(h)at(hjh) fir(g')ma(f)mén(fff)tum.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Caeli enárrant glóriam Dei : et ópera mánuum ejus annúntiat firmaméntum.", translation: "The heavens shew forth the glory of God, and the firmament declareth the work of his hands.", gloriaPatri: true },
+    blurb: {
+      text: "Unlike nearly every other Ordinary-Time Introit, this text is not drawn from the Psalter at all but paraphrases the Gospel account of Christ calling Simon Peter and Andrew from their nets beside the Sea of Galilee. Because Matthew and Mark narrate the episode in almost identical wording, the same chant serves both Year A (Matthew 4:18-19) and Year B (Mark 1:16-20) of the Third Sunday in Ordinary Time, one of the few cases where a single Introit spans two different lectionary Gospels unchanged.",
+      source: "Cantus Database, “Dominus secus mare Galilaeae vidit.”",
+    },
   },
   "ot-3-c": {
     title: "Adorate Deum",
     latin: "Adoráte Deum omnes Angeli ejus : audívit, et laetáta est Sion : et exsultavérunt fíliae Judae.",
     translation: "Adore God, all you his Angels: Sion heard, and was glad: and the daughters of Juda rejoiced.",
     mode: "Introit · Ordinary Time · Mode VII",
+    reference: "Ps. 97:7-8",
     gabc: "(c2) AD(c)o(ff)rá(g)te(f) *() De(g_[oh:h]f)um(fhg/hffe.) (,) o(ef'g~)mnes(g) An(ii)ge(jiif)li(f_d) e(ef~)jus :(c.) (:) au(d)dí(ffd)vit,(fe/fddc.) (,) et(dfe) lae(fg)tá(gh)ta(f_d) est(ff) Si(fgF'E)on :(f.) (:) et(f) ex(g)sul(f)ta(fg)vé(gffvED)runt(ff) (,) fí(g)li(c)ae(c.d!ewf_e) Ju(fffd/ffd)dae.(dc..) (::)",
-    source: "Graduale Romanum (GregoBase #1123)"
+    source: "Graduale Romanum (GregoBase #1123)",
+    blurb: {
+      text: "Two independent Renaissance polyphonic settings survive of this Introit: Heinrich Isaac's four-voice (SATB) setting in the Choralis Constantinus (Nuremberg, Formschneider, 1550), and Rogier Michael's five-voice (SATTB) setting, published in his 1603 Leipzig collection Introitus dominicorum dierum ac praecipuorum festorum (\"Introits of Sundays and Principal Feasts\").",
+      source: "CPDL ChoralWiki, “Adorate Deum (Heinrich Isaac)”; CPDL ChoralWiki, “Adorate Deum (Rogier Michael).”",
+    },
+    fullGabc: "(c2) AD(c)o(ff)rá(g)te(f) *() De(g_[oh:h]f)um(fhg/hffe.) (,) o(ef'g~)mnes(g) An(ii)ge(jiif)li(f_d) e(ef~)jus :(c.) (:) au(d)dí(ffd)vit,(fe/fddc.) (,) et(dfe) lae(fg)tá(gh)ta(f_d) est(ff) Si(fgF'E)on :(f.) (:) et(f) ex(g)sul(f)ta(fg)vé(gffvED)runt(ff) (,) fí(g)li(c)ae(c.d!ewf_e) Ju(fffd/ffd)dae.(dc..) (::) Ps. Dó(cfe)mi(fg)nus(g) re(g)gná(g)vit,(g) ex(g)súl(gi)tet(h) ter(hg~)ra :(gh..) (:) * lae(ge)tén(fg)tur(g) ín(g!hwi)su(g')lae(f) mul(fff)tae.(dc..) (::) Gló(cfe)ri(fg)a(g) Pa(g)tri.(g) (::) E(g) u(g!hwi) o(g') u(f) a(fff) e.(dc..) (::)",
+    verse: { latin: "Dóminus regnávit, exsúltet terra : laeténtur ínsulae multae.", translation: "For the same David, when his land was restored again to him. The Lord hath reigned, let the earth rejoice: let many islands be glad.", gloriaPatri: true },
   },
   "ot-4": {
     title: "Laetetur cor",
     latin: "Laetétur cor quaeréntium Dóminum : quaérite Dóminum, et confirmámini : quaérite fáciem ejus semper.",
     translation: "Let the heart of those who seek the Lord rejoice: seek the Lord, and be strengthened: seek his face evermore.",
     mode: "Introit · Ordinary Time · Mode II",
+    reference: "Ps. 105:3-4",
     gabc: "(f3) LAe(c)té(ef)tur(f) cor(fhffe.) *(,) quae(f)rén(hh)ti(h)um(hg/hi!jvH'Gh') Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])num :(f.) (:) quaé(h)ri(ihh)te(fhg) Dó(hghf)mi(f)num,(fv.efEC.) (;) et(e) con(ef/hg)fir(hhh)má(f!gwh)mi(fgFE'f)ni :(fe..) (:) quaé(f)ri(fef)te(fv.efEC.) (,) fá(fge)ci(f)em(hh) e(h)jus(hg/hi!jvH'Gh) sem(f_[oh:h]g_[oh:h]f_[oh:h])per.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #864)"
+    source: "Graduale Romanum (GregoBase #864)",
+    fullGabc: "(f3) LAe(c)té(ef)tur(f) cor(fhffe.) *(,) quae(f)rén(hh)ti(h)um(hg/hi!jvH'Gh') Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])num :(f.) (:) quaé(h)ri(ihh)te(fhg) Dó(hghf)mi(f)num,(fv.efEC.) (;) et(e) con(ef/hg)fir(hhh)má(f!gwh)mi(fgFE'f)ni :(fe..) (:) quaé(f)ri(fef)te(fv.efEC.) (,) fá(fge)ci(f)em(hh) e(h)jus(hg/hi!jvH'Gh) sem(f_[oh:h]g_[oh:h]f_[oh:h])per.(f.) (::) Ps. Con(e)fi(fe)té(eh)mi(h)ni(h) Dó(h)mi(h)no,(h.) (,) et(h) in(h)vo(h)cá(h)te(hg) no(hi)men(i) e(hi)jus :(h.) *(:) an(hf~)nun(fh)ti(h)á(h)te(h) in(h)ter(h) gen(h)tes(h') ó(i)pe(hf)ra(h) e(ge)jus.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Confitémini Dómino, et invocáte nomen ejus : annuntiáte inter gentes ópera ejus.", translation: "Give glory to the Lord, and call upon his name: declare his deeds among the Gentiles.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 105 (104 in the Vulgate numbering) is a historical psalm that retells God's covenant faithfulness from Abraham through the Exodus and the conquest of Canaan. Its opening verses reappear almost word for word in 1 Chronicles 16, where David hands this very text to Asaph to be sung before the Ark on the day it was carried into Jerusalem, making it one of the rare psalms the Old Testament itself shows being composed for a specific act of worship.",
+      source: "USCCB, Psalm 105; 1 Chronicles, chapter 16.",
+    },
   },
   "ot-5": {
     title: "Venite adoremus",
     latin: "Veníte adorémus Deum, et procidámus ante Dóminum : plorémus ante eum, qui fecit nos : quia ipse est Dóminus Deus noster.",
     translation: "Come, let us adore God, and fall down before the Lord: let us weep before him who made us: for he is the Lord our God.",
     mode: "Introit · Ordinary Time · Mode II",
+    reference: "Ps. 95:6-7",
     gabc: "(c3) VE(h)ní(hi)te(efd.1) (,) * ad(e)o(f)ré(hhi)mus(h) De(hjI'H)um,(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (;) et(fd~) pro(ef)ci(f)dá(hh)mus(hiHF.1) (,) an(f!h'i~)te(i) Dó(ijI'H)mi(h_[oh:h]i_[oh:h]h_[oh:h])num :(h.) (:) plo(fef)ré(hf/hhh)mus(hiHF.1) (,) an(f!h'i~)te(i) e(hihhe)um,(f.) qui(hg) fe(h)cit(fgF~'E~) nos :(e.) (:) qui(f)a(fef) i(hf/hhhi)pse(h) est(h.) (,) Dó(h)mi(hhh)nus(ef) De(f_[oh:h]i_[oh:h]h_[oh:h])us(h_g) no(hghf)ster.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #450)"
+    source: "Graduale Romanum (GregoBase #450)",
+    fullGabc: "(c3) VE(h)ní(hi)te(efd.1) (,) * ad(e)o(f)ré(hhi)mus(h) De(hjI'H)um,(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (;) et(fd~) pro(ef)ci(f)dá(hh)mus(hiHF.1) (,) an(f!h'i~)te(i) Dó(ijI'H)mi(h_[oh:h]i_[oh:h]h_[oh:h])num :(h.) (:) plo(fef)ré(hf/hhh)mus(hiHF.1) (,) an(f!h'i~)te(i) e(hihhe)um,(f.) qui(hg) fe(h)cit(fgF~'E~) nos :(e.) (:) qui(f)a(fef) i(hf/hhhi)pse(h) est(h.) (,) Dó(h)mi(hhh)nus(ef) De(f_[oh:h]i_[oh:h]h_[oh:h])us(h_g) no(hghf)ster.(f.) (::) Ps. Ve(e)ní(fe)te,(eh) ex(h)sul(hg)té(hi)mus(i) Dó(hi)mi(h)no :(h.) *(:) ju(hf)bi(fh)lé(h)mus(h) De(h)o(h) sa(h')lu(i)tá(hf)ri(h) no(ge)stro.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Veníte, exsultémus Dómino : jubilémus Deo salutári nostro.", translation: "Come let us praise the Lord with joy: let us joyfully sing to God our saviour.", gloriaPatri: true },
+    blurb: {
+      text: "Venite adoremus draws on Psalm 95 (94 in the Vulgate numbering), the psalm the Rule of St. Benedict assigns as the Invitatory that opens Matins every single day of the year, so named from its own refrain of invitation. The full psalm's later verses, which the Introit passes over, warn against the hardened hearts of the Israelites who tested God at Meribah in the wilderness, a passage the Letter to the Hebrews later quotes as a caution rather than a call to worship.",
+      source: "Wikipedia, “Invitatory”; New Advent Catholic Encyclopedia, “Invitatorium.”",
+    },
   },
   "ot-6": {
     title: "Esto mihi",
     latin: "Esto mihi in Deum protectórem, et in locum refúgii, ut salvum me fácias : quóniam firmaméntum meum, et refúgium meum es tu : et propter nomen tuum dux mihi eris, et enútries me.",
     translation: "Be unto me a God, a protector, and a place of refuge, to save me: for you are my strength and my refuge: and for your name's sake you will lead me, and nourish me.",
     mode: "Introit · Ordinary Time · Mode VI",
+    reference: "Ps. 31:3-4",
     gabc: "(c4) E(f)sto(df) mi(f)hi(d') *(,) in(d!ewf) De(fvvEC)um(ff) pro(gfg)te(hgh)ctó(f_[oh:h]g_[oh:h]f_[oh:h])rem,(f.) (;) et(f) in(f) lo(fg)cum(fe) re(d!ewf)fú(f)gi(fv_EC)i,(c.) (,) ut(ffe) sal(g)vum(g) me(ghf) fá(f)ci(f_[oh:h]g_[oh:h]f_[oh:h])as :(f.) (:) quó(f)ni(gh)am(h) fir(h)ma(h)mén(h)tum(g) me(ghG'F)um,(f.) (,) et(f) re(f)fú(fg)gi(g)um(gh) me(ff)um(f) es(fdec) tu :(c.) (:) et(c) pro(ff)pter(gh~) no(h)men(gf~) tu(ghg___)um(g.) (,) dux(hj) mi(jjj)hi(hjg) e(ghf___)ris,(f.) (;) et(ffe) e(d)nú(ge/g_[uh:l]h)tri(ff)es(f_[oh:h]g_[oh:h]f_[oh:h]) me.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #1381)"
+    source: "Graduale Romanum (GregoBase #1381)",
+    fullGabc: "(c4) E(f)sto(df) mi(f)hi(d') *(,) in(d!ewf) De(fvvEC)um(ff) pro(gfg)te(hgh)ctó(f_[oh:h]g_[oh:h]f_[oh:h])rem,(f.) (;) et(f) in(f) lo(fg)cum(fe) re(d!ewf)fú(f)gi(fv_EC)i,(c.) (,) ut(ffe) sal(g)vum(g) me(ghf) fá(f)ci(f_[oh:h]g_[oh:h]f_[oh:h])as :(f.) (:) quó(f)ni(gh)am(h) fir(h)ma(h)mén(h)tum(g) me(ghG'F)um,(f.) (,) et(f) re(f)fú(fg)gi(g)um(gh) me(ff)um(f) es(fdec) tu :(c.) (:) et(c) pro(ff)pter(gh~) no(h)men(gf~) tu(ghg___)um(g.) (,) dux(hj) mi(jjj)hi(hjg) e(ghf___)ris,(f.) (;) et(ffe) e(d)nú(ge/g_[uh:l]h)tri(ff)es(f_[oh:h]g_[oh:h]f_[oh:h]) me.(f.) (::) Ps. In(fg) te(gf) Dó(gh)mi(h)ne(h) spe(h)rá(h)vi,(h.) non(h) con(h)fún(h)dar(g) in(ixi) ae(h)tér(g)num :(f.) *(:) in(f) ju(gh)stí(hj)ti(g)a(f) tu(f')a(g) lí(fd)be(f')ra(g) me.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "In te Dómine sperávi, non confúndar in aetérnum : in justítia tua líbera me.", translation: "In thee, O Lord, have I hoped, let me never be confounded: deliver me in thy justice.", gloriaPatri: true },
+    blurb: {
+      text: "Esto mihi, the opening words of this Introit, gave Quinquagesima, the last Sunday before Lent in the pre-1970 calendar, its popular nickname \"Estomihi Sunday.\" The text is drawn from Psalm 31, numbered 30 in the Vulgate, whose sixth verse, \"into your hands I commend my spirit,\" Christ himself prays from the cross, making it one of the few psalms the Gospels show Jesus quoting in his final hours.",
+      source: "Oxford Reference, “Esto mihi”; St Mary Magdalen Choir, “Introit ‘Esto Mihi’.”",
+    },
   },
   "ot-7": {
     title: "Domine in tua misericordia",
     latin: "Domine, in tua misericórdia sperávi : exsultávit cor meum in salutári tuo : cantábo Dómino, qui bona tríbuit mihi.",
     translation: "O Lord, I have trusted in your mercy: my heart has rejoiced in your salvation: I will sing to the Lord, who gives me good things.",
     mode: "Introit · Ordinary Time · Mode V",
+    reference: "Ps. 13:6",
     gabc: "(c3) DO(df)mi(feede)ne,(e_[oh:h][ll:1]d) *(,) in(db~) tu(de)a(e) mi(f)se(fhvhf)ri(f_e)cór(ef~)di(de!fvED'e)a(e[ll:1]d..) (;) spe(gxde!gvge!fw!gvFE)rá(de!fvED'e)vi :(e[ll:1]d..) (:) ex(d)sul(d)tá(de'f)vit(f_e) cor(fh) me(hhh)um(h.) (,) in(hf~) sa(hji)lu(h_g)tá(hji)ri(ihhf) tu(fhvhf)o :(f!gwh.) (:) can(de~)tá(e)bo(d') Dó(de'f)mi(e.[ll:1]d!ewfef)no,(fe..) (;) qui(f!gwh) bo(hihhvG'FEgxfg)na(f.) (,) trí(f!hhf)bu(ef)it(gxf_[oh:h]g_[oh:h]e_[oh:h]!fw!gvFE) mi(de!fvED'e)hi.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #146)"
+    source: "Graduale Romanum (GregoBase #146)",
+    fullGabc: "(c3) DO(df)mi(feede)ne,(e_[oh:h][ll:1]d) *(,) in(db~) tu(de)a(e) mi(f)se(fhvhf)ri(f_e)cór(ef~)di(de!fvED'e)a(e[ll:1]d..) (;) spe(gxde!gvge!fw!gvFE)rá(de!fvED'e)vi :(e[ll:1]d..) (:) ex(d)sul(d)tá(de'f)vit(f_e) cor(fh) me(hhh)um(h.) (,) in(hf~) sa(hji)lu(h_g)tá(hji)ri(ihhf) tu(fhvhf)o :(f!gwh.) (:) can(de~)tá(e)bo(d') Dó(de'f)mi(e.[ll:1]d!ewfef)no,(fe..) (;) qui(f!gwh) bo(hihhvG'FEgxfg)na(f.) (,) trí(f!hhf)bu(ef)it(gxf_[oh:h]g_[oh:h]e_[oh:h]!fw!gvFE) mi(de!fvED'e)hi.(e[ll:1]d..) (::) Ps. Us(d)que(f)quo(h) Dó(h)mi(h)ne(h) ob(h)li(h)vi(h)scé(h)ris(h) me(h) in(i) fi(i)nem?(h.) *(:) ús(f)que(h)quo(h) a(h)vér(h)tis(h) fá(h)ci(h)em(h) tu(i)am(g) a(h) me?(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(fefvEDe.) (::)",
+    verse: { latin: "Usquequo Dómine obliviscéris me in finem? úsquequo avértis fáciem tuam a me?.", translation: "Unto the end, a psalm for David. How long, O Lord, wilt thou forget me unto the end? how long dost thou turn away thy face from me?", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 13 (12 in the Vulgate numbering), sung here, is one of the Psalter's shortest laments, just six verses that pivot in the space of a single line from the fourfold cry \"How long, O Lord?\" to trust in God's mercy. The Introit quotes only this closing note of resolution, leaving the psalm's opening desperation for the chant's own verse, sung by the choir moments later in the same Mass.",
+      source: "chantblog, “The Seventh Sunday after the Epiphany: Domine In Tua.”",
+    },
   },
   "ot-8": {
     title: "Factus est Dominus",
     latin: "Factus est Dóminus protéctor meus, et edúxit me in latitúdinem : salvum me fecit, quóniam vóluit me.",
     translation: "The Lord became my protector, and he brought me forth into a large place: he saved me, because he was well pleased with me.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Ps. 18:19-20",
     gabc: "(c4) FA(ixdh'!iv)ctus(h) est(h) *() Dó(h)mi(gf)nus(f.) (,) pro(gfg)té(hgh)ctor(ixhV_!gi~) me(ixig/ih)us,(h.) (;) et(h) e(jj)dú(jk)xit(hi) me(h.) (,) in(h) la(jj)ti(kvJ'Ij')tú(h)di(h_[oh:h]i_[oh:h]h_[oh:h])nem :(h.) (:) sal(h)vum(g) me(fg'h) fe(ghfg)cit,(d.) (;) quó(f)ni(fe)am(fgfefd) vó(f_h//ghg//ef'!gh)lu(ghfg)it(d!ew!fv_E~D~) me.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1111)"
+    source: "Graduale Romanum (GregoBase #1111)",
+    fullGabc: "(c4) FA(ixdh'!iv)ctus(h) est(h) *() Dó(h)mi(gf)nus(f.) (,) pro(gfg)té(hgh)ctor(ixhV_!gi~) me(ixig/ih)us,(h.) (;) et(h) e(jj)dú(jk)xit(hi) me(h.) (,) in(h) la(jj)ti(kvJ'Ij')tú(h)di(h_[oh:h]i_[oh:h]h_[oh:h])nem :(h.) (:) sal(h)vum(g) me(fg'h) fe(ghfg)cit,(d.) (;) quó(f)ni(fe)am(fgfefd) vó(f_h//ghg//ef'!gh)lu(ghfg)it(d!ew!fv_E~D~) me.(d.) (::) Ps. Dí(f)li(gh)gam(h) te(h) Dó(h)mi(h)ne(h) for(h)ti(h)tú(hj)do(h) me(hg)a :(gh..) *(:) Dó(gf)mi(gh)nus(h) fir(h)ma(h)mén(h)tum(h) me(h)um,(h) et(h) re(h)fú(h)gi(h)um(h) me(h)um,(h.) (,) et(h) li(h)be(hjh)rá(g')tor(f) me(fff)us.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Díligam te Dómine fortitúdo mea : Dóminus firmaméntum meum, et refúgium meum, et liberátor meus.", translation: "I will love thee, O Lord, my strength: The Lord is my firmament, my refuge, and my deliverer. My God is my helper, and in him will I put my trust. My protector, and the horn of my salvation, and my support.", gloriaPatri: true },
+    blurb: {
+      text: "Factus est Dóminus draws its text from Psalm 18 (17 in the Vulgate numbering), one of the few psalms the Bible preserves twice over: nearly the same song reappears as David's victory hymn in 2 Samuel 22, sung, the narrative says, on the day the Lord delivered him from the hand of all his enemies. The Introit borrows only the psalm's closing image of God bringing the singer \"into a large place,\" a figure for rescue from confinement into freedom.",
+      source: "chantblog, “Cibavit eos and Factus est Dominus protector meus”; 2 Samuel 22.",
+    },
   },
   "ot-9": {
     title: "Respice in me",
     latin: "Respice in me, et miserére mei, Dómine : quóniam únicus et pauper sum ego : vide humilitátem meam, et labórem meum : et dimítte ómnia peccáta mea, Deus meus.",
     translation: "Look upon me, and have mercy on me, O Lord: for I am alone and poor: see my lowliness and my labor: and forgive me all my sins, O my God.",
     mode: "Introit · Ordinary Time · Mode VI",
+    reference: "Ps. 25:16, 18",
     gabc: "(c4) RE(ffg)spi(f)ce(f) in(fg) me,(gff) *(,) et(fd~) mi(f)se(g)ré(ixgiH'G)re(g_[oh:h]f) me(f)i,(ixf_e/g!hwi) Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])ne :(f.) (;) quó(ixf!gwh'!iv)ni(h)am(h) ú(jjk)ni(j)cus(j.) (,) et(jh~) pau(jlk)per(j_i) sum(jlk) e(kjjh)go :(h.) (:) vi(h)de(j) hu(h)mi(h!jjj)li(g)tá(g!jjh)tem(g) me(fge/f_d)am,(dc..) (;) et(cd'f~) la(ffe)bó(ixeg!hvivGF')rem(f) me(ff/gf)um :(f.) (:) et(f) di(f)mít(gf/hg)te(f_e) (,) ó(fff)mni(dc)a(c.) pec(cd)cá(ffg)ta(f) me(ff/gf)a,(fe..) (;) De(ixgih)us(hjHG'hw!ivHG) me(fg!hvGF'g)us.(gf..) (::)",
-    source: "Graduale Romanum (GregoBase #1235)"
+    source: "Graduale Romanum (GregoBase #1235)",
+    fullGabc: "(c4) RE(ffg)spi(f)ce(f) in(fg) me,(gff) *(,) et(fd~) mi(f)se(g)ré(ixgiH'G)re(g_[oh:h]f) me(f)i,(ixf_e/g!hwi) Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])ne :(f.) (;) quó(ixf!gwh'!iv)ni(h)am(h) ú(jjk)ni(j)cus(j.) (,) et(jh~) pau(jlk)per(j_i) sum(jlk) e(kjjh)go :(h.) (:) vi(h)de(j) hu(h)mi(h!jjj)li(g)tá(g!jjh)tem(g) me(fge/f_d)am,(dc..) (;) et(cd'f~) la(ffe)bó(ixeg!hvivGF')rem(f) me(ff/gf)um :(f.) (:) et(f) di(f)mít(gf/hg)te(f_e) (,) ó(fff)mni(dc)a(c.) pec(cd)cá(ffg)ta(f) me(ff/gf)a,(fe..) (;) De(ixgih)us(hjHG'hw!ivHG) me(fg!hvGF'g)us.(gf..) (::) Ps. Ad(fg) te(gf) Dó(gh)mi(h)ne(h) le(h)vá(h)vi(g) á(ixi)ni(h)mam(h) me(g)am :(f.) (:) * De(f)us(gh) me(hj)us,(g) in(f) te(f) con(f)fí(f)do,(f') non(g) e(fd)ru(f')bé(g)scam.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Ad te Dómine levávi ánimam meam : Deus meus, in te confído, non erubéscam.", translation: "Unto the end, a psalm for David. To thee, O Lord, have I lifted up my soul. In thee, O my God, I put my trust; let me not be ashamed.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 25 (24 in the Vulgate numbering), which supplies this Introit's plea to \"look upon me, and have mercy,\" is an acrostic in the original Hebrew: each verse begins with a successive letter of the alphabet, a mnemonic structure shared by only a handful of psalms. A few lines further into the same psalm also furnish the Introit for the Third Sunday in Lent in the older Roman rite, so the two Sundays' chants are close neighbors within a single acrostic poem.",
+      source: "propria.org, “The Third Sunday in Lent”; USCCB, Psalm 25.",
+    },
   },
   "ot-10-a": {
     title: "Dominus illuminatio",
     latin: "Dominus illuminátio mea, et salus mea, quem timébo? Dóminus defénsor vitae meae, a quo trepidábo? qui tríbulant me inimíci mei, infirmáti sunt, et cecidérunt.",
     translation: "The Lord is my light and my salvation, whom shall I fear? The Lord is the defender of my life, of whom shall I be afraid? My enemies that trouble me have themselves grown weak, and have fallen.",
     mode: "Introit · Ordinary Time · Mode II",
+    reference: "Ps. 27:1, 2",
     gabc: "(f3) DO(c!e'f~)mi(f)nus(f_[oh:h]g_[oh:h]f_[oh:h]) *(,) il(e)lu(f)mi(hh)ná(h)ti(hhhf)o(f) me(fhhf)a,(f.) (,) et(ef) sa(hhi)lus(h) me(hh/ihhe)a,(e.) (;) quem(fi) ti(hiH'Gh)mé(f_[oh:h]g_[oh:h]f_[oh:h])bo?(f.) (:) Dó(f!h'i~)mi(i)nus(iji) (,) de(h)fén(hih)sor(hhh) vi(hih)tae(hhh) me(hiH'F)ae,(f.) (;) a(f) quo(f!h'i) tre(i)pi(h)dá(h!jij)bo?(hij..) (:) qui(f) trí(f!h'i)bu(i)lant(kxih/jki) me(hihh/fgf.) (,) in(f)i(hg)mí(h)ci(f) me(f!hhhffef)i,(fe..) (;) in(f)fir(hh)má(h)ti(hhh) sunt,(f.) (,) et(fge) ce(hh)ci(ivH'Gh)dé(f_[oh:h]g_[oh:h]f_[oh:h])runt.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #874)"
+    source: "Graduale Romanum (GregoBase #874)",
+    fullGabc: "(f3) DO(c!e'f~)mi(f)nus(f_[oh:h]g_[oh:h]f_[oh:h]) *(,) il(e)lu(f)mi(hh)ná(h)ti(hhhf)o(f) me(fhhf)a,(f.) (,) et(ef) sa(hhi)lus(h) me(hh/ihhe)a,(e.) (;) quem(fi) ti(hiH'Gh)mé(f_[oh:h]g_[oh:h]f_[oh:h])bo?(f.) (:) Dó(f!h'i~)mi(i)nus(iji) (,) de(h)fén(hih)sor(hhh) vi(hih)tae(hhh) me(hiH'F)ae,(f.) (;) a(f) quo(f!h'i) tre(i)pi(h)dá(h!jij)bo?(hij..) (:) qui(f) trí(f!h'i)bu(i)lant(kxih/jki) me(hihh/fgf.) (,) in(f)i(hg)mí(h)ci(f) me(f!hhhffef)i,(fe..) (;) in(f)fir(hh)má(h)ti(hhh) sunt,(f.) (,) et(fge) ce(hh)ci(ivH'Gh)dé(f_[oh:h]g_[oh:h]f_[oh:h])runt.(f.) (::) Ps. Si(e) con(fe~)sí(eh)stant(h) ad(h)vér(hg)sum(hi) me(i) ca(hi)stra :(h.) *(:) non(h) ti(h')mé(i)bit(hf) cor(h) me(ge)um.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Si consístant advérsum me castra : non timébit cor meum.", translation: "If armies in camp should stand together against me, my heart shall not fear. If a battle should rise up against me, in this will I be confident.", gloriaPatri: true },
+    blurb: {
+      text: "Dominus illuminatio mea, the opening words of this Introit, come from Psalm 27 (26 in the Vulgate numbering) and have served since at least the later 16th century as the motto of the University of Oxford, still borne on the university's coat of arms. The same Psalm 27 supplies a second, different Introit later in Ordinary Time, Exaudi Domine, drawn from verses 7-9, so one psalm yields two separate Sunday entrance chants a few verses apart.",
+      source: "Wikipedia, “Dominus illuminatio mea.”",
+    },
   },
   "ot-10-b": {
     title: "Si iniquitates",
     latin: "Si iniquitátes observáveris Dómine, Dómine quis sustinébit? quia apud te propitiátio est, Deus Israel.",
     translation: "If you, O Lord, will mark iniquities: Lord, who shall stand it? For with you is merciful forgiveness, O God of Israel.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Ps. 130:3-4",
     gabc: "(c4) SI(e) in(e[ll:1]d)i(g)qui(hj)tá(ij)tes(j.) *(,) ob(j)ser(ih~)vá(jjj)ve(hg)ris(g) Dó(jj)mi(hkJI'j)ne,(iij.) (;) Dó(hk)mi(k)ne(k) quis(k) sus(jlkl)ti(j_i)né(ikJ'I)bit?(iij.) (:) qui(hji)a(j) a(j)pud(ih~) te(jjj) (,) pro(h_g)pi(g_[oh:h]f)ti(h)á(h/jjg)ti(fg)o(g) est,(ghgg/efe.) (;) De(ef'g)us(g/jjh/i.g!hw!ivHG') Is(e)ra(egff)el.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #1271)"
+    source: "Graduale Romanum (GregoBase #1271)",
+    fullGabc: "(c4) SI(e) in(e[ll:1]d)i(g)qui(hj)tá(ij)tes(j.) *(,) ob(j)ser(ih~)vá(jjj)ve(hg)ris(g) Dó(jj)mi(hkJI'j)ne,(iij.) (;) Dó(hk)mi(k)ne(k) quis(k) sus(jlkl)ti(j_i)né(ikJ'I)bit?(iij.) (:) qui(hji)a(j) a(j)pud(ih~) te(jjj) (,) pro(h_g)pi(g_[oh:h]f)ti(h)á(h/jjg)ti(fg)o(g) est,(ghgg/efe.) (;) De(ef'g)us(g/jjh/i.g!hw!ivHG') Is(e)ra(egff)el.(fe..) (::) Ps. De(g) pro(hj)fún(j)dis(j) cla(j)má(j)vi(j) ad(k) te(j) Dó(j)mi(ih)ne :(jjj) *(:) Dó(ig)mi(hj)ne(j) ex(j)áu(j)di(jji) vo(hg)cem(h) me(i)am.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "De profúndis clamávi ad te Dómine : Dómine exáudi vocem meam.", translation: "A gradual canticle. Out of the depths I have cried to thee, O Lord: Lord, hear my voice. Let thy ears be attentive to the voice of my supplication.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 130 (129 in the Vulgate numbering), known since antiquity by its Latin opening as the De Profundis, is one of the seven Penitential Psalms and a staple of the Church's funeral rites and Office of the Dead. Its plea for mercy from the depths later gave Oscar Wilde the title for the long letter he wrote from Reading Gaol, borrowing the psalm's cry of suffering answered by hope for an entirely different kind of confession.",
+      source: "USCCB, Psalm 130.",
+    },
   },
   "ot-12": {
     title: "Dominus fortitudo",
     latin: "Dominus fortitúdo plebis suae, et protéctor salutárium Christi sui est : salvum fac pópulum tuum, Dómine, et bénedic hereditáti tuae, et rege eos usque in saéculum.",
     translation: "The Lord is the strength of his people, and the protector of the salvation of his Anointed: save your people, O Lord, and bless your inheritance, and rule them for ever.",
     mode: "Introit · Ordinary Time · Mode II",
+    reference: "Ps. 28:8-9",
     gabc: "(f3) DO(c!e'f~)mi(f)nus(f.) *(,) for(fgf)ti(e)tú(f)do(e) ple(hh)bis(ivH'Gh) su(f_[oh:h]g_[oh:h]f_[oh:h])ae,(f.) (;) et(e) pro(f)té(fi)ctor(h) sa(hghf)lu(eh)tá(hghf)ri(f_[oh:h]g_[oh:h]f_[oh:h])um(f.) (,) Chri(ef'h)sti(hhvGE) su(e.f!gw!hvGF)i(ef) est :(fvEC.) (:) sal(ce!fg)vum(f) fac(f/hhfgvEC.) (,) pó(c)pu(ef)lum(f) tu(hh)um,(h) Dó(h)mi(h_[oh:h]i_[oh:h]h_[oh:h])ne,(h.) (:) et(e) bé(e)ne(fh)dic(h) he(hhh)re(fh)di(hhh)tá(f)ti(eg) tu(giH'G)ae,(g.) (;) et(gi~) re(i)ge(h) e(f)os(f!hhhffe.) (,) us(fge)que(hh) in(ivH'Gh) saé(fv.ehG'F)cu(f_[oh:h]g_[oh:h]f_[oh:h])lum.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #522)"
+    source: "Graduale Romanum (GregoBase #522)",
+    fullGabc: "(f3) DO(c!e'f~)mi(f)nus(f.) *(,) for(fgf)ti(e)tú(f)do(e) ple(hh)bis(ivH'Gh) su(f_[oh:h]g_[oh:h]f_[oh:h])ae,(f.) (;) et(e) pro(f)té(fi)ctor(h) sa(hghf)lu(eh)tá(hghf)ri(f_[oh:h]g_[oh:h]f_[oh:h])um(f.) (,) Chri(ef'h)sti(hhvGE) su(e.f!gw!hvGF)i(ef) est :(fvEC.) (:) sal(ce!fg)vum(f) fac(f/hhfgvEC.) (,) pó(c)pu(ef)lum(f) tu(hh)um,(h) Dó(h)mi(h_[oh:h]i_[oh:h]h_[oh:h])ne,(h.) (:) et(e) bé(e)ne(fh)dic(h) he(hhh)re(fh)di(hhh)tá(f)ti(eg) tu(giH'G)ae,(g.) (;) et(gi~) re(i)ge(h) e(f)os(f!hhhffe.) (,) us(fge)que(hh) in(ivH'Gh) saé(fv.ehG'F)cu(f_[oh:h]g_[oh:h]f_[oh:h])lum.(f.) (::) Ps. Ad(e) te(fe) Dó(eh)mi(h)ne(h) cla(h)má(h)bo,(h.) (,) De(h)us(h) me(h)us(h) ne(h) sí(hg)le(hi)as(i) a(hi) me :(h.) *(:) ne(hf)quán(fh)do(h) tá(h)ce(h)as(h) a(h) me,(h.) (,) et(h) as(h)si(h)mi(h)lá(h)bor(h) de(h)scen(h)dén(h')ti(i)bus(hf) in(h) la(ge)cum.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Ad te Dómine clamábo, Deus meus ne síleas a me : nequándo táceas a me, et assimilábor descendéntibus in lacum.", translation: "A psalm for David himself. Unto thee will I cry, O Lord: O my God, be not thou silent to me: lest if thou be silent to me, I become like them that go down into the pit.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 28 (27 in the Vulgate numbering), source of this Introit, is a personal lament for most of its length, but its final two verses widen abruptly into a communal prayer for the king and \"his people,\" the very lines this Introit quotes. It is one of several psalms where an individual's plea gives way, in its last breath, to concern for the whole nation.",
+      source: "USCCB, Psalm 28.",
+    },
   },
   "ot-13": {
     title: "Omnes gentes plaudite",
     latin: "Omnes gentes pláudite mánibus : jubiláte Deo in voce exsultatiónis.",
     translation: "O clap your hands, all you nations: shout unto God with the voice of joy.",
     mode: "Introit · Ordinary Time · Mode VI",
+    reference: "Ps. 47:2",
     gabc: "(c4) O(fffvDC'dff/hgh)mnes(f) gen(hgh)tes(gv.fgFD.1) (,) * pláu(ff)di(f)te(gvF'Ef') má(d)ni(d_[oh:h]e_[oh:h]d_[oh:h])bus :(d.) (:) ju(f)bi(ghg)lá(h/jij)te(h) De(fhG'FhvGFgf)o(f.) (;) in(df~) vo(f)ce(fff) ex(f)sul(de~)ta(c)ti(ff)ó(fh/ghf)nis.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #1136)"
+    source: "Graduale Romanum (GregoBase #1136)",
+    fullGabc: "(c4) O(fffvDC'dff/hgh)mnes(f) gen(hgh)tes(gv.fgFD.1) (,) * pláu(ff)di(f)te(gvF'Ef') má(d)ni(d_[oh:h]e_[oh:h]d_[oh:h])bus :(d.) (:) ju(f)bi(ghg)lá(h/jij)te(h) De(fhG'FhvGFgf)o(f.) (;) in(df~) vo(f)ce(fff) ex(f)sul(de~)ta(c)ti(ff)ó(fh/ghf)nis.(f.) (::) Ps. Quó(fg)ni(gf)am(gh) Dó(h)mi(h)nus(h) ex(h)cél(g)sus,(ixi) ter(h)rí(g)bi(f)lis :(f.) (:) * Rex(h) ma(hj)gnus(g) su(f')per(g) o(fd~)mnem(f') ter(g)ram.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Quóniam Dóminus excélsus, terríbilis : Rex magnus super omnem terram.", translation: "For the Lord is high, terrible: a great king over all the earth.", gloriaPatri: true },
+    blurb: {
+      text: "Omnes gentes plaudite manibus, the antiphon of this Introit, draws its words from Psalm 47 (46 in the Vulgate numbering). Its melody survives with musical notation in the tenth-century antiphonary Codex Einsiedeln 121, one of the oldest sources to preserve a Gregorian melody in readable neumes. The same psalm's exuberant call for \"all peoples\" to clap their hands anchors the Ascension liturgy in several rites, and inspired Giovanni Gabrieli's sixteen-voice polychoral setting, published in his 1597 Symphoniae sacrae.",
+      source: "Wikipedia, “Psalm 47.”",
+    },
   },
   "ot-14": {
     title: "Suscepimus Deus",
     latin: "Suscépimus, Deus, misericórdiam tuam in médio templi tui : secúndum nomen tuum Deus, ita et laus tua in fines terrae : justítia plena est déxtera tua.",
     translation: "We have received your mercy, O God, in the midst of your temple: according to your name, O God, so also is your praise unto the ends of the earth: your right hand is full of justice.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Ps. 48:10-11",
     gabc: "(c4) SUs(cd)cé(ixdh'!iv)pi(h)mus,(h.) *(,) De(hjh)us,(ghg.) (,) mi(hf)se(g)ri(h)cór(hjj)di(g_[oh:h]f)am(hfh) tu(h!iwjh)am(h.) (;) in(h) mé(f!hfg)di(hg)o(g) tem(h)pli(jh/jg) tu(fhG'Fgf)i :(f.) (:) se(f)cún(hg~)dum(j) no(jlk)men(j) tu(jjj)um(j) De(jkJ'H)us,(h.) (;) i(jj)ta(j_[hl:1]k_[hl:1]h_[hl:1]) et(hi~) laus(h_g) tu(h/jjh!iwjh)a(h.) (,) in(j) fi(fg'h)nes(jh/jg) ter(fhG'Fgf)rae :(f.e[ub:0;6mm]) (:) ju(d)stí(ffg)ti(f)a(f) ple(fg/h_g)na(gf) est(f.) (,) déx(f)te(fg)ra(gffd) tu(d!ewf_d)a.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1254)"
+    source: "Graduale Romanum (GregoBase #1254)",
+    fullGabc: "(c4) SUs(cd)cé(ixdh'!iv)pi(h)mus,(h.) *(,) De(hjh)us,(ghg.) (,) mi(hf)se(g)ri(h)cór(hjj)di(g_[oh:h]f)am(hfh) tu(h!iwjh)am(h.) (;) in(h) mé(f!hfg)di(hg)o(g) tem(h)pli(jh/jg) tu(fhG'Fgf)i :(f.) (:) se(f)cún(hg~)dum(j) no(jlk)men(j) tu(jjj)um(j) De(jkJ'H)us,(h.) (;) i(jj)ta(j_[hl:1]k_[hl:1]h_[hl:1]) et(hi~) laus(h_g) tu(h/jjh!iwjh)a(h.) (,) in(j) fi(fg'h)nes(jh/jg) ter(fhG'Fgf)rae :(f.e[ub:0;6mm]) (:) ju(d)stí(ffg)ti(f)a(f) ple(fg/h_g)na(gf) est(f.) (,) déx(f)te(fg)ra(gffd) tu(d!ewf_d)a.(d.) (::) Ps. Ma(f)gnus(gh) Dó(h)mi(h)nus,(h) et(h) lau(h)dá(hj)bi(h)lis(h) ni(hg)mis :(gh..) *(:) in(gf~) ci(gh)vi(h)tá(h)te(h) De(h)i(h) no(h)stri,(h.) (,) in(h) mon(h)te(hjh) san(g')cto(f) e(fff)jus.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Magnus Dóminus, et laudábilis nimis : in civitáte Dei nostri, in monte sancto ejus.", translation: "Great is the Lord, and exceedingly to be praised in the city of our God, in his holy mountain.", gloriaPatri: true },
+    blurb: {
+      text: "The same chant sung here also serves, in both the old and new calendars, as the Introit for Candlemas, the February 2 feast of Christ's presentation in the Temple: the words \"we have received your mercy, O God, in the midst of your temple\" read naturally as the Church's own commentary on the infant carried into that same temple forty days after his birth. An anonymous polyphonic setting of the text was already in print in Lyon by 1528.",
+      source: "CPDL ChoralWiki, “Suscepimus.”",
+    },
   },
   "ot-15": {
     title: "Dum clamarem",
     latin: "Dum clamárem ad Dóminum, exaudívit vocem meam, ab his qui appropínquant mihi : et humiliávit eos, qui est ante saécula, et manet in aetérnum : jacta cogitátum tuum in Dómino, et ipse te enútriet.",
     translation: "When I cried to the Lord, he heard my voice, from those who draw near to me: and he humbled them, who is before all ages, and remains for ever: cast your care upon the Lord, and he will sustain you.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Ps. 55:17-20, 23",
     gabc: "(c4) DUM(eef) cla(dge)má(eg)rem(g) *() ad(hgh) Dó(hji)mi(j)num,(j.) (;) ex(j)au(ih~)dí(jjj)vit(gh~) vo(h_g)cem(gfh) me(h!iw!jvI'HG'h)am,(hg..) (;) ab(gh) his(h) qui(g) ap(h)pro(jj)pín(g)quant(hggf/ghg) mi(egff)hi :(fe..) (:) et(f) hu(f)mi(e!fwg'!hv)li(g)á(gh/ji)vit(j) e(kjjvIH)os,(ih..) (;) qui(g) est(jj) an(hi~)te(g) saé(jj)cu(hkJI'j)la,(ji..) (;) et(jk) ma(j'/kjj)net(i_[oh:h]h) in(h) ae(hggf/ghg)tér(egff)num :(fe..) (:) ja(egf)cta(eef) co(dg)gi(g)tá(h)tum(g) tu(h)um(g) in(fh~) Dó(h)mi(g!igh)no,(ih..) (;) et(f) i(g)pse(h) te(h!iwj/kjjg) (,) e(h!iw!jvIHi.g!hw!ivHG')nú(e)tri(egff)et.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #299)"
+    source: "Graduale Romanum (GregoBase #299)",
+    fullGabc: "(c4) DUM(eef) cla(dge)má(eg)rem(g) *() ad(hgh) Dó(hji)mi(j)num,(j.) (;) ex(j)au(ih~)dí(jjj)vit(gh~) vo(h_g)cem(gfh) me(h!iw!jvI'HG'h)am,(hg..) (;) ab(gh) his(h) qui(g) ap(h)pro(jj)pín(g)quant(hggf/ghg) mi(egff)hi :(fe..) (:) et(f) hu(f)mi(e!fwg'!hv)li(g)á(gh/ji)vit(j) e(kjjvIH)os,(ih..) (;) qui(g) est(jj) an(hi~)te(g) saé(jj)cu(hkJI'j)la,(ji..) (;) et(jk) ma(j'/kjj)net(i_[oh:h]h) in(h) ae(hggf/ghg)tér(egff)num :(fe..) (:) ja(egf)cta(eef) co(dg)gi(g)tá(h)tum(g) tu(h)um(g) in(fh~) Dó(h)mi(g!igh)no,(ih..) (;) et(f) i(g)pse(h) te(h!iwj/kjjg) (,) e(h!iw!jvIHi.g!hw!ivHG')nú(e)tri(egff)et.(fe..) (::) Ps. Ex(g)áu(hj)di(j) De(j)us(j) o(j)ra(j)ti(j)ó(j)nem(j) me(j)am,(j.) (,) et(j) ne(j) de(j)spé(j)xe(j)ris(j) de(j)pre(j)ca(j)ti(j)ó(k)nem(j) me(ih)am :(jjj) *(:) in(ig~)tén(hj)de(j) mi(j)hi,(j) et(jji) ex(hg)áu(h')di(i) me.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Exáudi Deus oratiónem meam, et ne despéxeris deprecatiónem meam : inténde mihi, et exáudi me.", translation: "Hear, O God, my prayer, and despise not my supplication: Be attentive to me and hear me. I am grieved in my exercise; and am troubled,", gloriaPatri: true },
+    blurb: {
+      text: "Dum clamárem opens with a phrase melodically almost identical to a separate, older chant of the Easter season, Vocem iucunditatis, one of many small borrowings that link individual Gregorian melodies across the church year. Its text, from Psalm 55 (54 in the Vulgate numbering), survives in medieval antiphoners as geographically scattered as Bamberg, Benevento, Brussels, Chartres, and Einsiedeln, evidence of how thoroughly a single Roman melodic repertory had spread across Europe by the ninth and tenth centuries.",
+      source: "Richard L. Crocker, “Introits in Modes 3”; gregorien.info, “Introitus - Dum clamarem ad Dominum.”",
+    },
   },
   "ot-16": {
     title: "Ecce Deus",
     latin: "Ecce Deus ádjuvat me, et Dóminus suscéptor est ánimae meae : avérte mala inimícis meis, in veritáte tua dispérde illos, protéctor meus Dómine.",
     translation: "Behold, God is my helper, and the Lord is the protector of my soul: turn back the evils upon my enemies, and cut them off in your truth, O Lord my protector.",
     mode: "Introit · Ordinary Time · Mode V",
+    reference: "Ps. 54:6-7",
     gabc: "(c3) EC(h)ce(f) De(f/hhvFD)us(d.) *() ád(gxfg)ju(e_[oh:h][ll:1]d)vat(d_[oh:h]e_[oh:h]d_[oh:h]) me,(d.) (;) et(f) Dó(f!gwh)mi(e[ll:1]d)nus(d.) (,) sus(ede)cé(fef)ptor(d_[oh:h]e_[oh:h]d_[oh:h]) est(d.) á(fh)ni(h)mae(h) me(hhhiv_[oh:h]H_[oh:h]F_[oh:h])ae :(f.) (:) a(f)vér(hi~)te(h) ma(hhh_f)la(f.) (,) in(e)i(fef)mí(h.f!gwh)cis(h_g) me(giH'G)is,(g.) (:) in(fh~) ve(ggh)ri(f)tá(f)te(e) tu(edfe)a(e.) (,) dis(fh)pér(h)de(gf) il(h)los,(hhhffd.) (;) pro(d)té(de'f)ctor(hfh) me(hhivH//E'f)us(gxfhFE'fw!gvFE') Dó(d)mi(de!fvED'e)ne.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #1357)"
+    source: "Graduale Romanum (GregoBase #1357)",
+    fullGabc: "(c3) EC(h)ce(f) De(f/hhvFD)us(d.) *() ád(gxfg)ju(e_[oh:h][ll:1]d)vat(d_[oh:h]e_[oh:h]d_[oh:h]) me,(d.) (;) et(f) Dó(f!gwh)mi(e[ll:1]d)nus(d.) (,) sus(ede)cé(fef)ptor(d_[oh:h]e_[oh:h]d_[oh:h]) est(d.) á(fh)ni(h)mae(h) me(hhhiv_[oh:h]H_[oh:h]F_[oh:h])ae :(f.) (:) a(f)vér(hi~)te(h) ma(hhh_f)la(f.) (,) in(e)i(fef)mí(h.f!gwh)cis(h_g) me(giH'G)is,(g.) (:) in(fh~) ve(ggh)ri(f)tá(f)te(e) tu(edfe)a(e.) (,) dis(fh)pér(h)de(gf) il(h)los,(hhhffd.) (;) pro(d)té(de'f)ctor(hfh) me(hhivH//E'f)us(gxfhFE'fw!gvFE') Dó(d)mi(de!fvED'e)ne.(e[ll:1]d..) (::) Ps. De(d)us(f) in(h) nó(h)mi(h)ne(h) tu(h)o(h) sal(h)vum(i) me(i) fac :(h.) *(:) et(f) in(h) vir(h)tú(h)te(h) tu(h)a(h) jú(i)di(g)ca(h) me.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Deus in nómine tuo salvum me fac : et in virtúte tua júdica me.", translation: "Save me, O God, by thy name, and judge me in thy strength.", gloriaPatri: true },
+    blurb: {
+      text: "Heinrich Isaac composed this Introit's polyphonic setting around 1508 for Constance Cathedral as part of the Choralis Constantinus, a project to supply sung polyphony for the Mass Proper across the whole church year; Isaac died in 1517 with the collection unfinished, and his pupil Ludwig Senfl completed and published it only in 1550. Its own text, from Psalm 54 (53 in the Vulgate numbering), prays that God \"destroy\" the psalmist's enemies \"in your truth,\" a plainer plea for justice than the more contemplative texts surrounding it in these Ordinary-Time Sundays.",
+      source: "Wikipedia, “Choralis Constantinus”; CPDL ChoralWiki, “Ecce Deus adjuvat me (Heinrich Isaac).”",
+    },
   },
   "ot-17": {
     title: "Deus in loco sancto",
     latin: "Deus in loco sancto suo : Deus, qui inhabitáre facit unánimes in domo : ipse dabit virtútem et fortitúdinem plebi suae.",
     translation: "God is in his holy place: God, who makes men of one mind to dwell in a house: he shall give power and strength to his people.",
     mode: "Introit · Ordinary Time · Mode V",
+    reference: "Ps. 68:6-7, 36",
     gabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1026)"
+    source: "Graduale Romanum (GregoBase #1026)",
+    fullGabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::) Ps. Ex(d)súr(f)gat(h) De(h)us,(h.) et(h) dis(h)si(h)pén(h)tur(h) in(h)i(h)mí(h)ci(i) e(i)jus :(h.) (:) * et(f) fú(h)gi(h)ant,(h) qui(h) o(h)dé(h)runt(h) e(h)um,(h.) a(h) fá(i)ci(g)e(g) e(h)jus.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Exsúrgat Deus, et dissipéntur inimíci ejus : et fúgiant, qui odérunt eum, a fácie ejus.", translation: "Let God arise, and let his enemies be scattered: and let them that hate him flee from before his face.", gloriaPatri: true },
+    blurb: {
+      text: "Deus in loco sancto suo appears in four of the six manuscripts collated in Dom René-Jean Hesbert's Antiphonale Missarum Sextuplex, placing it among the oldest and most widely attested layer of the Gregorian Sunday repertory, already standard across Frankish and Roman sources by the eighth and ninth centuries. Its text, from Psalm 68 (67 in the Vulgate numbering), praises God for making those of one mind to dwell in a house, read across the centuries as a summary of the harmony the Church itself is meant to embody.",
+      source: "MusicaSacra Church Music Forum, “Deus in loco sancto suo Introit for 17th OT/Holy Family/Wedding Mass.”",
+    },
   },
   "ot-18-a": {
     title: "Sitientes",
     latin: "Sitiéntes veníte ad aquas, dicit Dóminus : et qui non habétis prétium, veníte, bíbite cum laetítia.",
     translation: "All you who thirst, come to the waters, says the Lord: and you who have no money, come, drink with joy.",
     mode: "Introit · Ordinary Time · Mode II",
+    reference: "Is. 55:1",
     gabc: "(c3) SI(e)ti(f)én(f)tes(fhffe.) *(,) ve(f)ní(fh/ih)te(hhh) ad(f) a(f!hhf)quas,(efd.1) (,) di(fh)cit(hghf) Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])nus :(f.) (:) et(e) qui(f) non(f/hji) ha(h)bé(hih)tis(hhh) pré(hih)ti(f)um,(f_[oh:h]g_[oh:h]f._[oh:h]) (;) ve(f)ní(fh/ih)te,(hhh) (,) bí(hih)bi(f)te(efd.1) (,) cum(fh) lae(hghf)tí(f)ti(f_[oh:h]g_[oh:h]f_[oh:h])a.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #776)"
+    source: "Graduale Romanum (GregoBase #776)",
+    fullGabc: "(c3) SI(e)ti(f)én(f)tes(fhffe.) *(,) ve(f)ní(fh/ih)te(hhh) ad(f) a(f!hhf)quas,(efd.1) (,) di(fh)cit(hghf) Dó(f)mi(f_[oh:h]g_[oh:h]f_[oh:h])nus :(f.) (:) et(e) qui(f) non(f/hji) ha(h)bé(hih)tis(hhh) pré(hih)ti(f)um,(f_[oh:h]g_[oh:h]f._[oh:h]) (;) ve(f)ní(fh/ih)te,(hhh) (,) bí(hih)bi(f)te(efd.1) (,) cum(fh) lae(hghf)tí(f)ti(f_[oh:h]g_[oh:h]f_[oh:h])a.(f.) (::) Ps. At(e)tén(fe)di(eh)te(h) pó(h)pu(h)le(h) me(h)us(hg) le(hi)gem(i) me(hi)am :(h.) *(:) in(hf~)cli(fh)ná(h)te(h) au(h)rem(h) ve(h)stram(h.) (,) in(h) ver(h')ba(i) o(hf)ris(h) me(ge)i.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Atténdite pópule meus legem meam : inclináte aurem vestram in verba oris mei.", translation: "Understanding for Asaph. Attend, O my people, to my law: incline your ears to the words of my mouth.", gloriaPatri: true },
+    blurb: {
+      text: "Sitiéntes veníte ad aquas sets aside the Psalter that supplies nearly every other Ordinary-Time Sunday and instead borrows its invitation from the prophet Isaiah, whose vision of a renewed covenant closing the book's second half calls everyone who thirsts to the waters. The image is close enough to Christ's own words in John's Gospel, inviting anyone thirsty to come to him, that the two passages are commonly read as an echo of one another.",
+      source: "USCCB, Isaiah, chapter 55; New Advent Catholic Encyclopedia, \"Introit.\"",
+    },
   },
   "ot-18-b": {
     title: "Deus in adjutorium",
     latin: "Deus in adjutórium meum inténde : Dómine ad adjuvándum me festína : confundántur et revereántur inimíci mei, qui quaerunt ánimam meam.",
     translation: "O God, come to my assistance: O Lord, make haste to help me: let my enemies be confounded and ashamed, who seek my soul.",
     mode: "Introit · Ordinary Time · Mode VII",
+    reference: "Ps. 70:2-3",
     gabc: "(c2) DE(figgf)us(f.) *(,) in(exge) ad(f)ju(g)tó(iij)ri(i)um(i) me(iji)um(ihi.) (,) in(exgv.egf)tén(f_[oh:h]g_[oh:h]f_[oh:h])de :(f.) (:) Dó(f)mi(f)ne(hih.) (,) ad(g) ad(ghg)ju(f)ván(fff)dum(d) me(gi) fe(ihig)stí(f)na :(fgff) (:) con(d)fun(ff)dán(gh~)tur(f.) (,) et(f) re(f)ve(f)re(g)án(g!h!gh~)tur(f.) in(f)i(g)mí(g)ci(f) me(fffc/e[ll:1]d)i,(d.) (;) qui(d) quae(fg'h)runt(g) á(i)ni(h)mam(gh) me(fg/hffd)am.(dc..) (::)",
-    source: "Graduale Romanum (GregoBase #501)"
+    source: "Graduale Romanum (GregoBase #501)",
+    fullGabc: "(c2) DE(figgf)us(f.) *(,) in(exge) ad(f)ju(g)tó(iij)ri(i)um(i) me(iji)um(ihi.) (,) in(exgv.egf)tén(f_[oh:h]g_[oh:h]f_[oh:h])de :(f.) (:) Dó(f)mi(f)ne(hih.) (,) ad(g) ad(ghg)ju(f)ván(fff)dum(d) me(gi) fe(ihig)stí(f)na :(fgff) (:) con(d)fun(ff)dán(gh~)tur(f.) (,) et(f) re(f)ve(f)re(g)án(g!h!gh~)tur(f.) in(f)i(g)mí(g)ci(f) me(fffc/e[ll:1]d)i,(d.) (;) qui(d) quae(fg'h)runt(g) á(i)ni(h)mam(gh) me(fg/hffd)am.(dc..) (::) Ps. A(cfe)ver(fg~)tán(g)tur(g) ret(g)rór(g)sum(g) et(g) e(gi)ru(h)bé(hg)scant,(gh..) *(:) qui(ge) vo(fg)lunt(g!hwi) mi(g')hi(f) ma(fff)la.(dc..) (::) Gló(cfe)ri(fg)a(g) Pa(g)tri.(g) (::) E(g) u(g!hwi) o(g') u(f) a(fff) e.(dc..) (::)",
+    verse: { latin: "Avertántur retrórsum et erubéscant, qui volunt mihi mala.", translation: "Let them be turned backward, and blush for shame that desire evils to me: Let them be presently turned away blushing for shame that say to me: 'Tis well, 'tis well.", gloriaPatri: true },
+    blurb: {
+      text: "The opening words of this Introit have a second liturgical life far beyond any single Sunday: for centuries this same verse, \"O God, come to my assistance,\" has opened every hour of the Divine Office, prayed or sung at the very start of Lauds, Vespers, and every hour between them. Tradition credits St. Benedict with introducing the custom into monastic prayer, and St. Gregory the Great with extending it to the whole Roman Office.",
+      source: "New Advent Catholic Encyclopedia, \"Deus in Adjutorium Meum Intende.\"",
+    },
   },
   "ot-19": {
     title: "Respice Domine",
     latin: "Respice, Dómine, in testaméntum tuum, et ánimas páuperum tuórum ne derelínquas in finem : exsúrge Dómine, et júdica causam tuam : et ne obliviscáris voces quaeréntium te.",
     translation: "Have regard, O Lord, to your covenant, and forsake not to the end the souls of your poor: arise, O Lord, and judge your cause: and forget not the voices of those who seek you.",
     mode: "Introit · Ordinary Time · Mode VII",
+    reference: "Ps. 74:20, 19, 23",
     gabc: "(c3) RE(ei)spi(i)ce,(ikj) * Dó(kjki)mi(i)ne,(i.) (,) in(i) te(iji)sta(h_g)mén(gh!jki)tum(h_f) tu(f!gwh_e)um,(e.) (;) et(e) á(ef/hgh)ni(h)mas(h) páu(gh~)pe(h)rum(hhh) tu(f)ó(hh)rum(f!gwh.) (,) ne(f) de(hg)re(hi)lín(iih)quas(f) in(h) fi(gihh)nem :(hg..) (:) ex(h)súr(g!hwi'!jv)ge(i) Dó(kk)mi(lvKI)ne,(i.) (;) et(i) jú(iji)di(h)ca(hhh) cau(fh/ihi)sam(ihh) tu(f!gwh_f)am :(f.) (:) et(fh) ne(gh'i) ob(i)li(iji)vi(h)scá(hhhi)ris(h.) vo(hf/hhhi)ces(h.) (,) quae(h)rén(hi!jvji)ti(ihh)um(f!gw!hv_G~E~) te.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #691)"
+    source: "Graduale Romanum (GregoBase #691)",
+    fullGabc: "(c3) RE(ei)spi(i)ce,(ikj) * Dó(kjki)mi(i)ne,(i.) (,) in(i) te(iji)sta(h_g)mén(gh!jki)tum(h_f) tu(f!gwh_e)um,(e.) (;) et(e) á(ef/hgh)ni(h)mas(h) páu(gh~)pe(h)rum(hhh) tu(f)ó(hh)rum(f!gwh.) (,) ne(f) de(hg)re(hi)lín(iih)quas(f) in(h) fi(gihh)nem :(hg..) (:) ex(h)súr(g!hwi'!jv)ge(i) Dó(kk)mi(lvKI)ne,(i.) (;) et(i) jú(iji)di(h)ca(hhh) cau(fh/ihi)sam(ihh) tu(f!gwh_f)am :(f.) (:) et(fh) ne(gh'i) ob(i)li(iji)vi(h)scá(hhhi)ris(h.) vo(hf/hhhi)ces(h.) (,) quae(h)rén(hi!jvji)ti(ihh)um(f!gw!hv_G~E~) te.(fe..) (::) Ps. Ut(ehg) quid(hi) De(i)us(i) re(i)pu(i)lí(ik)sti(j) in(j) fi(ji)nem :(ij..) *(:) i(ig)rá(hi)tus(i) est(i) fu(i)ror(i) tu(i)us(i.) (,) su(i)per(i) o(i)ves(i) pá(i!jwk)scu(i')ae(h) tu(hhh)ae?(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Ut quid Deus repulísti in finem : irátus est furor tuus super oves páscuae tuae?.", translation: "Understanding for Asaph. O God, why hast thou cast us off unto the end: why is thy wrath enkindled against the sheep of thy pasture?", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 74 (73 in the Vulgate numbering), the source of this Introit, is a communal lament attributed to Asaph, connected to the destruction of the Jerusalem sanctuary in the Babylonian invasion of 587 BC. Its plea to remember the covenant comes from a people mourning a ruined temple, not from an individual's private distress, which sets it apart from the more personal psalms sung on the surrounding Sundays.",
+      source: "USCCB, Psalms, chapter 74; New Advent Catholic Encyclopedia, \"Introit.\"",
+    },
   },
   "ot-20": {
     title: "Protector noster",
     latin: "Protéctor noster áspice, Deus, et réspice in fáciem Christi tui : quia mélior est dies una in átriis tuis super míllia.",
     translation: "Behold, O God our protector, and look upon the face of your Christ: for better is one day in your courts above thousands.",
     mode: "Introit · Ordinary Time · Mode IV",
+    reference: "Ps. 84:10-11",
     gabc: "(c4) PRo(f)té(fffd)ctor(ef) no(ghhg)ster(g.) *(,) á(gjj)spi(h)ce,(g) De(h_f/h_g/hffef)us,(fe..) (;) et(ef) ré(gh)spi(g)ce(g.) (,) in(gh~) fá(hhg)ci(f)em(fg'h) Chri(jj)sti(kjjh) tu(h.g!hwihi)i :(ih..) (:) qui(ixh.g!hwih)a(h) mé(ixh.g!hwi)li(hg)or(ghG'F) est(f.) (,) di(f)es(h) u(h!iw!jvI'HG'h)na(hg..) (,) in(h) á(h)tri(ge)is(f_g) tu(efED'e)is(e[ll:1]d..) (;) su(de!f'g)per(gh) míl(h/jjvGF'fd//fhg___/hfg)li(egff)a.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #1071)"
+    source: "Graduale Romanum (GregoBase #1071)",
+    fullGabc: "(c4) PRo(f)té(fffd)ctor(ef) no(ghhg)ster(g.) *(,) á(gjj)spi(h)ce,(g) De(h_f/h_g/hffef)us,(fe..) (;) et(ef) ré(gh)spi(g)ce(g.) (,) in(gh~) fá(hhg)ci(f)em(fg'h) Chri(jj)sti(kjjh) tu(h.g!hwihi)i :(ih..) (:) qui(ixh.g!hwih)a(h) mé(ixh.g!hwi)li(hg)or(ghG'F) est(f.) (,) di(f)es(h) u(h!iw!jvI'HG'h)na(hg..) (,) in(h) á(h)tri(ge)is(f_g) tu(efED'e)is(e[ll:1]d..) (;) su(de!f'g)per(gh) míl(h/jjvGF'fd//fhg___/hfg)li(egff)a.(fe..) (::) Ps. Quam(hg~) di(gh)lé(h)cta(h) ta(h)ber(h)ná(h)cu(h)la(h) tu(h)a,(h) Dó(h)mi(hg)ne(gi) vir(i)tú(hi)tum!(h.) *(:) con(hg~)cu(gh)pís(h)cit,(h) et(h) dé(h)fi(h)cit(h) á(h)ni(h)ma(h) me(h)a(h.) (,) in(h) á(h)tri(h)a(gf) Dó(gh)mi(g)ni.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Quam dilécta tabernácula tua, Dómine virtútum! concupíscit, et déficit ánima mea in átria Dómini.", translation: "How lovely are thy tabernacles, O Lord of hosts! my soul longeth and fainteth for the courts of the Lord. My heart and my flesh have rejoiced in the living God.", gloriaPatri: true },
+    blurb: {
+      text: "Protéctor noster áspice draws on Psalm 84 (83 in the Vulgate numbering), the Korahite psalm of longing for the temple courts whose opening line, \"How lovely is your dwelling place,\" would later inspire some of the best-known choral music in the repertoire. Its fourth movement setting in Brahms's German Requiem, \"Wie lieblich sind deine Wohnungen,\" falls at the emotional center of that seven-movement work.",
+      source: "Bible as Music, \"Wie lieblich sind deine Wohnungen... (Psalm 84:1-2,4) - Johannes Brahms\"; Wikipedia, \"Psalm 84.\"",
+    },
   },
   "ot-21": {
     title: "Inclina Domine",
     latin: "Inclína, Dómine, aurem tuam ad me, et exáudi me : salvum fac servum tuum, Deus meus, sperántem in te : miserére mihi, Dómine, quóniam ad te clamávi tota die.",
     translation: "Incline your ear, O Lord, to me, and hear me: save your servant, O my God, who trusts in you: have mercy on me, O Lord, for I have cried to you all the day.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Ps. 86:1, 2-3",
     gabc: "(c4) IN(cd)clí(ixdh'!iv)na,(h') *(,) Dó(hjjh)mi(h_g)ne,(g_[oh:h]f) (,) au(gh~)rem(h) tu(ixhgih)am(h) ad(ixh_[oh:h]i_[oh:h]h_[oh:h]) me,(h.) (;) et(h) ex(fg/hfg)áu(d)di(d!ewf_d) me :(d.) (:) sal(df!gh)vum(g) fac(g) ser(gf~)vum(g_[oh:h]f) tu(gff)um,(ded.) (;) De(ffg)us(f) me(ixf!gwh'!iv)us,(h.) (,) spe(h_g)rán(h!iwj)tem(h_g) in(hggfg) te :(gf..) (:) mi(f)se(ghg')ré(h)re(fgf') mi(g)hi,(eg) Dó(f)mi(deDC'd)ne,(dc..) (;) quó(d)ni(dcdv[ll:1]/CA)am(a) ad(cd'f~) te(f) cla(fe)má(fggvFD)vi(d.) (,) to(d/fff)ta(dv.c!ecd) di(d_[oh:h]e_[oh:h]d_[oh:h])e.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1165)"
+    source: "Graduale Romanum (GregoBase #1165)",
+    fullGabc: "(c4) IN(cd)clí(ixdh'!iv)na,(h') *(,) Dó(hjjh)mi(h_g)ne,(g_[oh:h]f) (,) au(gh~)rem(h) tu(ixhgih)am(h) ad(ixh_[oh:h]i_[oh:h]h_[oh:h]) me,(h.) (;) et(h) ex(fg/hfg)áu(d)di(d!ewf_d) me :(d.) (:) sal(df!gh)vum(g) fac(g) ser(gf~)vum(g_[oh:h]f) tu(gff)um,(ded.) (;) De(ffg)us(f) me(ixf!gwh'!iv)us,(h.) (,) spe(h_g)rán(h!iwj)tem(h_g) in(hggfg) te :(gf..) (:) mi(f)se(ghg')ré(h)re(fgf') mi(g)hi,(eg) Dó(f)mi(deDC'd)ne,(dc..) (;) quó(d)ni(dcdv[ll:1]/CA)am(a) ad(cd'f~) te(f) cla(fe)má(fggvFD)vi(d.) (,) to(d/fff)ta(dv.c!ecd) di(d_[oh:h]e_[oh:h]d_[oh:h])e.(d.) (::) Ps. Lae(f)tí(gh)fi(h)ca(h) á(h)ni(h)mam(h) ser(hj)vi(h) tu(hg)i :(gh..) *(:) quó(gf)ni(gh)am(h) ad(h) te,(h) Dó(h)mi(h)ne,(h.) (,) á(h)ni(h)mam(h) me(hjh)am(g') le(f)vá(fff)vi.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Laetífica ánimam servi tui : quóniam ad te, Dómine, ánimam meam levávi.", translation: "Give joy to the soul of thy servant, for to thee, O Lord, I have lifted up my soul.", gloriaPatri: true },
+    blurb: {
+      text: "Inclina Domine draws its text from Psalm 86, which carries the heading \"A Prayer of David\" in the Psalter. It is one of only a few psalms in the middle third of the Psalter still attributed directly to David, in a stretch otherwise dominated by psalms credited to Asaph or to the sons of Korah, the very sources behind the introits sung on the Sundays just before and after this one.",
+      source: "USCCB, Psalms, chapter 86.",
+    },
   },
   "ot-22": {
     title: "Miserere mihi",
     latin: "Miserére mihi Dómine, quóniam ad te clamávi tota die : quia tu Dómine suávis ac mitis es, et copiósus in misericórdia ómnibus invocántibus te.",
     translation: "Have mercy on me, O Lord, for I have cried to you all the day: for you, O Lord, are sweet and mild, and plenteous in mercy to all who call upon you.",
     mode: "Introit · Ordinary Time · Mode VIII",
+    reference: "Ps. 86:3, 5",
     gabc: "(c3) MI(e)se(hh)ré(f_e)re(fd) mi(e)hi(f) *() Dó(hhi)mi(h)ne,(h.) (;) quó(h)ni(hhhe)am(e) ad(ef~) te(f) cla(f)má(f_efvED'e)vi(e_[oh:h][ll:1]d) (,) to(d!f'h)ta(hhhvF'E) di(efe___)e :(e.) (:) qui(ef/hgh)a(h) tu(h) Dó(h)mi(fh!ivHG'h)ne(hg..) (,) su(h)á(gh'i)vis(i_[oh:h]g) ac(gi) mi(hg)tis(g) es,(g.) (;) et(g) co(g)pi(i)ó(ki/kkkiihi)sus(i_[oh:h]h) (,) in(hg~) mi(h)se(i)ri(jk)cór(iihi)di(gh!ivHG'h)a(hg..) (;) ó(gh/ih)mni(hhh)bus(f.) (`) in(ef)vo(de)cán(eh)ti(hhghvGFg_[oh:h]f/gee)bus(efe___) te.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #335)"
+    source: "Graduale Romanum (GregoBase #335)",
+    fullGabc: "(c3) MI(e)se(hh)ré(f_e)re(fd) mi(e)hi(f) *() Dó(hhi)mi(h)ne,(h.) (;) quó(h)ni(hhhe)am(e) ad(ef~) te(f) cla(f)má(f_efvED'e)vi(e_[oh:h][ll:1]d) (,) to(d!f'h)ta(hhhvF'E) di(efe___)e :(e.) (:) qui(ef/hgh)a(h) tu(h) Dó(h)mi(fh!ivHG'h)ne(hg..) (,) su(h)á(gh'i)vis(i_[oh:h]g) ac(gi) mi(hg)tis(g) es,(g.) (;) et(g) co(g)pi(i)ó(ki/kkkiihi)sus(i_[oh:h]h) (,) in(hg~) mi(h)se(i)ri(jk)cór(iihi)di(gh!ivHG'h)a(hg..) (;) ó(gh/ih)mni(hhh)bus(f.) (`) in(ef)vo(de)cán(eh)ti(hhghvGFg_[oh:h]f/gee)bus(efe___) te.(e.) (::) Ps. In(e)clí(fe)na(eh) Dó(h)mi(h)ne(h) au(h)rem(h) tu(h)am(hg) et(hi) ex(i)áu(hi)di(h) me :(h.) *(:) quó(hf)ni(fh)am(h) in(h)ops(h) et(h) pau(hhg)per(ef) sum(hg) e(f)go.(e.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h) u(hhg) o(ef) u(hg) a(f) e.(e.) (::)",
+    verse: { latin: "Inclína Dómine aurem tuam et exáudi me : quóniam inops et pauper sum ego.", translation: "A prayer for David himself. Incline thy ear, O Lord, and hear me: for I am needy and poor.", gloriaPatri: true },
+    blurb: {
+      text: "Miserere mihi Domine continues straight on from the previous Sunday's Introit: both are drawn from the same psalm, Psalm 86 (85 in the Vulgate numbering), the Prayer of David, this one picking up just a few verses further into the same continuous plea for mercy.",
+      source: "USCCB, Psalms, chapter 86.",
+    },
   },
   "ot-23": {
     title: "Iustus es Domine",
     latin: "Iustus es Dómine, et rectum iudicium tuum: fac cum servo tuo secúndum misericórdiam tuam.",
     translation: "You are just, O Lord, and your judgment is right: deal with your servant according to your mercy.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Ps. 119:137, 124",
     gabc: "(c4)IUs(ixdh'!iv)tus(h) es(h) Dó(h)mi(gf)ne,(f.) *(;) et(f) rec(gh)tum(h) iu(h)di(jj)ci(g_f)um(hfh) tu(h!iwjh)um:(h.) (:) fac(h) cum(j) ser(kjk)vo(k) tu(k)o(kl) (,) se(j)cún(hj)dum(jjj_h) (`) mi(f)se(g)ri(f_e)cór(fhg)di(f)am(gf/fe) tu(de!fvED'e)am.(ed..)",
-    source: "Graduale Romanum (GregoBase #10605)"
+    source: "Graduale Romanum (GregoBase #10605)",
+    fullGabc: "(c4)IUs(ixdh'!iv)tus(h) es(h) Dó(h)mi(gf)ne,(f.) *(;) et(f) rec(gh)tum(h) iu(h)di(jj)ci(g_f)um(hfh) tu(h!iwjh)um:(h.) (:) fac(h) cum(j) ser(kjk)vo(k) tu(k)o(kl) (,) se(j)cún(hj)dum(jjj_h) (`) mi(f)se(g)ri(f_e)cór(fhg)di(f)am(gf/fe) tu(de!fvED'e)am.(ed..) Ps.(::) Be(f)á(gh)ti(h) im(h)ma(h)cu(h)lá(hj)ti(h) in(h) vi(hg)a:(g.h.) (:) qui(gf) ám(gh)bu(h)lant(h) in(h) le(hjh)ge(g') Dó(f)mi(fff)ni.(d.) (::)",
+    verse: { latin: "Beáti immaculáti in via: qui ámbulant in lege Dómini.", translation: "Blessed are the undefiled in the way, who walk in the law of the Lord.", gloriaPatri: false },
+    blurb: {
+      text: "Psalm 119 (118 in the Vulgate numbering) supplies this Introit's text. It is the longest chapter in the Bible, an acrostic of 176 verses built eight lines at a time around each successive letter of the Hebrew alphabet, entirely devoted to praising God's law.",
+      source: "USCCB, Psalms, chapter 119.",
+    },
   },
   "ot-24": {
     title: "Da pacem",
     latin: "Da pacem, Dómine, sustinéntibus te, ut prophétae tui fidéles inveniántur : exáudi preces servi tui, et plebis tuae Israel.",
     translation: "Give peace, O Lord, to those who patiently wait for you, that your prophets may be found faithful: hear the prayers of your servant, and of your people Israel.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Ecclus. 36:18",
     gabc: "(c4) DA(ixdh'!iv) pa(ixhi)cem,(h') *(,) Dó(hjjh)mi(ixihig)ne,(hg..) (,) sus(ixhig)ti(f)nén(fg)ti(g)bus(ghF'Ef) te,(d.) (:) ut(d) pro(ff)phé(fg)tae(g) tu(ixhg/hig)i(fgf.) (,) fi(f)dé(ixf!gwh'!iv)les(h) in(jj)ve(hhg)ni(fh)án(gh~)tur :(f.) (:) ex(f)áu(ixhiH~'G~)di(g.) pre(ixhig)ces(f) ser(fg~)vi(g) tu(g.f!gwhgh)i,(hg..) (;) et(f@h!gh~) ple(h)bis(hgffd) tu(d!f/[1]{/[-1]ix}f/hig)ae(g.) (,) Is(fgF'D)ra(d!ewf_d)el.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #172)"
+    source: "Graduale Romanum (GregoBase #172)",
+    fullGabc: "(c4) DA(ixdh'!iv) pa(ixhi)cem,(h') *(,) Dó(hjjh)mi(ixihig)ne,(hg..) (,) sus(ixhig)ti(f)nén(fg)ti(g)bus(ghF'Ef) te,(d.) (:) ut(d) pro(ff)phé(fg)tae(g) tu(ixhg/hig)i(fgf.) (,) fi(f)dé(ixf!gwh'!iv)les(h) in(jj)ve(hhg)ni(fh)án(gh~)tur :(f.) (:) ex(f)áu(ixhiH~'G~)di(g.) pre(ixhig)ces(f) ser(fg~)vi(g) tu(g.f!gwhgh)i,(hg..) (;) et(f@h!gh~) ple(h)bis(hgffd) tu(d!f/[1]{/[-1]ix}f/hig)ae(g.) (,) Is(fgF'D)ra(d!ewf_d)el.(d.) (::) T. P. Al(ixhi)le(h)lú(hgh){ia},(f_d) (,) al(fg)le(efghfgvFE)lú(d!ewfef){ia}.(e[ll:1]d..) (::) Ps. Lae(f)tá(gh)tus(h) sum(h) in(h) his(h) quae(h) di(hj)cta(h) sunt(h) mi(hg)hi :(gh..) *(:) in(gf) do(gh)mum(h) Dó(h)mi(hjh)ni(g') í(f)bi(fff)mus.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Laetátus sum in his quae dicta sunt mihi : in domum Dómini íbimus.", translation: "A gradual canticle.", gloriaPatri: true },
+    blurb: {
+      text: "Da pacem Domine has a life well beyond this one Sunday. The same antiphon text became a cantus firmus for Renaissance polyphony, most famously Josquin des Prez's five-voice motet and the Mass built on it, and it was set again in 2004 by Arvo Pärt, who began composing his own Da pacem Domine just two days after the Madrid train bombings as a tribute to the victims.",
+      source: "Emmanuel Music, \"Motet Notes - Pärt: Da pacem, Domine\"; Wikipedia, \"Da pacem Domine (Pärt).\"",
+    },
   },
   "ot-25": {
     title: "Salus populi",
     latin: "Salus pópuli ego sum, dicit Dóminus : de quacúmque tribulatióne clamáverint ad me, exáudiam eos : et ero illórum Dóminus in perpétuum.",
     translation: "I am the salvation of the people, says the Lord: in whatever tribulation they shall cry to me, I will hear them: and I will be their Lord for ever.",
     mode: "Introit · Ordinary Time · Mode IV",
+    reference: "",
     gabc: "(c4) SA(fffd)lus(ef) pó(g)pu(g)li(ixgih.) (,) * e(h)go(gh_G'_FE'f) sum,(fe..) (;) di(ef'g)cit(ghG'Fghg') Dó(e)mi(egff)nus :(eef.) (:) de(d) qua(g)cúm(hg/hi)que(h) tri(hih)bu(g)la(gh/ji)ti(jjjh)ó(hiHG'h)ne(hg..) (,) cla(g)má(gh)ve(g)rint(gfh) ad(h!iw!jvI'HG'h) me,(g.) (;) ex(f)áu(e.f!gwh)di(g)am(gfh) e(h!iw!jvI'HG'h)os :(hg..) (:) et(g) e(h)ro(g') il(g)ló(fg'h)rum(g) Dó(g)mi(g.e!fwg)nus(ghF'EfvEDe[ll:1]d..) (;) in(de!f'g) per(g/jjh/i.g!hw!ivHG')pé(e)tu(egff)um.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #389)"
+    source: "Graduale Romanum (GregoBase #389)",
+    fullGabc: "(c4) SA(fffd)lus(ef) pó(g)pu(g)li(ixgih.) (,) * e(h)go(gh_G'_FE'f) sum,(fe..) (;) di(ef'g)cit(ghG'Fghg') Dó(e)mi(egff)nus :(eef.) (:) de(d) qua(g)cúm(hg/hi)que(h) tri(hih)bu(g)la(gh/ji)ti(jjjh)ó(hiHG'h)ne(hg..) (,) cla(g)má(gh)ve(g)rint(gfh) ad(h!iw!jvI'HG'h) me,(g.) (;) ex(f)áu(e.f!gwh)di(g)am(gfh) e(h!iw!jvI'HG'h)os :(hg..) (:) et(g) e(h)ro(g') il(g)ló(fg'h)rum(g) Dó(g)mi(g.e!fwg)nus(ghF'EfvEDe[ll:1]d..) (;) in(de!f'g) per(g/jjh/i.g!hw!ivHG')pé(e)tu(egff)um.(fe..) (::) Ps. At(hg~)tén(gh)di(h)te(h) pó(h)pu(h)le(h) me(h)us(hg) le(gi)gem(i) me(hi)am :(h.) (:) * in(hg~)cli(gh)ná(h)te(h) au(h)rem(h) ve(h)stram(h.) (,) in(h) ver(h)ba(h) o(gf)ris(gh) me(g)i.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Atténdite pópule meus legem meam : inclináte aurem vestram in verba oris mei.", translation: "Understanding for Asaph. Attend, O my people, to my law: incline your ears to the words of my mouth.", gloriaPatri: true },
+    blurb: {
+      text: "Most introits address God in the first person, drawing on the Psalter. This one turns that around: God speaks, declaring himself the salvation of the people. That oracle-style opening, \"dicit Dominus,\" appears in only a handful of other introits across Ordinary Time, including the one sung on the 33rd Sunday.",
+      source: "Gregorien.info, \"Introitus - Salus populi ego sum\"; New Advent Catholic Encyclopedia, \"Introit.\"",
+    },
   },
   "ot-26-a": {
     title: "In nomine Domini",
     latin: "In nómine Dómini omne genu flectátur, caeléstium, terréstrium et infernórum : quia Dóminus factus obédiens usque ad mortem, mortem autem crucis : ídeo Dóminus Jesus Christus in glória est Dei Patris.",
     translation: "In the name of the Lord let every knee bow, of those in heaven, on earth, and under the earth: for the Lord became obedient unto death, even the death of the cross: therefore the Lord Jesus Christ is in the glory of God the Father.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Phil. 2:10-11",
     gabc: "(c4) IN(e[ll:1]d~) nó(g)mi(hj)ne(j) Dó(ij)mi(j)ni(j.) *(,) o(ij~)mne(j) ge(j)nu(jjj) fle(hig)ctá(h!iwj/kjj)tur,(ji..) (;) cae(hg)lé(hi)sti(h)um,(h.) (,) ter(hji)ré(jijh)stri(h.g!hwihi)um(ih..) (,) et(g) in(hj)fer(jjj)nó(ikjj)rum :(ji..) (:) qui(i)a(k) Dó(l)mi(k)nus(j) fa(k)ctus(j) ob(i)é(kij)di(hg)ens(h.) (,) us(hg)que(h) ad(j) mor(ikjj)tem,(ji..) (;) mor(g)tem(hi~) au(i)tem(h) cru(gh/igh)cis :(ghGE.) (:) íd(e!fwg'!hv)e(g)o(g.) (,) Dó(gh)mi(g)nus(g) Je(g)sus(g) Chri(h.g!hwihi)stus(ih..) (;) in(hg~) gló(h!iwj)ri(g)a(h) est(g.) (,) De(ef'h)i(h) Pa(g_[oh:h]fhvGFgvFE)tris.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #236)"
+    source: "Graduale Romanum (GregoBase #236)",
+    fullGabc: "(c4) IN(e[ll:1]d~) nó(g)mi(hj)ne(j) Dó(ij)mi(j)ni(j.) *(,) o(ij~)mne(j) ge(j)nu(jjj) fle(hig)ctá(h!iwj/kjj)tur,(ji..) (;) cae(hg)lé(hi)sti(h)um,(h.) (,) ter(hji)ré(jijh)stri(h.g!hwihi)um(ih..) (,) et(g) in(hj)fer(jjj)nó(ikjj)rum :(ji..) (:) qui(i)a(k) Dó(l)mi(k)nus(j) fa(k)ctus(j) ob(i)é(kij)di(hg)ens(h.) (,) us(hg)que(h) ad(j) mor(ikjj)tem,(ji..) (;) mor(g)tem(hi~) au(i)tem(h) cru(gh/igh)cis :(ghGE.) (:) íd(e!fwg'!hv)e(g)o(g.) (,) Dó(gh)mi(g)nus(g) Je(g)sus(g) Chri(h.g!hwihi)stus(ih..) (;) in(hg~) gló(h!iwj)ri(g)a(h) est(g.) (,) De(ef'h)i(h) Pa(g_[oh:h]fhvGFgvFE)tris.(e.) (::) Ps. Dó(g)mi(hj)ne(j) ex(j)áu(j)di(j) o(j)ra(j)ti(j)ó(k)nem(j) me(ih)am :(jjj) *(:) et(ig~) cla(hj)mor(j) me(j)us(j) ad(jji) te(hg) vé(h')ni(i)at.(gh..) (::) In(e[ll:1]d~) nó(g)mi(hj)ne.(j) (::)",
+    verse: { latin: "Dómine exáudi oratiónem meam : et clamor meus ad te véniat.", translation: "Hear, O Lord, my prayer: and let my cry come to thee.", gloriaPatri: false },
+    blurb: {
+      text: "This is one of the few Sundays whose Introit steps outside the Psalter altogether, quoting instead the close of the hymn in Philippians 2: \"at the name of Jesus every knee should bend.\" Many New Testament scholars think Paul is himself quoting here, incorporating an early Christian hymn that was already in liturgical use in the young Church before it was written into his letter.",
+      source: "Blue Letter Bible, \"The Hymn of Christ (Philippians 2:5-11)\"; USCCB, Philippians, chapter 2.",
+    },
   },
   "ot-26-b": {
     title: "Omnia quae fecisti",
     latin: "Omnia quae fecísti nobis, Dómine, in vero judício fecísti, quia peccávimus tibi, et mandátis tuis non obedívimus : sed da glóriam nómini tuo, et fac nobíscum secúndum multitúdinem misericórdiae tuae.",
     translation: "All that you have done to us, O Lord, you have done in true judgment: because we have sinned against you, and have not obeyed your commandments: but give glory to your name, and deal with us according to the multitude of your mercy.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Dan. 3:31, 29, 35",
     gabc: "(c4) O(gj)mni(j)a(j) (,) * quae(j) fe(j)cí(j)sti(h) no(jj)bis,(g) Dó(jj)mi(hkJI'j)ne,(ji..) (;) in(jk) ve(jkjj)ro(i_[oh:h]h) ju(h)dí(jj)ci(g)o(g) (,) fe(hggf/ghg)cí(egff)sti,(fe..) (:) qui(f)a(e!fwg'!hv) pec(g)cá(hhg)vi(g)mus(gfh) ti(h!iw!jvI'HG'h)bi,(hg..) (;) et(g) man(hi~)dá(i)tis(i) tu(j)is(h.) non(h) o(h)be(h)dí(h)vi(h.f!gwhgh)mus :(hg..) (:) sed(g) da(g.h!iwj/kjjvIG) gló(g.h!iwj)ri(g)am(g.) (,) nó(ef'h)mi(h)ni(h!iwj) tu(g_[oh:h]fgvFD)o,(d.) (:) et(gj~) fac(jv.jjj) no(h)bís(hih)cum(h.) (,) se(g)cún(ghgh)dum(f_e) mul(fg~)ti(f)tú(ef/gfg)di(egff)nem(eef.) (,) mi(fd)se(fe)ri(fg)cór(g/jjV!hi~)di(gfg)ae(ghG'Fghg) tu(egff)ae.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #1056)"
+    source: "Graduale Romanum (GregoBase #1056)",
+    blurb: {
+      text: "Omnia quae fecisti draws from three verses of Daniel 3, but not in the order they appear in the text. It opens with verse 31, steps back to verse 29, then jumps forward to verse 35, gathering the confession of sin, the acknowledgment of God's true judgment, and the appeal to mercy into a single unbroken plea. The verses come from a passage that, as St. Jerome noted, was absent from the Hebrew text of Daniel in his time, yet had long been received by the Church and read in her liturgy as canonical scripture.",
+      source: "Dan. 3:31, 29, 35 (Douay-Rheims; Latin from the Clementine Vulgate)",
+    },
+    fullGabc: "(c4) O(gj)mni(j)a(j) (,) * quae(j) fe(j)cí(j)sti(h) no(jj)bis,(g) Dó(jj)mi(hkJI'j)ne,(ji..) (;) in(jk) ve(jkjj)ro(i_[oh:h]h) ju(h)dí(jj)ci(g)o(g) (,) fe(hggf/ghg)cí(egff)sti,(fe..) (:) qui(f)a(e!fwg'!hv) pec(g)cá(hhg)vi(g)mus(gfh) ti(h!iw!jvI'HG'h)bi,(hg..) (;) et(g) man(hi~)dá(i)tis(i) tu(j)is(h.) non(h) o(h)be(h)dí(h)vi(h.f!gwhgh)mus :(hg..) (:) sed(g) da(g.h!iwj/kjjvIG) gló(g.h!iwj)ri(g)am(g.) (,) nó(ef'h)mi(h)ni(h!iwj) tu(g_[oh:h]fgvFD)o,(d.) (:) et(gj~) fac(jv.jjj) no(h)bís(hih)cum(h.) (,) se(g)cún(ghgh)dum(f_e) mul(fg~)ti(f)tú(ef/gfg)di(egff)nem(eef.) (,) mi(fd)se(fe)ri(fg)cór(g/jjV!hi~)di(gfg)ae(ghG'Fghg) tu(egff)ae.(fe..) (::) Ps. Be(g)á(hj)ti(j) im(j)ma(j)cu(j)lá(k)ti(j) in(j) vi(ih)a :(jjj) (:) * qui(ig) ám(hj)bu(j)lant(j) in(j) le(jji)ge(hg) Dó(h')mi(i)ni.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Beáti immaculáti in via : qui ámbulant in lege Dómini.", translation: "Blessed are the undefiled in the way, who walk in the law of the Lord.", gloriaPatri: true },
   },
   "ot-27": {
     title: "In voluntate",
     latin: "In voluntáte tua, Dómine, univérsa sunt pósita, et non est qui possit resístere voluntáti tuae : tu enim fecísti ómnia, caelum et terram, et univérsa quae caeli ámbitu continéntur : Dóminus universórum tu es.",
     translation: "All things are in your will, O Lord, and there is none that can resist your will: for you have made all things, heaven and earth, and all things that are under the cope of heaven: you are the Lord of all.",
     mode: "Introit · Ordinary Time · Mode IV",
+    reference: "Esth. 13:9, 10-11",
     gabc: "(c4) IN(d) vo(fd)lun(f)tá(ef)te(f) tu(ef)a,(f.) *(,) Dó(f)mi(fff)ne,(e_[oh:h][ll:1]d_[oh:h]) (;) u(c)ni(dc)vér(df~)sa(f) sunt(fff) pó(egF'E)si(fgF'E)ta,(eef.) (:) et(d) non(dg!hv) est(g) qui(g) pos(f!hgh)sit(e) re(g)sí(ghgh)ste(ffef)re(fe__) (,) vo(fff)lun(df)tá(fg)ti(gffd) tu(d!ewf_d)ae :(d.) (:) tu(f) e(e.f!gwh)nim(hg~) fe(g)cí(ghgh)sti(f) ó(fg)mni(fe)a,(fgffvE'DCdc..) (;) cae(f)lum(fff) et(fd~) ter(fg~)ram,(f.) (,) et(f) u(fff)ni(fd)vér(fg~)sa(f.) (,) quae(f) cae(e.f!gwh_g)li(g_[oh:h]e) ám(fg)bi(f)tu(egffvE'DCdc..) (,) con(f)ti(ef/gfg)nén(d)tur :(d!ff/gddc.) (:) Dó(cd/fef)mi(f)nus(fff) (`) u(fd)ni(fe)ver(fg~)só(g_[oh:h]f)rum(fhg___) (,) tu(ffd/ffgvFEgvFE) es.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #1047)"
+    source: "Graduale Romanum (GregoBase #1047)",
+    fullGabc: "(c4) IN(d) vo(fd)lun(f)tá(ef)te(f) tu(ef)a,(f.) *(,) Dó(f)mi(fff)ne,(e_[oh:h][ll:1]d_[oh:h]) (;) u(c)ni(dc)vér(df~)sa(f) sunt(fff) pó(egF'E)si(fgF'E)ta,(eef.) (:) et(d) non(dg!hv) est(g) qui(g) pos(f!hgh)sit(e) re(g)sí(ghgh)ste(ffef)re(fe__) (,) vo(fff)lun(df)tá(fg)ti(gffd) tu(d!ewf_d)ae :(d.) (:) tu(f) e(e.f!gwh)nim(hg~) fe(g)cí(ghgh)sti(f) ó(fg)mni(fe)a,(fgffvE'DCdc..) (;) cae(f)lum(fff) et(fd~) ter(fg~)ram,(f.) (,) et(f) u(fff)ni(fd)vér(fg~)sa(f.) (,) quae(f) cae(e.f!gwh_g)li(g_[oh:h]e) ám(fg)bi(f)tu(egffvE'DCdc..) (,) con(f)ti(ef/gfg)nén(d)tur :(d!ff/gddc.) (:) Dó(cd/fef)mi(f)nus(fff) (`) u(fd)ni(fe)ver(fg~)só(g_[oh:h]f)rum(fhg___) (,) tu(ffd/ffgvFEgvFE) es.(e.) (::) Ps. Be(hg)á(gh)ti(h) im(h)ma(h)cu(h)lá(hg)ti(gi) in(i) vi(hi)a :(h.) *(:) qui(hg) ám(gh)bu(h)lant(h) in(h) le(h)ge(gf) Dó(gh)mi(g)ni.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(egff) (::)",
+    verse: { latin: "Beáti immaculáti in via : qui ámbulant in lege Dómini.", translation: "Blessed are the undefiled in the way, who walk in the law of the Lord.", gloriaPatri: true },
+    blurb: {
+      text: "The source of this Introit, chapter 13 of Esther, exists only in the longer Greek-derived text of the book preserved in the Vulgate. It belongs to the Additions to Esther found in Catholic and Orthodox Bibles but absent from the shorter Hebrew-based text used in Protestant and Jewish canons. Mordecai's plea sung here has no equivalent chapter or verse in most non-Catholic Bibles at all.",
+      source: "USCCB, Esther (NABRE), with its note on the Greek additions.",
+    },
   },
   "ot-29": {
     title: "Ego clamavi",
     latin: "Ego clamávi, quóniam exaudísti me, Deus : inclína aurem tuam, et exáudi verba mea : custódi me, Dómine, ut pupíllam óculi : sub umbra alárum tuárum prótege me.",
     translation: "I have cried out, for you, O God, have heard me: incline your ear, and hear my words: keep me, O Lord, as the apple of your eye: protect me under the shadow of your wings.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Ps. 17:6, 8",
     gabc: "(c4) E(f)go(fff) cla(dg)má(gjHG'j)vi,(j.) *(;) quó(j)ni(jijh)am(jijvH'Gh.) (,) ex(g)au(hj)dí(iij)sti(hg) me,(hi) De(hv.ghG'F)us :(f.) (:) in(f)clí(ef!gh)na(g) au(g)rem(gh~) tu(h_g)am,(ixgih/iggf.0) (;) et(g) ex(gh/ji)áu(jjj)di(h.) ver(gj~)ba(jijh) me(h.f!gwhgh)a :(hg..) (:) cu(gd)stó(g)di(hji) me,(jjjhk) Dó(j_i)mi(ikjj)ne,(ji..) (;) ut(ij) pu(h_g)píl(gf~)lam(h) ó(h!jij)cu(jhig)li :(g.) (:) sub(g) um(i)bra(hj//ijh) a(g)lá(gfhg)rum(g.) tu(g)á(g.h!iwj)rum(jjjvH'G) (;) pró(g_[oh:h]f//hjh___!iwj)te(g_[oh:h]e)ge(fgF'E) me.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #558)"
+    source: "Graduale Romanum (GregoBase #558)",
+    fullGabc: "(c4) E(f)go(fff) cla(dg)má(gjHG'j)vi,(j.) *(;) quó(j)ni(jijh)am(jijvH'Gh.) (,) ex(g)au(hj)dí(iij)sti(hg) me,(hi) De(hv.ghG'F)us :(f.) (:) in(f)clí(ef!gh)na(g) au(g)rem(gh~) tu(h_g)am,(ixgih/iggf.0) (;) et(g) ex(gh/ji)áu(jjj)di(h.) ver(gj~)ba(jijh) me(h.f!gwhgh)a :(hg..) (:) cu(gd)stó(g)di(hji) me,(jjjhk) Dó(j_i)mi(ikjj)ne,(ji..) (;) ut(ij) pu(h_g)píl(gf~)lam(h) ó(h!jij)cu(jhig)li :(g.) (:) sub(g) um(i)bra(hj//ijh) a(g)lá(gfhg)rum(g.) tu(g)á(g.h!iwj)rum(jjjvH'G) (;) pró(g_[oh:h]f//hjh___!iwj)te(g_[oh:h]e)ge(fgF'E) me.(e.) (::) Ps. Ex(g)áu(hj)di(j) Dó(j)mi(j)ne(j) ju(j)stí(k)ti(j)am(j) me(ih)am :(jjj) *(:) in(ig~)tén(hj)de(j) de(j)pre(j)ca(j)ti(jji)ó(hg)nem(h') me(i)am.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Exáudi Dómine justítiam meam : inténde deprecatiónem meam.", translation: "The prayer of David. Hear, O Lord, my justice: attend to my supplication. Give ear unto my prayer, which proceedeth not from deceitful lips.", gloriaPatri: true },
+    blurb: {
+      text: "\"Keep me as the apple of your eye,\" from Psalm 17 (16 in the Vulgate numbering), is one of Scripture's most repeated images of divine protection: close variants of the same phrase turn up again in Deuteronomy, Proverbs, and Zechariah. It survives today in ordinary English idiom, where calling someone the apple of one's eye still means they are cherished above all else.",
+      source: "USCCB, Psalms, chapter 17; USCCB, Deuteronomy 32:10, Proverbs 7:2, Zechariah 2:8.",
+    },
   },
   "ot-31-a": {
     title: "Ne derelinquas me",
     latin: "Ne derelínquas me, Dómine Deus meus, ne discédas a me : inténde in adjutórium meum, Dómine virtus salútis meae.",
     translation: "Forsake me not, O Lord my God, do not depart from me: attend unto my help, O Lord, the strength of my salvation.",
     mode: "Introit · Ordinary Time · Mode VII",
+    reference: "Ps. 38:22-23",
     gabc: "(c3) NE(e) de(hg)re(h)lín(i)quas(i) me,(i.) (,) * Dó(i!kjk)mi(ih)ne(hji'jvHG.) (,) De(gh'i)us(i) me(ij!kvJI'j)us,(ji..) (:) ne(hg) di(h)scé(ij)das(i) a(hi) me :(h.) (,) in(h)tén(hi~)de(h) in(h) ad(h)ju(h)tó(hji)ri(h)um(hhh) me(f!gw!hvGF'g)um,(gf..) (:) Dó(gh'i)mi(i.g!hwi)ne(ijH'GhvG'FEfe..) (,) vir(ggh)tus(f!gwh) sa(e)lú(hhhf)tis(gh'i) me(ijH'GhvG'FE'f)ae.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #323)"
+    source: "Graduale Romanum (GregoBase #323)",
+    fullGabc: "(c3) NE(e) de(hg)re(h)lín(i)quas(i) me,(i.) (,) * Dó(i!kjk)mi(ih)ne(hji'jvHG.) (,) De(gh'i)us(i) me(ij!kvJI'j)us,(ji..) (:) ne(hg) di(h)scé(ij)das(i) a(hi) me :(h.) (,) in(h)tén(hi~)de(h) in(h) ad(h)ju(h)tó(hji)ri(h)um(hhh) me(f!gw!hvGF'g)um,(gf..) (:) Dó(gh'i)mi(i.g!hwi)ne(ijH'GhvG'FEfe..) (,) vir(ggh)tus(f!gwh) sa(e)lú(hhhf)tis(gh'i) me(ijH'GhvG'FE'f)ae.(fe..) (::) Ps. Dó(ehg)mi(hi)ne,(i) ne(i) in(i) fu(i)ró(i)re(i) tu(i)o(i) ár(ik)gu(j)as(ji) me :(ij..) *(:) ne(ig)que(hi) in(i) i(i)ra(i) tu(i)a(i) cor(i!jwk)rí(i')pi(h)as(hhh) me.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Dómine, ne in furóre tuo árguas me : neque in ira tua corrípias me.", translation: "Rebuke me not, O Lord, in thy indignation; nor chastise me in thy wrath.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 38 (37 in the Vulgate numbering), the source of this Introit, is one of the seven psalms the early Church grouped together as the Penitential Psalms, historically prayed as a set during Lent and on Fridays as prayers of contrition. This Introit's closing plea, \"do not depart from me,\" comes from the very last verses of that psalm.",
+      source: "USCCB, Psalms, chapter 38.",
+    },
   },
   "ot-31-c": {
     title: "Misereris omnium",
     latin: "Miseréris ómnium, Dómine, et nihil odísti eórum quae fecísti, dissímulans peccáta hóminum propter paeniténtiam, et parcens illis : quia tu es Dóminus Deus noster.",
     translation: "You have mercy upon all, O Lord, and hate none of the things which you have made, overlooking the sins of men for the sake of repentance, and sparing them: for you are the Lord our God.",
     mode: "Introit · Ordinary Time · Mode I",
+    reference: "Wis. 11:24, 25, 27",
     gabc: "(c4) MI(f)se(ghg')ré(h)ris(g') * ó(fg'h)mni(h)um,(h) Dó(gfg)mi(f)ne,(f.d!ewf.) (;) et(f) ni(f!gwhgh)hil(g_[oh:h]f) o(f)dí(fg)sti(gff) (`) e(d)ó(d_c/d!ewff)rum(e_[oh:h][ll:1]d) quae(dg) fe(fgff)cí(d_[oh:h]e_[oh:h]d_[oh:h])sti,(d.) (:) dis(d)sí(f)mu(fg)lans(ghg) pec(gd)cá(fg)ta(h) hó(ixgiHG')mi(hggfg)num(gf..) (;) pro(fg)pter(gh) pae(h!iwj)ni(ki/j_i)tén(h)ti(hi!jvIH'i)am,(ih..) (:) et(f@h!gh~) par(h_fh)cens(hvGF'f) il(h_g/hfg)lis :(d/ffdf.) (:) qui(c)a(d) tu(dgffvEC//d!ew!fvED'e) es(e[ll:1]d..) (;) Dó(dgf/gh)mi(g)nus(gh) De(hv.fhghvF'ED)us(d!ewf/ge/f_e) no(de!fvED'e)ster.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #533)"
+    source: "Graduale Romanum (GregoBase #533)",
+    blurb: {
+      text: "Leonardo Leo set the Misereris omnium text as part of a full polyphonic sequence of Mass propers, including Introit, Gradual, and Tract, for the Royal Chapel in Naples in 1744, the year of his death.",
+      source: "Cantata Editions, \"Leo: Misereris omnium Dominum.\"",
+    },
+    fullGabc: "(c4) MI(f)se(ghg')ré(h)ris(g') * ó(fg'h)mni(h)um,(h) Dó(gfg)mi(f)ne,(f.d!ewf.) (;) et(f) ni(f!gwhgh)hil(g_[oh:h]f) o(f)dí(fg)sti(gff) (`) e(d)ó(d_c/d!ewff)rum(e_[oh:h][ll:1]d) quae(dg) fe(fgff)cí(d_[oh:h]e_[oh:h]d_[oh:h])sti,(d.) (:) dis(d)sí(f)mu(fg)lans(ghg) pec(gd)cá(fg)ta(h) hó(ixgiHG')mi(hggfg)num(gf..) (;) pro(fg)pter(gh) pae(h!iwj)ni(ki/j_i)tén(h)ti(hi!jvIH'i)am,(ih..) (:) et(f@h!gh~) par(h_fh)cens(hvGF'f) il(h_g/hfg)lis :(d/ffdf.) (:) qui(c)a(d) tu(dgffvEC//d!ew!fvED'e) es(e[ll:1]d..) (;) Dó(dgf/gh)mi(g)nus(gh) De(hv.fhghvF'ED)us(d!ewf/ge/f_e) no(de!fvED'e)ster.(e[ll:1]d..) (::) Ps. Mi(f)se(gh)ré(h)re(h) me(h)i(h) De(h)us,(h.) mi(h)se(h)ré(hj)re(h) me(hg)i :(gh..) *(:) quó(gf)ni(gh)am(h) in(h) te(h) con(h)fí(h)dit(h) á(hjh)ni(g')ma(f) me(fff)a.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Miserére mei Deus, miserére mei : quóniam in te confídit ánima mea.", translation: "Have mercy on me, O God, have mercy on me: for my soul trusteth in thee. And in the shadow of thy wings will I hope, until iniquity pass away.", gloriaPatri: true },
   },
   "ot-32": {
     title: "Intret oratio",
     latin: "Intret orátio mea in conspéctu tuo : inclína aurem tuam ad precem meam Dómine.",
     translation: "Let my prayer come in before you: incline your ear to my petition, O Lord.",
     mode: "Introit · Ordinary Time · Mode III",
+    reference: "Ps. 88:3",
     gabc: "(c4) IN(gj)tret(j) *() o(j)rá(jkjj)ti(hj)o(j) me(jkjj)a(h!jj/khhg.) (;) in(g) con(h)spé(h/jjh/jij)ctu(gh) tu(hkj)o :(jkjj'j) (:) in(jj)clí(klJ'IH)na(hkjji) au(g)rem(hj~) tu(j_hjvIG)am(gh/igh.) (;) ad(f) pre(ef'g)cem(gj) me(jijg)am(fh/ji) (,) Dó(jh/jg)mi(g_[oh:h]e)ne.(fgFE.) (::)",
-    source: "Graduale Romanum (GregoBase #238)"
+    source: "Graduale Romanum (GregoBase #238)",
+    fullGabc: "(c4) IN(gj)tret(j) *() o(j)rá(jkjj)ti(hj)o(j) me(jkjj)a(h!jj/khhg.) (;) in(g) con(h)spé(h/jjh/jij)ctu(gh) tu(hkj)o :(jkjj'j) (:) in(jj)clí(klJ'IH)na(hkjji) au(g)rem(hj~) tu(j_hjvIG)am(gh/igh.) (;) ad(f) pre(ef'g)cem(gj) me(jijg)am(fh/ji) (,) Dó(jh/jg)mi(g_[oh:h]e)ne.(fgFE.) (::) Ps. Dó(g)mi(hj)ne(j) De(j)us(j) sa(j)lú(k)tis(j) me(ih)ae :(jjj) *(:) in(ig~) di(hj)e(j) cla(j)má(j)vi,(j) et(j) no(jji)cte(hg) co(h')ram(i) te.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Dómine Deus salútis meae : in die clamávi, et nocte coram te.", translation: "O Lord, the God of my salvation: I have cried in the day, and in the night before thee.", gloriaPatri: true },
+    blurb: {
+      text: "Psalm 88 (87 in the Vulgate numbering), the source of this Introit's single verse, stands out among the psalms of lament for having no turn toward hope or praise at all. Nearly every other lament in the Psalter ends by professing trust in God, but this one closes in unrelieved darkness, which is why it is often singled out as the bleakest of all 150 psalms.",
+      source: "The Gospel Coalition, \"The Saddest Psalm in Scripture\"; USCCB, Psalms, chapter 88.",
+    },
   },
   "ot-33": {
     title: "Dicit Dominus",
     latin: "Dicit Dóminus : Ego cógito cogitatiónes pacis, et non afflictiónis : invocábitis me, et ego exáudiam vos : et redúcam captivitátem vestram de cunctis locis.",
     translation: "The Lord says: I think thoughts of peace, and not of affliction: you shall call upon me, and I will hear you: and I will bring back your captivity from all places.",
     mode: "Introit · Ordinary Time · Mode VI",
+    reference: "Jer. 29:11, 12, 14",
     gabc: "(c4) DI(d)cit(bxdbc) Dó(dc/fffg)mi(f)nus :(f.) *(,) E(f)go(f) có(fhg)gi(f)to(fff) (,) co(d)gi(bxdbc)ta(dc/fffg)ti(f)ó(fg'h)nes(h_f) pa(hjvvH'GFf'_[oh:h]g_[oh:h]f_[oh:h])cis,(f.) (;) et(fg~) non(f) af(fe~)fli(g)cti(ixgh!jvHG'hw!ivHG)ó(fg!hvGF'g)nis :(gf..) (:) in(f)vo(g)cá(g/hji)bi(jjj)tis(hjgg) me,(f.) (;) et(f) e(g)go(f) ex(f)áu(ixfg'i)di(i)am(i.g!hwihivH~G~) vos :(hg..) (:) et(f) re(f)dú(gh)cam(f) ca(f)pti(f)vi(fff)tá(f)tem(dg) ve(fge/f_d)stram(dc..) (;) de(ffe) cun(g.h!iwj)ctis(hg/h_g) lo(fg!hvGF'g)cis.(gf..) (::)",
-    source: "Graduale Romanum (GregoBase #735)"
+    source: "Graduale Romanum (GregoBase #735)",
+    fullGabc: "(c4) DI(d)cit(bxdbc) Dó(dc/fffg)mi(f)nus :(f.) *(,) E(f)go(f) có(fhg)gi(f)to(fff) (,) co(d)gi(bxdbc)ta(dc/fffg)ti(f)ó(fg'h)nes(h_f) pa(hjvvH'GFf'_[oh:h]g_[oh:h]f_[oh:h])cis,(f.) (;) et(fg~) non(f) af(fe~)fli(g)cti(ixgh!jvHG'hw!ivHG)ó(fg!hvGF'g)nis :(gf..) (:) in(f)vo(g)cá(g/hji)bi(jjj)tis(hjgg) me,(f.) (;) et(f) e(g)go(f) ex(f)áu(ixfg'i)di(i)am(i.g!hwihivH~G~) vos :(hg..) (:) et(f) re(f)dú(gh)cam(f) ca(f)pti(f)vi(fff)tá(f)tem(dg) ve(fge/f_d)stram(dc..) (;) de(ffe) cun(g.h!iwj)ctis(hg/h_g) lo(fg!hvGF'g)cis.(gf..) (::) Ps. Be(fg)ne(gf)di(gh)xí(h)sti(h) Dó(h)mi(h)ne(g) ter(ixi)ram(h) tu(g)am :(f.) *(:) a(f)ver(gh)tí(hj)sti(g) ca(f)pti(f')vi(g)tá(fd)tem(f') Ja(g)cob.(f.) (::) Gló(fg)ri(gf)a(gh) Pa(h)tri.(h) (::) E(f') u(g) o(fd) u(f') a(g) e.(f.) (::)",
+    verse: { latin: "Benedixísti Dómine terram tuam : avertísti captivitátem Jacob.", translation: "Lord, thou hast blessed thy land: thou hast turned away the captivity of Jacob.", gloriaPatri: true },
+    blurb: {
+      text: "Jeremiah 29:11 was addressed originally to Judean exiles in Babylon, promising a future restored to them. Centuries later it has become one of the most widely quoted single verses of the Old Testament in everyday devotional life, turning up on greeting cards, wall art, and graduation gifts far removed from its original audience.",
+      source: "USCCB, Jeremiah, chapter 29.",
+    },
   },
 
   "trinity": {
@@ -674,32 +1278,60 @@ window.INTROITS = {
     latin: "Benedícta sit sancta Trínitas, atque indivísa Unitas : confitébimur ei, quia fecit nobíscum misericórdiam suam.",
     translation: "Blessed be the holy Trinity and undivided Unity: we will give glory to him, because he has shown his mercy to us.",
     mode: "Introit · The Most Holy Trinity · Mode VIII",
+    reference: "Tob. 12:6",
     gabc: "(c3) BE(e)NE(e)DÍ(e!hgh)CTA(fvED) sit(e.) *(,) san(ef/hgh)cta(h) Trí(hhhf)ni(fe)tas,(e.f!gwh.) (;) at(hfge)que(e) in(e)di(fde)ví(ehh)sa(f) U(fdf)ni(fgFE'f)tas :(fe..) (:) con(e)fi(ef/hg)té(g)bi(gi/jhhf)mur(h_g) e(hghf)i,(f.) (;) qui(hg)a(h) fe(i)cit(h) no(g.f!gwh)bís(fgFE'f)cum(fe..) (;) mi(ef'g)se(g_[oh:h]f)ri(fgE'C)cór(c!e'f)di(f)am(f) su(fgFE'f)am.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #349)"
+    source: "Graduale Romanum (GregoBase #349)",
+    fullGabc: "(c3) BE(e)NE(e)DÍ(e!hgh)CTA(fvED) sit(e.) *(,) san(ef/hgh)cta(h) Trí(hhhf)ni(fe)tas,(e.f!gwh.) (;) at(hfge)que(e) in(e)di(fde)ví(ehh)sa(f) U(fdf)ni(fgFE'f)tas :(fe..) (:) con(e)fi(ef/hg)té(g)bi(gi/jhhf)mur(h_g) e(hghf)i,(f.) (;) qui(hg)a(h) fe(i)cit(h) no(g.f!gwh)bís(fgFE'f)cum(fe..) (;) mi(ef'g)se(g_[oh:h]f)ri(fgE'C)cór(c!e'f)di(f)am(f) su(fgFE'f)am.(fe..) (::) Ps. Dó(e)mi(fe)ne(eh) Dó(hg)mi(hi)nus(i) no(hi)ster :(h.) *(:) quam(hf~) ad(fh)mi(h)rá(h)bi(h)le(h) est(h) no(h)men(h) tu(h)um(h.) (,) in(h) u(h)ni(hhg)vér(ef)sa(hg) ter(f)ra!(e.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h) u(hhg) o(ef) u(hg) a(f) e.(e.) (::)",
+    verse: { latin: "Dómine Dóminus noster : quam admirábile est nomen tuum in univérsa terra!.", translation: "O Lord, our Lord, how admirable is thy name in the whole earth! For thy magnificence is elevated above the heavens.", gloriaPatri: true },
+    blurb: {
+      text: "Trinity Sunday is a late feast, a high-theological solemnity not tied to a Gospel event, and it took until roughly the 9th-10th centuries to become established across the Latin Church. Its Introit text was newly composed rather than adapted from Scripture narrative. Tomás Luis de Victoria (c. 1548-1611) is among its polyphonic composers, setting the same \"Benedicta sit sancta Trinitas\" text.",
+      source: "canticasacra.org, \"Trinity Sunday\"; chantblog, \"The Introit for Trinity Sunday: Benedicta Sit.\"",
+    },
   },
   "trinity-c": {
     title: "Caritas Dei",
     latin: "Cáritas Dei diffúsa est in córdibus nostris, allelúia : per inhabitántem Spíritum ejus in nobis, allelúia, allelúia.",
     translation: "The charity of God is poured forth in our hearts, alleluia: by his Spirit dwelling within us, alleluia, alleluia.",
     mode: "Introit · The Most Holy Trinity (Year C) · Mode III",
+    reference: "Rom. 5:5",
     gabc: "(c4) CA(gj)ri(j)tas(j) De(j)i(hih.) *(,) dif(g)fú(gh/ih!i_[uh:l]j)sa(gh_G'_FE'f) est(fe..) (;) in(f) cór(ef'h)di(h)bus(h) no(hghf)stris,(d!ewf.) (,) al(fg~)le(g_[oh:h]e)lú(egff){ia} :(fe..) (:) per(egf) in(ff)ha(ef)bi(g)tán(g/hjhfhf/gh)tem(g.) (,) Spí(hhg)ri(h_g)tum(f) e(ef'g~)jus(g.) (,) in(f) no(ef!gvFEfvED)bis,(e[ll:1]d..) (;) al(f)le(fh/jh)lú(ghg){ia},(e.) (,) al(g)le(ixg./hiG'FhvGF'g)lú(egff){ia}.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #1228)"
+    source: "Graduale Romanum (GregoBase #1228)",
+    fullGabc: "(c4) CA(gj)ri(j)tas(j) De(j)i(hih.) *(,) dif(g)fú(gh/ih!i_[uh:l]j)sa(gh_G'_FE'f) est(fe..) (;) in(f) cór(ef'h)di(h)bus(h) no(hghf)stris,(d!ewf.) (,) al(fg~)le(g_[oh:h]e)lú(egff){ia} :(fe..) (:) per(egf) in(ff)ha(ef)bi(g)tán(g/hjhfhf/gh)tem(g.) (,) Spí(hhg)ri(h_g)tum(f) e(ef'g~)jus(g.) (,) in(f) no(ef!gvFEfvED)bis,(e[ll:1]d..) (;) al(f)le(fh/jh)lú(ghg){ia},(e.) (,) al(g)le(ixg./hiG'FhvGF'g)lú(egff){ia}.(fe..) (::) Ps. Bé(g)ne(hj)dic(j) á(j)ni(j)ma(j) me(k)a(j) Dó(j)mi(ih)no :(jjj) *(:) et(ig) ó(hj)mni(j)a(j) quae(j) in(j)tra(j) me(j) sunt,(j.) (,) nó(j)mi(j)ni(jji) san(hg~)cto(h') e(i)jus.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Bénedic ánima mea Dómino : et ómnia quae intra me sunt, nómini sancto ejus.", translation: "For David himself. Bless the Lord, O my soul: and let all that is within me bless his holy name.", gloriaPatri: true },
+    blurb: {
+      text: "Assigned to Trinity Sunday only after Vatican II — replacing the older \"Benedicta sit\" (this app's own trinity entry) as the Introit for Year C, when the second reading names the Spirit poured into believers' hearts — this text is older than that assignment: it was already sung on the Saturday after Pentecost (an Ember Day), and in today's reformed Missal it also serves as the regular Introit for the extended Vigil Mass of Pentecost, distinct from the older \"Dum sanctificatus\" this app uses for the traditional Pentecost Vigil.",
+      source: "PrayTellBlog, \"Introitus: Trinity Sunday.\"",
+    },
   },
   "sacred-heart": {
     title: "Cogitationes Cordis ejus",
     latin: "Cogitatiónes Cordis ejus in generatióne et generatiónem : ut éruat a morte ánimas eórum, et alat eos in fame.",
     translation: "The thoughts of his Heart are to all generations: to deliver their souls from death, and to feed them in famine.",
     mode: "Introit · The Most Sacred Heart of Jesus · Mode V",
+    reference: "Ps. 33:11, 19",
     gabc: "(c3) CO(d)gi(f)tá(hh)ti(h)o(hi)nes(h) *() Cor(hihhg)dis(ef) e(high)jus(gf..) (;) in(d) ge(e)ne(f)ra(f)ti(f)ó(f!gwh)ne(hh) (,) et(h) ge(hf)ne(h)ra(hji)ti(h_g)ó(hji)nem :(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (:) ut(f) é(fe)ru(eh)at(h) a(h) mor(hji)te(i_[oh:h]h) (,) á(hhh)ni(e)mas(g) e(gi/jij)ó(hi_[oh:h]H'_[oh:h]GF'g)rum(gf..) (;) et(d) a(gxeg)lat(ffg) e(eh)os(hhivH//E'f) in(gxfhFE'fwgFE) fa(de!fvED'e)me.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #1320)"
+    source: "Graduale Romanum (GregoBase #1320)",
+    fullGabc: "(c3) CO(d)gi(f)tá(hh)ti(h)o(hi)nes(h) *() Cor(hihhg)dis(ef) e(high)jus(gf..) (;) in(d) ge(e)ne(f)ra(f)ti(f)ó(f!gwh)ne(hh) (,) et(h) ge(hf)ne(h)ra(hji)ti(h_g)ó(hji)nem :(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (:) ut(f) é(fe)ru(eh)at(h) a(h) mor(hji)te(i_[oh:h]h) (,) á(hhh)ni(e)mas(g) e(gi/jij)ó(hi_[oh:h]H'_[oh:h]GF'g)rum(gf..) (;) et(d) a(gxeg)lat(ffg) e(eh)os(hhivH//E'f) in(gxfhFE'fwgFE) fa(de!fvED'e)me.(e[ll:1]d..) (::) T. P. Al(df~)le(fef)lú(hf/hhh){ia},(hiHF.1) (,) al(ef)le(gxfhe___!fw!gvFE)lú(de!fvED'e){ia}.(e[ll:1]d..) (::) Ps. Ex(d)sul(f)tá(h)te(h) ju(h)sti(h) in(i) Dó(i)mi(h)no,(h.) *(:) re(f)ctos(h) de(h)cet(h) col(i)lau(g)dá(h)ti(f)o.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Exsultáte justi in Dómino, rectos decet collaudátio.", translation: "A psalm for David. Rejoice in the Lord, O ye just: praise becometh the upright.", gloriaPatri: true },
+    blurb: {
+      text: "Cogitationes Cordis is a rare exception to the usual rule that modern chant propers reuse only the ancient repertoire. This feast was not given a full new Mass formula and Office until 1929, and its Introit text, stitched together from separate verses of Psalm 33 (32 in the Vulgate numbering), was set to a newly assembled melody. That melody borrows phrases from several older Introits, including Laetare, whose closing phrase reappears here almost unchanged.",
+      source: "Church Music Association of America, Simple English Propers commentary, \"Introit: The Sacred Heart of Jesus, Cogitationes Cordis eius.\"",
+    },
   },
   "christ-king": {
     title: "Dignus est Agnus",
     latin: "Dignus est Agnus, qui occísus est, accípere virtútem, et divinitátem, et sapiéntiam, et fortitúdinem, et honórem. Ipsi glória et impérium in saécula saeculórum.",
     translation: "Worthy is the Lamb who was slain to receive power and divinity and wisdom and strength and honor. To him be glory and dominion for ever and ever.",
     mode: "Introit · Our Lord Jesus Christ, King of the Universe · Mode III",
+    reference: "Apoc. 5:12; 1:6",
     gabc: "(c4) DI(eef)GNUS(e[ll:1]d) est(gh) A(g/hj~)gnus,(j.) (,) * qui(j) oc(j)cí(h)sus(h!iwj/kjj) est,(ji..) (;) ac(g)cí(gh)pe(h)re(h') vir(h)tú(h_ghvGF'g)tem,(g_[oh:h]f_[oh:h]) (,) et(g) di(hi)vi(iij)ni(h!iwj)tá(ikjj)tem,(ji..) (;) et(g) sa(gh)pi(h)én(jj//jj)ti(ih)am,(h.) (,) et(h) for(h)ti(gf)tú(fg/hg/hi)di(h)nem,(h.) (,) et(gh/ji) ho(jvvIH'iw!jvIH)nó(gh!ivHG'h)rem.(hg..) (:) I(h)psi(gh) gló(hkj)ri(kjjh)a(h.) (,) et(h) im(g)pé(gh/i.h!iwj)ri(gh_G'_FE'f)um(fe..) (;) in(ef) saé(e/f'h)cu(h)la(h!iwj) sae(g)cu(g_[oh:h]e)ló(fgF'E)rum.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #128)"
+    source: "Graduale Romanum (GregoBase #128)",
+    fullGabc: "(c4) DI(eef)GNUS(e[ll:1]d) est(gh) A(g/hj~)gnus,(j.) (,) * qui(j) oc(j)cí(h)sus(h!iwj/kjj) est,(ji..) (;) ac(g)cí(gh)pe(h)re(h') vir(h)tú(h_ghvGF'g)tem,(g_[oh:h]f_[oh:h]) (,) et(g) di(hi)vi(iij)ni(h!iwj)tá(ikjj)tem,(ji..) (;) et(g) sa(gh)pi(h)én(jj//jj)ti(ih)am,(h.) (,) et(h) for(h)ti(gf)tú(fg/hg/hi)di(h)nem,(h.) (,) et(gh/ji) ho(jvvIH'iw!jvIH)nó(gh!ivHG'h)rem.(hg..) (:) I(h)psi(gh) gló(hkj)ri(kjjh)a(h.) (,) et(h) im(g)pé(gh/i.h!iwj)ri(gh_G'_FE'f)um(fe..) (;) in(ef) saé(e/f'h)cu(h)la(h!iwj) sae(g)cu(g_[oh:h]e)ló(fgF'E)rum.(e.) (::) Ps. De(g)us,(hj) ju(j)dí(j)ci(j)um(j) tu(k)um(j') Re(j)gi(ih) da :(jjj) *(:) et(ig) ju(hj)stí(j)ti(j)am(j) tu(j)am(j) Fí(jji)li(hg)o(h) Re(i)gis.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h) a(i) e.(gh..) (::)",
+    verse: { latin: "Deus, judícium tuum Regi da : et justítiam tuam Fílio Regis.", translation: "Give to the king thy judgment, O God, and to the king's son thy justice: To judge thy people with justice, and thy poor with judgment.", gloriaPatri: true },
+    blurb: {
+      text: "Christ the King is a young feast, instituted by Pope Pius XI only in 1925, so its Introit has no medieval pedigree of its own. Its melody was newly adapted from an older chant, \"Dum sanctificatus fuero,\" the very Introit this app uses for the Pentecost Vigil Mass.",
+      source: "MusicaSacra Church Music Forum, \"Dignus est Agnus\" (citing Dom Johner); chantblog, \"The Introit for the Solemnity of Christ the King: Dignus Est Agnus.\"",
+    },
   },
 
   /* ---- Requiem (All Souls) -------------------------------------------- */
@@ -708,9 +1340,16 @@ window.INTROITS = {
     latin: "Réquiem aetérnam dona eis, Dómine: et lux perpétua lúceat eis.",
     translation: "Eternal rest grant unto them, O Lord: and let perpetual light shine upon them.",
     mode: "Introit · Mass for the Dead (All Souls) · Mode VI",
+    reference: "",
     gabc: "(c4) RE(ffg)qui(f)em(f) *() ae(fg'h)tér(hggfg)nam(gf..) (;) do(fg'h)na(hg) e(h)is(ixhjHG'hw!ivHG') Dó(f)mi(fg!hvGF'g)ne :(gf..) (:) et(hg~) lux(hvGF') per(h)pé(gh)tu(gf)a(f.) (;) lú(hg)ce(h)at(ixhjHG'hw!ivHG) e(fg!hvGF'g)is.(gf..) (::)",
     abc: "F F G F F F G a a G G F G G F | F G a a G a a c a G a _b a G F F G a G F G G F | a G a G F a G a G F F | a G a a c a G a _b a G F G a G F G G F |]",
-    source: "Graduale Romanum (GregoBase #766)"
+    source: "Graduale Romanum (GregoBase #766)",
+    fullGabc: "(c4) RE(ffg)qui(f)em(f) *() ae(fg'h)tér(hggfg)nam(gf..) (;) do(fg'h)na(hg) e(h)is(ixhjHG'hw!ivHG') Dó(f)mi(fg!hvGF'g)ne :(gf..) (:) et(hg~) lux(hvGF') per(h)pé(gh)tu(gf)a(f.) (;) lú(hg)ce(h)at(ixhjHG'hw!ivHG) e(fg!hvGF'g)is.(gf..) (::) Ps. Te(fg) de(gf)cet(gh) hy(h)mnus(h) De(h)us(h) in(h) Si(g)on,(h.) (;) et(f) ti(g)bi(h) red(h)dé(h)tur(h) vo(h)tum(h) in(h) Je(g)rú(ixi)sa(g)lem :(h.) *(:) ex(f)áu(gh~)di(h) o(h)ra(h)ti(h)ó(h)nem(h) me(h)am,(h.) (;) ad(h) te(h) o(h)mnis(h) ca(f)ro(gh) vé(g)ni(f)et.(f.) (::) Ré(ffg)qui(f)em.(f) (::)",
+    verse: { latin: "Te decet hymnus Deus in Sion, et tibi reddétur votum in Jerúsalem : exáudi oratiónem meam, ad te omnis caro véniet.", translation: "A hymn, O God, becometh thee in Sion: and a vow shall be paid to thee in Jerusalem. O hear my prayer: all flesh shall come to thee.", gloriaPatri: false },
+    blurb: {
+      text: "The opening word of this Introit gave the entire Mass for the Dead its common name, \"Requiem.\" That single word stands behind the whole polyphonic Requiem tradition, from Johannes Ockeghem's Requiem, the earliest to survive complete, through settings by Victoria, Mozart, Fauré, and Verdi. Even where a composer sets the later texts freely, the Mass itself is still named for this chant's first word.",
+      source: "See the Wikipedia “Requiem” overview article for the lineage from Ockeghem onward."
+    }
   },
 
   /* ---- Solemnities & Feasts of the Lord and the Saints (sanctoral) ----
@@ -723,136 +1362,266 @@ window.INTROITS = {
     latin: "Justus ut palma florébit : sicut cedrus Líbani multiplicábitur : plantátus in domo Dómini, in átriis domus Dei nostri.",
     translation: "The just shall flourish like the palm tree: he shall grow up like the cedar of Lebanon: planted in the house of the Lord, in the courts of the house of our God.",
     mode: "Introit · Saint Joseph, Spouse of the Blessed Virgin Mary · Mode I",
+    reference: "Ps. 92:13",
     gabc: "(c4) JU(d!ffd/fff)stus(e_[oh:h][ll:1]d_[oh:h]) (,) * ut(cd) pal(cd'f)ma(fvvED') flo(d)ré(d!ew!fvED)bit :(dff'1f//fff) (;) sic(c)ut(d) ce(f)drus(g) Lí(f)ba(gh)ni(h.) (,) mul(h)ti(h)pli(h)cá(hjhhg)bi(hggfg)tur :(fg..) (:) plan(df)tá(fff/g_[oh:h]f)tus(f) in(f) do(fg)mo(gffd) Dó(d)mi(dff'1f/g_[oh:h]f)ni,(f.) (;) in(f) á(f_[oh:h]g_[oh:h]f_[oh:h])tri(f)is(f) do(fg)mus(gff) De(d)i(c!fff) no(d_c/fff/ced)stri.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #108)"
+    source: "Graduale Romanum (GregoBase #108)",
+    fullGabc: "(c4) JU(d!ffd/fff)stus(e_[oh:h][ll:1]d_[oh:h]) (,) * ut(cd) pal(cd'f)ma(fvvED') flo(d)ré(d!ew!fvED)bit :(dff'1f//fff) (;) sic(c)ut(d) ce(f)drus(g) Lí(f)ba(gh)ni(h.) (,) mul(h)ti(h)pli(h)cá(hjhhg)bi(hggfg)tur :(fg..) (:) plan(df)tá(fff/g_[oh:h]f)tus(f) in(f) do(fg)mo(gffd) Dó(d)mi(dff'1f/g_[oh:h]f)ni,(f.) (;) in(f) á(f_[oh:h]g_[oh:h]f_[oh:h])tri(f)is(f) do(fg)mus(gff) De(d)i(c!fff) no(d_c/fff/ced)stri.(d.) (::) T. P. Al(cd'f~)le(f_e)lú(fgf){ia},(fffddc.) (,) al(df~)le(fefd)lú(d_[oh:h]e_[oh:h]d_[oh:h]){ia}.(d.) (::) Ps. Bo(f)num(gh) est(h) con(h)fi(h)té(hj)ri(h) Dó(h)mi(hg)no(gh..) *(:) et(gf) psál(gh)le(h)re(h) nó(h)mi(h)ni(h) tu(h)o,(hjh) Al(g')tís(f)si(fff)me.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Bonum est confitéri Dómino et psállere nómini tuo, Altíssime.", translation: "It is good to give praise to the Lord: and to sing to thy name, O most High.", gloriaPatri: true },
+    blurb: {
+      text: "\"Justus ut palma\" is a formula shared across the Common of Confessors, sung for any male saint honored as neither a bishop nor a martyr, of whom St. Joseph is simply the most prominent example. Its manuscript tradition is unusually well studied: around 1900 the Solesmes monk Dom André Mocquereau chose it as the test case for his Paléographie Musicale method, reproducing facsimiles of more than two hundred antiphonaries spanning the 9th to 17th centuries to demonstrate how a chant's earliest form could be recovered by comparing manuscripts against one another.",
+      source: "Catalogue collectif de France, entry for Paléographie musicale, Tome III, \"Le Répons-Graduel 'Justus ut palma.'\"",
+    },
   },
   "annunciation": {
     title: "Rorate caeli",
     latin: "Roráte caéli désuper, et nubes pluant justum: aperiátur terra, et gérminet Salvatórem.",
     translation: "Drop down dew, ye heavens, from above, and let the clouds rain down the Just One: let the earth be opened, and bud forth a Saviour.",
     mode: "Introit · The Annunciation of the Lord · Mode I",
+    reference: "Is. 45:8",
     gabc: "(c4) RO(cd)rá(ixdh'!iv)te(h') (,) * cae(hjjh)li(h_g) dé(h!iwj)su(j.i!jwkjk)per,(kj..) (;) et(f) nu(ixhih)bes(g) plu(jjh)ant(h.) ju(g_[oh:h]fhvGFgf)stum :(f.) (:) a(f)pe(g)ri(h)á(h!iwj)tur(g) ter(fgF'D)ra,(d.) (;) et(dfe) gér(fg)mi(g)net(fgFD.1) Sal(d!ewf)va(ced)tó(d_[oh:h]e_[oh:h]d_[oh:h])rem.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #79); the diocese assigns the Annunciation the same introit as the 4th Sunday of Advent."
+    source: "Graduale Romanum (GregoBase #79); the diocese assigns the Annunciation the same introit as the 4th Sunday of Advent.",
+    fullGabc: "(c4) RO(cd)rá(ixdh'!iv)te(h') (,) * cae(hjjh)li(h_g) dé(h!iwj)su(j.i!jwkjk)per,(kj..) (;) et(f) nu(ixhih)bes(g) plu(jjh)ant(h.) ju(g_[oh:h]fhvGFgf)stum :(f.) (:) a(f)pe(g)ri(h)á(h!iwj)tur(g) ter(fgF'D)ra,(d.) (;) et(dfe) gér(fg)mi(g)net(fgFD.1) Sal(d!ewf)va(ced)tó(d_[oh:h]e_[oh:h]d_[oh:h])rem.(d.) (::) Ps. Cae(f)li(gh) e(h)nár(h)rant(h) gló(hj)ri(h)am(h) De(hg)i :(gh..) *(:) et(gf) ó(gh)pe(h)ra(h) má(h)nu(h)um(h) e(h)jus(h.) (,) an(h)nún(h)ti(h)at(hjh) fir(g')ma(f)mén(fff)tum.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Caeli enárrant glóriam Dei : et ópera mánuum ejus annúntiat firmaméntum.", translation: "The heavens shew forth the glory of God, and the firmament declareth the work of his hands.", gloriaPatri: true },
+    blurb: {
+      text: "The Mass for the Annunciation is essentially the Advent \"Rorate\" Mass (the 4th Sunday of Advent / Ember Wednesday, already piloted in this app as the rorate entry) repurposed for March 25, fittingly, since the prophecy \"let the earth be opened, and bud forth a Saviour\" names the very moment this feast commemorates.",
+      source: "musicasacra.com organ-accompaniment propers document for March 25.",
+    },
   },
   "john-baptist-vigil": {
     title: "Ne timeas, Zacharia",
     latin: "Ne tímeas, Zacharía, exaudíta est orátio tua : et Elísabeth uxor tua páriet tibi fílium, et vocábis nomen ejus Joánnem : et erit magnus coram Dómino : et Spíritu Sancto replébitur adhuc ex útero matris suae : et multi in nativitáte ejus gaudébunt.",
     translation: "Fear not, Zachary, your prayer is heard: and your wife Elizabeth shall bear you a son, and you shall call his name John: and he shall be great before the Lord: and he shall be filled with the Holy Spirit even from his mother's womb: and many shall rejoice in his nativity.",
     mode: "Introit · The Nativity of St. John the Baptist (Vigil) · Mode VII",
+    reference: "Luke 1:13",
     gabc: "(c2) NE(cf) tí(ffg)me(g)as,(g.) *(,) Za(ghg)cha(f)rí(ef!gvFE'g)a,(g.) (;) ex(f)au(gi~)dí(i)ta(iii) est(ijii/ghg.) (,) o(g)rá(g!hwi)ti(f)o(feg) tu(ghg___)a :(g.) (:) et(g) E(g)lí(g)sa(g)beth(g_[uh:l]h) u(g)xor(fh~) tu(ge)a(e.) (,) pá(e!fwg'!hv)ri(g)et(g) ti(g)bi(eg) fí(fg)li(ef_E'_DC'd)um,(dc..) (:) et(c) vo(d)cá(ff)bis(d) no(fg)men(g) e(fgF~'E~)jus(ff) Jo(fff)án(cdc___)nem :(c.) (:) et(c) e(cd/fef)rit(f) ma(f)gnus(ff) co(g)ram(g!ihi) Dó(g)mi(ghg___)no :(g.) (:) et(g) Spí(h)ri(g)tu(f) San(gh~)cto(g) re(d)plé(f)bi(d)tur(ff) (,) ad(fg)huc(g) ex(d) ú(ffg)te(f)ro(f) ma(fh)tris(h) su(ghG'E)ae :(e.) (:) et(c) mul(df~)ti(f) in(f) na(f)ti(fgff)vi(d)tá(ff)te(fg) e(g)jus(c.d!ewf!gv'1) gau(gffd!ewf)dé(cdc___)bunt.(c.) (::)",
-    source: "Graduale Romanum (GregoBase #1141)"
+    source: "Graduale Romanum (GregoBase #1141)",
+    fullGabc: "(c2) NE(cf) tí(ffg)me(g)as,(g.) *(,) Za(ghg)cha(f)rí(ef!gvFE'g)a,(g.) (;) ex(f)au(gi~)dí(i)ta(iii) est(ijii/ghg.) (,) o(g)rá(g!hwi)ti(f)o(feg) tu(ghg___)a :(g.) (:) et(g) E(g)lí(g)sa(g)beth(g_[uh:l]h) u(g)xor(fh~) tu(ge)a(e.) (,) pá(e!fwg'!hv)ri(g)et(g) ti(g)bi(eg) fí(fg)li(ef_E'_DC'd)um,(dc..) (:) et(c) vo(d)cá(ff)bis(d) no(fg)men(g) e(fgF~'E~)jus(ff) Jo(fff)án(cdc___)nem :(c.) (:) et(c) e(cd/fef)rit(f) ma(f)gnus(ff) co(g)ram(g!ihi) Dó(g)mi(ghg___)no :(g.) (:) et(g) Spí(h)ri(g)tu(f) San(gh~)cto(g) re(d)plé(f)bi(d)tur(ff) (,) ad(fg)huc(g) ex(d) ú(ffg)te(f)ro(f) ma(fh)tris(h) su(ghG'E)ae :(e.) (:) et(c) mul(df~)ti(f) in(f) na(f)ti(fgff)vi(d)tá(ff)te(fg) e(g)jus(c.d!ewf!gv'1) gau(gffd!ewf)dé(cdc___)bunt.(c.) (::) Ps. Dó(cfe)mi(fg)ne,(g) in(g) vir(g)tú(g)te(g) tu(g)a(g) lae(g)tá(gi)bi(h)tur(hg) rex :(gh..) *(:) et(ge) su(fg)per(g) sa(g)lu(g)tá(g)re(g) tu(g)um(g.) (,) ex(g)sul(g)tá(g)bit(g!hwi) ve(g')he(f)mén(fff)ter.(dc..) (::) Gló(cfe)ri(fg)a(g) Pa(g)tri.(g) (::) E(g) u(g!hwi) o(g') u(f) a(fff) e.(dc..) (::)",
+    verse: { latin: "Dómine, in virtúte tua laetábitur rex : et super salutáre tuum exsultábit veheménter.", translation: "In thy strength, O Lord, the king shall joy; and in thy salvation he shall rejoice exceedingly.", gloriaPatri: true },
+    blurb: {
+      text: "John the Baptist is the only saint besides the Lord and Our Lady whose birth, not just death, gets a feast of its own, and this vigil for it is correspondingly old: its chants and readings already stood fixed in the oldest surviving graduals and lectionaries, with its prayers appearing in the Gregorian Sacramentary by the early 9th century. The vigil belongs to a small group of pre-reform vigil Masses that kept their place on the calendar even after the 1969 reform abolished vigils in the older, more general sense.",
+      source: "Wikipedia, \"Nativity of John the Baptist.\"",
+    },
   },
   "john-baptist": {
     title: "De ventre matris meae",
     latin: "De ventre matris meae vocávit me Dóminus nómine meo : et pósuit os meum ut gládium acútum : sub teguménto manus suae protéxit me, pósuit me quasi sagíttam eléctam.",
     translation: "The Lord has called me by my name from my mother's womb: and he has made my mouth like a sharp sword: under the cover of his hand he has protected me, and made me as a chosen arrow.",
     mode: "Introit · The Nativity of St. John the Baptist · Mode I",
+    reference: "Is. 49:1-2",
     gabc: "(c4) DE(d) ven(d!ffV!de~)tre(c) *() ma(f)tris(gh) me(ixhvGF'gwhg/hi)ae(h.) (;) vo(f)cá(fhg)vit(gf~) me(g) Dó(f)mi(fff)nus(dfe.) (,) nó(e/fgf)mi(f)ne(fgF'Ef) me(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (:) et(d) pó(d!f'g)su(gfg)it(gv.fff) os(f) me(fgF'D)um(d.) (;) ut(df~) glá(f)di(fffd)um(d) a(d!ff)cú(deD'C)tum :(c.) (:) sub(d) te(c)gu(d)mén(ff)to(d) ma(ff)nus(d) su(deD'C)ae(c.) (,) pro(dcd)té(fdf)xit(fgF'Ef) me,(d.) (:) pó(dcd)su(fdf)it(ffgvF'Ef) me(d.) (,) qua(d_a)si(cd) sa(c)gít(ff)tam(gffd) e(dc/e[ll:1]d)lé(d_[oh:h]e_[oh:h]d_[oh:h])ctam.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #659)"
+    source: "Graduale Romanum (GregoBase #659)",
+    fullGabc: "(c4) DE(d) ven(d!ffV!de~)tre(c) *() ma(f)tris(gh) me(ixhvGF'gwhg/hi)ae(h.) (;) vo(f)cá(fhg)vit(gf~) me(g) Dó(f)mi(fff)nus(dfe.) (,) nó(e/fgf)mi(f)ne(fgF'Ef) me(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (:) et(d) pó(d!f'g)su(gfg)it(gv.fff) os(f) me(fgF'D)um(d.) (;) ut(df~) glá(f)di(fffd)um(d) a(d!ff)cú(deD'C)tum :(c.) (:) sub(d) te(c)gu(d)mén(ff)to(d) ma(ff)nus(d) su(deD'C)ae(c.) (,) pro(dcd)té(fdf)xit(fgF'Ef) me,(d.) (:) pó(dcd)su(fdf)it(ffgvF'Ef) me(d.) (,) qua(d_a)si(cd) sa(c)gít(ff)tam(gffd) e(dc/e[ll:1]d)lé(d_[oh:h]e_[oh:h]d_[oh:h])ctam.(d.) (::) Ps. Bo(f)num(gh) est(h) con(h)fi(h)té(hj)ri(h) Dó(h)mi(hg)no :(gh..) (:) * et(gf~) psál(gh)le(h)re(h) nó(h)mi(h)ni(h) tu(h)o,(hjh) Al(g')tís(f)si(fff)me.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(d.) (::)",
+    verse: { latin: "Bonum est confitéri Dómino : et psállere nómini tuo, Altíssime.", translation: "It is good to give praise to the Lord: and to sing to thy name, O most High.", gloriaPatri: true },
+    blurb: {
+      text: "Heinrich Isaac set this chant polyphonically for SATB voices, and the setting is documented in Laurence Feininger's Monumenta Polyphoniae Liturgicae Sanctae Ecclesiae Romanae. It belongs to the same tradition of setting the full cycle of Proper chants that produced Isaac's Choralis Constantinus.",
+      source: "chantblog, \"St. John the Baptist, June 24: De Ventre Matris Meae\"; CPDL ChoralWiki, \"De ventre matris (Heinrich Isaac).\"",
+    },
   },
   "peter-paul-vigil": {
     title: "Dicit Dominus Petro",
     latin: "Dicit Dóminus Petro : Cum esses júnior, cingébas te, et ambulábas ubi volébas : cum autem senúeris, exténdes manus tuas, et álius te cinget, et ducet quo tu non vis : hoc autem dixit, signíficans qua morte clarificatúrus esset Deum.",
     translation: "The Lord said to Peter: When you were younger, you girded yourself, and walked where you would: but when you shall be old, you shall stretch forth your hands, and another shall gird you, and lead you where you would not: this he said, signifying by what death he should glorify God.",
     mode: "Introit · Sts. Peter and Paul, Apostles (Vigil) · Mode IV",
+    reference: "John 21:18-19",
     gabc: "(c4) DI(egf)cit(ef'g) *() Dó(hgh)mi(f)nus(f.d!ewf) Pe(fgf)tro :(egff) (;) Cum(d) es(g)ses(h) jú(h)ni(h)or,(hih.) (,) cin(h)gé(h)bas(hg) te,(h[ob:1;8mm]) (;) et(hf) am(g)bu(gd)lá(fffg)bas(f.) (,) u(f)bi(fg'h) vo(hgg)lé(e)bas :(egff) (:) cum(d) au(gh)tem(hgh) se(g_[oh:h]e)nú(egFE')e(e)ris,(egff) (;) ex(dg)tén(hiHG'hwi!jvj)des(j) ma(j)nus(iih) tu(ihhgh)as,(hg..) (:) et(f) á(gh)li(hg)us(g) te(g) cin(gffvE~D~)get,(e[ll:1]d..) (;) et(f) du(gh)cet(hf~) quo(gh) tu(g) non(egff) vis :(fe..) (:) hoc(f) au(fff)tem(fd~) di(ghg/hi)xit,(h.) (,) si(h)gní(jjk)fi(h)cans(hih) qua(g) mor(gffvE~D~)te(e[ll:1]d..) (,) cla(d)ri(df)fi(f)ca(fe)tú(ghg)rus(h) es(h!jij)set(hjIG'hw!ivHG) De(egff)um.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #1366)"
+    source: "Graduale Romanum (GregoBase #1366)",
+    fullGabc: "(c4) DI(egf)cit(ef'g) *() Dó(hgh)mi(f)nus(f.d!ewf) Pe(fgf)tro :(egff) (;) Cum(d) es(g)ses(h) jú(h)ni(h)or,(hih.) (,) cin(h)gé(h)bas(hg) te,(h[ob:1;8mm]) (;) et(hf) am(g)bu(gd)lá(fffg)bas(f.) (,) u(f)bi(fg'h) vo(hgg)lé(e)bas :(egff) (:) cum(d) au(gh)tem(hgh) se(g_[oh:h]e)nú(egFE')e(e)ris,(egff) (;) ex(dg)tén(hiHG'hwi!jvj)des(j) ma(j)nus(iih) tu(ihhgh)as,(hg..) (:) et(f) á(gh)li(hg)us(g) te(g) cin(gffvE~D~)get,(e[ll:1]d..) (;) et(f) du(gh)cet(hf~) quo(gh) tu(g) non(egff) vis :(fe..) (:) hoc(f) au(fff)tem(fd~) di(ghg/hi)xit,(h.) (,) si(h)gní(jjk)fi(h)cans(hih) qua(g) mor(gffvE~D~)te(e[ll:1]d..) (,) cla(d)ri(df)fi(f)ca(fe)tú(ghg)rus(h) es(h!jij)set(hjIG'hw!ivHG) De(egff)um.(fe..) (::) Ps. Cae(hg)li(gh) e(h)nár(h)rant(h) gló(hg)ri(gi)am(i) De(hi)i :(h.) *(:) et(hg) ó(gh)pe(h)ra(h) má(h)nu(h)um(h) e(h)jus(h.) (,) an(h)nún(h)ti(h)at(h) fir(gf)ma(gh)mén(g)tum.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Caeli enárrant glóriam Dei : et ópera mánuum ejus annúntiat firmaméntum.", translation: "The heavens shew forth the glory of God, and the firmament declareth the work of his hands.", gloriaPatri: true },
+    blurb: {
+      text: "Jesus speaks these words to Peter in John 21:18-19, and the Gospel itself immediately glosses them as a prophecy of \"by what death he should glorify God.\" Tradition reads the outstretched hands as foretelling crucifixion, and holds that Peter, unwilling to die exactly as Christ had, asked to be crucified upside down.",
+      source: "BibleRef.com, commentary on John 21:18-19; longstanding Church tradition on the manner of St. Peter's martyrdom.",
+    },
   },
   "peter-paul": {
     title: "Nunc scio vere",
     latin: "Nunc scio vere, quia misit Dóminus Angelum suum : et erípuit me de manu Heródis, et de omni exspectatióne plebis Judaeórum.",
     translation: "Now I know in very deed that the Lord has sent his Angel: and has delivered me out of the hand of Herod, and from all the expectation of the people of the Jews.",
     mode: "Introit · Sts. Peter and Paul, Apostles · Mode III",
+    reference: "Acts 12:11",
     gabc: "(c4) NUNC(fffdgvFE) sci(g)o(h) ve(h!jij)re,(i.) (,) * qui(j)a(j) mi(jkjj)sit(h) Dó(h!jj)mi(hgh)nus(h.) (;) An(ixhi~)ge(gv.fg'h)lum(h) su(ixhiggef)um :(fe..) (:) et(f) e(f)rí(ef'g)pu(g)it(ixhiH~'G~) me(g.) (,) de(gh) ma(h)nu(f) He(fg/hhgh)ró(e!gfg)dis,(fe..) (:) et(f) de(fffdg) o(gh)mni(e) ex(g)spe(g)cta(g)ti(jj)ó(hjg)ne(g.) (;) ple(ghG'EgvFE'f)bis(d.) Ju(fhg___)dae(g_[oh:h]e)ó(e!gfg)rum.(fe..) (::)",
-    source: "Graduale Romanum (GregoBase #478)"
+    source: "Graduale Romanum (GregoBase #478)",
+    fullGabc: "(c4) NUNC(fffdgvFE) sci(g)o(h) ve(h!jij)re,(i.) (,) * qui(j)a(j) mi(jkjj)sit(h) Dó(h!jj)mi(hgh)nus(h.) (;) An(ixhi~)ge(gv.fg'h)lum(h) su(ixhiggef)um :(fe..) (:) et(f) e(f)rí(ef'g)pu(g)it(ixhiH~'G~) me(g.) (,) de(gh) ma(h)nu(f) He(fg/hhgh)ró(e!gfg)dis,(fe..) (:) et(f) de(fffdg) o(gh)mni(e) ex(g)spe(g)cta(g)ti(jj)ó(hjg)ne(g.) (;) ple(ghG'EgvFE'f)bis(d.) Ju(fhg___)dae(g_[oh:h]e)ó(e!gfg)rum.(fe..) (::) Ps. Dó(g)mi(hj)ne(j) pro(j)bá(j)sti(j) me,(j) et(j) co(k)gno(j)ví(j)sti(ih) me :(jjj) (:) * tu(ig) co(hj)gno(j)ví(j)sti(j) ses(j)si(j)ó(j)nem(j) me(j)am,(j.) (,) et(j) re(j)sur(j)re(j)cti(jji)ó(hg)nem(h') me(i)am.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Dómine probásti me, et cognovísti me : tu cognovísti sessiónem meam, et resurrectiónem meam.", translation: "Unto the end, a psalm of David. Lord, thou hast proved me, and known me: Thou hast known my sitting down, and my rising up.", gloriaPatri: true },
+    blurb: {
+      text: "William Byrd set this text for six voices (SSATTB), publishing it in Gradualia II (1607), his second published cycle of Mass Propers for the English Catholic recusant liturgical year.",
+      source: "CPDL ChoralWiki, \"Nunc scio vere (William Byrd)\"; Hyperion Records, CDA67653 (Ensemble Plus Ultra).",
+    },
   },
   "transfiguration": {
     title: "Tibi dixit cor meum",
     latin: "Tibi dixit cor meum, quaesívi vultum tuum, vultum tuum Dómine requíram : ne avértas fáciem tuam a me.",
     translation: "My heart has said to you: I have sought your face; your face, O Lord, will I seek: turn not your face away from me.",
     mode: "Introit · The Transfiguration of the Lord · Mode III",
+    reference: "Ps. 27:8-9",
     gabc: "(c4) TI(gj)bi(j) di(j)xit(jjj//jv.jjj) ()* cor(hj~) me(jvIH)um,(h.) (;) quae(gh)sí(fg)vi(g) vul(g!jjh/jjj)tum(gh) tu(hkj)um,(jkjj'j) (:) vul(gj~)tum(j) tu(jvIH)um(h.) Dó(h)mi(g)ne(h) re(hi)quí(gh)ram :(gh/igh.) (;) ne(g) a(i)vér(gh~)tas(h) fá(h)ci(g)em(ef) tu(g)am(g.) a(ghG'FgvFE) me.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #751)"
+    source: "Graduale Romanum (GregoBase #751)",
+    fullGabc: "(c4) TI(gj)bi(j) di(j)xit(jjj//jv.jjj) ()* cor(hj~) me(jvIH)um,(h.) (;) quae(gh)sí(fg)vi(g) vul(g!jjh/jjj)tum(gh) tu(hkj)um,(jkjj'j) (:) vul(gj~)tum(j) tu(jvIH)um(h.) Dó(h)mi(g)ne(h) re(hi)quí(gh)ram :(gh/igh.) (;) ne(g) a(i)vér(gh~)tas(h) fá(h)ci(g)em(ef) tu(g)am(g.) a(ghG'FgvFE) me.(e.) (::) Ps. Dó(g)mi(hj)nus(j) il(j)lu(j)mi(j)ná(k)ti(j)o(j) me(ih)a,(jjj) *(:) et(ig~) sa(hj)lus(j) me(j)a :(jji) quem(hg~) ti(h')mé(i)bo?(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Dóminus illuminátio mea, et salus mea : quem timébo?.", translation: "The psalm of David before he was anointed. The Lord is my light and my salvation, whom shall I fear? The Lord is the protector of my life: of whom shall I be afraid?", gloriaPatri: true },
+    blurb: {
+      text: "Tibi dixit cor meum does double duty in the modern calendar, also opening the 2nd Sunday of Lent (this app's own lent-2 entry). This is a deliberate pairing, since Matthew's account of the Transfiguration is the Gospel read at that Sunday's Mass.",
+      source: "chantblog, \"The Introit for the Feast of the Transfiguration (August 6): Tibi dixit cor meum.\"",
+    },
   },
   "lawrence": {
     title: "Dispersit, dedit pauperibus",
     latin: "Dispérsit, dedit paupéribus : justítia ejus manet in saéculum saéculi.",
     translation: "He has distributed, he has given to the poor: his justice remains for ever and ever.",
     mode: "Introit · St. Lawrence, Deacon and Martyr · Mode VIII",
+    reference: "Ps. 112:9",
     gabc: "(c3) DIs(e)pér(eh)sit,(fe) *(,) de(f)dit(e') pau(d)pé(ef)ri(f)bus :(e.) (;) ju(gh)stí(i)ti(h)a(g_[uh:l]h) e(i_[uh:l]j)jus(i.) (,) ma(hih)net(hgh) in(f) saé(fh)cu(h)lum(g) saé(e)cu(e)li.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #2419)"
+    source: "Graduale Romanum (GregoBase #2419)",
+    blurb: {
+      text: "Psalm 112:9 reads in full: he hath distributed, he hath given to the poor, his justice remaineth for ever and ever, his horn shall be exalted in glory. This Introit draws on only the first part of that verse, leaving aside the closing image of the horn raised in glory.",
+      source: "Ps. 112:9 (Vulgate numbering Ps. 111:9) (Douay-Rheims; Latin from the Clementine Vulgate)",
+    },
   },
   "fabian-sebastian": {
     title: "Intret in conspectu tuo",
     latin: "Intret in conspéctu tuo, Dómine, gémitus compeditórum : redde vicínis nostris séptuplum in sinu eórum : víndica sánguinem sanctórum tuórum, qui effúsus est.",
     translation: "Let the sighing of the prisoners come before you, O Lord: render to our neighbors sevenfold into their bosom: avenge the blood of your saints, which has been shed.",
     mode: "Introit · Sts. Fabian and Sebastian, Martyrs · Mode IV",
+    reference: "Ps. 79:11-12, 10",
     gabc: "(c4) IN(f)tret(fff/ded) (,) * in(f) con(gh)spé(h)ctu(g) tu(gh/ji)o,(ih) Dó(jjj)mi(h)ne,(ghg.) (;) gé(gih)mi(g)tus(gff) com(dg)pe(gh)di(fe)tó(egF'E)rum,(e.) (:) red(ge)de(fg) vi(g)cí(g)nis(gh) no(h)stris(h.) sé(hjI'H)ptu(g.f!gwhgh)plum(hg..) (,) in(g) si(gh/ji)nu(ih) e(jjj)ó(hiH'Gh)rum :(hg..) (:) vín(h)di(g)ca(e) sán(g)gui(f)nem(fff) (,) san(fd~)ctó(fv.fff)rum(d!ewf) tu(d)ó(g_[oh:h]e/fff)rum,(e_[oh:h][ll:1]d_[oh:h]) (,) qui(d!f'h) ef(hg)fú(ghG'E)sus(fgF'E) est.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #261)"
+    source: "Graduale Romanum (GregoBase #261)",
+    blurb: {
+      text: "Intret in conspectu draws its text from three verses of Psalm 79, trimming and adjusting as it goes. The second half of verse 11 and the closing phrase of verse 12 are dropped entirely. Most notably, the final clause borrows from verse 10, where the psalm reads \"ultio sanguinis servorum tuorum qui effusus est,\" but the compiler replaces \"servorum\" with \"Sanctórum,\" moving the word from servants to Saints and sharpening the text's fit for a feast of martyrs.",
+      source: "Ps. 79:11-12, 10 (Vulgate numbering Ps. 78:11-12, 10) (Douay-Rheims; Latin from the Clementine Vulgate)",
+    },
+    fullGabc: "(c4) IN(f)tret(fff/ded) (,) * in(f) con(gh)spé(h)ctu(g) tu(gh/ji)o,(ih) Dó(jjj)mi(h)ne,(ghg.) (;) gé(gih)mi(g)tus(gff) com(dg)pe(gh)di(fe)tó(egF'E)rum,(e.) (:) red(ge)de(fg) vi(g)cí(g)nis(gh) no(h)stris(h.) sé(hjI'H)ptu(g.f!gwhgh)plum(hg..) (,) in(g) si(gh/ji)nu(ih) e(jjj)ó(hiH'Gh)rum :(hg..) (:) vín(h)di(g)ca(e) sán(g)gui(f)nem(fff) (,) san(fd~)ctó(fv.fff)rum(d!ewf) tu(d)ó(g_[oh:h]e/fff)rum,(e_[oh:h][ll:1]d_[oh:h]) (,) qui(d!f'h) ef(hg)fú(ghG'E)sus(fgF'E) est.(e.) (::) Ps. De(hg)us(gh) ve(h)né(h)runt(h) gen(h)tes(h) in(h) hae(h)re(h)di(hg)tá(gi)tem(i) tu(hi)am,(h.) (:) * pol(hg)lu(gh)é(h)runt(h) tem(h)plum(h) san(h)ctum(h) tu(h)um :(h.) (,) po(h)su(h)é(h)runt(h) Je(h)rú(h)sa(h)lem(h) in(h) po(h)mó(h)rum(h) cu(gf)stó(gh)di(g)am.(e.) (::) Gló(hg)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(gf) u(gh) a(g) e.(e.) (::)",
+    verse: { latin: "Deus venérunt gentes in haereditátem tuam, polluérunt templum sanctum tuum : posuérunt Jerúsalem in pomórum custódiam.", translation: "A psalm for Asaph. O God, the heathens are come into thy inheritance, they have defiled thy holy temple: they have made Jerusalem as a place to keep fruit.", gloriaPatri: true },
   },
   "assumption-vigil": {
     title: "Vultum tuum",
     latin: "Vultum tuum deprecabúntur omnes dívites plebis : adducéntur regi vírgines post eam : próximae ejus adducéntur tibi in laetítia et exsultatióne.",
     translation: "All the rich among the people shall entreat your countenance: after her shall virgins be brought to the king: her companions shall be brought to you with gladness and rejoicing.",
     mode: "Introit · The Assumption of the Blessed Virgin Mary (Vigil) · Mode II",
+    reference: "Ps. 45:13, 15-16",
     gabc: "(f3) VUl(f)tum(efE'C) tu(efe)um(f.) *() de(ge)pre(f)ca(hh)bún(h)tur(f.) (;) o(f!hhh)mnes(f) dí(hh)vi(hih)tes(egf) ple(f_[oh:h]g_[oh:h]f_[oh:h])bis :(f.) (:) ad(f)du(hh)cén(ih~)tur(h) re(hi)gi(ihhf) vír(f)gi(f!gwh_f)nes(f') post(f) e(hg)am :(f.) (:) pró(hhh)xi(f)mae(e!gef) e(f_[oh:h]g_[oh:h]f_[oh:h])jus(f.) (,) ad(f)du(hh)cén(h_)tur(eg~) ti(fe)bi(e.) (;) in(f) lae(hh)tí(i)ti(h)a(hjIH'Ghf..) (,) et(f) ex(f)sul(gh~)ta(f)ti(e!gef)ó(f_[oh:h]g_[oh:h]f_[oh:h])ne.(f.) (::)",
-    source: "Graduale Romanum (GregoBase #124)"
+    source: "Graduale Romanum (GregoBase #124)",
+    fullGabc: "(f3) VUl(f)tum(efE'C) tu(efe)um(f.) *() de(ge)pre(f)ca(hh)bún(h)tur(f.) (;) o(f!hhh)mnes(f) dí(hh)vi(hih)tes(egf) ple(f_[oh:h]g_[oh:h]f_[oh:h])bis :(f.) (:) ad(f)du(hh)cén(ih~)tur(h) re(hi)gi(ihhf) vír(f)gi(f!gwh_f)nes(f') post(f) e(hg)am :(f.) (:) pró(hhh)xi(f)mae(e!gef) e(f_[oh:h]g_[oh:h]f_[oh:h])jus(f.) (,) ad(f)du(hh)cén(h_)tur(eg~) ti(fe)bi(e.) (;) in(f) lae(hh)tí(i)ti(h)a(hjIH'Ghf..) (,) et(f) ex(f)sul(gh~)ta(f)ti(e!gef)ó(f_[oh:h]g_[oh:h]f_[oh:h])ne.(f.) (::) T. P. Al(ef'h~)le(h_g)lú(hih){ia},(hhhffe.) (,) al(fh~)le(hghf)lú(f_[oh:h]g_[oh:h]f_[oh:h]){ia}.(f.) (::) Ps. E(e)ru(fe)ctá(eh)vit(h) cor(h) me(h)um(hg) ver(hi)bum(i) bo(hi)num :(h.) *(:) di(hf)co(fh) e(h)go(h) ó(h)pe(h)ra(i) me(hf)a(h) re(ge)gi.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: true },
+    blurb: {
+      text: "This Introit is a genuine Marian all-purpose text, doing triple duty across the calendar: it also opens the Votive Mass of the Blessed Virgin during Christmastide and the Annunciation. William Byrd set it for five voices (SATTB) as no. 16 of Gradualia I (1605), its music built to flower at the words \"in laetitia et exsultatione\" — \"in joy and exultation.\"",
+      source: "CPDL ChoralWiki, \"Vultum tuum (William Byrd).\"",
+    },
   },
   "assumption": {
     title: "Signum magnum",
     latin: "Signum magnum appáruit in caelo : múlier amícta sole, et luna sub pédibus ejus, et in cápite ejus coróna stellárum duódecim.",
     translation: "A great sign appeared in heaven: a woman clothed with the sun, and the moon under her feet, and on her head a crown of twelve stars.",
     mode: "Introit · The Assumption of the Blessed Virgin Mary (Option 1) · Mode VII",
+    reference: "Apoc. 12:1",
     gabc: "(c3) SI(ef)GNUM(f) ma(fdfe)gnum(e.) *(,) ap(fh)pá(hhh)ru(h)it(hji) in(ihhf!gwh) cae(efe___)lo :(e.) (:) mú(ef/hgh)li(h)er(h') a(h)mí(h)cta(fh) so(h)le,(hg/hiffe.) (;) et(e) lu(ef/hg)na(h') sub(g) pé(gh'i)di(i)bus(ijHF'gwh) e(hi)jus,(h.) (:) et(hg) in(h) cá(hji)pi(h)te(hhh) e(e!g'hffd~)jus(d.) (;) co(e)ró(ef)na(e') stel(e)lá(e)rum(e.f!gwh!iv'1) du(ihhf!gwh')ó(e)de(efe___)cim.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #23)"
+    source: "Graduale Romanum (GregoBase #23)",
+    fullGabc: "(c3) SI(ef)GNUM(f) ma(fdfe)gnum(e.) *(,) ap(fh)pá(hhh)ru(h)it(hji) in(ihhf!gwh) cae(efe___)lo :(e.) (:) mú(ef/hgh)li(h)er(h') a(h)mí(h)cta(fh) so(h)le,(hg/hiffe.) (;) et(e) lu(ef/hg)na(h') sub(g) pé(gh'i)di(i)bus(ijHF'gwh) e(hi)jus,(h.) (:) et(hg) in(h) cá(hji)pi(h)te(hhh) e(e!g'hffd~)jus(d.) (;) co(e)ró(ef)na(e') stel(e)lá(e)rum(e.f!gwh!iv'1) du(ihhf!gwh')ó(e)de(efe___)cim.(e.) (::) Ps. Can(ehg)tá(hi)te(i) Dó(i)mi(i)no(i) cán(ik)ti(j)cum(j) no(ji)vum :(ij..) *(:) qui(ig)a(hi) mi(i)ra(i)bí(i!jwk)li(i')a(h) fe(hhh)cit.(fe..) (::) Gló(ehg)ri(hi)a(i) Pa(i)tri.(i) (::) E(i) u(i!jwk) o(i') u(h) a(hhh) e.(fe..) (::)",
+    verse: { latin: "Cantáte Dómino cánticum novum : quia mirabília fecit.", translation: "A psalm for David himself. Sing ye to the Lord a new canticle: because he hath done wonderful things. His right hand hath wrought for him salvation, and his arm is holy.", gloriaPatri: true },
+    blurb: {
+      text: "Signum magnum is a 20th-century composition: after Pope Pius XII infallibly defined the dogma of the Assumption in 1950, a new set of Mass propers was written for the feast, replacing the older Introit \"Gaudeamus omnes\" (still used in this app as the alternate Option 2) with this newly composed \"Signum magnum,\" drawn from the Woman-clothed-with-the-sun of Revelation 12.",
+      source: "liberreader.wordpress.com, \"Polyphonic Introit: Signum magnum.\"",
+    },
   },
   "assumption-opt2": {
     title: "Gaudeamus omnes",
     latin: "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre Maríae Vírginis : de cujus Assumptióne gaudent Angeli, et colláudant Fílium Dei.",
     translation: "Let us all rejoice in the Lord, celebrating a feast day in honor of the Virgin Mary: at whose Assumption the Angels rejoice, and give praise to the Son of God.",
     mode: "Introit · The Assumption of the Blessed Virgin Mary (Option 2) · Mode I",
+    reference: "",
     gabc: "(c4) GAu(c)de(d)á(ixdh'!iv)mus(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) Ma(f)rí(h)ae(gjj) Vír(h)gi(h_[oh:h]i_[oh:h]h_[oh:h])nis :(h.) (:) de(fg) cu(fg)jus(f) As(f)sum(g)pti(g)ó(g./hjh)ne(ghg.) (,) gau(fg)dent(f) án(fg/hgh)ge(gvFE'fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(ed..) (::)",
-    source: "Graduale Romanum (GregoBase #3312)"
+    source: "Graduale Romanum (GregoBase #3312)",
+    fullGabc: "(c4) GAu(c)de(d)á(ixdh'!iv)mus(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) Ma(f)rí(h)ae(gjj) Vír(h)gi(h_[oh:h]i_[oh:h]h_[oh:h])nis :(h.) (:) de(fg) cu(fg)jus(f) As(f)sum(g)pti(g)ó(g./hjh)ne(ghg.) (,) gau(fg)dent(f) án(fg/hgh)ge(gvFE'fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(ed..) (::) Ps. E(f)ru(gh)ctá(h)vit(h) cor(h) me(h)um(h) ver(hj)bum(h) bo(hg)num :(gh..) *(:) di(gf)co(gh) e(h)go(h) ó(h)pe(h)ra(hjh) me(g')a(f) re(fff)gi.(dc/df..) (::)",
+    verse: { latin: "Eructávit cor meum verbum bonum : dico ego ópera mea regi.", translation: "My heart hath uttered a good word: I speak my works to the king: My tongue is the pen of a scrivener that writeth swiftly.", gloriaPatri: false },
+    blurb: {
+      text: "Another instance of the reusable \"Gaudeamus\" festal formula already documented on this app's all-saints and nativity-mary entries. Alexander Agricola wrote a two-voice polyphonic setting of this Assumption version, preserved in the Segovia Cancionero manuscript, and Heinrich Isaac set the same reused melody, refitted to its various feast-day texts, eight separate times.",
+      source: "chantblog, \"The Introit for the Solemnity of All Saints: Gaudeamus Omnes\" (same source already cited on all-saints/nativity-mary); Wikipedia, \"Missa Gaudeamus.\"",
+    },
   },
   "triumph-cross": {
     title: "Nos autem gloriari",
     latin: "Nos autem gloriári opórtet in Cruce Dómini nostri Jesu Christi.",
     translation: "But it behooves us to glory in the Cross of our Lord Jesus Christ.",
     mode: "Introit · The Exaltation of the Holy Cross · Mode VII",
+    reference: "Gal. 6:14",
     gabc: "(c3) NOS(ig/ij) au(i_[uh:l]j)tem(i'_[oh:h]) *(,) glo(i)ri(g')á(h)ri(f') o(g)pór(ff)tet(e.) (;) in(e) Cru(h')ce(h) Dó(h')mi(h)ni(f') no(h)stri(gv_[oh:h]FE) Je(fg)su(f) Chri(e.)sti.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #2945); same introit as Holy Thursday."
+    source: "Graduale Romanum (GregoBase #2945); same introit as Holy Thursday.",
+    blurb: {
+      text: "Shared since at least the Council of Trent with the Mass of Maundy Thursday evening, this text was set as a four-voice polyphonic Introit by Heinrich Isaac, published in 1555 in Choralis Constantinus, Book III; Felice Anerio (c. 1560-1614) also composed music for it.",
+      source: "CPDL ChoralWiki, \"Nos autem gloriari (Introit, Book 3) (Heinrich Isaac)\"; bibleasmusic.com, \"Exaltation of Holy Cross: Nos autem gloriari (Galatians 6:14) — Felice Anerio.\"",
+    },
   },
   "all-saints": {
     title: "Gaudeamus omnes",
     latin: "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre Sanctórum ómnium : de quorum solemnitáte gaudent Angeli, et colláudant Fílium Dei.",
     translation: "Let us all rejoice in the Lord, celebrating a feast day in honor of all the Saints: at whose solemnity the Angels rejoice, and give praise to the Son of God.",
     mode: "Introit · All Saints · Mode I",
+    reference: "",
     gabc: "(c4) GAU(c)DE(d)Á(ixdh'!iv)MUS(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) San(f)ctó(h)rum(gjj) ó(h)mni(h_[oh:h]i_[oh:h]h_[oh:h])um :(h.) (:) de(fg) quo(fg)rum(f) sol(f)e(g)mni(g)tá(g./hjh)te(ghg.) (,) gau(fg)dent(f) An(fg/hgh)ge(gvFE'/!fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(e[ll:1]d..) (::)",
-    source: "Graduale Romanum (GregoBase #752)"
+    source: "Graduale Romanum (GregoBase #752)",
+    fullGabc: "(c4) GAU(c)DE(d)Á(ixdh'!iv)MUS(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) San(f)ctó(h)rum(gjj) ó(h)mni(h_[oh:h]i_[oh:h]h_[oh:h])um :(h.) (:) de(fg) quo(fg)rum(f) sol(f)e(g)mni(g)tá(g./hjh)te(ghg.) (,) gau(fg)dent(f) An(fg/hgh)ge(gvFE'/!fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(e[ll:1]d..) (::) Ps. Ex(f)sul(gh)tá(h)te(h) ju(hj)sti(h) in(h) Dó(h)mi(hg)no :(gh..) *(:) re(gf)ctos(gh) de(h)cet(h) col(hjh)lau(g')dá(f)ti(fff)o.(d.) (::) Gló(f)ri(gh)a(h) Pa(h)tri.(h) (::) E(h) u(hjh) o(g') u(f) a(fff) e.(dc/df..) (::)",
+    verse: { latin: "Exsultáte justi in Dómino : rectos decet collaudátio.", translation: "A psalm for David. Rejoice in the Lord, O ye just: praise becometh the upright.", gloriaPatri: true },
+    blurb: {
+      text: "Gaudeamus, \"Let us rejoice,\" became a reusable festive formula in the Graduale: the same opening melody and text pattern, with only the saint's name changed, was extended to other joyful feasts from the eleventh century onward, apparently beginning with St. Agatha. Josquin des Prez later built an entire Mass, the Missa Gaudeamus, on this chant's opening phrase. One recent study argues that its unusual recurring number patterns were designed specifically for All Saints' Day.",
+      source: "chantblog, “The Introit for the Solemnity of All Saints: Gaudeamus Omnes.”"
+    }
   },
   "dedication-lateran": {
     title: "Deus in loco sancto suo",
     latin: "Deus in loco sancto suo : Deus, qui inhabitáre facit unánimes in domo : ipse dabit virtútem et fortitúdinem plebi suae.",
     translation: "God is in his holy place: God, who makes men of one mind to dwell in a house: he shall give power and strength to his people.",
     mode: "Introit · The Dedication of the Lateran Basilica · Mode V",
+    reference: "Ps. 68:6-7, 36",
     gabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::)",
-    source: "Graduale Romanum (GregoBase #1026); shares the 17th-Sunday introit."
+    source: "Graduale Romanum (GregoBase #1026); shares the 17th-Sunday introit.",
+    fullGabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::) Ps. Ex(d)súr(f)gat(h) De(h)us,(h.) et(h) dis(h)si(h)pén(h)tur(h) in(h)i(h)mí(h)ci(i) e(i)jus :(h.) (:) * et(f) fú(h)gi(h)ant,(h) qui(h) o(h)dé(h)runt(h) e(h)um,(h.) a(h) fá(i)ci(g)e(g) e(h)jus.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Exsúrgat Deus, et dissipéntur inimíci ejus : et fúgiant, qui odérunt eum, a fácie ejus.", translation: "Let God arise, and let his enemies be scattered: and let them that hate him flee from before his face.", gloriaPatri: true },
+    blurb: {
+      text: "The Lateran basilica this feast commemorates was consecrated in 324 by Pope Sylvester I — making it the oldest of Rome's four major basilicas — and still carries the inscription \"Omnium Urbis et Orbis Ecclesiarum Mater et Caput\" (Mother and Head of all the Churches of the City and the World), since as the pope's own cathedral church it outranks even St. Peter's. The dedication has been kept as an annual feast since the 12th century.",
+      source: "Wikipedia, \"Dedication of the Lateran Basilica.\"",
+    },
+  },
+  "dedication-peter-paul-basilicas": {
+    title: "Deus in loco sancto suo",
+    latin: "Deus in loco sancto suo : Deus, qui inhabitáre facit unánimes in domo : ipse dabit virtútem et fortitúdinem plebi suae.",
+    translation: "God is in his holy place: God, who makes men of one mind to dwell in a house: he shall give power and strength to his people.",
+    mode: "Introit · The Dedication of the Basilicas of Sts. Peter and Paul, Apostles · Mode V",
+    reference: "Ps. 68:6-7, 36",
+    gabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::)",
+    source: "Graduale Romanum (GregoBase #1026); shared with the 17th-Sunday introit and, in this app, with the Nov. 9 Dedication of the Lateran Basilica entry (both dates draw the same Common-of-Dedication chant).",
+    blurb: {
+      text: "Three verses of Psalm 68 build this introit, though not three consecutive ones. The chant opens halfway through verse 6, setting aside the psalm's preceding phrase about God as father of orphans and judge of widows, and begins at \"God in his holy place.\" After verse 7 it skips nearly thirty verses to reach verse 36, borrowing only its closing clause, \"ipse dabit virtutem et fortitudinem plebi suae,\" while leaving behind the verse's opening words, \"Mirabilis Deus in sanctis suis,\" and its closing acclamation, \"Benedictus Deus.\"",
+      source: "Ps. 68:6-7, 36 (Vulgate numbering Ps. 67:6-7, 36) (Douay-Rheims; Latin from the Clementine Vulgate)",
+    },
+    fullGabc: "(c3) DE(hhi)us(h) *() in(h) lo(hihh)co(f_e) san(f!gwh)cto(f_d) su(d_[oh:h]e_[oh:h]d_[oh:h])o :(d.) (;) De(fd)us,(d) qui(d) in(f)ha(fef)bi(fef)tá(hf/hhhi)re(h) fa(hjI'H)cit(h_f) (,) un(f!h'i)á(ij)ni(i)mes(h) in(hi) do(hihh)mo :(gf..) (:) i(f)pse(hh) da(h_i)bit(f) vir(hh)tú(hv.gihghf)tem(f.) (,) et(f) for(gxfg~)ti(f_e)tú(fgF'D)di(dfE'De[ll:1]d)nem(d.) (;) ple(gxde/gf/g_[uh:l]h)bi(hgge!fwg) su(d_[oh:h]e_[oh:h]d_[oh:h])ae.(d.) (::) Ps. Ex(d)súr(f)gat(h) De(h)us,(h.) et(h) dis(h)si(h)pén(h)tur(h) in(h)i(h)mí(h)ci(i) e(i)jus :(h.) (:) * et(f) fú(h)gi(h)ant,(h) qui(h) o(h)dé(h)runt(h) e(h)um,(h.) a(h) fá(i)ci(g)e(g) e(h)jus.(f.) (::) Gló(d)ri(f)a(h) Pa(h)tri.(h) (::) E(h) u(h) o(i) u(g) a(h) e.(f.) (::)",
+    verse: { latin: "Exsúrgat Deus, et dissipéntur inimíci ejus : et fúgiant, qui odérunt eum, a fácie ejus.", translation: "Let God arise, and let his enemies be scattered: and let them that hate him flee from before his face.", gloriaPatri: true },
   },
   "immaculate-conception": {
     title: "Gaudens gaudebo",
     latin: "Gaudens gaudébo in Dómino, et exsultábit ánima mea in Deo meo : quia índuit me vestiméntis salútis, et induménto justítiae circúmdedit me, quasi sponsam ornátam monílibus suis.",
     translation: "I will greatly rejoice in the Lord, and my soul shall be joyful in my God: for he has clothed me with the garments of salvation, and with the robe of justice he has covered me, as a bride adorned with her jewels.",
     mode: "Introit · The Immaculate Conception of the Blessed Virgin Mary · Mode III",
+    reference: "Is. 61:10",
     gabc: "(c4) GAU(eef)DENS(dge) gau(eg~)dé(ghg/hj)bo(j.) *(,) in(hj~) Dó(jjjh)mi(hg)no(ghgg/efe.) (;) et(dfe) ex(f)sul(f)tá(ef'h)bit(h) á(h!jj)ni(h)ma(h) me(h.f!gwhgh)a(h_g) (,) in(f) De(f)o(df) me(egff)o :(fe..) (:) qui(ff)a(dge) ín(gh)du(h)it(hkJI'j) me(j_i) (,) ve(j)sti(j)mén(j_i/j_i/jlk)tis(k_[hl:1]i) sa(i)lú(ikj)tis,(iki/jhhg.) (:) et(g) in(h)du(g)mén(h!iwj)to(ih) ju(h)stí(h!jjj)ti(hg)ae(g.) (,) cir(gih)cúm(gv.ef'h)de(h)dit(h!iwjg~) me,(hg..) (;) qua(g)si(h) spon(gef)sam(e_[oh:h][ll:1]d) or(gh)ná(g.h!iwjij)tam(j_h) (,) mo(hk)ní(j.h!iwj)li(g)bus(g_[oh:h]e) su(fgF'E)is.(e.) (::)",
-    source: "Graduale Romanum (GregoBase #622)"
+    source: "Graduale Romanum (GregoBase #622)",
+    fullGabc: "(c4) GAU(eef)DENS(dge) gau(eg~)dé(ghg/hj)bo(j.) *(,) in(hj~) Dó(jjjh)mi(hg)no(ghgg/efe.) (;) et(dfe) ex(f)sul(f)tá(ef'h)bit(h) á(h!jj)ni(h)ma(h) me(h.f!gwhgh)a(h_g) (,) in(f) De(f)o(df) me(egff)o :(fe..) (:) qui(ff)a(dge) ín(gh)du(h)it(hkJI'j) me(j_i) (,) ve(j)sti(j)mén(j_i/j_i/jlk)tis(k_[hl:1]i) sa(i)lú(ikj)tis,(iki/jhhg.) (:) et(g) in(h)du(g)mén(h!iwj)to(ih) ju(h)stí(h!jjj)ti(hg)ae(g.) (,) cir(gih)cúm(gv.ef'h)de(h)dit(h!iwjg~) me,(hg..) (;) qua(g)si(h) spon(gef)sam(e_[oh:h][ll:1]d) or(gh)ná(g.h!iwjij)tam(j_h) (,) mo(hk)ní(j.h!iwj)li(g)bus(g_[oh:h]e) su(fgF'E)is.(e.) (::) Ps. Ex(g)al(hj)tá(j)bo(j) te,(j) Dó(j)mi(j)ne,(j.) (,) quó(j)ni(j)am(j) sus(k)ce(j)pí(j)sti(ih) me :(jjj) (:) * nec(ig) de(hj)le(j)ctá(j)sti(j) in(j)i(j)mí(j)cos(j) me(jji)os(hg) su(h')per(i) me.(gh..) (::) Gló(g)ri(hj)a(j) Pa(j)tri.(j) (::) E(j) u(jji) o(hg) u(h') a(i) e.(gh..) (::)",
+    verse: { latin: "Exaltábo te, Dómine, quóniam suscepísti me : nec delectásti inimícos meos super me.", translation: "I will extol thee, O Lord, for thou hast upheld me: and hast not made my enemies to rejoice over me.", gloriaPatri: true },
+    blurb: {
+      text: "Because the feast itself is comparatively young (raised to a universal solemnity only between the 17th and 19th centuries, the dogma itself defined in 1854), this Introit has no chant melody of its own: it is a contrafact, its music borrowed from a different, older antiphon, \"Vocem iucunditatis.\"",
+      source: "Tonus Peregrinus blog, \"Gaudens gaudébo: Introit for the Immaculate Conception.\"",
+    },
   },
   "thomas-apostle": {
     title: "Mihi autem nimis",
     latin: "Mihi autem nimis honoráti sunt amíci tui, Deus : nimis confortátus est principátus eórum.",
     translation: "But to me your friends, O God, are made exceedingly honorable: their principality is exceedingly strengthened.",
     mode: "Introit · St. Thomas, Apostle · Mode II",
+    reference: "Ps. 139:17",
     gabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::)",
-    source: "Graduale Romanum (GregoBase #475); copied verbatim from data/introits-1962.js's thomas-apostle entry — the 1962 Missal's Dec 21 propers for the Apostle Thomas are unchanged in the modern Mass for his July 3 feast (same ancient-apostle pattern used for Matthew/Barnabas/Matthias elsewhere in this repo)."
+    source: "Graduale Romanum (GregoBase #475); copied verbatim from data/introits-1962.js's thomas-apostle entry — the 1962 Missal's Dec 21 propers for the Apostle Thomas are unchanged in the modern Mass for his July 3 feast (same ancient-apostle pattern used for Matthew/Barnabas/Matthias elsewhere in this repo).",
+    fullGabc: "(f3) MI(e)HI(f) au(f)tem(hh) * ni(ihi)mis(ihi_[oh:h]f) (,) ho(fi)no(i)rá(ij)ti(ih) sunt(hv.gih.) (,) a(f)mí(ege)ci(f) tu(f)i,(hhi) De(fgF'E)us :(e.) (:) ni(h)mis(hhh) con(f)for(fi~)tá(i)tus(h) est(hji.) (,) prin(hihh)ci(ef)pá(hhi)tus(h) e(h)ó(hjI'H)rum.(hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::) Ps. Dó(e)mi(fe)ne(eh) pro(h)bá(h)sti(h) me,(h) et(hg~) co(hi)gno(i)ví(hi)sti(h) me :(h.) *(:) tu(hf) co(fh)gno(h)ví(h)sti(h) ses(h)si(h)ó(h)nem(h) me(h)am,(h.) (,) et(h) re(h)sur(h)re(h')cti(i)ó(hf)nem(h) me(ge)am.(fgf.) (::) Gló(e)ri(fe)a(eh) Pa(h)tri.(h) (::) E(h') u(i) o(hf) u(h) a(ge) e.(fgf.) (::)",
+    verse: { latin: "Dómine probásti me, et cognovísti me : tu cognovísti sessiónem meam, et resurrectiónem meam.", translation: "Unto the end, a psalm of David. Lord, thou hast proved me, and known me: Thou hast known my sitting down, and my rising up.", gloriaPatri: true },
+    blurb: {
+      text: "Mihi autem nimis is the communion antiphon text shared by every apostle's feast. It drew an unusually large polyphonic tradition, with settings by Dufay, Isaac, Palestrina, and Thomas Tallis. Tallis's 1575 Latin motet was later refitted with English words as the anthem \"Blessed be thy name.\"",
+      source: "CPDL ChoralWiki, \"Mihi autem nimis\"; CPDL ChoralWiki, \"Blessed be thy name (Thomas Tallis)\" (same sources already cited on this app's andrew entry).",
+    },
   }
 };
 

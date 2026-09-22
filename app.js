@@ -24,6 +24,19 @@ const commentarySourceEl = document.getElementById("chant-commentary-source");
 const sourceNote = document.getElementById("source-note");
 const randomBtn = document.getElementById("random-btn");
 const backBtn = document.getElementById("back-btn");
+const tempoSlider = document.getElementById("tempo-slider");
+const tempoValue = document.getElementById("tempo-value");
+const pitchSlider = document.getElementById("pitch-slider");
+const pitchValue = document.getElementById("pitch-value");
+const volumeSlider = document.getElementById("volume-slider");
+const volumeValue = document.getElementById("volume-value");
+const verseToggle = document.getElementById("verse-toggle");
+const verseBlock = document.getElementById("verse-block");
+const verseLatinEl = document.getElementById("verse-latin");
+const verseTranslationEl = document.getElementById("verse-translation");
+const gloriaPatriLabel = document.getElementById("gloria-patri-label");
+const gloriaPatriLatinEl = document.getElementById("gloria-patri-latin");
+const gloriaPatriTranslationEl = document.getElementById("gloria-patri-translation");
 
 /* ---- Build the chant list ------------------------------------------------
    Walk the six data globals into one flat list, deduped by chant identity so a
@@ -97,6 +110,38 @@ function renderText(entry) {
   latinEl.textContent = entry.latin || "";
   translationEl.textContent = entry.translation || "";
   sourceNote.textContent = entry.source ? "Source: " + entry.source : "";
+  renderVerseBlock(entry);
+}
+
+/* ---- Psalm verse + Gloria Patri (Introits with a `fullGabc`) --------------
+   Ported from Chant of the Day. The doxology's text is invariant across every
+   Introit, so it lives once here rather than in each data entry. */
+
+const GLORIA_PATRI = {
+  latin: "Glória Patri, et Fílio, et Spirítui Sancto. Sicut erat in princípio, et nunc, et semper, et in saécula saeculórum. Amen.",
+  translation: "Glory be to the Father, and to the Son, and to the Holy Spirit. As it was in the beginning, is now, and ever shall be, world without end. Amen."
+};
+
+// Whether the psalm-verse toggle is on (see applyVerseToggle).
+let verseOn = false;
+
+// Shows the psalm verse (+ Gloria Patri, when the entry's own gabc carries
+// it -- Passiontide and Requiem Introits traditionally omit it) beneath the
+// antiphon text, only when the toggle is on and the entry has one.
+function renderVerseBlock(entry) {
+  if (!verseOn || !entry || !entry.verse || !entry.fullGabc) {
+    verseBlock.hidden = true;
+    return;
+  }
+  verseBlock.hidden = false;
+  verseLatinEl.textContent = entry.verse.latin || "";
+  verseTranslationEl.textContent = entry.verse.translation || "";
+  const gloria = !!entry.verse.gloriaPatri;
+  gloriaPatriLabel.hidden = !gloria;
+  gloriaPatriLatinEl.hidden = !gloria;
+  gloriaPatriTranslationEl.hidden = !gloria;
+  gloriaPatriLatinEl.textContent = gloria ? GLORIA_PATRI.latin : "";
+  gloriaPatriTranslationEl.textContent = gloria ? GLORIA_PATRI.translation : "";
 }
 
 /* ---- Reverse index ("Used in the liturgy on:") ---------------------------
@@ -295,7 +340,9 @@ function showChant(entry, random) {
   renderUsages(entry);
   renderRelated(entry);
   renderCommentary(entry);
-  window.ChantRender.renderChantInto(scoreEl, entry.gabc, prepareAudio, function () {
+  verseToggle.disabled = !entry.fullGabc;
+  const gabc = verseOn && entry.fullGabc ? entry.fullGabc : entry.gabc;
+  window.ChantRender.renderChantInto(scoreEl, gabc, prepareAudio, function () {
     badIds.add(entry.id);
     if (random) pickRandom(true);
   });
@@ -363,7 +410,87 @@ function resolveInitialChant() {
   return null;
 }
 
+/* ---- Tempo / pitch / volume (ported from Chant of the Day) ---------------
+   Each is live module state inside playback.js that survives load()/stop(),
+   so these just set it once at boot and again on every slider move. The
+   localStorage keys match Chant of the Day's; each site has its own origin. */
+
+function applyTempo(bpm) {
+  const min = Number(tempoSlider.min), max = Number(tempoSlider.max);
+  bpm = Math.min(max, Math.max(min, bpm));
+  window.ChantPlayback.setTempo(bpm);
+  tempoSlider.value = bpm;
+  tempoValue.textContent = bpm + " bpm";
+  try { localStorage.setItem("chant-tempo", bpm); } catch (_) { /* private mode */ }
+}
+
+function readTempo() {
+  let saved = null;
+  try { saved = Number(localStorage.getItem("chant-tempo")); } catch (_) { /* private mode */ }
+  return saved && saved > 0 ? saved : window.ChantPlayback.DEFAULT_BPM;
+}
+
+function applyPitch(semitones) {
+  const min = Number(pitchSlider.min), max = Number(pitchSlider.max);
+  semitones = Math.min(max, Math.max(min, semitones));
+  window.ChantPlayback.setPitch(semitones);
+  pitchSlider.value = semitones;
+  pitchValue.textContent = (semitones > 0 ? "+" : "") + semitones + " st";
+  try { localStorage.setItem("chant-pitch", semitones); } catch (_) { /* private mode */ }
+}
+
+function readPitch() {
+  let saved = null;
+  try { saved = localStorage.getItem("chant-pitch"); } catch (_) { /* private mode */ }
+  saved = saved === null ? NaN : Number(saved);
+  return Number.isFinite(saved) ? saved : window.ChantPlayback.DEFAULT_PITCH;
+}
+
+// Slider is a 0-100 percentage; playback.js's setVolume takes a 0-1 fraction.
+function applyVolume(percent) {
+  const min = Number(volumeSlider.min), max = Number(volumeSlider.max);
+  percent = Math.min(max, Math.max(min, percent));
+  window.ChantPlayback.setVolume(percent / 100);
+  volumeSlider.value = percent;
+  volumeValue.textContent = percent + "%";
+  try { localStorage.setItem("chant-volume", percent); } catch (_) { /* private mode */ }
+}
+
+function readVolume() {
+  let saved = null;
+  try { saved = localStorage.getItem("chant-volume"); } catch (_) { /* private mode */ }
+  saved = saved === null ? NaN : Number(saved);
+  return Number.isFinite(saved) ? saved : Math.round(window.ChantPlayback.DEFAULT_VOLUME * 100);
+}
+
+/* ---- Psalm verse toggle ---------------------------------------------------
+   Unlike the sliders, this changes which score renders, so applying it
+   re-renders the chant on screen. Default off. */
+
+function applyVerseToggle(on, silent) {
+  verseOn = !!on;
+  verseToggle.checked = verseOn;
+  try { localStorage.setItem("chant-verse", verseOn ? "1" : "0"); } catch (_) { /* private mode */ }
+  const entry = currentId && chantsById.get(currentId);
+  if (!silent && entry) showChant(entry);
+}
+
+function readVerseToggle() {
+  let saved = null;
+  try { saved = localStorage.getItem("chant-verse"); } catch (_) { /* private mode */ }
+  return saved === "1";
+}
+
 /* ---- Events + boot ------------------------------------------------------- */
+
+tempoSlider.addEventListener("input", () => applyTempo(Number(tempoSlider.value)));
+pitchSlider.addEventListener("input", () => applyPitch(Number(pitchSlider.value)));
+volumeSlider.addEventListener("input", () => applyVolume(Number(volumeSlider.value)));
+verseToggle.addEventListener("change", () => applyVerseToggle(verseToggle.checked));
+applyTempo(readTempo());
+applyPitch(readPitch());
+applyVolume(readVolume());
+applyVerseToggle(readVerseToggle(), true);
 
 playBtn.addEventListener("click", onPlayClick);
 randomBtn.addEventListener("click", pickRandom);

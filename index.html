@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="description" content="Explore the sung chants of the Mass — a random Gregorian chant in square-note notation with playback, Latin, and English translation." />
   <title>Cantus &amp; Chronicle</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=2" />
 </head>
 <body>
   <main class="console">
@@ -24,12 +24,39 @@
       <div class="score-tools">
         <button type="button" id="play-btn" class="ghost">&#9654; Hear it</button>
         <span id="play-note" class="play-note"></span>
+        <label class="tempo-control" for="tempo-slider">
+          Tempo
+          <input type="range" id="tempo-slider" min="80" max="260" step="5" aria-label="Playback tempo in beats per minute" />
+          <span id="tempo-value"></span>
+        </label>
+        <label class="tempo-control" for="pitch-slider">
+          Pitch
+          <input type="range" id="pitch-slider" min="-12" max="12" step="1" aria-label="Playback pitch transposition in semitones" />
+          <span id="pitch-value"></span>
+        </label>
+        <label class="tempo-control" for="volume-slider">
+          Volume
+          <input type="range" id="volume-slider" min="0" max="100" step="1" aria-label="Playback volume percentage" />
+          <span id="volume-value"></span>
+        </label>
+        <label class="tempo-control verse-toggle-control" for="verse-toggle">
+          <input type="checkbox" id="verse-toggle" aria-label="Include the psalm verse and Gloria Patri, sung after the antiphon" />
+          &#8479; Psalm verse
+        </label>
       </div>
     </section>
 
     <section class="chant-text" aria-label="The chant text">
       <p class="chant-latin" id="chant-latin"></p>
       <p class="chant-translation" id="chant-translation"></p>
+      <div class="verse-block" id="verse-block" hidden>
+        <p class="verse-label">&#8479; Psalm verse</p>
+        <p class="chant-latin" id="verse-latin"></p>
+        <p class="chant-translation" id="verse-translation"></p>
+        <p class="verse-label" id="gloria-patri-label" hidden>Gl&oacute;ria Patri</p>
+        <p class="chant-latin" id="gloria-patri-latin" hidden></p>
+        <p class="chant-translation" id="gloria-patri-translation" hidden></p>
+      </div>
     </section>
 
     <section class="chant-usages" id="chant-usages"></section>
@@ -56,16 +83,16 @@
     </footer>
   </main>
 
-  <script src="vendor/exsurge.min.js"></script>
-  <script src="data/introits.js"></script>
-  <script src="data/introits-1962.js"></script>
-  <script src="data/propers.js"></script>
-  <script src="data/propers-1962.js"></script>
-  <script src="data/common-introits.js"></script>
-  <script src="data/common-propers.js"></script>
-  <script src="data/chant-index.js"></script>
-  <script src="chant-render.js?v=1"></script>
-  <script src="playback.js"></script>
-  <script src="app.js?v=10"></script>
+  <script src="vendor/exsurge.min.js?v=2"></script>
+  <script src="data/introits.js?v=2"></script>
+  <script src="data/introits-1962.js?v=2"></script>
+  <script src="data/propers.js?v=2"></script>
+  <script src="data/propers-1962.js?v=2"></script>
+  <script src="data/common-introits.js?v=2"></script>
+  <script src="data/common-propers.js?v=2"></script>
+  <script src="data/chant-index.js?v=2"></script>
+  <script src="chant-render.js?v=2"></script>
+  <script src="playback.js?v=2"></script>
+  <script src="app.js?v=11"></script>
 </body>
 </html>

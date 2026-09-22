@@ -8,7 +8,7 @@ window.CHANT_INDEX = {
     "title": "Laudem Domini",
     "part": "alleluia",
     "mode": "Alleluia · Mode I",
-    "gabc": "(c4) AL(dc~)le(c/e'gF'EC'd)lú(dc/fg!hvGF'g){ia}.(g.) (;) * ij.~{~}(hghvGF//g_[oh:h]fgvFDffdev.dec.) (,) (e/ggh'GFgvFEffd//evDCd!ewfd.1) (::) ℣. Lau(h)dem(ghG'E) Dó(fe)mi(fg)ni(gvF'EC'dw!evDCd.) (;) lo(d)qué(d/ffe/ggh)tur(fvED) os(cd) me(d!ewfd)um,(d.) (:) et(de) be(gh)ne(gh)dí(h!iwjki'jvH'G//h!iwjh)cat(h.) (,) o(h_ghvG~F~)mnis(fvED) ca(c.d!ewfd)ro(d.) (;) no(de)men(gh) san(ghgh)ctum(h.) *(,) e(h!iwjki'jvH'G//h!iwjh)jus.(h.) (,) (hghvGF//g_[oh:h]fgvFDffdev.dec.) (,) (e/ggh'GFgvFEffd//evDCd!ewfd.1) (::)",
+    "gabc": "(c4) AL(dc~)le(c/e'gF'EC'd)lú(dc/fg!hvGF'g){ia}.(g.) (;) * ij.~{~}(hghvGF//g_[oh:h]fgvFDffdev.dec.) (,) (e/ggh'GFgvFEffd//evDCd!ewfd.1) (::) ℣. Lau(h)dem(ghG'E) Dó(fe)mi(fg)ni(gvF'EC'dw!evDCd.) (;) lo(d)qué(d/ffe/ggh)tur(fvED) os(cd) me(d!ewfd)um,(d.) (:) et(de) be(gh)ne(gh)dí(h!iw!jki'jvH'G//h!iwjh)cat(h.) (,) o(h_ghvG~F~)mnis(fvED) ca(c.d!ewfd)ro(d.) (;) no(de)men(gh) san(ghgh)ctum(h.) *(,) e(h!iw!jki'jvH'G//h!iwjh)jus.(h.) (,) (hghvGF//g_[oh:h]fgvFDffdev.dec.) (,) (e/ggh'GFgvFEffd//evDCd!ewfd.1) (::)",
     "latin": "Allelúia. ℣. Laudem Dómini loquétur os meum, et benedícat omnis caro nomen sanctum ejus.",
     "translation": "Alleluia. ℣. My mouth shall speak the praise of the Lord: and let all flesh bless his holy name.",
     "source": "Graduale Romanum (GregoBase #1)",
@@ -20,7 +20,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Name of Jesus",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laudem Domini takes its verse from the very last line of Psalm 145, the psalm's closing act of praise. The Clementine Vulgate ends that verse with the phrase \"in sæculum, et in sæculum sæculi,\" meaning forever and ever, but the chant stops short of it, ending simply with \"nomen sanctum ejus,\" his holy name.",
+      "source": "Ps. 145:21 (Vulgate numbering Ps. 144:21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1001": {
     "id": "gb1001",
@@ -28,7 +32,7 @@ window.CHANT_INDEX = {
     "title": "Dominus regnavit exsultet",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time · Mode VIII",
-    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhg ehf/gffe.) (::) ℣. Dó(hv.gih)mi(h)nus(h) re(hg)gná(gh!ivvHFhf/gh)vit,(g.) (;) ex(gf)súl(hji)tet(hv.ghfgF'E) ter(hvvGE.gxfgFD.egF'Efe)ra :(e.) (:) lae(e)tén(fehhhfh'GE//fhF'DgxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)tur(d.) (;) ín(fd)su(ef)lae(f) *() mul(hg/hfh)tae.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'E/!f_gffe.) (::)",
+    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhgehf/gffe.) (::) ℣. Dó(hv.gih)mi(h)nus(h) re(hg)gná(gh!ivvHFhf/gh)vit,(g.) (;) ex(gf)súl(hji)tet(hv.ghfgF'E) ter(hvvGE.gxfgFD.egF'Efe)ra :(e.) (:) lae(e)tén(fehhhfh'GE//fhF'DgxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)tur(d.) (;) ín(fd)su(ef)lae(f) *() mul(hg/hfh)tae.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'E/!f_gffe.) (::)",
     "latin": "Allelúia. ℣. Dóminus regnávit, exsúltet terra : laeténtur ínsulae multae.",
     "translation": "Alleluia. ℣. The Lord has reigned, let the earth rejoice: let many islands be glad.",
     "source": "Graduale Romanum (GregoBase #1001)",
@@ -47,7 +51,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dominus regnavit exsultet draws from the opening line of Psalm 97. The psalm's heading in the Douay-Rheims ties it to David \"when his land was restored again to him,\" yet the psalm's own argument reads it as prophecy of Christ's coming reign and judgment. The Alleluia takes only that single opening line; the psalm moves immediately into sterner territory, with verse 2 reading \"Clouds and darkness are round about him: justice and judgment are the establishment of his throne,\" and verse 3 describing fire consuming enemies. The chant stops before any of that imagery begins.",
+      "source": "Ps. 97:1 (Vulgate numbering Ps. 96:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1002": {
     "id": "gb1002",
@@ -67,7 +75,11 @@ window.CHANT_INDEX = {
         "feastTitle": "12th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quod dico vobis draws from Matthew 10:27, a single verse from Jesus's instructions to the apostles as he sends them out. The day's Gospel, however, is Luke 12:1-8, which carries a close parallel: \"quæ in ténebris dixístis, in lúmine dicéntur: et quod in aurem locúti estis in cubículis, prædicábitur in tectis.\" The Communion antiphon thus echoes the Gospel reading almost word for word, but reaches back to Matthew's account of an earlier missionary discourse rather than quoting Luke directly.",
+      "source": "Matt. 10:27 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C3b (Missale Romanum formulary)"
+    }
   },
   "gb1004": {
     "id": "gb1004",
@@ -96,7 +108,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "12-8"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 87:3 calls Sion the city of God, where glorious things are said. The Immaculate Conception Communion joins that praise to Mary's words in Luke 1:49, where she says that the Mighty One has done great things for her.",
+      "source": "Ps. 87:3; Luke 1:49 (Vulgate numbering Ps. 86:3; Luke 1:49) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-12-08 (Missale Romanum formulary)"
+    }
   },
   "gb1007": {
     "id": "gb1007",
@@ -123,7 +139,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Advent (Gaudete Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui sedes Domine super Cherubim is built from two consecutive verses of Psalm 80. The body of the Gradual joins \"Qui sedes super cherubim\" (verse 2) directly to \"excita potentiam tuam, et veni\" (verse 3), cutting the words that fall between them in the psalm: \"manifestare coram Ephraim, Benjamin, et Manasse,\" which the Douay-Rheims renders as \"shine forth before Ephraim, Benjamin, and Manasses.\" The verse then steps back to the opening of verse 2, \"Qui regis Israel, intende; qui deducis velut ovem Joseph,\" which in the psalm comes before everything the body has already sung.",
+      "source": "Ps. 80:2, 3, 2 (Vulgate numbering Ps. 79:2, 3, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1008": {
     "id": "gb1008",
@@ -356,14 +376,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-confessor-doctor",
         "part": "communion",
-        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
-        "rank": "Optional Memorial",
-        "dateMD": "1-28"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "communion",
         "feastTitle": "St. Francis de Sales, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "1-29"
@@ -447,16 +459,12 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Chrysostom, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "9-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "communion",
-        "feastTitle": "St. Gregory the Great, Pope and Doctor of the Church",
-        "rank": "Memorial",
-        "dateMD": "9-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Luke 12:42 poses its words as a question, asking who is the faithful and wise steward set over his lord's household to give them their measure of wheat in due season. The chant turns that question into a declaration and substitutes \"servus\" (servant) for the Gospel's \"dispensator\" (steward). The Mass of the Common of a Bishop Confessor sets this communion after a Gospel from Matthew 25:14-23, the parable of the talents, whose lord returns to settle accounts with his servants, making \"Euge, serve bone et fidelis\" the words that hang in the air as this antiphon is sung.",
+      "source": "Luke 12:42 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4 (Missale Romanum formulary)"
+    }
   },
   "gb1009": {
     "id": "gb1009",
@@ -476,7 +484,11 @@ window.CHANT_INDEX = {
         "feastTitle": "30th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Clamaverunt iusti holds two assurances together: the Lord hears the cry of the just and stays near the contrite. The Gradual lets deliverance and humility become one prayer.",
+      "source": "Ps. 34:18-19 (Vulgate numbering Ps. 33:18-19) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1010": {
     "id": "gb1010",
@@ -496,7 +508,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Nemo te condemnavit brings together the two questions and answers of John 8:10-11 before Christ's command to sin no more. The Passion Sunday Communion holds mercy and a changed life within the same brief exchange.",
+      "source": "John 8:10-11 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1011": {
     "id": "gb1011",
@@ -504,7 +520,7 @@ window.CHANT_INDEX = {
     "title": "Laetatus sum in his",
     "part": "gradual",
     "mode": "Gradual · 4th Sunday of Lent (Laetare) · Mode VII",
-    "gabc": "(c2) LAe(ff)tá(g)tus(fgF'Dgfg) sum(g./hiHG'gf/ghg.___) *(;) in(fg) his(gj) quae(j) di(jii)cta(g) sunt(gj~) mi(j_)hi :(g) (,) (ihij_i//hjii/ghg.) (:) in(gh) do(gh)mum(g_[oh:h]e) Dó(f)mi(dec)ni(c.) (,) í(eggf/g_[oh:h]e//fvED'ef'gffd!ewf)bi(cdc___)mus.(c.) (::) ℣. Fi(gfg)at(gj~) pax(j_kJ'//G//ihij_i//hjii/ghg.) (;) in(f) vir(g)tú(g!ii//iikvJI'ig)te(gffd) tu(fdffd/ec)a :(c.) (:) et(g) a(c)bun(df~)dán(fv.d!gf'gjv.iiiih~)ti(ij)a(j_g//ihij_i//hjii/ghg.) (;) * in(cd) túr(fgf)ri(dgf/gh)bus(gh) tu(gf)is.(f.) (,) (hg/i_[oh:h]hgiHG'ge./fge'fvD'Cd_eddc.) (::)",
+    "gabc": "(c2) LAe(ff)tá(g)tus(fgF'Dgfg) sum(g./hiHG'gf/ghg.___) *(;) in(fg) his(gj) quae(j) di(jii)cta(g) sunt(gj~) mi(j_)hi :(g) (,) (ihij_i//hjii/ghg.) (:) in(gh) do(gh)mum(g_[oh:h]e) Dó(f)mi(dec)ni(c.) (,) í(eggf/g_[oh:h]e//fvED'ef'!gffd!ewf)bi(cdc___)mus.(c.) (::) ℣. Fi(gfg)at(gj~) pax(j_kJ'//G//ihij_i//hjii/ghg.) (;) in(f) vir(g)tú(g!ii//iikvJI'ig)te(gffd) tu(fdffd/ec)a :(c.) (:) et(g) a(c)bun(df~)dán(fv.d!gf'gjv.iiiih~)ti(ij)a(j_g//ihij_i//hjii/ghg.) (;) * in(cd) túr(fgf)ri(dgf/gh)bus(gh) tu(gf)is.(f.) (,) (hg/i_[oh:h]hgiHG'ge./fge'fvD'Cd_eddc.) (::)",
     "latin": "Laetátus sum in his quae dicta sunt mihi : in domum Dómini íbimus. ℣. Fiat pax in virtúte tua : et abundántia in túrribus tuis.",
     "translation": "I rejoiced at the things that were said to me: we shall go into the house of the Lord. ℣. Let peace be in your strength: and abundance in your towers.",
     "source": "Graduale Romanum (GregoBase #1011)",
@@ -537,7 +553,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laetatus sum draws on Psalm 122, one of the fifteen psalms the Vulgate heads Canticum graduum, a canticle of ascent. The gradual takes verse 1, the pilgrim's cry of joy at setting out for Jerusalem, then moves to verse 7, the prayer for peace within the city's walls. The intervening verses, describing Jerusalem's unity, the tribes gathering for judgment, and the call to pray for the city's peace, are passed over entirely, leaving the chant as a single arc from departure to arrival.",
+      "source": "Ps. 122:1, 7 (Vulgate numbering Ps. 121:1, 7) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1021": {
     "id": "gb1021",
@@ -557,7 +577,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dicit Andreas tells Simon that they have found the Messiah and brings him to Jesus. The Communion makes Andrew's discovery a simple invitation to encounter Christ.",
+      "source": "John 1:41-42 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1022": {
     "id": "gb1022",
@@ -584,7 +608,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Venite filii draws two verses from Psalm 34, reversing their order. The body of the gradual quotes verse 12, which appears later in the psalm, and the versicle reaches back to verse 6. Between those two verses in the psalm itself stand lines about the poor man who cried out, the angel of the Lord encamping around those who fear him, and the saints who lack nothing, none of which the chant quotes. It is sung here between an Epistle from Romans on being freed from sin to bear fruit in holiness, and a Gospel from Matthew warning that a tree is known by its fruit.",
+      "source": "Ps. 34:12, 6 (Vulgate numbering Ps. 33:12, 6) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent07-0 (Missale Romanum formulary)"
+    }
   },
   "gb1026": {
     "id": "gb1026",
@@ -624,17 +652,17 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "dedication-lateran",
         "part": "introit",
-        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
-        "rank": "Optional Memorial",
-        "dateMD": "11-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "dedication-lateran",
-        "part": "introit",
         "feastTitle": "The Dedication of the Lateran Basilica",
         "rank": "Feast",
         "dateMD": "11-9"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "dedication-peter-paul-basilicas",
+        "part": "introit",
+        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
+        "rank": "Optional Memorial",
+        "dateMD": "11-18"
       },
       {
         "calendar": "modern",
@@ -652,8 +680,8 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "A case study in how the modern calendar recycles old chant for new feasts. When the Feast of the Holy Family was added in 1893 (suppressed, then restored in 1921 by Pius X), it was given an introit already in use elsewhere, \"In excelso throno\"; after the Second Vatican Council's calendar reform, the feast's introit changed to this one, \"Deus in loco sancto suo\" — itself borrowed from the 17th Sunday in Ordinary Time, as this app's own source note above records.",
-      "source": "PrayTellBlog, \"Introitus: From St. Stephen to Holy Family.\""
+      "text": "Three verses of Psalm 68 build this introit, though not three consecutive ones. The chant opens halfway through verse 6, setting aside the psalm's preceding phrase about God as father of orphans and judge of widows, and begins at \"God in his holy place.\" After verse 7 it skips nearly thirty verses to reach verse 36, borrowing only its closing clause, \"ipse dabit virtutem et fortitudinem plebi suae,\" while leaving behind the verse's opening words, \"Mirabilis Deus in sanctis suis,\" and its closing acclamation, \"Benedictus Deus.\"",
+      "source": "Ps. 68:6-7, 36 (Vulgate numbering Ps. 67:6-7, 36) (Douay-Rheims; Latin from the Clementine Vulgate)"
     }
   },
   "gb1027": {
@@ -683,7 +711,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-10"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Probasti Domine draws on a single verse of Psalm 17, adding the word \"Dómine\" to the opening line, a word that does not appear in the Vulgate text of that verse. The gradual's versicle then singles out the second clause of the same verse, repeating only the fire imagery: \"Igne me examinásti, et non est invénta in me iníquitas.\" The feast's collect reaches for the same image in the opposite direction, asking God to extinguish the flames of sin in us as he granted blessed Lawrence to overcome the flames of his torments, \"tormentórum suórum incéndia superáre.\"",
+      "source": "Ps. 17:3 (Vulgate numbering Ps. 16:3) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-08-10 (Missale Romanum formulary)"
+    }
   },
   "gb1028": {
     "id": "gb1028",
@@ -748,14 +780,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-apostles",
         "part": "communion",
-        "feastTitle": "St. Luke, Evangelist",
-        "rank": "Feast",
-        "dateMD": "10-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-apostles",
-        "part": "communion",
         "feastTitle": "Sts. Simon and Jude, Apostles",
         "rank": "Feast",
         "dateMD": "10-28"
@@ -792,7 +816,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Matthew 19:28 answers Peter's question about those who have left everything to follow Christ. The Communion takes Christ's promise of twelve seats and judgment of the twelve tribes for the Common of Apostles.",
+      "source": "Matt. 19:28 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb103": {
     "id": "gb103",
@@ -812,7 +840,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Verba mea auribus is drawn from only the opening cry of Psalm 5, which continues in verse 3 with \"Hearken to the voice of my prayer, O my King and my God.\" The psalm as a whole is shaped as a morning prayer, and its fourth verse makes that explicit: \"O Lord, in the morning thou shalt hear my voice.\" The Alleluia draws on just the psalm's first petition, letting the fuller context of morning supplication stand quietly behind it.",
+      "source": "Ps. 5:2 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1031": {
     "id": "gb1031",
@@ -857,7 +889,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Both verses 7 and 8 of Psalm 124 belong to this gradual, giving it two distinct movements. The respond carries the image of the sparrow freed from the snare, while the following verse, \"Adjutorium nostrum in nomine Domini, qui fecit cælum et terram,\" names the ground of that deliverance: help is in the Lord who made heaven and earth. The psalm's preceding verses, which speak of enemies' teeth and an overpowering torrent, are left aside; the chant enters only at the moment of escape and resolution.",
+      "source": "Ps. 124:7-8 (Vulgate numbering Ps. 123:7-8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1032": {
     "id": "gb1032",
@@ -895,20 +931,20 @@ window.CHANT_INDEX = {
         "dateMD": "11-25"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-virgin-martyr",
+        "part": "communion",
+        "feastTitle": "St. Agatha, Virgin and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-5"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "communion",
         "feastTitle": "St. Agnes, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "1-21"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "communion",
-        "feastTitle": "St. Cecilia, Virgin and Martyr",
-        "rank": "Optional Memorial",
-        "dateMD": "11-22"
       },
       {
         "calendar": "modern",
@@ -922,19 +958,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "communion",
-        "feastTitle": "St. Lucy, Virgin and Martyr",
-        "rank": "Memorial",
-        "dateMD": "12-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "communion",
         "feastTitle": "St. Agatha, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "2-5"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confundantur superbi draws from two verses of Psalm 119, with the verse between them set aside. It takes most of verse 78, then skips verse 79 and moves to the close of verse 80, adding \"in tuis justificationibus, ut non confundar\" while the opening words of that verse, \"Fiat cor meum immaculatum,\" are quietly left out. The Gospel appointed for the Common of a Virgin Martyr, at Matthew 25:1-13, is the parable of the ten virgins.",
+      "source": "Ps. 119:78, 80 (Vulgate numbering Ps. 118:78, 80) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6 (Missale Romanum formulary)"
+    }
   },
   "gb10326": {
     "id": "gb10326",
@@ -999,14 +1031,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-apostles",
         "part": "offertory",
-        "feastTitle": "St. Luke, Evangelist",
-        "rank": "Feast",
-        "dateMD": "10-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-apostles",
-        "part": "offertory",
         "feastTitle": "Sts. Simon and Jude, Apostles",
         "rank": "Feast",
         "dateMD": "10-28"
@@ -1043,7 +1067,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 139:17 opens in the Vulgate with \"Mihi autem,\" making the line personal to the psalmist: \"But to me, thy friends, O God, are made exceedingly honourable.\" The offertory drops those two opening words and begins instead with \"Nimis honorati sunt amici tui,\" turning a private confession of wonder into a direct proclamation about the apostles. The formulary that pairs this offertory with the Gospel of John 20:24-29 places it beside the scene in which Thomas, absent when the risen Christ first appeared, demands to touch the wounds before he will believe.",
+      "source": "Ps. 139:17 (Vulgate numbering Ps. 138:17) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-21 (Missale Romanum formulary)"
+    }
   },
   "gb1033": {
     "id": "gb1033",
@@ -1051,7 +1079,7 @@ window.CHANT_INDEX = {
     "title": "In nomine Jesu",
     "part": "introit",
     "mode": "Introit · The Most Holy Name of Jesus · Mode III",
-    "gabc": "(c4) IN(e[ll:1]d~) nó(g)mi(hj)ne(j) Je(ij)su(j.) *(,) o(ij~)mne(j) ge(j)nu(jjj) fle(hig)ctá(h!iwjkjj)tur,(ji..) (;) cae(hg)lé(hi)sti(h)um,(h.) (,) ter(hji)ré(jijh)stri(h.g!hwihi)um(ih..) (,) et(g) in(hj)fer(jjj)nó(ikjj)rum :(ji..) (:) et(i) o(k)mnis(l) lin(k)gua(j) con(hg)fi(h)te(j)á(ikjj)tur,(ji..) (;) qui(gh)a(h) Dó(j)mi(h)nus(g) Je(g)sus(g) Chri(h.g!hwihi)stus(ih..) (;) in(hg~) gló(h!iwj)ri(g)a(h) est(g.) (,) De(ef'h)i(h) Pa(g_[oh:h]fhvGFgvFE)tris.(e.) (::)",
+    "gabc": "(c4) IN(e[ll:1]d~) nó(g)mi(hj)ne(j) Je(ij)su(j.) *(,) o(ij~)mne(j) ge(j)nu(jjj) fle(hig)ctá(h!iw!jkjj)tur,(ji..) (;) cae(hg)lé(hi)sti(h)um,(h.) (,) ter(hji)ré(jijh)stri(h.g!hwihi)um(ih..) (,) et(g) in(hj)fer(jjj)nó(ikjj)rum :(ji..) (:) et(i) o(k)mnis(l) lin(k)gua(j) con(hg)fi(h)te(j)á(ikjj)tur,(ji..) (;) qui(gh)a(h) Dó(j)mi(h)nus(g) Je(g)sus(g) Chri(h.g!hwihi)stus(ih..) (;) in(hg~) gló(h!iwj)ri(g)a(h) est(g.) (,) De(ef'h)i(h) Pa(g_[oh:h]fhvGFgvFE)tris.(e.) (::)",
     "latin": "In nómine Jesu omne genu flectátur, caeléstium, terréstrium et infernórum : et omnis lingua confiteátur, quia Dóminus Jesus Christus in glória est Dei Patris.",
     "translation": "In the name of Jesus let every knee bow, of those in heaven, on earth, and under the earth: and let every tongue confess that the Lord Jesus Christ is in the glory of God the Father.",
     "source": "Graduale Romanum (GregoBase #1033)",
@@ -1065,7 +1093,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "The Slovenian late-Renaissance composer Jacob Handl (Jacobus Gallus, 1550-1591) set this text twice — a four-voice motet and a five-voice setting published in his 1590 collection Opus musicum.",
+      "text": "Jacob Handl (Jacobus Gallus, 1550-1591), the Slovenian late-Renaissance composer, set this text twice, in a four-voice motet and a five-voice setting published in his 1590 collection Opus musicum.",
       "source": "CPDL ChoralWiki, \"In nomine Jesu a 4 (Jacob Handl)\"; CPDL ChoralWiki, \"In nomine Jesu a 5 (Jacob Handl).\""
     }
   },
@@ -1094,7 +1122,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dulcis et rectus Dominus takes its words from Psalm 25, verses 8 and 9, drawn from a prayer whose surrounding verses dwell on sin and the need for pardon. The verses immediately before speak of the sins of youth, and those immediately after ask God to overlook great transgression. The chant sets aside that penitential frame and holds only these two verses about God's sweetness and his teaching of the gentle. It leads into a Gospel, John 19:31-37, in which a soldier opens Christ's side with a lance, the passage that grounds the theology of the Sacred Heart feast.",
+      "source": "Ps. 25:8-9 (Vulgate numbering Ps. 24:8-9) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent02-5 (Missale Romanum formulary)"
+    }
   },
   "gb1036": {
     "id": "gb1036",
@@ -1121,7 +1153,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 85 verse 13 sits within a sequence in which mercy and truth meet, justice and peace kiss, and truth springs from the earth. This communion antiphon draws out that single verse: the Lord will give goodness, and the earth shall yield her fruit. The Gospel of the day, from Luke 21, closes with a parable built on the same image, that when the fig tree and all the trees put out fruit, summer is near and the kingdom of God is close. The antiphon's earth yielding fruit arrives, then, as a direct echo of what has just been proclaimed.",
+      "source": "Ps. 85:13 (Vulgate numbering Ps. 84:13) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Adv1-0 (Missale Romanum formulary)"
+    }
   },
   "gb1042": {
     "id": "gb1042",
@@ -1148,7 +1184,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Easter (Divine Mercy Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In Matthew 28:7, the words about going before the disciples into Galilee are spoken by the angel to the women at the tomb, in the third person. The Alleluia verse turns them into a direct proclamation by the Lord, adding \"dicit Dominus\" and the opening phrase \"In die resurrectionis meae,\" neither of which appears in Matthew. The verse also sets aside the angel's closing words, \"ibi eum videbitis: ecce praedixi vobis,\" keeping only the promise of going ahead into Galilee.",
+      "source": "Cf. Matt. 28:7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1043": {
     "id": "gb1043",
@@ -1220,7 +1260,11 @@ window.CHANT_INDEX = {
         "feastTitle": "23rd Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beata gens draws two verses from Psalm 33, but not in the order the psalm gives them. The body of the gradual takes verse 12, and the verse takes verse 6, reversing the sequence, while the six verses that lie between them, including lines about nations fearing the Lord and his counsel standing forever, are passed over. The chant also quietly adjusts the wording of verse 12: where the Clementine Vulgate reads \"Deus ejus\" (God is his), the gradual has \"Deus eórum\" (God is theirs), shifting from the singular to address the whole people.",
+      "source": "Ps. 33:12, 6 (Vulgate numbering Ps. 32:12, 6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1046": {
     "id": "gb1046",
@@ -1247,7 +1291,11 @@ window.CHANT_INDEX = {
         "feastTitle": "12th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Convertere Domine aliquantulum takes its respond from verse 13 of Psalm 90 and its versicle from verse 1, moving backward through the psalm rather than forward. Verse 1 carries a superscription not quoted in the chant, \"A prayer of Moses the man of God,\" so the petition for refuge from generation to generation already has a name attached to it in the psalm itself. The versicle's phrase \"a generatione et progenie\" abbreviates the Vulgate's \"a generatione in generationem,\" drawing the same thought into a shorter form.",
+      "source": "Ps. 90:13, 1 (Vulgate numbering Ps. 89:13, 1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1047": {
     "id": "gb1047",
@@ -1274,7 +1322,11 @@ window.CHANT_INDEX = {
         "feastTitle": "27th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The source of this Introit, chapter 13 of Esther, exists only in the longer Greek-derived text of the book preserved in the Vulgate. It belongs to the Additions to Esther found in Catholic and Orthodox Bibles but absent from the shorter Hebrew-based text used in Protestant and Jewish canons. Mordecai's plea sung here has no equivalent chapter or verse in most non-Catholic Bibles at all.",
+      "source": "USCCB, Esther (NABRE), with its note on the Greek additions."
+    }
   },
   "gb10479": {
     "id": "gb10479",
@@ -1303,7 +1355,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Transfiguration Alleluia names Christ as the brightness of eternal light, the unspotted mirror, and the image of God's goodness. Its brief verse gives the feast a concentrated praise of the Son.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb105": {
     "id": "gb105",
@@ -1332,7 +1388,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-10"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confessio et pulchritudo draws a single verse from Psalm 96, a psalm calling all nations to praise God. The verses immediately before it declare that the Lord is to be feared above all gods, and the verses immediately after summon the peoples of the earth to bring offerings into his courts. The offertory lifts just this one still moment of adoration from within that wider movement. Its Latin also differs slightly from the Clementine Vulgate: where the psalm reads sanctimonia, the chant sings sanctitas, a word that tends toward personal holiness rather than ritual consecration.",
+      "source": "Ps. 96:6 (Vulgate numbering Ps. 95:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1052": {
     "id": "gb1052",
@@ -1359,7 +1419,11 @@ window.CHANT_INDEX = {
         "feastTitle": "15th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Te decet hymnus draws on a single line from Psalm 65, which the Douay-Rheims translates from a heading describing it as \"the canticle of Jeremias and Ezechiel to the people of the captivity, when they began to go out.\" The verse that follows the one quoted runs: \"O hear my prayer: all flesh shall come to thee,\" widening the act of praise into a petition that the chant leaves unvoiced.",
+      "source": "Ps. 65:2 (Vulgate numbering Ps. 64:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1055": {
     "id": "gb1055",
@@ -1386,7 +1450,11 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ostende nobis Domine asks to see God's mercy and receive his salvation. Psalm 85 places that plea after the promise that God will turn and give life, then follows it with the assurance that he will speak peace to his people.",
+      "source": "Ps. 85:8 (Vulgate numbering Ps. 84:8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1056": {
     "id": "gb1056",
@@ -1413,7 +1481,11 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Omnia quae fecisti draws from three verses of Daniel 3, but not in the order they appear in the text. It opens with verse 31, steps back to verse 29, then jumps forward to verse 35, gathering the confession of sin, the acknowledgment of God's true judgment, and the appeal to mercy into a single unbroken plea. The verses come from a passage that, as St. Jerome noted, was absent from the Hebrew text of Daniel in his time, yet had long been received by the Church and read in her liturgy as canonical scripture.",
+      "source": "Dan. 3:31, 29, 35 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1057": {
     "id": "gb1057",
@@ -1442,7 +1514,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "12-8"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tota pulchra es draws on Canticle of Canticles 4:7, but makes two deliberate changes. Where the Canticle reads \"amica mea\", my love, the chant replaces those words with \"María\", applying the verse directly to the Virgin by name. It also inserts \"originális\", turning the Canticle's unspecified \"macula\" into \"macula originális\", the stain of original sin, sharpening the verse into an explicit statement of the Immaculate Conception.",
+      "source": "Cant. 4:7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1058": {
     "id": "gb1058",
@@ -1476,7 +1552,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Gospel of the day, Luke 15:1-10, ends at exactly the verse this chant quotes, so the two parables of the lost sheep and the lost coin have just been proclaimed when the Communion is sung. The antiphon draws its text from the closing line of that reading, though it compresses the Vulgate slightly. Where Luke 15:10 reads \"gaudium erit coram angelis Dei,\" the chant has \"gaudium est Angelis Dei,\" shifting from future to present tense and placing joy among the angels rather than before them.",
+      "source": "Luke 15:10 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent03-0r (Missale Romanum formulary)"
+    }
   },
   "gb106": {
     "id": "gb106",
@@ -1497,7 +1577,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Saints Fabian and Sebastian's Alleluia calls the Lord's saints to bless him and speak of the glory of his kingdom. Ecclesiasticus likewise calls the faithful to praise with canticles and bless the Lord in his works.",
+      "source": "Ecclus. 39:19 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb10605": {
     "id": "gb10605",
@@ -1524,7 +1608,11 @@ window.CHANT_INDEX = {
         "feastTitle": "23rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Iustus es Domine draws from two verses of Psalm 119 that stand thirteen verses apart, joining them in reverse order. The opening words come from verse 137, \"Justus es, Domine, et rectum judicium tuum,\" and the chant then turns back to verse 124, \"Fac cum servo tuo secundum misericordiam tuam.\" The movement is from a declaration about God's justice to a personal plea for his mercy.",
+      "source": "Ps. 119:137, 124 (Vulgate numbering Ps. 118:137, 124) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1066": {
     "id": "gb1066",
@@ -1544,7 +1632,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Lent (Laetare Sunday) (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The father's closing words in the parable of the prodigal son come from Luke 15:32, but the chant reshapes them. The Vulgate's verse runs \"epulari autem, et gaudere oportebat,\" it was fitting to feast and rejoice, speaking impersonally in the past tense. The antiphon turns this into a direct address: \"Oportet te, fili, gaudere,\" you ought to rejoice, my son, drawing the word \"fili\" from the father's speech in the preceding verse and shifting the verb to the present tense, so the command lands on the singer now, at the moment of Communion.",
+      "source": "Luke 15:32 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1071": {
     "id": "gb1071",
@@ -1571,7 +1663,11 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Protector noster draws on two consecutive verses of Psalm 84, but stops midway through the second. The psalm's verse 11 continues, choosing to be an outcast in God's house rather than dwell in the tents of sinners. The Introit sets that aside, letting the longing for a single day in God's courts stand on its own as the Mass begins. The Gospel of the day then turns to Matthew 5:20-24, where Jesus tells his disciples to leave their gift at the altar and be reconciled with a brother before returning to offer it.",
+      "source": "Ps. 84:10-11 (Vulgate numbering Ps. 83:10-11) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent05-0 (Missale Romanum formulary)"
+    }
   },
   "gb1075": {
     "id": "gb1075",
@@ -1598,7 +1694,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Easter Sunday of the Resurrection of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Haec dies begins with Psalm 118 verse 24 and then returns to verse 1, reversing the psalm's order. Easter's Gradual moves from the day's rejoicing back to the mercy that makes praise possible.",
+      "source": "Ps. 118:24, 1 (Vulgate numbering Ps. 117:24, 1) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1077": {
     "id": "gb1077",
@@ -1606,7 +1706,7 @@ window.CHANT_INDEX = {
     "title": "Cantate Domino canticum",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time · Mode I",
-    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjH'GF.) *(;) ij.(e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::) ℣. Can(cd)tá(ixdh//gihivGF//ggf/gg//fgh!jjg)(,)(ixhhghvGF.hiHG'hw!ivHGhi)te(h.) (,) Dó(h_g/jjvH'G//ixhihi)mi(g)no(g_[oh:h]f_[oh:h]) (;) cán(f_e/f!gwhgh)ti(hg/hf/ghg)cum(gd~) no(f_e/g_[oh:h]fgvFD'ewfd)vum :(d.) (:) qui(d/ffd/ffd def!gh)a(ghg.) (,) mi(f)ra(ghg)bí(h/jjhhgh.)(,)(ixfh!ivGF'fd/ffhvGF'fvED)li(e[ll:1]d)a(d.) (;) fe(ff)cit(fg) () * Dó(g_[oh:h]f)mi(f!gwhgh)nus.(hjH'GF.) (;) (e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::)",
+    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjH'GF.) *(;) ij.(e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::) ℣. Can(cd)tá(ixdh//gihivGF//ggf/gg//fgh!jjg)(,)(ixhhghvGF.hiHG'hw!ivHGhi)te(h.) (,) Dó(h_g/jjvH'G//ixhihi)mi(g)no(g_[oh:h]f_[oh:h]) (;) cán(f_e/f!gwhgh)ti(hg/hf/ghg)cum(gd~) no(f_e/g_[oh:h]fgvFD'ewfd)vum :(d.) (:) qui(d/ffd/ffddef!gh)a(ghg.) (,) mi(f)ra(ghg)bí(h/jjhhgh.)(,)(ixfh!ivGF'fd/ffhvGF'fvED)li(e[ll:1]d)a(d.) (;) fe(ff)cit(fg) () * Dó(g_[oh:h]f)mi(f!gwhgh)nus.(hjH'GF.) (;) (e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::)",
     "latin": "Allelúia. ℣. Cantáte Dómino cánticum novum : quia mirabília fecit Dóminus.",
     "translation": "Alleluia. ℣. Sing to the Lord a new song: for the Lord has done wonderful things.",
     "source": "Graduale Romanum (GregoBase #1077)",
@@ -1632,7 +1732,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 98 opens with more than this Alleluia verse quotes. The full first verse in the Douay-Rheims reads: \"Sing ye to the Lord a new canticle: because he hath done wonderful things. His right hand hath wrought for him salvation, and his arm is holy.\" The chant takes only the first half, stopping after the reason for the new song, and leaves the lines about the saving right hand and holy arm unsung.",
+      "source": "Ps. 98:1 (Vulgate numbering Ps. 97:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1079": {
     "id": "gb1079",
@@ -1659,7 +1763,11 @@ window.CHANT_INDEX = {
         "feastTitle": "12th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 27:6 opens with triumph over enemies before turning to the temple offering, but this antiphon takes only the second half of the verse, beginning where the psalmist enters the tabernacle to sacrifice and sing. The wording parts from the Clementine Vulgate: where the psalm has \"hostiam vociferationis,\" a sacrifice of outcry, the antiphon sings \"hostiam jubilatiónis,\" shifting the tone toward joy. The Vulgate verse is in the past tense, \"Circuivi, et immolavi\"; the antiphon moves to \"Circuibo, et immolabo,\" as if the act of offering is still approaching.",
+      "source": "Ps. 27:6 (Vulgate numbering Ps. 26:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb108": {
     "id": "gb108",
@@ -1672,13 +1780,6 @@ window.CHANT_INDEX = {
     "translation": "The just shall flourish like the palm tree: he shall grow up like the cedar of Lebanon: planted in the house of the Lord, in the courts of the house of our God.",
     "source": "Graduale Romanum (GregoBase #108)",
     "usages": [
-      {
-        "calendar": "1962",
-        "feastKey": "common-confessor-2",
-        "part": "introit",
-        "feastTitle": "Common of confessor 2",
-        "rank": ""
-      },
       {
         "calendar": "1962",
         "feastKey": "joseph",
@@ -1703,7 +1804,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "3-19"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Justus ut palma draws on two consecutive verses of Psalm 92 but fuses them into a single sentence. Verse 13 supplies the palm and cedar images with a singular subject, the just man; verse 14 then reads in full, \"They that are planted in the house of the Lord shall flourish in the courts of the house of our God.\" The introit takes the closing phrase of verse 14, \"planted in the house of the Lord, in the courts of the house of our God,\" and attaches it directly to the singular just man of verse 13, so that he, rather than the psalm's more general \"they,\" becomes the one rooted in God's courts.",
+      "source": "Ps. 92:13 (Vulgate numbering Ps. 91:13) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1080": {
     "id": "gb1080",
@@ -1730,7 +1835,11 @@ window.CHANT_INDEX = {
         "feastTitle": "14th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Populum humilem draws from two verses of Psalm 18 that are not adjacent. Verse 28 supplies the opening line about saving the humble and humbling the proud, then verses 29 through 31 are passed over entirely, and verse 32 supplies the closing question. The chant also quietly rewrites that closing verse: where the psalm asks \"quis deus præter Dominum... præter Deum nostrum\" in the third person, the Offertory turns it into a direct address, \"quis Deus praeter te, Dómine,\" folding the rhetorical question into personal prayer.",
+      "source": "Ps. 18:28, 32 (Vulgate numbering Ps. 17:28, 32) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1082": {
     "id": "gb1082",
@@ -1757,7 +1866,36 @@ window.CHANT_INDEX = {
         "feastTitle": "18th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine Deus salutis meae draws its verse from the opening of Psalm 88, which the Douay-Rheims describes as a psalm that agrees to Christ in his passion, and alludes to his death and burial. The Alleluia takes only that first supplication, the cry of trust, before the psalm moves on. By verse 3 the voice pleads for God to incline his ear, and by verse 4 it declares that the soul is filled with evils and that life has drawn nigh to hell. The Alleluia holds to the opening cry, before the psalm's long descent into darkness.",
+      "source": "Ps. 88:2 (Vulgate numbering Ps. 87:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1084": {
+    "id": "gb1084",
+    "gregobaseId": "1084",
+    "title": "Electi mei",
+    "part": "gradual",
+    "mode": "Gradual · Ss. Seven Founders of the Servite Order, Confessors · Mode V",
+    "gabc": "(c4) E(d)lé(ffg)cti(f) me(ghg'/hg)i(gv.fgFD.1) *(,) non(d) la(ffg)bo(f)rá(fg)bunt(f) fru(fffvDC'dff/hghf)stra,(f.) (;) ne(hjh)que(jj) ger(j)mi(j)ná(jkh)bunt(h_g) (,) in(h) con(hj)tur(h)ba(f)ti(h)ó(gv.fhf/gh)ne :(g.) (:) qui(h)a(hg) se(gj)men(j) be(j)ne(j)di(ij)ctó(hhg)rum(h_g) Dó(fg)mi(f)ni(fg!hvGF'g) est,(gf..) (:) et(fh) ne(gf)pó(fv.ege/f_d)tes(dc..) e(fgf)ó(fg'h)rum(h_g) (,) cum(ixhjHG'hw!ivHG') e(f)is.(fffvDC.) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Cór(hh)po(h)ra(h) i(h)psó(ig'hvF'E//f!gwhhi)rum(h.) (;) in(h) pa(ijI'H)ce(h) se(h)púl(i)ta(hiH'F) sunt(f!h'i//hi/jh/!h/iih.0) (:) et(h_f) no(hih)men(gh) e(f)ó(ded)rum(gxdf//ef!hvFE'fw!gvFE) vi(de!fvED'e)vit(e[ll:1]d..) (;) in(f) ge(d)ne(fh)ra(h)ti(g)ó(h)nem(f.) *(,) et(d) ge(ef)ne(fe)ra(e!hgh)ti(f)ó(de)nem.(d!ewfef//highf.dfe/fee[ll:1]d.0) (::)",
+    "latin": "Elécti mei non laborábunt frustra, neque germinábunt in conturbatióne : quia semen benedictórum Dómini est, et nepótes eórum cum eis. ℣. Córpora ipsórum in pace sepúlta sunt, et nomen eórum vivit in generatiónem et generatiónem.",
+    "translation": "My elect shall not labor in vain, nor bring forth in trouble: for they are the seed of the blessed of the Lord, and their offspring with them. ℣. Their bodies are buried in peace, and their name lives unto generation and generation.",
+    "source": "Graduale Romanum (GregoBase #1084)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "seven-founders",
+        "part": "gradual",
+        "feastTitle": "Ss. Seven Founders of the Servite Order, Confessors",
+        "rank": "Duplex",
+        "dateMD": "2-12"
+      }
+    ],
+    "commentary": {
+      "text": "Electi mei draws its text from Isaiah 65:23, a verse set within a vision of a renewed creation where God's people will build and plant and eat the fruit of their own labor. The verses surrounding it describe those earthly blessings; verse 23 names the elect themselves and their descendants as the seed of the blessed of the Lord. At the feast of the Seven Founders of the Servite Order, the chant directs that promise toward those founders.",
+      "source": "Is. 65:23 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1086": {
     "id": "gb1086",
@@ -1784,7 +1922,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Easter Sunday of the Resurrection of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Easter Sequence begins with Christians offering praise to the Paschal Victim, then pauses the proclamation to ask Mary what she saw. Mary's reply gathers the tomb, angelic witnesses, and the risen Christ before the sequence closes with a prayer for mercy.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1088": {
     "id": "gb1088",
@@ -1818,7 +1960,11 @@ window.CHANT_INDEX = {
         "feastTitle": "15th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Custodi me draws two verses from Psalm 17 and sings them in reverse order. The respond comes from verse 8, though it drops that verse's opening phrase, \"from them that resist thy right hand,\" and places the direct address \"Domine\" there instead. The psalm itself moves from \"let my judgment come forth from thy countenance\" in verse 2 to \"keep me as the apple of thy eye\" in verse 8, but the gradual inverts this, opening with the plea for shelter and saving the appeal to God's just sight for the close.",
+      "source": "Ps. 17:8, 2 (Vulgate numbering Ps. 16:8, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb109": {
     "id": "gb109",
@@ -1838,7 +1984,11 @@ window.CHANT_INDEX = {
         "feastTitle": "30th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine vivifica me asks God to give life according to his word, then asks for understanding to know his testimonies. Psalm 119 places this plea after the singer's humiliation and beside a servant's request for understanding, making the Offertory a prayer for life and fidelity before God's word.",
+      "source": "Ps. 119:107, 125 (Vulgate numbering Ps. 118:107, 125) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1090": {
     "id": "gb1090",
@@ -1879,7 +2029,11 @@ window.CHANT_INDEX = {
         "feastTitle": "15th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 84 reaches this verse after two verses of longing: the soul fainting for the courts of the Lord, the heart and flesh rejoicing in the living God. The word that opens verse 4 in the Vulgate, \"Etenim,\" meaning \"for\" or \"for indeed,\" makes the birds finding their home a direct answer to that longing. The chant drops \"Etenim\" and begins with \"Passer,\" so the sparrow and the turtledove at God's altars stand on their own, without the ache that precedes them in the psalm.",
+      "source": "Ps. 84:4-5 (Vulgate numbering Ps. 83:4-5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1091": {
     "id": "gb1091",
@@ -1906,7 +2060,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Pater cum essem cum eis takes Christ's prayer that those given to him were kept while he was with them. As he comes to the Father, the Communion continues his request that they remain in the world but be guarded from evil.",
+      "source": "John 17:12-13, 15 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc6-0.txt [Officium heading]; Divinum Officium, Pasc6-0 (Missale Romanum formulary)"
+    }
   },
   "gb10950": {
     "id": "gb10950",
@@ -1933,7 +2091,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Body and Blood of Christ (Corpus Christi)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quotiescumque manducabitis panem hunc takes its text from 1 Corinthians 11, the very passage proclaimed as the Epistle earlier in the same Mass. The antiphon draws on verses 26 and 27 precisely, moving from the proclamation that eating and drinking announces the Lord's death until he comes into Paul's warning that eating or drinking unworthily makes one guilty of the body and blood of the Lord. Verse 28, which calls each person to examine themselves before eating, is passed over, so that exhortation rests in the silence after Communion rather than in the sung text.",
+      "source": "1 Cor. 11:26-27 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent01-4 (Missale Romanum formulary)"
+    }
   },
   "gb1097": {
     "id": "gb1097",
@@ -1960,7 +2122,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 102:16, the verse sung here, sits within a movement from desolation to restoration. The two verses immediately before it speak of God rising to have mercy on Sion because its very stones are dear to his servants; the verse immediately after supplies the reason the nations will fear: \"the Lord hath built up Sion: and he shall be seen in his glory.\" The Alleluia verse lifts out the central declaration, leaving its cause and its consequence resting in the psalm around it.",
+      "source": "Ps. 102:16 (Vulgate numbering Ps. 101:16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1099": {
     "id": "gb1099",
@@ -1980,7 +2146,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gressus meos asks the Lord to direct the singer's steps by his word and keep iniquity from ruling. Psalm 119 places that plea among requests for mercy, redemption, and instruction, so the Ordinary Time Offertory becomes a prayer for a life kept within God's teaching.",
+      "source": "Ps. 119:133 (Vulgate numbering Ps. 118:133) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb11": {
     "id": "gb11",
@@ -2002,6 +2172,22 @@ window.CHANT_INDEX = {
         "dateMD": "1-22"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "introit",
+        "feastTitle": "Sts. Protus and Hyacinth, Martyrs",
+        "rank": "Simplex",
+        "dateMD": "9-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "introit",
+        "feastTitle": "St. Januarius, Bishop, and Companions, Martyrs",
+        "rank": "Semiduplex",
+        "dateMD": "9-19"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-several-martyrs",
         "part": "introit",
@@ -2017,7 +2203,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sapientiam Sanctorum draws from two consecutive verses in Ecclesiasticus 44, but reverses their order: verse 15 comes first in the chant, and verse 14 supplies the closing phrase, \"nomen eorum vivit in generationem et generationem,\" their name lives unto generation and generation. The surrounding verses of Ecclesiasticus 44 speak of the seed and children of the holy fathers enduring forever, so the most proclamatory lines were drawn from a longer meditation on inheritance and memory. At this Mass, the Introit leads into a Gospel from Luke 6 that closes with Christ's own promise to the persecuted: \"merces vestra multa est in cœlo,\" your reward is great in heaven.",
+      "source": "Ecclus. 44:15, 14 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C3a (Missale Romanum formulary)"
+    }
   },
   "gb1100": {
     "id": "gb1100",
@@ -2044,7 +2234,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Scapulis suis takes Psalm 91's sheltering images from verses 4 and 5: wings, trust, and truth as a shield. The communion for the first Sunday of Lent gathers those images into a brief prayer of protection.",
+      "source": "Ps. 91:4-5 (Vulgate numbering Ps. 90:4-5) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1103": {
     "id": "gb1103",
@@ -2073,7 +2267,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Saint Michael's Alleluia asks for defense in battle before the dreadful judgment. On the feast of Michael, Gabriel, and Raphael, the chant makes that plea a prayer for God's protection.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1108": {
     "id": "gb1108",
@@ -2107,7 +2305,11 @@ window.CHANT_INDEX = {
         "feastTitle": "27th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine refugium takes the opening two verses of Psalm 90 and uses them whole, without omission. The psalm itself carries an unusual distinction: its header reads \"Oratio Moysi, hominis Dei,\" a prayer of Moses, the man of God, making it the only psalm in the psalter bearing that attribution. The title \"the man of God\" given to Moses here echoes Deuteronomy 33:1, where it introduces the Blessing of Moses.",
+      "source": "Ps. 90:1-2 (Vulgate numbering Ps. 89:1-2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 90\" (rev. 1323218217)"
+    }
   },
   "gb1111": {
     "id": "gb1111",
@@ -2134,7 +2336,11 @@ window.CHANT_INDEX = {
         "feastTitle": "8th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Factus est Dominus opens at the midpoint of Psalm 18's verse 19, dropping the first half of that verse entirely. The full Vulgate line includes the enemies coming before the psalmist in the day of affliction, but the Introit sets that dark opening aside and begins where deliverance is already accomplished. The two quoted verses then move straight to being brought forth into a large place, leaving behind the surrounding verses, which explain the psalmist's own righteousness as the reason for rescue.",
+      "source": "Ps. 18:19-20 (Vulgate numbering Ps. 17:19-20) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1115": {
     "id": "gb1115",
@@ -2142,7 +2348,7 @@ window.CHANT_INDEX = {
     "title": "Ostende nobis Domine",
     "part": "alleluia",
     "mode": "Alleluia · 1st Sunday of Advent · Mode VIII",
-    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhg ehf/gffe.) (::) ℣. Os(h)tén(hv.gih)de(h) no(hg)bis(g) Dó(gh!ivvHFhfg)mi(hg)ne(g.) (;) mi(g)se(g)ri(gf)cór(hji)di(h)am(gh) tu(f_ehvvGE.gxfgFD.1egF'Efe)am :(e.) (:) et(e) sa(e)lu(e)tá(feh)re(h.) tu(hfh'GE//fhF'D//gxgvFEf.0/[-1.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)um(d.) (;) * da(fd/ef) no(hg/hfh)bis.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
+    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhgehf/gffe.) (::) ℣. Os(h)tén(hv.gih)de(h) no(hg)bis(g) Dó(gh!ivvHFhfg)mi(hg)ne(g.) (;) mi(g)se(g)ri(gf)cór(hji)di(h)am(gh) tu(f_ehvvGE.gxfgFD.1egF'Efe)am :(e.) (:) et(e) sa(e)lu(e)tá(feh)re(h.) tu(hfh'GE//fhF'D//gxgvFEf.0/[-1.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)um(d.) (;) * da(fd/ef) no(hg/hfh)bis.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
     "latin": "Allelúia. ℣. Osténde nobis, Dómine, misericórdiam tuam : et salutáre tuum da nobis.",
     "translation": "Alleluia. ℣. Show us, O Lord, your mercy: and grant us your salvation.",
     "source": "Graduale Romanum (GregoBase #1115)",
@@ -2161,7 +2367,149 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 85 verse 8 is a single petition lifted from a longer movement of longing and promise. The verses immediately before it address God turning back in mercy to give life, and the verse immediately after reads, in the Douay-Rheims, \"I will hear what the Lord God will speak in me: for he will speak peace unto his people.\" Sung as an Alleluia verse, the isolated cry \"Ostende nobis, Domine, misericordiam tuam\" stands on the threshold of that promised peace without yet crossing it.",
+      "source": "Ps. 85:8 (Vulgate numbering Ps. 84:8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1118": {
+    "id": "gb1118",
+    "gregobaseId": "1118",
+    "title": "Hic est sacerdos",
+    "part": "alleluia",
+    "mode": "Alleluia · St. Josaphat, Bishop and Martyr · Mode II",
+    "gabc": "(f3) AL(e)le(f)lú(hi~){ia}.(i_[oh:h]h/iggf.0) *(,) ij.(hv.iji./[-0.5]ef/h_f//hv.ghe/hhh.f!gwhf.1) (::) ℣. Hic(f_e/f!gwh'!iv//jiihi) est(iv.hh/fgf.) (,) sa(f)cér(f!hh/ijHF'ivH'GEf./hfhhf/ge)dos,(e.) (;) quem(hh) co(h)ro(h)ná(h)vit(hi) * Dó(i_[oh:h]h/jij)mi(j)nus.(jvvIH'GE//f!gwhf.1) (::)",
+    "latin": "Allelúia. ℣. Hic est sacérdos, quem coronávit Dóminus.",
+    "translation": "Alleluia. ℣. This is the priest, whom the Lord has crowned.",
+    "source": "Graduale Romanum (GregoBase #1118, Solesmes); the same Common-of-a-Martyr-Bishop Alleluia (see data/common-propers.js's \"common-martyr-bishop\"), which Sancti/11-14.txt's own [Graduale] block appends verbatim after its Gradual verse.",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Marcellus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "1-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Callistus I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-14"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Evaristus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Martin I, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "11-12"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Clement I, Pope and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Anicetus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "4-17"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Felix I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "5-30"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Silverius, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "6-20"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Pius I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "7-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "alleluia",
+        "feastTitle": "St. Zephyrinus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "8-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "josaphat",
+        "part": "alleluia",
+        "feastTitle": "St. Josaphat, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-14"
+      }
+    ],
+    "commentary": {
+      "text": "Josaphat's Alleluia acclaims him as a priest crowned by the Lord. The Bishop and Martyr's feast places that single verse before the Gospel as its brief praise of the saint.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
+  },
+  "gb1119": {
+    "id": "gb1119",
+    "gregobaseId": "1119",
+    "title": "Exaltent eum in ecclesia",
+    "part": "gradual",
+    "mode": "Gradual · Common of a Pope · Mode V",
+    "gabc": "(c3) EX(b)ál(dd)tent(ef~) e(f_devDC[ull:0]B.e_[oh:h]c/de)um(d.) *(;) in(d) ec(d)clé(fd/ef!hh/ihi)si(hgh)a(f_e) (,) ple(f!hhvFD.1fvEDe[ll:1]d)bis :(d.) (:) et(d) in(fe~) cá(eh)the(h)dra(hfhED.) (`) (fd/ef!hh/ig/hf/hi/kkkh..) (,) se(f)ni(fi)ó(iv.hhhjvIH'hvGF'g)rum(gf..) (;) lau(hh)dent(h) e(ihhf)um.(hhhf/hhhf/hhf.) (,) (de/f!hh/ijghf.0gxegFD.1) (::) ℣. Con(d)fi(d)te(f)án(hf/hhf/hhf/hhh)(,)(f!hhf/hhf/hhh//ihhf/hhf/hhh)tur(h.) (,) Dó(h)mi(h)no(ih//h'hh_f//hhf/hhe//gxfgED./[-0.5]hhjvIH.) (:) mi(d)se(d)ri(fe)cór(eh)di(h)ae(ih) (,) (hhh'/ih/!hg./[-0.5]i/jiih.0/[-0.5]j/kjjh.0/[-0.5]i/jiig./h/ihh//fh//ghFE'e[ll:1]d.0) (;) e(fdfED//f_d/ef!gwh'!iv)jus :(hg/ijIH.ghGF.) (:) et(f) mi(hfh)ra(h)bí(i)li(hi)a(hh) (,) e(hh//hhjvIG'hvF'Ef!hhivHG)jus(h.) (;) fí(hh)li(hih)is(h_f) () * hó(fh!ij)mi(hg)num.(hhhf/hhhf/hhf.) (,) (de/f!hh/ijghf.0gxegFD.1) (::)",
+    "latin": "Exáltent eum in ecclésia plebis : et in cáthedra seniórum laudent eum. ℣. Confiteántur Dómino misericórdiae ejus, et mirabília ejus fíliis hóminum.",
+    "translation": "Let them exalt him in the church of the people: and praise him in the chair of the elders. ℣. Let them give thanks to the Lord for his mercy, and his wonderful works to the children of men.",
+    "source": "Graduale Romanum (GregoBase #1119)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "gradual",
+        "feastTitle": "St. Damasus I, Pope and Confessor",
+        "rank": "Duplex",
+        "dateMD": "12-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "gradual",
+        "feastTitle": "St. Anacletus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "7-13"
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 107 supplies both halves of this gradual, but in reverse order: the antiphon body draws on verse 32, and the verse steps back to verse 31. The Gospel of the day, Matthew 16:13-19, gives the psalm's image of the chair of the ancients its pointed context, for it is the passage in which Christ tells Simon Peter, \"tu es Petrus, et super hanc petram aedificabo Ecclesiam meam,\" and hands him the keys of the kingdom.",
+      "source": "Ps. 107:32, 31 (Vulgate numbering Ps. 106:32, 31) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb1121": {
     "id": "gb1121",
@@ -2169,7 +2517,7 @@ window.CHANT_INDEX = {
     "title": "Si ambulem",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Year C) · Mode I",
-    "gabc": "(c4) SI(d) ám(fg)bu(gvF'EfvED'e)lem(e[ll:1]d..) *(,) in(f) mé(ghgh)di(hjH'GF'gwhgh)o(hg..) (,) um(hv.fg'h)brae(g) mor(fv.dfe)tis,(d//ffd/fhhg.) (;) non(dh) ti(hg)mé(h'/jij)bo(hv.fh!jvH'GF'g) ma(fv.dfe)la :(d!ffd) (,) (fge'/fgd'/e[ll:1]ddc.) (:) quó(f)ni(d)am(e) tu(f) me(ghgh./gh/jj//jjj)cum(g) es,(hg/hfg) (,) Dó(d)mi(d)ne.(dc/d!ff/ghG'Efgff/ded.) (::) ℣. Vir(h_f hvhggef)ga(d.) tu(dc/d!ff/gh!jjg)(,)(ixhhghvGF./[-0.5]hiHG'hw!ivHGhi)a,(h.) (;) et(dh) bá(h/jjh)cu(h!jjh)lus(h_g) tu(hg/h!jjjg ivHG'gf/gh/j.h!iwj_h)us,(h.) (:) i(h_f//hvhggef)psa(de) me(d_c/d!ewf!gv.fg!hvFEfg!hvhg.) *(,) con(g)so(gh)lá(ixjhiGF'h!jjvH'Gh')ta(d) sunt.(dc/d!ff/ghG'Efgff/ded.) (::)",
+    "gabc": "(c4) SI(d) ám(fg)bu(gvF'EfvED'e)lem(e[ll:1]d..) *(,) in(f) mé(ghgh)di(hjH'GF'gwhgh)o(hg..) (,) um(hv.fg'h)brae(g) mor(fv.dfe)tis,(d//ffd/fhhg.) (;) non(dh) ti(hg)mé(h'/jij)bo(hv.fh!jvH'GF'g) ma(fv.dfe)la :(d!ffd) (,) (fge'/fgd'/e[ll:1]ddc.) (:) quó(f)ni(d)am(e) tu(f) me(ghgh./gh/jj//jjj)cum(g) es,(hg/hfg) (,) Dó(d)mi(d)ne.(dc/d!ff/ghG'Efgff/ded.) (::) ℣. Vir(h_fhvhggef)ga(d.) tu(dc/d!ff/gh!jjg)(,)(ixhhghvGF./[-0.5]hiHG'hw!ivHGhi)a,(h.) (;) et(dh) bá(h/jjh)cu(h!jjh)lus(h_g) tu(hg/h!jjjgivHG'gf/gh/j.h!iwj_h)us,(h.) (:) i(h_f//hvhggef)psa(de) me(d_c/d!ewf!gv.fg!hvFEfg!hvhg.) *(,) con(g)so(gh)lá(ixjhiGF'h!jjvH'Gh')ta(d) sunt.(dc/d!ff/ghG'Efgff/ded.) (::)",
     "latin": "Si ámbulem in médio umbrae mortis, non timébo mala : quóniam tu mecum es, Dómine. ℣. Virga tua, et báculus tuus, ipsa me consoláta sunt.",
     "translation": "Though I should walk in the midst of the shadow of death, I will fear no evils: for you are with me, O Lord. ℣. Your rod and your staff, they have comforted me.",
     "source": "Graduale Romanum (GregoBase #1121)",
@@ -2188,7 +2536,11 @@ window.CHANT_INDEX = {
         "feastTitle": "28th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Si ambulem draws both its respond and its verse from a single verse of scripture, Psalm 23:4, without borrowing from anywhere else in the psalm. The Douay-Rheims renders that verse: \"For though I should walk in the midst of the shadow of death, I will fear no evils, for thou art with me. Thy rod and thy staff, they have comforted me.\" The gradual sets that one verse in full, dividing it at its midpoint to form the two musical units.",
+      "source": "Ps. 23:4 (Vulgate numbering Ps. 22:4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1122": {
     "id": "gb1122",
@@ -2217,7 +2569,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-10"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Levita Laurentius names Lawrence by his diaconal office before praising the work attributed to him. The verse's image of blind eyes receiving light through the cross gives the martyr's feast a clear devotional focus.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1123": {
     "id": "gb1123",
@@ -2244,7 +2600,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Two independent Renaissance polyphonic settings survive of this Introit: Heinrich Isaac's four-voice (SATB) setting in the Choralis Constantinus (Nuremberg, Formschneider, 1550), and Rogier Michael's five-voice (SATTB) setting, published in his 1603 Leipzig collection Introitus dominicorum dierum ac praecipuorum festorum (\"Introits of Sundays and Principal Feasts\").",
+      "source": "CPDL ChoralWiki, “Adorate Deum (Heinrich Isaac)”; CPDL ChoralWiki, “Adorate Deum (Rogier Michael).”"
+    }
   },
   "gb1125": {
     "id": "gb1125",
@@ -2271,7 +2631,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Dawn)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exsulta filia Sion calls Jerusalem to rejoice because her king comes. The prophecy names that king just and a saviour, coming humbly on an ass; at the Christmas dawn Communion, the words greet Christ as the holy Saviour of the world.",
+      "source": "Zach. 9:9 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-25m2.txt [Officium heading]; Divinum Officium, Sancti-12-25m2 (Missale Romanum formulary)"
+    }
   },
   "gb1127": {
     "id": "gb1127",
@@ -2300,7 +2664,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicite omnes Angeli draws from verse 58 of Daniel 3, part of a long canticle in which the three young men in the fiery furnace call each part of creation in turn to bless the Lord: works of the Lord, angels, heavens, waters, and so on through many verses. The antiphon lifts only the angels' verse from that litany, and it adjusts the wording: where the Vulgate reads \"laudate et superexaltate,\" the antiphon substitutes \"hymnum dícite, et superexaltáte,\" replacing \"praise\" with a call to sing a hymn. St. Jerome noted in his own time that this entire section of Daniel 3 was absent from the Hebrew manuscripts he knew.",
+      "source": "Dan. 3:58 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb113": {
     "id": "gb113",
@@ -2308,7 +2676,7 @@ window.CHANT_INDEX = {
     "title": "Benedixisti Domine terram tuam",
     "part": "offertory",
     "mode": "Offertory · 3rd Sunday of Advent (Gaudete) · Mode IV",
-    "gabc": "(c4) BE(e)ne(e)di(e)xí(ege/ghgffd!fw!gvFE)sti,(e.) (,) * Dó(ef'g)mi(ixfhg/hi)ne,(h.) (,) ter(jhjvGF'fd./fg!hvGF')ram(gffd~) tu(dgF'E)am :(e.) (:) a(d)ver(g)tí(ixhg/hi)sti(h.) (,) ca(h)pti(h)vi(h)tá(h)tem(jhhf~) Ja(ghg)cob :(dghvFDgv.gg/hjhhg.) (:) re(dg)mi(g)sí(hiHG'hwi'!jv)sti(j.) (,) in(j)i(j)qui(ih)tá(jkj)tem(ig~) ple(hv.ghG'Fg_[uh:l]h ghG'Fg_[uh:l]h)bis(g.) tu(egff)ae.(fe..) (::)",
+    "gabc": "(c4) BE(e)ne(e)di(e)xí(ege/ghgffd!fw!gvFE)sti,(e.) (,) * Dó(ef'g)mi(ixfhg/hi)ne,(h.) (,) ter(jhjvGF'fd./fg!hvGF')ram(gffd~) tu(dgF'E)am :(e.) (:) a(d)ver(g)tí(ixhg/hi)sti(h.) (,) ca(h)pti(h)vi(h)tá(h)tem(jhhf~) Ja(ghg)cob :(dghvFDgv.gg/hjhhg.) (:) re(dg)mi(g)sí(hiHG'hwi'!jv)sti(j.) (,) in(j)i(j)qui(ih)tá(jkj)tem(ig~) ple(hv.ghG'Fg_[uh:l]hghG'Fg_[uh:l]h)bis(g.) tu(egff)ae.(fe..) (::)",
     "latin": "Benedixísti, Dómine, terram tuam : avertísti captivitátem Jacob : remisísti iniquitátem plebis tuae.",
     "translation": "You have blessed, O Lord, your land: you have turned away the captivity of Jacob: you have forgiven the iniquity of your people.",
     "source": "Graduale Romanum (GregoBase #113)",
@@ -2327,7 +2695,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Advent (Gaudete Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedixisti Domine draws its text from Psalm 85, joining the whole of verse 2 with only the first half of verse 3. The second half of that verse, \"operuisti omnia peccata eorum\" (thou hast covered all their sins), is left out. The same opening words appear earlier in this same Mass, in the Introit whose title gives Gaudete Sunday its name, which closes with the line \"Benedixisti Domine terram tuam: avertisti captivitatem Jacob.\" The psalm's language of return and blessing thus frames the liturgy from its opening antiphon through the Offertory.",
+      "source": "Ps. 85:2 (Vulgate numbering Ps. 84:2) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Adv3-0 (Missale Romanum formulary); Wikipedia, \"Gaudete Sunday\" (rev. 1343206205)"
+    }
   },
   "gb1134": {
     "id": "gb1134",
@@ -2354,7 +2726,11 @@ window.CHANT_INDEX = {
         "feastTitle": "23rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Vovete et reddite calls those gathered around the Lord to make vows and bring gifts, before the Lord who is terrible with kings. Psalm 76 places that offering beside praise from human thought and God's judgment to save the meek, turning the Communion into a reverent act of surrender.",
+      "source": "Ps. 76:12-13 (Vulgate numbering Ps. 75:12-13) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1136": {
     "id": "gb1136",
@@ -2381,7 +2757,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Omnes gentes plaudite manibus, the antiphon of this Introit, draws its words from Psalm 47 (46 in the Vulgate numbering). Its melody survives with musical notation in the tenth-century antiphonary Codex Einsiedeln 121, one of the oldest sources to preserve a Gregorian melody in readable neumes. The same psalm's exuberant call for \"all peoples\" to clap their hands anchors the Ascension liturgy in several rites, and inspired Giovanni Gabrieli's sixteen-voice polychoral setting, published in his 1597 Symphoniae sacrae.",
+      "source": "Wikipedia, “Psalm 47.”"
+    }
   },
   "gb1139": {
     "id": "gb1139",
@@ -2415,7 +2795,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass during the Day)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 98:3 runs in full: \"He hath remembered his mercy and his truth toward the house of Israel. All the ends of the earth have seen the salvation of our God.\" This Communion takes only the second half, opening where the psalm's gaze widens from Israel to every corner of the earth. The same words also appear at Christmas Mass as a Gradual, set in Mode V, making this Communion and that Gradual two distinct chants built from the same half-verse.",
+      "source": "Ps. 98:3 (Vulgate numbering Ps. 97:3) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Chant Noël: Chants for the Holiday Season\" (rev. 1269226005)"
+    }
   },
   "gb1140": {
     "id": "gb1140",
@@ -2484,7 +2868,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ne timeas, Zacharia draws words from three verses of Luke 1 rather than quoting any single one of them. The angel's opening address in verse 13 is followed by the promise that John will be great before the Lord and filled with the Holy Spirit, which Luke does not give until verse 15, and between those two the chant quietly passes over verse 14's line that Zachary himself shall have joy and gladness, along with verse 15's detail that John shall drink no wine nor strong drink. The Gospel sung at the same Mass picks up the story from Luke 1:5, so the assembly hears the angel's announcement first as this Introit and then again, in its fuller narrative setting, during the Gospel.",
+      "source": "Luke 1:13 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-06-23 (Missale Romanum formulary)"
+    }
   },
   "gb1144": {
     "id": "gb1144",
@@ -2527,7 +2915,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ecce Virgo concipiet draws its text from Isaiah 7:14, beginning mid-verse. The full verse opens with a signal that what follows is a sign given to the house of David, but the chant drops that opening clause and begins with the sign itself: Ecce, Virgo concipiet. By the time this Communion is sung, the congregation has already heard the complete passage, Isaiah 7:10-15, in the Epistle, including the prophet's address to Achaz and the house of David, and then the Annunciation in the Gospel of Luke 1:26-38, in which the angel tells Mary she will conceive and bear a son.",
+      "source": "Is. 7:14 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C10a (Missale Romanum formulary)"
+    }
   },
   "gb1145": {
     "id": "gb1145",
@@ -2554,7 +2946,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Honora Dominum draws its two verses directly from Proverbs 3:9-10, trimming them slightly. The Clementine Vulgate reads \"de primitiis omnium frugum tuarum da ei,\" including \"omnium\" and closing with \"da ei\"; the chant drops both, sharpening the conditional shape of the promise without the explicit command to give. The surrounding verses of Proverbs 3 frame this passage as part of a broader call to fear God and accept his correction, themes the chant leaves behind to hold the single image of barns filled and wine-presses running over.",
+      "source": "Prov. 3:9-10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1147": {
     "id": "gb1147",
@@ -2581,7 +2977,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Epiphany of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 72 is a wide-ranging vision of a king's reign: the verses immediately surrounding this offertory speak of enemies falling, the poor being rescued, and dominion stretching to the ends of the earth. The liturgy draws out only verses 10 and 11, the lines about tribute-bearing kings, shaping the psalm into a single focused image for Epiphany. The text has attracted composers across many centuries; according to Wikipedia's article on the chant's title, the oldest surviving musical setting is the Gregorian chant itself, while the most frequently performed setting today is that by John Sheppard (c.1515 to c.1559).",
+      "source": "Ps. 72:10-11 (Vulgate numbering Ps. 71:10-11) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Reges Tharsis\" (rev. 1269238249)"
+    }
   },
   "gb1148": {
     "id": "gb1148",
@@ -2601,7 +3001,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd-6th Sunday after Epiphany (Adorate Deum)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Mirabantur omnes adapts Luke 4:22 in two ways that repay attention. The gospel verse reads \"mirabantur in verbis gratiæ, quæ procedebant de ore ipsius,\" where \"ipsius\" means simply \"his\"; the chant replaces that word with \"Dei,\" from the mouth of God, making explicit the theological claim the evangelist leaves for the reader to draw. The chant also stops there. The verse continues with the crowd's challenge, \"Is not this the son of Joseph?,\" the first note of the rejection that follows in the chapter, but the Communion antiphon ends at the moment of pure wonder, before the doubt arrives.",
+      "source": "Luke 4:22 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1154": {
     "id": "gb1154",
@@ -2618,9 +3022,25 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "communion",
+        "feastTitle": "St. Peter Nolasco, Confessor",
+        "rank": "Duplex",
+        "dateMD": "1-28"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
         "feastTitle": "St. Edward the Confessor, King",
         "rank": "Semiduplex",
         "dateMD": "10-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
+        "feastTitle": "St. Peter of Alcantara, Confessor",
+        "rank": "Duplex",
+        "dateMD": "10-19"
       },
       {
         "calendar": "1962",
@@ -2637,6 +3057,22 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Andrew Avellino, Confessor",
         "rank": "Duplex",
         "dateMD": "11-10"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
+        "feastTitle": "St. Didacus, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "11-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
+        "feastTitle": "St. Felix of Valois, Confessor",
+        "rank": "Duplex",
+        "dateMD": "11-20"
       },
       {
         "calendar": "1962",
@@ -2666,6 +3102,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "communion",
+        "feastTitle": "St. Francis of Paola, Confessor",
+        "rank": "Simplex",
+        "dateMD": "4-2"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
         "feastTitle": "St. Vincent Ferrer, Confessor",
         "rank": "Duplex",
         "dateMD": "4-5"
@@ -2690,6 +3134,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "communion",
+        "feastTitle": "St. Vincent de Paul, Confessor",
+        "rank": "Duplex",
+        "dateMD": "7-19"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
         "feastTitle": "St. Hyacinth, Confessor",
         "rank": "Duplex",
         "dateMD": "8-17"
@@ -2706,6 +3158,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "communion",
+        "feastTitle": "St. Philip Benizi, Confessor",
+        "rank": "Duplex",
+        "dateMD": "8-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
         "feastTitle": "St. Raymond Nonnatus, Confessor",
         "rank": "Duplex",
         "dateMD": "8-31"
@@ -2717,6 +3177,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Mary Vianney, Confessor",
         "rank": "Duplex",
         "dateMD": "8-9"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "communion",
+        "feastTitle": "St. Nicholas of Tolentino, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "9-10"
       },
       {
         "calendar": "1962",
@@ -2805,7 +3273,11 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beatus servus draws its text from the closing verses of the Gospel sung at this Mass, Matthew 24:42-47, which moves from the command to watch through the parable of the faithful servant. The antiphon quotes those final two verses, but with one quiet change: where the Vulgate reads \"invenerit sic facientem,\" finding the servant doing so, the chant substitutes \"invenerit vigilantem,\" finding him watching. That single word draws the parable's closing promise of reward back into contact with the command to keep vigil that opens the passage.",
+      "source": "Matt. 24:46-47 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4d (Missale Romanum formulary)"
+    }
   },
   "gb1163": {
     "id": "gb1163",
@@ -2839,7 +3311,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass during the Day)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Verse 3 comes before verse 2, reversing the order in which Psalm 98 gives these lines. The Christmas Day Gradual therefore moves from the whole earth's vision of salvation back to the Lord's revelation before the nations.",
+      "source": "Ps. 98:3, 2 (Vulgate numbering Ps. 97:3, 2) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1165": {
     "id": "gb1165",
@@ -2866,7 +3342,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Inclina Domine draws from the opening three verses of Psalm 86, but the compiler made one quiet substitution. Psalm 86:1 ends with a reason for the plea, \"for I am needy and poor,\" and the introit drops that clause entirely, replacing it with the petition from verse 2, \"save thy servant, O my God, that trusteth in thee,\" then moving straight into verse 3. Three verses are folded into a single continuous address, and the ground of appeal shifts from need to trust.",
+      "source": "Ps. 86:1, 2-3 (Vulgate numbering Ps. 85:1, 2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1168": {
     "id": "gb1168",
@@ -2917,7 +3397,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Universi qui te exspectant draws from two consecutive verses of Psalm 25, trimming each one. Verse 3 reads in full, \"Neither let my enemies laugh at me: for none of them that wait on thee shall be confounded\"; the chant keeps only the second half, the promise of consolation, and drops the reference to enemies entirely. Verse 4 opens with an imprecation, \"Let all them be confounded that act unjust things without cause,\" before turning to the prayer for guidance, and the chant omits that imprecation, beginning only where the psalm turns toward God.",
+      "source": "Ps. 25:3, 4 (Vulgate numbering Ps. 24:3, 4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb117": {
     "id": "gb117",
@@ -2944,7 +3428,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Midnight)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In splendoribus sanctorum takes only the second half of Psalm 110:3, setting aside the opening clause about the Lord's rule in the day of his strength, and beginning instead with the image of brightness and birth before the morning star. It is sung at Communion during the Mass of Christmas Night, whose Gospel is Luke 2:1-14, the account of the birth in Bethlehem. The melody is a rare instance of pure pentatonic writing in chant, which leaves its modal assignment uncertain.",
+      "source": "Ps. 110:3 (Vulgate numbering Ps. 109:3) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-25m1 (Missale Romanum formulary); Wikipedia, \"In Splendoribus Sanctorum\" (rev. 1331260082)"
+    }
   },
   "gb1171": {
     "id": "gb1171",
@@ -2971,7 +3459,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Palm Sunday of the Passion of the Lord",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Drawn from the same Psalm 22 (21 in the Vulgate numbering) that supplies Palm Sunday's Tract, \"Deus, Deus meus,\" the psalm Christ himself quotes from the Cross, this Introit was already the Mass's opening chant long before Pius XII's 1955 Holy Week reform added the Palm-blessing procession and its own antiphon, \"Hosanna filio David,\" in front of it. Voiced as if in Christ's own words, its plea for rescue from \"the lion's mouth\" completes the day's turn from the procession's triumph into the Passion narrative that follows.",
+      "source": "Chant Café, \"The Changing Moods in the Chants for Palm Sunday\"; New Liturgical Movement, coverage of the 1955 Holy Week reform."
+    }
   },
   "gb1173": {
     "id": "gb1173",
@@ -2979,7 +3471,7 @@ window.CHANT_INDEX = {
     "title": "Timebunt gentes",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time · Mode V",
-    "gabc": "(c4) TI(d)mé(ff)bunt(gh~) gen(h_fgvFED.g_[oh:h]e/fg)tes(f.) (;) * no(hf/gh!jj/kjk)men(jij) tu(h_g/h/jjvH'GF)um,(h_g~) Dó(f)mi(fg!hvGF'g)ne,(gf..) (:) et(f) o(ghgh)mnes(jhhg) re(h!iwj)ges(j_i) (`) ter(jkJ'IH)rae(hjH'GhjjhjvvIH'jggf.0) (;) gló(fg'hfg'h)ri(gf)am(fv.ef!gvgf.0) (,) tu(f!hhh//gh!jjjhjvvIH'jg./f.0h!iw!jvIH'GF'f//hvGFgf)am.(f.) (z0::c3) ℣. Quó(d)ni(d)am(d) ae(d)di(d)fi(fe)cá(eh)vit(h.) (,) Dó(h)mi(h)nus(ihh'hh_f//hhf/hhegxfgE0/[-0.5]{/[0.5]gy}D0.0/[-0.5]hhjvIH'//hvGF.) (;) Si(hi)on,(i_[oh:h]h/i/kkh i_[oh:h]h/kkkvIH'//hvGF.) (:) et(f) vi(hf)dé(h)bi(hfh)tur(hhhvF'Ef!hhhf/hhhvGF'hee[ll:1]d.0) (;) in(d) ma(d)je(d)stá(dfE'D)te(ef) *() su(fhG'Fhhh)a.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) TI(d)mé(ff)bunt(gh~) gen(h_fgvFED.g_[oh:h]e/fg)tes(f.) (;) * no(hf/gh!jj/kjk)men(jij) tu(h_g/h/jjvH'GF)um,(h_g~) Dó(f)mi(fg!hvGF'g)ne,(gf..) (:) et(f) o(ghgh)mnes(jhhg) re(h!iwj)ges(j_i) (`) ter(jkJ'IH)rae(hjH'GhjjhjvvIH'jggf.0) (;) gló(fg'h!fg'h)ri(gf)am(fv.ef!gvgf.0) (,) tu(f!hhh//gh!jjjhjvvIH'jg./f.0h!iw!jvIH'GF'f//hvGFgf)am.(f.) (z0::c3) ℣. Quó(d)ni(d)am(d) ae(d)di(d)fi(fe)cá(eh)vit(h.) (,) Dó(h)mi(h)nus(ihh'hh_f//hhf/hhegxfgE0/[-0.5]{/[0.5]gy}D0.0/[-0.5]hhjvIH'//hvGF.) (;) Si(hi)on,(i_[oh:h]h/i/kkhi_[oh:h]h/kkkvIH'//hvGF.) (:) et(f) vi(hf)dé(h)bi(hfh)tur(hhhvF'Ef!hhhf/hhhvGF'hee[ll:1]d.0) (;) in(d) ma(d)je(d)stá(dfE'D)te(ef) *() su(fhG'Fhhh)a.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Timébunt gentes nomen tuum, Dómine, et omnes reges terrae glóriam tuam. ℣. Quóniam aedificávit Dóminus Sion, et vidébitur in majestáte sua.",
     "translation": "The Gentiles shall fear your name, O Lord, and all the kings of the earth your glory. ℣. For the Lord has built up Sion: and he shall be seen in his majesty.",
     "source": "Graduale Romanum (GregoBase #1173)",
@@ -3012,7 +3504,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Timebunt gentes looks toward a Lord whose name is feared by nations and whose glory kings behold. Psalm 102 follows this vision with God's rebuilding of Sion and regard for the prayer of the humble, holding majesty and mercy together.",
+      "source": "Ps. 102:16-17 (Vulgate numbering Ps. 101:16-17) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1175": {
     "id": "gb1175",
@@ -3063,7 +3559,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Emitte Spiritum tuum draws its two verses from Psalm 104, though it trims the closing clause of verse 31. The psalm's own line reads \"sit gloria Domini in saeculum; laetabitur Dominus in operibus suis,\" and the offertory keeps the first half while setting aside \"laetabitur Dominus in operibus suis,\" the Lord shall rejoice in his works. The verses immediately before in the psalm give the petition its edge: verse 29 pictures creatures whose breath God takes away, failing and returning to dust. At this Mass the offertory is sung between the Epistle, which is the Acts account of the Spirit descending at Pentecost, and the Gospel from John 14, in which Jesus promises the Father will send the Holy Spirit.",
+      "source": "Ps. 104:30-31 (Vulgate numbering Ps. 103:30-31) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc7-0 (Missale Romanum formulary)"
+    }
   },
   "gb1178": {
     "id": "gb1178",
@@ -3090,7 +3590,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Commovisti Domine terram draws its three verses from Psalm 60, taking verse 4 and then jumping to verse 6, omitting the intervening verse 5: \"Thou hast shewn thy people hard things; thou hast made us drink the wine of sorrow.\" The third verse also quietly shifts a word: where the psalm reads \"dilecti tui\" (thy beloved), the Tract sings \"elécti tui,\" so that those who are delivered become specifically God's elect rather than his beloved.",
+      "source": "Ps. 60:4, 6 (Vulgate numbering Ps. 59:4, 6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1180": {
     "id": "gb1180",
@@ -3119,7 +3623,36 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Felices sensus calls Mary's senses blessed because beneath the cross they receive a martyr's palm without bodily death. The Communion presents that suffering as a witness at the cross.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
+  },
+  "gb1181": {
+    "id": "gb1181",
+    "gregobaseId": "1181",
+    "title": "Communicantes Christi passionibus",
+    "part": "gradual",
+    "mode": "Gradual · St. Boniface, Bishop and Martyr · Mode V",
+    "gabc": "(c3) COm(d)mu(fh)ni(h)cán(h_gi)tes(hihh/fgf.) (,) * Chri(fhghvvF'ED'//f!hhf!gwh)sti(h.) (,) pas(i)si(hg)ó(i!jwk)ni(ih)bus,(hiHF.1) (;) gau(fh~)dé(h'/ihhg/h'/ihhg/h'/ihhggfg)te,(gf..) (:) ut(f) in(g) re(e)ve(f)la(h)ti(g)ó(h)ne(f.) (,) gló(fg)ri(ef)ae(f) e(fh/ih)jus(hg/ijIH.ghGF.) (;) gau(fe~)de(fh)á(hh//fh/ihiig/hf)tis(f.) (,) ex(fh/ih)sul(hg)tán(hhhf//hef)tes.(def!hv.0/[-0.5]ijHF.1) (,) (gxhhvF'EfgED'ewfe/fhff/ded.) (::) ℣. Si(d) ex(d)pro(fe)brá(eh)mi(h)ni(h.) (,) in(h) nó(h)mi(h)ni(h) Chri(ih//h'hh_f/hh//ihh'hh_egxfgED.hhi)sti,(h.) (;) be(h)á(i_[oh:h]h/i!jwkk)ti(klh.1___) é(ih/jk'IG'hvF'E//f!gwhhi)ri(h)tis :(h.) (:) quó(hhi)ni(h)am(h) quod(h) est(h) ho(h)nó(ihhvG'FEfg)ris,(f.) (,) gló(fg)ri(f)ae,(f) et(fe~) vir(h)tú(hi'j)tis(i_[oh:h]h) De(ffeffefhffeede)i,(e[ll:1]d..) (:) et(d) qui(d) est(d) e(d)jus(d) spí(de)ri(d)tus,(d.) (,) su(f_e)per(gxe!gfgE'D) vos(d!f'h) *(,) re(h)qui(h)é(hiH'F)scet.(f.//de/f!hh/ijghf.0gxegFD.1) (::)",
+    "latin": "Communicántes Christi passiónibus gaudéte, ut in revelatióne glóriæ ejus gaudeátis exsultántes. ℣. Si exprobrámini in nómine Christi, beáti éritis : quóniam quod est honóris, glóriæ, et virtútis Dei, et qui est ejus spíritus, super vos requiéscet.",
+    "translation": "Rejoice, being partakers of the sufferings of Christ, that when his glory shall be revealed, you may also be glad with exceeding joy. ℣. If you be reproached for the name of Christ, you shall be blessed: for that which is of the honor, glory, and power of God, and that which is his Spirit, rests upon you.",
+    "source": "Graduale Romanum (GregoBase #1181, Solesmes) — per Sancti/06-05.txt's [Graduale] (1 Pet 4:13-14).",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "boniface",
+        "part": "gradual",
+        "feastTitle": "St. Boniface, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      }
+    ],
+    "commentary": {
+      "text": "Saint Boniface's Gradual calls those who share Christ's sufferings to rejoice in the revelation of his glory. Its verse says that reproach for Christ's name is blessed because God's Spirit rests upon them.",
+      "source": "1 Pet. 4:13-14 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-06-05 (Missale Romanum formulary)"
+    }
   },
   "gb1182": {
     "id": "gb1182",
@@ -3153,7 +3686,11 @@ window.CHANT_INDEX = {
         "feastTitle": "18th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicam Dominum draws its two verses from the opening of Psalm 34, immediately after the psalm's heading, which places the song at the moment when David changed his countenance before Achimelech and was sent away. The praise that opens the psalm body, \"I will bless the Lord at all times,\" rises from a specific occasion of vulnerability and deliverance. The gradual does not include the next verse of the psalm, which reads: \"O magnify the Lord with me; and let us extol his name together.\"",
+      "source": "Ps. 34:2-3 (Vulgate numbering Ps. 33:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb119": {
     "id": "gb119",
@@ -3161,7 +3698,7 @@ window.CHANT_INDEX = {
     "title": "O quam bonus",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time (Year C) · Mode I",
-    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. O(h) quam(h) bo(h_g)nus(g_[oh:h]e//fgf/gddc.) (,) et(c) su(d)á(ef'g)vis(g_[oh:h]e) est,(g_[uh:l]h) Dó(fvED)mi(d.c!dw!evDCde)ne,(d.) (:) Spí(dede)ri(c)tus(e) tu(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv./!ef/!g_[oh:h]e/!f_d/!ev.c!dwe'!fv)us(e[ll:1]d..) *(:) in(c) no(d!fdf)bis!(ef!gvFEfg..) (,) (hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
+    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. O(h) quam(h) bo(h_g)nus(g_[oh:h]e//fgf/gddc.) (,) et(c) su(d)á(ef'g)vis(g_[oh:h]e) est,(g_[uh:l]h) Dó(fvED)mi(d.c!dw!evDCde)ne,(d.) (:) Spí(dede)ri(c)tus(e) tu(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv./!ef/!g_[oh:h]e/!f_d/!ev.c!dwe'!fv)us(e[ll:1]d..) *(:) in(c) no(d!fdf)bis!(ef!gvFEfg..) (,) (hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
     "latin": "Allelúia. ℣. O quam bonus et suávis est, Dómine, Spíritus tuus in nobis!",
     "translation": "Alleluia. ℣. O how good and sweet, O Lord, is your Spirit within us!",
     "source": "Graduale Romanum (GregoBase #119)",
@@ -3173,7 +3710,36 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "O quam bonus praises the Lord's Spirit as good and sweet. Wisdom's next verse describes that Spirit's patient correction of those who err, so the Alleluia lets praise open toward conversion.",
+      "source": "Wis. 12:1 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1190": {
+    "id": "gb1190",
+    "gregobaseId": "1190",
+    "title": "Qui vicerit",
+    "part": "communion",
+    "mode": "Communion · St. Boniface, Bishop and Martyr · Mode VII",
+    "gabc": "(c3) QUI(i) ví(i)ce(h)rit,(g) *(,) da(ij)bo(h) e(f_e/f!gwh)i(h.) (,) se(h)dé(g)re(h) me(ij)cum(i) in(i) thro(ij)no(hf) me(h.)o :(g.) (:) sic(i)ut(i) et(h) e(ijI'H)go(h.) vi(hf/hi)ci,(i.) (;) et(h) se(iji)di(g) cum(h) Pa(i)tre(g) me(h)o(f.) (,) in(ef~) thro(f)no(f_e) e(f!gw!hvGF'g)jus.(fe..) (::)",
+    "latin": "Qui vícerit, dabo ei sedére mecum in throno meo : sicut et ego vici, et sedi cum Patre meo in throno ejus.",
+    "translation": "To him that shall overcome, I will give to sit with me in my throne: as I also have overcome, and am set down with my Father in his throne.",
+    "source": "Graduale Romanum (GregoBase #1190, Solesmes) — per Sancti/06-05.txt's [Communio] (Apoc 3:21); its parenthetical seasonal \"(Allelúja.)\" is not modeled here, same as the Offertory above.",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "boniface",
+        "part": "communion",
+        "feastTitle": "St. Boniface, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      }
+    ],
+    "commentary": {
+      "text": "Saint Boniface's Communion repeats Christ's promise that the one who conquers will sit with him on his throne, as Christ sits with the Father. It gives that promise to a bishop and martyr.",
+      "source": "Apoc. 3:21 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-06-05 (Missale Romanum formulary)"
+    }
   },
   "gb1192": {
     "id": "gb1192",
@@ -3200,7 +3766,11 @@ window.CHANT_INDEX = {
         "feastTitle": "25th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confitemini et invocate joins praise with proclamation: give thanks to the Lord, call upon his name, and make his deeds known among the nations. The Alleluia turns remembered mercy into public witness.",
+      "source": "Ps. 105:1 (Vulgate numbering Ps. 104:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1194": {
     "id": "gb1194",
@@ -3227,7 +3797,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Bonum est confiteri Domino takes the opening praise of Psalm 92: it is good to give praise to the Lord and sing to the Most High. The Offertory preserves that first act of praise before the Psalm turns to mercy and truth.",
+      "source": "Ps. 92:2 (Vulgate numbering Ps. 91:2) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4a.txt [Officium heading]; Divinum Officium, Commune/C4a (Missale Romanum formulary)"
+    }
   },
   "gb1198": {
     "id": "gb1198",
@@ -3255,7 +3829,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Commemoration of All the Faithful Departed (All Souls)",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dies irae moves from the trumpet that summons creation before the Judge to the speaker's plea for mercy and pardon. Its last prayer asks Jesus to grant rest to the dead, which gives the Mass for the Dead its final word.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1199": {
     "id": "gb1199",
@@ -3283,7 +3861,36 @@ window.CHANT_INDEX = {
         "feastTitle": "The Commemoration of All the Faithful Departed (All Souls)",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine Jesu Christe serves as the Offertory at the traditional Mass for the Dead. Berlioz set the same text as the seventh movement of his Grande Messe des morts, Op. 5, composed in 1837 and premiered at Les Invalides on 5 December 1837. In that setting, the movement opens as a quiet orchestral fugue in D minor, the choir contributing a repeated three-note motif, A, B♭, and A, weaving through the developing orchestral texture for close to ten minutes before concluding peacefully.",
+      "source": "Wikipedia, \"Requiem (Berlioz)\" (rev. 1371621694)"
+    }
+  },
+  "gb1201": {
+    "id": "gb1201",
+    "gregobaseId": "1201",
+    "title": "Qui sequitur me",
+    "part": "alleluia",
+    "mode": "Alleluia · Common of a Martyr · Mode II",
+    "gabc": "(f3) AL(fgF'E)le(gh/ih)lú(gf~){ia}.(f.) *(,) ij.(gh!ivHFE.c!ef!hv.) (,) (gh!ijjvIH'GF//gvFEggf.0) (::) ℣. Qui(fgF'E) sé(gh/ih)qui(gf)tur(ef) me,(f/ggf.0) (;) non(fgf) ám(e)bu(g)lat(kxiji/jkJI'i) in(g!ij) té(hg)ne(fg)bris,(gf/hhg.) (:) sed(e) ha(fg)bé(gfivvH'GF'E)bit(fg) lu(efehvvGF'g)men(g.) *(,) vi(fgF'Eg)tae(g.) ae(gh/ih)tér(gf~)nae.(f.) (,) (gh!ivHFE.c!ef!hv.) (,) (gh!ijjvIH'GF//gvFEggf.0) (::)",
+    "latin": "Allelúia. ℣. Qui séquitur me, non ámbulat in ténebris : sed habébit lumen vitae aetérnae.",
+    "translation": "Alleluia. ℣. He that follows me walks not in darkness: but shall have the light of life everlasting.",
+    "source": "Graduale Romanum (GregoBase #1201)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-3",
+        "part": "alleluia",
+        "feastTitle": "St. Valentine, Priest and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-14"
+      }
+    ],
+    "commentary": {
+      "text": "Qui sequitur me draws from a single verse, John 8:12, but drops the opening words of that verse. Where the Gospel reads \"Ego sum lux mundi: qui sequitur me, non ambulat in tenebris, sed habebit lumen vitæ,\" the chant omits \"I am the light of the world\" entirely and begins with the conditional promise that follows, placing the follower, rather than Christ's self-declaration, at the centre of what is sung.",
+      "source": "John 8:12 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1203": {
     "id": "gb1203",
@@ -3310,7 +3917,11 @@ window.CHANT_INDEX = {
         "feastTitle": "14th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gustate et videte gives Psalm 34's invitation to taste and see the Lord's sweetness. The Communion concludes by calling blessed the one who hopes in him, joining knowledge of God's goodness with trust.",
+      "source": "Ps. 34:9 (Vulgate numbering Ps. 33:9) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent08-0.txt [Officium heading]; Divinum Officium, Pent08-0 (Missale Romanum formulary)"
+    }
   },
   "gb1205": {
     "id": "gb1205",
@@ -3318,7 +3929,7 @@ window.CHANT_INDEX = {
     "title": "Domine Dominus noster",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Year A) · Mode V",
-    "gabc": "(c4) DO(ffg)mi(f)ne(f.) (,) * Dó(ghgh)mi(gf)nus(ffhg) no(f)ster,(fffvDC'dff//h_g/hggf.0) (:) quam(ixhih) ad(hg~)mi(gj)rá(j)bi(ixkjjhi)le(i_[oh:h]h) est(fh) (,) no(h)men(g.f!gw!hvGF'g) tu(ghg___)um(g.) (;) in(h) u(hg)ni(gj)vér(j)sa(ixj.h!iw!jvIG'hw!ivHG) ter(fgf)ra!(f!h'j) (,) (fh'!jvjv'1IG//fhg/hggf.0) (z0::c3) ℣. Quó(d)ni(d)am(d) e(d)le(fe)vá(eh)ta(h) est(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) ma(f)gni(fe)fi(h)cén(h)ti(gh)a(f_e//fhe/f_e) tu(de!fvED'e)a(e[ll:1]d..) (;) * su(de)per(f) cae(fhG'Fhhh)los.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) DO(ffg)mi(f)ne(f.) (,) * Dó(ghgh)mi(gf)nus(ffhg) no(f)ster,(fffvDC'dff//h_g/hggf.0) (:) quam(ixhih) ad(hg~)mi(gj)rá(j)bi(ixkjjhi)le(i_[oh:h]h) est(fh) (,) no(h)men(g.f!gw!hvGF'g) tu(ghg___)um(g.) (;) in(h) u(hg)ni(gj)vér(j)sa(ixj.h!iw!jvIG'hw!ivHG) ter(fgf)ra!(f!h'j) (,) (fh'!jvjv'1IG//fhg/hggf.0) (z0::c3) ℣. Quó(d)ni(d)am(d) e(d)le(fe)vá(eh)ta(h) est(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) ma(f)gni(fe)fi(h)cén(h)ti(gh)a(f_e//fhe/f_e) tu(de!fvED'e)a(e[ll:1]d..) (;) * su(de)per(f) cae(fhG'Fhhh)los.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Dómine, Dóminus noster, quam admirábile est nomen tuum in univérsa terra! ℣. Quóniam eleváta est magnificéntia tua super caelos.",
     "translation": "O Lord, our Lord, how admirable is your name in all the earth! ℣. For your magnificence is exalted above the heavens.",
     "source": "Graduale Romanum (GregoBase #1205)",
@@ -3337,7 +3948,108 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine Dominus noster is sung on the feast of the Holy Name of Jesus, and its single source verse does double duty: Psalm 8:2 is one continuous sentence in the psalm, but the Gradual splits it in two, taking the first half as the respond and the second half as the verse. The Gospel of the day is Luke 2:21, the moment the child receives his name. The collect for the day addresses God as one who commanded the name Jesus to be given, \"Jesum vocári jussísti,\" so the psalm's awe at a name admirable through all the earth falls on ears already attuned to a single, specific name.",
+      "source": "Ps. 8:2 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Nat2-0 (Missale Romanum formulary)"
+    }
+  },
+  "gb1206": {
+    "id": "gb1206",
+    "gregobaseId": "1206",
+    "title": "Gloria et honore",
+    "part": "gradual",
+    "mode": "Gradual · Common of a Martyr Bishop · Mode V",
+    "gabc": "(c4) GLó(ixfh!ivHG')ri(hggfg)a(fv.eg'!hv//fg!hvF'EDef!gvgf.0) (;) * et(f) ho(ixfg/ih)nó(ii//iiivGF'gi'!jvIH'i)re(ixiv.hi'j/hig./hihig.) (;) co(f)ro(f)ná(ixhf/giif)sti(f.) (,) e(ffgffc/d_fixeg/hig)um.(g'/hi'GF//hghiyfh/ji/j_h) (,) (ixiv.hig.//ihivG'Fg.) (,) (fgf//f'ff'hg/hggf.0) (z0::c3) ℣. Et(hh) con(h)sti(h)tu(h)í(gxhihh'hf//gvFEfvEDf.0/[-0.5]hhvF'Ef)sti(f.) (,) e(h/i_[oh:h]h/i!jwkk)um(klh.1___) (:) su(i)per(h) ó(h/jk'IG'hvF'E//f!gwhhi)pe(h)ra(h.) (;) má(hh)nu(h)um(h) tu(h)á(hih)rum,(h_f) *(,) Dó(fh!ij)mi(hg)ne.(hhhf//hhhf/hhf.) (,) (de/f!hh/ijghf.0gxegFD.1) (::)",
+    "latin": "Glória et honóre coronásti eum. ℣. Et constituísti eum super ópera mánuum tuárum, Dómine.",
+    "translation": "You have crowned him with glory and honor. ℣. And set him over the works of your hands, O Lord.",
+    "source": "Graduale Romanum (GregoBase #1206)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Marcellus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "1-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Callistus I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-14"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Evaristus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Martin I, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "11-12"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Clement I, Pope and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Anicetus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "4-17"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Felix I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "5-30"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Silverius, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "6-20"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Pius I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "7-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "gradual",
+        "feastTitle": "St. Zephyrinus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "8-26"
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 8 opens its sixth verse with the words \"Minuisti eum paulominus ab angelis,\" he was made a little less than the angels, but the Gradual passes over that phrase and begins in the middle of the verse, with the crowning in glory and honor. The psalm continues in verse 8 with all things subjected under his feet, sheep and oxen and the beasts of the field, and that too is left aside. What remains is a compact two-clause arc: crown, then dominion over God's works, drawn from a psalm addressed to humankind and applied here to a martyr bishop.",
+      "source": "Ps. 8:6-7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1209": {
     "id": "gb1209",
@@ -3366,7 +4078,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "3-25"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gabriel's greeting to Mary, drawn from Luke 1:28, forms the whole of this Alleluia verse. The chant stops exactly there. The verses that follow in Luke show Mary troubled by the salutation and Gabriel reassuring her, \"Fear not, Mary, for thou hast found grace with God,\" but the Alleluia holds only the greeting itself, suspending the moment of address before any reply.",
+      "source": "Luke 1:28 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb121": {
     "id": "gb121",
@@ -3386,7 +4102,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Surrexit Dominus takes up the Easter witness that the risen Lord appeared to Simon, echoing Luke's account of the disciples' return to Jerusalem. In the Communion for the 3rd Sunday of Easter, that brief announcement lets Peter's encounter stand as a word of glad recognition.",
+      "source": "Cf. Luke 24:34 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1212": {
     "id": "gb1212",
@@ -3406,7 +4126,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 112:9 praises the one who gives to the poor and whose justice endures forever. The Year A Gradual adds its blessing on the generation of the upright, holding generosity and righteousness together.",
+      "source": "Ps. 112:9 (Vulgate numbering Ps. 111:9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb12179": {
     "id": "gb12179",
@@ -3426,7 +4150,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday after Easter (Cantate, 1962)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Cum venerit Paraclitus repeats Christ's promise that the Paraclete, the Spirit of truth, will reveal sin, justice, and judgment. The passage continues by naming unbelief, Christ's return to the Father, and the judgment of the world's ruler.",
+      "source": "John 16:8 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc4-0.txt [Officium heading]; Divinum Officium, Pasc4-0 (Missale Romanum formulary)"
+    }
   },
   "gb1221": {
     "id": "gb1221",
@@ -3460,7 +4188,36 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Acceptabis sacrificium justitiae draws from the final verse of Psalm 51, but quietly reshapes it. The Clementine Vulgate reads \"tunc acceptabis sacrificium justitiae, oblationes et holocausta; tunc imponent super altare tuum vitulos,\" closing with the image of calves laid upon the altar. The chant drops that final clause and adds \"Domine\" in its place, turning a conditional promise tied to the rebuilding of Jerusalem into a direct address to God at the moment of offering.",
+      "source": "Ps. 51:21 (Vulgate numbering Ps. 50:21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1224": {
+    "id": "gb1224",
+    "gregobaseId": "1224",
+    "title": "Exsultabo in Jerusalem",
+    "part": "introit",
+    "mode": "Introit · St. Boniface, Bishop and Martyr · Mode III",
+    "gabc": "(c4) EX(g)sul(g)tá(hj)bo(j) *() in(j) Je(jh)rú(i)sa(g)lem,(jhhg.) (;) et(ij) gau(kj)dé(k)bo(jjj) (,) in(hg~) pó(hj)pu(j)lo(iij) me(h_ghvGF)o :(f.) (:) et(gh~) non(hg) au(h)di(g)én(fgh)tur(h) in(hj) e(j)o(ih) ul(jjj)tra(hg..) (,) vox(gh) fle(ixhvGF'gwh!ivHG'h)tus(h_g) (,) et(gj~) vox(iij) cla(hk)mó(jkjj)ris.(ji..) (:) E(g)lé(gh)cti(gfh) me(hjggfg)i(g_[oh:h]f) (,) non(f) la(g)bo(hg)rá(gj)bunt(j) fru(jkjj)stra,(h!jj/khhg.) (;) ne(gh)que(h) ge(f)ne(hj)rá(jhi)bunt(g.) (,) in(g) con(e)tur(fg~)ba(gh)ti(g)ó(ef/g.f!gwhgh)ne :(hg..) (:) qui(g)a(gh) se(fg)men(g) be(g)ne(gh)di(h)ctó(hi)rum(g) Dó(h)mi(g)ni(h) est,(h!iwj.) (;) et(h) ne(gf)pó(gh)tes(h) e(hkj)ó(jjh!iw!jvIG'h)rum(g.) (,) cum(g) e(fhG'FgvFE)is.(e.) (::)",
+    "latin": "Exsultábo in Jerúsalem, et gaudébo in pópulo meo : et non audiéntur in eo ultra vox flétus, et vox clamóris. Elécti mei non laborábunt frustra, neque generábunt in conturbatióne : quia semen benedictórum Dómini est, et nepótes eórum cum eis.",
+    "translation": "I will rejoice in Jerusalem, and joy in my people: and the voice of weeping shall no more be heard in her, nor the voice of crying. My elect shall not labor in vain, nor bring forth in trouble: for they are the seed of the blessed of the Lord, and their offspring with them.",
+    "source": "Graduale Romanum (GregoBase #1224, Solesmes) — per Sancti/06-05.txt.",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "boniface",
+        "part": "introit",
+        "feastTitle": "St. Boniface, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      }
+    ],
+    "commentary": {
+      "text": "Exsultabo in Jerusalem draws from two verses of Isaiah 65 that are not adjacent. Verses 20 through 22 lie between them, describing earthly rewards of long life and fruitful labor, and the compiler passed over all three, setting the promise of rejoicing directly alongside the assurance given to the elect. The Gospel of the day, Matthew 5:1-12, closes with the words \"gaudete et exsultate, quoniam merces vestra copiosa est in coelis,\" rejoice and be glad, for your reward is great in heaven, so the Introit's opening cry of rejoicing finds its answer at the end of the Mass's proclamation.",
+      "source": "Is. 65:19, 23 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-06-05 (Missale Romanum formulary)"
+    }
   },
   "gb1226": {
     "id": "gb1226",
@@ -3487,7 +4244,11 @@ window.CHANT_INDEX = {
         "feastTitle": "11th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Protector noster aspice Deus draws on two consecutive verses of Psalm 84, but reverses their order. Verse 10 becomes the respond and verse 9 becomes the versicle, and in both cases the text is adjusted: the singular \"orationem meam\" becomes the plural \"preces servorum tuorum,\" and the psalm's \"respice in faciem christi tui\" becomes \"respice super servos tuos.\" The prayer that arrives at the altar is no longer one voice but many.",
+      "source": "Ps. 84:10, 9 (Vulgate numbering Ps. 83:10, 9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1228": {
     "id": "gb1228",
@@ -3538,7 +4299,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Our Lord Jesus Christ, King of the Universe",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 29 verses 10 and 11 each contain two clauses, but this communion takes only the second clause from each. The opening of verse 10, \"Dominus diluvium inhabitare facit\" (the Lord makes the flood to dwell), and the opening of verse 11, \"Dominus virtutem populo suo dabit\" (the Lord will give strength to his people), are both set aside. What remains, joined directly, is the declaration of the Lord's eternal kingship and the blessing of his people with peace.",
+      "source": "Ps. 29:10, 11 (Vulgate numbering Ps. 28:10, 11) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1230": {
     "id": "gb1230",
@@ -3614,7 +4379,35 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Oculi omnium sets Psalm 145's verses about food given in due season and every living creature filled with blessing. The same Latin text was also set as a three-voice motet by Pierre Moulu, a composer active in France and associated with the royal chapel and Meaux Cathedral.",
+      "source": "Ps. 145:15-16 (Vulgate numbering Ps. 144:15-16) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Pierre Moulu\" (rev. 1258601544)"
+    }
+  },
+  "gb1231": {
+    "id": "gb1231",
+    "gregobaseId": "1231",
+    "title": "Sancti tui",
+    "part": "introit",
+    "mode": "Introit · Common of Several Martyrs (Paschal Time) · Mode III",
+    "gabc": "(c4) SAn(f)cti(fff/d_[oh:h]e_[oh:h]d_[oh:h]) tu(g)i,(h) *(,) Dó(hkjji)mi(ji)ne,(j.) (;) be(jjj)ne(g!hwih)dí(j)cent(gh~) te :(e.) (:) gló(ef)ri(g)am(ghj) re(hi)gni(h) tu(hhg)i(h!iwj) di(h!iw!jvI'HG'h)cent,(hg..) (:) al(e)le(f)lú(gf~){ia},(g.) (,) al(gf~)le(g_[oh:h]e/f!gwh_g)lú(ghghFD'ewf/ge~){ia}.(e.) (::)",
+    "latin": "Sancti tui, Dómine, benedícent te : glóriam regni tui dicent, allelúja, allelúja.",
+    "translation": "Your saints, O Lord, shall bless you: they shall speak of the glory of your kingdom, alleluia, alleluia.",
+    "source": "Graduale Romanum (GregoBase #1231)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-several-martyrs-paschal",
+        "part": "introit",
+        "feastTitle": "Common of Several Martyrs (Sapientiam Sanctorum) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 145 opens verse 10 with all creation giving praise, \"Let all thy works, O Lord, praise thee,\" before turning to the saints. This Introit drops that first half entirely, beginning instead with the saints alone, then borrows only the first clause of verse 11, setting aside its continuation, \"et potentiam tuam loquentur,\" they shall tell of thy power. Two verses are drawn down to a single beam of attention on the saints and their proclamation of God's kingdom, fitting for a feast in their honor.",
+      "source": "Ps. 145:10-11 (Vulgate numbering Ps. 144:10-11) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1232": {
     "id": "gb1232",
@@ -3634,7 +4427,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday after Pentecost",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Respice Domine gathers Psalm 74's pleas for the covenant, the poor, and the servants who bear reproach. The thirteenth Sunday Gospel ends when one healed man returns to give glory to God, so the Gradual's appeal stands within a day of remembered mercy.",
+      "source": "Ps. 74:20, 19, 22 (Vulgate numbering Ps. 73:20, 19, 22) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent13-0.txt [Officium heading]; Divinum Officium, Pent13-0 (Missale Romanum formulary)"
+    }
   },
   "gb1235": {
     "id": "gb1235",
@@ -3661,7 +4458,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 25 (24 in the Vulgate numbering), which supplies this Introit's plea to \"look upon me, and have mercy,\" is an acrostic in the original Hebrew: each verse begins with a successive letter of the alphabet, a mnemonic structure shared by only a handful of psalms. A few lines further into the same psalm also furnish the Introit for the Third Sunday in Lent in the older Roman rite, so the two Sundays' chants are close neighbors within a single acrostic poem.",
+      "source": "propria.org, “The Third Sunday in Lent”; USCCB, Psalm 25."
+    }
   },
   "gb1236": {
     "id": "gb1236",
@@ -3681,7 +4482,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Spiritus est qui vivificat confesses that the Spirit gives life while the flesh profits nothing. The Alleluia directs the hearer toward the life-giving Spirit in Christ's teaching.",
+      "source": "John 6:64 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1237": {
     "id": "gb1237",
@@ -3717,7 +4522,11 @@ window.CHANT_INDEX = {
         "feastTitle": "14th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Venite ad me omnes draws a single verse from Matthew 11, Christ's invitation to those who labor and are burdened. The passage continues in the next two verses: \"Tollite jugum meum super vos, et discite a me, quia mitis sum, et humilis corde\" and \"Jugum enim meum suave est, et onus meum leve,\" take up my yoke, learn from me, for the yoke is sweet and the burden light. The alleluia verse stops at the invitation itself, before those conditions and promises are named.",
+      "source": "Matt. 11:28 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb124": {
     "id": "gb124",
@@ -3777,7 +4586,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 104 is a long hymn to God's providence over creation, and this Communion antiphon draws from verses 13 through 15. It begins partway through verse 13, dropping the opening clause, \"Thou waterest the hills from thy upper rooms,\" and picks up at \"de fructu operum tuorum satiabitur terra.\" It also omits the first half of verse 14, \"Bringing forth grass for cattle, and herb for the service of men,\" moving directly to the bread, wine, and oil that follow.",
+      "source": "Ps. 104:13, 14-15 (Vulgate numbering Ps. 103:13, 14-15) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1246": {
     "id": "gb1246",
@@ -3804,7 +4617,76 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Venite exsultemus draws on the single opening line of Psalm 95, stopping before the psalm continues into verse 2: \"præoccupemus faciem ejus in confessione, et in psalmis jubilemus ei\" (let us come before his presence with thanksgiving, and make a joyful noise to him with psalms). The Douay-Rheims argument for the psalm describes it as \"An invitation to adore and serve God, and to hear his voice.\"",
+      "source": "Ps. 95:1 (Vulgate numbering Ps. 94:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1249": {
+    "id": "gb1249",
+    "gregobaseId": "1249",
+    "title": "Posuisti Domine",
+    "part": "alleluia",
+    "mode": "Alleluia · Common of a Martyr · Mode I",
+    "gabc": "(c4) AL(cd/fg)le(edf./efd/e[ll:1]d)lú(cd~){ia}.(d.) *(;) (ixfg!hvhf//hv.giHF.1) (,) (ixhv.giH'GF.deddc) (,) (cf/g/hh//fhg'hvF'EDffd.) (::) ℣. Po(cd/fg)su(edf./efd/e[ll:1]d)í(cd)sti,(d.) (,) Dó(ixfg!hvhf//hv.giHF.1)(,)(ixhv.giH'GF.deddc)(,)(cd/fg)mi(edffd)ne,(d.) (:) su(h)per(g) ca(h)put(g) e(ixf/hhg/hh//fh!ivGFhh/fhfgvF~D~)jus(d.) (;) co(dcf)ró(ixhfhivGFhv.)(,)(ixf!gwhghivGFh)nam(hgg) (,) de(ef'g) lá(edf./efd/e[ll:1]d)pi(cd)de(d.) *(;) pre(cd/fg)ti(edf./efd/e[ll:1]d)ó(cd)so.(d.) (;) (ixfg!hvhf//hv.giHF.1) (,) (ixhv.giH'GF.deddc) (,) (cf/g/hh//fhg'hvF'EDffd.) (::)",
+    "latin": "Allelúia. ℣. Posuísti, Dómine, super caput ejus corónam de lápide pretióso.",
+    "translation": "Alleluia. ℣. You have set upon his head, O Lord, a crown of precious stone.",
+    "source": "Graduale Romanum (GregoBase #1249)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Timothy, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-24"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Polycarp, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Eusebius, Bishop and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Simeon, Bishop and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-18"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Blaise, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-3"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "alleluia",
+        "feastTitle": "St. Stanislaus, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "5-7"
+      }
+    ],
+    "commentary": {
+      "text": "Posuisti Domine draws from Psalm 21:4, but takes only the second half of the verse. The full verse in the Douay-Rheims reads: \"For thou hast prevented him with blessings of sweetness: thou hast set on his head a crown of precious stones.\" The chant carries only the crown image, leaving the opening clause aside. The chant text also reads \"super caput ejus\" where the Clementine Vulgate has \"in capite ejus,\" a small but deliberate variation in the Latin.",
+      "source": "Ps. 21:4 (Vulgate numbering Ps. 20:4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1254": {
     "id": "gb1254",
@@ -3871,7 +4753,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday after Easter (Cantate, 1962)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 118:16 in the Vulgate repeats its opening clause at the end, so that the full verse runs: \"Dextera Domini fecit virtutem ; dextera Domini exaltavit me : dextera Domini fecit virtutem.\" The Alleluia verse keeps the first two clauses and drops the third, ending on the note of exaltation rather than returning to the declaration of strength.",
+      "source": "Ps. 118:16 (Vulgate numbering Ps. 117:16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1260": {
     "id": "gb1260",
@@ -3891,7 +4777,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Ascension of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Data est mihi omnis potestas draws from the closing verses of Matthew 28. The Communion antiphon quotes verses 18 and 19 directly, stopping before verse 20, which continues: \"Teaching them to observe all things whatsoever I have commanded you. And behold I am with you all days, even to the consummation of the world.\" That omitted verse is the promise that frames the very commission the antiphon sings.",
+      "source": "Matt. 28:18-19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1261": {
     "id": "gb1261",
@@ -3919,7 +4809,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Commemoration of All the Faithful Departed (All Souls)",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Requiem aeternam dona eis, Domine, et lux perpetua luceat eis, the body of this gradual, is cited from 2 Esdras 2:34-35, not from the Psalms. The verse drawn from Psalm 112 quotes only the first two clauses of verse 7. The psalm's line continues, \"Paratum cor ejus sperare in Domino,\" his heart is ready to hope in the Lord, but the chant stops before reaching it.",
+      "source": "Ps. 112:7 (Vulgate numbering Ps. 111:7) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Eternal Rest\" (rev. 1311236353); Wikipedia, \"Requiem\" (rev. 1358525277)"
+    }
   },
   "gb1264": {
     "id": "gb1264",
@@ -3946,7 +4840,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 7:12 stands at a pivot in the psalm. The two verses just before it speak of God directing the just and saving the upright of heart; the two verses immediately after turn sharply toward judgment: \"Except you will be converted, he will brandish his sword; he hath bent his bow, and made it ready.\" The single verse this alleluia draws on holds the balance between those poles, posing the question of God's anger as the hinge between his mercy toward the just and his readiness against the unrepentant.",
+      "source": "Ps. 7:12 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1265": {
     "id": "gb1265",
@@ -3973,7 +4871,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sciant gentes draws two verses from Psalm 83, but not in the order they appear there. The respond comes from the psalm's final verse (19), and the verse from verse 14, which falls in the middle of the psalm. The compiler also adjusted the opening of verse 19: where the Clementine Vulgate reads \"Et cognoscant quia nomen tibi Dominus,\" the chant substitutes \"Sciant gentes quoniam nomen tibi Deus,\" shifting from \"And let them know that the Lord is thy name\" to an explicit address to the nations.",
+      "source": "Ps. 83:19, 14 (Vulgate numbering Ps. 82:19, 14) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1267": {
     "id": "gb1267",
@@ -3981,7 +4883,7 @@ window.CHANT_INDEX = {
     "title": "Multitudo languentium",
     "part": "communion",
     "mode": "Communion · Ordinary Time (Year B) · Mode II",
-    "gabc": "(f3) MUl(f)ti(ef)tú(f!gw!hvGF)do(f!gwh.) *(,) lan(hf~)guén(hi)ti(hi!jvIH'i)um,(ih..) (;) et(hi) qui(h) ve(hhg)xa(f)bán(h.f!gwh)tur(hhh/i_[oh:h]h) (;) a(f) spi(fe)rí(f!gwh)ti(hhh)bus(g_[oh:h]f) im(fe~)mún(f!gw!hvGFgv_[oh:h]F~E~)dis,(fe..) (;) ve(f)ni(h)é(hih)bant(hhhf~) ad(g_[oh:h]f) e(e!gw!hvGF'g)um :(gf..) (:) qui(h)a(i) vir(kxi!jw!kv_[hl:1]J~I~)tus(j_i) de(hg) il(hi)lo(i_[oh:h]h) ex(hg)í(eg!hvGF)bat,(gf..) (;) et(f) sa(hg)ná(hhghi_[oh:h]h/ihhfg)bat(f.) o(f!gwhgh)mnes.(gf..) (::)",
+    "gabc": "(f3) MUl(f)ti(ef)tú(f!gw!hvGF)do(f!gwh.) *(,) lan(hf~)guén(hi)ti(hi!jvIH'i)um,(ih..) (;) et(hi) qui(h) ve(hhg)xa(f)bán(h.f!gwh)tur(hhh/i_[oh:h]h) (;) a(f) spi(fe)rí(f!gwh)ti(hhh)bus(g_[oh:h]f) im(fe~)mún(f!gw!hvGFgv_[oh:h]F~E~)dis,(fe..) (;) ve(f)ni(h)é(hih)bant(hhhf~) ad(g_[oh:h]f) e(e!gw!hvGF'g)um :(gf..) (:) qui(h)a(i) vir(kxi!jw!kv_[hl:1]J~I~)tus(j_i) de(hg) il(hi)lo(i_[oh:h]h) ex(hg)í(eg!hvGF)bat,(gf..) (;) et(f) sa(hg)ná(hhg!hi_[oh:h]h/ihhfg)bat(f.) o(f!gwhgh)mnes.(gf..) (::)",
     "latin": "Multitúdo languéntium, et qui vexabántur a spirítibus immúndis, veniébant ad eum : quia virtus de illo exíbat, et sanábat omnes.",
     "translation": "A multitude of the sick, and they that were troubled with unclean spirits, came to him: for power went out from him, and healed all.",
     "source": "Graduale Romanum (GregoBase #1267)",
@@ -3993,7 +4895,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Multitudo languentium draws on two consecutive verses of Luke 6 rather than quoting either one straight. Verse 18 supplies the sick and those troubled with unclean spirits, but there it simply says they \"were cured\"; verse 19 supplies the explanation, \"for virtue went out from him and healed all.\" The antiphon joins these two halves into a single movement toward Christ, dropping verse 19's detail that the crowd was seeking to touch him. The verse immediately following in Luke, where the antiphon stops, is where Christ opens the Sermon on the Plain: \"Blessed are ye poor.\"",
+      "source": "Luke 6:18, 19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1268": {
     "id": "gb1268",
@@ -4020,7 +4926,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ex Sion species hears God coming openly from Sion and calls the saints to gather before him. Psalm 50 frames that gathering as a covenant set before sacrifices, while the 2nd Sunday of Advent Gradual awaits the Lord's coming with the Advent prayer for prepared hearts.",
+      "source": "Ps. 50:2-3, 5 (Vulgate numbering Ps. 49:2-3, 5) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Adv2-0 (Missale Romanum formulary)"
+    }
   },
   "gb1270": {
     "id": "gb1270",
@@ -4049,7 +4959,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicite Dominum, ministri ejus draws from two consecutive verses of Psalm 103, weaving them into a single text that matches neither verse exactly. The opening call to the angels and the closing phrase \"ad audiendam vocem sermonum ejus\" come from verse 20, while \"ministri ejus, qui facitis\" comes from verse 21. Where verse 21 ends with \"voluntatem ejus,\" his will, the Offertory substitutes \"verbum ejus,\" his word, borrowing that word from verse 20 and drawing both verses more tightly together around the theme of obedience to God's word.",
+      "source": "Ps. 103:20-21 (Vulgate numbering Ps. 102:20-21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1271": {
     "id": "gb1271",
@@ -4076,7 +4990,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 130 (129 in the Vulgate numbering), known since antiquity by its Latin opening as the De Profundis, is one of the seven Penitential Psalms and a staple of the Church's funeral rites and Office of the Dead. Its plea for mercy from the depths later gave Oscar Wilde the title for the long letter he wrote from Reading Gaol, borrowing the psalm's cry of suffering answered by hope for an entirely different kind of confession.",
+      "source": "USCCB, Psalm 130."
+    }
   },
   "gb1274": {
     "id": "gb1274",
@@ -4110,7 +5028,36 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass during the Day)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tui sunt caeli draws from two verses of Psalm 89, though not consecutive ones. Verse 12 supplies the opening lines about the heavens and the earth, and then verses 13 and 14 are set aside entirely, so the text jumps to verse 15. Even there the compiler stops midway: the psalm's verse 15 continues with \"mercy and truth shall go before your face,\" but that phrase is omitted, and the offertory closes on the image of God's throne prepared in justice and judgment.",
+      "source": "Ps. 89:12, 15 (Vulgate numbering Ps. 88:12, 15) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb1275": {
+    "id": "gb1275",
+    "gregobaseId": "1275",
+    "title": "Adducam eos",
+    "part": "offertory",
+    "mode": "Offertory · Ss. Seven Founders of the Servite Order, Confessors · Mode VIII",
+    "gabc": "(c4) AD(df)dú(fg/h_g)cam(gh) e(g)os(gv.ffffg..) *(,) in(d) mon(fhg)tem(h) san(gf~)ctum(fg!hvhg) me(hggf)um,(fg/hg/jjjhhg.) (:) et(h) lae(fg)ti(gh)fi(g)cá(g_[uh:l]jj'1jj/kljjh!iwj/kj)bo(jg) e(hjHF'g)os(g.) (;) in(df~) do(fg/h_g)mo(g) (,) o(g)ra(hjg/hg)ti(fg)ó(gh/ji)nis(j) me(jkj'/ki'jvH'GF'gwhgh)ae :(hjhhf.) (:) ho(d)lo(f)cáu(d!ewf)sta(fg) e(gh)ó(hjh)rum(ghGF.) (;) et(gh) ví(hi)cti(hg)mae(gih'/ig) e(gf)ó(fg/hgh)rum(h.0/[-0.5]jvvHG.) (;) pla(gf)cé(f!hgh)bunt(g_[oh:h]f) mi(fv.fff/gfg)hi(d/fge/fgD'Cd.) (;) su(c)per(d) al(dc~)tá(f!gwh_ghvGF)re(g./[-0.5]jjvIH'iw!jvIH) me(gh/jhi)um.(hg..) (::)",
+    "latin": "Addúcam eos in montem sanctum meum, et lætificábo eos in domo oratiónis meæ : holocáusta eórum et víctimæ eórum placébunt mihi super altáre meum.",
+    "translation": "I will bring them into my holy mount, and will make them joyful in my house of prayer: their holocausts, and their victims, shall please me upon my altar.",
+    "source": "Graduale Romanum (GregoBase #1275)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "seven-founders",
+        "part": "offertory",
+        "feastTitle": "Ss. Seven Founders of the Servite Order, Confessors",
+        "rank": "Duplex",
+        "dateMD": "2-12"
+      }
+    ],
+    "commentary": {
+      "text": "Adducam eos draws on Isaiah 56:7 almost in full, but stops short of the verse's closing words: \"for my house shall be called the house of prayer, for all nations.\" The surrounding verses, which the chant passes over, address those outside Israel who adhere to the Lord and hold fast his covenant, broadening the promise of welcome. What remains in the chant is the central image of gathering, joyful prayer, and sacrifice accepted at the altar, set here as the offertory for the feast of the Seven Founders of the Servite Order.",
+      "source": "Is. 56:7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb128": {
     "id": "gb128",
@@ -4168,7 +5115,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tolle puerum et matrem ejus takes its words from Matthew 2:20, the angel's command to Joseph to return to Israel with the child and his mother. The chant does not quote the verse exactly: the Vulgate opens with \"Surge, et accipe puerum, et matrem ejus,\" yet the chant drops \"Surge\" and substitutes \"Tolle\" for \"accipe,\" entering the command partway through. The surrounding verse, Matthew 2:19, places the moment after Herod's death, but the chant omits that framing, letting the imperative stand on its own.",
+      "source": "Matt. 2:20 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1289": {
     "id": "gb1289",
@@ -4195,7 +5146,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Trinity",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus es draws from Daniel 3:52, the opening line of a canticle sung by three men inside a fiery furnace after the flames left them unharmed. The chant takes only the first clause of the verse, setting aside the second: \"and blessed is the holy name of thy glory: and worthy to be praised and exalted above all, in all ages.\" The verse belongs to a passage that St. Jerome noted was absent from the Hebrew text in his time but present in the Greek manuscripts and received by the Church as canonical scripture in her liturgy.",
+      "source": "Dan. 3:52 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1290": {
     "id": "gb1290",
@@ -4222,7 +5177,11 @@ window.CHANT_INDEX = {
         "feastTitle": "27th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In salutari tuo draws on three verses of Psalm 119, verses 81, 84, and 86, skipping the verses between them to press longing, petition, and the cry for help into a single arc. The opening also quietly reshapes the psalm's own language: verse 81 begins \"Defecit in salutare tuum anima mea,\" meaning the soul has fainted or given out in its longing for salvation, but the antiphon drops \"Defecit\" and opens instead with \"In salutari tuo anima mea.\" The closing words \"Dómine Deus meus\" do not appear in verse 86 of the psalm.",
+      "source": "Ps. 119:81, 84, 86 (Vulgate numbering Ps. 118:81, 84, 86) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1293": {
     "id": "gb1293",
@@ -4242,7 +5201,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Baptism of the Lord",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Galatians says that those baptized in Christ have put on Christ. The Communion for the Baptism of the Lord takes that confession of baptism and gives it its alleluia.",
+      "source": "Gal. 3:27 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1294": {
     "id": "gb1294",
@@ -4264,7 +5227,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Joins this app's own family of Sundays named for their Introit's opening word (Judica, Laetare, Gaudete, Jubilate): this is \"Reminiscere Sunday,\" so called because its Introit begins \"Reminiscere miserationum tuarum, Domine\" (\"Remember, O Lord, your mercies\"), from Psalm 25.",
+      "text": "Joins this app's own family of Sundays named for their Introit's opening word (Judica, Laetare, Gaudete, Jubilate): this is \"Reminiscere Sunday,\" so called because its Introit begins \"Reminiscere miserationum tuarum, Domine\" (\"Remember, O Lord, your mercies\"), from Psalm 25 (24 in the Vulgate numbering).",
       "source": "joyfilledfamily.com, \"REMINISCERE {Second Sunday in Lent}.\""
     }
   },
@@ -4293,7 +5256,11 @@ window.CHANT_INDEX = {
         "feastTitle": "30th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laetabimur joins rejoicing in God's salvation to magnifying the name of the Lord. The Psalm's next verses contrast those who trust in horses with those who call on God's name, so this Communion lets rejoicing become confident invocation.",
+      "source": "Ps. 20:6 (Vulgate numbering Ps. 19:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1298": {
     "id": "gb1298",
@@ -4301,7 +5268,7 @@ window.CHANT_INDEX = {
     "title": "Exsurge Domine",
     "part": "gradual",
     "mode": "Gradual · 3rd Sunday of Lent · Mode III",
-    "gabc": "(c4) EX(fv.ffff_c)súr(d!ewf_e)ge(fffd/fff) (,) * Dó(e.f!gwh_g)mi(hg)ne,(ixg_[uh:l]h//e.f!gw!higff/ded.) (;) non(g) prae(hih)vá(iji/j_k)le(jkJ'H)at(h_givHG.) (,) ho(g_[oh:h]d//f_ef./de!fg!hv'1jvIH'//jv_G_[oh:h+2.87mm]F'_3[oh:h+2.87mm]fd)(,)(f_[oh:h]g_[oh:h]e_[oh:h]//fgF'EfvED'/!ewfef)mo :(e[ll:1]d..) (:) ju(g)di(hih)cén(iji___!jw!kvJ'IH)tur(hjjh) gen(hjjg~)tes(ixg_[uh:l]h//e.f!gw!higff/ded.) (;) in(g) con(hih)spé(iji___!jw!kvJ'IH)ctu(hv.g!jj//jj//jjjggf) (,) tu(f.0h!iwj)o.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::) ℣. In(eef) con(dg)ver(g)tén(h_g/h!iwjij)do(j_i) in(j)i(j)mí(ij)cum(j) me(j_i)um(i.) (,) re(hk)trór(kvJ'IH'/!iwj!kvJ'IH'jh'/[oll:0{1]jk/lkl[oll:}]/J'IH)sum,(hjhhg.) (:) in(gd~)fir(g)ma(hj)bún(j)tur,(j.) (,) et(j) per(i_[oh:h]g)í(hji)bunt(ij'k/ikJ'IHjvIH) (,) (jj/ki'jvHG'jh'/ihhg.) (:) a(jjg) fá(h_j)ci(j)e(jj//jjjh/ijHG.) (,) (jj//jjjh/ijHG.) (,) (jj/kh/jjk/[oll:1{1]jk/lj[oll:}]/jj'1h/ijH'Gjg/i_[uh:l]j gh!jjjvH'GF'fd.) *(;) tu(fd/ffd/ef/gh/jjjggf)(,)(f.0h!iwj)a.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::)",
+    "gabc": "(c4) EX(fv.ffff_c)súr(d!ewf_e)ge(fffd/fff) (,) * Dó(e.f!gwh_g)mi(hg)ne,(ixg_[uh:l]h//e.f!gw!higff/ded.) (;) non(g) prae(hih)vá(iji/j_k)le(jkJ'H)at(h_givHG.) (,) ho(g_[oh:h]d//f_ef./de!fg!hv'1jvIH'//jv_G_[oh:h+2.87mm]F'_3[oh:h+2.87mm]fd)(,)(f_[oh:h]g_[oh:h]e_[oh:h]//fgF'EfvED'/!ewfef)mo :(e[ll:1]d..) (:) ju(g)di(hih)cén(iji___!jw!kvJ'IH)tur(hjjh) gen(hjjg~)tes(ixg_[uh:l]h//e.f!gw!higff/ded.) (;) in(g) con(hih)spé(iji___!jw!kvJ'IH)ctu(hv.g!jj//jj//jjjggf) (,) tu(f.0h!iwj)o.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::) ℣. In(eef) con(dg)ver(g)tén(h_g/h!iwjij)do(j_i) in(j)i(j)mí(ij)cum(j) me(j_i)um(i.) (,) re(hk)trór(kvJ'IH'/!iwj!kvJ'IH'jh'/[oll:0{1]jk/lkl[oll:}]/J'IH)sum,(hjhhg.) (:) in(gd~)fir(g)ma(hj)bún(j)tur,(j.) (,) et(j) per(i_[oh:h]g)í(hji)bunt(ij'k/ikJ'IHjvIH) (,) (jj/ki'jvHG'jh'/ihhg.) (:) a(jjg) fá(h_j)ci(j)e(jj//jjjh/ijHG.) (,) (jj//jjjh/ijHG.) (,) (jj/kh/jjk/[oll:1{1]jk/lj[oll:}]/jj'1h/ijH'Gjg/i_[uh:l]jgh!jjjvH'GF'fd.) *(;) tu(fd/ffd/ef/gh/jjjggf)(,)(f.0h!iwj)a.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::)",
     "latin": "Exsúrge, Dómine, non praeváleat homo : judicéntur gentes in conspéctu tuo. ℣. In converténdo inimícum meum retrórsum, infirmabúntur, et períbunt a fácie tua.",
     "translation": "Arise, O Lord, let not man prevail: let the nations be judged in your sight. ℣. When my enemy shall be turned back, they shall be weakened, and perish before your face.",
     "source": "Graduale Romanum (GregoBase #1298)",
@@ -4320,7 +5287,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exsurge Domine draws on two verses of Psalm 9 that are not adjacent: the respond takes verse 20, and the verse jumps back to verse 4, leaving sixteen verses of the psalm unquoted between them. The opening words, \"Exsurge Domine,\" were chosen in 1520 by Pope Leo X as the incipit of his papal bull written in response to Martin Luther's Ninety-five Theses, calling on the Lord to arise against what the bull described as forces destroying the vineyard. Luther responded by publicly burning a copy of the bull on 10 December 1520 at the Elster Gate in Wittenberg.",
+      "source": "Ps. 9:20, 4 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Exsurge Domine\" (rev. 1372857273)"
+    }
   },
   "gb13": {
     "id": "gb13",
@@ -4347,7 +5318,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "This Introit's summons for \"all the earth\" to sing God's praise comes from Psalm 66 (65 in the Vulgate numbering), a communal hymn of thanksgiving whose universal scope suited Epiphany's theme of a light for every nation: before the 1970 calendar reform folded most of the year into \"Ordinary Time,\" the same chant served as the Introit for the Second Sunday after Epiphany. Its Mode IV melody lingers over \"adoret\" and \"nomini,\" the two words carrying the verse's invitation to worship.",
+      "source": "chantblog, “The Introit for the Second Sunday after Epiphany: Omnis terra.”"
+    }
   },
   "gb130": {
     "id": "gb130",
@@ -4355,7 +5330,7 @@ window.CHANT_INDEX = {
     "title": "Nimis honorati sunt",
     "part": "alleluia",
     "mode": "Alleluia · Common of Apostles · Mode VIII",
-    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhg ehf/gffe.) (::) ℣. Ni(hv.gih)mis(h) ho(h)no(hg)rá(gh!ivvHFhfg)ti(h) sunt(g.) (;) a(gf)mí(hji)ci(h) tu(gh)i,(f_e) De(hvvGE.gxfgFD./!egF'E/!fe)us :(e.) (:) ni(efeh)mis(h) con(h)for(h)tá(hfh'GE//fhF'DgxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/!g_[oh:h]egxgvFEfd)tus(e) est(d.) (;) prin(fd~)ci(e)pá(ef)tus(f) *() e(f)ó(hg/hfh)rum.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
+    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhgehf/gffe.) (::) ℣. Ni(hv.gih)mis(h) ho(h)no(hg)rá(gh!ivvHFhfg)ti(h) sunt(g.) (;) a(gf)mí(hji)ci(h) tu(gh)i,(f_e) De(hvvGE.gxfgFD./!egF'E/!fe)us :(e.) (:) ni(efeh)mis(h) con(h)for(h)tá(hfh'GE//fhF'DgxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/!g_[oh:h]egxgvFEfd)tus(e) est(d.) (;) prin(fd~)ci(e)pá(ef)tus(f) *() e(f)ó(hg/hfh)rum.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
     "latin": "Allelúia. ℣. Nimis honoráti sunt amíci tui, Deus : nimis confortátus est principátus eórum.",
     "translation": "Alleluia. ℣. Your friends, O God, are made exceedingly honorable: their principality is exceedingly strengthened.",
     "source": "Graduale Romanum (GregoBase #130)",
@@ -4412,14 +5387,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-apostles",
         "part": "alleluia",
-        "feastTitle": "St. Luke, Evangelist",
-        "rank": "Feast",
-        "dateMD": "10-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-apostles",
-        "part": "alleluia",
         "feastTitle": "Sts. Simon and Jude, Apostles",
         "rank": "Feast",
         "dateMD": "10-28"
@@ -4456,7 +5423,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Nimis honorati sunt draws its verse from Psalm 139:17, but trims the opening words. The psalm's own line begins \"Mihi autem,\" meaning \"But to me,\" making it a personal confession of wonder at God's friends. The chant drops those two words, so what was an individual's aside becomes a direct proclamation addressed to God.",
+      "source": "Ps. 139:17 (Vulgate numbering Ps. 138:17) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1301": {
     "id": "gb1301",
@@ -4550,13 +5521,6 @@ window.CHANT_INDEX = {
         "dateMD": "8-30"
       },
       {
-        "calendar": "1962",
-        "feastKey": "common-virgin-not-martyr",
-        "part": "communion",
-        "feastTitle": "Common of virgin not martyr",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-virgin",
         "part": "communion",
@@ -4587,6 +5551,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Gertrude, Virgin",
         "rank": "Optional Memorial",
         "dateMD": "11-16"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-virgin",
+        "part": "communion",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Memorial",
+        "dateMD": "12-13"
       },
       {
         "calendar": "modern",
@@ -4640,7 +5612,7 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-not-martyr",
         "part": "communion",
-        "feastTitle": "Common of virgin not martyr",
+        "feastTitle": "Common of a Virgin (Dilexisti)",
         "rank": ""
       },
       {
@@ -4650,7 +5622,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quinque prudentes draws from Matthew 25:4 and 25:6 but quietly omits verse 5, the line about the bridegroom tarrying and all the virgins falling asleep. The ending of verse 6 is also altered: where the Gospel reads \"exite obviam ei,\" go out to meet him, the antiphon substitutes \"Christo Domino,\" making the identity of the bridegroom explicit. The Epistle that precedes this communion in the Common of a Virgin formulary closes on a cognate image, Paul writing \"Despondi enim vos uni viro virginem castam exhibere Christo,\" a betrothal of the faithful as a chaste virgin to Christ.",
+      "source": "Matt. 25:4-6 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6b (Missale Romanum formulary)"
+    }
   },
   "gb1302": {
     "id": "gb1302",
@@ -4679,7 +5655,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Anima nostra draws its verse from Psalm 124:7, which the psalm pairs with a second verse: \"Our help is in the name of the Lord, who made heaven and earth.\" The chant stops before that line, letting the image of the broken snare stand on its own, without the explanatory turn that follows it in the psalm.",
+      "source": "Ps. 124:7-8 (Vulgate numbering Ps. 123:7-8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1303": {
     "id": "gb1303",
@@ -4706,7 +5686,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Trinity",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus sit Deus Pater blesses the Father, the only-begotten Son, and the Holy Spirit for divine mercy. Tobias calls the faithful to bless the God of heaven for mercy shown to them; the Offertory gives that praise a threefold form.",
+      "source": "Tob. 12:6 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent01-0.txt [Officium heading]; Divinum Officium, Pent01-0 (Missale Romanum formulary)"
+    }
   },
   "gb1308": {
     "id": "gb1308",
@@ -4749,7 +5733,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Speciosus forma draws its respond and verse from Psalm 45, but reverses the order in which they appear there. The psalm's verse 2, beginning \"Eructavit cor meum,\" comes before verse 3, \"Speciosus forma,\" yet the Gradual opens with verse 3 and sets verse 2 as its verse. The chant also stops short of the full text of verse 3: the Douay-Rheims reads, \"Thou art beautiful above the sons of men: grace is poured abroad in thy lips; therefore hath God blessed thee for ever,\" but the closing clause, \"therefore hath God blessed thee for ever,\" is not included.",
+      "source": "Ps. 45:3, 2 (Vulgate numbering Ps. 44:3, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1317": {
     "id": "gb1317",
@@ -4776,7 +5764,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus es Domine draws its text from Psalm 119, verses 12 and 13, complete and uncut. Sung as the Offertory for Quinquagesima Sunday, it falls between an Epistle from 1 Corinthians 13, Paul's meditation on charity, and a Gospel from Luke 18 in which a blind beggar near Jericho calls out persistently to Jesus and is healed. The beggar's words in that Gospel, Jesu, fili David, miserere mei, are themselves a pronouncing of faith upon the lips.",
+      "source": "Ps. 119:12-13 (Vulgate numbering Ps. 118:12-13) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp3-0 (Missale Romanum formulary); Divinum Officium, Quadp3-0.txt [Officium heading]"
+    }
   },
   "gb1318": {
     "id": "gb1318",
@@ -4810,7 +5802,11 @@ window.CHANT_INDEX = {
         "feastTitle": "22nd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine memorabor draws from three consecutive verses of Psalm 71, trimming each one. Verse 16 opens with \"I will enter into the powers of the Lord\" before reaching the words the chant begins with; that opening clause is dropped. From verse 17, only the first half is kept, setting aside the promise to declare God's wonderful works. Verse 18 is cut after \"forsake me not,\" leaving out the further vow to proclaim God's arm to the coming generation. Every declaration about what the psalmist will do is removed, leaving only direct petition addressed to God.",
+      "source": "Ps. 71:16-17, 18 (Vulgate numbering Ps. 70:16-17, 18) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1319": {
     "id": "gb1319",
@@ -4855,7 +5851,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Constitues eos principes draws from Psalm 45, verses 17 and 18, but takes only the second half of verse 17 and runs into verse 18, leaving aside the closing doxology, \"propterea populi confitebuntur tibi in æternum, et in sæculum sæculi.\" That trimmed text turns a royal wedding psalm into a direct acclamation of Peter and Paul as princes over all the earth. The Gospel of the Vigil Mass then supplies the moment behind that title, the passage in Matthew 16 where Christ tells Peter, \"et tibi dabo claves regni cœlórum.\"",
+      "source": "Ps. 45:17-18 (Vulgate numbering Ps. 44:17-18) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb132": {
     "id": "gb132",
@@ -4915,7 +5915,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "A rare exception to the usual rule that modern chant propers reuse only the ancient repertoire: this feast wasn't given a full new Mass formula and Office until 1929, and its Introit text — itself stitched together from separate verses of Psalm 32 — was set to a newly assembled melody, one that borrows phrases from several older Introits (including this app's own Laetare, whose closing phrase reappears here almost unchanged).",
+      "text": "Cogitationes Cordis is a rare exception to the usual rule that modern chant propers reuse only the ancient repertoire. This feast was not given a full new Mass formula and Office until 1929, and its Introit text, stitched together from separate verses of Psalm 33 (32 in the Vulgate numbering), was set to a newly assembled melody. That melody borrows phrases from several older Introits, including Laetare, whose closing phrase reappears here almost unchanged.",
       "source": "Church Music Association of America, Simple English Propers commentary, \"Introit: The Sacred Heart of Jesus, Cogitationes Cordis eius.\""
     }
   },
@@ -4977,7 +5977,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sperent in te omnes draws from three consecutive verses of Psalm 9, shaped carefully by the compiler. From verse 12, the phrase \"annuntiate inter gentes studia ejus\" is dropped, and from verse 13 the opening clause, \"quoniam requirens sanguinem eorum recordatus est,\" is also dropped, leaving a continuous plea of trust. The chant closes with one further change: where the Vulgate of verse 13 reads \"non est oblitus clamorem pauperum,\" he has not forgotten the cry of the poor, the offertory text substitutes \"orationem pauperum,\" the prayer of the poor.",
+      "source": "Ps. 9:11-13 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1329": {
     "id": "gb1329",
@@ -5004,7 +6008,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ad te levavi oculos meos turns the eyes of servants and handmaid toward the Lord until he shows mercy. Psalm 123 calls this prayer one of affliction with confidence in God, and the 3rd Sunday of Lent Tract lets that patient dependence unfold in several verses.",
+      "source": "Ps. 123:1-3 (Vulgate numbering Ps. 122:1-3) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb133": {
     "id": "gb133",
@@ -5033,7 +6041,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The day's Gospel reading ends at Luke 1:68, the moment Zachary's tongue is loosed and he begins to praise God. The Communion antiphon draws from verse 76, part of the canticle Zachary sang immediately after, addressing the newborn child directly. It quotes that single verse and stops there, omitting the lines that follow about the remission of sins and the mercy of God.",
+      "source": "Luke 1:76 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-06-24 (Missale Romanum formulary)"
+    }
   },
   "gb1333": {
     "id": "gb1333",
@@ -5047,20 +6059,17 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #1333)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-virgin-not-martyr",
-        "part": "offertory",
-        "feastTitle": "Common of virgin not martyr",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-virgin-not-martyr",
         "part": "offertory",
-        "feastTitle": "Common of virgin not martyr",
+        "feastTitle": "Common of a Virgin (Dilexisti)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Filiae regum draws its text from Psalm 45, verse 10, but that verse sits mid-sentence in the psalm. Verse 9 ends with the daughters of kings as the subject of a verb meaning \"have delighted thee,\" and verse 10 completes that thought before turning to the queen at the king's right hand. The offertory lifts its words from that joint, so \"Filiae regum in honore tuo\" opens the chant as a declaration in its own right, rather than as the conclusion of the thought begun in the verse before.",
+      "source": "Ps. 45:10 (Vulgate numbering Ps. 44:10) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1337": {
     "id": "gb1337",
@@ -5074,13 +6083,6 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #1337)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-confessor-2",
-        "part": "communion",
-        "feastTitle": "Common of confessor 2",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-confessor-2",
         "part": "communion",
@@ -5088,7 +6090,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "1-17"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Amen dico vobis draws from two consecutive verses of Matthew 19 but weaves them together selectively. It opens with the beginning of verse 28 and then moves directly to the closing promise of verse 29, passing over the vision of the apostles seated on twelve thrones judging the twelve tribes of Israel. Verse 29 in Matthew lists each thing abandoned, \"house, or brethren, or sisters, or father, or mother, or wife, or children, or lands\"; the chant replaces the whole enumeration with omnia, \"all things.\" Where verse 29 speaks of \"every one\" in the third person singular, the chant carries the second-person address from verse 28 all the way through, so the promise lands directly on those who are singing.",
+      "source": "Matt. 19:28-29 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1338": {
     "id": "gb1338",
@@ -5096,7 +6102,7 @@ window.CHANT_INDEX = {
     "title": "Bonum est confiteri",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time · Mode V",
-    "gabc": "(c4) BO(ff)num(fg) est(ff//d!ff/ge'/fgd'/e[ll:1]ddc.) (;) * con(f)fi(h)té(jh/jjj)ri(j_ik) Dó(k_[hl:1]j)mi(j_i)no :(jjh) (,) (jjh//jkjj/hih.) (:) et(hj) psál(h!j'k)le(jk)re(jj) (,) nó(hj/kjk)mi(j)ni(ij) tu(hg/h!jjkvJI)o,(j.) (;) Al(jj)tís(jkJ'Hjkjk)si(j_i)me.(jjjh/jjjh/jjh.) (,) (fg/h!jj/klijh.0ixgiHF.1) (z0::c3) ℣. Ad(d_) an(f)nun(d)ti(f)án(h.0/ijh)dum(h.) (,) ma(h)ne(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___//jvIH'jvIH'//hvGF.) (:) mi(hh)se(h)ri(h)cór(ih/ij_h ih/ij_ij//hi/jij)di(j)am(jh/jkihhf.) (,) tu(hf/hhh)am,(h.f!gwh!iv.hi/jhh/iih.0) (:) et(hh) ve(h)ri(h)tá(h)tem(hi~) tu(ivH'GE//fhGEfh..)(,)(gi!jvHF)am(fhF'Efhhf//hvvGF'hee[ll:1]d.0) *(:) per(hh) no(hiH'Fhihi)ctem.(hhhf/hhhf/hhf.) (,) (de/f!hh/ijghf.0gxegFD.1) (::)",
+    "gabc": "(c4) BO(ff)num(fg) est(ff//d!ff/ge'/fgd'/e[ll:1]ddc.) (;) * con(f)fi(h)té(jh/jjj)ri(j_ik) Dó(k_[hl:1]j)mi(j_i)no :(jjh) (,) (jjh//jkjj/hih.) (:) et(hj) psál(h!j'k)le(jk)re(jj) (,) nó(hj/kjk)mi(j)ni(ij) tu(hg/h!jjkvJI)o,(j.) (;) Al(jj)tís(jkJ'Hjkjk)si(j_i)me.(jjjh/jjjh/jjh.) (,) (fg/h!jj/klijh.0ixgiHF.1) (z0::c3) ℣. Ad(d_) an(f)nun(d)ti(f)án(h.0/ijh)dum(h.) (,) ma(h)ne(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___//jvIH'jvIH'//hvGF.) (:) mi(hh)se(h)ri(h)cór(ih/ij_hih/ij_ij//hi/jij)di(j)am(jh/jkihhf.) (,) tu(hf/hhh)am,(h.f!gwh!iv.hi/jhh/iih.0) (:) et(hh) ve(h)ri(h)tá(h)tem(hi~) tu(ivH'GE//fhGEfh..)(,)(gi!jvHF)am(fhF'Efhhf//hvvGF'hee[ll:1]d.0) *(:) per(hh) no(hiH'Fhihi)ctem.(hhhf/hhhf/hhf.) (,) (de/f!hh/ijghf.0gxegFD.1) (::)",
     "latin": "Bonum est confitéri Dómino, et psállere nómini tuo, Altíssime. ℣. Ad annuntiándum mane misericórdiam tuam, et veritátem tuam per noctem.",
     "translation": "It is good to give praise to the Lord, and to sing to your name, O Most High. ℣. To proclaim your mercy in the morning, and your truth throughout the night.",
     "source": "Graduale Romanum (GregoBase #1338)",
@@ -5115,7 +6121,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Bonum est confiteri Domino begins with an allusion to Psalm 118's preference for the Lord over human confidence. It then turns to giving praise to the Most High, announcing mercy in the morning and truth through the night.",
+      "source": "Ps. 118:8-9 (Vulgate numbering Ps. 117:8-9) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4a.txt [Officium heading]; Divinum Officium, Commune/C4a (Missale Romanum formulary)"
+    }
   },
   "gb1341": {
     "id": "gb1341",
@@ -5142,7 +6152,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 111:9 reads in full: \"He hath sent redemption to his people: he hath commanded his covenant for ever. Holy and terrible is his name.\" The verse sets the sending of redemption within a covenant that endures forever, and closes with an awe-struck declaration about God's name. The Alleluia verse draws on only the first clause, letting the single act of sending redemption stand on its own as the Easter season's proclamation.",
+      "source": "Ps. 111:9 (Vulgate numbering Ps. 110:9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb135": {
     "id": "gb135",
@@ -5193,7 +6207,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Baptism of the Lord",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 89 verse 21 arrives here embedded in a longer divine speech about David: the verse immediately before it reads, in the Douay-Rheims, \"I have laid help upon one that is mighty, and have exalted one chosen out of my people,\" and the verses after promise that God's hand will strengthen him and the enemy will have no power over him. The Alleluia verse takes only the single line of anointing from that passage and brings it to the feast of the Baptism of the Lord, where the original words about David's anointing with holy oil are sung over the memory of Christ's baptism.",
+      "source": "Ps. 89:21 (Vulgate numbering Ps. 88:21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1352": {
     "id": "gb1352",
@@ -5220,7 +6238,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 95:3 reads, in the Clementine Vulgate, \"rex magnus super omnes deos,\" a great King above all gods. The alleluia verse quietly shifts that final phrase to \"super omnem terram,\" above all the earth. The surrounding verses of the psalm call the assembly to come and sing, so this single verse arrives already mid-movement, lifting out the reason for praise before the verses of invitation have been heard.",
+      "source": "Ps. 95:3 (Vulgate numbering Ps. 94:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1353": {
     "id": "gb1353",
@@ -5247,7 +6269,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Lent (Laetare Sunday) (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jerusalem quae aedificatur draws on verses 3 and 4 of Psalm 122, a pilgrimage psalm whose opening line runs, in the Douay-Rheims, \"I rejoiced at the things that were said to me: We shall go into the house of the Lord.\" The antiphon follows verse 4 closely but omits its middle phrase: the psalm reads \"tribus Domini : testimonium Israël, ad confitendum nomini Domini,\" where \"testimonium Israël\" means \"the testimony of Israel.\" The chant drops that phrase and turns the closing words into a direct address, singing \"ad confiténdum nómini tuo, Dómine\" rather than speaking of the Lord in the third person.",
+      "source": "Ps. 122:3-4 (Vulgate numbering Ps. 121:3-4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1355": {
     "id": "gb1355",
@@ -5276,7 +6302,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit's opening words, from Acts 1:11, are the same text Palestrina set as his six-voice motet Viri Galilaei (1569) — a dramatic, homophonic work written for the same Ascension text shared by this Introit, the day's Offertory, and the first antiphon of Second Vespers.",
+      "text": "Viri Galilaei, the opening words of this Introit, come from Acts 1:11. Palestrina set the same text as his six-voice motet Viri Galilaei (1569), a dramatic, homophonic work written for the same Ascension text shared by this Introit, the day's Offertory, and the first antiphon of Second Vespers.",
       "source": "CPDL ChoralWiki, “Viri Galilaei / Ascendit Deus (Giovanni Pierluigi da Palestrina).”"
     }
   },
@@ -5298,7 +6324,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Unus militum lancea latus ejus aperuit remembers John's account of the soldier opening Christ's side with a lance. John's Gospel tells that blood and water came forth.",
+      "source": "John 19:34 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent02-5.txt [Officium heading]; Divinum Officium, Pent02-5 (Missale Romanum formulary)"
+    }
   },
   "gb1357": {
     "id": "gb1357",
@@ -5325,7 +6355,11 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Heinrich Isaac composed this Introit's polyphonic setting around 1508 for Constance Cathedral as part of the Choralis Constantinus, a project to supply sung polyphony for the Mass Proper across the whole church year; Isaac died in 1517 with the collection unfinished, and his pupil Ludwig Senfl completed and published it only in 1550. Its own text, from Psalm 54 (53 in the Vulgate numbering), prays that God \"destroy\" the psalmist's enemies \"in your truth,\" a plainer plea for justice than the more contemplative texts surrounding it in these Ordinary-Time Sundays.",
+      "source": "Wikipedia, “Choralis Constantinus”; CPDL ChoralWiki, “Ecce Deus adjuvat me (Heinrich Isaac).”"
+    }
   },
   "gb1359": {
     "id": "gb1359",
@@ -5352,7 +6386,11 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 103 verse 2 and verse 5 are both quoted here, but verses 3 and 4 are left out. Those omitted verses speak of forgiveness of iniquities, healing of diseases, and redemption from destruction. What remains is the opening summons of verse 2, \"Bless the Lord, O my soul, and never forget all he hath done for thee,\" joined directly by an added \"et\" to the closing promise of verse 5: that youth shall be renewed like the eagle's. The compiler drew a single arc from grateful remembrance to renewal, leaving the catalogue of mercies in between to the full psalm.",
+      "source": "Ps. 103:2, 5 (Vulgate numbering Ps. 102:2, 5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb136": {
     "id": "gb136",
@@ -5381,7 +6419,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Gospel proclaimed at this Mass runs from Matthew 2:13 through 2:18, closing with the exact words sung here at Communion. The antiphon is not drawn from the middle of a passage but is the Gospel's final verse, so the feast's Mass begins and ends, in a sense, with the same cry of lamentation. Matthew himself introduces the verse as the fulfillment of a prophecy, naming Jeremias as its source.",
+      "source": "Matt. 2:18 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-28 (Missale Romanum formulary)"
+    }
   },
   "gb1363": {
     "id": "gb1363",
@@ -5408,7 +6450,11 @@ window.CHANT_INDEX = {
         "feastTitle": "27th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Vir erat presents Job as simple, upright, fearing God, and avoiding evil, then recounts Satan's request to test him. Job's opening chapter places this trial under God's permission, inviting the hearer to hold fidelity amid suffering.",
+      "source": "Job 1:1 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1366": {
     "id": "gb1366",
@@ -5437,7 +6483,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dicit Dominus Petro opens with words not found in John's Gospel: the scripture moves straight from Jesus asking Peter three times whether he loves him into the prophecy, but the Introit names the speaker and the one addressed before the prophecy begins. The chant draws on John 21:18-19, yet stops before the closing words of that passage, which in the Vulgate continue with \"dicit ei: Sequere me,\" Christ's command to Peter to follow him.",
+      "source": "John 21:18-19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1374": {
     "id": "gb1374",
@@ -5454,9 +6504,25 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "introit",
+        "feastTitle": "St. Peter Nolasco, Confessor",
+        "rank": "Duplex",
+        "dateMD": "1-28"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
         "feastTitle": "St. Edward the Confessor, King",
         "rank": "Semiduplex",
         "dateMD": "10-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
+        "feastTitle": "St. Peter of Alcantara, Confessor",
+        "rank": "Duplex",
+        "dateMD": "10-19"
       },
       {
         "calendar": "1962",
@@ -5473,6 +6539,22 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Andrew Avellino, Confessor",
         "rank": "Duplex",
         "dateMD": "11-10"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
+        "feastTitle": "St. Didacus, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "11-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
+        "feastTitle": "St. Felix of Valois, Confessor",
+        "rank": "Duplex",
+        "dateMD": "11-20"
       },
       {
         "calendar": "1962",
@@ -5502,6 +6584,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "introit",
+        "feastTitle": "St. Francis of Paola, Confessor",
+        "rank": "Simplex",
+        "dateMD": "4-2"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
         "feastTitle": "St. Vincent Ferrer, Confessor",
         "rank": "Duplex",
         "dateMD": "4-5"
@@ -5526,6 +6616,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "introit",
+        "feastTitle": "St. Vincent de Paul, Confessor",
+        "rank": "Duplex",
+        "dateMD": "7-19"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
         "feastTitle": "St. Hyacinth, Confessor",
         "rank": "Duplex",
         "dateMD": "8-17"
@@ -5542,6 +6640,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "introit",
+        "feastTitle": "St. Philip Benizi, Confessor",
+        "rank": "Duplex",
+        "dateMD": "8-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
         "feastTitle": "St. Raymond Nonnatus, Confessor",
         "rank": "Duplex",
         "dateMD": "8-31"
@@ -5553,6 +6659,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Mary Vianney, Confessor",
         "rank": "Duplex",
         "dateMD": "8-9"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "introit",
+        "feastTitle": "St. Nicholas of Tolentino, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "9-10"
       },
       {
         "calendar": "modern",
@@ -5618,7 +6732,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "8-4"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 37, verses 30 and 31, supply the text, but the introit stops before the end of verse 31. The full verse reads: \"Lex Dei ejus in corde ipsius, et non supplantabuntur gressus ejus,\" the law of his God is in his heart, and his steps shall not be supplanted. The final clause is left aside, and the antiphon closes on the image of the law dwelling in the heart. The Gospel of the day then opens, in Matthew 5:13-19, with Christ addressing his disciples: \"Vos estis sal terrae,\" you are the salt of the earth.",
+      "source": "Ps. 37:30-31 (Vulgate numbering Ps. 36:30-31) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4a (Missale Romanum formulary)"
+    }
   },
   "gb1377": {
     "id": "gb1377",
@@ -5645,7 +6763,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Lent (Laetare Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 125 is one of fifteen psalms headed \"A gradual canticle\" in the Douay-Rheims, a title meaning a song of ascents. The tract draws on only the first two of the psalm's five verses, setting aside the petition of the fourth: \"Do good, O Lord, to those that are good, and to the upright of heart.\" Around 530, St. Benedict of Nursia assigned this psalm to the office of Sext from Tuesday until Saturday, according to the Rule of St. Benedict.",
+      "source": "Ps. 125:1-2 (Vulgate numbering Ps. 124:1-2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 125\" (rev. 1314308359)"
+    }
   },
   "gb1380": {
     "id": "gb1380",
@@ -5672,7 +6794,11 @@ window.CHANT_INDEX = {
         "feastTitle": "27th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In exitu Israel draws on only the opening verse of Psalm 114, an eight-verse psalm whose two central stanzas go on to evoke the parting of the Red Sea and the turning back of the Jordan, with God named only at the psalm's close. Psalm 114 is the only psalm traditionally chanted to the Tonus peregrinus, a wandering melodic tone distinct from the eight regular psalm tones.",
+      "source": "Ps. 114:1 (Vulgate numbering Ps. 113:1) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 114\" (rev. 1351239947)"
+    }
   },
   "gb1381": {
     "id": "gb1381",
@@ -5701,8 +6827,8 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Set repeatedly across five centuries: Heinrich Isaac included a four-voice setting in his Choralis Constantinus, Volume I (1550); the contemporary composer Robert Hugill wrote a five-voice (SATTB) setting, \"Esto mihi in Deum,\" first published in 2010.",
-      "source": "bibleasmusic.com, \"Esto Mihi (Psalm 31: 2,3,1) — Heinrich Isaac\"; CPDL ChoralWiki, \"Esto mihi in Deum (Robert Hugill).\""
+      "text": "Esto mihi, the opening words of this Introit, gave Quinquagesima, the last Sunday before Lent in the pre-1970 calendar, its popular nickname \"Estomihi Sunday.\" The text is drawn from Psalm 31, numbered 30 in the Vulgate, whose sixth verse, \"into your hands I commend my spirit,\" Christ himself prays from the cross, making it one of the few psalms the Gospels show Jesus quoting in his final hours.",
+      "source": "Oxford Reference, “Esto mihi”; St Mary Magdalen Choir, “Introit ‘Esto Mihi’.”"
     }
   },
   "gb1383": {
@@ -5711,7 +6837,7 @@ window.CHANT_INDEX = {
     "title": "Dolorosa et lacrimabilis",
     "part": "gradual",
     "mode": "Gradual · Our Lady of Sorrows · Mode IV",
-    "gabc": "(c4) DO(fe)lo(fg)ró(g)sa(gv.ff/ded.) (,) * et(f) la(dfe)cri(fg)má(gff)bi(df)lis(egF'E) es,(e.) (;) Vir(e[ll:1]d~)go(g) Ma(hj)rí(i!jw!kvJI'H//fhf/gh)a,(g.) (:) stans(df) jux(feg)ta(gefd) cru(cd)cem(d.) (,) Dó(f)mi(gh)ni(ixh.0/[-0.5]ivHG'h/ef'g) Je(gf/hhvGE'fd)su(d.) (;) Fí(dc)li(f)i(gh) tu(ixh.0/[-0.5]ivHG')i(ef'g) Red(g)em(df)ptó(efED.)(,)(ixf.0/[-0.5]hiHG'ge./ghGF'Ef_gF'E)ris.(e.) (::) ℣. Vir(h)go(ixjhhgh/ef'g eg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) (,) De(gf/gh)i(g) Gé(f)ni(ghgh)trix,(hgh'1f) (;) quem(e[ll:1]d) to(f_g//ef!hvGE'fd)tus(d.) (,) non(e) ca(c)pit(d) or(d!ff//fffdfvED'ef'g)bis,(ghhg.) (:) hoc(h) cru(gf/gh)cis(g) fert(fg) sup(f)plí(f)ci(ghgh)um,(hgh'1f) (,) au(f)ctor(e[ll:1]d) vi(f_g//ef!hvGE'fd)tae(d.) *(;) fa(cd!ff)ctus(fg) ho(g_[oh:h]f/hgh)mo.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
+    "gabc": "(c4) DO(fe)lo(fg)ró(g)sa(gv.ff/ded.) (,) * et(f) la(dfe)cri(fg)má(gff)bi(df)lis(egF'E) es,(e.) (;) Vir(e[ll:1]d~)go(g) Ma(hj)rí(i!jw!kvJI'H//fhf/gh)a,(g.) (:) stans(df) jux(feg)ta(gefd) cru(cd)cem(d.) (,) Dó(f)mi(gh)ni(ixh.0/[-0.5]ivHG'h/ef'g) Je(gf/hhvGE'fd)su(d.) (;) Fí(dc)li(f)i(gh) tu(ixh.0/[-0.5]ivHG')i(ef'g) Red(g)em(df)ptó(efED.)(,)(ixf.0/[-0.5]hiHG'ge./ghGF'Ef_gF'E)ris.(e.) (::) ℣. Vir(h)go(ixjhhgh/ef'!geg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) (,) De(gf/gh)i(g) Gé(f)ni(ghgh)trix,(hgh'1f) (;) quem(e[ll:1]d) to(f_g//ef!hvGE'fd)tus(d.) (,) non(e) ca(c)pit(d) or(d!ff//fffdfvED'ef'g)bis,(ghhg.) (:) hoc(h) cru(gf/gh)cis(g) fert(fg) sup(f)plí(f)ci(ghgh)um,(hgh'1f) (,) au(f)ctor(e[ll:1]d) vi(f_g//ef!hvGE'fd)tae(d.) *(;) fa(cd!ff)ctus(fg) ho(g_[oh:h]f/hgh)mo.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
     "latin": "Dolorósa et lacrimábilis es, Virgo María, stans juxta crucem Dómini Jesu Fílii tui Redemptóris. ℣. Virgo Dei Génitrix, quem totus non capit orbis, hoc crucis fert supplícium, auctor vitae factus homo.",
     "translation": "Sorrowful and tearful are you, O Virgin Mary, standing by the cross of the Lord Jesus, your Son and Redeemer. ℣. O Virgin Mother of God, he whom the whole world cannot contain bears this torment of the cross, the author of life made man.",
     "source": "Graduale Romanum (GregoBase #1383)",
@@ -5732,7 +6858,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dolorosa et lacrimabilis alludes to John 19:25 without quoting it directly: where that verse speaks of Mary standing by the cross in the third person, the Gradual turns toward her in the second person, addressing her directly as the one standing there. The day's Gospel, John 19:25-27, opens at that same moment, and the Gradual prepares it by first drawing the heart toward Mary herself. The verse, Virgo Dei Génitrix, quem totus non capit orbis, hoc crucis fert supplicium, auctor vitae factus homo, is not drawn from scripture but is a composed text, dwelling on the paradox of the Author of life made man and put to death.",
+      "source": "Cf. John 19:25 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-09-15 (Missale Romanum formulary)"
+    }
   },
   "gb14": {
     "id": "gb14",
@@ -5755,13 +6885,24 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "modern",
+        "feastKey": "common-confessor-doctor-paschal",
+        "part": "alleluia",
+        "feastTitle": "Common of a Doctor / Confessor (In medio Ecclesiae) (Paschaltide)",
+        "rank": ""
+      },
+      {
+        "calendar": "modern",
         "feastKey": "joseph",
         "part": "alleluia",
         "feastTitle": "Saint Joseph, Spouse of the Blessed Virgin Mary",
         "rank": "Solemnity",
         "dateMD": "3-19"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Amavit eum Dominus draws on Ecclesiasticus 45:9, a verse dense with priestly detail: a glorious girdle, a robe, and a crown, all describing Aaron robed for temple service. The chant lifts only the single phrase about the robe of glory, letting that one image stand alone. The surrounding verses go further, listing breeches, an ephod, and gold bells that rang out as Aaron walked through the temple.",
+      "source": "Ecclus. 45:9 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb143": {
     "id": "gb143",
@@ -5776,6 +6917,14 @@ window.CHANT_INDEX = {
     "usages": [
       {
         "calendar": "1962",
+        "feastKey": "boniface",
+        "part": "offertory",
+        "feastTitle": "St. Boniface, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      },
+      {
+        "calendar": "1962",
         "feastKey": "pent-5",
         "part": "offertory",
         "feastTitle": "5th Sunday after Pentecost",
@@ -5788,7 +6937,11 @@ window.CHANT_INDEX = {
         "feastTitle": "11th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicam Dominum draws from two consecutive verses of Psalm 16, but drops the second half of verse 7. The full verse reads, in the Douay-Rheims, \"I will bless the Lord, who hath given me understanding: moreover, my reins also have corrected me even till night\"; the offertory takes only the first clause, then moves directly into verse 8. The omitted phrase, about the inmost being offering correction through the night, falls away, and the two remaining thoughts, blessing God for understanding and keeping God always in sight, join into a single, uninterrupted act of trust.",
+      "source": "Ps. 16:7, 8 (Vulgate numbering Ps. 15:7, 8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb146": {
     "id": "gb146",
@@ -5808,7 +6961,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 13 (12 in the Vulgate numbering), sung here, is one of the Psalter's shortest laments, just six verses that pivot in the space of a single line from the fourfold cry \"How long, O Lord?\" to trust in God's mercy. The Introit quotes only this closing note of resolution, leaving the psalm's opening desperation for the chant's own verse, sung by the choir moments later in the same Mass.",
+      "source": "chantblog, “The Seventh Sunday after the Epiphany: Domine In Tua.”"
+    }
   },
   "gb148": {
     "id": "gb148",
@@ -5881,14 +7038,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-apostles",
         "part": "gradual",
-        "feastTitle": "St. Luke, Evangelist",
-        "rank": "Feast",
-        "dateMD": "10-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-apostles",
-        "part": "gradual",
         "feastTitle": "Sts. Simon and Jude, Apostles",
         "rank": "Feast",
         "dateMD": "10-28"
@@ -5933,7 +7082,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "7-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Nimis honorati sunt draws both its respond and its verse from Psalm 139, verses 17 and 18. The verse as the psalm has it does not end where the chant ends: the full line in the Vulgate continues, \"Exsurrexi, et adhuc sum tecum,\" meaning \"I rose up, and am still with thee,\" but the gradual sets that closing phrase aside, leaving the verse on the image of multiplication above the sand. In the Thomas formulary, this image is heard alongside the account in John 20 of Thomas refusing to believe until he had touched the wounds, and then confessing Christ.",
+      "source": "Ps. 139:17-18 (Vulgate numbering Ps. 138:17-18) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-21 (Missale Romanum formulary)"
+    }
   },
   "gb149": {
     "id": "gb149",
@@ -5962,7 +7115,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Stabant juxta crucem and its verse together stage the whole of John 19:25-27 in miniature: the antiphon sets the scene of Mary and the other women standing at the cross, and the verse then quotes Christ's own words from it, entrusting his mother to the disciple John. That verse is traditionally counted among the Seven Last Words of Christ from the cross, sometimes labeled the word of relationship, since it is the one saying addressed not to God but to two of the people standing before him.",
+      "source": "USCCB, New American Bible, John 19; Wikipedia, \"Sayings of Jesus on the cross.\""
+    }
   },
   "gb150": {
     "id": "gb150",
@@ -5989,7 +7146,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sung on the evening of December 24th, this anonymous chant's own transmission history mirrors its promise of something not-yet-fully-arrived: a comparison of the surviving manuscripts suggests the 8th-century original ended a step lower than the melody now in use, meaning generations of scribes let the final cadence drift a whole tone sharp over the centuries before it settled into today's version.",
+      "source": "AllMusic, \"Hodie scietis, introit (for Christmas Vigil Mass).\""
+    }
   },
   "gb153": {
     "id": "gb153",
@@ -6002,6 +7163,54 @@ window.CHANT_INDEX = {
     "translation": "Blessed is the man that fears the Lord: he shall delight exceedingly in his commandments. ℣. His seed shall be mighty upon earth: the generation of the righteous shall be blessed.",
     "source": "Graduale Romanum (GregoBase #153)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Timothy, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-24"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Polycarp, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Eusebius, Bishop and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Simeon, Bishop and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-18"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Blaise, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-3"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "gradual",
+        "feastTitle": "St. Stanislaus, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "5-7"
+      },
       {
         "calendar": "1962",
         "feastKey": "matthew",
@@ -6018,7 +7227,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-21"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beatus vir qui timet Dominum draws its title and its verses from the opening of Psalm 112. The gradual takes only the first two verses, stopping before verse 3, which the Clementine Vulgate continues: \"Gloria et divitiæ in domo ejus, et justitia ejus manet in sæculum sæculi.\" One small difference in wording is worth noting: where the Clementine Vulgate reads \"in mandatis ejus volet nimis,\" the chant sings \"cupit nimis,\" a variant that carries the same sense of ardent longing but uses a different Latin verb.",
+      "source": "Ps. 112:1-2 (Vulgate numbering Ps. 111:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb1547": {
     "id": "gb1547",
@@ -6026,7 +7239,7 @@ window.CHANT_INDEX = {
     "title": "Benedictus Dominus Deus Israel",
     "part": "gradual",
     "mode": "Gradual · The Baptism of the Lord · Mode VII",
-    "gabc": "(c3) BE(e)NE(e)DÍC(e/fgf)TUS(e/ffe) *(,) Dó(ehhi)mi(f)nus(ed/ef/fe) (;) De(gghf)us(hi) Is(igh)ra(fhGE)el,(ev//df/hg/hiffe/fe!hhf/heed) (:) qui(ef) fa(de)cit(effefvfe/fhhfh) (,) mi(ef)ra(e)bí(d!fh)li(hi)a(igh) ma(fg~)gna(e) (,) so(de/fe/fhg)lus(highvFE,ffe/ff//ef!hhhf/hvvGF/heed) (:) a(df) saé(f!hi/kki)cu(ihhvGE)lo.(f/hhh/ijhhe,hhjvIHGE//f!gwhg/ihhhvFE/fgffe) ℣.(::) Su(eh)scí(hi)pi(ijIH)ant(ihhg~) mon(hi/hihi)tes(iki!jwkjkvJIji) (;) pa(i/jg/hi//ji/jg/hi,kkh/jijvHF/gwh!iv//giHGE,fhgh//fh//ghFDe;ijIDfe//f!gwh!iv//h!kki,kj/lklvKI kjkvIHiwj)cem(ijhivHGhg) (:) pó(iji/kki/jil)pu(kj)lo(jlkk/iji) (,) tu(ij//hk/jki/jji)o,(i) (:) et(g!hi~) col(i/jg/hi//ji/jg/hi,kvvIH)les(ighvFE,fegvFEDdb) *(;) jus(e)tí(ef!gwh!ivHE//fhe/fe)ti(de)am.(e) (;) (ei/ki!jwki/kki/hhf//egFE) (::)",
+    "gabc": "(c3) BE(e)NE(e)DÍC(e/fgf)TUS(e/ffe) *(,) Dó(ehhi)mi(f)nus(ed/ef/fe) (;) De(gghf)us(hi) Is(igh)ra(fhGE)el,(ev//df/hg/hiffe/fe!hhf/heed) (:) qui(ef) fa(de)cit(effefvfe/fhhfh) (,) mi(ef)ra(e)bí(d!fh)li(hi)a(igh) ma(fg~)gna(e) (,) so(de/fe/fhg)lus(highvFE,ffe/ff//ef!hhhf/hvvGF/heed) (:) a(df) saé(f!hi/kki)cu(ihhvGE)lo.(f/hhh/ijhhe,hhjvIHGE//f!gwhg/ihhhvFE/fgffe) ℣.(::) Su(eh)scí(hi)pi(ijIH)ant(ihhg~) mon(hi/hihi)tes(iki!jwkjkvJIji) (;) pa(i/jg/hi//ji/jg/hi,kkh/jijvHF/gwh!iv//giHGE,fhgh//fh//ghFDe;ijIDfe//f!gwh!iv//h!kki,kj/lklvKIkjkvIHiwj)cem(ijhivHGhg) (:) pó(iji/kki/jil)pu(kj)lo(jlkk/iji) (,) tu(ij//hk/jki/jji)o,(i) (:) et(g!hi~) col(i/jg/hi//ji/jg/hi,kvvIH)les(ighvFE,fegvFEDdb) *(;) jus(e)tí(ef!gwh!ivHE//fhe/fe)ti(de)am.(e) (;) (ei/ki!jwki/kki/hhf//egFE) (::)",
     "latin": "Benedíctus Dóminus Deus Israel, qui facit mirabília magna solus a saéculo. ℣. Suscípiant montes pacem pópulo tuo, et colles justítiam.",
     "translation": "Blessed be the Lord, the God of Israel, who alone does wondrous things from of old. ℣. Let the mountains receive peace for your people, and the hills justice.",
     "source": "Graduale Romanum (GregoBase #1547)",
@@ -6038,7 +7251,56 @@ window.CHANT_INDEX = {
         "feastTitle": "The Baptism of the Lord",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus Dominus Deus Israel opens both this Gradual and the canticle of Zechariah in Luke 1:68, the song Zechariah sang at the circumcision of his son John the Baptist, and the canticle takes its Latin name from those opening words. The canticle falls into two parts: the first is a song of thanksgiving, and the second is Zechariah's direct address to his son John, foretelling the son's mission as the prophet who would go before the Lord to prepare his way.",
+      "source": "Wikipedia, \"Benedictus (canticle)\" (rev. 1366992158)"
+    }
+  },
+  "gb156": {
+    "id": "gb156",
+    "gregobaseId": "156",
+    "title": "Confitebuntur caeli",
+    "part": "alleluia",
+    "mode": "Alleluia · Common of a Martyr (Paschal Time) · Mode III",
+    "gabc": "(c4) COn(fd~)fi(dfe)te(fg)bún(gffvEDef)tur(f.) *(,) cae(fhG'FhvGFgvFE)li(e.) (;) mi(g)ra(hih)bí(iji)li(hi)a(hg) tu(gh/ihi)a(h_g) (,) Dó(gh/ih/i_[oh:h]h)mi(ghg___)ne,(g.) (:) et(ge~) ve(g)ri(hih)tá(jj/ikijvI'HG'h)tem(g.) (,) tu(gv.egffdgvFE'fd.0/egF'EfvEDe)am(d/efef.) (;) in(d) ec(e)clé(gh)si(g_[oh:h]f)a(fff/d_[oh:h]e_[oh:h]d._[oh:h]) (,) san(g)ctó(gh/ih)rum.(hv.ghGEf_g//fgFDf_h//ghGEf_g//fgFE.) (::)",
+    "latin": "Allelúia. ℣. Confitebúntur caéli mirabília tua, Dómine : et veritátem tuam in ecclésia sanctórum.",
+    "translation": "Alleluia. ℣. The heavens shall confess your wonders, O Lord: and your truth in the church of the saints.",
+    "source": "Graduale Romanum (GregoBase #156)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-2-paschal",
+        "part": "alleluia",
+        "feastTitle": "Common of a Martyr (Beatus vir) (Paschaltide)",
+        "rank": ""
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-2-paschal",
+        "part": "offertory",
+        "feastTitle": "Common of a Martyr (Beatus vir) (Paschaltide)",
+        "rank": ""
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-paschal",
+        "part": "alleluia",
+        "feastTitle": "Common of a Martyr (In virtute tua) (Paschaltide)",
+        "rank": ""
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-paschal",
+        "part": "offertory",
+        "feastTitle": "Common of a Martyr (In virtute tua) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Confitebuntur caeli draws a single verse from Psalm 89, set at a hinge between two movements in the psalm. The verses just before it speak of God's oath to establish David's seed and throne forever; the verses just after ask who in the clouds can be compared to the Lord, and call God great and terrible above all them that are about him. The chosen verse turns from that covenant faithfulness toward the assembly of saints who declare his wonders, and that turning gives it a natural fitness as the alleluia verse for a martyr's feast.",
+      "source": "Ps. 89:6 (Vulgate numbering Ps. 88:6) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb1581": {
     "id": "gb1581",
@@ -6067,7 +7329,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit names \"Laetare Sunday,\" Lent's one day of rose vestments and relaxed penance. It is also traditionally \"Dominica de Rosa\": popes historically blessed the Golden Rose (Rosa d'Oro), a gift for a Catholic sovereign, at Rome's station church of Santa Croce in Gerusalemme on this day.",
+      "text": "Laetare Sunday takes its name from this Introit, and it is also traditionally called Dominica de Rosa. Lent's rose vestments and relaxed penance belong to this one day. Popes historically blessed the Golden Rose, a gift for a Catholic sovereign, at Rome's station church of Santa Croce in Gerusalemme on this day.",
       "source": "Liturgical Arts Journal, \"The Tradition of the Rosa d'Oro (Golden Rose) of Laetare Sunday\"; Catholic Encyclopedia, \"Laetare Sunday.\""
     }
   },
@@ -6089,7 +7351,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 118:16 repeats the Lord's right hand three times, but Dextera Dei fecit virtutem stops after its second phrase. The Alleluia for the fifth Sunday of Easter keeps strength and exaltation together in a brief acclamation.",
+      "source": "Ps. 118:16 (Vulgate numbering Ps. 117:16) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb160": {
     "id": "gb160",
@@ -6134,7 +7400,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "5-31"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beata viscera alludes to Luke 11:27, where a woman in the crowd calls out to Jesus, in the Latin of the Vulgate: \"Beatus venter qui te portavit, et ubera quæ suxisti.\" The chant text draws on that cry but reshapes it, naming Mary by name, specifying her virginity, and identifying the child as the Son of the eternal Father. The same text was also set as a monophonic conductus by Pérotin (fl. c. 1200), the Notre Dame composer: Anonymous IV, a late-thirteenth-century English student who studied in Paris, lists \"Beata viscera etc.\" among Pérotin's works of that form.",
+      "source": "Cf. Luke 11:27 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Pérotin\" (rev. 1367640205)"
+    }
   },
   "gb167": {
     "id": "gb167",
@@ -6154,7 +7424,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "\"Crastina,\" tomorrow, gives this Alleluia verse its particular weight when sung at the Vigil Mass. The Vigil is celebrated on the eve of the Nativity, so the proclamation that tomorrow the iniquity of the earth will be abolished and the Saviour will reign is not a figure of speech but a liturgical statement. The day the verse points toward is Christmas Day, now hours away.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb17": {
     "id": "gb17",
@@ -6181,7 +7455,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Ascension of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ascendit Deus in jubilatione draws a single line from Psalm 47, verse 6, a psalm whose argument is the Gentiles invited to praise God for the establishment of the kingdom of Christ. The verse immediately before it speaks of God choosing the beauty of Jacob as his inheritance, and the verse immediately after reads \"Sing praises to our God, sing ye: sing praises to our king, sing ye,\" the cry of universal praise that the single quoted verse both crowns and sets in motion.",
+      "source": "Ps. 47:6 (Vulgate numbering Ps. 46:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb171": {
     "id": "gb171",
@@ -6208,7 +7486,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 24 repeats its command to the gates in verses 7 and 9, framing the question of the King of glory. The Christmas Vigil Offertory uses the first of those refrains as Christ's coming draws near.",
+      "source": "Ps. 24:7 (Vulgate numbering Ps. 23:7) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb172": {
     "id": "gb172",
@@ -6235,7 +7517,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Da pacem Domine has a life well beyond this one Sunday. The same antiphon text became a cantus firmus for Renaissance polyphony, most famously Josquin des Prez's five-voice motet and the Mass built on it, and it was set again in 2004 by Arvo Pärt, who began composing his own Da pacem Domine just two days after the Madrid train bombings as a tribute to the victims.",
+      "source": "Emmanuel Music, \"Motet Notes - Pärt: Da pacem, Domine\"; Wikipedia, \"Da pacem Domine (Pärt).\""
+    }
   },
   "gb174": {
     "id": "gb174",
@@ -6248,13 +7534,6 @@ window.CHANT_INDEX = {
     "translation": "With your comeliness and your beauty, set out, proceed prosperously, and reign. ℣. Because of truth, and meekness, and justice: and your right hand shall conduct you wonderfully.",
     "source": "Graduale Romanum (GregoBase #174)",
     "usages": [
-      {
-        "calendar": "1962",
-        "feastKey": "common-holy-women",
-        "part": "gradual",
-        "feastTitle": "Common of holy women",
-        "rank": ""
-      },
       {
         "calendar": "1962",
         "feastKey": "common-virgin",
@@ -6336,17 +7615,10 @@ window.CHANT_INDEX = {
         "dateMD": "8-30"
       },
       {
-        "calendar": "1962",
-        "feastKey": "common-virgin-not-martyr",
-        "part": "gradual",
-        "feastTitle": "Common of virgin not martyr",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-holy-women",
         "part": "gradual",
-        "feastTitle": "Common of holy women",
+        "feastTitle": "Common of Holy Women (Cognovi)",
         "rank": ""
       },
       {
@@ -6380,6 +7652,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Gertrude, Virgin",
         "rank": "Optional Memorial",
         "dateMD": "11-16"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-virgin",
+        "part": "gradual",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Memorial",
+        "dateMD": "12-13"
       },
       {
         "calendar": "modern",
@@ -6433,10 +7713,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-not-martyr",
         "part": "gradual",
-        "feastTitle": "Common of virgin not martyr",
+        "feastTitle": "Common of a Virgin (Dilexisti)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Specie tua draws its respond and versicle from a single verse of Psalm 45, splitting verse 5 across the two parts: the respond takes the first half, the versicle the second. The Gospel appointed for this Common is the parable of the ten virgins from Matthew 25, in which the virgins go out to meet the bridegroom. The gradual's address to one who will \"proceed prosperously, and reign\" leads directly into that parable.",
+      "source": "Ps. 45:5 (Vulgate numbering Ps. 44:5) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6 (Missale Romanum formulary)"
+    }
   },
   "gb1767": {
     "id": "gb1767",
@@ -6465,7 +7749,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit's opening word gives the Third Sunday of Advent its own name, Gaudete Sunday. Its chorus melody, first printed in the 1582 Finnish/Swedish songbook Piae Cantiones, went on to a life well beyond the liturgy as the popular carol “Gaudete” — most famously recorded by the British folk-rock band Steeleye Span in 1973.",
+      "text": "The opening word of this Introit gives the Third Sunday of Advent its own name, Gaudete Sunday. Its chorus melody was first printed in the 1582 Finnish/Swedish songbook Piae Cantiones, and went on to a life well beyond the liturgy as the popular carol \"Gaudete,\" most famously recorded by the British folk-rock band Steeleye Span in 1973.",
       "source": "Wikipedia, “Gaudete”; California Bach Society program notes, “Program notes for Gaudete.”"
     }
   },
@@ -6489,13 +7773,6 @@ window.CHANT_INDEX = {
         "dateMD": "2-2"
       },
       {
-        "calendar": "1962",
-        "feastKey": "common-holy-women",
-        "part": "offertory",
-        "feastTitle": "Common of holy women",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "candlemas",
         "part": "offertory",
@@ -6507,10 +7784,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-holy-women",
         "part": "offertory",
-        "feastTitle": "Common of holy women",
+        "feastTitle": "Common of Holy Women (Cognovi)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Diffusa est gratia begins in the middle of Psalm 45:3, dropping the verse's opening phrase, which in the Douay-Rheims reads \"Thou art beautiful above the sons of men.\" The psalm verse itself closes with \"benedixit te Deus in æternum,\" blessing \"for ever,\" but the Offertory extends that ending with \"et in saéculum saéculi,\" a second, emphatic phrase meaning \"and for ages of ages\" that does not appear in the psalm verse as it stands.",
+      "source": "Ps. 45:3 (Vulgate numbering Ps. 44:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb18120": {
     "id": "gb18120",
@@ -6541,7 +7822,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Another instance of the reusable \"Gaudeamus\" festal formula (same melody/text shape, the saint's name and feast swapped in) already noted on the All Saints entry: this Nativity-of-Mary version, with its \"de cujus Nativitate gaudent Angeli\" wording, is one of the same formula's other historical uses documented from the 11th century onward.",
+      "text": "\"Gaudeamus omnes in Domino\" is a reusable festal formula whose melody and text shape remain the same while the saint's name and feast are swapped in for different occasions. This Nativity-of-Mary version is one of the formula's historical uses documented from the 11th century onward, as is the All Saints version noted elsewhere in this app.",
       "source": "chantblog, \"The Introit for the Solemnity of All Saints: Gaudeamus Omnes.\""
     }
   },
@@ -6570,7 +7851,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exspectans exspectavi moves across three verses of Psalm 40, but the compiler cut the heart of verse 3, which reads in the Douay-Rheims, \"he brought me out of the pit of misery and the mire of dregs; and he set my feet upon a rock, and directed my steps.\" The offertory keeps only the opening cry of waiting and the closing gift of the new song, letting nothing stand between them. The compiler also made small departures from the Clementine Vulgate: where the psalm says \"intendit mihi\" (he was attentive to me) the chant reads \"respexit me\" (he looked upon me), and where the psalm ends verse 4 with \"many shall see, and shall fear: and they shall hope in the Lord,\" the chant stops before that line.",
+      "source": "Ps. 40:2, 3, 4 (Vulgate numbering Ps. 39:2, 3, 4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb184": {
     "id": "gb184",
@@ -6591,7 +7876,11 @@ window.CHANT_INDEX = {
         "rank": "Simplex",
         "dateMD": "7-30"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Saints Abdon and Sennen's Communion laments that the bodies of God's servants have been given to the birds and beasts, then asks God to hear the prisoners' sighing. It keeps that prayer for God's servants who have been put to death.",
+      "source": "Ps. 79:2, 11 (Vulgate numbering Ps. 78:2, 11) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-07-30 (Missale Romanum formulary)"
+    }
   },
   "gb195": {
     "id": "gb195",
@@ -6620,7 +7909,36 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-14"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Exaltation formulary tells how Christ's lifting up will draw all things to him. Protege Domine turns the cross into a direct petition, asking protection from enemies and an acceptable offering of service and sacrifice.",
+      "source": "Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-09-14 (Missale Romanum formulary)"
+    }
+  },
+  "gb198": {
+    "id": "gb198",
+    "gregobaseId": "198",
+    "title": "Declinabo super eum",
+    "part": "alleluia",
+    "mode": "Alleluia · St. Boniface, Bishop and Martyr · Mode I",
+    "gabc": "(c4) AL(d)le(efg)lú(he/fgFE'e){ia}.(d.) *(,) ij.(cec/dd/e[ll:1]d.0//eg/!he./!fvEDevDCdd) (,) (d/hhhg/!gd.//eg/!he./!fvEDevDCdd) (,) (fegvFED.//fegvFE'fd.cd!efee[ll:1]d.0) (::) ℣. De(de)cli(cd)ná(d/hhhg/!gd.//eg/!he./!fvEDevDCd)bo(d.) (,) su(cd)per(d/hhh) e(ggfg)um(g_[oh:h]d) (;) qua(e)si(c) flú(eg)vi(ge)um(fvECefED'd) pa(cd)cis,(d.) (:) et(hjjvIH'i) qua(h)si(g) tor(h)rén(jvIGivHGh.)(,)(kijvIH//gihjvIHivHG)tem(h.) (,) in(h)un(hvGEfg~)dán(gvFE'fd)tem(d.) *(;) gló(efg)ri(he/fgFE'e)am.(d.) (,) (cec/dd/e[ll:1]d.0//eg/!he./!fvEDevDCdd) (,) (d/hhhg/!gd.//eg/!he./!fvEDevDCdd) (,) (fegvFED.//fegvFE'fd.cd!efee[ll:1]d.0) (::)",
+    "latin": "Allelúia. ℣. Declinábo super eum quasi flúvium pacis, et quasi torréntem inundántem glóriam.",
+    "translation": "Alleluia. ℣. I will turn upon her a river of peace, and as an overflowing torrent, glory.",
+    "source": "Graduale Romanum (GregoBase #198, Solesmes) — per Sancti/06-05.txt's [Graduale] second verse block (Is 66:12).",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "boniface",
+        "part": "alleluia",
+        "feastTitle": "St. Boniface, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      }
+    ],
+    "commentary": {
+      "text": "Isaiah 66 addresses Jerusalem, and the Vulgate uses the feminine pronoun: \"declinabo super eam,\" upon her. This alleluia verse quietly shifts to \"super eum,\" upon him, redirecting the image of a river of peace toward Boniface himself. The compiler also stops midway through the verse, before the Vulgate's \"gloriam gentium\" and before the closing image of being carried at the breast and caressed upon the knee, leaving only the single flowing image of peace and glory.",
+      "source": "Is. 66:12 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb200": {
     "id": "gb200",
@@ -6653,19 +7971,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "dedication-lateran",
         "part": "offertory",
-        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
-        "rank": "Optional Memorial",
-        "dateMD": "11-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "dedication-lateran",
-        "part": "offertory",
         "feastTitle": "The Dedication of the Lateran Basilica",
         "rank": "Feast",
         "dateMD": "11-9"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine Deus in simplicitate draws from David's prayer in 1 Paralipomenon 29:17-18, spoken as he presents the offerings gathered for the building of the temple. The chant begins mid-verse, stepping straight into the act of offering and omitting the opening words of verse 17, \"Scio, Deus meus, quod probes corda, et simplicitatem diligas, unde et ego\" (I know, my God, that thou provest hearts and lovest simplicity, wherefore I also). At the close, the full address of verse 18, \"Domine Deus Abraham, et Isaac, et Israël patrum nostrorum,\" is compressed to \"Deus Israel,\" and the petition that the people's devotion \"semper in venerationem tui mens ista permaneat\" (remain always for thy worship) is set aside, leaving the chant to end on the repeated invocation \"Domine Deus.\"",
+      "source": "1 Par. 29:17-18 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb202": {
     "id": "gb202",
@@ -6692,7 +8006,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exodus promises that the people will know the Lord has brought them out of Egypt and will see his glory in the morning. The Gradual's word today gives that ancient promise its place at the threshold of Christmas.",
+      "source": "Ex. 16:6, 7 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-24 (Missale Romanum formulary)"
+    }
   },
   "gb2028": {
     "id": "gb2028",
@@ -6719,7 +8037,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Factus est repente joins Acts 2:2 and 2:4, skipping verse 3 entirely. Verse 3, which lies between the two quoted lines, describes the tongues of fire that appeared and rested on each of the disciples. The antiphon also reworks the close of verse 4: where Acts says they \"began to speak with divers tongues, according as the Holy Ghost gave them to speak,\" the antiphon ends instead with \"loquéntes magnália Dei,\" speaking the wonderful works of God.",
+      "source": "Acts 2:2, 4 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb205": {
     "id": "gb205",
@@ -6746,7 +8068,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Epiphany of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Omnes de Saba venient joins the gifts of gold and frankincense with the praise of the Lord. Isaiah's oracle begins by calling Jerusalem to rise because the Lord's glory has risen upon her, so the Gradual holds gift and praise within that light.",
+      "source": "Is. 60:6, 1 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-01-06 (Missale Romanum formulary)"
+    }
   },
   "gb208": {
     "id": "gb208",
@@ -6785,10 +8111,11 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "1962",
-        "feastKey": "common-virgin-not-martyr",
+        "feastKey": "common-virgin-martyr",
         "part": "alleluia",
-        "feastTitle": "Common of virgin not martyr",
-        "rank": ""
+        "feastTitle": "St. Agatha, Virgin and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-5"
       },
       {
         "calendar": "modern",
@@ -6802,25 +8129,9 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "alleluia",
-        "feastTitle": "St. Cecilia, Virgin and Martyr",
-        "rank": "Optional Memorial",
-        "dateMD": "11-22"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "alleluia",
         "feastTitle": "St. Catherine of Alexandria, Virgin and Martyr",
         "rank": "Optional Memorial",
         "dateMD": "11-25"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "alleluia",
-        "feastTitle": "St. Lucy, Virgin and Martyr",
-        "rank": "Memorial",
-        "dateMD": "12-13"
       },
       {
         "calendar": "modern",
@@ -6834,10 +8145,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-not-martyr",
         "part": "alleluia",
-        "feastTitle": "Common of virgin not martyr",
+        "feastTitle": "Common of a Virgin (Dilexisti)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Adducentur Regi virgines draws on Psalm 45:15-16, but the compiler shaped the text carefully. Verse 15 opens with \"circumamicta varietatibus\" (clothed round about with varieties), which the chant skips entirely, beginning instead with \"Adducentur regi virgines post eam.\" From verse 16 the compiler borrows only \"in laetitia,\" dropping both \"et exsultatione\" and the closing phrase \"adducentur in templum regis.\" The result is a single, focused image of the virgins being led to the King in gladness, with the temple destination left aside.",
+      "source": "Ps. 45:15-16 (Vulgate numbering Ps. 44:15-16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb210": {
     "id": "gb210",
@@ -6889,7 +8204,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Ave Maria Offertory draws its text entirely from a single verse, Luke 1:28, the angel Gabriel's greeting to Mary at the Annunciation. The chant reproduces the verse almost exactly as it stands in the Vulgate, \"Ave gratia plena : Dominus tecum : benedicta tu in mulieribus\", and then adds \"alleluia\", a word that appears nowhere in the surrounding biblical passage. The very next verse of Luke, not sung, records that Mary \"was troubled\" at these words and wondered what the salutation could mean.",
+      "source": "Luke 1:28 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb211": {
     "id": "gb211",
@@ -6923,7 +8242,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ascendit Deus in jubilatione draws a single verse from Psalm 47, a psalm whose argument is the invitation of the Gentiles to praise God for the establishment of the kingdom of Christ. The offertory takes verse 6 alone, setting aside the verses before it, which speak of peoples subdued and nations laid under God's feet, and the verses after it, which call all the earth to sing praises to its king. The chant holds to the moment of ascent itself, surrounded in the psalm by conquest on one side and praise on the other.",
+      "source": "Ps. 47:6 (Vulgate numbering Ps. 46:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb216": {
     "id": "gb216",
@@ -6931,7 +8254,7 @@ window.CHANT_INDEX = {
     "title": "Gaudete justi in Domino",
     "part": "alleluia",
     "mode": "Alleluia · The Holy Family · Mode IV",
-    "gabc": "(c4) AL(d!ff)le(ef)lú(ghG'Fggh){ia}.(hjHG'gf.0) (;) * ij.(ghg'hvGF'fd./ghG'F//g_[oh:h]f/gffe.) (::) ℣. Gau(fffg~)dé(ixdg/hg/hi)te(h) ju(hhgh)sti(e.) (,) in(f!gwhg~) Dó(hhg)mi(hgh)no :(fgf'gvd_[oh:h]e_[oh:h]d._[oh:h]) (:) re(d!ffd/ffd d!ef!gh)ctos(ghg.) (,) de(h_f/gffv//ce'!gv//hgg'g//ggge//fefvED//fgfg)cet(fe..) (;) * col(e!fwg'!hv)lau(gh~)dá(hvGF)ti(ghg)o.(hjHG'gf.0) (;) (ghg'hvGF'fd./ghG'F//g_[oh:h]f/gffe.) (::)",
+    "gabc": "(c4) AL(d!ff)le(ef)lú(ghG'Fggh){ia}.(hjHG'gf.0) (;) * ij.(ghg'hvGF'fd./ghG'F//g_[oh:h]f/gffe.) (::) ℣. Gau(fffg~)dé(ixdg/hg/hi)te(h) ju(hhgh)sti(e.) (,) in(f!gwhg~) Dó(hhg)mi(hgh)no :(fgf'gvd_[oh:h]e_[oh:h]d._[oh:h]) (:) re(d!ffd/ffdd!ef!gh)ctos(ghg.) (,) de(h_f/gffv//ce'!gv//hgg'g//ggge//fefvED//fgfg)cet(fe..) (;) * col(e!fwg'!hv)lau(gh~)dá(hvGF)ti(ghg)o.(hjHG'gf.0) (;) (ghg'hvGF'fd./ghG'F//g_[oh:h]f/gffe.) (::)",
     "latin": "Allelúia. ℣. Gaudéte, justi, in Dómino : rectos decet collaudátio.",
     "translation": "Alleluia. ℣. Rejoice in the Lord, you just: praise becomes the upright.",
     "source": "Graduale Romanum (GregoBase #216)",
@@ -6959,7 +8282,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "7-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gaudete justi in Domino draws its verse from the opening of Psalm 33, though the chant quietly substitutes \"Gaudete\" for the Clementine Vulgate's \"Exsultate,\" arriving at the same meaning, rejoicing in the Lord, by a slightly different word. The psalm's second and third verses go on to name the instruments and the new song with which that praise is to be offered.",
+      "source": "Ps. 33:1 (Vulgate numbering Ps. 32:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb217": {
     "id": "gb217",
@@ -6986,7 +8313,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Dawn)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 118 supplies the body and verse of this Gradual, though not in sequence. The body draws from verses 26 and 27, trims both passages, and then reaches back to verse 23. Verse 24 remains between them unused: \"This is the day which the Lord hath made: let us be glad and rejoice therein.\"",
+      "source": "Ps. 118:26, 27, 23 (Vulgate numbering Ps. 117:26, 27, 23) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb218": {
     "id": "gb218",
@@ -7013,7 +8344,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Advent (Gaudete Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Isaiah 35:4 speaks directly to the fainthearted, telling them to take courage and not fear. The Gaudete Sunday Communion places that command beside the promise that God will come and save.",
+      "source": "Is. 35:4 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Adv3-0.txt [Officium heading]; Divinum Officium, Adv3-0 (Missale Romanum formulary)"
+    }
   },
   "gb222": {
     "id": "gb222",
@@ -7021,7 +8356,7 @@ window.CHANT_INDEX = {
     "title": "Adjutor in opportunitatibus",
     "part": "gradual",
     "mode": "Gradual · Mode III",
-    "gabc": "(c4) AD(gj~)jú(jjg/hjH'Ghjh/ij)tor(j.) *(,) in(j) op(ij'k)por(kl~)tu(j_i)ni(jjjhk)tá(kjjh)ti(jhig)bus,(g.) (;) in(gd~) tri(ghg)bu(gd)la(g)ti(hj)ó(iijI'Gh'/jhhfg//jjhig)ne :(g.) (:) spe(jjk)rent(j) in(jjj) te,(hv.ghGE.) (;) qui(ef) no(e)vé(d!f'h)runt(h) te :(jhjGF'gffd.) (:) quó(dc)ni(g)am(hi~) non(ijjvH'Gh!jj//h!jjjh/i_[oh:h]g/hffe.) de(ef)re(e)lín(ef'h)quis(hg__) (,) quae(hggf)rén(hj~)tes(j_i) te,(jjjgivHGh.) (;) Dó(ef!gh/ijgh./fg/!ih'ivH'Gh)mi(f_/fef___)ne.(fefgfg.) (,) (gv//jjhghgge.) (::) ℣. Quó(e[ll:1]d)ni(g)am(hi~) non(ij'k/ijij//h!jij/hiH'Gi.) (,) ([oll:1{1]il!mvKI.kl[oll:}]/JH.1jijHGjg/i_[uh:l]j//gh!jjjvH'GF'fd.) in(d) fi(d!f'h)nem(hg__) (,) ob(g_[oh:h]f)lí(f!h'j)vi(j_i)o(jjj_g) (,) e(g_[oh:h]f)rit(gffd) páu(f/gh~)pe(e!gfg)ris :(fe..) (:) pa(d)ti(e)én(g)ti(h)a(g) páu(h_j_i_3!jwk/lj~)pe(jjij)rum(ji..) (;) non(ij~) per(j)í(jj)bit(jij) in(hi) ae(gjh)tér(iv.g.h!iwjjhi g.h!iwjjhi)num :(g.) (:) ex(g)súr(jj)ge,(kjjg) Dó(jj)mi(jlk)ne,(kjjg.) (,) non(j) prae(j_i)vá(j_i)le(jjjh)at(hv.ghGE.) *(;) ho(fd/ffd/ef/gh/jjj_i)(,)(hjIH.giH'GhvF'Ef)mo.(d!ewf/gfg.) (,) (gv//jjhghgge.) (::)",
+    "gabc": "(c4) AD(gj~)jú(jjg/hjH'Ghjh/ij)tor(j.) *(,) in(j) op(ij'k)por(kl~)tu(j_i)ni(jjjhk)tá(kjjh)ti(jhig)bus,(g.) (;) in(gd~) tri(ghg)bu(gd)la(g)ti(hj)ó(iijI'Gh'/jhhfg//jjhig)ne :(g.) (:) spe(jjk)rent(j) in(jjj) te,(hv.ghGE.) (;) qui(ef) no(e)vé(d!f'h)runt(h) te :(jhjGF'gffd.) (:) quó(dc)ni(g)am(hi~) non(ijjvH'Gh!jj//h!jjjh/i_[oh:h]g/hffe.) de(ef)re(e)lín(ef'h)quis(hg__) (,) quae(hggf)rén(hj~)tes(j_i) te,(jjjgivHGh.) (;) Dó(ef!gh/ijgh./fg/!ih'ivH'Gh)mi(f_/fef___)ne.(fefgfg.) (,) (gv//jjhghgge.) (::) ℣. Quó(e[ll:1]d)ni(g)am(hi~) non(ij'k/ijij//h!jij/hiH'Gi.) (,) ([oll:1{1]il!mvKI.kl[oll:}]/JH.1jijHGjg/i_[uh:l]j//gh!jjjvH'GF'fd.) in(d) fi(d!f'h)nem(hg__) (,) ob(g_[oh:h]f)lí(f!h'j)vi(j_i)o(jjj_g) (,) e(g_[oh:h]f)rit(gffd) páu(f/gh~)pe(e!gfg)ris :(fe..) (:) pa(d)ti(e)én(g)ti(h)a(g) páu(h_j_i_3!jwk/lj~)pe(jjij)rum(ji..) (;) non(ij~) per(j)í(jj)bit(jij) in(hi) ae(gjh)tér(iv.g.h!iwjjhig.h!iwjjhi)num :(g.) (:) ex(g)súr(jj)ge,(kjjg) Dó(jj)mi(jlk)ne,(kjjg.) (,) non(j) prae(j_i)vá(j_i)le(jjjh)at(hv.ghGE.) *(;) ho(fd/ffd/ef/gh/jjj_i)(,)(hjIH.giH'GhvF'Ef)mo.(d!ewf/gfg.) (,) (gv//jjhghgge.) (::)",
     "latin": "Adjútor in opportunitátibus, in tribulatióne : sperent in te, qui novérunt te : quóniam non derelínquis quaeréntes te, Dómine. ℣. Quóniam non in finem oblívio erit páuperis : patiéntia páuperum non períbit in aetérnum : exsúrge, Dómine, non praeváleat homo.",
     "translation": "A helper in due time, in tribulation: let them trust in you who know you: for you do not forsake those who seek you, O Lord. ℣. For the poor man shall not always be forgotten: the patience of the poor shall not perish for ever: arise, O Lord, let not man prevail.",
     "source": "Graduale Romanum (GregoBase #222)",
@@ -7033,7 +8368,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Septuagesima Sunday",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The respond opens mid-verse: Psalm 9:10 in the Vulgate begins \"Et factus est Dominus refugium pauperi\" (the Lord has become a refuge for the poor) before continuing with the words sung here, but the compiler dropped that opening clause and began the chant at \"adjutor in opportunitatibus.\" The versicle likewise ends early, stopping at \"non praevaleat homo\" and leaving the closing words of Psalm 9:20, \"judicentur gentes in conspectu tuo\" (let the nations be judged in thy sight), unsung.",
+      "source": "Ps. 9:10-11, 19-20 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb224": {
     "id": "gb224",
@@ -7060,7 +8399,108 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Veni Domine et noli tardare asks the Lord to come without delay and to forgive the sins of his people. At the Rorate Mass, the short verse becomes a direct cry for the Lord's coming.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
+  },
+  "gb227": {
+    "id": "gb227",
+    "gregobaseId": "227",
+    "title": "Sacerdotes Dei",
+    "part": "introit",
+    "mode": "Introit · Common of a Martyr Bishop · Mode VI",
+    "gabc": "(c4) SA(d)cer(bxdbc)dó(dc/fffg)tes(f) De(fg)i,(f.) *(;) be(f)ne(f)dí(fg'h)ci(h)te(ixjhiGF'fghi.g!hw!ivHG') Dó(f)mi(fg!hvGF'g)num;(gf..) (:) san(f)cti(fff) et(d) hú(d!ffd)mi(dcf)les(ghf) cor(gh~)de,(h.) (;) lau(fg~)dá(gjjh)te(h.) De(fgh!jvvH'GF'fh'GFgf)um.(f.)",
+    "latin": "Sacerdótes Dei, benedícite Dóminum : sancti et húmiles corde, laudáte Deum.",
+    "translation": "O priests of God, bless the Lord: holy and humble of heart, praise God.",
+    "source": "Graduale Romanum (GregoBase #227)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Marcellus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "1-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Callistus I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-14"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Evaristus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Martin I, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "11-12"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Clement I, Pope and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Anicetus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "4-17"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Felix I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "5-30"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Silverius, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "6-20"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Pius I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "7-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "introit",
+        "feastTitle": "St. Zephyrinus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "8-26"
+      }
+    ],
+    "commentary": {
+      "text": "Sacerdotes Dei draws two verses from the canticle sung by the three young men in the furnace in Daniel 3, a litany that moves through priests, servants, spirits of the just, and many others, each called in turn to bless the Lord. The introit takes verse 84 and verse 87, passing over the two verses between them, and joins them directly. The wording is also compressed: where the Vulgate of verse 84 reads \"Benedicite, sacerdotes Domini, Domino,\" the chant gives \"Sacerdotes Dei, benedicite Dominum,\" and the closing \"laudate et superexaltate eum in sæcula\" becomes the briefer \"laudate Deum.\"",
+      "source": "Dan. 3:84, 87 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb228": {
     "id": "gb228",
@@ -7073,6 +8513,22 @@ window.CHANT_INDEX = {
     "translation": "Alleluia. ℣. You are Peter, and upon this rock I will build my Church.",
     "source": "Graduale Romanum (GregoBase #228)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "alleluia",
+        "feastTitle": "St. Damasus I, Pope and Confessor",
+        "rank": "Duplex",
+        "dateMD": "12-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "alleluia",
+        "feastTitle": "St. Anacletus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "7-13"
+      },
       {
         "calendar": "1962",
         "feastKey": "peter-paul",
@@ -7096,7 +8552,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tu es Petrus quotes only the opening clause of Matthew 16:18, stopping before the rest of the sentence, which continues in the Vulgate: \"et portæ inferi non prævalebunt adversus eam\" (and the gates of hell shall not prevail against it). The following verse, 19, with its promise of the keys of the kingdom of heaven, also goes unsung. The chant sets the single act of naming: the rock, and the church to be built upon it.",
+      "source": "Matt. 16:18 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb229": {
     "id": "gb229",
@@ -7104,7 +8564,7 @@ window.CHANT_INDEX = {
     "title": "Unam petii a Domino",
     "part": "gradual",
     "mode": "Gradual · The Holy Family · Mode V",
-    "gabc": "(c4) U(ffg)nam(f) pé(ghgh)ti(g)i(fgFD.1) (,) * a(d) Dó(dgf/gh)mi(g)no,(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) hanc(hj~) re(j_h)quí(jhjjh)ram,(h.) (;) ut(h) in(hj)há(j)bi(ixij!kvJ'IHi)tem(ih..) (,) in(ixi) do(hhg)mo(gh) Dó(hg/hf/g_[oh:h]f)mi(ef)ni.(ixf./hiHF.) (,) (hg/hjhh/fgf.) (z0::c3) ℣. Ut(d) ví(d)de(f)am(gxfh/ih/i_[oh:h]h//ivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0d'dd!f_h/ijh.1) (;) vo(hi)lu(h)ptá(h)tem(hg/ij) Dó(i_[oh:h]h)mi(h)ni :(hg/i_[oh:h]h//jvIH'Ghf..) (:) et(hh) pró(ih/ij_h ih/ij_ij//hi/jij)te(j)gar(jh/jkihh/fgf.) (;) a(d) tem(d)plo(d) san(dfE'D)cto(ef) *() e(fhG'Fhhh)jus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) U(ffg)nam(f) pé(ghgh)ti(g)i(fgFD.1) (,) * a(d) Dó(dgf/gh)mi(g)no,(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) hanc(hj~) re(j_h)quí(jhjjh)ram,(h.) (;) ut(h) in(hj)há(j)bi(ixij!kvJ'IHi)tem(ih..) (,) in(ixi) do(hhg)mo(gh) Dó(hg/hf/g_[oh:h]f)mi(ef)ni.(ixf./hiHF.) (,) (hg/hjhh/fgf.) (z0::c3) ℣. Ut(d) ví(d)de(f)am(gxfh/ih/i_[oh:h]h//ivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0d'dd!f_h/ijh.1) (;) vo(hi)lu(h)ptá(h)tem(hg/ij) Dó(i_[oh:h]h)mi(h)ni :(hg/i_[oh:h]h//jvIH'Ghf..) (:) et(hh) pró(ih/ij_hih/ij_ij//hi/jij)te(j)gar(jh/jkihh/fgf.) (;) a(d) tem(d)plo(d) san(dfE'D)cto(ef) *() e(fhG'Fhhh)jus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Unam pétii a Dómino, hanc requíram, ut inhábitem in domo Dómini. ℣. Ut vídeam voluptátem Dómini : et prótegar a templo sancto ejus.",
     "translation": "One thing I have asked of the Lord, this will I seek after: that I may dwell in the house of the Lord. ℣. That I may see the delight of the Lord: and may be protected from his holy temple.",
     "source": "Graduale Romanum (GregoBase #229)",
@@ -7130,7 +8590,11 @@ window.CHANT_INDEX = {
         "feastTitle": "30th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Unam petii a Domino draws on the fourth verse of Psalm 27, though not quite as the psalm has it: the gradual omits 'all the days of my life' and replaces 'visit his temple' with a prayer to be sheltered by the Lord's holy temple, both changes deepening the verse's note of refuge. The day's Gospel, from Luke 2, tells of the finding of the twelve-year-old Jesus in the Temple after three days of searching, so the image of the Temple as a place of dwelling and protection runs through the whole liturgy.",
+      "source": "Ps. 27:4 (Vulgate numbering Ps. 26:4) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi1-0 (Missale Romanum formulary)"
+    }
   },
   "gb23": {
     "id": "gb23",
@@ -7161,7 +8625,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit is a 20th-century composition: after Pope Pius XII infallibly defined the dogma of the Assumption in 1950, a new set of Mass propers was written for the feast, replacing the older Introit \"Gaudeamus omnes\" (still used in this app as the alternate Option 2) with this newly composed \"Signum magnum,\" drawn from the Woman-clothed-with-the-sun of Revelation 12.",
+      "text": "Signum magnum is a 20th-century composition: after Pope Pius XII infallibly defined the dogma of the Assumption in 1950, a new set of Mass propers was written for the feast, replacing the older Introit \"Gaudeamus omnes\" (still used in this app as the alternate Option 2) with this newly composed \"Signum magnum,\" drawn from the Woman-clothed-with-the-sun of Revelation 12.",
       "source": "liberreader.wordpress.com, \"Polyphonic Introit: Signum magnum.\""
     }
   },
@@ -7190,14 +8654,18 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dicit Dominus draws directly from the Gospel sung at the same Mass, John 2:1-11, the wedding at Cana. The antiphon compresses verses 7 and 8 into a single command, omits the detail in verse 9 that the chief steward did not know the source of the wine, and reshapes the closing verse. Where John 2:11 in the Vulgate reads \"Hoc fecit initium signorum Jesus in Cana Galilæe; et manifestavit gloriam suam, et crediderunt in eum discipuli ejus,\" the antiphon substitutes \"Hoc signum fecit Jesus primum coram discipulis suis,\" tightening the ending around the disciples as witnesses.",
+      "source": "John 2:7, 8, 9, 10-11 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi2-0 (Missale Romanum formulary)"
+    }
   },
   "gb233": {
     "id": "gb233",
     "gregobaseId": "233",
     "title": "In medio Ecclesiae",
     "part": "introit",
-    "mode": "Introit · St. John, Apostle and Evangelist · Mode VI",
+    "mode": "Introit · St. Gregory the Great, Pope and Doctor of the Church · Mode VI",
     "gabc": "(c4) IN(df~) mé(fff)di(f)o(f) *() Ec(f)clé(gfg)si(f)ae(fff) (,) a(cd)pé(fff)ru(f)it(f) os(g_[oh:h]f) e(f_[oh:h]g_[oh:h]f_[oh:h])jus :(f.) (:) et(f) im(f)plé(ixf!gwh'!iv)vit(h) e(hjjh)um(h.) Dó(gh)mi(gf)nus(f.) (,) spí(fh)ri(g)tu(f) sa(fgf)pi(ef'g)én(gh~)ti(f)ae,(fgf.) (,) et(f) in(ef'g)tel(hghf)lé(f)ctus :(fffc..) (:) sto(fdf)lam(f) gló(ghf)ri(f_d)ae(d_c) (,) ín(ff)du(f)it(ff) e(f_[oh:h]g_[oh:h]f_[oh:h])um.(f.) (::)",
     "latin": "In médio Ecclésiae apéruit os ejus : et implévit eum Dóminus spíritu sapiéntiae, et intelléctus : stolam glóriae índuit eum.",
     "translation": "In the midst of the Church he opened his mouth: and the Lord filled him with the spirit of wisdom and understanding: he clothed him with a robe of glory.",
@@ -7343,14 +8811,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-confessor-doctor",
         "part": "introit",
-        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
-        "rank": "Optional Memorial",
-        "dateMD": "1-28"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "introit",
         "feastTitle": "St. Francis de Sales, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "1-29"
@@ -7437,7 +8897,7 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
+        "feastKey": "gregory-great",
         "part": "introit",
         "feastTitle": "St. Gregory the Great, Pope and Doctor of the Church",
         "rank": "Memorial",
@@ -7450,11 +8910,19 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John, Apostle and Evangelist",
         "rank": "Feast",
         "dateMD": "12-27"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "thomas-aquinas",
+        "part": "introit",
+        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
+        "rank": "Optional Memorial",
+        "dateMD": "1-28"
       }
     ],
     "commentary": {
-      "text": "This Introit appears in one of the earliest surviving accounts of musical elaboration in Western chant: a 9th-century commentary by Amalarius of Metz describes a neuma triplex, a threefold untexted melisma, inserted on the word intellectus (\"understanding\") at the close of this very chant during the St. John's Day night vigil — a wordless flourish Amalarius reads as a sign of realities beyond ordinary human understanding.",
-      "source": "Eastman School of Music, Musicus Online Museum, \"In medio ecclesiae.\""
+      "text": "Gregorian chant carries Gregory's own name, but the connection includes legend and history. A story that spread a couple of centuries after his death pictured a dove, representing the Holy Spirit, perched on his shoulder, dictating the melodies into his ear, as if the entire chant repertoire had come from him fully formed; musical notation did not yet exist in his lifetime (590-604), so no such dictation could have been written down as chant in the way the legend imagines. What he did do, historically, was reorganize the papal schola cantorum and pull together chants then circulating in different regional traditions into something closer to a single body of practice. It was real, important work in fostering chant that later generations then built on and eventually named after him.",
+      "source": "Wikipedia, \"Gregorian chant.\""
     }
   },
   "gb236": {
@@ -7475,7 +8943,11 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "This is one of the few Sundays whose Introit steps outside the Psalter altogether, quoting instead the close of the hymn in Philippians 2: \"at the name of Jesus every knee should bend.\" Many New Testament scholars think Paul is himself quoting here, incorporating an early Christian hymn that was already in liturgical use in the young Church before it was written into his letter.",
+      "source": "Blue Letter Bible, \"The Hymn of Christ (Philippians 2:5-11)\"; USCCB, Philippians, chapter 2."
+    }
   },
   "gb238": {
     "id": "gb238",
@@ -7495,7 +8967,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 88 (87 in the Vulgate numbering), the source of this Introit's single verse, stands out among the psalms of lament for having no turn toward hope or praise at all. Nearly every other lament in the Psalter ends by professing trust in God, but this one closes in unrelieved darkness, which is why it is often singled out as the bleakest of all 150 psalms.",
+      "source": "The Gospel Coalition, \"The Saddest Psalm in Scripture\"; USCCB, Psalms, chapter 88."
+    }
   },
   "gb239": {
     "id": "gb239",
@@ -7522,7 +8998,11 @@ window.CHANT_INDEX = {
         "feastTitle": "12th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 31 begins by placing hope in the Lord and asking never to be confounded. The Alleluia carries the prayer onward, asking God to bend his ear, hasten to deliver, and be a house of refuge.",
+      "source": "Ps. 31:2-3 (Vulgate numbering Ps. 30:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb241": {
     "id": "gb241",
@@ -7550,7 +9030,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Commemoration of All the Faithful Departed (All Souls)",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Lux aeterna is the Communion antiphon for the Mass for the Dead. The text it sets is part of a longer Latin passage; the antiphon stops before the closing petition, which runs \"Requiem aeternam dona eis, Domine; et lux perpetua luceat eis,\" a prayer that God grant them eternal rest and that everlasting light shine upon them once more. The antiphon draws on the opening of that text, resting on the image of light and the mercy of God.",
+      "source": "Wikipedia, \"Lux Aeterna\" (rev. 1336040155); Wikipedia, \"Lux Aeterna (Ligeti)\" (rev. 1338432940)"
+    }
   },
   "gb2419": {
     "id": "gb2419",
@@ -7579,7 +9063,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-10"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 112:9 reads in full: he hath distributed, he hath given to the poor, his justice remaineth for ever and ever, his horn shall be exalted in glory. This Introit draws on only the first part of that verse, leaving aside the closing image of the horn raised in glory.",
+      "source": "Ps. 112:9 (Vulgate numbering Ps. 111:9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb242": {
     "id": "gb242",
@@ -7612,14 +9100,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "dedication-lateran",
         "part": "alleluia",
-        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
-        "rank": "Optional Memorial",
-        "dateMD": "11-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "dedication-lateran",
-        "part": "alleluia",
         "feastTitle": "The Dedication of the Lateran Basilica",
         "rank": "Feast",
         "dateMD": "11-9"
@@ -7631,7 +9111,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Adorabo ad templum draws its words from the second verse of Psalm 138, but sings only part of that verse. What the chant omits, the fuller verse supplies: \"For thy mercy, and for thy truth: for thou hast magnified thy holy name above all.\" The chant carries the act of worship and the vow of praise, while the reason given for that praise, God's mercy, truth, and the greatness of his name, remains unsung.",
+      "source": "Ps. 138:2 (Vulgate numbering Ps. 137:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb25": {
     "id": "gb25",
@@ -7660,8 +9144,33 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit's opening words gave the world a famous name: in Victor Hugo's The Hunchback of Notre-Dame, the foundling abandoned on the cathedral steps is discovered on this Sunday and christened for it — Quasimodo.",
+      "text": "Quasi modo géniti infántes opens with words that gave the world a famous name: in Victor Hugo's The Hunchback of Notre-Dame, the foundling abandoned on the cathedral steps is discovered on this Sunday and christened for it, Quasimodo.",
       "source": "wordhistories.net, \"the liturgical origin of 'Quasimodo'\"; Wikipedia, \"Quasimodo.\""
+    }
+  },
+  "gb251": {
+    "id": "gb251",
+    "gregobaseId": "251",
+    "title": "Laetabitur justus",
+    "part": "introit",
+    "mode": "Introit · Common of a Martyr · Mode VIII",
+    "gabc": "(c3) LAe(e)tá(hh)bi(fd)tur(e) *() ju(fe/hhvF'E)stus(f.) (`) in(hh) Dó(ihi)mi(igh)no,(ih..) (;) et(f) spe(h_g)rá(gh!ijH'G)bit(hhe/hh) (,) in(hvvGF'E) e(ef/gffe)o :(efee[ll:1]d.0) (:) et(ef) lau(e)da(hh)bún(e!hhh/i_[oh:h]h)tur(h.) (,) o(hg/hih)mnes(fv.de'f) re(f!hhf/hhh)cti(hvGF) cor(fg~)de.(e.) (::)",
+    "latin": "Laetábitur justus in Dómino, et sperábit in eo : et laudabúntur omnes recti corde.",
+    "translation": "The just shall rejoice in the Lord, and shall hope in him: and all the upright of heart shall be praised.",
+    "source": "Graduale Romanum (GregoBase #251)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-3",
+        "part": "introit",
+        "feastTitle": "St. Valentine, Priest and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-14"
+      }
+    ],
+    "commentary": {
+      "text": "Laetabitur justus draws its single verse from the close of Psalm 64, where it serves as the psalm's resolving line. The verses immediately before it describe persecutors falling into confusion, bystanders struck with fear, and the people at last declaring the works of God. The antiphon lifts only that final turn toward rejoicing, leaving the account of affliction behind. What reaches the singer is the psalm's destination, stripped of the journey that leads there.",
+      "source": "Ps. 64:11 (Vulgate numbering Ps. 63:11) (Douay-Rheims; Latin from the Clementine Vulgate)"
     }
   },
   "gb255": {
@@ -7682,7 +9191,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ultimo festivitatis die hears Christ promise living water to the thirsty and identifies that water with the Spirit believers will receive. At Pentecost's Vigil Mass, the Communion holds thirst, faith, and the Spirit's coming within the last day of the feast.",
+      "source": "John 7:37-39 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb260": {
     "id": "gb260",
@@ -7702,7 +9215,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Unam petii a Domino gives a single desire: to dwell in the Lord's house all the days of life. Its verse calls those who dwell there blessed, and the Psalm continues with the protection and praise found in God's tabernacle.",
+      "source": "Ps. 27:4 (Vulgate numbering Ps. 26:4) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi1-0.txt [Officium heading]; Divinum Officium, Epi1-0 (Missale Romanum formulary)"
+    }
   },
   "gb261": {
     "id": "gb261",
@@ -7731,7 +9248,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Intret in conspectu draws its text from three verses of Psalm 79, trimming and adjusting as it goes. The second half of verse 11 and the closing phrase of verse 12 are dropped entirely. Most notably, the final clause borrows from verse 10, where the psalm reads \"ultio sanguinis servorum tuorum qui effusus est,\" but the compiler replaces \"servorum\" with \"Sanctórum,\" moving the word from servants to Saints and sharpening the text's fit for a feast of martyrs.",
+      "source": "Ps. 79:11-12, 10 (Vulgate numbering Ps. 78:11-12, 10) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb263": {
     "id": "gb263",
@@ -7758,7 +9279,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Ascension of the Lord (Year C)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psallite Domino draws from two consecutive verses of Psalm 68, but selectively. Verse 33 in full calls all the kingdoms of the earth to sing, but the antiphon keeps only \"psallite Domino\" and moves straight into verse 34, where it also stops short: the full verse continues with a promise that God will give his voice a voice of power, yet the antiphon ends at \"ad orientem,\" the eastward ascent itself. The Gospel sung just before this Communion, from Mark 16, closes with the same event in plain narrative: \"assúmptus est in cœlum, et sedet a dextris Dei.\"",
+      "source": "Ps. 68:33-34 (Vulgate numbering Ps. 67:33-34) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc5-4 (Missale Romanum formulary)"
+    }
   },
   "gb265": {
     "id": "gb265",
@@ -7799,7 +9324,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Perfice gressus meos draws on three consecutive verses of Psalm 17, but it quietly trims the opening of the middle one. Psalm 17, verse 6 begins, in the Douay-Rheims, \"I have cried to thee, for thou, O God, hast heard me,\" yet the offertory drops that line entirely and picks up only with \"inclina aurem tuam,\" incline your ear, moving straight into the petition. The confident claim of being already heard disappears, and what remains is pure asking.",
+      "source": "Ps. 17:5, 6-7 (Vulgate numbering Ps. 16:5, 6-7) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb274": {
     "id": "gb274",
@@ -7807,7 +9336,7 @@ window.CHANT_INDEX = {
     "title": "Gloriosus Deus",
     "part": "alleluia",
     "mode": "Alleluia · Sts. Abdon and Sennen, Martyrs · Mode IV",
-    "gabc": "(c4) AL(d!ff)le(ef)lú(ghG'Fg_[uh:l]h){ia}.(hjH'G) *(,) (h_dev.fg/h_g h_dev.fg!hvGF'hgge.) (::) ℣. Glo(h)ri(h)ó(h')sus(g) De(ghG'E)us(fgfg.) (,) in(gh) san(hg/hf/ghg)ctis(gd) e(e!gfg)jus :(fe..) (:) mi(f)rá(gh)bi(gf)lis(g') in(f) ma(d')je(f)stá(fv.fffdgvFE.)(,)(df/h_f/g_[oh:h]efv.df/gef)te,(fe..) (;) fá(ef'g)ci(g)ens(gdf.) *() pro(e)dí(ef'g)gi(f!hgh)a.(hjH'G) (,) (h_dev.fg/h_g h_dev.fg!hvGF'hgge.) (::)",
+    "gabc": "(c4) AL(d!ff)le(ef)lú(ghG'Fg_[uh:l]h){ia}.(hjH'G) *(,) (h_dev.fg/h_gh_dev.fg!hvGF'hgge.) (::) ℣. Glo(h)ri(h)ó(h')sus(g) De(ghG'E)us(fgfg.) (,) in(gh) san(hg/hf/ghg)ctis(gd) e(e!gfg)jus :(fe..) (:) mi(f)rá(gh)bi(gf)lis(g') in(f) ma(d')je(f)stá(fv.fffdgvFE.)(,)(df/h_f/g_[oh:h]efv.df/gef)te,(fe..) (;) fá(ef'g)ci(g)ens(gdf.) *() pro(e)dí(ef'g)gi(f!hgh)a.(hjH'G) (,) (h_dev.fg/h_gh_dev.fg!hvGF'hgge.) (::)",
     "latin": "Allelúia. ℣. Gloriósus Deus in sanctis ejus : mirábilis in majestáte, fáciens prodígia.",
     "translation": "Alleluia. ℣. God is glorious in his saints: wondrous in majesty, working wonders.",
     "source": "Graduale Romanum (GregoBase #274, Common of a Martyr's own Alleluia, reused per file's own Allelúja verses)",
@@ -7822,13 +9351,6 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "1962",
-        "feastKey": "common-martyr",
-        "part": "alleluia",
-        "feastTitle": "Common of martyr",
-        "rank": ""
-      },
-      {
-        "calendar": "1962",
         "feastKey": "fabian-sebastian",
         "part": "alleluia",
         "feastTitle": "Sts. Fabian and Sebastian, Martyrs",
@@ -7839,10 +9361,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-martyr",
         "part": "alleluia",
-        "feastTitle": "Common of martyr",
+        "feastTitle": "Common of a Martyr (In virtute tua)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gloriosus Deus alludes to the canticle of Moses in Exodus 15, where verse 11 asks who is like God, magnificent in holiness, working wonders. The Alleluia verse turns that rhetorical question into a direct declaration, and where the canticle speaks of God being magnificent in holiness, \"in sanctitate,\" the verse shifts the phrase to \"in sanctis ejus,\" in his saints. That single change draws an ancient victory song into a proclamation of God's glory made visible in his saints.",
+      "source": "Ex. 15:11 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb277": {
     "id": "gb277",
@@ -7869,7 +9395,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 30 gives thanks to the Lord for being upheld and moves from a cry for healing to rescue from the pit. This Ordinary Time Gradual holds the three verses together as a prayer of deliverance.",
+      "source": "Ps. 30:2-4 (Vulgate numbering Ps. 29:2-4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb278": {
     "id": "gb278",
@@ -7896,7 +9426,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dominus regit me rests in the Lord's promise of no want, pasture, and waters of refreshment. The next verses speak of a soul restored and God's presence in the valley of death, so this Communion's brief portion becomes a prayer of trust.",
+      "source": "Ps. 23:1-2 (Vulgate numbering Ps. 22:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb280": {
     "id": "gb280",
@@ -7925,7 +9459,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-14"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Felix namque es addresses Mary directly, ascribing her blessedness to the fact that Christ arose from her. It is sung as the offertory at the Vigil of the Assumption of the Blessed Virgin Mary, within a Mass whose Gospel reading presents the very scene the praise looks back to: the shepherds arriving at Bethlehem and finding Mary, Joseph, and the infant lying in the manger, as Luke 2:15-20 recounts.",
+      "source": "Divinum Officium, Commune/C10b (Missale Romanum formulary); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb282": {
     "id": "gb282",
@@ -7959,7 +9497,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tollite hostias draws from Psalm 96, verses 8 and 9, but takes only a portion of each. Verse 8 opens with an address to the Gentiles, \"Bring to the Lord glory unto his name,\" and the chant picks up from the second half of that verse. It then takes the first half of verse 9, stopping before \"Let all the earth be moved at his presence.\" The result is a call to bring offerings and enter God's courts, with the wider summons to the nations and the closing trembling of the earth set aside.",
+      "source": "Ps. 96:8-9 (Vulgate numbering Ps. 95:8-9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb284": {
     "id": "gb284",
@@ -7993,7 +9535,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Prope est Dominus draws two verses from Psalm 145, but not two consecutive ones. The respond takes verse 18, then the verse (℣) leaps to verse 21, passing over verses 19 and 20, which speak of God hearing the prayers of those who fear him and destroying the wicked. The psalm's verse 21 also closes with the phrase \"in sæculum, et in sæculum sæculi\" (forever and ever), which the chant quietly omits.",
+      "source": "Ps. 145:18, 21 (Vulgate numbering Ps. 144:18, 21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb286": {
     "id": "gb286",
@@ -8022,7 +9568,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-8"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beátam me dicent is drawn from two consecutive verses of the Magnificat, Luke 1:48-49, but it does not quote either verse whole. The opening of verse 48, \"quia respexit humilitatem ancillæ suæ,\" is left aside, and the chant picks up mid-verse with \"beatam me dicent omnes generationes,\" then continues into verse 49 while dropping its closing phrase, \"et sanctum nomen ejus.\" The Gospel appointed for the formulary that includes this Communion antiphon is Luke 1:41-50, so the congregation has heard these same words proclaimed aloud before receiving them again at Communion.",
+      "source": "Luke 1:48-49 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-08-15 (Missale Romanum formulary)"
+    }
   },
   "gb292": {
     "id": "gb292",
@@ -8049,7 +9599,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laetatus sum draws on only the opening line of Psalm 122, a nine-verse psalm. In the Vulgate, the psalm is headed \"Canticum graduum,\" marking it as one of fifteen psalms described as songs of ascents. The seven verses that follow the quoted line develop the image of pilgrims already standing in Jerusalem's courts, reflecting on the city's unity and praying for its peace, but the chant holds at the threshold, at the moment of first hearing the invitation to go.",
+      "source": "Ps. 122:1 (Vulgate numbering Ps. 121:1) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 122\" (rev. 1351248205)"
+    }
   },
   "gb293": {
     "id": "gb293",
@@ -8057,7 +9611,7 @@ window.CHANT_INDEX = {
     "title": "Intende voci orationis",
     "part": "offertory",
     "mode": "Offertory · Ordinary Time · Mode V",
-    "gabc": "(c3) IN(f)tén(gxf_e/gffd~)de(e_[oh:h][ll:1]d) *() vo(dedd'd/e_[oh:h][ll:1]d)ci(d.) (,) o(d)ra(e)ti(f!gwh)ó(hihh)nis(f_e/hhf!gwh) me(d_[oh:h]e_[oh:h]d_[oh:h])ae,(d.) (:) Rex(de) me(e.f!gw!hvGF)us,(fg) (,) et(ef) De(fg!hvGF)us(ef) me(f!hhh/ih'/ihhe.)(,)(hhh/ih'/ig'hvF'Ef!gwh_f)us :(f.) (:) quó(df'!hvh'1h!iwj_ijvIH)ni(hi!jvIH'i)am(ih..) (,) ad(hi) te(hi!jvIH'hvGF) o(fh)rá(df'!hvihi)bo,(gh/if..) (;) Dó(d!ewfefhhh//ih'/ihhe. ehG'Fh)mi(d_[oh:h]e_[oh:h]d_[oh:h])ne.(d.) (::)",
+    "gabc": "(c3) IN(f)tén(gxf_e/gffd~)de(e_[oh:h][ll:1]d) *() vo(dedd'd/e_[oh:h][ll:1]d)ci(d.) (,) o(d)ra(e)ti(f!gwh)ó(hihh)nis(f_e/hhf!gwh) me(d_[oh:h]e_[oh:h]d_[oh:h])ae,(d.) (:) Rex(de) me(e.f!gw!hvGF)us,(fg) (,) et(ef) De(fg!hvGF)us(ef) me(f!hhh/ih'/ihhe.)(,)(hhh/ih'/ig'hvF'Ef!gwh_f)us :(f.) (:) quó(df'!hvh'1h!iwj_ijvIH)ni(hi!jvIH'i)am(ih..) (,) ad(hi) te(hi!jvIH'hvGF) o(fh)rá(df'!hvihi)bo,(gh/if..) (;) Dó(d!ewfefhhh//ih'/ihhe.ehG'Fh)mi(d_[oh:h]e_[oh:h]d_[oh:h])ne.(d.) (::)",
     "latin": "Inténde voci oratiónis meae, Rex meus, et Deus meus : quóniam ad te orábo, Dómine.",
     "translation": "Hearken to the voice of my prayer, O my King and my God: for to you will I pray, O Lord.",
     "source": "Graduale Romanum (GregoBase #293)",
@@ -8069,7 +9623,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Intende voci orationis draws from verses 3 and 4 of Psalm 5, though it trims verse 4 at its midpoint, leaving out the words that follow: \"in the morning thou shalt hear my voice.\" Verse 2, just before where the chant begins, had already voiced the same plea in slightly different terms: \"Give ear, O Lord, to my words, understand my cry.\" The compiler stepped past that opening petition to arrive at this one, with its direct address of God as King.",
+      "source": "Ps. 5:3-4 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb294": {
     "id": "gb294",
@@ -8096,7 +9654,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Scapulis suis names the Lord as the one whose wings shelter those who trust in him. The Psalm answers fear with God's truth as a shield, before speaking of dangers that cannot come near those held in that refuge.",
+      "source": "Ps. 91:4-5 (Vulgate numbering Ps. 90:4-5) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quad1-0.txt [Officium heading]; Divinum Officium, Quad1-0 (Missale Romanum formulary)"
+    }
   },
   "gb2945": {
     "id": "gb2945",
@@ -8141,7 +9703,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This text is shared with the Introit for the Exaltation of the Holy Cross (this app's own triumph-cross entry, set there by Heinrich Isaac); for Holy Thursday itself it was set as a four-voice (SATB) motet by Palestrina, first published in 1564 in his Motecta festorum totius anni liber primus, and again separately by Felice Anerio.",
+      "text": "Nos autem gloriári is shared with the Introit for the Exaltation of the Holy Cross, set there by Heinrich Isaac. For Holy Thursday itself it was set as a four-voice motet by Palestrina, first published in 1564 in his Motecta festorum totius anni liber primus, and again separately by Felice Anerio.",
       "source": "CPDL ChoralWiki, \"Nos autem gloriari (Giovanni Pierluigi da Palestrina)\"; CPDL ChoralWiki, \"Nos autem gloriari (Felice Anerio).\""
     }
   },
@@ -8163,7 +9725,11 @@ window.CHANT_INDEX = {
         "feastTitle": "29th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Salvum fac populum joins David's cry not to be silent with the plea to save and bless God's people. The Psalm's surrounding line asks the Lord to rule and exalt them forever, while the Gradual brings the cry from the pit into the liturgy.",
+      "source": "Ps. 28:9, 1 (Vulgate numbering Ps. 27:9, 1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb299": {
     "id": "gb299",
@@ -8190,7 +9756,11 @@ window.CHANT_INDEX = {
         "feastTitle": "15th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dum clamárem opens with a phrase melodically almost identical to a separate, older chant of the Easter season, Vocem iucunditatis, one of many small borrowings that link individual Gregorian melodies across the church year. Its text, from Psalm 55 (54 in the Vulgate numbering), survives in medieval antiphoners as geographically scattered as Bamberg, Benevento, Brussels, Chartres, and Einsiedeln, evidence of how thoroughly a single Roman melodic repertory had spread across Europe by the ninth and tenth centuries.",
+      "source": "Richard L. Crocker, “Introits in Modes 3”; gregorien.info, “Introitus - Dum clamarem ad Dominum.”"
+    }
   },
   "gb301": {
     "id": "gb301",
@@ -8210,7 +9780,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quinque prudentes virgines sets the wise virgins' oil and lamps beside the midnight cry that the bridegroom has come. Its final command keeps watch for Christ the Lord: go out to meet him.",
+      "source": "Matt. 25:4-6 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb307": {
     "id": "gb307",
@@ -8255,7 +9829,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Constitues eos principes draws on just two consecutive verses of Psalm 45, rearranging their phrases between the respond and the verse. The respond leads with the second clause of verse 17, \"thou shalt make them princes over all the earth,\" then takes the opening of verse 18; the verse circles back to the first clause of verse 17, \"instead of thy fathers, sons are born to thee,\" before closing with the final clause of verse 18. This ordering places the declaration of princehood at the very head of the chant, directly before the day's Gospel, in which Christ tells Peter, \"Et tibi dabo claves regni cœlórum.\"",
+      "source": "Ps. 45:17-18 (Vulgate numbering Ps. 44:17-18) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb308": {
     "id": "gb308",
@@ -8282,7 +9860,36 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Body and Blood of Christ (Corpus Christi)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Thomas Aquinas composed Lauda Sion as the sequence for Pope Urban IV's new universal Corpus Christi solemnity. Its extended meditation on the living bread, consecration, and the figures of Isaac, the Paschal lamb, and manna makes it a doctrinal praise-poem rather than a brief Alleluia verse.",
+      "source": "Chant of the Day (this project's own chant entry); Urban Hannon, \"Lauda Sion as Doxological Compendium of St. Thomas's Eucharistic Theology,\" New Blackfriars 105, no. 2 (2024), 105–115"
+    }
+  },
+  "gb312": {
+    "id": "gb312",
+    "gregobaseId": "312",
+    "title": "Justi decantaverunt",
+    "part": "introit",
+    "mode": "Introit · Ss. Seven Founders of the Servite Order, Confessors · Mode V",
+    "gabc": "(c3) JU(dde)sti(d) * de(df)can(f)ta(f)vé(ef)runt,(d) Dó(fh)mi(f)ne,(hh) (,) no(hihh)men(f_e) san(f!gwh)ctum(f_d) tu(d_[oh:h]e_[oh:h]d_[oh:h])um,(d.) (:) et(f) vic(d)trí(ef)cem(fef) ma(hf/hhhi)num(h) tu(hjI'H)am(h_f) (,) lau(f)da(hi)vé(ihh)runt(ef) pá(fe)ri(h)ter :(h_[oh:h]i_[oh:h]f.1_[oh:h]) (:) quó(h)ni(f)am(hh) sa(hg)pi(fe)én(fh~)ti(h)a(g_[uh:l]h) (,) a(ih)pé(hji)ru(hg)it(hh) os(fhg) mu(hhhfg)tum,(fe..) (;) et(f) lin(d)guas(e) in(f)fán(hh)ti(h)um(h'/ihh) (,) fe(fe)cit(e[ll:1]d) di(gxfhFE'fw!gvFE)sér(de!fvED'e)tas.(e[ll:1]d..) (::)",
+    "latin": "Justi decantavérunt, Dómine, nomen sanctum tuum, et victrícem manum tuam laudavérunt páriter : quóniam sapiéntia apéruit os mutum et linguas infántium fecit disértas.",
+    "translation": "The just praised your holy name, O Lord, and they praised with one accord your hand that fought for them: for wisdom opened the mouth of the dumb, and made the tongues of infants eloquent.",
+    "source": "Graduale Romanum (GregoBase #312)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "seven-founders",
+        "part": "introit",
+        "feastTitle": "Ss. Seven Founders of the Servite Order, Confessors",
+        "rank": "Duplex",
+        "dateMD": "2-12"
+      }
+    ],
+    "commentary": {
+      "text": "Justi decantaverunt draws on two consecutive verses of Wisdom 10, verses that sit just after a description of Israel being carried through the Red Sea while their enemies were drowned. The praise of God's victorious hand in the text is originally a song of deliverance at the water's edge. The chant also adjusts the opening word: the Clementine Vulgate reads simply \"decantaverunt,\" they sang, while the Introit adds \"Justi\" to make explicit who is singing, a fitting touch for a feast honoring holy founders.",
+      "source": "Wis. 10:20-21 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb316": {
     "id": "gb316",
@@ -8305,19 +9912,64 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "1962",
-        "feastKey": "common-martyr",
+        "feastKey": "common-martyr-2",
         "part": "introit",
-        "feastTitle": "Common of martyr",
-        "rank": ""
+        "feastTitle": "St. Timothy, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-24"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "introit",
+        "feastTitle": "St. Polycarp, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "introit",
+        "feastTitle": "St. Eusebius, Bishop and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "introit",
+        "feastTitle": "St. Simeon, Bishop and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-18"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "introit",
+        "feastTitle": "St. Blaise, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-3"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "introit",
+        "feastTitle": "St. Stanislaus, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "5-7"
       },
       {
         "calendar": "modern",
         "feastKey": "common-martyr",
         "part": "introit",
-        "feastTitle": "Common of martyr",
+        "feastTitle": "Common of a Martyr (In virtute tua)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 21 opens, in the Douay-Rheims, with the words \"In thy strength, O Lord, the king shall joy\", and the Vulgate Latin has \"lætabitur rex\". The introit quietly shifts that word: where the psalm says rex, the king, the chant sings justus, the just man, turning an explicitly royal psalm into a portrait of the martyr. The antiphon also stops midway through verse 3, taking \"Thou hast given him his heart's desire\" and leaving aside the remainder of that verse, \"and hast not withholden from him the will of his lips.\"",
+      "source": "Ps. 21:2-3 (Vulgate numbering Ps. 20:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb318": {
     "id": "gb318",
@@ -8344,7 +9996,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confitebor tibi Domine moves from praising God with the whole heart to asking for life and fidelity to his word. Psalm 86 places that praise beside God's sweetness, mercy, and hearing of those who call, so the 5th Sunday of Lent Offertory becomes a prayer of trust in God's mercy.",
+      "source": "Ps. 86:12, 5 (Vulgate numbering Ps. 85:12, 5) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb323": {
     "id": "gb323",
@@ -8364,7 +10020,11 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 38 (37 in the Vulgate numbering), the source of this Introit, is one of the seven psalms the early Church grouped together as the Penitential Psalms, historically prayed as a set during Lent and on Fridays as prayers of contrition. This Introit's closing plea, \"do not depart from me,\" comes from the very last verses of that psalm.",
+      "source": "USCCB, Psalms, chapter 38."
+    }
   },
   "gb324": {
     "id": "gb324",
@@ -8391,7 +10051,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass during the Day)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Giovanni Pierluigi da Palestrina set this same text, \"Dies sanctificatus,\" as a motet for four voices, listed in volume 5 of his collected works as published by Breitkopf & Härtel between 1862 and 1907. The plainchant Alleluia verse and the polyphonic motet share their words exactly, the same proclamation of light descending on the earth for Christmas carried through two very different musical worlds.",
+      "source": "Wikipedia, \"List of compositions by Giovanni Pierluigi da Palestrina\" (rev. 1309884587)"
+    }
   },
   "gb325": {
     "id": "gb325",
@@ -8432,7 +10096,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Moses's intercession in Exodus 32 offers three separate arguments against God's threatened punishment of Israel for the golden calf: the act of bringing the people out of Egypt, the mockery that would follow in Egypt if they were destroyed in the desert, and the oath sworn to the patriarchs. This offertory opens with the question from verse 11, \"Why, O Lord, are you angry with your people?\", but cuts the reference to the Exodus that ends that same verse and omits verse 12 entirely, so that the single remaining appeal is to the promise sworn to Abraham, Isaac, and Jacob. The Epistle for this Sunday, from 2 Corinthians 3, also turns on the figure of Moses, contrasting the old covenant \"lítteris deformáta in lapídibus\" with the new covenant of the Spirit.",
+      "source": "Ex. 32:11-14 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent12-0 (Missale Romanum formulary)"
+    }
   },
   "gb327": {
     "id": "gb327",
@@ -8483,7 +10151,11 @@ window.CHANT_INDEX = {
         "feastTitle": "23rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 39 verse 13, in the Douay-Rheims, reads: \"Hear my prayer, O Lord, and my supplication: give ear to my tears. Be not silent: for I am a stranger with thee, and a sojourner as all my fathers were.\" The Alleluia verse draws on that single verse, but sets aside the plea \"Be not silent\" and the phrase \"as all my fathers were.\" What remains is quieter, the prayer of one person standing before God, without the fuller weight of the original.",
+      "source": "Ps. 39:13 (Vulgate numbering Ps. 38:13) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb33": {
     "id": "gb33",
@@ -8505,6 +10177,22 @@ window.CHANT_INDEX = {
         "dateMD": "1-22"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "offertory",
+        "feastTitle": "Sts. Protus and Hyacinth, Martyrs",
+        "rank": "Simplex",
+        "dateMD": "9-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "offertory",
+        "feastTitle": "St. Januarius, Bishop, and Companions, Martyrs",
+        "rank": "Semiduplex",
+        "dateMD": "9-19"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-several-martyrs",
         "part": "offertory",
@@ -8520,7 +10208,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exsultabunt sancti draws from two consecutive verses of Psalm 149, but stops mid-sentence. Verse 6 in full reads \"the high praises of God shall be in their mouth: and two-edged swords in their hands,\" yet the offertory ends after \"exaltationes Dei in faucibus eorum\" and leaves the sword imagery behind. What remains is pure praise, stripped of the martial continuation the psalm immediately supplies.",
+      "source": "Ps. 149:5-6 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb331": {
     "id": "gb331",
@@ -8547,7 +10239,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 130 opens with two verses of petition, and this Alleluia verse draws on both of them, trimming the second. The psalm's verse 2 continues beyond where the chant ends: \"Let thy ears be attentive to the voice of my supplication.\" The verse as sung stops at \"Lord, hear my voice,\" letting that single cry stand without the elaboration the psalm goes on to add.",
+      "source": "Ps. 130:1-2 (Vulgate numbering Ps. 129:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb3312": {
     "id": "gb3312",
@@ -8598,7 +10294,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Easter (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ego sum vitis vera draws on a single verse, John 15:5, but quietly reshapes it. The Vulgate reads \"Ego sum vitis, vos palmites,\" while this chant opens instead with \"Ego sum vitis vera,\" adding the word that means \"true.\" It also drops the verse's closing clause entirely: \"quia sine me nihil potestis facere,\" for without me you can do nothing.",
+      "source": "John 15:5 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb3315": {
     "id": "gb3315",
@@ -8618,7 +10318,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Ascension of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Viri Galilaei draws its words from Acts 1:11, but it quietly alters the biblical wording. Where the Vulgate reads \"quid statis aspicientes in cælum,\" asking why the disciples stand looking into heaven, the chant substitutes \"quid admirámini aspiciéntes in caelum,\" shifting the sense from a posture to an interior movement of wonder or amazement. The chant also replaces the verse's closing word \"euntem,\" going, with \"ascendéntem,\" ascending, and adds the Alleluia, which is not present in the source text.",
+      "source": "Acts 1:11 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb3316": {
     "id": "gb3316",
@@ -8661,7 +10365,11 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Optimam partem recalls the words to Martha, with Mary choosing the one necessary thing. As the Assumption Communion, it lets Mary's choice be heard as an enduring gift that will not be taken away.",
+      "source": "Luke 10:42 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb3317": {
     "id": "gb3317",
@@ -8697,7 +10405,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Assumption of the Blessed Virgin Mary (alternate Mass)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Assumption offertory announces Mary's entry into heaven and describes angels rejoicing as they praise and bless the Lord. The chant turns the celebration outward from Mary toward the praise of God.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb3318": {
     "id": "gb3318",
@@ -8717,7 +10429,11 @@ window.CHANT_INDEX = {
         "feastTitle": "29th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Lauda anima mea makes praise a lifelong act: the singer promises to praise the Lord in life and sing to God as long as he is. The verse places that promise beside a warning not to trust in princes, turning the soul toward God as its lasting hope.",
+      "source": "Ps. 146:2 (Vulgate numbering Ps. 145:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb332": {
     "id": "gb332",
@@ -8725,7 +10441,7 @@ window.CHANT_INDEX = {
     "title": "Propitius esto Domine",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Years A & C) · Mode V",
-    "gabc": "(c4) PRo(d)pí(ffg)ti(f)us(f) e(ghgh)sto(gv.fgFD.1) (,) * Dó(dgf/gh)mi(g)ne(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) pec(f)cá(ghghjkj)tis(ixhiH'G) no(ixhjg___!hwihi)stris :(ih..) (:) ne(f) quan(hg~)do(gj) di(hhg)cant(gh) gen(hg/hfg)tes :(fv.e!g'h/fg!hvF'EDef!gvgf.0) (:) U(ixf!hhi)bi(g) est(gjj) De(j)us(j) e(ixj.h!iw!jvIG'hw!ivHG)ó(fgf)rum?(f!h'j) (,) (fh'!jvjv'1IGfhg/hggf.0) (z0::c3) ℣. Ad(d)ju(d)va(f) nos,(gxg) De(h)us(h.) sa(h)lu(h)tá(h)ris(h) no(h)ster :(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/!ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'hvGF.) (:) et(hh) pro(h)pter(h) ho(h)nó(ih/ij_h ih/ij_ij//hi/jij)rem(jh/jkihh/fgf.) (;) nó(d)mi(d)nis(d) tu(d)i(d) Dó(d)mi(d)ne,(d.) (,) * lí(dfE'D)be(ef)ra(fhG'Fhhh) nos.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) PRo(d)pí(ffg)ti(f)us(f) e(ghgh)sto(gv.fgFD.1) (,) * Dó(dgf/gh)mi(g)ne(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) pec(f)cá(ghghjkj)tis(ixhiH'G) no(ixhjg___!hwihi)stris :(ih..) (:) ne(f) quan(hg~)do(gj) di(hhg)cant(gh) gen(hg/hfg)tes :(fv.e!g'h/fg!hvF'EDef!gvgf.0) (:) U(ixf!hhi)bi(g) est(gjj) De(j)us(j) e(ixj.h!iw!jvIG'hw!ivHG)ó(fgf)rum?(f!h'j) (,) (fh'!jvjv'1IGfhg/hggf.0) (z0::c3) ℣. Ad(d)ju(d)va(f) nos,(gxg) De(h)us(h.) sa(h)lu(h)tá(h)ris(h) no(h)ster :(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/!ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___jvIH'jvIH'hvGF.) (:) et(hh) pro(h)pter(h) ho(h)nó(ih/ij_hih/ij_ij//hi/jij)rem(jh/jkihh/fgf.) (;) nó(d)mi(d)nis(d) tu(d)i(d) Dó(d)mi(d)ne,(d.) (,) * lí(dfE'D)be(ef)ra(fhG'Fhhh) nos.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Propítius esto, Dómine, peccátis nostris : ne quando dicant gentes : Ubi est Deus eórum? ℣. Adjuva nos, Deus salutáris noster : et propter honórem nóminis tui, Dómine, líbera nos.",
     "translation": "Forgive us our sins, O Lord: lest the Gentiles should at any time say: Where is their God? ℣. Help us, O God our Saviour: and for the honor of your name, O Lord, deliver us.",
     "source": "Graduale Romanum (GregoBase #332)",
@@ -8751,7 +10467,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Propitius esto Domine asks God for help, forgiveness, and deliverance for the honor of his name. Psalm 79 then fears the nations' question about their God and asks that the blood of God's servants be made known among them.",
+      "source": "Ps. 79:9, 10 (Vulgate numbering Ps. 78:9, 10) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent04-0.txt [Officium heading]; Divinum Officium, Pent04-0 (Missale Romanum formulary)"
+    }
   },
   "gb335": {
     "id": "gb335",
@@ -8778,7 +10498,11 @@ window.CHANT_INDEX = {
         "feastTitle": "22nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Miserere mihi Domine continues straight on from the previous Sunday's Introit: both are drawn from the same psalm, Psalm 86 (85 in the Vulgate numbering), the Prayer of David, this one picking up just a few verses further into the same continuous plea for mercy.",
+      "source": "USCCB, Psalms, chapter 86."
+    }
   },
   "gb336": {
     "id": "gb336",
@@ -8798,7 +10522,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Unusually for an Introit, nearly all of which draw their text straight from the Psalms, this one opens instead with a verse from the Book of Proverbs (23:24-25), only turning to a Psalm (84:2-3, or 83:2-3 in the Vulgate numbering) for its continuation. It is the older of two Introits this app carries for the Holy Family: this 1962 Missal text was in place from the feast's 1893/1921 establishment, before the modern calendar replaced it after Vatican II with a different Introit, \"Deus in loco sancto suo\", which is this app's own modern-calendar holy-family entry, itself drawn from the 17th Sunday in Ordinary Time.",
+      "source": "Liturgia Latina blog, “The Latin of the Introits, The Holy Family - Exsultat gaudio”; dailycatholic.org, “Feast of the Holy Family.”"
+    }
   },
   "gb338": {
     "id": "gb338",
@@ -8826,7 +10554,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Commemoration of All the Faithful Departed (All Souls)",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Absolve Domine, the Tract of the Mass for the Dead, stands on its own terms in the plainchant tradition. Tomás Luis de Victoria, in his 1605 Officium Defunctorum, set nearly every movement of the Requiem Mass, including the Introit, Kyrie, Gradual, Offertory, Sanctus, Agnus Dei, and Communion, yet left this Tract out. The plainchant therefore has no polyphonic counterpart in that celebrated Renaissance setting.",
+      "source": "Wikipedia, \"Officium Defunctorum (Victoria)\" (rev. 1371019801)"
+    }
   },
   "gb339": {
     "id": "gb339",
@@ -8860,7 +10592,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Inclina aurem tuam draws on the opening of Psalm 31:3, leaving the rest of the verse unsung: the psalm continues, \"Be thou unto me a God, a protector, and a house of refuge, to save me.\" The chant also quietly shifts the person: where the Vulgate reads \"ut eruas me,\" deliver me, the chant sings \"ut eruas nos,\" turning a single voice's cry into a communal one.",
+      "source": "Ps. 31:3 (Vulgate numbering Ps. 30:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb34": {
     "id": "gb34",
@@ -8877,9 +10613,25 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "gradual",
+        "feastTitle": "St. Peter Nolasco, Confessor",
+        "rank": "Duplex",
+        "dateMD": "1-28"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
         "feastTitle": "St. Edward the Confessor, King",
         "rank": "Semiduplex",
         "dateMD": "10-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
+        "feastTitle": "St. Peter of Alcantara, Confessor",
+        "rank": "Duplex",
+        "dateMD": "10-19"
       },
       {
         "calendar": "1962",
@@ -8896,6 +10648,22 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Andrew Avellino, Confessor",
         "rank": "Duplex",
         "dateMD": "11-10"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
+        "feastTitle": "St. Didacus, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "11-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
+        "feastTitle": "St. Felix of Valois, Confessor",
+        "rank": "Duplex",
+        "dateMD": "11-20"
       },
       {
         "calendar": "1962",
@@ -8925,6 +10693,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "gradual",
+        "feastTitle": "St. Francis of Paola, Confessor",
+        "rank": "Simplex",
+        "dateMD": "4-2"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
         "feastTitle": "St. Vincent Ferrer, Confessor",
         "rank": "Duplex",
         "dateMD": "4-5"
@@ -8949,6 +10725,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "gradual",
+        "feastTitle": "St. Vincent de Paul, Confessor",
+        "rank": "Duplex",
+        "dateMD": "7-19"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
         "feastTitle": "St. Hyacinth, Confessor",
         "rank": "Duplex",
         "dateMD": "8-17"
@@ -8965,6 +10749,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "gradual",
+        "feastTitle": "St. Philip Benizi, Confessor",
+        "rank": "Duplex",
+        "dateMD": "8-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
         "feastTitle": "St. Raymond Nonnatus, Confessor",
         "rank": "Duplex",
         "dateMD": "8-31"
@@ -8976,6 +10768,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Mary Vianney, Confessor",
         "rank": "Duplex",
         "dateMD": "8-9"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "gradual",
+        "feastTitle": "St. Nicholas of Tolentino, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "9-10"
       },
       {
         "calendar": "1962",
@@ -9173,14 +10973,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-confessor-doctor",
         "part": "gradual",
-        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
-        "rank": "Optional Memorial",
-        "dateMD": "1-28"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "gradual",
         "feastTitle": "St. Francis de Sales, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "1-29"
@@ -9264,16 +11056,43 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Chrysostom, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "9-13"
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 92 places the flourishing palm and cedar in the house of the Lord. Its verse then calls for God's mercy to be shown in the morning and God's truth through the night, giving the Doctor's Gradual a continuing proclamation.",
+      "source": "Ps. 92:13-14, 3 (Vulgate numbering Ps. 91:13-14, 3) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Commune/C4a (Missale Romanum formulary)"
+    }
+  },
+  "gb340": {
+    "id": "gb340",
+    "gregobaseId": "340",
+    "title": "Protexisti me",
+    "part": "introit",
+    "mode": "Introit · Common of a Martyr (Paschal Time) · Mode VII",
+    "gabc": "(c2) PR{o}(cd)te(c)xí(cd'f)sti(f) me(gfg) ()* De(gh!ivHG'h)us(hg..) (;) a(g) con(gf~)vén(g!iiivH~G~)tu(hg) ma(f)li(gffe)gnán(fg~)ti(gh!ivHG'h)um,(hg..) (,) al(ghf~)le(g)lú(g!hwihi){ia} :(hg..) (:) a(gf) mul(g)ti(i)tú(h/iji)di(hiHG'h)ne(hg..) (,) o(g)pe(gi)rán(i)ti(i_[oh:h]hivHG'h)um(h_g) in(gh)i(h)qui(fh)tá(ghffef)tem,(fe..) (;) al(fg~)le(g)lú(fge/fgf){ia},(f.) (,) al(fg)le(ghffvE'DC)lú(cdc___){ia}.(c.) (::)",
+    "latin": "Protexísti me, Deus, a convéntu malignántium, allelúja : a multitúdine operántium iniquitátem, allelúja, allelúja.",
+    "translation": "You have protected me, O God, from the assembly of the malignant, alleluia: from the multitude of the workers of iniquity, alleluia, alleluia.",
+    "source": "Graduale Romanum (GregoBase #340)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-2-paschal",
+        "part": "introit",
+        "feastTitle": "Common of a Martyr (Beatus vir) (Paschaltide)",
+        "rank": ""
       },
       {
         "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "gradual",
-        "feastTitle": "St. Gregory the Great, Pope and Doctor of the Church",
-        "rank": "Memorial",
-        "dateMD": "9-3"
+        "feastKey": "common-martyr-paschal",
+        "part": "introit",
+        "feastTitle": "Common of a Martyr (In virtute tua) (Paschaltide)",
+        "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Protexisti me draws a single verse from Psalm 64, setting it as God's word of past protection rather than a petition. The verse just before it is a cry to be delivered from the fear of the enemy; the verses that follow describe those enemies as having whetted their tongues like a sword in order to shoot in secret the undefiled, the Latin word being immaculatum. Sung at a martyr's Mass, the introit lets that surrounding context of hidden violence against the innocent speak quietly in the background.",
+      "source": "Ps. 64:3 (Vulgate numbering Ps. 63:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb345": {
     "id": "gb345",
@@ -9309,7 +11128,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beati mundo corde draws three beatitudes from Matthew 5, beginning at verse 8 and stopping at verse 10. The five beatitudes before verse 8 are passed over, and so are verses 11 and 12, in which Christ turns to address his disciples directly: \"Blessed are ye when they shall revile you, and persecute you\" and \"Be glad and rejoice for your reward is very great in heaven.\" What remains speaks entirely in the third person, of those who are pure, peaceful, and persecuted, without the personal address that closes the series.",
+      "source": "Matt. 5:8-10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb346": {
     "id": "gb346",
@@ -9338,7 +11161,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-14"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Gospel of the day, from John 12, has Jesus tell the crowd that if he is lifted up from the earth, he will draw all things to himself. Per signum Crucis arrives at the close of that same Mass as a direct petition, addressing God and asking deliverance from enemies through the very sign of that lifting up. The prayer does not explain or reflect on the cross. It simply invokes it.",
+      "source": "Divinum Officium, Sancti-09-14 (Missale Romanum formulary); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb349": {
     "id": "gb349",
@@ -9398,7 +11225,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "A feast attested since roughly the 5th century, honoring the infants Herod killed while trying to eliminate the newborn Christ. This Introit reads Psalm 8's \"out of the mouths of infants\" as the murdered children's own silent testimony against their killer, a paradox the day's older liturgy underscored by keeping mourning (violet) vestments and dropping the Gloria and Alleluia even within the otherwise joyful Christmas octave.",
+      "source": "Liturgia Latina blog, \"28th December, The Holy Innocents, Martyrs.\""
+    }
   },
   "gb351": {
     "id": "gb351",
@@ -9427,7 +11258,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In omnem terram draws from two verses of Psalm 19, but sings them in reverse order. The body of the gradual quotes verse 5, \"Their sound hath gone forth into all the earth,\" and the verse then steps back to verse 2, \"The heavens shew forth the glory of God.\" The psalm's own movement runs the other way: the heavens speak first, and their sound reaches the ends of the earth second.",
+      "source": "Ps. 19:5, 2 (Vulgate numbering Ps. 18:5, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb356": {
     "id": "gb356",
@@ -9454,7 +11289,44 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Isaiah 30:30 is the source of the second half of this Introit, but the verse in full speaks of wrath, devouring fire, whirlwind, and hailstones. The antiphon takes only the opening clause, that the Lord shall make the glory of his voice to be heard, and pairs it with the phrase \"in the joy of your heart,\" drawn not from verse 30 but from the verse before it, where Isaiah writes of joy of heart accompanying the ascent to the mountain of the Lord. The threatening imagery is set aside entirely. A passage of judgment becomes one of glad expectation.",
+      "source": "Is. 30:30 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb358": {
+    "id": "gb358",
+    "gregobaseId": "358",
+    "title": "Ecce dedi verba mea",
+    "part": "offertory",
+    "mode": "Offertory · Common of a Pope · Mode III",
+    "gabc": "(c4) EC(gh/jij)ce(i.) *() de(ikj)di(i./jjj) ver(h)ba(ghg) me(h)a(hi/jhhg.) (,) in(gh/jij) o(j_h/k_[hl:1]j)re(j) tu(ikJ'I)o :(i.) (:) ec(g)ce(hihi') con(g)stí(h!iwj)tu(jjjvIH)i(gh) te(ghggf.0) (,) su(gh/jij)per(j) gen(jjjvIHivH~G~)tes,(hg..) (,) et(g) su(hi)per(i.h!iw!jvIH) re(f_[oh:h]g_[oh:h]f_[oh:h])gna,(f.) (:) ut(e[ll:1]d) e(g)vél(gh/ihi)las(g_[uh:l]h) et(f) dé(efghgh)stru(fd)as,(d_f) (,) et(c) ae(df)dí(f_eg//hhj)fi(g)ces(g_[uh:l]h) et(e) plan(egF~'E~)tes.(e.) (::)",
+    "latin": "Ecce, dedi verba mea in ore tuo : ecce, constítui te super gentes et super regna, ut evéllas et déstruas, et aedífices et plantes.",
+    "translation": "Behold, I have put my words in your mouth: behold, I have set you over the nations and over kingdoms, to root up and to pull down, and to build and to plant.",
+    "source": "Graduale Romanum (GregoBase #358)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "offertory",
+        "feastTitle": "St. Damasus I, Pope and Confessor",
+        "rank": "Duplex",
+        "dateMD": "12-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "offertory",
+        "feastTitle": "St. Anacletus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "7-13"
+      }
+    ],
+    "commentary": {
+      "text": "Ecce dedi verba mea draws on Jeremiah 1:9-10, God's call to the prophet, but trims verse 10 considerably. The Vulgate reads six verbs: \"ut evellas, et destruas, et disperdas, et dissipes, et ædifices, et plantes\"; the chant keeps only four, dropping \"disperdas\" and \"dissipes,\" so the balance tips away from destruction and toward the final pair, to build and to plant. These words are sung as the Mass moves toward its Gospel, Matthew 16:13-19, in which Christ gives Peter authority to bind and loose on earth and in heaven.",
+      "source": "Jer. 1:9-10 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb361": {
     "id": "gb361",
@@ -9481,7 +11353,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confirma hoc Deus is the Offertory for Pentecost Sunday. It draws from two consecutive verses of Psalm 68, but begins partway through verse 29: the psalm's full line runs \"Manda, Deus, virtuti tuæ; confirma hoc, Deus, quod operatus es in nobis,\" and the chant drops the opening petition, starting instead at \"confirma.\" The mention of kings offering gifts from Jerusalem carries particular weight at this Mass: the Epistle just proclaimed, Acts 2:1-11, describes the Holy Spirit descending on the disciples gathered in that same city.",
+      "source": "Ps. 68:29-30 (Vulgate numbering Ps. 67:29-30) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc7-0 (Missale Romanum formulary); Divinum Officium, Pasc7-0.txt [Officium heading]"
+    }
   },
   "gb365": {
     "id": "gb365",
@@ -9510,7 +11386,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Magna est gloria ejus draws on a single verse of Psalm 21, verse 6, a psalm that moves through suffering, trust, and royal exaltation. The Vulgate verse ends with \"impones super eum\" and names no addressee, but the chant adds \"Domine\" at the close, turning the statement into a direct address to God that the psalm verse itself does not contain.",
+      "source": "Ps. 21:6 (Vulgate numbering Ps. 20:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb367": {
     "id": "gb367",
@@ -9537,7 +11417,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Vigil)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Revelabitur gloria Domini draws from Isaiah 40:5, the verse that follows the call to prepare a way in the desert. The Vulgate closes that verse with \"quod os Domini locutum est,\" that the mouth of the Lord has spoken, but the chant replaces that ending with \"salutáre Dei nostri,\" turning the promise of revealed glory into an explicit reference to the salvation of God. Sung as the Communion on the eve of Christmas, it is paired with an Epistle from Romans 1:1-6, in which Paul announces the Gospel of God concerning his Son, born of the seed of David.",
+      "source": "Is. 40:5 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-24 (Missale Romanum formulary)"
+    }
   },
   "gb3683": {
     "id": "gb3683",
@@ -9558,7 +11442,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Multitudo languentium draws on two consecutive verses of Luke 6 rather than quoting either one straight. Verse 18 supplies the sick and those troubled with unclean spirits, but there it simply says they \"were cured\"; verse 19 supplies the explanation, \"for virtue went out from him and healed all.\" The antiphon joins these two halves into a single movement toward Christ, dropping verse 19's detail that the crowd was seeking to touch him. The verse immediately following in Luke, where the antiphon stops, is where Christ opens the Sermon on the Plain: \"Blessed are ye poor.\"",
+      "source": "Luke 6:18, 19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb371": {
     "id": "gb371",
@@ -9587,7 +11475,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "11-1"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Timete Dominum draws its respond and verse from consecutive verses of Psalm 34. The verse, though, quotes only the second half of Psalm 34:11. The psalm's full verse reads: \"The rich have wanted, and have suffered hunger: but they that seek the Lord shall not be deprived of any good.\" The chant sets aside the contrast with the rich and sings only the promise.",
+      "source": "Ps. 34:10, 11 (Vulgate numbering Ps. 33:10, 11) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb372": {
     "id": "gb372",
@@ -9614,7 +11506,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Palm Sunday of the Passion of the Lord",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 22 runs to thirty-two verses, and this tract moves through it selectively, drawing on thirteen of them across wide gaps. Most strikingly, it leaps from verse 9 to verse 18, passing over a cluster of verses that includes the psalm's most physically stark line: \"They have dug my hands and feet.\" The tract then closes not with lamentation but with the psalm's final verse, which looks ahead to a people not yet born hearing the Lord's justice proclaimed.",
+      "source": "Ps. 22:2-9, 18, 19, 22, 24, 32 (Vulgate numbering Ps. 21:2-9, 18, 19, 22, 24, 32) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb373": {
     "id": "gb373",
@@ -9634,7 +11530,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "A cry asks the Lord to understand and to hear the voice of prayer addressed to the speaker's king and God. The Communion preserves Psalm 5's direct morning prayer.",
+      "source": "Ps. 5:2-4 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quad1-3.txt [Officium heading]; Divinum Officium, Quad1-3 (Missale Romanum formulary)"
+    }
   },
   "gb383": {
     "id": "gb383",
@@ -9654,7 +11554,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine quinque talenta draws from Matthew 25:20-21, the moment when the first servant returns his doubled five talents to his lord. The parable's next two verses give the lord the identical words of praise to the two-talent servant, but the chant quotes only this first exchange. The text also attracted the Italian Baroque composer Francesco Foggia, baptized 17 November 1603 and died 8 January 1688, who set it as a separate composition; that setting survives as a manuscript in the papers of Gustav Düben.",
+      "source": "Matt. 25:20-21 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Francesco Foggia\" (rev. 1255899760)"
+    }
   },
   "gb388": {
     "id": "gb388",
@@ -9681,7 +11585,11 @@ window.CHANT_INDEX = {
         "feastTitle": "18th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Panem de caelo dedisti nobis draws from Wisdom 16:20, dropping the verse's opening comparison with Egypt's plagues and its phrase about bread prepared without labour. The antiphon also shifts the pronoun: the Vulgate says God gave the bread to them, præstitisti illis, but the antiphon replaces that with dedisti nobis, drawing the ancient gift of manna directly into the present prayer. The full verse in Wisdom addresses manna as God's answer to the plagues sent against the Egyptians; the antiphon sets all of that aside to rest on the gift alone.",
+      "source": "Wis. 16:20 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb389": {
     "id": "gb389",
@@ -9708,7 +11616,11 @@ window.CHANT_INDEX = {
         "feastTitle": "25th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Most introits address God in the first person, drawing on the Psalter. This one turns that around: God speaks, declaring himself the salvation of the people. That oracle-style opening, \"dicit Dominus,\" appears in only a handful of other introits across Ordinary Time, including the one sung on the 33rd Sunday.",
+      "source": "Gregorien.info, \"Introitus - Salus populi ego sum\"; New Advent Catholic Encyclopedia, \"Introit.\""
+    }
   },
   "gb390": {
     "id": "gb390",
@@ -9735,7 +11647,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Our Lord Jesus Christ, King of the Universe",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Postula a me hears the promise that the nations will be given as an inheritance and the earth's farthest reaches as possession. Psalm 2 places that promise after the declaration of the royal Son, so the Offertory places its request within the psalm's vision of his reign.",
+      "source": "Ps. 2:8 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb391": {
     "id": "gb391",
@@ -9762,7 +11678,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Trinity",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicimus Deum caeli follows Raphael's command to bless the God of heaven before all the living. The next verse calls the works of God worthy of proclamation, so the Communion gives thanks for mercy openly received.",
+      "source": "Tob. 12:6 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb392": {
     "id": "gb392",
@@ -9770,7 +11690,7 @@ window.CHANT_INDEX = {
     "title": "Benedicta et venerabilis",
     "part": "gradual",
     "mode": "Gradual · The Visitation of the Blessed Virgin Mary · Mode IV",
-    "gabc": "(c4) BE(fe)ne(fg)dí(g)cta(gv.ff/ded.) (,) * et(f) ve(dfe)ne(fg)rá(gff)bi(df)lis(egF'E) es,(e.) (;) Vir(e[ll:1]d~)go(g) Ma(hj)rí(i!jw!kvJI'H//fhf/gh)a :(g.) (:) quae(df) si(feg)ne(gefd) ta(cd)ctu(d.) pu(f)dó(gh)ris(ixh.0/[-0.5]ivHG'h/ef'g) (;) in(gh~)vén(hfhhvGE'fd)ta(cd) es(d.) (,) ma(dc/[1]{/[-3]ix}fg'h)ter(h.0/[-0.5]ivHG'ef'g) Sal(g)va(df)tó(efED.)(,)(ixf.0/[-0.5]hiHG'ge./ghGF'Ef_gF'E)ris.(e.) (::) ℣. Vir(h)go(ixjhhgh/ef'g eg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) (,) De(gf/gh)i(g) Gé(f)ni(ghgh)trix,(hgh'1f) (;) quem(e[ll:1]d) to(f_g//ef!hvGE'fd)tus(d.) (,) non(e) ca(c)pit(d) or(d!ff//fffdfvED'ef'g)bis,(ghhg.) (:) in(f) tu(f)a(ghgh) se(h) clau(hgh'1f)sit(e[ll:1]d) (,) ví(f_g//ef!hvGE'fd)sce(cd)ra(d.) (;) * fa(cd!ff)ctus(fg) ho(g_[oh:h]f/hgh)mo.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
+    "gabc": "(c4) BE(fe)ne(fg)dí(g)cta(gv.ff/ded.) (,) * et(f) ve(dfe)ne(fg)rá(gff)bi(df)lis(egF'E) es,(e.) (;) Vir(e[ll:1]d~)go(g) Ma(hj)rí(i!jw!kvJI'H//fhf/gh)a :(g.) (:) quae(df) si(feg)ne(gefd) ta(cd)ctu(d.) pu(f)dó(gh)ris(ixh.0/[-0.5]ivHG'h/ef'g) (;) in(gh~)vén(hfhhvGE'fd)ta(cd) es(d.) (,) ma(dc/[1]{/[-3]ix}fg'h)ter(h.0/[-0.5]ivHG'ef'g) Sal(g)va(df)tó(efED.)(,)(ixf.0/[-0.5]hiHG'ge./ghGF'Ef_gF'E)ris.(e.) (::) ℣. Vir(h)go(ixjhhgh/ef'!geg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) (,) De(gf/gh)i(g) Gé(f)ni(ghgh)trix,(hgh'1f) (;) quem(e[ll:1]d) to(f_g//ef!hvGE'fd)tus(d.) (,) non(e) ca(c)pit(d) or(d!ff//fffdfvED'ef'g)bis,(ghhg.) (:) in(f) tu(f)a(ghgh) se(h) clau(hgh'1f)sit(e[ll:1]d) (,) ví(f_g//ef!hvGE'fd)sce(cd)ra(d.) (;) * fa(cd!ff)ctus(fg) ho(g_[oh:h]f/hgh)mo.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
     "latin": "Benedícta et venerábilis es, Virgo María : quae sine tactu pudóris invénta es mater Salvatóris. ℣. Virgo Dei Génitrix, quem totus non capit orbis, in tua se clausit víscera factus homo.",
     "translation": "Blessed and venerable are you, O Virgin Mary: who without stain were found the mother of the Saviour. ℣. Virgin Mother of God, he whom the whole world cannot contain enclosed himself in your womb, being made man.",
     "source": "Graduale Romanum (GregoBase #392)",
@@ -9823,18 +11743,22 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "5-31"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicta et venerabilis is sung between the Epistle and the Gospel, and the Gospel of the day (Luke 11:27-28) opens with a woman crying out from the crowd: \"Beátus venter, qui te portávit,\" blessed is the womb that bore you. The Gradual has just sung the same opening word, \"Benedícta,\" of Mary. The verse then presses further into that same image, describing the one whom the whole world cannot contain enclosing himself in Mary's womb, which is precisely the womb the Gospel woman singles out for blessing.",
+      "source": "Divinum Officium, Commune/C10 (Missale Romanum formulary)"
+    }
   },
   "gb394": {
     "id": "gb394",
     "gregobaseId": "394",
     "title": "Dilexisti justitiam",
     "part": "gradual",
-    "mode": "Gradual · Common of a Virgin Martyr · Mode VIII",
-    "gabc": "(c4) DI(c)le(dc)xí(cg)sti(gv.fffddc.) (,) * ju(c)stí(c!geghjh___!iwj)ti(ghg___)am,(g.) (;) et(f) o(gh)dí(jj/kjk)sti(kjj) (,) in(gh)i(h)qui(hjh)tá(g)tem.(f/ghffd//gvgf/gjhhg.) (::) ℣. Pro(gf)ptér(gf)e(hj)a(jjjvHG'hjjlvKJ'Ijg..) (;) un(gh)xit(h_g) te(g) De(g_[oh:h]f/ghffd)us,(d.) (,) De(gg)us(g) tu(ghg___)us,(g.) (;) ó(g)le(fg)o(gggvED'/!eg'//hvGFg.) *(,) lae(gf)tí(gf)ti(hj)ae.(jjk//iijhhg.) (,) (ijGF.h!iwjji gjh/ihhg.) (::)",
+    "mode": "Gradual · St. Lucy, Virgin and Martyr · Mode VIII",
+    "gabc": "(c4) DI(c)le(dc)xí(cg)sti(gv.fffddc.) (,) * ju(c)stí(c!geghjh___!iwj)ti(ghg___)am,(g.) (;) et(f) o(gh)dí(jj/kjk)sti(kjj) (,) in(gh)i(h)qui(hjh)tá(g)tem.(f/ghffd//gvgf/gjhhg.) (::) ℣. Pro(gf)ptér(gf)e(hj)a(jjjvHG'hjjlvKJ'Ijg..) (;) un(gh)xit(h_g) te(g) De(g_[oh:h]f/ghffd)us,(d.) (,) De(gg)us(g) tu(ghg___)us,(g.) (;) ó(g)le(fg)o(gggvED'/!eg'//hvGFg.) *(,) lae(gf)tí(gf)ti(hj)ae.(jjk//iijhhg.) (,) (ijGF.h!iwjjigjh/ihhg.) (::)",
     "latin": "Dilexísti justítiam, et odísti iniquitátem. ℣. Proptérea unxit te Deus, Deus tuus, óleo laetítiae.",
     "translation": "You have loved justice, and hated iniquity. ℣. Therefore has God, your God, anointed you with the oil of gladness.",
-    "source": "Graduale Romanum (GregoBase #394)",
+    "source": "Graduale Romanum (GregoBase #394, Solesmes); textually identical to the Common of a Virgin Martyr's own Gradual (data/common-propers.js's \"common-virgin-martyr\") — Lucy's own Sancti/12-13.txt cross-references @Sancti/07-22 (St. Mary Magdalene's file), whose Gradual portion matches this text word-for-word (confirmed 2026-07-14); reused verbatim rather than re-transcribed.",
     "usages": [
       {
         "calendar": "1962",
@@ -9861,20 +11785,28 @@ window.CHANT_INDEX = {
         "dateMD": "11-25"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-virgin-martyr",
+        "part": "gradual",
+        "feastTitle": "St. Agatha, Virgin and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-5"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "lucy",
+        "part": "gradual",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-13"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "gradual",
         "feastTitle": "St. Agnes, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "1-21"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "gradual",
-        "feastTitle": "St. Cecilia, Virgin and Martyr",
-        "rank": "Optional Memorial",
-        "dateMD": "11-22"
       },
       {
         "calendar": "modern",
@@ -9888,19 +11820,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "gradual",
-        "feastTitle": "St. Lucy, Virgin and Martyr",
-        "rank": "Memorial",
-        "dateMD": "12-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "gradual",
         "feastTitle": "St. Agatha, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "2-5"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dilexisti justitiam draws on a single verse of Psalm 45, but leaves out the closing phrase of the full verse. The Clementine Vulgate ends that verse with \"præ consortibus tuis,\" meaning \"above thy fellows,\" which the Gradual quietly omits. What remains is sung before the day's Gospel, the parable of the ten virgins from Matthew 25, where the prudent virgins carry oil for their lamps to meet the bridegroom, and the Gradual's own image of anointing with \"oleo lætitiæ,\" the oil of gladness, sounds directly into that parable.",
+      "source": "Ps. 45:8 (Vulgate numbering Ps. 44:8) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6 (Missale Romanum formulary)"
+    }
   },
   "gb395": {
     "id": "gb395",
@@ -9927,7 +11855,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Liberasti nos Domine draws its two verses from the middle of Psalm 44, which the Douay-Rheims describes as commemorating \"former favours, and present afflictions.\" The verses surrounding the quoted pair show how narrow the selection is: just before, the psalm reads \"I will not trust in my bow: neither shall my sword save me,\" and just after, \"now thou hast cast us off, and put us to shame.\" The gradual lifts two verses of confident praise from within a psalm whose wider arc is largely a lament about present abandonment and defeat.",
+      "source": "Ps. 44:8-9 (Vulgate numbering Ps. 43:8-9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb396": {
     "id": "gb396",
@@ -9954,7 +11886,11 @@ window.CHANT_INDEX = {
         "feastTitle": "11th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Drawn from later in Psalm 27 (26 in the Vulgate numbering) than the year's other Introit built on the same psalm (Dominus illuminatio, from its opening verse), this text's plea to \"seek his face\" was set by Giovanni Paolo Cima, in his 1610 Concerti ecclesiastici, and again nearly three centuries later by Lorenzo Perosi, longtime director of music at the Sistine Chapel. Two composers separated by three hundred years set the same request that God not turn away his face.",
+      "source": "Bible as Music, “Exáudi, Dómine, vocem meam (Giovanni Paolo Cima).”"
+    }
   },
   "gb399": {
     "id": "gb399",
@@ -9962,7 +11898,7 @@ window.CHANT_INDEX = {
     "title": "Ego dixi: Domine miserere",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time · Mode V",
-    "gabc": "(c4) E(ffg)go(f) *() di(f)xi :(fV_{ix}e/g!hwi) Dó(g_[oh:h]f)mi(gf)ne,(fg) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (;) mi(f)se(fdf)ré(fdf/efd'/ec)re(d.) me(fg)i :(ghg___//jjh/jggf.0) (:) sa(f)na(g) á(h)ni(gf)mam(gf//gh!jjvH'G) me(hg/hff'gf)am,(fg) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (:) quó(f)ni(fd)am(f) pec(ghg)cá(h)vi(ixhgiHG.) (`) ti(gf/hgh)bi.(hf) (,) (gh!jvvH'G//h!iwj/kjj/hih.) (;) (fg/h!jj/klijh.ixgiHF.1) (z0::c3) ℣. Be(d)á(df!hh/ijh)tus(h.) (,) qui(h_g) in(i!jwk)tél(i_[oh:h]h)li(h)git(hvv//i_[oh:h]h//jvIH'Ghf..) (;) su(hh)per(h) e(h)gé(ih/ij_h ih/ij_ij//hi/jij)num(jh/jkihhf.) (,) et(f) páu(hf/hhh)pe(h)rem :(h.f!gwh!iv.hi/jhh/iih.0) (:) in(hh) di(h)e(hi) ma(ivH'GE//fhGEfh..)(,)(gi!jvHF)la(fhF'Efhhf//hvvGF'hee[ll:1]d.0) (:) li(d)be(ef)rá(f)bit(f) e(f.0/[-0.5]hvGF'g)um(ef) *() Dó(hf)mi(hi)nus.(i_[uh:l]jH'Ghi..) (,) (ef'hh'jIH'GF'gwhf.1) (::)",
+    "gabc": "(c4) E(ffg)go(f) *() di(f)xi :(fV_{ix}e/g!hwi) Dó(g_[oh:h]f)mi(gf)ne,(fg) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (;) mi(f)se(fdf)ré(fdf/efd'/ec)re(d.) me(fg)i :(ghg___//jjh/jggf.0) (:) sa(f)na(g) á(h)ni(gf)mam(gf//gh!jjvH'G) me(hg/hff'gf)am,(fg) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (:) quó(f)ni(fd)am(f) pec(ghg)cá(h)vi(ixhgiHG.) (`) ti(gf/hgh)bi.(hf) (,) (gh!jvvH'G//h!iwj/kjj/hih.) (;) (fg/h!jj/klijh.ixgiHF.1) (z0::c3) ℣. Be(d)á(df!hh/ijh)tus(h.) (,) qui(h_g) in(i!jwk)tél(i_[oh:h]h)li(h)git(hvv//i_[oh:h]h//jvIH'Ghf..) (;) su(hh)per(h) e(h)gé(ih/ij_hih/ij_ij//hi/jij)num(jh/jkihhf.) (,) et(f) páu(hf/hhh)pe(h)rem :(h.f!gwh!iv.hi/jhh/iih.0) (:) in(hh) di(h)e(hi) ma(ivH'GE//fhGEfh..)(,)(gi!jvHF)la(fhF'Efhhf//hvvGF'hee[ll:1]d.0) (:) li(d)be(ef)rá(f)bit(f) e(f.0/[-0.5]hvGF'g)um(ef) *() Dó(hf)mi(hi)nus.(i_[uh:l]jH'Ghi..) (,) (ef'hh'jIH'GF'gwhf.1) (::)",
     "latin": "Ego dixi : Dómine, miserére mei : sana ánimam meam, quóniam peccávi tibi. ℣. Beátus qui intélligit super egénum et páuperem : in die mala liberábit eum Dóminus.",
     "translation": "I said: O Lord, be merciful to me: heal my soul, for I have sinned against you. ℣. Blessed is he that understands concerning the needy and the poor: the Lord will deliver him in the evil day.",
     "source": "Graduale Romanum (GregoBase #399)",
@@ -9974,7 +11910,36 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 41 opens with verse 2, the beatitude about caring for the needy, before arriving at verse 5, the personal cry of contrition that gives this chant its name. The Gradual reverses that order, singing verse 5 first, \"Ego dixi: Domine, miserere mei,\" and then reaching back to verse 2, \"Beatus qui intelligit super egenum et pauperem.\" Three intervening verses, including the psalmist's lament that enemies watch for his death, are passed over entirely.",
+      "source": "Ps. 41:5, 2 (Vulgate numbering Ps. 40:5, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb401": {
+    "id": "gb401",
+    "gregobaseId": "401",
+    "title": "Majorem caritatem",
+    "part": "offertory",
+    "mode": "Offertory · St. Josaphat, Bishop and Martyr · Mode II",
+    "gabc": "(f3) MA(c)jó(egf)rem(f.) *(,) ca(f)ri(ef)tá(f!hhh_f/hjIH'ihh'hhvF'Ef!gwhf)tem(f.) (;) ne(fhf___!gwh)mo(ef) ha(f!gwh/ih)bet,(f!hfh.) (:) ut(ef) á(hi)ni(i)mam(ij) su(h)am(kxhj/kjji.) (,) po(kxh.i!jwk_[hl:1]j)nat(ijiih) quis(h!iwjihh/fgf.) (;) pro(h_g) a(gihh)mí(iv.hjIH'hf/hih)cis(hv.hhh) (,) su(f)is.(f!hhh_f/hhh/f_[oh:h]g_[oh:h]f._[oh:h]) (::)",
+    "latin": "Majórem caritátem nemo habet, ut ánimam suam ponat quis pro amícis suis.",
+    "translation": "Greater love than this no man has, that a man lay down his life for his friends.",
+    "source": "Graduale Romanum (GregoBase #401, Solesmes) — per Sancti/11-14.txt's [Offertorium] (John 15:13).",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "josaphat",
+        "part": "offertory",
+        "feastTitle": "St. Josaphat, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-14"
+      }
+    ],
+    "commentary": {
+      "text": "Majorem caritatem names the greater love that lays down life for friends. Saint Josaphat's formulary asks God to stir in the Church the Spirit by which he gave his life for the sheep, so the Offertory gives that prayer its Gospel words.",
+      "source": "John 15:13 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-11-14 (Missale Romanum formulary)"
+    }
   },
   "gb403": {
     "id": "gb403",
@@ -10025,7 +11990,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tollite hostias draws from two consecutive verses of Psalm 96, trimming both ends. The opening of verse 8, \"Bring to the Lord glory unto his name,\" is dropped, and so is the close of verse 9, \"Let all the earth be moved at his presence.\" What remains is the direct invitation: bring offerings, enter the courts, adore the Lord in his holy place. The compression turns a broader hymn of cosmic praise into a focused call to approach.",
+      "source": "Ps. 96:8-9 (Vulgate numbering Ps. 95:8-9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb405": {
     "id": "gb405",
@@ -10052,7 +12021,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 47 verse 9 reads in the Vulgate, \"Regnabit Deus super gentes,\" a future tense: God shall reign over the nations. The Alleluia verse quietly reshapes it into the past, \"Regnávit Dóminus super omnes gentes,\" the reign already accomplished, and substitutes \"Dóminus\" for \"Deus\" while adding \"omnes\" so that no nation is left outside. Sung on the Sunday after the Ascension, the shift in tense turns a prophecy into a proclamation.",
+      "source": "Ps. 47:9 (Vulgate numbering Ps. 46:9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb406": {
     "id": "gb406",
@@ -10060,18 +12033,11 @@ window.CHANT_INDEX = {
     "title": "Specie tua",
     "part": "alleluia",
     "mode": "Alleluia · Common of a Virgin · Mode VIII",
-    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhg ehf/gffe.) (::) ℣. Spé(hv.gih)ci(hg)e(g) tu(gh!ivvH'Fhf/gh)a,(g.) (;) et(g) pul(g)chri(gf)tú(hji)di(h)ne(gh) tu(f_ehvvGE.gxfgFD.1gxegF'Efe)a(e.) (:) in(e)tén(feh)de,(h.) (,) pró(hfh'GE//fhF'D//gxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)spe(e[ll:1]d)re(d.) (;) pro(fd)cé(ef)de,(f) *() et(f) re(hg/hfh)gna.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
+    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhgehf/gffe.) (::) ℣. Spé(hv.gih)ci(hg)e(g) tu(gh!ivvH'Fhf/gh)a,(g.) (;) et(g) pul(g)chri(gf)tú(hji)di(h)ne(gh) tu(f_ehvvGE.gxfgFD.1gxegF'Efe)a(e.) (:) in(e)tén(feh)de,(h.) (,) pró(hfh'GE//fhF'D//gxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/g_[oh:h]e//gvFEfd)spe(e[ll:1]d)re(d.) (;) pro(fd)cé(ef)de,(f) *() et(f) re(hg/hfh)gna.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'gvE'Defe.) (,) (gxhhvF'EfgED.gyhhvF'Ef_gffe.) (::)",
     "latin": "Allelúia. ℣. Spécie tua, et pulchritúdine tua inténde, próspere procéde, et regna.",
     "translation": "Alleluia. ℣. With your comeliness and your beauty, set out, proceed prosperously, and reign.",
     "source": "Graduale Romanum (GregoBase #406)",
     "usages": [
-      {
-        "calendar": "1962",
-        "feastKey": "common-holy-women",
-        "part": "alleluia",
-        "feastTitle": "Common of holy women",
-        "rank": ""
-      },
       {
         "calendar": "1962",
         "feastKey": "common-virgin",
@@ -10156,7 +12122,7 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-holy-women",
         "part": "alleluia",
-        "feastTitle": "Common of holy women",
+        "feastTitle": "Common of Holy Women (Cognovi)",
         "rank": ""
       },
       {
@@ -10190,6 +12156,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Gertrude, Virgin",
         "rank": "Optional Memorial",
         "dateMD": "11-16"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-virgin",
+        "part": "alleluia",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Memorial",
+        "dateMD": "12-13"
       },
       {
         "calendar": "modern",
@@ -10239,7 +12213,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "8-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Specie tua draws from the middle of Psalm 45, verse 5, but stops halfway through it. The psalm's verse continues, in the Douay-Rheims, \"Because of truth and meekness and justice: and thy right hand shall conduct thee wonderfully,\" words of humility that the antiphon leaves aside, keeping only the forward movement of beauty, comeliness, and royal advance.",
+      "source": "Ps. 45:5 (Vulgate numbering Ps. 44:5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb407": {
     "id": "gb407",
@@ -10252,6 +12230,54 @@ window.CHANT_INDEX = {
     "translation": "With glory and honor you have crowned him: and you have set him over the works of your hands, O Lord.",
     "source": "Graduale Romanum (GregoBase #407)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Timothy, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-24"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Polycarp, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Eusebius, Bishop and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Simeon, Bishop and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-18"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Blaise, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-3"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "offertory",
+        "feastTitle": "St. Stanislaus, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "5-7"
+      },
       {
         "calendar": "1962",
         "feastKey": "john-baptist-vigil",
@@ -10284,7 +12310,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 8 uses these words to describe humanity as a whole, set by God over the rest of creation. This Offertory lifts them out of that context and applies them to John the Baptist, beginning midway through verse 6 and omitting its opening clause, \"Minuisti eum paulominus ab angelis,\" that is, \"Thou hast made him a little less than the angels.\" The chant also closes with \"Domine,\" a word that does not appear in the psalm verses at all, and it sets aside the following verse entirely: \"Omnia subjecisti sub pedibus ejus, oves et boves universas, insuper et pecora campi.\"",
+      "source": "Ps. 8:6-7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb413": {
     "id": "gb413",
@@ -10385,7 +12415,36 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ecclesiasticus 45:14 describes a crown of gold engraved with the sign of holiness and the glory of honor. The Common of a Bishop Confessor gives that image its Alleluia.",
+      "source": "Ecclus. 45:14 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
+  },
+  "gb417": {
+    "id": "gb417",
+    "gregobaseId": "417",
+    "title": "Gaudeamus omnes",
+    "part": "introit",
+    "mode": "Introit · St. Josaphat, Bishop and Martyr · Mode I",
+    "gabc": "(c4) GAu(c)de(d)á(ixdh'!iv)mus(h.) *(,) o(hg~)mnes(hg) in(fg) Dó(gjh)mi(ixh.g!hwihi)no,(ih..) (;) di(h)em(fg~) fe(g)stum(gff) ce(dg)le(gff)brán(dg~)tes(gff) (,) sub(f) ho(g)nó(g./hjh)re(ghg.) be(f)á(g)ti(f) Jó(f)sa(h)phat(g!jj) Már(h)ty(h_[oh:h]i_[oh:h]h_[oh:h])ris :(h.) (:) de(fg) cu(fg)jus(f) pas(f)si(g)ó(g./hjh)ne(ghg.) (,) gau(fg)dent(f) An(fg/hgh)ge(gvFE'fwgfg)li,(gf..) (;) et(f) col(g)láu(g./hjH~G~)dant(h_g) (,) Fí(fge)li(f)um(fg/hfgvFE) De(d!ewfef)i.(e[ll:1]d..) (::)",
+    "latin": "Gaudeámus omnes in Dómino, diem festum celebrántes sub honóre beáti Jósaphat Mártyris : de cujus passióne gaudent Angeli, et colláudant Fílium Dei.",
+    "translation": "Let us all rejoice in the Lord, celebrating a feast day in honor of blessed Josaphat, Martyr: at whose passion the Angels rejoice, and give praise to the Son of God.",
+    "source": "Graduale Romanum (GregoBase #417, Solesmes) — Common-of-a-Martyr Introit text with St. Josaphat's name proper to it, per Sancti/11-14.txt.",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "josaphat",
+        "part": "introit",
+        "feastTitle": "St. Josaphat, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-14"
+      }
+    ],
+    "commentary": {
+      "text": "A young feast for an ancient chant: St. Josaphat, a 17th-century Ruthenian Basilian monk and bishop killed for his support of union with Rome, wasn't canonized until 1867 (Pius IX), and was given, rather than a newly composed introit, this reused \"Gaudeamus\" festal formula (this app's own all-saints entry documents its older, wider use). His feast was originally set for Nov. 14 — Nov. 12, the actual date of his death, was already occupied by St. Martin I — and only moved there in the 1969 calendar reform.",
+      "source": "Wikipedia, \"Josaphat Kuntsevych.\""
+    }
   },
   "gb418": {
     "id": "gb418",
@@ -10407,7 +12466,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This melody was later reused, with new words, as the Introit for Christ the King (this app's own christ-king entry, Dignus est Agnus) — a young 20th-century feast whose chant was adapted from this older baptismal Introit rather than newly composed.",
+      "text": "Dum sanctificátus fúero in vobis was later reused, with new words, as the Introit for Christ the King, found in this app's own Dignus est Agnus entry. Christ the King is a young 20th-century feast, and its chant was adapted from this older baptismal Introit rather than newly composed.",
       "source": "MusicaSacra Church Music Forum, \"Dignus est Agnus\" (citing Dom Johner) — same source already cited on christ-king."
     }
   },
@@ -10436,7 +12495,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 98 (97 in the Vulgate numbering)'s command to \"sing a new song\" was a favorite text for composers well beyond the chant repertory: Claudio Monteverdi, Marc-Antoine Charpentier, Dieterich Buxtehude, and Michel-Richard de Lalande all wrote independent concert settings of the same words, and more recently the English composer Robert Hugill published a new SATB setting of it in 2008.",
+      "source": "CPDL ChoralWiki, \"Cantate Domino (Robert Hugill).\""
+    }
   },
   "gb420": {
     "id": "gb420",
@@ -10465,7 +12528,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-8"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Mary's Nativity receives an Alleluia that names her glorious solemnity and traces her descent through Abraham, Judah, and David. The verse celebrates her birth by placing it within a remembered ancestral line.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb422": {
     "id": "gb422",
@@ -10485,7 +12552,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Petite et accipietis draws its text from Luke 11:9-10, following the Vulgate closely but with one quiet change: where Luke 11:9 reads dabitur vobis, it shall be given to you, the chant has accipietis, you shall receive, bringing the promise into closer alignment with the words that follow in verse 10, omnis enim qui petit, accipit. Those two verses sit in Luke immediately after the parable of a man knocking on a neighbor's door to beg for bread, so the command to ask, seek, and knock carries the weight of that story behind it.",
+      "source": "Luke 11:9-10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb423": {
     "id": "gb423",
@@ -10493,7 +12564,7 @@ window.CHANT_INDEX = {
     "title": "Jacta cogitatum tuum",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Years B & C) · Mode VII",
-    "gabc": "(c3) JA(ehf)cta(efED.) *(,) co(e)gi(fh)tá(h)tum(hf~) tu(hi!kkvI'G//ijhhg)um(h.) (,) in(h) Dó(hi/jk)mi(j)no,(i.) (;) et(h) i(i)pse(h) te(h_g/h_g/hjIG'hvF'Effe/ff) (,) (ef!hhhfhvvGF'he//fvEDe[ll:1]d..) (;) e(e.f!gwh!ivH//E.f'/gef)nú(cd)tri(e)et.(e./ih/ie..) (,) (igijkIG.hig'hvF'Ef_gffe.) (::) ℣. Dum(e) cla(hh)má(hi)rem(hh/ig'/hiffe.) (,) ad(eh) Dó(hi)mi(i)num,(ijI'H[oll:0;0.94cm]/l_k//jlkk/iji.) (:) ex(f)au(hh)dí(hi)vit(hh/ig'/hiffe.) (,) vo(hh)cem(h) me(hv.gh/ih/ij)am(i.) (;) ab(i) his(ikjikJI'ig//hih/iffe.) (;) qui(ef) ap(e)pro(ef)pín(e)quant(ef'h) *() mi(hv.gh/ihi)hi.(ie..) (,) (igijki./jkJ'Ijh/iig./hig'hvFEfde.) (,) (hhvF'EfvD[ull:0]B.1ehf/gffe.) (::)",
+    "gabc": "(c3) JA(ehf)cta(efED.) *(,) co(e)gi(fh)tá(h)tum(hf~) tu(hi!kkvI'G//ijhhg)um(h.) (,) in(h) Dó(hi/jk)mi(j)no,(i.) (;) et(h) i(i)pse(h) te(h_g/h_g/hjIG'hvF'Effe/ff) (,) (ef!hhhfhvvGF'he//fvEDe[ll:1]d..) (;) e(e.f!gwh!ivH//E.f'/gef)nú(cd)tri(e)et.(e./ih/ie..) (,) (igijkIG.hig'hvF'Ef_gffe.) (::) ℣. Dum(e) cla(hh)má(hi)rem(hh/ig'/hiffe.) (,) ad(eh) Dó(hi)mi(i)num,(ijI'H[oll:0;0.94cm]/l_k//jlkk/iji.) (:) ex(f)au(hh)dí(hi)vit(hh/ig'/hiffe.) (,) vo(hh)cem(h) me(hv.gh/ih/ij)am(i.) (;) ab(i) his(ikjikJI'ig//hih/iffe.) (;) qui(ef) ap(e)pro(ef)pín(e)quant(ef'h) *() mi(hv.gh/ihi)hi.(ie..) (,) (igijki./jkJ'Ijh/iig./hig'hvFEfde.) (,) (hhvF'EfvD[ull:0]B.1e!hf/gffe.) (::)",
     "latin": "Jacta cogitátum tuum in Dómino, et ipse te enútriet. ℣. Dum clamárem ad Dóminum, exaudívit vocem meam ab his qui appropínquant mihi.",
     "translation": "Cast your care upon the Lord, and he shall sustain you. ℣. When I cried to the Lord, he heard my voice, from them that draw near to me.",
     "source": "Graduale Romanum (GregoBase #423)",
@@ -10519,7 +12590,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 55:23 asks the faithful to cast their care upon the Lord, who sustains the just. The Gradual then reaches back to verses 17 and 19, where the speaker cries to God and awaits redemption in peace.",
+      "source": "Ps. 55:23, 17, 19 (Vulgate numbering Ps. 54:23, 17, 19) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent03-0r.txt [Officium heading]; Divinum Officium, Pent03-0r (Missale Romanum formulary)"
+    }
   },
   "gb424": {
     "id": "gb424",
@@ -10527,7 +12602,7 @@ window.CHANT_INDEX = {
     "title": "Fuit homo missus a Deo",
     "part": "gradual",
     "mode": "Gradual · The Nativity of St. John the Baptist (Vigil) · Mode V",
-    "gabc": "(c4) FU(ff)it(f) ho(fgff'f)mo(f_d//fge'/fgd'/e[ll:1]ddc.) (;) * mis(hf/gh!jj/kjk)sus(jij) a(h_g/h!jjvH'Gh) De(f_[oh:h]g_[oh:h]f_[oh:h])o,(f.) (:) cu(ixfi)i(ihig) no(hj)men(ixi_[uh:l]jI//Fg.) (,) Jo(f)án(fh)nes(gh) e(f_d//ffd)rat :(dc..) (:) hic(ff/gh/jjvH'F) ve(fhg___//jv.jjjhhff//hvGFgf)nit.(f.) (z0::c3) ℣. Ut(d) te(d)sti(fe)mó(eh)ni(h)um(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (;) per(f)hi(h)bé(i)ret(hiHF.1) (,) de(f) lú(f!h'i/hhf)mi(hfhhefd)ne,(d.) (:) et(hh) pa(h)rá(h)re(hg/ij) Dó(i_[oh:h]h)mi(h)no(hg/i_[oh:h]h//jvIH'Ghf..) (;) * ple(hh)bem(h) per(h)fé(ihhf)ctam.(hhhf/hhhf/hhf.) (,) (de/!f!hh/!ijghf.0gxegFD.1) (::)",
+    "gabc": "(c4) FU(ff)it(f) ho(fgff'f)mo(f_d//fge'/fgd'/e[ll:1]ddc.) (;) * mis(hf/gh!jj/kjk)sus(jij) a(h_g/h!jjvH'Gh) De(f_[oh:h]g_[oh:h]f_[oh:h])o,(f.) (:) cu(ixfi)i(ihig) no(hj)men(ixi_[uh:l]jI//Fg.) (,) Jo(f)án(fh)nes(gh) e(f_d//ffd)rat :(dc..) (:) hic(ff/gh/jjvH'F) ve(fhg___//jv.jjjhhff//hvGFgf)nit.(f.) (z0::c3) ℣. Ut(d) te(d)sti(fe)mó(eh)ni(h)um(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (;) per(f)hi(h)bé(i)ret(hiHF.1) (,) de(f) lú(f!h'i/hhf)mi(hfhhefd)ne,(d.) (:) et(hh) pa(h)rá(h)re(hg/ij) Dó(i_[oh:h]h)mi(h)no(hg/i_[oh:h]h//jvIH'Ghf..) (;) * ple(hh)bem(h) per(h)fé(ihhf)ctam.(hhhf/hhhf/hhf.) (,) (de/!f!hh/!ijghf.0gxegFD.1) (::)",
     "latin": "Fuit homo missus a Deo, cui nomen Joánnes erat : hic venit. ℣. Ut testimónium perhibéret de lúmine, et paráre Dómino plebem perféctam.",
     "translation": "There was a man sent from God, whose name was John: this man came. ℣. That he might bear witness to the light, and to prepare for the Lord a perfect people.",
     "source": "Graduale Romanum (GregoBase #424)",
@@ -10548,7 +12623,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Fuit homo missus a Deo identifies John as one sent from God to bear witness to the light. At the Vigil of his Nativity, the Gradual holds that witness together with the call to prepare a people for the Lord.",
+      "source": "John 1:6-7 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-06-23 (Missale Romanum formulary)"
+    }
   },
   "gb425": {
     "id": "gb425",
@@ -10575,7 +12654,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Ash Wednesday",
         "rank": "Feria"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine non secundum opens with an allusion to Psalm 103's confession that God has not dealt with sinners according to their sins. The Tract then asks the Lord not to repay iniquities, to remember former sins no more, and to forgive for his name's sake.",
+      "source": "Ps. 103:10 (Vulgate numbering Ps. 102:10) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp3-3.txt [Officium heading]; Divinum Officium, Quadp3-3 (Missale Romanum formulary)"
+    }
   },
   "gb429": {
     "id": "gb429",
@@ -10583,7 +12666,7 @@ window.CHANT_INDEX = {
     "title": "Senex puerum portabat",
     "part": "alleluia",
     "mode": "Alleluia · The Presentation of the Lord · Mode I",
-    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Se(fhg___)nex(g_[oh:h]e//fgf/gddc.) (,) pú(cd)e(ef'g)rum(gv.e!g_4[uh:l]h) por(fvED)tá(d.c!dw!evDCde)bat :(d.) (:) pu(dede)er(ce) au(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)tem(e[ll:1]d..) (;) se(c)nem(d!fdf) ()* re(ef!gvFE)gé(fg)bat.(g.) (,) (hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
+    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Se(fhg___)nex(g_[oh:h]e//fgf/gddc.) (,) pú(cd)e(ef'g)rum(gv.e!g_4[uh:l]h) por(fvED)tá(d.c!dw!evDCde)bat :(d.) (:) pu(dede)er(ce) au(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)tem(e[ll:1]d..) (;) se(c)nem(d!fdf) ()* re(ef!gvFE)gé(fg)bat.(g.) (,) (hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
     "latin": "Allelúia. ℣. Senex púerum portábat : puer autem senem regébat.",
     "translation": "Alleluia. ℣. The old man carried the Child: but the Child was his ruler.",
     "source": "Graduale Romanum (GregoBase #429)",
@@ -10604,7 +12687,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "2-2"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "William Byrd set this text twice in his Gradualia: ac cantiones sacrae, liber primus of 1605. One setting appears among pieces for the Purification, alongside Suscepimus Deus, Nunc dimittis, and Responsum accepit Simeon. A second setting appears among the miscellaneous four-voice pieces in the same collection.",
+      "source": "Wikipedia, \"List of compositions by William Byrd\" (rev. 1353567302)"
+    }
   },
   "gb43": {
     "id": "gb43",
@@ -10637,14 +12724,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "dedication-lateran",
         "part": "communion",
-        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
-        "rank": "Optional Memorial",
-        "dateMD": "11-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "dedication-lateran",
-        "part": "communion",
         "feastTitle": "The Dedication of the Lateran Basilica",
         "rank": "Feast",
         "dateMD": "11-9"
@@ -10656,7 +12735,11 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domus mea hears Christ call the temple a house of prayer, then invites everyone who asks, seeks, and knocks. At the dedication of the Lateran Basilica, the Communion gives that welcome a home in the Church's prayer.",
+      "source": "Matt. 21:13 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb432": {
     "id": "gb432",
@@ -10664,7 +12747,7 @@ window.CHANT_INDEX = {
     "title": "Anima nostra sicut passer",
     "part": "gradual",
     "mode": "Gradual · Common of Several Martyrs · Mode V",
-    "gabc": "(c3) A(dd)ni(d)ma(d) no(ded//d'd)stra,(d_b/dec'/de[ull:0]b'/cbba.) *(;) sic(d)ut(f) pas(hf/hhh)ser,(h.) (,) e(h_g/i!jwk)ré(i_[oh:h]h)pta(h) est(hihh/fgf.) (;) de(h_f) lá(h)que(hi)o(i) ve(ihhf)nán(gxhfgED')ti(d!f'h)um.(gyhighf.) (,) (de/f!hh/ijghf.gxegFD.1) (::) ℣. Lá(d)que(gxf)us(fh/ih/i_[oh:h]hivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0ddd!f_h/ijh.1) (,) con(hi'j)trí(i_[oh:h]h)tus(h) est,(hg/i_[oh:h]hjvIH'Ghf..) (:) et(hh) nos(h) li(h)be(h)rá(ih/ij_h ih/ij_ij//hi/jij)ti(jh/jkihhf.) (,) su(hf/hhh)mus :(h.f!gwh!iv.hi/jhh/iih.0) (:) ad(hhi)ju(h)tó(hi)ri(h)um(hf~) no(hi)strum(h.) (,) in(hf~) nó(hi)mi(h)ne(hh) Dó(hih/ihjvIG'hvF'Ef!hhivHG)mi(hg)ni,(h.) (;) qui(hh) fe(h)cit(h) cae(ivHF)lum(f.) *(,) et(f!h'i) ter(hgiHF)ram.(f.//de/f!hh/ijghf.gxegFD.1) (::)",
+    "gabc": "(c3) A(dd)ni(d)ma(d) no(ded//d'd)stra,(d_b/dec'/de[ull:0]b'/cbba.) *(;) sic(d)ut(f) pas(hf/hhh)ser,(h.) (,) e(h_g/i!jwk)ré(i_[oh:h]h)pta(h) est(hihh/fgf.) (;) de(h_f) lá(h)que(hi)o(i) ve(ihhf)nán(gxhfgED')ti(d!f'h)um.(gyhighf.) (,) (de/f!hh/ijghf.gxegFD.1) (::) ℣. Lá(d)que(gxf)us(fh/ih/i_[oh:h]hivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0ddd!f_h/ijh.1) (,) con(hi'j)trí(i_[oh:h]h)tus(h) est,(hg/i_[oh:h]hjvIH'Ghf..) (:) et(hh) nos(h) li(h)be(h)rá(ih/ij_hih/ij_ij//hi/jij)ti(jh/jkihhf.) (,) su(hf/hhh)mus :(h.f!gwh!iv.hi/jhh/iih.0) (:) ad(hhi)ju(h)tó(hi)ri(h)um(hf~) no(hi)strum(h.) (,) in(hf~) nó(hi)mi(h)ne(hh) Dó(hih/ihjvIG'hvF'Ef!hhivHG)mi(hg)ni,(h.) (;) qui(hh) fe(h)cit(h) cae(ivHF)lum(f.) *(,) et(f!h'i) ter(hgiHF)ram.(f.//de/f!hh/ijghf.gxegFD.1) (::)",
     "latin": "Anima nostra, sicut passer, erépta est de láqueo venántium. ℣. Láqueus contrítus est, et nos liberáti sumus : adjutórium nostrum in nómine Dómini, qui fecit caélum et terram.",
     "translation": "Our soul has been delivered as a sparrow out of the snare of the fowlers. ℣. The snare is broken, and we are delivered: our help is in the name of the Lord, who made heaven and earth.",
     "source": "Graduale Romanum (GregoBase #432)",
@@ -10676,6 +12759,22 @@ window.CHANT_INDEX = {
         "feastTitle": "Sts. Vincent and Anastasius, Martyrs",
         "rank": "Semiduplex",
         "dateMD": "1-22"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "gradual",
+        "feastTitle": "Sts. Protus and Hyacinth, Martyrs",
+        "rank": "Simplex",
+        "dateMD": "9-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "gradual",
+        "feastTitle": "St. Januarius, Bishop, and Companions, Martyrs",
+        "rank": "Semiduplex",
+        "dateMD": "9-19"
       },
       {
         "calendar": "modern",
@@ -10693,7 +12792,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Anima nostra sicut passer draws its respond and verse from the final two verses of Psalm 124. The verse immediately before, which the chant passes over, blesses the Lord for not giving the faithful as prey to their teeth, a raw image of enemies. The chant opens instead with the sparrow already free, the snare already broken. The Gospel of the day, from Luke 6, closes with Christ's words to those hated and cast out for his sake: your reward is great in heaven.",
+      "source": "Ps. 124:7-8 (Vulgate numbering Ps. 123:7-8) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C3a (Missale Romanum formulary)"
+    }
   },
   "gb44": {
     "id": "gb44",
@@ -10727,7 +12830,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Both the respond and the versicle are drawn from a single verse, Psalm 141:2, divided between them: the respond takes the first half and the versicle the second. The verse's image of prayer rising like incense stands in for a temple sacrifice the psalmist cannot offer, and it drew the verse into Christian evening worship from an early time. John Chrysostom records that it was sung every day.",
+      "source": "Ps. 141:2 (Vulgate numbering Ps. 140:2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 141\" (rev. 1351255003)"
+    }
   },
   "gb450": {
     "id": "gb450",
@@ -10747,7 +12854,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Venite adoremus draws on Psalm 95 (94 in the Vulgate numbering), the psalm the Rule of St. Benedict assigns as the Invitatory that opens Matins every single day of the year, so named from its own refrain of invitation. The full psalm's later verses, which the Introit passes over, warn against the hardened hearts of the Israelites who tested God at Meribah in the wilderness, a passage the Letter to the Hebrews later quotes as a caution rather than a call to worship.",
+      "source": "Wikipedia, “Invitatory”; New Advent Catholic Encyclopedia, “Invitatorium.”"
+    }
   },
   "gb455": {
     "id": "gb455",
@@ -10767,7 +12878,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Confitemini Domino begins with praise for the Lord's goodness and enduring mercy. Its verses ask who can declare all God's mighty acts, bless those who do justice, and close by asking the Lord to remember his people and visit them with salvation.",
+      "source": "Ps. 105:1 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb456": {
     "id": "gb456",
@@ -10868,7 +12983,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Statuit ei Dominus draws on Ecclesiasticus 45:30, adjusting the verse in two ways: it inserts \"Dominus\" to make the subject explicit, and it omits the phrase \"et semini ejus\" from the closing line on priestly dignity, fitting a text that was originally about Phinees and his descendants to any bishop. The surrounding verses, which praise Phinees for standing firm in the shameful fall of the people, stay off the page. The same Latin text inspired a polyphonic setting, Statuit ei Dominus, op. 30 (1924), by the Belgian composer Jules Van Nuffel.",
+      "source": "Ecclus. 45:30 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Jules Van Nuffel\" (rev. 1370427755)"
+    }
   },
   "gb462": {
     "id": "gb462",
@@ -10897,7 +13016,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Elegerunt Apostoli Stephanum holds two moments together in a single flowing sentence: Stephen's election as deacon and his dying prayer under the stones. The text moves from the community's act of choosing him straight to his last words, so that his ministry and his martyrdom arrive together at the moment of the offering of gifts.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb464": {
     "id": "gb464",
@@ -10924,7 +13047,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ego clamavi draws a single verse from Psalm 17, the prayer of a just man in distress. The chant text follows Vulgate Psalm 17:6 closely but omits one word: where the Vulgate reads \"inclina aurem tuam mihi,\" incline your ear to me, the chant has \"inclina aurem tuam,\" without the \"mihi.\" The surrounding verses of the psalm, which speak of keeping hard ways and asking God to perfect one's steps, do not enter the chant.",
+      "source": "Ps. 17:6 (Vulgate numbering Ps. 16:6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb47": {
     "id": "gb47",
@@ -10951,7 +13078,36 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 118 repeats that the Lord's right hand has wrought strength and has exalted the speaker. The Offertory adds the declaration that the singer will live and tell the Lord's works.",
+      "source": "Ps. 118:16, 17 (Vulgate numbering Ps. 117:16, 17) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi3-0.txt [Officium heading]; Divinum Officium, Epi3-0 (Missale Romanum formulary)"
+    }
+  },
+  "gb470": {
+    "id": "gb470",
+    "gregobaseId": "470",
+    "title": "Ego vos elegi",
+    "part": "communion",
+    "mode": "Communion · Ss. Seven Founders of the Servite Order, Confessors · Mode I",
+    "gabc": "(c4) E(h)go(jhhg.) (,) * vos(i.h!iwj) e(h_f)lé(gh)gi(g) de(eg) mun(fgff)do,(d.) (;) ut(fe) e(fg)á(g'/hfg)tis,(d.) (,) et(df~) fru(fef)ctum(dc~) af(fh)fe(gh)rá(f_[oh:h]g_[oh:h]f_[oh:h])tis :(f.) (:) et(hg~) fru(ixgh/if)ctus(df~) ve(fe)ster(cd~) má(d)ne(de!fvED'e)at.(e[ll:1]d..) (::)",
+    "latin": "Ego vos elégi de mundo, ut eátis, et fructum afferátis : et fructus vester máneat.",
+    "translation": "I have chosen you out of the world, that you should go and bring forth fruit: and your fruit should remain.",
+    "source": "Graduale Romanum (GregoBase #470)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "seven-founders",
+        "part": "communion",
+        "feastTitle": "Ss. Seven Founders of the Servite Order, Confessors",
+        "rank": "Duplex",
+        "dateMD": "2-12"
+      }
+    ],
+    "commentary": {
+      "text": "John 15:16 begins with Christ's choice of his disciples, not their choice of him. The Communion follows the verse through their appointment to bear lasting fruit and its promise that the Father will hear prayer in Christ's name.",
+      "source": "John 15:16 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-02-12 (Missale Romanum formulary)"
+    }
   },
   "gb472": {
     "id": "gb472",
@@ -10978,7 +13134,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quis sicut Dominus asks who is like the God who dwells on high yet looks upon the lowly. Psalm 113 answers with God's raising of the needy and lifting of the poor, making the Gradual's high vision a promise of attention to the lowly.",
+      "source": "Ps. 113:5-7 (Vulgate numbering Ps. 112:5-7) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb475": {
     "id": "gb475",
@@ -11067,14 +13227,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-apostles",
         "part": "introit",
-        "feastTitle": "St. Luke, Evangelist",
-        "rank": "Feast",
-        "dateMD": "10-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-apostles",
-        "part": "introit",
         "feastTitle": "Sts. Simon and Jude, Apostles",
         "rank": "Feast",
         "dateMD": "10-28"
@@ -11113,6 +13265,14 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "modern",
+        "feastKey": "luke",
+        "part": "introit",
+        "feastTitle": "St. Luke, Evangelist",
+        "rank": "Feast",
+        "dateMD": "10-18"
+      },
+      {
+        "calendar": "modern",
         "feastKey": "thomas-apostle",
         "part": "introit",
         "feastTitle": "St. Thomas, Apostle",
@@ -11121,8 +13281,32 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Shared by every apostle's feast (it also serves St. Thomas, Dec. 21), this text attracted an unusually large polyphonic tradition: settings survive by Dufay, Isaac, Stolzer, Carissimi, Palestrina (Offertoria totius anni, 1593), and Thomas Tallis, whose 1575 Latin motet (published in his and Byrd's joint Cantiones Sacrae) was later given new English words and sung as the anthem \"Blessed be thy name.\"",
-      "source": "CPDL ChoralWiki, \"Mihi autem nimis\"; CPDL ChoralWiki, \"Blessed be thy name (Thomas Tallis).\""
+      "text": "Luke's own Gospel supplies three of the texts sung every single day in the Divine Office: the Magnificat (Mary's song, Luke 1:46-55) at Vespers, the Benedictus (Zechariah's song, Luke 1:68-79) at Lauds, and the Nunc dimittis (Simeon's song, Luke 2:29-32) at Compline. No other evangelist contributed so much standing repertoire to the Hours, and each canticle went on to draw its own vast setting tradition apart from this shared Apostles' Introit, with Monteverdi's and Bach's Magnificats and Rachmaninoff's Nunc dimittis among them.",
+      "source": "Wikipedia, \"Magnificat\"; Wikipedia, \"Benedictus (canticle)\"; Wikipedia, \"Nunc dimittis.\""
+    }
+  },
+  "gb477": {
+    "id": "gb477",
+    "gregobaseId": "477",
+    "title": "Tu es sacerdos",
+    "part": "alleluia",
+    "mode": "Alleluia · Common of a Bishop Confessor (Paschal Time) · Mode VIII",
+    "gabc": "(c4) AL(d)le(d!gfg//hjh)lú(fg~){ia}.(g.) *(;) ij.(h!jhj./klJ//G.hjI'HG.) (,) (h!jhj./klJ//G.hjI'HG.) (;) (h!jij//ikJH'hg//ig/hhg.) (::) ℣. Tu(fg) es(g) sa(h)cér(ijhhg~)dos(g.) in(ih) ae(j_[hl:1]k_[hl:1]j_[hl:1])tér(jjjvIG'h)num,(h.) (;) se(hi!j'k)cún(kj~)dum(kjikJH'hg.) ór(ih/ij)di(hg)nem(gh/jkj//ikJH'hg.) (;) * Mel(d)chí(d!gfg//hjh)se(fg)dech.(g.) (;) (h!jhj./klJ//G.hjI'HG.) (,) (h!jhj./klJ//G.hjI'HG.) (;) (h!jij//ikJH'hg//ig/hhg.) (::)",
+    "latin": "Allelúia. ℣. Tu es sacérdos in aetérnum, secúndum órdinem Melchísedech.",
+    "translation": "Alleluia. ℣. You are a priest for ever, according to the order of Melchisedech.",
+    "source": "Graduale Romanum (GregoBase #477)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-confessor-bishop-paschal",
+        "part": "alleluia",
+        "feastTitle": "Common of a Bishop (Statuit ei Dominus) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Tu es sacerdos quotes only the second half of Psalm 110:4. The full verse in the Clementine Vulgate opens with the divine oath, \"Juravit Dominus, et non pœnitebit eum\" (the Lord has sworn, and will not repent of it), before turning to the priesthood. The chant drops that oath entirely and begins where the verse pivots: \"Tu es sacerdos in æternum secundum ordinem Melchisedech.\" What the singer hears is the declaration of everlasting priesthood, shorn of its preamble.",
+      "source": "Ps. 110:4 (Vulgate numbering Ps. 109:4) (Douay-Rheims; Latin from the Clementine Vulgate)"
     }
   },
   "gb478": {
@@ -11154,7 +13338,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Set for six voices (SSATTB) by William Byrd, published in Gradualia II (1607) — Byrd's second published cycle of Mass Propers for the English Catholic recusant liturgical year.",
+      "text": "William Byrd set this text for six voices (SSATTB), publishing it in Gradualia II (1607), his second published cycle of Mass Propers for the English Catholic recusant liturgical year.",
       "source": "CPDL ChoralWiki, \"Nunc scio vere (William Byrd)\"; Hyperion Records, CDA67653 (Ensemble Plus Ultra)."
     }
   },
@@ -11183,7 +13367,11 @@ window.CHANT_INDEX = {
         "feastTitle": "25th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tu mandasti draws two consecutive verses from Psalm 119, verses 4 and 5, without omission or interruption. It is sung as Communion at the Mass for the nineteenth Sunday after Pentecost, where the Gospel is the parable from Matthew 22 of a king whose invited guests ignored his summons to a wedding feast and went about their own business. The longing to have one's ways directed toward keeping God's commandments is prayed at the very moment of receiving that feast, and against the Gospel's picture of those who turned away.",
+      "source": "Ps. 119:4-5 (Vulgate numbering Ps. 118:4-5) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent19-0 (Missale Romanum formulary); Divinum Officium, Pent19-0.txt [Officium heading]"
+    }
   },
   "gb481": {
     "id": "gb481",
@@ -11212,7 +13400,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "5-31"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Felix es sacra Virgo praises Mary as blessed and worthy of praise because Christ, the sun of justice, arose from her. The Visitation Alleluia gives that praise its brief proclamation of Mary.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb486": {
     "id": "gb486",
@@ -11246,7 +13438,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Improperium exspectavit cor meum draws from Psalm 69, beginning partway through verse 21 and omitting its opening phrase, \"In thy sight are all they that afflict me,\" then continuing without a break into verse 22, so that the two verses become a single lament. The Gospel of the day is John 19:31-37, which describes a soldier opening Christ's side with a lance after the crucifixion. The offertory's closing image, gall and vinegar given to the suffering figure of the psalm, places the congregation already inside that same scene before the Gospel is proclaimed.",
+      "source": "Ps. 69:21 (Vulgate numbering Ps. 68:21) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent02-5 (Missale Romanum formulary)"
+    }
   },
   "gb487": {
     "id": "gb487",
@@ -11254,11 +13450,19 @@ window.CHANT_INDEX = {
     "title": "Posuisti Domine",
     "part": "offertory",
     "mode": "Offertory · St. Matthew, Apostle and Evangelist · Mode VIII",
-    "gabc": "(c4) PO(f)su(g)í(g./hjHG'gf/ghg___)sti(g.) *(,) Dó(hg/h!jjkvJH)mi(gfh)ne(h.) (;) in(h) cá(jhhf/!ghGF'/!fde'1c)(,)(cd!ff/gh/jh)pi(g)te(f) e(fg~)jus(g.) (;) co(g.h!iwj)ró(jj/ij_g//h!jijkljj)nam(ki/jhhg.) (;) de(g) lá(g)pi(g)de(gggvED'eg'!hvGFg.) (,) pre(g)ti(hj)ó(ig/h!jj/klK'Ijkjjh/ig)so :(g.) (:) vi(g)tam(gh~) pé(hvGFgvFEf.0/!ghffdg)ti(fg)it(g.) (,) a(h) te,(gjI'Ghh//fh!jvGF'fd/ef!ghg.) (:) tri(g)bu(g)í(gjji/jh)sti(h) e(gh)i,(h.) (;) al(h!iwji~)le(jkJH'//gi. hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h])lú(ghg___){ia}.(g.) (::)",
+    "gabc": "(c4) PO(f)su(g)í(g./hjHG'gf/ghg___)sti(g.) *(,) Dó(hg/h!jjkvJH)mi(gfh)ne(h.) (;) in(h) cá(jhhf/!ghGF'/!fde'1c)(,)(cd!ff/gh/jh)pi(g)te(f) e(fg~)jus(g.) (;) co(g.h!iwj)ró(jj/ij_g//h!jijkljj)nam(ki/jhhg.) (;) de(g) lá(g)pi(g)de(gggvED'eg'!hvGFg.) (,) pre(g)ti(hj)ó(ig/h!jj/klK'Ijkjjh/ig)so :(g.) (:) vi(g)tam(gh~) pé(hvGFgvFEf.0/!ghffdg)ti(fg)it(g.) (,) a(h) te,(gjI'Ghh//fh!jvGF'fd/ef!ghg.) (:) tri(g)bu(g)í(gjji/jh)sti(h) e(gh)i,(h.) (;) al(h!iwji~)le(jkJH'//gi.hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h])lú(ghg___){ia}.(g.) (::)",
     "latin": "Posuísti, Dómine, in cápite ejus corónam de lápide pretióso : vitam pétiit a te, tribuísti ei, allelúia.",
     "translation": "You have set, O Lord, on his head a crown of precious stones: he asked life of you, and you have given it him, alleluia.",
     "source": "Graduale Romanum (GregoBase #487)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-3",
+        "part": "offertory",
+        "feastTitle": "St. Valentine, Priest and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-14"
+      },
       {
         "calendar": "1962",
         "feastKey": "matthew",
@@ -11275,7 +13479,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-21"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Posuisti Domine draws from two consecutive verses of Psalm 21, but trims both. Verse 4 opens with the words \"Quoniam prævenisti eum in benedictionibus dulcedinis\" before arriving at the crown; the chant drops that opening clause and begins with the crowning itself. Verse 5 ends with \"longitudinem dierum, in sæculum, et in sæculum sæculi\"; the chant omits that ending, closing simply after \"tribuisti ei.\" The word \"Domine\" that now opens the chant does not appear in either psalm verse.",
+      "source": "Ps. 21:4-5 (Vulgate numbering Ps. 20:4-5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb49": {
     "id": "gb49",
@@ -11283,7 +13491,7 @@ window.CHANT_INDEX = {
     "title": "Tenuisti manum dexteram meam",
     "part": "gradual",
     "mode": "Gradual · Mode IV",
-    "gabc": "(c4) TE(c)nu(dc)í(cg)sti(g_[oh:h]ff'fddc.) (,) * ma(d!gfg)num(fffddc.) (,) déx(dfe)te(fff)ram(fffd/ef'g) me(fdf)am :(fffvDC'd!fffvDCdd//cfd/e[ll:1]ddc.) (:) in(c) vo(cd/fe)lun(f)tá(f)te(fef) tu(fhgffd/f_e)a(fffgFE.) (;) de(dfe)du(f)xí(ff//fff_d)sti(d_c cd!fhg) me :(ixghg___//hihig.) (:) et(ef'g) cum(g_[uh:l]h) gló(ef'g)ri(fdgvFE)a(eg!hvFD) (,) (ff/ge'fvDC'fd/e[ll:1]ddc.) (;) as(cd/fe)sum(f)psí(ef'g)sti(gfg) me.(g.d!ewf!gv.) (,) (f!gh'FEixf_hivGFhv.ghgge.) (::) ℣. Quam(fv.fffdg) bo(ixi.g!hwihi)nus(ih..) (,) Is(h)ra(h)el(h) De(hg/hhh_g/hhh_f)(,)(ixgh!ijHG.fiH'G)us(ggf/g_[oh:h]f//h_ghvFD.1) (,) (fef/[1]{/[-3]ix}g_[oh:h]i_[oh:h]g_[oh:h]!hwiggf.0) (;) re(fd/ffd/ef'g//h!jjh/jjj_h)ctis(h_g/jhj) cor(hv.fg'h//jhjvGF'fd)(,)(ef!ghG'Efv.ef!gh_gh)de!(e.) (:) me(h)i(hg) au(ixgi/hi~)tem(g) (,) pae(fe)ne(f.) mo(ef!gvFE'fg'h h!jjh/jjj_h)ti(h_g/jhj) sunt(hv.fg'h) (,) pe(jhjvGF'fd//ef'g)des,(hgef_ef//ef!hvGE'fd.) (:) pae(c)ne(d) ef(d)fú(dg!hv)si(ffef) sunt(fe__) (,) gres(ff//fff_d)sus(cd) me(fhg)i :(ixghg___//hihig.) (:) qui(f)a(e) ze(f)lá(gh)vi(g) (,) in(fd~) pec(fhg)ca(e)tó(ixfhg/hiGF'fd)(,)(gf/ghffdgvFE'fvED'ef'g)ri(g)bus,(gffef//ef!hvGE'fd.) (:) pa(dc/d!fffdf//ef'g)cem(gh~) (,) pec(h/jjh)ca(f)tó(fg!hvhg)rum(ge/ghGE'fvD'C//d!ewfe.) (;) * vi(fd/ffd/ef'g//ef'h)dens.(h_g//hjGF'fdgv.fh//ghgge.) (::)",
+    "gabc": "(c4) TE(c)nu(dc)í(cg)sti(g_[oh:h]ff'fddc.) (,) * ma(d!gfg)num(fffddc.) (,) déx(dfe)te(fff)ram(fffd/ef'g) me(fdf)am :(fffvDC'd!fffvDCdd//cfd/e[ll:1]ddc.) (:) in(c) vo(cd/fe)lun(f)tá(f)te(fef) tu(fhgffd/f_e)a(fffgFE.) (;) de(dfe)du(f)xí(ff//fff_d)sti(d_ccd!fhg) me :(ixghg___//hihig.) (:) et(ef'g) cum(g_[uh:l]h) gló(ef'g)ri(fdgvFE)a(eg!hvFD) (,) (ff/ge'fvDC'fd/e[ll:1]ddc.) (;) as(cd/fe)sum(f)psí(ef'g)sti(gfg) me.(g.d!ewf!gv.) (,) (f!gh'FEixf_hivGFhv.ghgge.) (::) ℣. Quam(fv.fffdg) bo(ixi.g!hwihi)nus(ih..) (,) Is(h)ra(h)el(h) De(hg/hhh_g/hhh_f)(,)(ixgh!ijHG.fiH'G)us(ggf/g_[oh:h]f//h_ghvFD.1) (,) (fef/[1]{/[-3]ix}g_[oh:h]i_[oh:h]g_[oh:h]!hwiggf.0) (;) re(fd/ffd/ef'g//h!jjh/jjj_h)ctis(h_g/jhj) cor(hv.fg'h//jhjvGF'fd)(,)(ef!ghG'Efv.ef!gh_gh)de!(e.) (:) me(h)i(hg) au(ixgi/hi~)tem(g) (,) pae(fe)ne(f.) mo(ef!gvFE'fg'hh!jjh/jjj_h)ti(h_g/jhj) sunt(hv.fg'h) (,) pe(jhjvGF'fd//ef'g)des,(hgef_ef//ef!hvGE'fd.) (:) pae(c)ne(d) ef(d)fú(dg!hv)si(ffef) sunt(fe__) (,) gres(ff//fff_d)sus(cd) me(fhg)i :(ixghg___//hihig.) (:) qui(f)a(e) ze(f)lá(gh)vi(g) (,) in(fd~) pec(fhg)ca(e)tó(ixfhg/hiGF'fd)(,)(gf/ghffdgvFE'fvED'ef'g)ri(g)bus,(gffef//ef!hvGE'fd.) (:) pa(dc/d!fffdf//ef'g)cem(gh~) (,) pec(h/jjh)ca(f)tó(fg!hvhg)rum(ge/ghGE'fvD'C//d!ewfe.) (;) * vi(fd/ffd/ef'g//ef'h)dens.(h_g//hjGF'fdgv.fh//ghgge.) (::)",
     "latin": "Tenuísti manum déxteram meam : et in voluntáte tua deduxísti me, et cum glória assumpsísti me. ℣. Quam bonus Israël Deus rectis corde! mei autem pæne moti sunt pedes, pæne effúsi sunt gressus mei : quia zelávi in peccatóribus, pacem peccatórum videns.",
     "translation": "You have held me by my right hand: and by your will you have conducted me, and with glory you have received me. ℣. How good is God to Israel, to them that are of a right heart! But my feet were almost moved, my steps had well nigh slipped: because I had a zeal on occasion of the wicked, seeing the prosperity of sinners.",
     "source": "Graduale Romanum (GregoBase #49)",
@@ -11295,7 +13503,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Palm Sunday of the Passion of the Lord",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 73 begins by calling God good to Israel and then admits the singer's feet nearly slipped over the prosperity of sinners. Verse 24 answers that instability with God's guiding hand and final reception in glory.",
+      "source": "Ps. 73:24, 1-3 (Vulgate numbering Ps. 72:24, 1-3) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quad6-0.txt [Officium heading]; Divinum Officium, Quad6-0 (Missale Romanum formulary)"
+    }
   },
   "gb496": {
     "id": "gb496",
@@ -11315,7 +13527,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Comedite pinguia joins the holy day's table with a command to send portions to those who have none prepared. The Communion lets the joy of the Lord become shared strength, echoing the call to rejoice rather than grieve.",
+      "source": "Neh. 8:10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb50": {
     "id": "gb50",
@@ -11323,7 +13539,7 @@ window.CHANT_INDEX = {
     "title": "Suscepimus Deus",
     "part": "gradual",
     "mode": "Gradual · The Presentation of the Lord · Mode V",
-    "gabc": "(c4) SUs(d)cé(ffg)pi(f)mus,(f.) *(,) De(ghg'/hg)us,(gv.fgFD.1) (,) mi(d)se(ffg)ri(f)cór(fg~)di(f)am(f) tu(fffvDC'dff/hghf)am(f.) (;) in(hj~) mé(j)di(kvJH)o(h) tem(f)pli(h) tu(gv.fhf/gh)i :(g.) (:) se(h)cún(hg~)dum(j) no(j)men(ij) tu(hhg)um,(h_g) De(fg!hvGF'g)us,(gf..) (;) i(ffg)ta(f) et(f) laus(ghg'hvG'F) tu(fv.ege/f_d)a(dc..) (;) in(fgf) fi(fg'h)nes(ixhjHG'hw!ivHG') ter(f)rae.(fffvDC.) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Sic(d)ut(d) au(fe~)dí(eh)vi(h)mus,(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) i(f!h'i)ta(ih/jkihhf.) (,) et(f) ví(hfh)di(hhh)mus(h.f!gwh!iv.hi/jhh/iih.0) (:) in(d) ci(d)vi(d)tá(d)te(d) De(d)i(d) no(de)stri,(d.) (,) in(d) mon(d)te(d) san(dfE'D)cto(ef) *() e(fhG'Fhhh)jus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) SUs(d)cé(ffg)pi(f)mus,(f.) *(,) De(ghg'/hg)us,(gv.fgFD.1) (,) mi(d)se(ffg)ri(f)cór(fg~)di(f)am(f) tu(fffvDC'dff/hghf)am(f.) (;) in(hj~) mé(j)di(kvJH)o(h) tem(f)pli(h) tu(gv.fhf/gh)i :(g.) (:) se(h)cún(hg~)dum(j) no(j)men(ij) tu(hhg)um,(h_g) De(fg!hvGF'g)us,(gf..) (;) i(ffg)ta(f) et(f) laus(ghg'hvG'F) tu(fv.ege/f_d)a(dc..) (;) in(fgf) fi(fg'h)nes(ixhjHG'hw!ivHG') ter(f)rae.(fffvDC.) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Sic(d)ut(d) au(fe~)dí(eh)vi(h)mus,(h_[oh:h]i_[oh:h]h_2[oh:h]//i_[oh:h]hjvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) i(f!h'i)ta(ih/jkihhf.) (,) et(f) ví(hfh)di(hhh)mus(h.f!gwh!iv.hi/jhh/iih.0) (:) in(d) ci(d)vi(d)tá(d)te(d) De(d)i(d) no(de)stri,(d.) (,) in(d) mon(d)te(d) san(dfE'D)cto(ef) *() e(fhG'Fhhh)jus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Suscépimus, Deus, misericórdiam tuam in médio templi tui : secúndum nomen tuum, Deus, ita et laus tua in fines terrae. ℣. Sicut audívimus, ita et vídimus in civitáte Dei nostri, in monte sancto ejus.",
     "translation": "We have received your mercy, O God, in the midst of your temple: according to your name, O God, so also is your praise unto the ends of the earth. ℣. As we have heard, so have we seen, in the city of our God, in his holy mountain.",
     "source": "Graduale Romanum (GregoBase #50)",
@@ -11351,7 +13567,11 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Suscepimus Deus draws from Psalm 48, reversing the order of its verses: the respond sings verses 10 and 11, while the verse reaches back to verse 9. The psalm's verse 9 closes with the words \"Deus fundavit eam in æternum\" (God hath founded it for ever), but the chant drops that clause, ending instead with \"in monte sancto ejus.\" The end of verse 11 is likewise trimmed, setting aside \"justitia plena est dextera tua\" (thy right hand is full of justice) and leaving the praise of God's name as the final thought.",
+      "source": "Ps. 48:10-11, 9 (Vulgate numbering Ps. 47:10-11, 9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb5001": {
     "id": "gb5001",
@@ -11371,7 +13591,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday after Pentecost",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sicut in holocaustis arietum comes from Daniel's prayer that sacrifice be made before God to please him. Its final words trust that those who place their confidence in the Lord will not be put to confusion.",
+      "source": "Dan. 3:40 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent07-0.txt [Officium heading]; Divinum Officium, Pent07-0 (Missale Romanum formulary)"
+    }
   },
   "gb501": {
     "id": "gb501",
@@ -11398,14 +13622,18 @@ window.CHANT_INDEX = {
         "feastTitle": "18th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The phrase Deus in adiutorium meum, \"O God, come to my assistance,\" has a second liturgical life far beyond any single Sunday: for centuries this same verse has opened every hour of the Divine Office, prayed or sung at the very start of Lauds, Vespers, and every hour between them. Historical accounts associate the custom's introduction into monastic prayer with St. Benedict and its extension to the whole Roman Office with St. Gregory the Great.",
+      "source": "New Advent Catholic Encyclopedia, \"Deus in Adjutorium Meum Intende.\""
+    }
   },
   "gb510": {
     "id": "gb510",
     "gregobaseId": "510",
     "title": "Loquebar de testimoniis",
     "part": "introit",
-    "mode": "Introit · Common of a Virgin Martyr · Mode V",
+    "mode": "Introit · St. Cecilia, Virgin and Martyr · Mode V",
     "gabc": "(c3) LO(df)qué(hhi)bar(h.) *(,) de(h) te(h)sti(h)mó(i)ni(h.f!gwh)is(h) tu(hi!jvIH'i)is(ih..) (;) in(h) con(iji~)spé(j)ctu(h) re(hjIH'i)gum,(h.) (,) et(fdf) non(hh) con(ijh)fun(hh)dé(h_[oh:h]i_[oh:h]h_[oh:h])bar :(h.) (:) et(h_) me(e)di(f)tá(hhi)bar(h.) (,) in(hihh) man(ef)dá(hhi)tis(h) tu(hh/ijh)is,(f/hhfh.) (;) quae(d) di(ef)lé(f/hhf)xi(e) ni(ef/hfh)mis.(d.) (::)",
     "latin": "Loquébar de testimóniis tuis in conspéctu regum, et non confundébar : et meditábar in mandátis tuis, quae diléxi nimis.",
     "translation": "I spoke of your testimonies before kings, and was not ashamed: and I meditated on your commandments, which I loved exceedingly.",
@@ -11436,20 +13664,28 @@ window.CHANT_INDEX = {
         "dateMD": "11-25"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-virgin-martyr",
+        "part": "introit",
+        "feastTitle": "St. Agatha, Virgin and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-5"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "cecilia",
+        "part": "introit",
+        "feastTitle": "St. Cecilia, Virgin and Martyr",
+        "rank": "Optional Memorial",
+        "dateMD": "11-22"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "introit",
         "feastTitle": "St. Agnes, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "1-21"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "introit",
-        "feastTitle": "St. Cecilia, Virgin and Martyr",
-        "rank": "Optional Memorial",
-        "dateMD": "11-22"
       },
       {
         "calendar": "modern",
@@ -11463,19 +13699,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "introit",
-        "feastTitle": "St. Lucy, Virgin and Martyr",
-        "rank": "Memorial",
-        "dateMD": "12-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "introit",
         "feastTitle": "St. Agatha, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "2-5"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Cecilia's patronage of music rests on a single line in her Acts of Passion, compiled in the fifth or sixth century: as musicians played at her wedding, she was said to have sung to God in her heart rather than to the bridegroom. Her familiar image at the organ appears to be a later mistranslation, not anything in that original text. The formal musical cult took centuries to catch up: the first festival in her honor was documented at Évreux in 1570, and her November 22 feast has since drawn new music from Purcell's Hail! Bright Cecilia (1692) to Britten's Hymn to St Cecilia, Britten himself having been born on her feast day.",
+      "source": "Wikipedia, \"Cecilia of Rome\"; Wikipedia, \"St Cecilia's Day.\""
+    }
   },
   "gb511": {
     "id": "gb511",
@@ -11489,13 +13721,6 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #511)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-confessor-2",
-        "part": "gradual",
-        "feastTitle": "Common of confessor 2",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-confessor-2",
         "part": "gradual",
@@ -11503,7 +13728,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "1-17"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 37 gives the just person a mouth that meditates wisdom and a tongue that speaks judgment. The Common of a Confessor Gradual adds that God's law is in the heart, so the singer's steps are not overthrown.",
+      "source": "Ps. 37:30-31 (Vulgate numbering Ps. 36:30-31) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Commune/C4a (Missale Romanum formulary)"
+    }
   },
   "gb512": {
     "id": "gb512",
@@ -11537,7 +13766,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 18, verse 3 runs in full: \"The Lord is my firmament, my refuge, and my deliverer. My God is my helper, and in him will I put my trust. My protector, and the horn of my salvation, and my support\" are the words that close the verse. The Communion antiphon takes only the first two clauses, stopping at \"my God is my helper\" and setting aside the pledge of trust, the protector, the horn of salvation, and the support. What remains is the simplest statement of dependence, the bare naming of what God is, without the response that follows.",
+      "source": "Ps. 18:3 (Vulgate numbering Ps. 17:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb518": {
     "id": "gb518",
@@ -11564,7 +13797,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Midnight)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tecum principium draws from Psalm 110, but reverses the psalm's own order. The gradual opens with verse 3, the declaration of eternal begetting, before verse 1 arrives as the versicle. Psalm 110 itself begins with the Lord's invitation to sit at his right hand, yet the compilers placed the words of the Father speaking of the Son's origin first, so that on Christmas night the listener hears that origin before hearing the Son enthroned.",
+      "source": "Ps. 110:3, 1 (Vulgate numbering Ps. 109:3, 1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb522": {
     "id": "gb522",
@@ -11591,7 +13828,11 @@ window.CHANT_INDEX = {
         "feastTitle": "12th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 28 (27 in the Vulgate numbering), source of this Introit, is a personal lament for most of its length, but its final two verses widen abruptly into a communal prayer for the king and \"his people,\" the very lines this Introit quotes. It is one of several psalms where an individual's plea gives way, in its last breath, to concern for the whole nation.",
+      "source": "USCCB, Psalm 28."
+    }
   },
   "gb524": {
     "id": "gb524",
@@ -11618,7 +13859,36 @@ window.CHANT_INDEX = {
         "feastTitle": "The Epiphany of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Vidimus stellam draws on Matthew 2:2, the verse in which the wise men ask where the king of the Jews is born and give their reason for coming. The chant takes only the second half of that verse, setting aside the question about the king of the Jews, and quietly adds two words not found in Matthew: \"cum muneribus,\" with gifts. The scripture's original simply says they came to adore him; the chant makes the gifts explicit.",
+      "source": "Matt. 2:2 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb528": {
+    "id": "gb528",
+    "gregobaseId": "528",
+    "title": "Laetamini cum Jerusalem",
+    "part": "alleluia",
+    "mode": "Alleluia · St. Boniface, Bishop and Martyr (Paschaltide) · Mode IV",
+    "gabc": "(c4) AL(d)le(df/gfefd)lú(ixf!gwh!ivH~G~){ia}.(gh..) *(,) ij.(d!ffe/fg!hvGF//ghg'/hf/gffe.) (::) ℣. Lae(h)tá(gh)mi(g)ni(ge//gvFED.) (,) cum(d) Je(ef)rú(gh)sa(g)lem,(ixg./hiHF'hfg.) (;) et(g) ex(gh)sul(g)tá(ixgh!ij)te(giHG') in(g) e(g.f!gwhgh)a,(hg..) (:) o(hg~)mnes(g'//hg'/hf) qui(e[ll:1]d) di(f)lí(fg)gi(f)tis(ef!gvFEfvEDe_[oh:h][ll:1]d) ()* Dó(ixf!gwh!ivHG)mi(hg)num.(gh..) (,) (d!ffe/fg!hvGF//ghg'/hf/gffe.) (::)",
+    "latin": "Allelúia. ℣. Lætámini cum Jerúsalem, et exsultáte in ea, omnes qui dilígitis Dóminum.",
+    "translation": "Alleluia. ℣. Rejoice with Jerusalem, and be glad with her, all you that love her.",
+    "source": "Graduale Romanum (GregoBase #528, Solesmes) — Sancti/06-05.txt's own [GradualeP] (Is 66:10) sung in place of the Gradual during Paschaltide, when Boniface's June 5 feast can fall before Pentecost; the DO source's second verse (Is 66:14, \"Vidébitis, et gaudébit cor vestrum\") is not authored, matching this project's house style of authoring only a Paschal chant's first verse (see the 2026-07-14 Commons Paschal-Alleluia sweep).",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "boniface-paschal",
+        "part": "alleluia",
+        "feastTitle": "St. Boniface, Bishop and Martyr (Paschaltide)",
+        "rank": "Duplex",
+        "dateMD": "6-5"
+      }
+    ],
+    "commentary": {
+      "text": "Laetamini cum Jerusalem calls those who love Jerusalem to rejoice with her. The Paschaltide Alleluia takes up Isaiah's vision of Jerusalem's children, consolation, and the river of peace promised by the Lord.",
+      "source": "Is. 66:10 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb529": {
     "id": "gb529",
@@ -11662,7 +13932,11 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Notas mihi fecisti asks the Lord to make known the ways of life and fill the singer with joy in his presence. The verse sets that joy after the promise that God's holy one will not see corruption, placing life and gladness within hope.",
+      "source": "Ps. 16:10 (Vulgate numbering Ps. 15:10) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb533": {
     "id": "gb533",
@@ -11758,7 +14032,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laudate Deum omnes Angeli draws from Psalm 148:2 alone, lifting it out of a psalm that calls all creation to praise in succession: sun, moon, stars, the heavens of heavens, fire, hail, mountains, beasts, and kings. The chant narrows that vast chorus to a single address, directing praise specifically to God's angels and his hosts before the Alleluia closes.",
+      "source": "Ps. 148:2 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb547": {
     "id": "gb547",
@@ -11766,7 +14044,7 @@ window.CHANT_INDEX = {
     "title": "Bonum est confidere",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time · Mode V",
-    "gabc": "(c4) BO(ff)num(fg) est(fef.) (,) * con(f)fí(ixg!hwi)de(gf)re(fgFD.1) (,) in(d) Dó(dgf/gh)mi(g)no,(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) quam(ixhih) con(hg~)fí(gj)de(jjh)re(ixhv.fhg___/hiH'GF'fhvGFgf..) (,) in(fg) hó(g)mi(gff)ne.(dec.) (,) (fhg___/jkijh.fhg/hggf.0) (z0::c3) ℣. Bo(d)num(f) est(gxfh/ih/i_[oh:h]h//ivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0ddd/f_h/ijh.1) (;) spe(hi)rá(h)re(hg) in(ij) Dó(i_[oh:h]h)mi(h)no,(hg/i_[oh:h]h//jvIH'Ghf..) (:) quam(hh) spe(h)rá(ih/ij_h ih/ij_ij//hi/jij)re(jh/jkihh/fgf.) (;) * in(de'f) prin(f)cí(fhGF')pi(i)bus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff/dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) BO(ff)num(fg) est(fef.) (,) * con(f)fí(ixg!hwi)de(gf)re(fgFD.1) (,) in(d) Dó(dgf/gh)mi(g)no,(ixg./hiGF'fd/f_[oh:h]g_[oh:h]f._[oh:h]) (;) quam(ixhih) con(hg~)fí(gj)de(jjh)re(ixhv.fhg___/hiH'GF'fhvGFgf..) (,) in(fg) hó(g)mi(gff)ne.(dec.) (,) (fhg___/jkijh.fhg/hggf.0) (z0::c3) ℣. Bo(d)num(f) est(gxfh/ih/i_[oh:h]h//ivFD'//fh.ivFD'f!hfg.) (,) (fh/ih/i_[oh:h]h//ivFD'e_[oh:h][ll:1]d.0ddd/f_h/ijh.1) (;) spe(hi)rá(h)re(hg) in(ij) Dó(i_[oh:h]h)mi(h)no,(hg/i_[oh:h]h//jvIH'Ghf..) (:) quam(hh) spe(h)rá(ih/ij_hih/ij_ij//hi/jij)re(jh/jkihh/fgf.) (;) * in(de'f) prin(f)cí(fhGF')pi(i)bus.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff/dfe/fee[ll:1]d.0) (::)",
     "latin": "Bonum est confídere in Dómino, quam confídere in hómine. ℣. Bonum est speráre in Dómino, quam speráre in princípibus.",
     "translation": "It is good to trust in the Lord, rather than to trust in man. ℣. It is good to hope in the Lord, rather than to hope in princes.",
     "source": "Graduale Romanum (GregoBase #547)",
@@ -11785,7 +14063,11 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Bonum est confidere sets trust in the Lord against confidence in man and princes. Psalm 118's neighboring verses name the Lord as helper, turning the Gradual's repeated contrast into a prayer that refuses fear of human power.",
+      "source": "Ps. 118:8-9 (Vulgate numbering Ps. 117:8-9) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb552": {
     "id": "gb552",
@@ -11821,7 +14103,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Venite post me draws its words from Matthew 4:19-20, but it quietly adjusts them. The Vulgate's verse 20 reads \"relictis retibus secuti sunt eum,\" meaning they left their nets and followed him; the antiphon adds \"et navi\" (and ship) and replaces \"eum\" with \"Dominum,\" so that the disciples leave nets and ship and follow the Lord. The day's Gospel (Matt 4:18-22) goes on to the calling of James and John, who leave their nets and their father; the Communion antiphon stays with Andrew and Peter alone, folding the image of the abandoned ship into their response.",
+      "source": "Matt. 4:19-20 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-11-30 (Missale Romanum formulary)"
+    }
   },
   "gb5536": {
     "id": "gb5536",
@@ -11841,7 +14127,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Isaiah 45:15, in the Vulgate, reads \"Vere tu es Deus absconditus, Deus Israël, salvator,\" truly you are a hidden God, the God of Israel, the saviour. The Alleluia verse substitutes \"Rex\" for the first \"Deus,\" turning \"hidden God\" into \"hidden King.\" The surrounding verses in Isaiah 45 speak of nations coming in chains to worship, making supplication and confessing that God alone saves, so the acclamation of a hidden sovereign sits at the close of that movement of recognition.",
+      "source": "Cf. Is. 45:15 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb554": {
     "id": "gb554",
@@ -11875,7 +14165,36 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Introibo ad altare Dei rises from a psalm that asks God to send light and truth as guides to his holy hill. At the altar, the prayer turns from that journey to the joy God gives to youth.",
+      "source": "Ps. 43:4 (Vulgate numbering Ps. 42:4) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp2-0.txt [Officium heading]; Divinum Officium, Quadp2-0 (Missale Romanum formulary)"
+    }
+  },
+  "gb556": {
+    "id": "gb556",
+    "gregobaseId": "556",
+    "title": "Ego sum pastor bonus",
+    "part": "communion",
+    "mode": "Communion · St. Josaphat, Bishop and Martyr · Mode II",
+    "gabc": "(f3) E(ggh)go(f!gwh) sum(he~) *() pa(ggh)stor(hf~) bo(g!ihi)nus,(ggh.) (;) et(e) co(fg~)gnó(g)sco(f/giffe) o(gi)ves(h) me(ijI'G)as,(g.) (;) et(e) co(fg~)gnó(g)scunt(f) me(efggf) me(efE'Cef)ae.(f/ggf.0) (::)",
+    "latin": "Ego sum pastor bonus : et cognósco oves meas, et cognóscunt me meae.",
+    "translation": "I am the good shepherd: and I know my sheep, and mine know me.",
+    "source": "Graduale Romanum (GregoBase #556, Solesmes, \"sine Alleluia\"). Sancti/11-14.txt's Communio cross-references @Tempora/Pasc2-0 (Good Shepherd Sunday, \"Ego sum pastor bonus,\" John 10:14); its trailing alleluias belong to that Paschaltide Sunday and are dropped for this November feast, per this Solesmes edition's own sine-Alleluia variant (contrast GregoBase #95, used cum-Alleluia in data/propers.js's \"easter-4\").",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "josaphat",
+        "part": "communion",
+        "feastTitle": "St. Josaphat, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-14"
+      }
+    ],
+    "commentary": {
+      "text": "Ego sum pastor bonus speaks of the good shepherd who knows his sheep and is known by them. At Saint Josaphat's Communion, the Gospel continues with the shepherd laying down his life for the sheep and gathering them into one flock.",
+      "source": "John 10:14 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Pasc2-0 (Missale Romanum formulary)"
+    }
   },
   "gb558": {
     "id": "gb558",
@@ -11895,7 +14214,11 @@ window.CHANT_INDEX = {
         "feastTitle": "29th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "\"Keep me as the apple of your eye,\" from Psalm 17 (16 in the Vulgate numbering), is one of Scripture's most repeated images of divine protection: close variants of the same phrase turn up again in Deuteronomy, Proverbs, and Zechariah. It survives today in ordinary English idiom, where calling someone the apple of one's eye still means they are cherished above all else.",
+      "source": "USCCB, Psalms, chapter 17; USCCB, Deuteronomy 32:10, Proverbs 7:2, Zechariah 2:8."
+    }
   },
   "gb561": {
     "id": "gb561",
@@ -11924,7 +14247,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Video caelos apertos draws on Acts 7:55, where Stephen, full of the Holy Spirit, sees the glory of God and Jesus standing on the right hand of God and cries out his vision to the council. The chant compresses his words: where the Vulgate has him say \"Ecce video cælos apertos, et Filium hominis stantem a dextris Dei,\" the chant reads \"Video caelos apertos, et Jesum stantem a dextris virtutis Dei,\" substituting the name Jesus for \"the Son of man\" and adding \"virtutis\" (power) before Dei. The verses marked as the chant's source end at verse 56, the moment the crowd rushes upon him, so the alleluia holds Stephen at the instant of his vision, just before the stoning begins.",
+      "source": "Acts 7:55-56 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb564": {
     "id": "gb564",
@@ -11953,7 +14280,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "The contemporary Lithuanian composer Vytautas Miškinis (b. 1954) set this text in 2008, commissioned by the vocal ensemble Calycanthus, in what one reviewer called a \"lyrical minimalism\" — repetitive rhythmic fragments and sustained lines against the pulse, broken by occasional homophonic outbursts. It was recorded by the Choir of Royal Holloway under Rupert Gough on their 2010 Miškinis album Time is Endless.",
+      "text": "Vytautas Miškinis, a contemporary Lithuanian composer born in 1954, set this text in 2008, commissioned by the vocal ensemble Calycanthus. One reviewer described the work as a \"lyrical minimalism,\" with repetitive rhythmic fragments and sustained lines against the pulse, broken by occasional homophonic outbursts. It was recorded by the Choir of Royal Holloway under Rupert Gough on their 2010 Miškinis album Time is Endless.",
       "source": "Hyperion Records, CDA67818 (Miškinis, \"Time is Endless\"), track note for \"Dum medium silentium.\""
     }
   },
@@ -11963,7 +14290,7 @@ window.CHANT_INDEX = {
     "title": "Beata es Virgo Maria",
     "part": "offertory",
     "mode": "Offertory · The Visitation of the Blessed Virgin Mary · Mode VIII",
-    "gabc": "(c4) BE(fg)á(g./[-0.5]hjHG'gf)ta(ghg___) es,(g.) *(,) Vir(jvIHk_[hl:1]j//ijh/ig./[-0.5]hi/jg.)(,)(jvIHk_[hl:1]j//ijh/ig./[-0.5]hi/jg.)(,)(ggghvGFg_[oh:h]d//g!jhi)go(hg..) (,) Ma(ig/h!jjk)rí(hg)a,(gd..) (;) quae(d) ó(d)mni(d)um(d) por(d)tá(dc/d!ff/gh/jg)sti(g.) (;) Cre(h)a(g)tó(gjI'Ghh//fh!jvGF'fd/ef!ghg)rem :(g.) (:) ge(g_[oh:h]d)nu(f_e)í(fhg)sti(g.) (,) qui(g) te(gh) fe(h_g/hiH'Gj_g//hiH'G//fg/hg/hjjh/i_[oh:h]g)cit,(g.) (:) et(hvGF) in(hji) ae(jhj)tér(hjg)num(gfh.) (,) pér(gj)ma(ji)nes(jkJH'//gi. hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h]) Vir(ghg___)go,(g.) (:) al(g@k!ik~)le(kv.jkj'kvJ'IG.hj/ijHG.)(,)(h!kik./jkj'kvJ'IG.hi//hjg___)lú(ghg___){ia}.(g.) (::)",
+    "gabc": "(c4) BE(fg)á(g./[-0.5]hjHG'gf)ta(ghg___) es,(g.) *(,) Vir(jvIHk_[hl:1]j//ijh/ig./[-0.5]hi/jg.)(,)(jvIHk_[hl:1]j//ijh/ig./[-0.5]hi/jg.)(,)(ggghvGFg_[oh:h]d//g!jhi)go(hg..) (,) Ma(ig/h!jjk)rí(hg)a,(gd..) (;) quae(d) ó(d)mni(d)um(d) por(d)tá(dc/d!ff/gh/jg)sti(g.) (;) Cre(h)a(g)tó(gjI'Ghh//fh!jvGF'fd/ef!ghg)rem :(g.) (:) ge(g_[oh:h]d)nu(f_e)í(fhg)sti(g.) (,) qui(g) te(gh) fe(h_g/hiH'Gj_g//hiH'G//fg/hg/hjjh/i_[oh:h]g)cit,(g.) (:) et(hvGF) in(hji) ae(jhj)tér(hjg)num(gfh.) (,) pér(gj)ma(ji)nes(jkJH'//gi.hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h]) Vir(ghg___)go,(g.) (:) al(g@k!ik~)le(kv.jkj'kvJ'IG.hj/ijHG.)(,)(h!kik./jkj'kvJ'IG.hi//hjg___)lú(ghg___){ia}.(g.) (::)",
     "latin": "Beáta es, Virgo María, quae ómnium portásti Creatórem : genuísti qui te fecit, et in aetérnum pérmanes Virgo, allelúia.",
     "translation": "Blessed are you, O Virgin Mary, who bore the Creator of all: you brought forth him who made you, and you remain a Virgin for ever, alleluia.",
     "source": "Graduale Romanum (GregoBase #567)",
@@ -12000,7 +14327,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "5-31"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "At the Visitation's offertory, Beata es Virgo Maria blesses Mary as the one who bore the Creator and gave birth to the one who made her. The antiphon holds together maternity and enduring virginity in a compact praise for Mary.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb570": {
     "id": "gb570",
@@ -12045,7 +14376,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "7-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In omnem terram draws on a single verse of Psalm 19, one verse lifted from a poem about the heavens declaring God's glory. The verses immediately surrounding it describe day and night exchanging knowledge, and the sun running its course across the sky. Taken on its own, the verse was applied in the liturgical commons for Apostles, its cosmic imagery turned to speak of those sent to preach to all the earth. The melody was later borrowed as the cantus firmus for an isorhythmic motet, Sub Arturo plebs, written by the English composer Johannes Alanus and conjecturally dated to around 1358 or the early 1370s.",
+      "source": "Ps. 19:5 (Vulgate numbering Ps. 18:5) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Isorhythm\" (rev. 1322163626); Wikipedia, \"Sub Arturo plebs\" (rev. 1326414432)"
+    }
   },
   "gb574": {
     "id": "gb574",
@@ -12072,7 +14407,11 @@ window.CHANT_INDEX = {
         "feastTitle": "11th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 27:4 names one desire: to dwell in the Lord's house all the days of life. The Communion leaves the verse's final wish in view as well, to see the Lord's delight and visit the temple.",
+      "source": "Ps. 27:4 (Vulgate numbering Ps. 26:4) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi1-0.txt [Officium heading]; Divinum Officium, Epi1-0 (Missale Romanum formulary)"
+    }
   },
   "gb579": {
     "id": "gb579",
@@ -12099,7 +14438,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Easter (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Cantate Domino draws from verse 2 of Psalm 96, which in the Vulgate reads: \"Cantate Domino, et benedicite nomini ejus; annuntiate de die in diem salutare ejus.\" The antiphon breaks that verse into two parallel calls by placing alleluia between them, and substitutes \"bene nuntiáte\" for the psalm's \"annuntiate.\" The Douay-Rheims argument to the psalm notes it was ordered to be sung when the house was built after the captivity, though its principal reference, the argument adds, is to the building of the church of Christ after redemption from the captivity of Satan.",
+      "source": "Ps. 96:2 (Vulgate numbering Ps. 95:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb580": {
     "id": "gb580",
@@ -12126,7 +14469,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exsultate Deo draws its words from Psalm 81:2-3, but verse 3 is quietly reshaped in the chant. The psalm's own text, \"Sumite psalmum, et date tympanum; psalterium jucundum cum cithara,\" lists three instruments: timbrel, psaltery, and harp. The chant drops the timbrel and the psaltery, and moves the word \"jucundum,\" meaning pleasant, from the psaltery to the psalm itself, so what the psalm called a pleasant psaltery becomes, in the chant, a pleasant psalm.",
+      "source": "Ps. 81:2-3 (Vulgate numbering Ps. 80:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb582": {
     "id": "gb582",
@@ -12153,7 +14500,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Ash Wednesday",
         "rank": "Feria"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui meditabitur, the Communion chant for Ash Wednesday, draws its text from two consecutive verses of Psalm 1 but quotes selectively from each. Verse 2 opens \"sed in lege Domini voluntas ejus, et in lege ejus meditabitur die ac nocte,\" yet the chant begins mid-verse, taking only the clause about meditation. From verse 3 it keeps only \"dabit fructum suum in tempore suo,\" setting aside the image of a tree planted near running waters and the closing assurance that \"omnia quæcumque faciet prosperabuntur.\" The result joins meditation on the law directly to fruitfulness, without the tree metaphor between them.",
+      "source": "Ps. 1:2, 3 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb583": {
     "id": "gb583",
@@ -12180,7 +14531,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Our Lord Jesus Christ, King of the Universe",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dominabitur a mari joins the promise of dominion from sea to sea with the vision of kings adoring and nations serving. The paired Psalm verses set universal rule beside the Lord's vineyard whose branches cover the hills, giving the acclamation a wide image of his reign.",
+      "source": "Ps. 72:8; Ps. 79:11 (Vulgate numbering Ps. 71:8; Ps. 79:11) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb585": {
     "id": "gb585",
@@ -12209,7 +14564,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Heinrich Isaac set this Introit too, in the same Choralis Constantinus that gave this app's own Judica me (5th Sunday of Lent) its polyphonic setting. Because the feast of the Immaculate Conception (comparatively young, and without its own ancient chant) has no melody of its own, its Introit \"Gaudens gaudebo\" — this app's own immaculate-conception entry — was assembled as a contrafact of this very antiphon, adapting Vocem jucunditatis's older words and melody to new text.",
+      "text": "Heinrich Isaac set this Introit in the same Choralis Constantinus that gave this app's own Judica me, from the 5th Sunday of Lent, its polyphonic setting. Because the feast of the Immaculate Conception, comparatively young and without its own ancient chant, has no melody of its own, its Introit \"Gaudens gaudebo\", this app's own Immaculate Conception entry, was assembled as a contrafact of this very antiphon, adapting Vocem jucunditatis's older words and melody to new text.",
       "source": "CPDL ChoralWiki, \"Vocem jucunditatis (Heinrich Isaac)\"; Tonus Peregrinus blog, \"Gaudens gaudébo: Introit for the Immaculate Conception\" (same source already cited on immaculate-conception)."
     }
   },
@@ -12226,19 +14581,96 @@ window.CHANT_INDEX = {
     "usages": [
       {
         "calendar": "1962",
-        "feastKey": "common-martyr",
+        "feastKey": "common-martyr-bishop",
         "part": "communion",
-        "feastTitle": "Common of martyr",
-        "rank": ""
+        "feastTitle": "St. Marcellus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "1-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Callistus I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-14"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Evaristus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Martin I, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "11-12"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Clement I, Pope and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Anicetus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "4-17"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Felix I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "5-30"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Silverius, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "6-20"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Pius I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "7-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "communion",
+        "feastTitle": "St. Zephyrinus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "8-26"
       },
       {
         "calendar": "modern",
         "feastKey": "common-martyr",
         "part": "communion",
-        "feastTitle": "Common of martyr",
+        "feastTitle": "Common of a Martyr (In virtute tua)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Posuisti Domine takes only the second half of Psalm 21:4, setting aside the verse's opening clause, \"Quoniam prævenisti eum in benedictionibus dulcedinis\" (for thou hast prevented him with blessings of sweetness), and beginning instead at the crown: \"Posuisti in capite ejus coronam de lapide pretioso.\" Sung as the Communion of a Martyr Bishop, it follows a Gospel from Matthew 10 in which Christ tells his disciples not to fear those who can kill the body, and promises to acknowledge before the Father whoever acknowledges him before others.",
+      "source": "Ps. 21:4 (Vulgate numbering Ps. 20:4) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C2a (Missale Romanum formulary)"
+    }
   },
   "gb589": {
     "id": "gb589",
@@ -12265,7 +14697,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Easter (Divine Mercy Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Mitte manum tuam draws on John 20:27, the verse in which Jesus invites Thomas to put his hand to the nail marks, but the antiphon reshapes what it borrows. Where the verse directs Thomas first to his finger and then to the wound in his side, the antiphon folds both gestures into one, directing the hand to the place of the nails, and the side is left aside. The day's Gospel runs from John 20:19 to 31, so those receiving Communion have already heard Thomas's demand in verse 25 and his confession in verse 28. The antiphon returns to the moment just before that confession, holding the congregation at the hinge of the story.",
+      "source": "John 20:27 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc1-0 (Missale Romanum formulary)"
+    }
   },
   "gb591": {
     "id": "gb591",
@@ -12306,7 +14742,11 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Justitiae Domini rectae draws from four consecutive verses of Psalm 19, but stitches them together selectively. After taking the opening of verse 9, the compiler skips the rest of that verse and the whole of verse 10, which reads in the Vulgate \"Timor Domini sanctus, permanens in saeculum saeculi; judicia Domini vera, justificata in semetipsa.\" The chant then picks up at the end of verse 11, the comparison with honey, and closes with the first half of verse 12, setting aside its second half: \"in custodiendis illis retributio multa,\" meaning \"in keeping them there is a great reward.\"",
+      "source": "Ps. 19:9, 10, 11, 12 (Vulgate numbering Ps. 18:9, 10, 11, 12) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb592": {
     "id": "gb592",
@@ -12340,7 +14780,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Vulgate text of Mark 11:24 opens not with \"Amen\" but with \"Propterea,\" meaning \"therefore,\" making the verse a continuation of Christ's teaching about faith moving mountains in verse 23. The chant replaces that opening word with \"Amen dico vobis,\" lifting the promise free of its preceding argument and giving it the direct, solemn weight of a standalone declaration. The Gospel sung at this Mass, from Matthew 9:18-26, recounts two healings granted to people who reached out to Christ in faith, and the Communion antiphon arrives as the promise on which both stories rest.",
+      "source": "Mark 11:24 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent23-0 (Missale Romanum formulary)"
+    }
   },
   "gb593": {
     "id": "gb593",
@@ -12360,7 +14804,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Christus resurgens draws on a single verse of Romans 6, set within a passage that speaks directly to the baptized: the surrounding verses run \"if we be dead with Christ, we believe that we shall live also together with Christ\" and \"so do you also reckon that you are dead to sin, but alive unto God.\" The antiphon sets aside that direct address and isolates the one declarative statement about Christ himself. The Gospel of the day, from John 16, begins with Christ telling his disciples that he is going to the one who sent him, \"Vado ad eum, qui misit me.\"",
+      "source": "Rom. 6:9 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc4-0 (Missale Romanum formulary)"
+    }
   },
   "gb595": {
     "id": "gb595",
@@ -12380,7 +14828,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday after Pentecost",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 102:2 is the verse this alleluia carries, though the psalm opens one verse earlier with a heading-like line the Douay-Rheims renders: \"The prayer of the poor man, when he was anxious, and poured out his supplication before the Lord.\" The alleluia steps past that introduction and begins the plea itself. There is also a small textual difference worth noticing: where the Clementine Vulgate reads \"clamor meus ad te veniat,\" the chant sings \"pervéniat,\" a compound form of the same verb carrying the same sense of arriving or reaching.",
+      "source": "Ps. 102:2 (Vulgate numbering Ps. 101:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb596": {
     "id": "gb596",
@@ -12400,7 +14852,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Troubles of the heart and its necessities are brought before the Lord. Psalm 25's verse asks God to see the singer's lowliness and labor, then to forgive all sins.",
+      "source": "Ps. 25:17-18 (Vulgate numbering Ps. 24:17-18) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quad1-3.txt [Officium heading]; Divinum Officium, Quad1-3 (Missale Romanum formulary)"
+    }
   },
   "gb600": {
     "id": "gb600",
@@ -12408,7 +14864,7 @@ window.CHANT_INDEX = {
     "title": "Domine praevenisti",
     "part": "gradual",
     "mode": "Gradual · Saint Joseph, Spouse of the Blessed Virgin Mary · Mode IV",
-    "gabc": "(c4) DO(fe)mi(fg)ne,(gv.ff/ded.) (,) * prae(fe)ve(fg)ní(g)sti(df) e(egF'E)um(e.) (;) in(e[ll:1]d~) be(g)ne(hj)di(j)cti(i!jw!kvJI')ó(h)ni(fhf/gh)bus(g.) dul(d)cé(feg)di(gefd)nis :(d.) (:) po(f)su(gh)í(ixh.0/[-0.5]ivHG'h)sti(ef'g) (,) in(g) cá(gfh)pi(h)te(gf) e(g_[oh:h]d~)jus(d.) co(feg)ró(gefd)nam(d.) (;) de(dc) lá(f)pi(gh)de(ixh.0/[-0.5]ivHG'ef'g) pre(g)ti(df)ó(efED.)(,)(ixf.0/[-0.5]hiHG'/!ge./ghGF'Ef_gF'E)so.(e.) (::) ℣. Vi(h)tam(ixjhhgh/ef'g eg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) pé(gf/gh)ti(g)it,(g.) (:) et(f) tri(ghgh)bu(h)í(hgh'1f)sti(e[ll:1]d) e(f_g//ef!hvGE'fd)i(d.) (;) lon(c)gi(d)tú(dffd/ffdd'd/gffd)di(fdec)nem(c.) (,) di(f)é(ghgh)rum(hgh'1f) (;) in(e[ll:1]d~) saé(f_g//ef!hvGE'fd)cu(cd)lum(d.) (,) * saé(c.d!ewf/g_[oh:h]f)cu(f!hgh)li.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
+    "gabc": "(c4) DO(fe)mi(fg)ne,(gv.ff/ded.) (,) * prae(fe)ve(fg)ní(g)sti(df) e(egF'E)um(e.) (;) in(e[ll:1]d~) be(g)ne(hj)di(j)cti(i!jw!kvJI')ó(h)ni(fhf/gh)bus(g.) dul(d)cé(feg)di(gefd)nis :(d.) (:) po(f)su(gh)í(ixh.0/[-0.5]ivHG'h)sti(ef'g) (,) in(g) cá(gfh)pi(h)te(gf) e(g_[oh:h]d~)jus(d.) co(feg)ró(gefd)nam(d.) (;) de(dc) lá(f)pi(gh)de(ixh.0/[-0.5]ivHG'ef'g) pre(g)ti(df)ó(efED.)(,)(ixf.0/[-0.5]hiHG'/!ge./ghGF'Ef_gF'E)so.(e.) (::) ℣. Vi(h)tam(ixjhhgh/ef'!geg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED'fg'h) pé(gf/gh)ti(g)it,(g.) (:) et(f) tri(ghgh)bu(h)í(hgh'1f)sti(e[ll:1]d) e(f_g//ef!hvGE'fd)i(d.) (;) lon(c)gi(d)tú(dffd/ffdd'd/gffd)di(fdec)nem(c.) (,) di(f)é(ghgh)rum(hgh'1f) (;) in(e[ll:1]d~) saé(f_g//ef!hvGE'fd)cu(cd)lum(d.) (,) * saé(c.d!ewf/g_[oh:h]f)cu(f!hgh)li.(hhf.) (,) (h_ghvFDgff'fvEC//dd[ull:1]c/da..) (,) (cd!fvvDC'd!ff/gff/ded.) (::)",
     "latin": "Dómine, praevenísti eum in benedictiónibus dulcédinis : posuísti in cápite ejus corónam de lápide pretióso. ℣. Vitam pétiit, et tribuísti ei longitúdinem diérum in saéculum saéculi.",
     "translation": "O Lord, you went before him with blessings of sweetness: you have set on his head a crown of precious stones. ℣. He asked life of you, and you have given him length of days for ever and ever.",
     "source": "Graduale Romanum (GregoBase #600)",
@@ -12429,7 +14885,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "3-19"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 21 verses 4 and 5 address a king in the third person, and verse 4 begins \"Quoniam prævenisti eum,\" meaning \"For thou hast prevented him.\" The Gradual reshapes the opening into a direct prayer by dropping \"Quoniam\" and substituting \"Domine,\" so what was a subordinate clause becomes a personal address to God. Giovanni Pierluigi da Palestrina set the same text in a five-voice motet titled \"Corona aurea. Domine praevenisti eum,\" pairing it with the phrase \"corona aurea,\" the golden crown, drawn from the same psalm verses.",
+      "source": "Ps. 21:4-5 (Vulgate numbering Ps. 20:4-5) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"List of compositions by Giovanni Pierluigi da Palestrina\" (rev. 1309884587)"
+    }
   },
   "gb608": {
     "id": "gb608",
@@ -12449,7 +14909,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Ascension of the Lord (Year B)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Signa eos is drawn from Mark 16:17-18, the words Jesus spoke to his disciples just before the Ascension described in the very next verse, Mark 16:19. The chant condenses those two verses, keeping the casting out of devils and the healing of the sick, but setting aside three of the five signs the passage lists: speaking in new tongues, taking up serpents, and drinking deadly things without harm. The verse immediately following, which the chant does not quote, runs in the Vulgate: \"assumptus est in cælum, et sedet a dextris Dei,\" he was taken up into heaven and sits at the right hand of God.",
+      "source": "Mark 16:17-18 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb609": {
     "id": "gb609",
@@ -12478,7 +14942,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicite Dominum omnes Angeli draws from two points of Psalm 103 in reverse order. The respond takes verse 20, a summons to the angels, and the verse then steps back to the psalm's very opening line, verse 1, where the soul turns the same blessing inward: \"Bless the Lord, O my soul, and let all that is within me bless his holy name.\" Verse 20 in its psalm context is one call in a chain that extends to all God's hosts and all his works (verses 21-22), but the chant lifts only the angel verse, pairing it with the psalm's personal opening to frame the feast.",
+      "source": "Ps. 103:20, 1 (Vulgate numbering Ps. 102:20, 1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb613": {
     "id": "gb613",
@@ -12498,7 +14966,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Name of Jesus",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Every nation comes before the Lord in worship and then confesses that God alone does wonderful things. Psalm 86's two consecutive verses give the Communion for the Holy Name its universal praise and alleluia.",
+      "source": "Ps. 86:9-10 (Vulgate numbering Ps. 85:9-10) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Nat2-0.txt [Officium heading]; Divinum Officium, Nat2-0 (Missale Romanum formulary)"
+    }
   },
   "gb614": {
     "id": "gb614",
@@ -12518,7 +14990,11 @@ window.CHANT_INDEX = {
         "feastTitle": "22nd Sunday after Pentecost",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ecce quam bonum draws its respond from Psalm 133, but cuts the psalm short at a striking point. Verse 2 continues past the beard of Aaron to add \"which ran down to the skirt of his garment,\" and the psalm closes with a third verse: \"As the dew of Hermon, which descendeth upon mount Sion. For there the Lord hath commanded blessing, and life for evermore.\" The chant stops before the garment, before Hermon, and before the final promise of blessing, leaving the image of the anointing oil suspended mid-descent.",
+      "source": "Ps. 133:1-2 (Vulgate numbering Ps. 132:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb616": {
     "id": "gb616",
@@ -12545,7 +15021,42 @@ window.CHANT_INDEX = {
         "feastTitle": "25th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Si ambulavero draws its text from a single verse of Psalm 138, but it quietly rewrites the verbs. Psalm 138:7 in the Vulgate looks back in thanksgiving, with \"extendisti manum tuam\" and \"salvum me fecit dextera tua\" recording in the past tense what God has already done. The Offertory shifts both verbs to the future, \"extendes\" and \"salvum me faciet,\" turning the psalmist's retrospective confidence into a petition, something asked for at the moment of the offering of the gifts rather than gratefully remembered.",
+      "source": "Ps. 138:7 (Vulgate numbering Ps. 137:7) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb617": {
+    "id": "gb617",
+    "gregobaseId": "617",
+    "title": "Laetabitur justus",
+    "part": "communion",
+    "mode": "Communion · Common of a Martyr (Paschal Time) · Mode V",
+    "gabc": "(c4) LAe(f)tá(ggh)bi(g)tur(fe~) ju(f_[oh:h]g_[oh:h]f_[oh:h])stus(f.) *(,) in(fh~) Dó(h_g!jjh/jg/h_g)mi(fg!hvGF'g)no,(gf..) (;) et(fh) spe(j)rá(jlK'J)bit(jkjj/hih.) in(j) e(ixh_[oh:h]i_[oh:h]g_[oh:h])o :(gf..) (:) et(fg) lau(fg)da(f)bún(fdev_[oh:h]D~C~)tur(dc__) (,) o(fh)mnes(g!jjk) re(j)cti(ixj.h!iw!jvIG'hw!ivHG) cor(fg!hvGF'g)de,(gf..) (:) al(fh)le(j)lú(jk){ia},(jk!mv[oll:0{1]/LJ'lv[oll:}]/KJ.) (,) al(fh)le(ixgjvjh!iw!jvIG'hw!ivHG)lú(fg!hvGF'g){ia}.(gf..) (::)",
+    "latin": "Laetábitur justus in Dómino, et sperábit in eo : et laudabúntur omnes recti corde, allelúja, allelúja.",
+    "translation": "The just shall rejoice in the Lord, and shall hope in him: and all the upright of heart shall be praised, alleluia, alleluia.",
+    "source": "Graduale Romanum (GregoBase #617)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-2-paschal",
+        "part": "communion",
+        "feastTitle": "Common of a Martyr (Beatus vir) (Paschaltide)",
+        "rank": ""
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-martyr-paschal",
+        "part": "communion",
+        "feastTitle": "Common of a Martyr (In virtute tua) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Laetabitur justus draws its single verse from the close of a psalm movement about persecutors being overthrown. The two verses immediately before it in Psalm 64 describe the enemies of the just rendered powerless: their tongues made weak, every man afraid, onlookers declaring the works of God. The communion antiphon lifts only that final, resolved verse, so what the psalm presents as a conclusion to the defeat of persecutors becomes, at a martyr's Mass in Paschal Time, a statement of where the martyr now stands. The double alleluia is not in the psalm text and belongs to the Paschal Time form of the chant.",
+      "source": "Ps. 64:11 (Vulgate numbering Ps. 63:11) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb619": {
     "id": "gb619",
@@ -12559,20 +15070,17 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #619)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-holy-women",
-        "part": "introit",
-        "feastTitle": "Common of holy women",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-holy-women",
         "part": "introit",
-        "feastTitle": "Common of holy women",
+        "feastTitle": "Common of Holy Women (Cognovi)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Cognovi Domine draws from two verses of Psalm 119 that stand forty-five verses apart: verse 75 and verse 120. The compiler joined them into a single continuous prayer, so the humble submission of the first half and the plea to be pierced with holy fear arrive together without interruption. There is also a small but deliberate change: where verse 120 of the psalm reads \"a judiciis enim tuis timui\" (afraid of your judgments), the antiphon sings \"a mandátis tuis tímui\" (afraid because of your commandments), shifting from judgments to commandments as the object of awe.",
+      "source": "Ps. 119:75, 120 (Vulgate numbering Ps. 118:75, 120) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb622": {
     "id": "gb622",
@@ -12625,7 +15133,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Descendit Jesus draws from the closing lines of Luke 2:42-52, the Gospel proclaimed at this Mass, which tells of the finding of the boy Jesus in the Temple. The chant takes only the first part of verse 51, singing that he went down with them, came to Nazareth, and was subject to them. The verse continues, in the Clementine Vulgate, with the words \"Et mater ejus conservabat omnia verba haec in corde suo\", and his mother kept all these words in her heart, but the chant sets those words aside. The act of obedience itself becomes the final word at Communion.",
+      "source": "Luke 2:51 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi1-0 (Missale Romanum formulary)"
+    }
   },
   "gb628": {
     "id": "gb628",
@@ -12645,7 +15157,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Improperium exspectavit cor meum takes Psalm 69:21's lament of a heart awaiting reproach and misery. It looks in vain for someone to grieve and comfort with the sufferer, as the verse says there was none.",
+      "source": "Ps. 69:21 (Vulgate numbering Ps. 68:21) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent02-5.txt [Officium heading]; Divinum Officium, Pent02-5 (Missale Romanum formulary)"
+    }
   },
   "gb629": {
     "id": "gb629",
@@ -12659,13 +15175,6 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #629)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-virgin-not-martyr",
-        "part": "introit",
-        "feastTitle": "Common of virgin not martyr",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "baptism-lord",
         "part": "introit",
@@ -12676,7 +15185,7 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-not-martyr",
         "part": "introit",
-        "feastTitle": "Common of virgin not martyr",
+        "feastTitle": "Common of a Virgin (Dilexisti)",
         "rank": ""
       }
     ],
@@ -12700,9 +15209,25 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "offertory",
+        "feastTitle": "St. Peter Nolasco, Confessor",
+        "rank": "Duplex",
+        "dateMD": "1-28"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
         "feastTitle": "St. Edward the Confessor, King",
         "rank": "Semiduplex",
         "dateMD": "10-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
+        "feastTitle": "St. Peter of Alcantara, Confessor",
+        "rank": "Duplex",
+        "dateMD": "10-19"
       },
       {
         "calendar": "1962",
@@ -12719,6 +15244,22 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Andrew Avellino, Confessor",
         "rank": "Duplex",
         "dateMD": "11-10"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
+        "feastTitle": "St. Didacus, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "11-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
+        "feastTitle": "St. Felix of Valois, Confessor",
+        "rank": "Duplex",
+        "dateMD": "11-20"
       },
       {
         "calendar": "1962",
@@ -12748,6 +15289,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "offertory",
+        "feastTitle": "St. Francis of Paola, Confessor",
+        "rank": "Simplex",
+        "dateMD": "4-2"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
         "feastTitle": "St. Vincent Ferrer, Confessor",
         "rank": "Duplex",
         "dateMD": "4-5"
@@ -12772,6 +15321,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "offertory",
+        "feastTitle": "St. Vincent de Paul, Confessor",
+        "rank": "Duplex",
+        "dateMD": "7-19"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
         "feastTitle": "St. Hyacinth, Confessor",
         "rank": "Duplex",
         "dateMD": "8-17"
@@ -12788,6 +15345,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "offertory",
+        "feastTitle": "St. Philip Benizi, Confessor",
+        "rank": "Duplex",
+        "dateMD": "8-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
         "feastTitle": "St. Raymond Nonnatus, Confessor",
         "rank": "Duplex",
         "dateMD": "8-31"
@@ -12799,6 +15364,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Mary Vianney, Confessor",
         "rank": "Duplex",
         "dateMD": "8-9"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "offertory",
+        "feastTitle": "St. Nicholas of Tolentino, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "9-10"
       },
       {
         "calendar": "1962",
@@ -12880,7 +15453,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "3-19"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Veritas mea draws a single verse from Psalm 89, a passage in which God speaks of protecting his anointed one against enemies. The verses immediately before it promise the cutting down of enemies and the putting to flight of those who hate him, while the verse immediately after promises his hand set in the sea and his right hand in the rivers. The offertory lifts only this one verse of divine faithfulness from that martial and royal context.",
+      "source": "Ps. 89:25 (Vulgate numbering Ps. 88:25) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb631": {
     "id": "gb631",
@@ -12907,7 +15484,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Deus tu convertens draws on two consecutive verses of Psalm 85, verses 7 and 8. The verses immediately before them press God on whether his anger will last from generation to generation; the chant begins where the psalm turns from reproach to confidence. There is also a small but audible difference between this chant and the Vulgate text: where the Vulgate reads \"conversus,\" having turned, the chant sings \"convertens,\" turning, casting God's return not as something already accomplished but as something in motion.",
+      "source": "Ps. 85:7-8 (Vulgate numbering Ps. 84:7-8) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb633": {
     "id": "gb633",
@@ -12934,7 +15515,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Surrexit Christus et illuxit is the first Alleluia for the sixth Sunday of Easter, proclaiming Christ risen and shining upon those redeemed by his blood. The verse brings his rising and the gift of redemption together before the Gospel is heard.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb635": {
     "id": "gb635",
@@ -12961,7 +15546,11 @@ window.CHANT_INDEX = {
         "feastTitle": "31st Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Verbo Domini draws its single verse from Psalm 33, which the Douay-Rheims describes as an exhortation to praise God and to trust in him. The verse, Psalm 33:6, is also woven into the traditional Introit for the Second Sunday after Easter, whose full Latin text runs: \"Misericórdia Dómini plena est terra, allelúia: verbo Dómini caeli firmáti sunt, allelúia, allelúia. Exsultáte, iusti, in Dómino: rectos decet collaudátio.\" That Introit draws together verses 5, 6, and 1 of the same psalm.",
+      "source": "Ps. 33:6 (Vulgate numbering Ps. 32:6) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Third Sunday of Easter\" (rev. 1350083546)"
+    }
   },
   "gb639": {
     "id": "gb639",
@@ -12981,7 +15570,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Narrabo omnia mirabilia begins mid-verse. The second verse of Psalm 9 opens in the Vulgate with a clause the chant omits: \"Confitebor tibi, Domine, in toto corde meo,\" meaning \"I will give thanks to you, Lord, with my whole heart.\" That opening is passed over, and the text starts with what follows, \"narrabo omnia mirabilia tua,\" then carries straight into verse 3 without interruption. The result moves entirely in the register of praise and rejoicing, leaving the act of thanksgiving implicit rather than stated.",
+      "source": "Ps. 9:2-3 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb640": {
     "id": "gb640",
@@ -13008,7 +15601,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 31's verses 17 and 18 supply the text, but the antiphon stops midway through verse 18. The psalm's next line continues: \"Let the wicked be ashamed, and be brought down to hell,\" a petition for the punishment of enemies that the compiler set aside entirely, leaving only the singer's own cry for mercy and the assurance of having called on God. Sung as the Communion for Septuagesima Sunday, it follows an Epistle in which Paul urges self-discipline in the manner of an athlete, and precedes a Gospel in which the owner of a vineyard calls workers at every hour of the day.",
+      "source": "Ps. 31:17-18 (Vulgate numbering Ps. 30:17-18) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp1-0 (Missale Romanum formulary)"
+    }
   },
   "gb641": {
     "id": "gb641",
@@ -13028,7 +15625,11 @@ window.CHANT_INDEX = {
         "feastTitle": "30th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Lauda Jerusalem takes only verse 12 of Psalm 147, the bare summons to praise. The psalm's next two verses give the grounds for that praise: \"Quoniam confortavit seras portarum tuarum; benedixit filiis tuis in te\", that God has strengthened the bars of Jerusalem's gates and blessed her children within her, and that he has set peace as her border and satisfied her with the finest wheat. The chant sings the call without the reasons that follow.",
+      "source": "Ps. 147:12 (Vulgate numbering Ps. 147:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb644": {
     "id": "gb644",
@@ -13055,7 +15656,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Holy Thursday of the Lord's Supper",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ab ortu solis gives Malachias's vision of God's name made great among the nations, with a clean offering made in every place. Its final verse invites the hearer to eat bread and drink wine, making the tract's sacrificial language direct and personal.",
+      "source": "Mal. 1:11; Prov. 9:5 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb645": {
     "id": "gb645",
@@ -13170,7 +15775,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Leviticus 21:6 begins with the declaration of holiness and then names the priestly offering as its reason, stating in the Vulgate, \"Sancti erunt Deo suo, et non polluent nomen ejus: incensum enim Domini, et panes Dei sui offerunt.\" The Offertory reverses this order, leading instead with the act of offering, \"Sacerdotes Domini incensum et panes offerunt Deo,\" before drawing the conclusion about holiness. Sung at the moment when the bread and wine are brought to the altar, the chant's rearrangement places the visible action first.",
+      "source": "Lev. 21:6 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb647": {
     "id": "gb647",
@@ -13199,7 +15808,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Priusquam te formarem draws from two non-adjacent verses of Jeremiah 1. It passes over Jeremiah's protest that speech is impossible and the divine reply sending the prophet where required, then joins the call in verse 5 to the touching of the mouth in verse 9. The quotation from verse 9 is cut short at \"and said to me,\" before the following statement about words being placed in the mouth. The Gradual therefore isolates the call and the act of commissioning.",
+      "source": "Jer. 1:5, 9 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb648": {
     "id": "gb648",
@@ -13240,7 +15853,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exaltabo te Domine draws on the opening two verses of Psalm 30, trimming verse 3 in one small way: where the Vulgate reads \"Domine Deus meus, clamavi ad te, et sanasti me,\" the chant drops \"Deus meus,\" so the address moves directly from \"Domine\" to the cry for healing. The psalm carries a dedication heading in the Vulgate, \"Psalmus cantici, in dedicatione domus David,\" linking this song of deliverance to the founding of David's house.",
+      "source": "Ps. 30:2-3 (Vulgate numbering Ps. 29:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb6495": {
     "id": "gb6495",
@@ -13260,7 +15877,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Quinquagesima Sunday",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jubilate Deo omnis terra is sung as a Tract on Quinquagesima Sunday. Psalm 100's second verse, 'Sing joyfully to God, all the earth: serve ye the Lord with gladness. Come in before his presence with exceeding great joy,' is spread across two versicles, while the psalm's fourth verse, 'Go ye into his gates with praise, into his courts with hymns,' does not appear. At the same Mass, the Epistle is 1 Corinthians 13, which opens with the words that charity's absence makes a man as sounding brass or a tinkling cymbal.",
+      "source": "Ps. 100:1-2 (Vulgate numbering Ps. 99:1-2) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp3-0 (Missale Romanum formulary); Divinum Officium, Quadp3-0.txt [Officium heading]"
+    }
   },
   "gb650": {
     "id": "gb650",
@@ -13287,7 +15908,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Palm Sunday of the Passion of the Lord",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Matthew 26:42 records Christ's second prayer before his arrest. The Communion gives voice to his acceptance of the chalice within the Father's will, as his prayer returns to the Father.",
+      "source": "Matt. 26:42 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quad6-0.txt [Officium heading]; Divinum Officium, Quad6-0 (Missale Romanum formulary)"
+    }
   },
   "gb651": {
     "id": "gb651",
@@ -13295,7 +15920,7 @@ window.CHANT_INDEX = {
     "title": "Locus iste",
     "part": "gradual",
     "mode": "Gradual · The Dedication of the Lateran Basilica · Mode V",
-    "gabc": "(c3) LO(dde)cus(d) i(gxd!ewf'!gv)ste(f.) *(,) a(fh) De(ffe)o(ef) fa(fefDC'ef/hf)ctus(d_[oh:h]e_[oh:h]d_[oh:h]) est,(d.) (;) in(f)ae(fe)sti(eh)má(h)bi(gxihhfg)le(g_[oh:h]f) sa(f)cra(e.[ll:1]d!ew!fvED'e)mén(gxef!gvF~E~)tum,(fe..) (:) ir(f)re(f)pre(f)hen(hh)sí(h)bi(f)lis(de) est.(dfe___//highf.dfe/fee[ll:1]d.0) (::) ℣. De(d)us,(d) cu(d)i(d) ad(df!hh/ijh)stat(h.) (,) An(h)ge(h)ló(h)rum(h) cho(h)rus,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) ex(h)áu(hi!jvIH'hf/hhhi~)di(h.) (,) pre(gxfgFE.fgFD.1fvEDe[ll:1]d)ces(d.) (;) ser(d)vó(dfE'D)rum(ef) *() tu(h)ó(hiH'Fhhh)rum.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c3) LO(dde)cus(d) i(gxd!ewf'!gv)ste(f.) *(,) a(fh) De(ffe)o(ef) fa(fefDC'ef/hf)ctus(d_[oh:h]e_[oh:h]d_[oh:h]) est,(d.) (;) in(f)ae(fe)sti(eh)má(h)bi(gxihhfg)le(g_[oh:h]f) sa(f)cra(e.[ll:1]d!ew!fvED'e)mén(gxef!gvF~E~)tum,(fe..) (:) ir(f)re(f)pre(f)hen(hh)sí(h)bi(f)lis(de) est.(dfe___//highf.dfe/fee[ll:1]d.0) (::) ℣. De(d)us,(d) cu(d)i(d) ad(df!hh/ijh)stat(h.) (,) An(h)ge(h)ló(h)rum(h) cho(h)rus,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) ex(h)áu(hi!jvIH'hf/hhhi~)di(h.) (,) pre(gxfgFE.fgFD.1fvEDe[ll:1]d)ces(d.) (;) ser(d)vó(dfE'D)rum(ef) *() tu(h)ó(hiH'Fhhh)rum.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Locus iste a Deo factus est, inaestimábile sacraméntum, irreprehensíbilis est. ℣. Deus, cui adstat Angelórum chorus, exáudi preces servórum tuórum.",
     "translation": "This place was made by God, a priceless mystery, beyond reproach. ℣. O God, before whom stands the choir of Angels, hear the prayers of your servants.",
     "source": "Graduale Romanum (GregoBase #651)",
@@ -13320,19 +15945,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "dedication-lateran",
         "part": "gradual",
-        "feastTitle": "The Dedication of the Basilicas of Sts. Peter and Paul, Apostles",
-        "rank": "Optional Memorial",
-        "dateMD": "11-18"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "dedication-lateran",
-        "part": "gradual",
         "feastTitle": "The Dedication of the Lateran Basilica",
         "rank": "Feast",
         "dateMD": "11-9"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Locus iste calls the consecrated place God's work and a priceless mystery, while the Dedication formulary looks toward the new Jerusalem in which God dwells with his people. Its Gospel turns to a house where salvation comes, echoing the Gradual's concern with a holy place.",
+      "source": "Chant of the Day (this project's own chant entry); Divinum Officium, Commune/C8 (Missale Romanum formulary)"
+    }
   },
   "gb652": {
     "id": "gb652",
@@ -13359,7 +15980,11 @@ window.CHANT_INDEX = {
         "feastTitle": "23rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Oravi Deum meum draws on three consecutive verses of Daniel's prayer in Daniel 9, compressing them freely. Verse 17 supplies the appeal to show God's face upon the sanctuary; verse 18 contributes the phrase \"super quem invocatum est nomen tuum\"; verse 19 gives the opening word \"Exaudi.\" The middle of verse 18, where Daniel confesses that Israel's plea rests not on its own righteousness but on God's abundant mercies, is left aside entirely. The result is a single-voiced plea in Daniel's name, shaped into a pure act of intercession.",
+      "source": "Dan. 9:17, 18, 19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb659": {
     "id": "gb659",
@@ -13390,7 +16015,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "Set polyphonically (SATB) by Heinrich Isaac, documented in Laurence Feininger's Monumenta Polyphoniae Liturgicae Sanctae Ecclesiae Romanae — part of the same tradition of setting the full cycle of Proper chants that produced Isaac's Choralis Constantinus.",
+      "text": "Heinrich Isaac set this chant polyphonically for SATB voices, and the setting is documented in Laurence Feininger's Monumenta Polyphoniae Liturgicae Sanctae Ecclesiae Romanae. It belongs to the same tradition of setting the full cycle of Proper chants that produced Isaac's Choralis Constantinus.",
       "source": "chantblog, \"St. John the Baptist, June 24: De Ventre Matris Meae\"; CPDL ChoralWiki, \"De ventre matris (Heinrich Isaac).\""
     }
   },
@@ -13407,6 +16032,22 @@ window.CHANT_INDEX = {
     "usages": [
       {
         "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "communion",
+        "feastTitle": "St. Damasus I, Pope and Confessor",
+        "rank": "Duplex",
+        "dateMD": "12-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "communion",
+        "feastTitle": "St. Anacletus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "7-13"
+      },
+      {
+        "calendar": "1962",
         "feastKey": "peter-paul",
         "part": "communion",
         "feastTitle": "Sts. Peter and Paul, Apostles",
@@ -13421,7 +16062,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tu es Petrus quotes only the opening clause of Matthew 16:18, stopping at \"I will build my Church.\" The verse continues, \"and the gates of hell shall not prevail against it,\" and the following verse adds the promise of the keys of the kingdom of heaven. Both are left aside. The Mass formulary for a pope appoints Matthew 16:13-19 as the Gospel of the day, so the congregation has just heard the full passage, including those omitted lines, before receiving Communion with these words alone on their lips.",
+      "source": "Matt. 16:18 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb667": {
     "id": "gb667",
@@ -13443,20 +16088,6 @@ window.CHANT_INDEX = {
         "dateMD": "7-30"
       },
       {
-        "calendar": "1962",
-        "feastKey": "common-confessor-2",
-        "part": "offertory",
-        "feastTitle": "Common of confessor 2",
-        "rank": ""
-      },
-      {
-        "calendar": "1962",
-        "feastKey": "common-martyr",
-        "part": "offertory",
-        "feastTitle": "Common of martyr",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-confessor-2",
         "part": "offertory",
@@ -13468,10 +16099,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-martyr",
         "part": "offertory",
-        "feastTitle": "Common of martyr",
+        "feastTitle": "Common of a Martyr (In virtute tua)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 21 is a royal psalm, and its second verse begins in the Vulgate: \"Domine, in virtute tua lætabitur rex\", the king shall joy. For this Offertory at the feast of martyrs, the compiler replaced \"rex\" with \"justus\": not the king, but the just man. The change shifts the whole psalm's frame from a royal celebration to a portrait of the faithful martyr. The compiler also stopped partway through the third verse, leaving out its closing phrase, \"et voluntate labiorum ejus non fraudasti eum\", and hast not withholden from him the will of his lips.",
+      "source": "Ps. 21:2-3 (Vulgate numbering Ps. 20:2-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb668": {
     "id": "gb668",
@@ -13498,7 +16133,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Lauda anima mea Dominum draws on a single verse of Psalm 146, but stops before that verse ends. The Douay-Rheims gives the full verse as: \"Praise the Lord, O my soul, in my life I will praise the Lord: I will sing to my God as long as I shall be. Put not your trust in princes,\" and the chant leaves that final clause unsung. The chant belongs to the Third Sunday after Easter, whose Epistle from 1 Peter 2 moves in the opposite direction, instructing the faithful to be subject \"sive regi, quasi præcellénti,\" to the king as one who excels.",
+      "source": "Ps. 146:2 (Vulgate numbering Ps. 145:2) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc3-0 (Missale Romanum formulary)"
+    }
   },
   "gb67": {
     "id": "gb67",
@@ -13506,7 +16145,7 @@ window.CHANT_INDEX = {
     "title": "Recordare mei",
     "part": "offertory",
     "mode": "Offertory · Ordinary Time · Mode I",
-    "gabc": "(c4) RE(ddc)cor(f)dá(fhg)re(ghh) me(g)i,(g.) *(,) Dó(ixgiHG'gfgvFD)mi(d!ewfd)ne,(d.) (;) o(d!f'g)mni(g) pot(g)en(g)tá(gg/hgh)tu(f/gfg)i(d!ewf) (,) dó(d!f'g)mi(gvF'EfvED'e)nans :(e[ll:1]d..) (:) da(d!f'g) ser(g)mó(g)nem(gh~) re(ixh_ghvGFixf'g/hg/hi)ctum(h.) (,) in(h) os(hjj) me(jkJ'IH)um,(ghg.) (;) ut(gh~) plá(h)ce(giwji/jkJ'IH)ant(hhg~) (,) ver(ixgihh)ba(g_[oh:h]e) me(fgffvED)a(d/ffd/fge'/fgD'Cd.) (:) in(c) con(d)spé(ghfff'gff'ff)(,)(fd/ffvD'Cd!ffd.)(,)(ghf/!ff'gff'ff)(,)(fd/ef/ggf//gf/ge/fgefvDC)(,)(ffd/ffc//g_[oh:h]f)ctu(fe/fe/f_g) prín(d)ci(dee[ll:1]d)pis.(d.) (::)",
+    "gabc": "(c4) RE(ddc)cor(f)dá(fhg)re(ghh) me(g)i,(g.) *(,) Dó(ixgiHG'gfgvFD)mi(d!ewfd)ne,(d.) (;) o(d!f'g)mni(g) pot(g)en(g)tá(gg/hgh)tu(f/gfg)i(d!ewf) (,) dó(d!f'g)mi(gvF'EfvED'e)nans :(e[ll:1]d..) (:) da(d!f'g) ser(g)mó(g)nem(gh~) re(ixh_ghvGFixf'g/hg/hi)ctum(h.) (,) in(h) os(hjj) me(jkJ'IH)um,(ghg.) (;) ut(gh~) plá(h)ce(giw!ji/jkJ'IH)ant(hhg~) (,) ver(ixgihh)ba(g_[oh:h]e) me(fgffvED)a(d/ffd/fge'/fgD'Cd.) (:) in(c) con(d)spé(ghfff'gff'ff)(,)(fd/ffvD'Cd!ffd.)(,)(ghf/!ff'gff'ff)(,)(fd/ef/ggf//gf/ge/fgefvDC)(,)(ffd/ffc//g_[oh:h]f)ctu(fe/fe/f_g) prín(d)ci(dee[ll:1]d)pis.(d.) (::)",
     "latin": "Recordáre mei, Dómine, omni potentátui dóminans : da sermónem rectum in os meum, ut pláceant verba mea in conspéctu príncipis.",
     "translation": "Remember me, O Lord, you who rule over all power: put well-ordered speech in my mouth, that my words may be pleasing in the sight of the prince.",
     "source": "Graduale Romanum (GregoBase #67)",
@@ -13525,7 +16164,11 @@ window.CHANT_INDEX = {
         "feastTitle": "28th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Recordare mei asks the Lord to remember the singer in tribulation and place ordered speech in her mouth before the powerful. Esther's prayer asks for boldness before the lion and for the enemy's heart to be turned, so the Offertory becomes a plea for ordered speech under pressure.",
+      "source": "Esth. 14:12, 13 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb670": {
     "id": "gb670",
@@ -13545,7 +16188,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Name of Jesus",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Salvos fac nos takes the final verse of Psalm 106, asking God to gather his people from among the nations for praise. Its cantor's verse names the Lord Father and Redeemer, whose name is from everlasting.",
+      "source": "Ps. 106:47 (Vulgate numbering Ps. 105:47) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Nat2-0.txt [Officium heading]; Divinum Officium, Nat2-0 (Missale Romanum formulary)"
+    }
   },
   "gb673": {
     "id": "gb673",
@@ -13565,7 +16212,44 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Simile est regnum caelorum tells Matthew 13's parable of the merchant who searches for fine pearls. After finding one pearl of great price, he gives all he has to buy it, and the Communion lets that costly choice describe the kingdom of heaven.",
+      "source": "Matt. 13:45-46 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb674": {
+    "id": "gb674",
+    "gregobaseId": "674",
+    "title": "Si diligis me",
+    "part": "introit",
+    "mode": "Introit · Common of a Pope · Mode III",
+    "gabc": "(c4) SI(e[ll:1]d) dí(g)li(hj)gis(ij) me,(j.) *(,) Si(jjj_h)mon(hk) Pe(kj)tre,(jkjji.) (;) pa(gh'j)sce(jjjvIH) a(h!iwj)gnos(h_g) me(g_[oh:h]f)os,(fff/d_[oh:h]e_[oh:h]d._[oh:h]) (;) pa(g.h!iw!jvIH)sce(jj) o(jjg)ves(g.h!iw!jvIHi.g!hw!ivHG) me(egff)as.(fe..) (::)",
+    "latin": "Si díligis me, Simon Petre, pasce agnos meos, pasce oves meas.",
+    "translation": "If you love me, Simon Peter, feed my lambs, feed my sheep.",
+    "source": "Graduale Romanum (GregoBase #674)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "introit",
+        "feastTitle": "St. Damasus I, Pope and Confessor",
+        "rank": "Duplex",
+        "dateMD": "12-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-pope",
+        "part": "introit",
+        "feastTitle": "St. Anacletus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "7-13"
+      }
+    ],
+    "commentary": {
+      "text": "Si diligis me compresses three verses of John 21 into a single sentence. In the full exchange, Jesus asks Peter three times whether he loves him and three times commands him to tend the flock; this Introit takes the opening address from verse 15, then joins the two distinct commands, \"pasce agnos meos\" and \"pasce oves meas,\" the second of which does not appear until verse 17, at the close of the whole exchange. The Mass built around it continues the theme: its Epistle from 1 Peter 5 opens with \"páscite qui in vobis est gregem Dei,\" and its Gospel is Matthew 16, the scene where Jesus promises Peter the keys of the kingdom.",
+      "source": "John 21:15-17 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C4b (Missale Romanum formulary)"
+    }
   },
   "gb675": {
     "id": "gb675",
@@ -13585,7 +16269,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sicut in holocausto draws its text from a single verse in the prayer of the three young men in the furnace, Daniel 3:40. The verses just before it, Daniel 3:38-39, confess that at that moment there is no prince, no prophet, no holocaust, no sacrifice, no oblation, no incense. The three have nothing to offer. Verse 40, which this Offertory quotes entire, turns that emptiness into the offering itself, asking that their prayer stand in place of all those absent rites.",
+      "source": "Dan. 3:40 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb677": {
     "id": "gb677",
@@ -13612,7 +16300,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Manducaverunt et saturati draws from Psalm 78, verses 29 and 30, but stops at exactly the right moment. Verse 30 continues, in the Douay-Rheims, \"As yet their meat was in their mouth,\" and verse 31 follows immediately: \"And the wrath of God came upon them.\" The chant lifts only the moment of abundance and satisfied desire, leaving the psalm's dark turn unsung. It also replaces the psalm's pronoun with a name, so where the psalm reads \"he gave them their desire,\" the chant sings \"Dóminus,\" the Lord.",
+      "source": "Ps. 78:29-30 (Vulgate numbering Ps. 77:29-30) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb68": {
     "id": "gb68",
@@ -13639,7 +16331,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Veni Sancte Spiritus unfolds as a long sequence of invocations and petitions, moving from light and consolation through cleansing and guidance to the sevenfold gift. Pentecost's sequence ends by asking for virtue, salvation, and lasting joy.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb681": {
     "id": "gb681",
@@ -13668,7 +16364,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "The Stabat Mater begins with the sorrowful Mother standing and weeping beside the cross. Its prayer gradually draws the singer into her grief, asking to share the sufferings of her Son and to be defended on the day of judgment.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb685": {
     "id": "gb685",
@@ -13681,6 +16381,14 @@ window.CHANT_INDEX = {
     "translation": "If anyone serve me, let him follow me: and where I am, there also shall my servant be.",
     "source": "Graduale Romanum (GregoBase #685)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-3",
+        "part": "communion",
+        "feastTitle": "St. Valentine, Priest and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-14"
+      },
       {
         "calendar": "1962",
         "feastKey": "lawrence",
@@ -13704,7 +16412,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui mihi ministrat draws on a single verse of John 12, but sets aside its second sentence. The full verse runs, in the Clementine Vulgate: \"Si quis mihi ministrat, me sequatur, et ubi sum ego, illic et minister meus erit. Si quis mihi ministraverit, honorificabit eum Pater meus.\" That final clause, the Father's promise to honour the one who serves, is left unsung. The two verses immediately before the quoted one speak of the grain of wheat that must die to bear fruit, and of hating one's life in this world to keep it unto life eternal, giving the verse its weight on the feast of a martyr.",
+      "source": "John 12:26 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb691": {
     "id": "gb691",
@@ -13731,7 +16443,11 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Respice Domine draws from three verses of Psalm 74, but reshapes them. Most striking is the final clause: the psalm's verse 23 reads \"Ne obliviscaris voces inimicorum tuorum,\" forget not the voices of your enemies, but the antiphon converts this into \"ne obliviscaris voces quaerentium te,\" a petition for those who seek God rather than against those who oppose him. The day's Gospel (Luke 17:11-19) follows: ten lepers cry out \"Jesu præceptor, miserere nostri,\" and one alone turns back to give thanks.",
+      "source": "Ps. 74:20, 19, 23 (Vulgate numbering Ps. 73:20, 19, 23) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent13-0 (Missale Romanum formulary)"
+    }
   },
   "gb693": {
     "id": "gb693",
@@ -13751,7 +16467,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Unlike nearly every other Ordinary-Time Introit, this text is not drawn from the Psalter at all but paraphrases the Gospel account of Christ calling Simon Peter and Andrew from their nets beside the Sea of Galilee. Because Matthew and Mark narrate the episode in almost identical wording, the same chant serves both Year A (Matthew 4:18-19) and Year B (Mark 1:16-20) of the Third Sunday in Ordinary Time, one of the few cases where a single Introit spans two different lectionary Gospels unchanged.",
+      "source": "Cantus Database, “Dominus secus mare Galilaeae vidit.”"
+    }
   },
   "gb696": {
     "id": "gb696",
@@ -13778,7 +16498,11 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Memento verbi tui draws its two verses from Psalm 119, the great alphabetical psalm of love for God's word. The antiphon keeps both verses almost intact but stops partway through the second: the psalm's verse 50 continues beyond the chant's closing phrase, adding \"quia eloquium tuum vivificavit me,\" because thy word hath enlivened me, and that clause is left out. The antiphon also opens with \"Meménto\" where the Vulgate reads \"Memor esto\"; both mean \"be mindful,\" but the form is changed to a more direct address.",
+      "source": "Ps. 119:49-50 (Vulgate numbering Ps. 118:49-50) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb697": {
     "id": "gb697",
@@ -13805,7 +16529,11 @@ window.CHANT_INDEX = {
         "feastTitle": "8th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 120 belongs to a group of fifteen psalms known as the gradual canticles, their name coming from the Latin gradus, meaning steps or ascents, a title the Douay-Rheims commentary traces to the fifteen steps of the Temple or to the ascending of pilgrims toward Jerusalem. The chant draws on only the psalm's opening two verses, stopping before verse 3, which presses on with a question about the deceitful tongue: \"What shall be given to thee, or what shall be added to thee, to a deceitful tongue?\" It is worth noticing that this Gradual, a chant form whose own name derives from gradus, is drawn from one of those very gradual psalms.",
+      "source": "Ps. 120:1-2 (Vulgate numbering Ps. 119:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb699": {
     "id": "gb699",
@@ -13827,6 +16555,22 @@ window.CHANT_INDEX = {
         "dateMD": "1-22"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "communion",
+        "feastTitle": "Sts. Protus and Hyacinth, Martyrs",
+        "rank": "Simplex",
+        "dateMD": "9-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "communion",
+        "feastTitle": "St. Januarius, Bishop, and Companions, Martyrs",
+        "rank": "Semiduplex",
+        "dateMD": "9-19"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-several-martyrs",
         "part": "communion",
@@ -13842,7 +16586,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dico autem vobis quotes Luke 12:4 but reshapes it. The verse in Luke reads \"Ne terreamini ab his qui occidunt corpus, et post hæc non habent amplius quid faciant,\" be not afraid of those who kill the body, and after that have no more that they can do. The antiphon replaces \"who kill the body, and after that have no more that they can do\" with the single word \"persequúntur,\" who persecute you, dropping both the specific mention of killing and Luke's explanation of why such enemies need not be feared.",
+      "source": "Luke 12:4 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb700": {
     "id": "gb700",
@@ -13869,7 +16617,11 @@ window.CHANT_INDEX = {
         "feastTitle": "32nd Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui posuit fines praises God for giving peace to Jerusalem's borders and filling her with the richness of grain. Psalm 147 places this gift before the swift word that runs across the earth, holding settled abundance beside God's living speech.",
+      "source": "Ps. 147:14 (Vulgate numbering Ps. 147:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb702": {
     "id": "gb702",
@@ -13877,7 +16629,7 @@ window.CHANT_INDEX = {
     "title": "Exiit sermo",
     "part": "gradual",
     "mode": "Gradual · St. John, Apostle and Evangelist · Mode V",
-    "gabc": "(c4) EX(ffg)i(f)it(f.) *(,) ser(fg~)mo(f) in(f)ter(gh~) fra(h_fgvFED.g_[oh:h]e/fg)tres,(f.) (;) quod(f) di(f)scí(hf/gh/jj/kjk)pu(jij)lus(h_g) il(ixh/jjvHF.1ivHGhf)le(f.) (;) non(ixf!hhi/gjjj.h!iw!jvIG'hw!ivHG') mó(f)ri(ff//ff)tur.(f_c) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Sed :(d) Sic(fe) e(eh)um(h) vo(h)lo(h) ma(h)né(h)re,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) do(f!h'i)nec(ih/jkihhf) vé(f)ni(hfhhe/fd)am :(d.) (:) * tu(de'f) me(f) sé(fhGF')que(i)re.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff/dfe/!fee[ll:1]d.0) (::)",
+    "gabc": "(c4) EX(ffg)i(f)it(f.) *(,) ser(fg~)mo(f) in(f)ter(gh~) fra(h_fgvFED.g_[oh:h]e/fg)tres,(f.) (;) quod(f) di(f)scí(hf/gh/jj/kjk)pu(jij)lus(h_g) il(ixh/jjvHF.1ivHGhf)le(f.) (;) non(ixf!hhi/gjjj.h!iw!jvIG'hw!ivHG') mó(f)ri(ff//ff)tur.(f_c) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Sed :(d) Sic(fe) e(eh)um(h) vo(h)lo(h) ma(h)né(h)re,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) do(f!h'i)nec(ih/jkihhf) vé(f)ni(hfhhe/fd)am :(d.) (:) * tu(de'f) me(f) sé(fhGF')que(i)re.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff/dfe/!fee[ll:1]d.0) (::)",
     "latin": "Exiit sermo inter fratres, quod discípulus ille non móritur. ℣. Sed : Sic eum volo manére, donec véniam : tu me séquere.",
     "translation": "A saying went abroad among the brethren, that this disciple should not die. ℣. But: So I will have him remain until I come: follow me.",
     "source": "Graduale Romanum (GregoBase #702)",
@@ -13898,7 +16650,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-27"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exiit sermo draws from two verses of John 21 in reverse order, taking verse 23 as its body and verse 19 as its versicle. The body quotes only the first half of verse 23, the rumor that spread among the disciples, and omits the corrective sentence that follows in scripture: \"Et non dixit ei Jesus: Non moritur, sed: Sic eum volo manere donec veniam.\" That correction is not lost to the worshipper, however, because it appears in full in the day's Gospel, John 21:19-24, sung immediately after the Gradual.",
+      "source": "John 21:23, 19 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-27 (Missale Romanum formulary)"
+    }
   },
   "gb704": {
     "id": "gb704",
@@ -13918,7 +16674,36 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Videns Dominus flentes draws on John 11 but compresses twelve verses into a single unbroken sentence. The scripture moves from Jesus seeing Mary weep, through the exchange about the stone, through his prayer to the Father, and only then to his cry of Lazare, veni foras and the emergence from the tomb. The antiphon cuts all of that away and runs directly from the weeping to the call to the coming-forth, drawing grief and resurrection into one breath. It also names sisters where John at that point names only Mary as weeping, folding Martha, who appears later at the tomb, back into the opening scene.",
+      "source": "Cf. John 11:33-44 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb706": {
+    "id": "gb706",
+    "gregobaseId": "706",
+    "title": "Sapientiam ipsorum",
+    "part": "alleluia",
+    "mode": "Alleluia · Ss. Seven Founders of the Servite Order, Confessors · Mode I",
+    "gabc": "(c4) AL(c)le(d)lú(e[ll:1]d/[1]{/[-4]ix}hi){ia}.(h.) (,) * ij.(ghG'Fhv.fgF'EgvF'ED.) (;) (ce!gvgef//deDC.) (,) (c!ff//eg'!hvF'EC'ewfd.1) (::) ℣. Sa(c)pi(d)én(dh)ti(h)am(h'jvH'GhvGEf_g) (,) (ixeg!ivHGhvFDe.) (,) (ghF'Eghfff'1dfED) i(ixf!gwh'!iv)psó(hvGF'gw!hvGFgh)rum(g.) (;) nar(fhhghvGFgvFE)rent(d.) pó(d!f_ef//ef!hvGE'fd)pu(cd)li,(d.) (:) et(cd) lau(dffdfvEDde!fg)dem(ghhg.) (`) e(g)ó(gf)rum(fhhghvGFgvFE) (,) nún(d!f_ef//ef!hvGE'fd)ti(cd)et(d.) (;) * Ec(cd)clé(e[ll:1]d/[1]{/[-4]ix}hi)si(h)a.(h.) (,) (ghG'Fhv.fgF'EgvF'ED.) (;) (ce!gvgef//deDC.) (,) (c!ff//eg'!hvF'EC'ewfd.1) (::)",
+    "latin": "Allelúia. ℣. Sapiéntiam ipsórum narrent pópuli, et laudem eórum núntiet Ecclésia.",
+    "translation": "Alleluia. ℣. Let the people show forth their wisdom, and let the Church declare their praise.",
+    "source": "Graduale Romanum (GregoBase #706)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "seven-founders",
+        "part": "alleluia",
+        "feastTitle": "Ss. Seven Founders of the Servite Order, Confessors",
+        "rank": "Duplex",
+        "dateMD": "2-12"
+      }
+    ],
+    "commentary": {
+      "text": "Sapientiam ipsorum asks the people to tell the wisdom of the seven founders and the Church to declare their praise. The Alleluia turns Ecclesiasticus's sentence of remembrance toward the Servite founders' feast.",
+      "source": "Ecclus. 44:15 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb708": {
     "id": "gb708",
@@ -13959,7 +16744,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 13 verse 4 opens with a double petition, \"Respice, et exaudi me, Domine Deus meus,\" before arriving at the cry for enlightened eyes; the Offertory drops that opening line and begins in the middle of the verse. It also stops short of the full close of verse 5, cutting the second half, \"Qui tribulant me exsultabunt si motus fuero\" (they that trouble me will rejoice when moved), so that the chant ends on the enemy's boast rather than on the psalmist's fear of falling. The psalm's final verse, which turns toward trust and praise, is left aside entirely.",
+      "source": "Ps. 13:4-5 (Vulgate numbering Ps. 12:4-5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb709": {
     "id": "gb709",
@@ -13993,7 +16782,11 @@ window.CHANT_INDEX = {
         "feastTitle": "14th Sunday in Ordinary Time (Year C)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Magnus Dominus draws its verse from Psalm 48:2, attributed in its heading to the sons of Korah. The Clementine Vulgate reads \"laudabilis nimis\" at that point, where this chant has \"laudabilis valde\"; both Latin words carry the sense of \"exceedingly\" or \"greatly,\" but the chant text departs from the Vulgate wording.",
+      "source": "Ps. 48:2 (Vulgate numbering Ps. 47:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb713": {
     "id": "gb713",
@@ -14022,7 +16815,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "12-8"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicta es tu begins with Judith 13:23, a blessing first spoken to Judith after Israel's deliverance. On the Immaculate Conception, its verse continues the praise by naming Mary the glory, joy, and honor of her people.",
+      "source": "Judith 13:23 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-12-08 (Missale Romanum formulary)"
+    }
   },
   "gb714": {
     "id": "gb714",
@@ -14030,7 +16827,7 @@ window.CHANT_INDEX = {
     "title": "Dominus regnavit decorem",
     "part": "alleluia",
     "mode": "Alleluia · The Nativity of the Lord (Mass at Dawn) · Mode II",
-    "gabc": "(f3) AL(ef)le(f)lú(hhivHGh_i){ia}.(ijIH'h//fihhe/f!gwhf.1) (,) * {ij.}(hhf/hghvFE//ivHGh.f!gwhf.1) (::) ℣. Dó(fi!jvIH fihi)mi(ighf)nus(f.) (,) re(feg)gná(gv.fig/h.f!gwhgh)vit,(hg..) (;) de(gh)có(ijij)rem(h_f/hjI'Gh.) (,) ín(eg/ihi/ghf.1/hiH'Gh)du(f_[oh:h]g_[oh:h]f_[oh:h])it :(f.) (:) ín(f)du(f!h'i)it(ijI'Hh'h) Dó(gh!ivHF.gh'i)mi(i)nus(i) (,) for(kxji/jki)ti(h)tú(hjihhf)di(f)nem,(fh//fhhegvFE.) (;) et(e) prae(f)cín(hhi)xit(f) se(fhg) *(,) vir(hi~)tú(ivihi)te.(i./jijIG.hiH'//Ef!gwhf.1) (::)",
+    "gabc": "(f3) AL(ef)le(f)lú(hhivHGh_i){ia}.(ijIH'h//fihhe/f!gwhf.1) (,) * {ij.}(hhf/hghvFE//ivHGh.f!gwhf.1) (::) ℣. Dó(fi!jvIHfihi)mi(ighf)nus(f.) (,) re(feg)gná(gv.fig/h.f!gwhgh)vit,(hg..) (;) de(gh)có(ijij)rem(h_f/hjI'Gh.) (,) ín(eg/ihi/ghf.1/hiH'Gh)du(f_[oh:h]g_[oh:h]f_[oh:h])it :(f.) (:) ín(f)du(f!h'i)it(ijI'Hh'h) Dó(gh!ivHF.gh'i)mi(i)nus(i) (,) for(kxji/jki)ti(h)tú(hjihhf)di(f)nem,(fh//fhhegvFE.) (;) et(e) prae(f)cín(hhi)xit(f) se(fhg) *(,) vir(hi~)tú(ivihi)te.(i./jijIG.hiH'//Ef!gwhf.1) (::)",
     "latin": "Allelúia. ℣. Dóminus regnávit, decórem índuit : índuit Dóminus fortitúdinem, et praecínxit se virtúte.",
     "translation": "Alleluia. ℣. The Lord has reigned, he is clothed with beauty: the Lord is clothed with strength, and has girded himself with power.",
     "source": "Graduale Romanum (GregoBase #714)",
@@ -14063,7 +16860,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Dawn)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dominus regnavit decorem induit draws on the opening verse of Psalm 97, which the Douay-Rheims heads as a prophecy of the glorious coming and reign of Christ and of his coming to judge the world. Only that first verse is taken; the psalm's subsequent verses, with their images of fire going before the Lord and burning his enemies, are left aside. The single verse is set as the Alleluia for the Mass at Dawn on the Nativity, placing a royal and judicial proclamation at the heart of the celebration of Christ's birth.",
+      "source": "Ps. 97:1 (Vulgate numbering Ps. 96:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb715": {
     "id": "gb715",
@@ -14254,6 +17055,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin",
         "part": "offertory",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Memorial",
+        "dateMD": "12-13"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-virgin",
+        "part": "offertory",
         "feastTitle": "St. Scholastica, Virgin",
         "rank": "Optional Memorial",
         "dateMD": "2-10"
@@ -14298,7 +17107,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "8-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 21 joins the heart's desire granted by God to a crown of precious stones. The Common of a Virgin Offertory gives the verse a feminine voice, praising the one whose desire and crown are offered to the Lord.",
+      "source": "Ps. 21:3-4 (Vulgate numbering Ps. 20:3-4) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb724": {
     "id": "gb724",
@@ -14315,9 +17128,25 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "alleluia",
+        "feastTitle": "St. Peter Nolasco, Confessor",
+        "rank": "Duplex",
+        "dateMD": "1-28"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
         "feastTitle": "St. Edward the Confessor, King",
         "rank": "Semiduplex",
         "dateMD": "10-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
+        "feastTitle": "St. Peter of Alcantara, Confessor",
+        "rank": "Duplex",
+        "dateMD": "10-19"
       },
       {
         "calendar": "1962",
@@ -14334,6 +17163,22 @@ window.CHANT_INDEX = {
         "feastTitle": "St. Andrew Avellino, Confessor",
         "rank": "Duplex",
         "dateMD": "11-10"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
+        "feastTitle": "St. Didacus, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "11-13"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
+        "feastTitle": "St. Felix of Valois, Confessor",
+        "rank": "Duplex",
+        "dateMD": "11-20"
       },
       {
         "calendar": "1962",
@@ -14363,6 +17208,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "alleluia",
+        "feastTitle": "St. Francis of Paola, Confessor",
+        "rank": "Simplex",
+        "dateMD": "4-2"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
         "feastTitle": "St. Vincent Ferrer, Confessor",
         "rank": "Duplex",
         "dateMD": "4-5"
@@ -14387,6 +17240,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "alleluia",
+        "feastTitle": "St. Vincent de Paul, Confessor",
+        "rank": "Duplex",
+        "dateMD": "7-19"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
         "feastTitle": "St. Hyacinth, Confessor",
         "rank": "Duplex",
         "dateMD": "8-17"
@@ -14403,6 +17264,14 @@ window.CHANT_INDEX = {
         "calendar": "1962",
         "feastKey": "common-confessor",
         "part": "alleluia",
+        "feastTitle": "St. Philip Benizi, Confessor",
+        "rank": "Duplex",
+        "dateMD": "8-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
         "feastTitle": "St. Raymond Nonnatus, Confessor",
         "rank": "Duplex",
         "dateMD": "8-31"
@@ -14414,6 +17283,14 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Mary Vianney, Confessor",
         "rank": "Duplex",
         "dateMD": "8-9"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-confessor",
+        "part": "alleluia",
+        "feastTitle": "St. Nicholas of Tolentino, Confessor",
+        "rank": "Semiduplex",
+        "dateMD": "9-10"
       },
       {
         "calendar": "modern",
@@ -14479,7 +17356,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "8-4"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beatus vir qui suffert proclaims the blessedness of one who endures trial and receives the crown of life. In the Common of a Confessor Alleluia, the verse holds testing within the promise God makes to those who love him.",
+      "source": "James 1:12 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb725": {
     "id": "gb725",
@@ -14506,7 +17387,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Easter Sunday of the Resurrection of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Terra tremuit draws its words from two consecutive verses of Psalm 76, but takes only their center. Verse 9 opens with the phrase \"thou hast caused judgment to be heard from heaven,\" and verse 10 closes with \"to save all the meek of the earth\"; the chant sets aside both of those phrases, keeping only the earth's trembling and God's arising in judgment. Sung on Easter Sunday, it precedes a Gospel from Mark 16 in which the women arrive at the tomb to find the stone already rolled away.",
+      "source": "Ps. 76:9-10 (Vulgate numbering Ps. 75:9-10) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc0-0 (Missale Romanum formulary); Divinum Officium, Pasc0-0.txt [Officium heading]"
+    }
   },
   "gb726": {
     "id": "gb726",
@@ -14540,7 +17425,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Holy Thursday of the Lord's Supper",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Hoc corpus quod pro vobis weaves 1 Corinthians 11:24 and 25 into a single continuous sentence rather than quoting either verse in full. Verse 24 ends with its own \"hoc facite in meam commemorationem,\" but the chant drops that closing phrase and moves straight into the chalice words of verse 25, saving a single \"hoc facite\" for the end. It also replaces verse 25's \"bibetis\" (you shall drink) with \"sumitis\" (you receive), broadening the closing command to cover receiving the sacrament in general, and inserts \"dicit Dominus\" between the two halves, a phrase that appears in neither verse.",
+      "source": "1 Cor. 11:24, 25 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb727": {
     "id": "gb727",
@@ -14567,7 +17456,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Deus qui sedes super thronum joins Psalm 9's image of God seated in judgment with its prayer that the Lord be a refuge for the poor in tribulation. Justice and shelter are held together in its brief verse.",
+      "source": "Ps. 9:5, 10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb735": {
     "id": "gb735",
@@ -14594,7 +17487,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dicit Dominus draws from three verses of Jeremiah 29, skipping verse 13 entirely and condensing each of the three it uses. Verse 11 in the Vulgate opens with the words \"Ego enim scio cogitationes quas ego cogito super vos,\" but the chant trims this to \"Ego cogito cogitationes pacis,\" dropping the \"I know\" and the closing promise of an end and patience. From verse 12, the phrase \"et ibitis: et orabitis me\" is cut, so the going and the praying fall away and only the hearing remains. Verse 14's long enumeration of nations and places from which God will gather the exiles is reduced to three words: \"de cunctis locis.\"",
+      "source": "Jer. 29:11, 12, 14 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb742": {
     "id": "gb742",
@@ -14602,7 +17499,7 @@ window.CHANT_INDEX = {
     "title": "Saepe expugnaverunt me",
     "part": "tract",
     "mode": "Tract · 5th Sunday of Lent (Passion Sunday) · Mode VIII",
-    "gabc": "(c4) SAe(g)pe(gv.fff_d/e_[oh:h]c cd!fvv//g./hjhhg.) *(,) ex(gh)pu(f)gna(ixg!hwi)vé(i)runt(iiivH~G~) me(g.) (;) a(g) ju(h_g/h!iwj)ven(ghf)tú(f!h'j)te(j) me(jijHG.ixjjvH'GhiGF.)(,)(iyh./jh/ig)a.(g/hhg.) (::) ℣. Di(d!ff//fffd//f_!h_f_g_)cat(f) nunc(fg!hvhg.) (;) Is(gh)ra(fg)el :(gh/ji/jkhhg/hg/jjh/jggf.0) (:) sae(fh)pe(hghvGF) ex(gh)pu(gh~)gna(gh/jij)vé(j)runt(h!iwj) me(jjjvIHivHGhg..) (;) a(g) ju(h_g/h!iwj)ven(ghf)tú(f!h'j)te(j) me(jkjjg)(,)(jv.kli/jki'/jhhg.ixhiGF.)(,)(iyh./jh/ig)a.(g/hhg.) (::) ℣. Et(g)e(h!jhj'jjkvJ'IGh_g/h!iw!jvIHijh)nim(hg..) (;) non(g) po(ghg)tu(fg)é(jj)runt(hji) mi(j)hi :(jjjkhhg/hg/jjh/jggf.0) (:) su(g)pra(g) dor(hi~)sum(gh/jij) me(j.h!iwj)um(jjjvIHivHGhg..) (;) fa(g)bri(g)ca(g)vé(h_g/h!iwj)runt(ghf) pec(f!h'j)ca(j)tó(jijHG.ixjjvH'GhiGF.)(,)(iyh./jh/ig)res.(g/hhg.) (::) ℣. Pro(gd)lon(g)ga(hih)vé(jjjkvJ'IGh_g/h!iw!jvIHijh)runt(hg..) (;) in(g)i(ghg)qui(fg)tá(jj)tem(hji) si(j)bi :(jjjkhhg/hg/jjh/jggf.0) (:) Dó(f)mi(f)nus(h') ju(j)stus(igh) (,) con(gfgh!jij)cí(j.h!iwj)det(jjjvIHivHGhg..) (;) cer(g)ví(h_g/h!iwj)ces(ghf) ()* pec(f!h'j)ca(j)tó(jijHGg'g/hggfg.)(,)(jjjkvJ'IH'hg)rum.(ghGF.) (,) (h!iwjijjh/ihhg.) (::)",
+    "gabc": "(c4) SAe(g)pe(gv.fff_d/e_[oh:h]ccd!fvv//g./hjhhg.) *(,) ex(gh)pu(f)gna(ixg!hwi)vé(i)runt(iiivH~G~) me(g.) (;) a(g) ju(h_g/h!iwj)ven(ghf)tú(f!h'j)te(j) me(jijHG.ixjjvH'GhiGF.)(,)(iyh./jh/ig)a.(g/hhg.) (::) ℣. Di(d!ff//fffd//f_!h_f_g_)cat(f) nunc(fg!hvhg.) (;) Is(gh)ra(fg)el :(gh/ji/jkhhg/hg/jjh/jggf.0) (:) sae(fh)pe(hghvGF) ex(gh)pu(gh~)gna(gh/jij)vé(j)runt(h!iwj) me(jjjvIHivHGhg..) (;) a(g) ju(h_g/h!iwj)ven(ghf)tú(f!h'j)te(j) me(jkjjg)(,)(jv.kli/jki'/jhhg.ixhiGF.)(,)(iyh./jh/ig)a.(g/hhg.) (::) ℣. Et(g)e(h!jhj'jjkvJ'IGh_g/h!iw!jvIHijh)nim(hg..) (;) non(g) po(ghg)tu(fg)é(jj)runt(hji) mi(j)hi :(jjjkhhg/hg/jjh/jggf.0) (:) su(g)pra(g) dor(hi~)sum(gh/jij) me(j.h!iwj)um(jjjvIHivHGhg..) (;) fa(g)bri(g)ca(g)vé(h_g/h!iwj)runt(ghf) pec(f!h'j)ca(j)tó(jijHG.ixjjvH'GhiGF.)(,)(iyh./jh/ig)res.(g/hhg.) (::) ℣. Pro(gd)lon(g)ga(hih)vé(jjjkvJ'IGh_g/h!iw!jvIHijh)runt(hg..) (;) in(g)i(ghg)qui(fg)tá(jj)tem(hji) si(j)bi :(jjjkhhg/hg/jjh/jggf.0) (:) Dó(f)mi(f)nus(h') ju(j)stus(igh) (,) con(gfgh!jij)cí(j.h!iwj)det(jjjvIHivHGhg..) (;) cer(g)ví(h_g/h!iwj)ces(ghf) ()* pec(f!h'j)ca(j)tó(jijHGg'g/hggfg.)(,)(jjjkvJ'IH'hg)rum.(ghGF.) (,) (h!iwjijjh/ihhg.) (::)",
     "latin": "Saepe expugnavérunt me a juventúte mea. ℣. Dicat nunc Israel : saepe expugnavérunt me a juventúte mea. ℣. Étenim non potuérunt mihi : supra dorsum meum fabricavérunt peccatóres. ℣. Prolongavérunt iniquitátem sibi : Dóminus justus concídet cervíces peccatórum.",
     "translation": "Often have they fought against me from my youth. ℣. Let Israel now say: often have they fought against me from my youth. ℣. But they could not prevail over me: the sinners have wrought upon my back. ℣. They have lengthened their iniquities: the just Lord will cut the necks of sinners.",
     "source": "Graduale Romanum (GregoBase #742)",
@@ -14621,7 +17518,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Saepe expugnaverunt me is a tract for the fifth Sunday of Lent, drawing all four opening verses of Psalm 129, one of the fifteen psalms that begin with the words the evidence identifies as \"A song of ascents.\" The selection stops precisely before verse 5, where the psalm turns toward a curse on Zion's enemies: the Douay-Rheims reads, \"Let them all be confounded and turned back that hate Sion.\" The tract ends instead on a declaration of divine justice, leaving the speaker's perseverance and God's action as the final word.",
+      "source": "Ps. 129:1-4 (Vulgate numbering Ps. 128:1-4) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 129\" (rev. 1305333403)"
+    }
   },
   "gb745": {
     "id": "gb745",
@@ -14648,7 +17549,11 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Paratum cor meum draws on a single verse of Psalm 108. The verse that follows immediately in the psalm reads, \"Arise, my glory; arise, psaltery and harp: I will arise in the morning early,\" giving the opening declaration of readiness an explicitly dawn setting within the psalm itself. Marc-Antoine Charpentier set the same psalm opening to music around 1680, in a Latin work for three voices and continuo, H.183.",
+      "source": "Ps. 108:2 (Vulgate numbering Ps. 107:2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 108\" (rev. 1358217592)"
+    }
   },
   "gb746": {
     "id": "gb746",
@@ -14675,7 +17580,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Our Lord Jesus Christ, King of the Universe",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Potestas eius draws from Daniel 7:14, the verse in which the Son of Man is given power, and glory, and a kingdom over all peoples, tribes, and tongues. The chant sings only the second part of that verse, the proclamation that his power is everlasting and his kingdom shall not be destroyed. The bestowal comes first in the scripture, and the proclamation follows from it, so the chant begins at the declaration that the gift has made possible.",
+      "source": "Dan. 7:14 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb747": {
     "id": "gb747",
@@ -14702,7 +17611,11 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 34 supplies two consecutive verses for this Offertory, though the second is cut short. Verse 9 reads in full, \"O taste, and see that the Lord is sweet: blessed is the man that hopeth in him,\" yet the chant stops after \"taste and see that the Lord is sweet,\" leaving the closing beatitude aside. The Gospel of the day, from Matthew 6, is the passage in which Jesus tells his disciples not to be anxious about food or clothing, trusting in the Father's care, and so the invitation to taste and see the Lord's sweetness rests within a sustained meditation on trust and divine provision.",
+      "source": "Ps. 34:8-9 (Vulgate numbering Ps. 33:8-9) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent14-0 (Missale Romanum formulary)"
+    }
   },
   "gb751": {
     "id": "gb751",
@@ -14740,8 +17653,8 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit does double duty in the modern calendar, also opening the 2nd Sunday of Lent (this app's own lent-2 entry) — a deliberate pairing, since Matthew's account of the Transfiguration is the Gospel read at that Sunday's Mass.",
-      "source": "chantblog, \"The Introit for the Feast of the Transfiguration (August 6): Tibi dixit cor meum.\""
+      "text": "This Introit is a reform-era transplant: it is also the proper chant for the Feast of the Transfiguration (Aug. 6), reused here because the Second Sunday of Lent's Gospel reading is the Transfiguration story itself (Matt. 17:1-9). The older, pre-1969 Missal instead assigned this Sunday a different Introit, \"Reminiscere miserationum\" (Ps. 25, or Ps. 24 in the Vulgate numbering), so the Transfiguration text is a distinctly modern-rite pairing.",
+      "source": "chantblog, \"The Introit for the Second Sunday in Lent: Tibi dixit cor meum.\""
     }
   },
   "gb752": {
@@ -14773,7 +17686,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "“Gaudeamus” (“Let us rejoice”) became a reusable festive formula in the Graduale: the same opening melody and text pattern, with only the saint's name changed, was extended to other joyful feasts — apparently beginning with St. Agatha — from the eleventh century onward. Josquin des Prez built an entire Mass, the Missa Gaudeamus, on this chant's opening phrase; one recent study argues its unusual recurring number patterns were designed specifically for All Saints' Day.",
+      "text": "Gaudeamus, \"Let us rejoice,\" became a reusable festive formula in the Graduale: the same opening melody and text pattern, with only the saint's name changed, was extended to other joyful feasts from the eleventh century onward, apparently beginning with St. Agatha. Josquin des Prez later built an entire Mass, the Missa Gaudeamus, on this chant's opening phrase. One recent study argues that its unusual recurring number patterns were designed specifically for All Saints' Day.",
       "source": "chantblog, “The Introit for the Solemnity of All Saints: Gaudeamus Omnes.”"
     }
   },
@@ -14802,7 +17715,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Ash Wednesday",
         "rank": "Feria"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Miserere mei Deus draws from Psalm 57, though not continuously: verse 3, \"I will cry to God the most high; to God who hath done good to me,\" is skipped entirely. Both verses that are used are also cut short, with verse 2 dropping its second half, \"And in the shadow of thy wings will I hope, until iniquity pass away,\" and verse 4 ending before its closing words, \"God hath sent his mercy and his truth.\" What remains is stripped to its essentials: a plea for mercy grounded in trust, and a single act of divine rescue.",
+      "source": "Ps. 57:2, 4 (Vulgate numbering Ps. 56:2, 4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb7575": {
     "id": "gb7575",
@@ -14810,7 +17727,7 @@ window.CHANT_INDEX = {
     "title": "Jubilate Deo universa terra",
     "part": "offertory",
     "mode": "Offertory · Ordinary Time · Mode I",
-    "gabc": "(c4)IU(c)bi(d)lá(ixdh'iv)te(h) *() De(hjh)o(ghggf.) (;) u(ghg)ni(hg)vér(hv.g!jjj)sa(fg) ter(ixfhjvHGig/hi)ra:(h.) (:) iu(h)bi(h)lá(jhjGF'fvD'C,ddc/dd/cdff!g!hhg/hh,fghhh//ghjjj//ij/kkj,lk/lmKJ'jvIH'k)te(kjjvIH) De(hjh)o(ghggf.) (;) u(ghg)ni(hg)vér(hv.g!jjj)sa(fg) ter(fhjvHGig/h/jjh,jjvH'Ghiw!j_i)ra:(jjjvIH'jggf.) (:) psal(fh)mum(hg~) dí(h_g/jjj)ci(h_g)te(ghGF.) (,) nó(fg//h_f/g_h_g_///jkj)mi(jjji)ni(hg) e(gv.fhhg/hv.gh/jjjh~)ius:(hhgh.) (:) ve(jk)ní(klkl)te,(j_h) (,) et(h_g) au(gh)dí(hj/kjk)te,(k_h_) (,) et(jk!lkl) nar(j_h)rá(hj)bo(jjj) vo(hhg)bis,(g_fg.) (;) om(fg/h_f/g_h_g_///jkjj'j)nes(hjG'Fg.) (,) qui(f) ti(ghg)mé(h_fg)tis(fgd) De(f_h_g_)um,(g.) (:) quan(hj)ta(jji) fe(jvIH)cit(h_g) Dó(g_e)mi(fgffg)nus(g.d.) (;) á(df/gfgff'ffd/g_ef.,hjg)ni(fdf)mæ(f) me(fff/gvFD)æ,(d.) (:) al(fg~)le(e_d/fh///ghg/e!fg//hf/gvFE)lú(dewfef)ia.(e.d.) (::)",
+    "gabc": "(c4)IU(c)bi(d)lá(ixdh'iv)te(h) *() De(hjh)o(ghggf.) (;) u(ghg)ni(hg)vér(hv.g!jjj)sa(fg) ter(ixfhjvHGig/hi)ra:(h.) (:) iu(h)bi(h)lá(jhjGF'fvD'C,ddc/dd/cdff!g!hhg/hh,fghhh//ghjjj//ij/kkj,lk/lmKJ'jvIH'k)te(kjjvIH) De(hjh)o(ghggf.) (;) u(ghg)ni(hg)vér(hv.g!jjj)sa(fg) ter(fhjvHGig/h/jjh,jjvH'Ghiw!j_i)ra:(jjjvIH'jggf.) (:) psal(fh)mum(hg~) dí(h_g/jjj)ci(h_g)te(ghGF.) (,) nó(fg//h_f/g_h_g_///jkj)mi(jjji)ni(hg) e(gv.fhhg/hv.gh/jjjh~)ius:(hhgh.) (:) ve(jk)ní(klkl)te,(j_h) (,) et(h_g) au(gh)dí(hj/kjk)te,(k_h_) (,) et(jk!lkl) nar(j_h)rá(hj)bo(jjj) vo(hhg)bis,(g_fg.) (;) om(fg/h_f/g_h_g_///jkjj'j)nes(hjG'Fg.) (,) qui(f) ti(ghg)mé(h_fg)tis(fgd) De(f_h_g_)um,(g.) (:) quan(hj)ta(jji) fe(jvIH)cit(h_g) Dó(g_e)mi(fgffg)nus(g.d.) (;) á(df/gfgff'ffd/g_ef.,hjg)ni(fdf)mæ(f) me(fff/gvFD)æ,(d.) (:) al(fg~)le(e_d/fh///ghg/e!fg//hf/gvFE)lú(dew!fef)ia.(e.d.) (::)",
     "latin": "Jubiláte Deo univérsa terra : jubiláte Deo univérsa terra : psalmum dícite nómini ejus : veníte, et audíte, et narrábo vobis, omnes qui timétis Deum, quanta fecit Dóminus ánimae meae, allelúia.",
     "translation": "Shout with joy to God, all the earth: shout with joy to God, all the earth: sing a psalm to his name: come and hear, and I will tell you, all you that fear God, what great things the Lord has done for my soul, alleluia.",
     "source": "Graduale Romanum (GregoBase #7575)",
@@ -14829,7 +17746,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jubilate Deo universa terra draws from Psalm 66, but skips from verse 2 to verse 16, passing over thirteen verses that include the psalmist's vows, sacrifices, and reflection on God's might. The antiphon also repeats the opening cry, \"Jubilate Deo universa terra,\" a second time before moving to verse 2, where it then drops the psalm's own closing phrase, \"date gloriam laudi ejus\" (give glory to his praise), moving instead straight to the personal invitation of verse 16: come and hear what great things the Lord has done for my soul.",
+      "source": "Ps. 66:1-2, 16 (Vulgate numbering Ps. 65:1-2, 16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb760": {
     "id": "gb760",
@@ -14856,7 +17777,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 143 verses 9 and 10 each run longer than this chant uses. Verse 9 continues \"to thee have I fled,\" and verse 10 continues \"for thou art my God. Thy good spirit shall lead me into the right land.\" The compiler took only the opening petition of each verse, pairing the cry for rescue from enemies with the plea to be taught God's will, and set aside the declarations of trust and the promise of the spirit that follow.",
+      "source": "Ps. 143:9, 10 (Vulgate numbering Ps. 142:9, 10) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb761": {
     "id": "gb761",
@@ -14864,7 +17789,7 @@ window.CHANT_INDEX = {
     "title": "Pascha nostrum",
     "part": "alleluia",
     "mode": "Alleluia · Easter Sunday of the Resurrection · Mode VII",
-    "gabc": "(c3) AL(e)le(e)lú(ef'h fi//gi~){ia}.(ii) *(;) ij.(g!iwjij//ijihiHF'fe.) (;) (iv.ji/jijvIG.hih'/!ivHF'fe.) (,) (iv.ef//efd.1/fhf/gffe.) (::) ℣. Pa(h)scha(g) no(ijij)strum(i_j_i_2/j_g//hi/j_i/j_g/hihhg.) (;) im(h)mo(i)lá(il.mvLKlvKJkkki)(;)(lv.mvLKlvKJkkki//jvIHh'hf/gh'i)(,)(jkIH'ivHF'fe.)(,)(g!hwigiigi)tus(giG'FE./[-0.5]gvFEfe) est(e.) *(;) Chri(e/f'h//f!igi)stus.(iie.) (,) (i'jvIH'ivHF'fe.) (,) (iv.ef//efd.1/fhf/gffe.) (::)",
+    "gabc": "(c3) AL(e)le(e)lú(ef'!hfi//gi~){ia}.(ii) *(;) ij.(g!iwjij//ijihiHF'fe.) (;) (iv.ji/jijvIG.hih'/!ivHF'fe.) (,) (iv.ef//efd.1/fhf/gffe.) (::) ℣. Pa(h)scha(g) no(ijij)strum(i_j_i_2/j_g//hi/j_i/j_g/hihhg.) (;) im(h)mo(i)lá(il.mvLKlvKJkkki)(;)(lv.mvLKlvKJkkki//jvIHh'hf/gh'i)(,)(jkIH'ivHF'fe.)(,)(g!hwigiigi)tus(giG'FE./[-0.5]gvFEfe) est(e.) *(;) Chri(e/f'h//f!igi)stus.(iie.) (,) (i'jvIH'ivHF'fe.) (,) (iv.ef//efd.1/fhf/gffe.) (::)",
     "latin": "Allelúia. ℣. Pascha nostrum immolátus est Christus.",
     "translation": "Alleluia. ℣. Christ our Passover is sacrificed.",
     "source": "Graduale Romanum (GregoBase #761). In Eastertide a second Paschal Alleluia follows; only the first is shown.",
@@ -14883,7 +17808,36 @@ window.CHANT_INDEX = {
         "feastTitle": "Easter Sunday of the Resurrection of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Pascha nostrum names Christ as the Church's Passover sacrifice. In the Easter Alleluia, the proclamation calls the Church to leave old leaven behind and keep the feast in joy.",
+      "source": "1 Cor. 5:7 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
+  },
+  "gb764": {
+    "id": "gb764",
+    "gregobaseId": "764",
+    "title": "Justus cum ceciderit",
+    "part": "gradual",
+    "mode": "Gradual · Common of a Martyr · Mode V",
+    "gabc": "(c3) JU(dd/efE'Cd_[oh:h]e_[oh:h]d_[oh:h])stus(d.) *() cum(d) ce(d)cí(de)de(d)rit,(d.) (,) non(d) col(ef)li(f_dfvED'cd'e)dé(e)tur :(ded.) (:) qui(d)a(d) Dó(fd/ef!hh/ihi)mi(hgh)nus(f_e) (,) sup(f)pó(f/hhvFD.1gxgvFE'De)nit(e[ll:1]d..) (;) ma(dfe___/hgh)num(f) su(ded)am.(dfe___hv.hhhff//dfe/fee[ll:1]d.0) (::) ℣. To(d)ta(f) di(fh/ih/ijh)e(h) mi(h)se(h)ré(hi)tur,(h.) (,) et(h_g/i!jwk) cóm(i_[oh:h]h)mo(h)dat :(hg/i_[oh:h]h//jvIH'Ghf..) (:) et(hh) se(h)men(h) e(ih/ij_hih/ij_ij//hi/jij)jus(jh/jkihh/fgf.) (;) in(d) be(d)ne(d)di(d)cti(d)ó(dfE'D)ne(ef) *(,) e(fhG'Fhhh)rit.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "latin": "Justus cum cecíderit, non collidétur : quia Dóminus suppónit manum suam. ℣. Tota die miserétur, et cómmodat : et semen ejus in benedictióne erit.",
+    "translation": "When the just man falls, he shall not be bruised: for the Lord puts his hand under him. ℣. He shows mercy, and lends, all the day long: and his seed shall be in blessing.",
+    "source": "Graduale Romanum (GregoBase #764)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-3",
+        "part": "gradual",
+        "feastTitle": "St. Valentine, Priest and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-14"
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 37 holds together the just person's fall and the Lord's supporting hand. Verse 26 then names mercy, lending, and a blessed seed, giving this Gradual for a martyr its biblical portrait of steadfastness.",
+      "source": "Ps. 37:24, 26 (Vulgate numbering Ps. 36:24, 26) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Commune/C2a (Missale Romanum formulary)"
+    }
   },
   "gb765": {
     "id": "gb765",
@@ -14897,13 +17851,6 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #765)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-confessor-2",
-        "part": "alleluia",
-        "feastTitle": "Common of confessor 2",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-confessor-2",
         "part": "alleluia",
@@ -14911,7 +17858,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "1-17"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Beatus vir qui timet draws on only the opening verse of Psalm 112, a psalm of ten verses. In the Clementine Vulgate, the psalm's own text begins with the word \"Alleluja\" before the verse starts, so the Alleluia of this chant echoes the psalm's very first word. In Hebrew, the psalm is acrostic by phrase: each 7 to 9 syllable phrase begins with a successive letter of the Hebrew alphabet in order.",
+      "source": "Ps. 112:1 (Vulgate numbering Ps. 111:1) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 112\" (rev. 1353829847)"
+    }
   },
   "gb766": {
     "id": "gb766",
@@ -14941,7 +17892,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Introit's opening word gave the entire Mass for the Dead its common name, “Requiem.” It stands behind the whole polyphonic Requiem tradition — from Johannes Ockeghem's Requiem, the earliest to survive complete, through settings by Victoria, Mozart, Fauré, and Verdi — even where a composer sets the later texts freely, the Mass itself is still named for this chant's first word.",
+      "text": "The opening word of this Introit gave the entire Mass for the Dead its common name, \"Requiem.\" That single word stands behind the whole polyphonic Requiem tradition, from Johannes Ockeghem's Requiem, the earliest to survive complete, through settings by Victoria, Mozart, Fauré, and Verdi. Even where a composer sets the later texts freely, the Mass itself is still named for this chant's first word.",
       "source": "See the Wikipedia “Requiem” overview article for the lineage from Ockeghem onward."
     }
   },
@@ -14981,20 +17932,20 @@ window.CHANT_INDEX = {
         "dateMD": "11-25"
       },
       {
+        "calendar": "1962",
+        "feastKey": "common-virgin-martyr",
+        "part": "offertory",
+        "feastTitle": "St. Agatha, Virgin and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-5"
+      },
+      {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "offertory",
         "feastTitle": "St. Agnes, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "1-21"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "offertory",
-        "feastTitle": "St. Cecilia, Virgin and Martyr",
-        "rank": "Optional Memorial",
-        "dateMD": "11-22"
       },
       {
         "calendar": "modern",
@@ -15008,19 +17959,15 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin-martyr",
         "part": "offertory",
-        "feastTitle": "St. Lucy, Virgin and Martyr",
-        "rank": "Memorial",
-        "dateMD": "12-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-virgin-martyr",
-        "part": "offertory",
         "feastTitle": "St. Agatha, Virgin and Martyr",
         "rank": "Memorial",
         "dateMD": "2-5"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Afferentur post eam draws from two consecutive verses of Psalm 45, fusing them selectively. Psalm 45:15 supplies the opening image of virgins led to the King, and verse 16 supplies the words \"in gladness and rejoicing\"; the chant joins these two fragments while leaving aside verse 16's closing phrase, \"adducentur in templum regis,\" they shall be brought into the temple of the king. The Gospel appointed for this same Mass is the parable of the ten virgins from Matthew 25:1-13, so the offertory's image of virgins being led before the King arrives just as that parable has been proclaimed.",
+      "source": "Ps. 45:15-16 (Vulgate numbering Ps. 44:15-16) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6 (Missale Romanum formulary)"
+    }
   },
   "gb77": {
     "id": "gb77",
@@ -15028,7 +17975,7 @@ window.CHANT_INDEX = {
     "title": "Omnes gentes plaudite",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time · Mode I",
-    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjh___!iw!jvIH'hg//ixhiHG'gf.0) *(;) ij.(ixfg!hihhg/h_g//hfgvF'ED') (;) (fef.hg/h_g//hfgvF'ED'ewfd.1) (::) ℣. O(ixfg'i~)mnes(i) gen(ixiiij_ggf.0)(,)(ixj_i/j_[hl:1]k_[hl:1]i_[hl:1]ig!hw!ivHG'h)tes(h_ghvGFg.) (;) pláu(ixfg/iV_[oh:h]!gh~)di(ixh.0/ijh/iggf/hjh.1)(,)(ixf.g!hwigh./ijh/iggf/hjh.1)(,)(ixj_[hl:1]k_[hl:1]j_[hl:1]jhivGF'gwhg/hi)te(i.) (;) má(ixivHF'gffd de'f)ni(gffefvED'e)bus :(e[ll:1]d..) (:) ju(f)bi(f)lá(gh)te(h/iih) De(g.h!iw!jkj)o(jvIH.) (;) in(hg~) vo(fg/hg/hhg)ce(g./fghjjg/hhghvFE.) (;) * ex(e)sul(ef'g)ta(ghG'F)ti(ghg)ó(h)nis.(hjh___!iw!jvIH'hg//ixhiHG'gf.0) (;) (ixfg!hihhg/h_g//hfgvF'ED') (;) (fef.hg/h_g//hfgvF'ED'ewfd.1) (::)",
+    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjh___!iw!jvIH'hg//ixhiHG'gf.0) *(;) ij.(ixfg!hihhg/h_g//hfgvF'ED') (;) (fef.hg/h_g//hfgvF'ED'ewfd.1) (::) ℣. O(ixfg'i~)mnes(i) gen(ixiiij_ggf.0)(,)(ixj_i/j_[hl:1]k_[hl:1]i_[hl:1]ig!hw!ivHG'h)tes(h_ghvGFg.) (;) pláu(ixfg/iV_[oh:h]!gh~)di(ixh.0/ijh/iggf/hjh.1)(,)(ixf.g!hwigh./ijh/iggf/hjh.1)(,)(ixj_[hl:1]k_[hl:1]j_[hl:1]jhivGF'gwhg/hi)te(i.) (;) má(ixivHF'gffdde'f)ni(gffefvED'e)bus :(e[ll:1]d..) (:) ju(f)bi(f)lá(gh)te(h/iih) De(g.h!iw!jkj)o(jvIH.) (;) in(hg~) vo(fg/hg/hhg)ce(g./fghjjg/hhghvFE.) (;) * ex(e)sul(ef'g)ta(ghG'F)ti(ghg)ó(h)nis.(hjh___!iw!jvIH'hg//ixhiHG'gf.0) (;) (ixfg!hihhg/h_g//hfgvF'ED') (;) (fef.hg/h_g//hfgvF'ED'ewfd.1) (::)",
     "latin": "Allelúia. ℣. Omnes gentes pláudite mánibus : jubiláte Deo in voce exsultatiónis.",
     "translation": "Alleluia. ℣. O clap your hands, all you nations: shout unto God with the voice of joy.",
     "source": "Graduale Romanum (GregoBase #77)",
@@ -15047,7 +17994,11 @@ window.CHANT_INDEX = {
         "feastTitle": "13th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Omnes gentes plaudite draws its words from the opening of Psalm 47, attributed in its heading to the sons of Korah. The chant quotes only verse 2, the summons to all nations to clap and shout to God. The psalm's next verse supplies the reason the chant's text leaves unspoken: \"For the Lord is high, terrible: a great king over all the earth.\"",
+      "source": "Ps. 47:2 (Vulgate numbering Ps. 46:2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 47\" (rev. 1328069854)"
+    }
   },
   "gb771": {
     "id": "gb771",
@@ -15148,7 +18099,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Corona aurea draws its opening words from Ecclesiasticus 45:14, a verse from a chapter praising Aaron. The Vulgate text reads \"Corona aurea super mitram ejus,\" on his mitre, but the chant replaces \"mitram ejus\" with \"caput ejus,\" swapping Aaron's specific priestly headdress for the plain word for head, and so freeing the image from Aaron alone to fit any bishop confessor. The verses that follow in Ecclesiasticus 45 describe Aaron's vestments and restrict them to his descendants exclusively, details the chant leaves behind as it draws out this single image of the golden crown.",
+      "source": "Ecclus. 45:14; Ps. 21:4 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb774": {
     "id": "gb774",
@@ -15182,7 +18137,11 @@ window.CHANT_INDEX = {
         "feastTitle": "20th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Caro mea vere est cibus joins John 6 verses 56 and 57: Christ's flesh is true food and his blood true drink, and those who receive them abide in him. The same passage places this feeding beside everlasting life and resurrection, holding it within hope of life that does not end.",
+      "source": "John 6:56-57 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb776": {
     "id": "gb776",
@@ -15202,7 +18161,11 @@ window.CHANT_INDEX = {
         "feastTitle": "18th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sitiéntes veníte ad aquas sets aside the Psalter that supplies nearly every other Ordinary-Time Sunday and instead borrows its invitation from the prophet Isaiah, whose vision of a renewed covenant closing the book's second half calls everyone who thirsts to the waters. The image is close enough to Christ's own words in John's Gospel, inviting anyone thirsty to come to him, that the two passages are commonly read as an echo of one another.",
+      "source": "USCCB, Isaiah, chapter 55; New Advent Catholic Encyclopedia, \"Introit.\""
+    }
   },
   "gb777": {
     "id": "gb777",
@@ -15363,14 +18326,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-confessor-doctor",
         "part": "offertory",
-        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
-        "rank": "Optional Memorial",
-        "dateMD": "1-28"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "offertory",
         "feastTitle": "St. Francis de Sales, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "1-29"
@@ -15457,14 +18412,6 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "offertory",
-        "feastTitle": "St. Gregory the Great, Pope and Doctor of the Church",
-        "rank": "Memorial",
-        "dateMD": "9-3"
-      },
-      {
-        "calendar": "modern",
         "feastKey": "john-baptist",
         "part": "offertory",
         "feastTitle": "The Nativity of St. John the Baptist",
@@ -15479,7 +18426,108 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-27"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Justus ut palma florebit draws on a single verse from Psalm 92, leaving the verse that immediately follows it unsung. That next verse reads, \"Plantati in domo Domini, in atriis domus Dei nostri florebunt\": those planted in the house of the Lord shall flourish in his courts. The chant stops just before the psalm names the place that makes the flourishing possible.",
+      "source": "Ps. 92:13 (Vulgate numbering Ps. 91:13) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb779": {
+    "id": "gb779",
+    "gregobaseId": "779",
+    "title": "Inveni David",
+    "part": "offertory",
+    "mode": "Offertory · Common of a Martyr Bishop · Mode VIII",
+    "gabc": "(c3) IN(c)vé(ef'g)ni(f) *() Da(f)vid(fhffe.) (,) ser(f)vum(fiH'Gh) me(f_[oh:h]g_[oh:h]f_[oh:h])um,(f.) (:) ó(hhi)le(h)o(h) san(h)cto(hiH'GhvG'FEfe..) (,) un(hhf~)xi(hh) e(giH'G)um :(g.) (:) ma(hhi)nus(h) e(hi/ji)nim(ihh) me(f!hhhfivH'Gh)a(h.) (,) au(h)xi(h)li(h)á(hhi)bi(f)tur(e_[oh:h][ll:1]d) e(fhF'EfvED'e)i,(e[ll:1]d..) (:) et(ef~) brá(e)chi(e.f!gwhg)um(h) me(hg)um(hig'hvF'Ef.) (,) con(e)for(f)tá(f!hhhfivH'Gh)bit(g_[oh:h]f) e(efe___)um.(e.) (::)",
+    "latin": "Invéni David servum meum, óleo sancto meo unxi eum : manus enim mea auxiliábitur ei, et bráchium meum confortábit eum.",
+    "translation": "I have found David my servant: with my holy oil I have anointed him: for my hand shall help him, and my arm shall strengthen him.",
+    "source": "Graduale Romanum (GregoBase #779)",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Marcellus, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "1-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Callistus I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-14"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Evaristus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "10-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Martin I, Pope and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "11-12"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Clement I, Pope and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-23"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Anicetus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "4-17"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Felix I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "5-30"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Silverius, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "6-20"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Pius I, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "7-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-bishop",
+        "part": "offertory",
+        "feastTitle": "St. Zephyrinus, Pope and Martyr",
+        "rank": "Simplex",
+        "dateMD": "8-26"
+      }
+    ],
+    "commentary": {
+      "text": "Psalm 89 calls David God's servant and names the holy oil of his anointing. The Common of a Martyr Bishop Offertory continues with God's helping hand and strengthening arm, placing the Psalm's promise beside the bishop's witness.",
+      "source": "Ps. 89:21-22 (Vulgate numbering Ps. 88:21-22) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Commune/C2b (Missale Romanum formulary)"
+    }
   },
   "gb78": {
     "id": "gb78",
@@ -15508,7 +18556,7 @@ window.CHANT_INDEX = {
       }
     ],
     "commentary": {
-      "text": "This Sunday's older name, \"Judica Sunday,\" comes straight from this Introit's opening word — a naming pattern this app's calendar shows elsewhere (Laetare, Gaudete), retired for this particular Sunday when the 1969 reform moved the name \"Passion Sunday\" to Palm Sunday instead. Heinrich Isaac set the text for four voices (SATB) in his great Choralis Constantinus, printed in Nuremberg in 1550.",
+      "text": "The older name for this Sunday, Judica Sunday, comes straight from the opening word of this Introit, Judica. The same naming pattern appears elsewhere in this app's calendar, in Laetare and Gaudete. That particular name was retired for this Sunday when the 1969 reform moved the name Passion Sunday to Palm Sunday instead. Heinrich Isaac set the text for four voices in his Choralis Constantinus, printed in Nuremberg in 1550.",
       "source": "chantblog, \"The Introit for the Fifth Sunday in Lent: Judica Me ('Vindicate Me')\"; CPDL ChoralWiki, \"Judica me, Deus (Introit) (Heinrich Isaac).\""
     }
   },
@@ -15539,7 +18587,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-27"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Exiit sermo takes its text from John 21:23, the verse where a saying circulating among the early disciples is carefully corrected. The community had understood Jesus to mean that John would not die, but the verse insists Jesus said no such thing: \"So I will have him to remain till I come\" was not a promise of immortality. This same passage, John 21:19-24, is the Gospel read at this Mass, so the communion draws the congregation back to a word they have just heard, with its quiet insistence on what Jesus did and did not say.",
+      "source": "John 21:23 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Sancti-12-27 (Missale Romanum formulary)"
+    }
   },
   "gb782": {
     "id": "gb782",
@@ -15573,7 +18625,11 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Panis quem ego dedero draws from only the second clause of John 6:52, omitting the first. The full verse in the Clementine Vulgate reads \"Si quis manducaverit ex hoc pane, vivet in æternum : et panis quem ego dabo, caro mea est pro mundi vita.\" The chant also diverges slightly from that Vulgate wording, replacing \"dabo\" with \"dedero\" and \"mundi\" with \"saeculi,\" both carrying roughly the same meaning but reflecting a different textual tradition.",
+      "source": "John 6:52 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb786": {
     "id": "gb786",
@@ -15602,7 +18658,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laetamini in Domino draws its single verse from the close of Psalm 32, which the Douay-Rheims describes as a penitential psalm. The two verses immediately before it warn against stubbornness and speak of many scourges falling on the sinner; the psalm then ends on a turn to exultation, and it is that final line alone that the offertory takes. The Dutch Renaissance composer Ghiselin Danckerts (c. 1510, died 1567), a singer at the Papal Chapel from 1538 to 1565, left an eight-voice motet setting of the same text, Laetamini in domino, which survives in manuscript.",
+      "source": "Ps. 32:11 (Vulgate numbering Ps. 31:11) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Ghiselin Danckerts\" (rev. 1264312428)"
+    }
   },
   "gb787": {
     "id": "gb787",
@@ -15631,7 +18691,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Recordare Virgo Mater asks the Virgin Mother to stand before God and speak good things for the faithful. On the feast of the Seven Sorrows, the prayer asks her to turn God's indignation away from those who sing it.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb789": {
     "id": "gb789",
@@ -15639,7 +18703,7 @@ window.CHANT_INDEX = {
     "title": "Angelus Domini descendit",
     "part": "offertory",
     "mode": "Offertory · 2nd Sunday of Easter · Mode VIII",
-    "gabc": "(c4) AN(fg~)ge(g.!hjHG'gf/ghg___)lus(g.) *(,) Dó(hg/h!jjkvJH)mi(gfh)ni(h.) (;) de(h)scén(jhhf/ghGF'/!fde'1c)(,)(cd!ff/gh!jvHG'gfg)dit(g.) (;) de(g.h!iwj) cae(jji/j_g//h!jijkljj)lo,(ki/jhhg.) (;) et(g) di(gggvED'eg'hvGF'g)xit(g.) (,) mu(g)li(hj)é(ig/h!jj/klK'Ijkj)ri(ij)bus :(hig.) (:) Quem(gh~) quaé(hvGFgvFEf./ghffdg)ri(fg)tis,(g.) (;) sur(h)ré(gjI'Ghh//fh!jvGF'fd/ef!ghg)xit,(g.) (;) sic(g)ut(gj) di(jji/jhhg)xit,(h.) (;) al(h!iwji~)le(jkJH'//gi. hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h])lú(ghg___){ia}.(g.) (::)",
+    "gabc": "(c4) AN(fg~)ge(g.!hjHG'gf/ghg___)lus(g.) *(,) Dó(hg/h!jjkvJH)mi(gfh)ni(h.) (;) de(h)scén(jhhf/ghGF'/!fde'1c)(,)(cd!ff/gh!jvHG'gfg)dit(g.) (;) de(g.h!iwj) cae(jji/j_g//h!jijkljj)lo,(ki/jhhg.) (;) et(g) di(gggvED'eg'hvGF'g)xit(g.) (,) mu(g)li(hj)é(ig/h!jj/klK'Ijkj)ri(ij)bus :(hig.) (:) Quem(gh~) quaé(hvGFgvFEf./ghffdg)ri(fg)tis,(g.) (;) sur(h)ré(gjI'Ghh//fh!jvGF'fd/ef!ghg)xit,(g.) (;) sic(g)ut(gj) di(jji/jhhg)xit,(h.) (;) al(h!iwji~)le(jkJH'//gi.hjIH'//g!jj/h_[oh:h]i_[oh:h]g_[oh:h])lú(ghg___){ia}.(g.) (::)",
     "latin": "Angelus Dómini descéndit de cælo, et dixit muliéribus : Quem quæritis, surréxit, sicut dixit, allelúia.",
     "translation": "An angel of the Lord came down from heaven, and said to the women: He whom you seek is risen, as he said, alleluia.",
     "source": "Graduale Romanum (GregoBase #789)",
@@ -15658,7 +18722,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Easter (Divine Mercy Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Angelus Domini descendit brings together the angel's descent and his words to the women at the tomb. Matthew first names Jesus as crucified, then announces that he has risen and directs them to see the place where he lay.",
+      "source": "Matt. 28:2, 5-6 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb79": {
     "id": "gb79",
@@ -15725,7 +18793,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday after Pentecost",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 13 ends with two acts of praise: \"I will sing to the Lord, who giveth me good things: yea, I will sing to the name of the Lord, the most high.\" The Communion takes only these closing words, leaving aside the trust and rejoicing that lead to them in the psalm. The day's Gospel answers with the parable of the great supper.",
+      "source": "Ps. 13:6 (Vulgate numbering Ps. 12:6) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent02-0 (Missale Romanum formulary)"
+    }
   },
   "gb797": {
     "id": "gb797",
@@ -15752,7 +18824,11 @@ window.CHANT_INDEX = {
         "feastTitle": "11th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine in virtute tua is the Latin incipit by which Psalm 21 is traditionally known, so the alleluia verse and the psalm it draws from share the same name. The psalm is attributed to David and is characterized as a psalm of thanksgiving. The Jerusalem Bible identifies messianic themes within it and commends its application to the idea of \"Christ the King\", so the king whose rejoicing this verse sings carries a weight beyond any earthly ruler.",
+      "source": "Wikipedia, \"Psalm 21\" (rev. 1327827403)"
+    }
   },
   "gb798": {
     "id": "gb798",
@@ -15786,7 +18862,11 @@ window.CHANT_INDEX = {
         "feastTitle": "21st Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui manducat carnem draws on a single verse from John 6, verse 57. In the surrounding discourse that verse is flanked by promises of everlasting life and resurrection, as in verse 55: \"He that eateth my flesh and drinketh my blood hath everlasting life: and I will raise him up in the last day.\" The chant sets those promises aside and keeps only the mutual indwelling, \"in me manet, et ego in eo,\" then closes with \"dicit Dominus,\" a phrase not present in the source verse, framing the whole as a direct divine declaration.",
+      "source": "John 6:57 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb799": {
     "id": "gb799",
@@ -15800,20 +18880,41 @@ window.CHANT_INDEX = {
     "source": "Graduale Romanum (GregoBase #799)",
     "usages": [
       {
-        "calendar": "1962",
-        "feastKey": "common-holy-women",
-        "part": "communion",
-        "feastTitle": "Common of holy women",
-        "rank": ""
-      },
-      {
         "calendar": "modern",
         "feastKey": "common-holy-women",
         "part": "communion",
-        "feastTitle": "Common of holy women",
+        "feastTitle": "Common of Holy Women (Cognovi)",
         "rank": ""
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dilexisti justitiam draws on a single verse of Psalm 45, but leaves out the closing phrase of the full verse. The Clementine Vulgate ends that verse with \"præ consortibus tuis,\" meaning \"above thy fellows,\" which the chant quietly omits. What remains lets the image of anointing with \"oleo lætitiæ,\" the oil of gladness, stand on its own.",
+      "source": "Ps. 45:8 (Vulgate numbering Ps. 44:8) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6 (Missale Romanum formulary)"
+    }
+  },
+  "gb800": {
+    "id": "gb800",
+    "gregobaseId": "800",
+    "title": "Sancti tui florebunt",
+    "part": "alleluia",
+    "mode": "Alleluia · Common of Several Martyrs (Paschal Time) · Mode VIII",
+    "gabc": "(c4) AL(fg~)le(g)lú(hghvGFhh){ia}.(g.) *(;) ij.(gj/ki/jh/ijHG.) (,) (gj/ki/jh/ijHG.) (,) (gji'___/jkkvJH'Gh_ihhg.) (::) ℣. San(fg~)cti(g) tu(hghvGF)i,(hhg) Dó(h!iwjjvIH'G)mi(fg)ne,(g.) (;) flo(g)ré(i_0[uh:l]jk)bunt(jji) sic(hg)ut(hih') lí(g)li(fg)um :(g.) (:) et(g) sic(ih)ut(jk) o(kvvJH'Gh/ii//kvvJH'G)dor(hih') bál(g)sa(fg)mi(g.) (:) e(ghghvGFhh)runt(g.) *(,) an(fg~)te(ghghvGFhh) te.(g.) (;) (gj/ki/jh/ijHG.) (,) (gj/ki/jh/ijHG.) (,) (gji'___/jkkvJH'Gh_ihhg.) (::)",
+    "latin": "Allelúia. ℣. Sancti tui, Dómine, florébunt sicut lílium : et sicut odor bálsami erunt ante te.",
+    "translation": "Alleluia. ℣. Your saints, O Lord, shall flourish like the lily: and shall be as the odor of balsam before you.",
+    "source": "Graduale Romanum (GregoBase #800)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-several-martyrs-paschal",
+        "part": "alleluia",
+        "feastTitle": "Common of Several Martyrs (Sapientiam Sanctorum) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Sancti tui florebunt draws its imagery from Osee 14:6-7, though it reshapes what it finds there. In Osee, the words are addressed to Israel as a people, promising that Israel shall spring as the lily and carry the smell of Lebanon. The chant redirects the same images to the martyrs, placing \"your saints\" where Israel stood, and changes the fragrance as well, replacing the smell of Lebanon with the odor of balsam, carried before the Lord.",
+      "source": "Cf. Osee 14:6-7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb801": {
     "id": "gb801",
@@ -15840,7 +18941,11 @@ window.CHANT_INDEX = {
         "feastTitle": "8th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 7 moves through a protestation of innocence, a call for divine judgment over enemies, and a vow of thanksgiving across eighteen verses in all. This Alleluia takes only verse 2, the psalm's opening cry of trust and appeal, leaving everything that follows unsung. Around 530, St. Benedict of Nursia assigned the whole psalm to the Tuesday office of Prime, making it the first of three psalms for that hour, a practice still observed in a number of monasteries.",
+      "source": "Ps. 7:2 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 7\" (rev. 1373246561)"
+    }
   },
   "gb803": {
     "id": "gb803",
@@ -15869,7 +18974,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "2-2"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Responsum accepit Simeon tells of the Spirit's promise that Simeon will behold Christ before death. The Presentation Communion follows that promise into the temple, where Simeon takes the child in his arms and blesses God.",
+      "source": "Luke 2:26 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Sancti-02-02 (Missale Romanum formulary)"
+    }
   },
   "gb810": {
     "id": "gb810",
@@ -15903,7 +19012,11 @@ window.CHANT_INDEX = {
         "feastTitle": "29th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Meditabor in mandatis tuis joins meditation on God's commandments to lifted hands and love. The Psalm's neighboring verses speak of seeking those commandments and finding comfort in God's word, so the 2nd Sunday of Lent Offertory makes obedience a prayer of affection and hope.",
+      "source": "Ps. 119:47, 48 (Vulgate numbering Ps. 118:47, 48) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb811": {
     "id": "gb811",
@@ -15930,7 +19043,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Midnight)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laetentur caeli draws from two non-consecutive verses of Psalm 96, skipping verse 12 entirely. Verse 11 reads in full, \"Let the heavens rejoice, and let the earth be glad, let the sea be moved, and the fulness thereof,\" and verse 12 continues, \"The fields and all things that are in them shall be joyful. Then shall all the trees of the woods rejoice.\" The chant sets aside both of these images and joins verse 11's opening directly to verse 13's arrival of the Lord, also dropping verse 13's closing line about judgment in justice and truth.",
+      "source": "Ps. 96:11, 13 (Vulgate numbering Ps. 95:11, 13) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb812": {
     "id": "gb812",
@@ -15957,7 +19074,11 @@ window.CHANT_INDEX = {
         "feastTitle": "26th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Super flumina Babylonis sits in exile beside the rivers and weeps while remembering Sion. Psalm 137 follows with the silence of instruments and the captors' demand for songs, so the Offertory lets remembered worship remain honest about captivity.",
+      "source": "Ps. 137:1 (Vulgate numbering Ps. 136:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb813": {
     "id": "gb813",
@@ -15977,7 +19098,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday after Easter (Jubilate, 1962)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jesus tells his disciples that in a little while they will not see him, and then in another little while they will see him because he goes to the Father. The Communion after Easter repeats his words with alleluias.",
+      "source": "John 16:16 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc3-0.txt [Officium heading]; Divinum Officium, Pasc3-0 (Missale Romanum formulary)"
+    }
   },
   "gb820": {
     "id": "gb820",
@@ -16004,7 +19129,36 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 90 opens with a heading that names its author: \"A prayer of Moses the man of God.\" The Alleluia verse quotes only what follows, setting aside that attribution and letting the words of refuge stand on their own. The next verse of the psalm extends the thought outward in time: \"Before the mountains were made, or the earth and the world was formed; from eternity and to eternity thou art God.\"",
+      "source": "Ps. 90:1 (Vulgate numbering Ps. 89:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb8201": {
+    "id": "gb8201",
+    "gregobaseId": "8201",
+    "title": "Inveni David servum meum",
+    "part": "gradual",
+    "mode": "Gradual · St. Josaphat, Bishop and Martyr · Mode I",
+    "gabc": "(c4) IN(d_c~)vé(d_eD'Cde)ni(d.) *(,) Da(ff)vid(f_g) ser(ghggf~)vum(fg) me(dfe/f.d!ew!fvE'DC)um,(ddc.) (:) ó(f!gwhgh')le(jhhg)o(g_[uh:l]h) san(hjh/jjj)cto(ih..) (;) un(gh)xi(fg) e(fvED)um :(d.0/[-0.5]ef'!gvF'ED.fgf'gvF'ED.) (:) ma(c_[oh:h])nus(d) e(dhhgh)nim(jh/jjjvIH'jggf.0) (`) me(hfhGF//h_f/gh!iw!jvIH)a(h_[oh:h]i_[oh:h]h._[oh:h]) (;) au(hk)xi(j)li(ij)á(h!iwj)bi(g)tur(fgF'E) (,) e(ggfg'jvH'GFg_[oh:h]f)i,(f.) (:) et(f) brá(ixfh!ivHG)chi(hg)um(g.) me(ghF'Efg!hvhg)um(g.) (;) con(gh)for(h_g~)tá(h)bit(g_[oh:h]f) e(g_[oh:h]dfv.ff!gwh)um.(h_g//ef'!gvF'ED'ewfd.1) (::) ℣. Ni(dh)hil(h) pro(g)fí(gh/jhi)ci(gv.fh!jvHG'h)et(h./jjh/jjgjvvh_[oh:h]i_[oh:h]h._[oh:h]) (;) in(h)i(h)mí(jh/jjh/jj)cus(kjjvIH'jggf.0) (;) in(fh) e(j_0kvJH'jvGF'//hghhghv.)(,)(k_[uh:l]lJ'IH)o,(ixhihih'ivHG'gfg.) (:) et(fh) fí(h!jj/k_[oh:h]j/k_[oh:h]jkvJH')li(h)us(h.) (`) in(h)i(f')qui(h)tá(jv.ijh.1fh!jjh.)(,)(ixfg!ivHG.ef!hvGF'Dfv.)(,)(e!gwhgh)tis(ixhf/higff/ded.) (:) non(dfED'fvED.//de!fg/hjIH'hgh.) (,) (ixfh!ivGF'E/!/!fg!hvhgh) no(g)cé(g)bit(gh) *(,) e(ixjhiGF'h!jjvH'G)i.(hghF'Efg..) (,) (d!ewf!gv.fhGF'ED'ewfd.1) (::)",
+    "latin": "Invéni David servum meum, óleo sancto meo unxi eum : manus enim mea auxiliábitur ei, et bráchium meum confortábit eum. ℣. Nihil profíciet inimícus in eo, et fílius iniquitátis non nocébit ei.",
+    "translation": "I have found David my servant: with my holy oil I have anointed him: for my hand shall help him, and my arm shall strengthen him. ℣. The enemy shall have no advantage over him: nor the son of iniquity hurt him.",
+    "source": "Graduale Romanum (GregoBase #8201, Solesmes 1961) — matches the 1962 Graduale edition; per Sancti/11-14.txt's own [Graduale] block (Ps 88:21-23).",
+    "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "josaphat",
+        "part": "gradual",
+        "feastTitle": "St. Josaphat, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "11-14"
+      }
+    ],
+    "commentary": {
+      "text": "Inveni David draws on Psalm 89, beginning at verse 21 where God declares he has found and anointed David. The two preceding verses, which the gradual omits, supply the frame, with God saying he has laid help upon one that is mighty and exalted one chosen out of his people. Sung at the feast of a bishop and martyr, the gradual's assurance that no enemy shall prevail over the anointed one leads directly into the day's Gospel, where Christ calls his disciples to take up the cross and lose their lives for his sake, as recorded in Matthew 16:24-27.",
+      "source": "Ps. 89:21-23 (Vulgate numbering Ps. 88:21-23) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C2b (Missale Romanum formulary)"
+    }
   },
   "gb828": {
     "id": "gb828",
@@ -16024,7 +19178,11 @@ window.CHANT_INDEX = {
         "feastTitle": "28th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Aufer a me draws from two verses of Psalm 119, joining verse 22 directly to verse 24 and leaving out verse 23 between them. The omitted verse reads, \"For princes sat, and spoke against me: but thy servant was employed in thy justifications.\" The join also carries a small but deliberate change: the Vulgate's verse 22 reads \"quia testimonia tua exquisivi,\" because I have sought your testimonies, but the chant substitutes \"mandata\" for \"testimonia,\" making it \"your commandments\" rather than \"your testimonies.\" The word \"testimonia\" then returns in the second half, drawn from verse 24.",
+      "source": "Ps. 119:22, 24 (Vulgate numbering Ps. 118:22, 24) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb8297": {
     "id": "gb8297",
@@ -16032,7 +19190,7 @@ window.CHANT_INDEX = {
     "title": "Laudate Dominum omnes gentes",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time · Mode II",
-    "gabc": "(f3) AL(c)le(ef//efef)lú(efghffe~)ia.(ef..) *(,) (fg!hi//giHGF'//e/hhvGFggf.) ℣.(::) Lau(c)dá(ef)te(f) Dó(f)mi(f)num(fhfgvFE.) (;) om(h)nes(gh/ihhg) gen(fgwhgh)tes,(gf..) (:) et(f) col(f)lau(fi~)dá(i)te(hg) e(hvGFg)um(gf..) (;) om-(fgffe~)nes(ghgg) pó(f)pu(fgf)li.(f.) (,) (fg!hi_//giHGF'//e/hhhvGFggf.) (::)",
+    "gabc": "(f3) AL(c)le(ef//efef)lú(efghffe~)ia.(ef..) *(,) (fg!hi//giHGF'//e/hhvGFggf.) ℣.(::) Lau(c)dá(ef)te(f) Dó(f)mi(f)num(fhfgvFE.) (;) om(h)nes(gh/ihhg) gen(fgw!hgh)tes,(gf..) (:) et(f) col(f)lau(fi~)dá(i)te(hg) e(hvGFg)um(gf..) (;) om-(fgffe~)nes(ghgg) pó(f)pu(fgf)li.(f.) (,) (fg!hi_//giHGF'//e/hhhvGFggf.) (::)",
     "latin": "Allelúia. ℣. Laudáte Dóminum omnes gentes, et collaudáte eum omnes pópuli.",
     "translation": "Alleluia. ℣. Praise the Lord, all you nations: and praise him together, all you peoples.",
     "source": "Graduale Romanum (GregoBase #8297)",
@@ -16044,7 +19202,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laudate Dominum omnes gentes sings the first verse of Psalm 117, a summons to every nation and people to praise the Lord. The psalm has only two verses, and the Alleluia leaves the second one unsung, where the grounds for that praise are named as God's steadfast mercy and his truth that remains for ever.",
+      "source": "Ps. 117:1 (Vulgate numbering Ps. 116:1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb834": {
     "id": "gb834",
@@ -16071,7 +19233,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Angelis suis draws both its respond and its verse from Psalm 91:11-12. The psalm's verse 11 opens with \"Quoniam,\" making the line a subordinate clause, \"For he hath given his angels charge over thee,\" but the gradual drops that word and begins directly with \"Angelis suis mandávit de te,\" so what was a dependent clause becomes a plain declaration. The verse left unsung after these two continues the same image: \"Thou shalt walk upon the asp and the basilisk: and thou shalt trample under foot the lion and the dragon.\"",
+      "source": "Ps. 91:11-12 (Vulgate numbering Ps. 90:11-12) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb835": {
     "id": "gb835",
@@ -16100,7 +19266,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "11-1"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Justorum animae draws its words from the opening of Wisdom 3, though its text departs from the Vulgate in one notable place: where verse 1 reads tormentum mortis, the torment of death, the offertory substitutes tormentum malitiae, the torment of malice. The chant also condenses the three verses, silently dropping the second half of verse 2 and the first clause of verse 3, so the passage moves directly from in the sight of the unwise they seemed to die to they are in peace, without the Vulgate's intervening words about the manner of their departure.",
+      "source": "Wis. 3:1-3 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb838": {
     "id": "gb838",
@@ -16141,7 +19311,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sanctificavit Moyses takes its opening from Exodus 24:4-5, where Moses builds an altar and sends young men to offer holocausts and pacific victims of calves. The offertory reshapes that material: it drops the twelve stone pillars, the twelve tribes, and the young men entirely, adds the phrase \"evening sacrifice,\" and frames the whole action as Moses himself sanctifying the altar in the sight of the children of Israel, a detail not present in those verses.",
+      "source": "Ex. 24:4, 5 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb840": {
     "id": "gb840",
@@ -16177,7 +19351,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Assumption of the Blessed Virgin Mary (alternate Mass)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Audi filia draws on two consecutive verses of Psalm 45, but trims both of them. Verse 11 in the psalm reads in full \"Hearken, O daughter, and see, and incline thy ear: and forget thy people and thy father's house\"; the chant stops before that final clause. Verse 12 reads \"And the king shall greatly desire thy beauty; for he is the Lord thy God, and him they shall adore\"; the chant keeps only the king's desire for beauty, leaving aside the identification of the king as Lord and God.",
+      "source": "Ps. 45:11, 12 (Vulgate numbering Ps. 44:11, 12) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb843": {
     "id": "gb843",
@@ -16185,7 +19363,7 @@ window.CHANT_INDEX = {
     "title": "Ave Maria gratia plena",
     "part": "offertory",
     "mode": "Offertory · Mode VIII",
-    "gabc": "(c4) A(fg/hgh//fhfgvFE.//def!g'h//fhf/gh)ve(g.) *(;) Ma(h)rí(jj//jjjvH'GFgh!jvHF'g)a,(g.) (:) grá(g_[oh:h]dfv.efd de!f'g)ti(fg)a(g) ple(ghhg)na,(g.) (:) Dó(jvIHk_[hl:1]j//ijh/ig./hi/jg.)(,)(jvIHk_[hl:1]j//ijh/ig./hi/jg)mi(fg)nus(g.) (,) te(ggghvGFg_[oh:h]d//g!jhi)cum :(hg..) (:) be(h)ne(jj)dí(jk!lvlk)cta(jkkj) tu(ji/jkhhg.) (;) in(g) mu(gjjvI'H)li(hkj)é(jjvI'H)ri(jvIHij)bus,(i.) (:) et(g) be(i)ne(jkj)dí(hjgh)ctus(fg!hvhg.) (;) fru(g_[oh:h]f/ghffe)ctus(d.) ven(de!f'ghvF'ED)(,)(de!f'g)tris(f!hfg) tu(ghhg)i.(g.) (::)",
+    "gabc": "(c4) A(fg/hgh//fhfgvFE.//def!g'h//fhf/gh)ve(g.) *(;) Ma(h)rí(jj//jjjvH'GFgh!jvHF'g)a,(g.) (:) grá(g_[oh:h]dfv.efdde!f'g)ti(fg)a(g) ple(ghhg)na,(g.) (:) Dó(jvIHk_[hl:1]j//ijh/ig./hi/jg.)(,)(jvIHk_[hl:1]j//ijh/ig./hi/jg)mi(fg)nus(g.) (,) te(ggghvGFg_[oh:h]d//g!jhi)cum :(hg..) (:) be(h)ne(jj)dí(jk!lvlk)cta(jkkj) tu(ji/jkhhg.) (;) in(g) mu(gjjvI'H)li(hkj)é(jjvI'H)ri(jvIHij)bus,(i.) (:) et(g) be(i)ne(jkj)dí(hjgh)ctus(fg!hvhg.) (;) fru(g_[oh:h]f/ghffe)ctus(d.) ven(de!f'ghvF'ED)(,)(de!f'g)tris(f!hfg) tu(ghhg)i.(g.) (::)",
     "latin": "Ave María, grátia plena : Dóminus tecum : benedícta tu in muliéribus, et benedíctus fructus ventris tui.",
     "translation": "Hail Mary, full of grace: the Lord is with you: blessed are you among women, and blessed is the fruit of your womb.",
     "source": "Graduale Romanum (GregoBase #843)",
@@ -16197,7 +19375,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ave Maria gratia plena opens with the angel's greeting in Luke 1:28, which ends at \"benedicta tu in mulieribus.\" The Offertory then adds \"et benedíctus fructus ventris tui,\" a phrase absent from that verse and the surrounding verses supplied in the evidence.",
+      "source": "Luke 1:28 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb846": {
     "id": "gb846",
@@ -16233,7 +19415,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "6-28"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Simon Joannis draws from two non-consecutive verses of John 21, joining them into a single exchange. The opening words of the chant, \"Simon Joannis, diligis me plus his,\" come from verse 15, the first of three times Jesus asks Peter whether he loves him. The answering words, \"Domine, tu omnia nosti, tu scis quia amo te,\" come from verse 17, Peter's reply to the third asking, the moment when, as John's Gospel notes, Peter was grieved to be questioned a third time. The middle exchange of verse 16 is left out, so the chant compresses the threefold dialogue into one question and one answer.",
+      "source": "John 21:15, 17 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb847": {
     "id": "gb847",
@@ -16262,7 +19448,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "6-24"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Luke 1:76 is a single line from the canticle Zachary sings at his son's birth, the very occasion the feast commemorates. In quoting it, the chant makes a small but audible change to the Vulgate: where the Vulgate reads \"praeibis enim ante faciem Domini\" (you shall go before the face of the Lord), the chant drops \"enim\" and \"faciem\" and sings simply \"praeibis ante Dominum.\" The next verse of the canticle continues: \"To give knowledge of salvation to his people, unto the remission of their sins.\"",
+      "source": "Luke 1:76 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb848": {
     "id": "gb848",
@@ -16289,7 +19479,11 @@ window.CHANT_INDEX = {
         "feastTitle": "8th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine convertere draws a single verse from Psalm 6, the first of the seven penitential psalms. It sits immediately after the anguished question of verse 4, which the Douay-Rheims renders \"but thou, O Lord, how long?\" One verse after the chant's own words, the psalmist gives the reason the plea is so urgent: \"there is no one in death, that is mindful of thee.\"",
+      "source": "Ps. 6:5 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb850": {
     "id": "gb850",
@@ -16297,7 +19491,7 @@ window.CHANT_INDEX = {
     "title": "Tu es Deus qui facis",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time · Mode III",
-    "gabc": "(c4) Tu(c_d!ffgvFE) es(e.) *(,) De(ixe.f!gwh_g)us,(giH'GfffdgvFE.) (;) qui(ef'g) fa(hv.gjh/ij)cis(i.) (,) mi(ij)ra(i)bí(ij/kj)li(jjjh)a(h_g/jij) (,) so(hjI'G)lus :(ixg_[uh:l]h//e.f!gw!higff/ded.) (:) no(ghg'k)tam(kjjhj) fe(g')cí(giihi)sti(g.) (,) in(g) gén(giihjjhi)ti(g_[uh:l]h)bus(ixe.f!gw!higff/ded.) (:) vir(gj//hi~)tú(iji___!jw!kvJ'IH)tem(hv.g!jj//jj//jjjggf) (,) tu(f.0h!iwj)am.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::) ℣. Li(g)be(g)rá(gj)sti(j.) (,) in(j) brá(jkij)chi(ih)o(h!iwj) tu(j)o(ihjvIH) (,) (jj/ki'jvHG'jh'/ihhg.) (:) pó(ij//jjjvH'Gh!iwj_i)(,)(e!gh/jij/h!jj//jjjvH'Gh!iwj)pu(jjjvHG'h)lum(hv.giHG'hffe.) (;) tu(fd/ffd/ef/gh//j_[hl:1]k_[hl:1]j_[hl:1]//j'jjvHGjjjj_i)um,(i.) (:) fí(g)li(hj)os(j) Is(j)ra(j)el(i./jkh/jijHG.) (,) (ji/j_k//li/jkJ'IH.) (,) (k/li/jkJ'IH.jijHGjg/i_[uh:l]j gh!jjjvH'GF'fd.) *(;) et(g) Jo(hj)seph.(iij/hihghg.ef'gh_e//giHG'hffe.) (::)",
+    "gabc": "(c4) Tu(c_d!ffgvFE) es(e.) *(,) De(ixe.f!gwh_g)us,(giH'GfffdgvFE.) (;) qui(ef'g) fa(hv.gjh/ij)cis(i.) (,) mi(ij)ra(i)bí(ij/kj)li(jjjh)a(h_g/jij) (,) so(hjI'G)lus :(ixg_[uh:l]h//e.f!gw!higff/ded.) (:) no(ghg'k)tam(kjjhj) fe(g')cí(giihi)sti(g.) (,) in(g) gén(giihjjhi)ti(g_[uh:l]h)bus(ixe.f!gw!higff/ded.) (:) vir(gj//hi~)tú(iji___!jw!kvJ'IH)tem(hv.g!jj//jj//jjjggf) (,) tu(f.0h!iwj)am.(i_[oh:h]g//ivHGhhf/hh) (,) (g!jj//jj//jjjvH'GF'/[-0.5]{ix}E0f_h//ivGFghg/hgge.) (::) ℣. Li(g)be(g)rá(gj)sti(j.) (,) in(j) brá(jkij)chi(ih)o(h!iwj) tu(j)o(ihjvIH) (,) (jj/ki'jvHG'jh'/ihhg.) (:) pó(ij//jjjvH'Gh!iwj_i)(,)(e!gh/jij/h!jj//jjjvH'Gh!iwj)pu(jjjvHG'h)lum(hv.giHG'hffe.) (;) tu(fd/ffd/ef/gh//j_[hl:1]k_[hl:1]j_[hl:1]//j'jjvHGjjjj_i)um,(i.) (:) fí(g)li(hj)os(j) Is(j)ra(j)el(i./jkh/jijHG.) (,) (ji/j_k//li/jkJ'IH.) (,) (k/li/jkJ'IH.jijHGjg/i_[uh:l]jgh!jjjvH'GF'fd.) *(;) et(g) Jo(hj)seph.(iij/hihghg.ef'gh_e//giHG'hffe.) (::)",
     "latin": "Tu es Deus qui facis mirabília solus : notam fecísti in géntibus virtútem tuam. ℣. Liberásti in bráchio tuo pópulum tuum, fílios Israel et Joseph.",
     "translation": "You are the God who alone does wonders: you have made your power known among the nations. ℣. With your arm you have redeemed your people, the children of Israel and Joseph.",
     "source": "Graduale Romanum (GregoBase #850)",
@@ -16316,7 +19510,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tu es Deus qui facis mirabilia solus quotes Psalm 77:15-16 with small but noticeable differences from the Clementine Vulgate. Where the psalm reads \"notam fecisti in populis virtutem tuam\" and \"Redemisti in brachio tuo\" and \"filios Jacob,\" the gradual sings \"in gentibus,\" \"Liberasti,\" and \"filios Israel.\" Quinquagesima Sunday pairs this gradual with the Gospel of Luke 18, in which a blind beggar near Jericho cries out to Jesus until he is heard, and his sight is restored.",
+      "source": "Ps. 77:15, 16 (Vulgate numbering Ps. 76:15, 16) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Quadp3-0 (Missale Romanum formulary); Divinum Officium, Quadp3-0.txt [Officium heading]"
+    }
   },
   "gb853": {
     "id": "gb853",
@@ -16345,7 +19543,11 @@ window.CHANT_INDEX = {
         "rank": "Memorial",
         "dateMD": "9-15"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "John 19:25, the verse this Alleluia alludes to, places four women at the cross: Mary, her sister, Mary of Cleophas, and Mary Magdalen. The chant draws a single figure out of that group. Where the Gospel verse begins \"Stabant autem juxta crucem Jesu mater ejus,\" standing by the cross of Jesus his mother, the chant reshapes the scene as \"Stabat sancta María, caeli Regína, et mundi Dómina... dolorósa,\" isolating Mary, clothing her with the titles Queen of heaven and Lady of the world, and naming her grief.",
+      "source": "Cf. John 19:25 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb855": {
     "id": "gb855",
@@ -16372,7 +19574,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Advent (Gaudete Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 80's verse 3, the source of this chant's words, opens with a geographical invocation naming the tribes assembled around the ark, \"coram Ephraim, Benjamin, et Manasse\"; the chant drops that half entirely and begins with the petition itself. It also inserts \"Domine\" (O Lord), a word not present in the psalm verse, sharpening the address to God as the season of Advent begins.",
+      "source": "Ps. 80:3 (Vulgate numbering Ps. 79:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb859": {
     "id": "gb859",
@@ -16401,7 +19607,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-14"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dulce lignum calls the wood, nails, and burden of the cross sweet, for it bore the King and Lord of heaven. The Alleluia belongs to the feast of the Exaltation of the Holy Cross.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb860": {
     "id": "gb860",
@@ -16428,7 +19638,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicite gentes draws from Psalm 66, but not in sequence: verses 8 and 9 are joined directly to verse 20, passing over ten intervening verses in which God tests his people through fire, nets, and affliction on their backs. The psalm's closing line of thanksgiving, that God has not turned away prayer nor his mercy, arrives without the ordeal that prompted it. The Offertory is sung after the day's Gospel from John 16, in which Jesus promises his disciples that asking in his name will bring fullness of joy.",
+      "source": "Ps. 66:8-9, 20 (Vulgate numbering Ps. 65:8-9, 20) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc5-0 (Missale Romanum formulary)"
+    }
   },
   "gb861": {
     "id": "gb861",
@@ -16479,7 +19693,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Mary, the Holy Mother of God",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Multifarie olim Deus contrasts God's former speech through the prophets with his final speech through his Son. The passage goes on to name the Son heir of all things and the one through whom God made the world, which the Alleluia sings on the feast of Mary, the Mother of God.",
+      "source": "Heb. 1:1-2 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb864": {
     "id": "gb864",
@@ -16499,7 +19717,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 105 (104 in the Vulgate numbering) is a historical psalm that retells God's covenant faithfulness from Abraham through the Exodus and the conquest of Canaan. Its opening verses reappear almost word for word in 1 Chronicles 16, where David hands this very text to Asaph to be sung before the Ark on the day it was carried into Jerusalem, making it one of the rare psalms the Old Testament itself shows being composed for a specific act of worship.",
+      "source": "USCCB, Psalm 105; 1 Chronicles, chapter 16."
+    }
   },
   "gb865": {
     "id": "gb865",
@@ -16507,7 +19729,7 @@ window.CHANT_INDEX = {
     "title": "In Deo speravit",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Year A) · Mode V",
-    "gabc": "(c4) IN(d) De(ffg)o(f.) *(,) spe(f)rá(fg)vit(f) cor(ghgh) me(hvGF'fvED)um,(e[ll:1]d..) (;) et(fe) ad(fg~)jú(ggf)tus(g) sum :(fe/fg/hghvGFgf..) (;) et(fg) re(f)fló(gh)ru(gf)it(f.) (,) ca(f)ro(g) me(f)a :(fv.d!ff/ge'/fgd'/e[ll:1]ddc.) (:) et(h) ex(f) vo(g)lun(h)tá(hj/kjk)te(j) me(ixi_[oh:h]h)a(iii/ghg.___) (;) con(ixih~)fi(i)té(jv.ikJI'ivH'GF)bor(ggf.0) (,) il(gf/ggf/gff//gf~)li.(gv.fgff'f//f'hg/hggf.0) (z0::c3) ℣. Ad(d) te,(f) Dó(fh/ih/ijh)mi(h)ne,(h.) (,) cla(h)má(h)vi :(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) De(f!h'i)us(ih/jkihhf.) (`) me(hf/hhh)us,(h.f!gwh!iv.hi/jhh/iih.0) (:) ne(f) sí(h_f//g_0[uh:l]h_[uh:l]i!jwk)le(i_[oh:h]hivHFhhh)as :(h.) (;) ne(d) di(d)scé(dfE'D)das(ef) *() a(fhG'Fhhh) me.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) IN(d) De(ffg)o(f.) *(,) spe(f)rá(fg)vit(f) cor(ghgh) me(hvGF'fvED)um,(e[ll:1]d..) (;) et(fe) ad(fg~)jú(ggf)tus(g) sum :(fe/fg/hghvGFgf..) (;) et(fg) re(f)fló(gh)ru(gf)it(f.) (,) ca(f)ro(g) me(f)a :(fv.d!ff/ge'/fgd'/e[ll:1]ddc.) (:) et(h) ex(f) vo(g)lun(h)tá(hj/kjk)te(j) me(ixi_[oh:h]h)a(iii/ghg.___) (;) con(ixih~)fi(i)té(jv.ikJI'ivH'GF)bor(ggf.0) (,) il(gf/ggf/gff//gf~)li.(gv.fgff'f//f'hg/hggf.0) (z0::c3) ℣. Ad(d) te,(f) Dó(fh/ih/ijh)mi(h)ne,(h.) (,) cla(h)má(h)vi :(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) De(f!h'i)us(ih/jkihhf.) (`) me(hf/hhh)us,(h.f!gwh!iv.hi/jhh/iih.0) (:) ne(f) sí(h_f//g_0[uh:l]h_[uh:l]i!jwk)le(i_[oh:h]hivHFhhh)as :(h.) (;) ne(d) di(d)scé(dfE'D)das(ef) *() a(fhG'Fhhh) me.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "In Deo sperávit cor meum, et adjútus sum : et reflóruit caro mea : et ex voluntáte mea confitébor illi. ℣. Ad te, Dómine, clamávi : Deus meus, ne síleas, ne discédas a me.",
     "translation": "In God has my heart hoped, and I have been helped: and my flesh has flourished again: and with my will I shall give praise to him. ℣. To you, O Lord, I have cried: my God, be not silent, depart not from me.",
     "source": "Graduale Romanum (GregoBase #865)",
@@ -16526,7 +19748,11 @@ window.CHANT_INDEX = {
         "feastTitle": "17th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "In Deo speravit draws its verses from Psalm 28 in reverse order: the body of the gradual takes from verse 7, and the versicle reaches back to verse 1. The compiler also adjusted verse 7, where the psalm reads \"in ipso speravit cor meum,\" replacing \"in ipso\" with \"in Deo\" so the chant opens with an explicit name for God. In the versicle, the psalm's future tense \"clamabo\" becomes the past \"clamavi,\" turning what was a vow into a completed act.",
+      "source": "Ps. 28:7, 1 (Vulgate numbering Ps. 27:7, 1) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb868": {
     "id": "gb868",
@@ -16560,7 +19786,35 @@ window.CHANT_INDEX = {
         "feastTitle": "8th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Primum quaerite regnum Dei draws on a single verse from the Sermon on the Mount, Matthew 6:33, but quietly trims it. The full verse reads \"et justitiam ejus\" after \"regnum Dei,\" adding \"and his justice\" to the object of seeking; the antiphon drops that phrase entirely. It also replaces the verse's closing \"haec omnia\" with simply \"omnia,\" and appends \"dicit Dominus,\" which does not appear in Matthew at all.",
+      "source": "Matt. 6:33 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
+  },
+  "gb870": {
+    "id": "gb870",
+    "gregobaseId": "870",
+    "title": "Laetamini in Domino",
+    "part": "offertory",
+    "mode": "Offertory · Common of Several Martyrs (Paschal Time) · Mode I",
+    "gabc": "(c4) LAe(d)tá(d!ewf!gvFD)mi(d!ewf_c)ni(c.) *(,) in(fg) Dó(gj!kvJH')mi(h)no,(h/jjj/h_[oh:h]i_[oh:h]h._[oh:h]) (;) et(fh!jvHG) ex(g_[oh:h]f)sul(fg)tá(gjIH'hg)te(g_[oh:h]f/gff/ded.) (,) ju(dff'1f/[1]{ix}f/hig'hvF'D)sti :(dfddc.) (:) et(dff'1ff/gfg) glo(d!fdf)ri(cd)á(df)mi(fhg)ni(g.) (;) o(f/hjg')mnes(f/hjG'FED'ewf.) (,) re(d!ewf/g_[oh:h]f)cti(fff/h_g/h_f) cor(fg//ffg/ffgvFE)de,(d.) (:) al(f)le(d!ewf/g_[oh:h]f)lú(fff/h_g/h_f){ia},(f.) (;) al(fg)le(f)lú(ffg/ffgvFE){ia}.(d//fff_d/fff/d_[oh:h]e_[oh:h]d._[oh:h]) (::)",
+    "latin": "Laetámini in Dómino et exsultáte, justi : et gloriámini, omnes recti corde, allelúja, allelúja.",
+    "translation": "Rejoice in the Lord and exult, you just: and glory, all you upright of heart, alleluia, alleluia.",
+    "source": "Graduale Romanum (GregoBase #870)",
+    "usages": [
+      {
+        "calendar": "modern",
+        "feastKey": "common-several-martyrs-paschal",
+        "part": "offertory",
+        "feastTitle": "Common of Several Martyrs (Sapientiam Sanctorum) (Paschaltide)",
+        "rank": ""
+      }
+    ],
+    "commentary": {
+      "text": "Laetamini in Domino draws a single verse from Psalm 32, verse 11, lifting the closing call to rejoice and leaving behind the psalm's preceding warnings about obstinacy and the scourges of sinners. The double alleluia is the chant's own addition for Paschal Time, absent from the psalm text. The opening words also attracted a Renaissance polyphonic setting: Ghiselin Danckerts (c. 1510, died 1567), a Dutch composer who served as a singer at the Papal Chapel in Rome from 1538 to 1565, wrote an eight-voice motet on Laetamini in domino, which survives in manuscript.",
+      "source": "Ps. 32:11 (Vulgate numbering Ps. 31:11) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Ghiselin Danckerts\" (rev. 1264312428)"
+    }
   },
   "gb873": {
     "id": "gb873",
@@ -16568,7 +19822,7 @@ window.CHANT_INDEX = {
     "title": "Christus factus est",
     "part": "gradual",
     "mode": "Gradual · Palm Sunday of the Passion of the Lord · Mode V",
-    "gabc": "(c4) CHri(ffg)stus(f.) *(,) fa(fg)ctus(f) est(f') pro(f) no(ghF'ED.g_[oh:h]e/fg)bis(f.) (;) ob(f)é(hf/gh!jj/kjk)di(jij)ens(h_g) (,) us(h!jjh)que(f.) ad(ixfiH'Gh) mor(f_[oh:h]g_[oh:h]f_[oh:h])tem,(f.) (:) mor(ixf!hhi)tem(g) au(ixgjj)tem(j.h!iw!jvIG'hw!ivHG) cru(fv.ff)cis.(f_c) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Pro(d)pter(d) quod(d) et(fe~) De(eh)us(h.) (,) ex(h)al(h)tá(h)vit(h) il(h)lum,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___ jvIH'jvIH'//hvGF.) (:) et(f) de(f!h'i)dit(i) il(i)li(ih/jkihhf.) (,) no(hf/hhh)men,(h.f!gwh!iv.hi/jhh/iih.0) (;) quod(d) est(d) su(d)per(d) o(dfE'D)mne(ef) * no(fhG'Fhhh)men.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) CHri(ffg)stus(f.) *(,) fa(fg)ctus(f) est(f') pro(f) no(ghF'ED.g_[oh:h]e/fg)bis(f.) (;) ob(f)é(hf/gh!jj/kjk)di(jij)ens(h_g) (,) us(h!jjh)que(f.) ad(ixfiH'Gh) mor(f_[oh:h]g_[oh:h]f_[oh:h])tem,(f.) (:) mor(ixf!hhi)tem(g) au(ixgjj)tem(j.h!iw!jvIG'hw!ivHG) cru(fv.ff)cis.(f_c) (,) (fg!hvGF.e!g'h//fhg/hggf.0) (z0::c3) ℣. Pro(d)pter(d) quod(d) et(fe~) De(eh)us(h.) (,) ex(h)al(h)tá(h)vit(h) il(h)lum,(ihhe./h_[oh:h]i_[oh:h]h_[oh:h]/ihhe.) (,) (hi!kv//lvKI'jvHF.1) (,) (h_g/ijh'___jvIH'jvIH'//hvGF.) (:) et(f) de(f!h'i)dit(i) il(i)li(ih/jkihhf.) (,) no(hf/hhh)men,(h.f!gwh!iv.hi/jhh/iih.0) (;) quod(d) est(d) su(d)per(d) o(dfE'D)mne(ef) * no(fhG'Fhhh)men.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Christus factus est pro nobis obédiens usque ad mortem, mortem autem crucis. ℣. Propter quod et Deus exaltávit illum, et dedit illi nomen, quod est super omne nomen.",
     "translation": "Christ became obedient for us unto death, even to the death of the cross. ℣. For which cause God also has exalted him, and has given him a name which is above all names.",
     "source": "Graduale Romanum (GregoBase #873)",
@@ -16603,7 +19857,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-14"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Christus factus est reshapes the opening of Philippians 2:8-9. Paul's text reads \"Humiliavit semetipsum factus obediens,\" while the Gradual begins \"Christus factus est pro nobis obédiens,\" placing Christ's name and the phrase \"pro nobis\" at the front. The passage continues with the bending of every knee at Jesus's name and the confession of every tongue, but the Gradual stops before those later verses. Its selection holds attention on obedience and the cross.",
+      "source": "Phil. 2:8-9 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb874": {
     "id": "gb874",
@@ -16630,7 +19888,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Dominus illuminatio mea draws on the opening two verses of Psalm 27, but trims the beginning of verse 2. That verse opens in the Vulgate with \"Dum appropiant super me nocentes ut edant carnes meas\" (while the wicked draw near against me to eat my flesh), before arriving at the enemies who weaken and fall; the chant drops that clause and begins mid-verse with \"qui tribulant me inimici mei.\" The chant also reads \"defénsor vitae meae\" where the Vulgate has \"protector vitæ meæ,\" a small but deliberate shift in the Latin.",
+      "source": "Ps. 27:1, 2 (Vulgate numbering Ps. 26:1, 2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb879": {
     "id": "gb879",
@@ -16657,7 +19919,11 @@ window.CHANT_INDEX = {
         "feastTitle": "16th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 59 carries its own superscription: it was composed, the text says, when Saul sent messengers to watch David's house in order to kill him. The Alleluia verse draws only the opening cry of verse 2, setting aside verse 3's further description of those being fled from, \"them that work iniquity\" and \"bloody men.\" What remains is the plea at its most direct and unadorned.",
+      "source": "Ps. 59:2 (Vulgate numbering Ps. 58:2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb885": {
     "id": "gb885",
@@ -16693,7 +19959,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "8-6"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Visionem quam vidistis preserves Christ's command that the disciples keep the vision silent until the Son of Man rises. The communion for the second Sunday of Lent holds revelation and silence together within the promise of resurrection.",
+      "source": "Matt. 17:9 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb886": {
     "id": "gb886",
@@ -16701,7 +19971,7 @@ window.CHANT_INDEX = {
     "title": "Esto mihi in Deum protectorem",
     "part": "gradual",
     "mode": "Gradual · Ordinary Time (Year A) · Mode V",
-    "gabc": "(c4) E(ffg)sto(f) mi(fg)hi(f.) *(,) in(fg) De(gf)um(f) pro(ghgh)te(hgffd/ff//fg'h)ctó(gv.fgf)rem,(fv.) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (:) et(fg) in(f) lo(ghghvGF)cum(g.) (,) re(g.h!iwji/jkj)fú(hvGF)gi(hg)i,(gv.d!f'g/fh!jvGF'fd) (,) (ff/ge'/fgd'/e[ll:1]ddc.) (:) ut(d) sal(fd/fff)vum(c_[ll:1]d) me(ff) (,) fá(ixhhg/hh//gh!ivGFhh//f!h'j)ci(j)as.(iyjkijh.) (,) (fg/h!jj/klijh.0ixgiHF.1) (z0::c3) ℣. De(d)us,(d) in(f) te(fh/ih/ijh) spe(h)rá(h)vi :(hhi.) (,) Dó(i_[oh:h]h)mi(h_g)ne,(hhf//hhf//hihh/fgf.) (:) non(hh) con(h)fún(ih/ij_h ih/ij_ij//hi/jij)dar(jh/jkihh/fgf.) *(;) in(de'f) ae(f)tér(fhG'Fhhh)num.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
+    "gabc": "(c4) E(ffg)sto(f) mi(fg)hi(f.) *(,) in(fg) De(gf)um(f) pro(ghgh)te(hgffd/ff//fg'h)ctó(gv.fgf)rem,(fv.) (,) (d!ff/ge'/fgd'/e[ll:1]ddc.) (:) et(fg) in(f) lo(ghghvGF)cum(g.) (,) re(g.h!iwji/jkj)fú(hvGF)gi(hg)i,(gv.d!f'g/fh!jvGF'fd) (,) (ff/ge'/fgd'/e[ll:1]ddc.) (:) ut(d) sal(fd/fff)vum(c_[ll:1]d) me(ff) (,) fá(ixhhg/hh//gh!ivGFhh//f!h'j)ci(j)as.(iyjkijh.) (,) (fg/h!jj/klijh.0ixgiHF.1) (z0::c3) ℣. De(d)us,(d) in(f) te(fh/ih/ijh) spe(h)rá(h)vi :(hhi.) (,) Dó(i_[oh:h]h)mi(h_g)ne,(hhf//hhf//hihh/fgf.) (:) non(hh) con(h)fún(ih/ij_hih/ij_ij//hi/jij)dar(jh/jkihh/fgf.) *(;) in(de'f) ae(f)tér(fhG'Fhhh)num.(hhf.) (,) (gxg_[oh:h]fgvED.fgED.fehv.hhhff//dfe/fee[ll:1]d.0) (::)",
     "latin": "Esto mihi in Deum protectórem, et in locum refúgii, ut salvum me fácias. ℣. Deus, in te sperávi : Dómine, non confúndar in aetérnum.",
     "translation": "Be unto me a God, a protector, and a place of refuge, to save me. ℣. O God, in you have I hoped: O Lord, let me never be confounded.",
     "source": "Graduale Romanum (GregoBase #886)",
@@ -16727,7 +19997,11 @@ window.CHANT_INDEX = {
         "feastTitle": "9th Sunday in Ordinary Time (Year A)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 31:3 in the Vulgate asks to be made a house of refuge, using the word \"domum\"; this Gradual quietly substitutes \"locum,\" a place of refuge. The versicle then reaches back one verse to verse 2, whose opening words \"In te, Domine, speravi; non confundar in aeternum\" the chant rearranges as \"Deus, in te sperávi: Dómine, non confúndar in aetérnum,\" joining the two verses into a single movement of trust and petition.",
+      "source": "Ps. 31:3 (Vulgate numbering Ps. 30:3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb888": {
     "id": "gb888",
@@ -16750,13 +20024,6 @@ window.CHANT_INDEX = {
       },
       {
         "calendar": "1962",
-        "feastKey": "common-martyr",
-        "part": "gradual",
-        "feastTitle": "Common of martyr",
-        "rank": ""
-      },
-      {
-        "calendar": "1962",
         "feastKey": "fabian-sebastian",
         "part": "gradual",
         "feastTitle": "Sts. Fabian and Sebastian, Martyrs",
@@ -16767,7 +20034,7 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-martyr",
         "part": "gradual",
-        "feastTitle": "Common of martyr",
+        "feastTitle": "Common of a Martyr (In virtute tua)",
         "rank": ""
       },
       {
@@ -16778,7 +20045,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Gloriosus Deus draws from Exodus 15:11, part of Moses's canticle after the crossing of the Red Sea, but adapts the Vulgate text: where the original reads \"magnificus in sanctitate,\" the chant substitutes \"in sanctis suis,\" locating God's glory in his saints rather than in holiness itself, a shift that fits the martyr's feast directly. The verse takes Exodus 15:6 and likewise departs from the Vulgate, replacing \"magnificata est in fortitudine\" with \"glorificata est in virtute\" and \"percussit inimicum\" with \"confregit inimicos.\" The Gospel of this Mass is from Luke 21, in which Jesus tells his disciples they will be handed over, persecuted, and put to death for his name.",
+      "source": "Ex. 15:11, 6 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C3 (Missale Romanum formulary)"
+    }
   },
   "gb889": {
     "id": "gb889",
@@ -16805,7 +20076,11 @@ window.CHANT_INDEX = {
         "feastTitle": "1st Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui habitat passes from Psalm 91 verse 7 directly to verse 11, leaving verses 8 through 10 unsung. The long tract for the first Sunday of Lent then continues through angels, trial, rescue, and the promise of salvation.",
+      "source": "Ps. 91:1-7, 11-16 (Vulgate numbering Ps. 90:1-7, 11-16) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb89": {
     "id": "gb89",
@@ -16818,6 +20093,54 @@ window.CHANT_INDEX = {
     "translation": "Whoever wishes to come after me, let him deny himself: and take up his cross, and follow me.",
     "source": "Graduale Romanum (GregoBase #89)",
     "usages": [
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Timothy, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-24"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Polycarp, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "1-26"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Eusebius, Bishop and Martyr",
+        "rank": "Semiduplex",
+        "dateMD": "12-16"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Simeon, Bishop and Martyr",
+        "rank": "Simplex",
+        "dateMD": "2-18"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Blaise, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "2-3"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-martyr-2",
+        "part": "communion",
+        "feastTitle": "St. Stanislaus, Bishop and Martyr",
+        "rank": "Duplex",
+        "dateMD": "5-7"
+      },
       {
         "calendar": "modern",
         "feastKey": "ot-12-b",
@@ -16839,7 +20162,11 @@ window.CHANT_INDEX = {
         "feastTitle": "24th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui vult venire draws its words from Matthew 16:24, where Jesus has just rebuked Peter for refusing to accept the passion and then turns to address all his disciples. The chant quietly reshapes the verse's opening: where the Vulgate reads \"Si quis vult post me venire,\" the chant turns the conditional into a relative clause, \"Qui vult venire post me.\" The Gospel assigned to this Mass, Matthew 10:34-42, already contains a closely related line, \"Et qui non accipit crucem suam, et sequitur me, non est me dignus,\" so the Communion antiphon brings the congregation back to the same demand the Gospel placed before them earlier in the liturgy.",
+      "source": "Matt. 16:24 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C2 (Missale Romanum formulary)"
+    }
   },
   "gb890": {
     "id": "gb890",
@@ -16847,7 +20174,7 @@ window.CHANT_INDEX = {
     "title": "Dominus dixit ad me",
     "part": "alleluia",
     "mode": "Alleluia · The Nativity of the Lord (Mass during the Night) · Mode VIII",
-    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhg ehf/gffe.) (::) ℣. Dó(hv.gih)mi(h)nus(h) di(hg)xit(g) ad(gh!ivvHFhf/gh) me :(g.) (;) Fí(g)li(gf)us(hji) me(h)us(gh) es(f_ehvvGE.gxfgFD.1gxegF'Efe) tu,(e.) (:) e(efeh)go(h) (,) hó(hfh'GE//fhF'D//gxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/!g_[oh:h]e/!/!gvFEfd)di(e[ll:1]d)e(d.) *(;) gé(fde)nu(ef)i(hg/hfh) te.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'/!gvE'Defe.) (;) (gxhhvF'E/!fgED.gyhhvF'Ef_gffe.) (::)",
+    "gabc": "(c3) AL(def)le(f_e/f!gwhg)lú(fhh'1h){ia}.(hiHF'fe.) *(;) ij.(gh//efED.f!gwhhgehf/gffe.) (::) ℣. Dó(hv.gih)mi(h)nus(h) di(hg)xit(g) ad(gh!ivvHFhf/gh) me :(g.) (;) Fí(g)li(gf)us(hji) me(h)us(gh) es(f_ehvvGE.gxfgFD.1gxegF'Efe) tu,(e.) (:) e(efeh)go(h) (,) hó(hfh'GE//fhF'D//gxgvFEf.0/[-0.5]hhh/ijHF.1)(,)(g_[oh:h]i_[oh:h]g_[oh:h]ivHG'he.gxf_e/!g_[oh:h]e/!/!gvFEfd)di(e[ll:1]d)e(d.) *(;) gé(fde)nu(ef)i(hg/hfh) te.(ghFE.) (,) (df!hvF'E//d.0f!gwhghvGFg.//egf'/!gvE'Defe.) (;) (gxhhvF'E/!fgED.gyhhvF'Ef_gffe.) (::)",
     "latin": "Allelúia. ℣. Dóminus dixit ad me : Fílius meus es tu, ego hódie génui te.",
     "translation": "Alleluia. ℣. The Lord said to me: You are my Son, this day have I begotten you.",
     "source": "Graduale Romanum (GregoBase #890)",
@@ -16866,7 +20193,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Midnight)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 2 verse 7 sits within a longer address, one that moves quickly into promises of dominion over the Gentiles and the ends of the earth. This alleluia verse draws only the declaration itself, \"Dominus dixit ad me: Filius meus es tu; ego hodie genui te,\" the Father's word of begetting, and lets the verses of conquest that follow in the psalm remain aside.",
+      "source": "Ps. 2:7 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb894": {
     "id": "gb894",
@@ -16886,7 +20217,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Lent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "John 4:14 gives Qui biberit aquam its movement from the water Christ gives to a spring within the believer. The communion for the third Sunday of Lent ends not with thirst, but with life that rises toward eternity.",
+      "source": "John 4:14 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb896": {
     "id": "gb896",
@@ -16894,7 +20229,7 @@ window.CHANT_INDEX = {
     "title": "Justi epulentur",
     "part": "alleluia",
     "mode": "Alleluia · Common of Several Martyrs · Mode I",
-    "gabc": "(c4) AL(d/ff)le(ef!gvEDffd)lú(ixfghig/h_e/fg~){ia}.(g.) *(,) ij.(def!gvEDffd) (,) (def!gvEDhv.ghF'ED.) (,) (e_[uh:l]g//fgfdeddc.) (,) (fff/g_[uh:l]hGE'fee[ll:1]d.0) (::) ℣. Ju(dffeggvFE'fd)sti(d.) (,) e(d)pu(dh)lén(ixhv.f'!hi'GFhv.def!hvGE'fd)tur,(d.) (;) et(d) ex(d)súl(d!fff)tent(e_[oh:h][ll:1]devDCddc.) (,) in(c.d!ewf) con(fg_[uh:l]h~)spé(hvGF'fvED)ctu(dv.cd!evDC'd) De(d!ewfef)i :(e[ll:1]d..) (:) de(f)le(ghg)ctén(h'/jhhg/he/f_g//dfED.)(,)(ixdh'/jhhg/he/f_g eg!ivHGhvFDfvED)(,)(hhggf/hjh___)tur(h.) *(;) in(d!ff) lae(ef!gvEDffd)tí(ixfghig/h_e)ti(fg)a.(g.) (,) (def!gvEDffd) (,) (def!gvEDhv.ghF'ED.) (,) (e_[uh:l]g//fgfdeddc.) (,) (fff/g_[uh:l]hGE'fee[ll:1]d.0) (::)",
+    "gabc": "(c4) AL(d/ff)le(ef!gvEDffd)lú(ixfghig/h_e/fg~){ia}.(g.) *(,) ij.(def!gvEDffd) (,) (def!gvEDhv.ghF'ED.) (,) (e_[uh:l]g//fgfdeddc.) (,) (fff/g_[uh:l]hGE'fee[ll:1]d.0) (::) ℣. Ju(dffeggvFE'fd)sti(d.) (,) e(d)pu(dh)lén(ixhv.f'!hi'GFhv.def!hvGE'fd)tur,(d.) (;) et(d) ex(d)súl(d!fff)tent(e_[oh:h][ll:1]devDCddc.) (,) in(c.d!ewf) con(fg_[uh:l]h~)spé(hvGF'fvED)ctu(dv.cd!evDC'd) De(d!ewfef)i :(e[ll:1]d..) (:) de(f)le(ghg)ctén(h'/jhhg/he/f_g//dfED.)(,)(ixdh'/jhhg/he/f_geg!ivHGhvFDfvED)(,)(hhggf/hjh___)tur(h.) *(;) in(d!ff) lae(ef!gvEDffd)tí(ixfghig/h_e)ti(fg)a.(g.) (,) (def!gvEDffd) (,) (def!gvEDhv.ghF'ED.) (,) (e_[uh:l]g//fgfdeddc.) (,) (fff/g_[uh:l]hGE'fee[ll:1]d.0) (::)",
     "latin": "Allelúia. ℣. Justi epuléntur, et exsúltent in conspéctu Dei : et delecténtur in laetítia.",
     "translation": "Alleluia. ℣. Let the just feast, and rejoice before God: and be delighted with gladness.",
     "source": "Graduale Romanum (GregoBase #896)",
@@ -16906,6 +20241,22 @@ window.CHANT_INDEX = {
         "feastTitle": "Sts. Vincent and Anastasius, Martyrs",
         "rank": "Semiduplex",
         "dateMD": "1-22"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "alleluia",
+        "feastTitle": "Sts. Protus and Hyacinth, Martyrs",
+        "rank": "Simplex",
+        "dateMD": "9-11"
+      },
+      {
+        "calendar": "1962",
+        "feastKey": "common-several-martyrs",
+        "part": "alleluia",
+        "feastTitle": "St. Januarius, Bishop, and Companions, Martyrs",
+        "rank": "Semiduplex",
+        "dateMD": "9-19"
       },
       {
         "calendar": "modern",
@@ -16923,7 +20274,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "6-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Justi epulentur draws its single verse from the middle of Psalm 68, where it sits between two very different neighbours. The verses immediately before it call for God's enemies to scatter and the wicked to perish as wax melteth before the fire, and the verse immediately after turns to praise, urging the assembly to sing a psalm to God's name. The chant lifts out verse 4 alone, the one verse in that sequence devoted entirely to the rejoicing of the just.",
+      "source": "Ps. 68:4 (Vulgate numbering Ps. 67:4) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb899": {
     "id": "gb899",
@@ -16950,7 +20305,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Lent (Laetare Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Laudate Dominum quia benignus draws from two verses of Psalm 135 with two verses quietly dropped between them. Verse 3 flows straight into verse 6, leaving out verses 4 and 5, which speak of God choosing Jacob and Israel as his own possession. The chant also trims the end of verse 6: the psalm's full line reads \"in cælo, in terra, in mari et in omnibus abyssis,\" but the offertory stops at earth, setting aside the sea and all the depths.",
+      "source": "Ps. 135:3, 6 (Vulgate numbering Ps. 134:3, 6) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb902": {
     "id": "gb902",
@@ -16958,7 +20317,7 @@ window.CHANT_INDEX = {
     "title": "Multitudo languentium",
     "part": "communion",
     "mode": "Communion · Sts. Fabian and Sebastian, Martyrs · Mode II",
-    "gabc": "(f3) MUl(f)ti(ef)tú(f!gw!hvGF)do(f!gwh.) (,) * lan(hf~)guén(hi)ti(hi!jvIH'i)um,(ih..) (;) et(hi) qui(h) ve(hhg)xa(f)bán(h.f!gwh)tur(hhh/i_[oh:h]h) (;) a(f) spi(fe)rí(f!gwh)ti(hhh)bus(g_[oh:h]f) im(fe~)mún(f!gw!hvGFgv_[oh:h]F~E~)dis,(fe..) (;) ve(f)ni(h)é(hih)bant(hhhf~) ad(g_[oh:h]f) e(e!gw!hvGF'g)um :(gf..) (:) qui(h)a(i) vir(kxi!jw!kv_[hl:1]J~I~)tus(j_i) de(hg) il(hi)lo(i_[oh:h]h) ex(hg)í(eg!hvGF)bat,(gf..) (;) et(f) sa(hg)ná(hhghi_[oh:h]h/ihhfg)bat(f.) o(f!gwhgh)mnes.(gf..) (::)",
+    "gabc": "(f3) MUl(f)ti(ef)tú(f!gw!hvGF)do(f!gwh.) (,) * lan(hf~)guén(hi)ti(hi!jvIH'i)um,(ih..) (;) et(hi) qui(h) ve(hhg)xa(f)bán(h.f!gwh)tur(hhh/i_[oh:h]h) (;) a(f) spi(fe)rí(f!gwh)ti(hhh)bus(g_[oh:h]f) im(fe~)mún(f!gw!hvGFgv_[oh:h]F~E~)dis,(fe..) (;) ve(f)ni(h)é(hih)bant(hhhf~) ad(g_[oh:h]f) e(e!gw!hvGF'g)um :(gf..) (:) qui(h)a(i) vir(kxi!jw!kv_[hl:1]J~I~)tus(j_i) de(hg) il(hi)lo(i_[oh:h]h) ex(hg)í(eg!hvGF)bat,(gf..) (;) et(f) sa(hg)ná(hhg!hi_[oh:h]h/ihhfg)bat(f.) o(f!gwhgh)mnes.(gf..) (::)",
     "latin": "Multitúdo languéntium, et qui vexabántur a spirítibus immúndis, veniébant ad eum : quia virtus de illo exíbat, et sanábat omnes.",
     "translation": "A multitude of them that were sick, and who were troubled with unclean spirits, came to him: for virtue went out from him, and healed them all.",
     "source": "Graduale Romanum (GregoBase #902)",
@@ -16971,7 +20330,11 @@ window.CHANT_INDEX = {
         "rank": "Duplex",
         "dateMD": "1-20"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Multitudo languentium draws on two consecutive verses of Luke 6 rather than quoting either one straight. Verse 18 supplies the sick and those troubled with unclean spirits, but there it simply says they \"were cured\"; verse 19 supplies the explanation, \"for virtue went out from him and healed all.\" The antiphon joins these two halves into a single movement toward Christ, dropping verse 19's detail that the crowd was seeking to touch him. The verse immediately following in Luke, where the antiphon stops, is where Christ opens the Sermon on the Plain: \"Blessed are ye poor.\"",
+      "source": "Luke 6:18, 19 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb906": {
     "id": "gb906",
@@ -17000,7 +20363,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Sederunt principes draws from two verses of Psalm 119 that stand sixty-three verses apart. From verse 23, the compiler kept only the opening image of princes speaking against the psalmist, dropping the second half of the verse: \"but thy servant was employed in thy justifications.\" From verse 86, it dropped \"All thy statutes are truth\" and kept only the cry of unjust persecution and the plea for help. The composer Pérotin, who flourished around c. 1200, made a celebrated four-voice polyphonic setting of this gradual, singled out by the medieval writer known as Anonymous IV as among the finest works of its kind.",
+      "source": "Ps. 119:23, 86 (Vulgate numbering Ps. 118:23, 86) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Pérotin\" (rev. 1367640205)"
+    }
   },
   "gb907": {
     "id": "gb907",
@@ -17027,7 +20394,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Sacred Heart of Jesus",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Tollite jugum meum draws its verse from Matthew 11:29, lifting it out of a passage that moves from the invitation of verse 28, \"Come to me all you that labor and are burdened,\" through this call to learn meekness, and on to the reassurance of verse 30, \"For my yoke is sweet and my burden light.\" The alleluia verse omits both the summons that precedes it and the explanation that follows, resting the whole weight of the chant on the inner demand: take the yoke, learn humility, find rest. Palestrina set the same text as a four-voice motet, listed among the works collected in the Breitkopf and Härtel edition of his complete works.",
+      "source": "Matt. 11:29 (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"List of compositions by Giovanni Pierluigi da Palestrina\" (rev. 1309884587)"
+    }
   },
   "gb912": {
     "id": "gb912",
@@ -17054,7 +20425,11 @@ window.CHANT_INDEX = {
         "feastTitle": "3rd Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Luke 24:35 in the Vulgate ends with a pronoun, \"cognoverunt eum in fractione panis,\" they knew him in the breaking of bread. The chant replaces that pronoun with the full names, singing \"Cognoverunt discipuli Dominum Jesum in fractione panis,\" so that what the original left implicit, the Lord Jesus himself, is spoken aloud. The verse comes one step before the moment, in the very next verse of Luke 24, when Jesus stands among the gathered disciples and says peace be to you.",
+      "source": "Luke 24:35 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb914": {
     "id": "gb914",
@@ -17083,7 +20458,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-27"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "John 21:24 falls near the very close of the Gospel, with only one verse remaining after it. The chant quotes it closely but omits the phrase \"et scripsit hæc\", so where the scripture reads \"who giveth testimony of these things and hath written these things\", the verse as sung reads only \"who bears witness of these things\". The authorship claim, which the full verse carries as its center of gravity, falls silent. What remains is the testimony itself, and the quiet affirmation that it is true.",
+      "source": "John 21:24 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb916": {
     "id": "gb916",
@@ -17172,7 +20551,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Epiphany of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Vidimus stellam takes the Magi's first words from Matthew 2 and leaves Herod's troubled reply outside the chant. At Epiphany, their star and gifts become an act of adoration before the Lord.",
+      "source": "Matt. 2:2 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb920": {
     "id": "gb920",
@@ -17201,7 +20584,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "12-26"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Video caelos apertos draws from Acts 7:55, 58, and 59, omitting verse 56, where the crowd stops their ears and rushes at Stephen, and verse 57, where the stoning begins. The text therefore moves directly from Stephen's vision to his dying prayer, without the intervening violence. The chant also quietly replaces the Vulgate's \"Filium hominis\" with \"Jesum\", so where Acts 7:55 reads \"et Filium hominis stantem a dextris Dei\", the chant names him plainly.",
+      "source": "Acts 7:55-56, 58-59 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb921": {
     "id": "gb921",
@@ -17221,7 +20608,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Both verses quoted here are trimmed. Verse 9 in full ends with a third question, \"How sayest thou: Shew us the Father?\", which the chant drops. Verse 10 in full continues, \"The words that I speak to you, I speak not of myself. But the Father who abideth in me, he doth the works,\" and that too is left aside. What remains are the two questions directed at Philip alone: have you not known me, and do you not believe?",
+      "source": "John 14:9-10 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb924": {
     "id": "gb924",
@@ -17248,7 +20639,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Deus Deus meus draws from two verses of Psalm 63 that are not adjacent. The opening phrase comes from the first half of verse 2, leaving behind the rest of that verse: \"For thee my soul hath thirsted; for thee my flesh, O how many ways!\" Verses 3 and 4 are passed over entirely. The chant then reaches forward to verse 5, taking only its second clause, \"and in thy name I will lift up my hands,\" and setting aside the first: \"Thus will I bless thee all my life long.\" A cry of early-morning seeking is joined directly to a gesture of lifted hands.",
+      "source": "Ps. 63:2, 5 (Vulgate numbering Ps. 62:2, 5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb926": {
     "id": "gb926",
@@ -17268,7 +20663,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Septuagesima Sunday",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "De profundis draws its four verses from the first half of Psalm 130. The psalm continues for four more verses, turning toward confidence and hope, but the Tract stops before that turn: what remains is the cry itself, the admission of guilt, and the single, spare statement that mercy is found with God. Verse 2, as the psalm has it, reads \"Let thy ears be attentive to the voice of my supplication,\" but the Tract tightens this to \"the prayer of your servant,\" a small compression that makes the petition more formal and less urgent in tone.",
+      "source": "Ps. 130:1-2 (Vulgate numbering Ps. 129:1-2) (Douay-Rheims; Latin from the Clementine Vulgate); Wikipedia, \"Psalm 130\" (rev. 1359693457)"
+    }
   },
   "gb93": {
     "id": "gb93",
@@ -17288,7 +20687,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Holy Family of Jesus, Mary and Joseph",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Luke tells how parents brought a child to Jerusalem to present him to the Lord. The Offertory preserves that presentation at the feast whose formulary honors the family named in the Gospel.",
+      "source": "Luke 2:22 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Epi1-0.txt [Officium heading]; Divinum Officium, Epi1-0 (Missale Romanum formulary)"
+    }
   },
   "gb932": {
     "id": "gb932",
@@ -17315,7 +20718,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 107 verse 20 reads simply \"Misit verbum suum\" in the Vulgate, but the Gradual opens \"Misit Dóminus verbum suum,\" inserting \"Dóminus\" so that the subject is named from the first word rather than left to context. The two verses quoted, 20 and 21, sit just after the psalm's image of sufferers who drew nigh even to the gates of death and cried out, so the healing they describe is an answer to that cry. The verse immediately following the Gradual's quotation, verse 22, calls for the sacrifice of praise, which the singing of the Gradual itself enacts.",
+      "source": "Ps. 107:20-21 (Vulgate numbering Ps. 106:20-21) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb933": {
     "id": "gb933",
@@ -17323,7 +20730,7 @@ window.CHANT_INDEX = {
     "title": "Qui timent Dominum",
     "part": "alleluia",
     "mode": "Alleluia · Ordinary Time · Mode I",
-    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjH'GF.) *(;) ij.(e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::) ℣. Qui(cd) ti(ixdh//gihivGF//ggf/gg//fgh!jjg)(,)(ixhhghvGF.hiHG'hw!ivHGhi)ment(h.) (,) Dó(h_g/jjvH'Gixhihi)mi(g)num,(ge~) (,) spe(f_e/f!gwhgh)rent(hg/hf/ghg) in(gd) e(f_e/g_[oh:h]fgvFD'ewfd)o :(d.) (:) ad(d)jú(d/ffd/ffd def!gh)tor(ghg.) (,) et(f) pro(ghg)té(h/jjhhgh.)(,)(ixfh!ivGF'fd/ffhvGF'fvED)ctor(e[ll:1]d..) (;) * e(d)ó(d/fff/g_[oh:h]f)rum(f!hgh) est.(hjH'GF.) (;) (e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::)",
+    "gabc": "(c4) AL(d)le(ff)lú(gv.f!hgh){ia}.(hjH'GF.) *(;) ij.(e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::) ℣. Qui(cd) ti(ixdh//gihivGF//ggf/gg//fgh!jjg)(,)(ixhhghvGF.hiHG'hw!ivHGhi)ment(h.) (,) Dó(h_g/jjvH'Gixhihi)mi(g)num,(ge~) (,) spe(f_e/f!gwhgh)rent(hg/hf/ghg) in(gd) e(f_e/g_[oh:h]fgvFD'ewfd)o :(d.) (:) ad(d)jú(d/ffd/ffddef!gh)tor(ghg.) (,) et(f) pro(ghg)té(h/jjhhgh.)(,)(ixfh!ivGF'fd/ffhvGF'fvED)ctor(e[ll:1]d..) (;) * e(d)ó(d/fff/g_[oh:h]f)rum(f!hgh) est.(hjH'GF.) (;) (e!gwhgh./fhg/hffvEC.) (,) (d!ewf!gv.egF'ED'ewfd.1) (::)",
     "latin": "Allelúia. ℣. Qui timent Dóminum, sperent in eo : adjútor et protéctor eórum est.",
     "translation": "Alleluia. ℣. Let those who fear the Lord hope in him: he is their helper and protector.",
     "source": "Graduale Romanum (GregoBase #933)",
@@ -17342,7 +20749,11 @@ window.CHANT_INDEX = {
         "feastTitle": "28th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Qui timent Dominum draws its verse from Psalm 115, where the psalm reports that those who fear the Lord have hoped in him and found him their helper and protector. The chant turns that report into a wish, asking that they hope in him, and sets it as the Alleluia for Ordinary Time.",
+      "source": "Ps. 115:11 (Vulgate numbering Ps. 113:19) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb937": {
     "id": "gb937",
@@ -17369,7 +20780,11 @@ window.CHANT_INDEX = {
         "feastTitle": "5th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jubilate Deo universa terra draws from Psalm 66, but not from three consecutive verses. Verses 1 and 2 open with a universal call to praise, and the chant then leaps to verse 16, where the psalmist turns personal: \"Come and hear, all ye that fear God, and I will tell you what great things he hath done for my soul.\" The intervening verses, including vows of sacrifice, are set aside entirely, so the offertory moves directly from the outward summons to the inward testimony.",
+      "source": "Ps. 66:1-2, 16 (Vulgate numbering Ps. 65:1-2, 16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb938": {
     "id": "gb938",
@@ -17498,6 +20913,14 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-virgin",
         "part": "introit",
+        "feastTitle": "St. Lucy, Virgin and Martyr",
+        "rank": "Memorial",
+        "dateMD": "12-13"
+      },
+      {
+        "calendar": "modern",
+        "feastKey": "common-virgin",
+        "part": "introit",
         "feastTitle": "St. Scholastica, Virgin",
         "rank": "Optional Memorial",
         "dateMD": "2-10"
@@ -17542,7 +20965,11 @@ window.CHANT_INDEX = {
         "rank": "Optional Memorial",
         "dateMD": "8-23"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Me exspectaverunt draws its two verses directly from Psalm 119, verses 95 and 96, quoted complete and in sequence without omission or rearrangement. The Gospel of the day, from Matthew 13, closes with Jesus asking his disciples \"Intellexistis haec omnia?\", have you understood all these things. The introit's answer, spoken in the voice of the virgin, has already been given: \"testimonia tua, Domine, intellexi,\" meaning that the Lord's testimonies have been understood, an answer offered in prayer before the Gospel question is even asked.",
+      "source": "Ps. 119:95-96 (Vulgate numbering Ps. 118:95-96) (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Commune/C6a (Missale Romanum formulary)"
+    }
   },
   "gb941": {
     "id": "gb941",
@@ -17562,7 +20989,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Baptism of the Lord",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus qui venit draws from two consecutive verses of Psalm 118. Verse 26 is taken in full, but from verse 27 the chant keeps only the opening clause, \"The Lord is God, and he has shone upon us,\" setting aside what follows: \"Appoint a solemn day, with shady boughs, even to the horn of the altar.\" The closing pair of alleluias appears nowhere in either psalm verse.",
+      "source": "Ps. 118:26-27 (Vulgate numbering Ps. 117:26-27) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb946": {
     "id": "gb946",
@@ -17570,7 +21001,7 @@ window.CHANT_INDEX = {
     "title": "Justus ut palma",
     "part": "alleluia",
     "mode": "Alleluia · Common of a Doctor · Mode I",
-    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Ju(fhg___)stus(g_[oh:h]e//fgf/gddc.) (,) ut(cd) pal(ef'g~)ma(gv.e!g_4[uh:l]h) flo(fvED)ré(d.c!dw!evDCde)bit,(d.) (:) et(dede) sic(c)ut(e) ce(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/!ig/!h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)drus(e[ll:1]d..) (:) * mul(c)ti(d!fdf)pli(f)cá(ef!gvFE)bi(fg)tur.(g.) (,) (hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
+    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g.) *(;) ij.(hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Ju(fhg___)stus(g_[oh:h]e//fgf/gddc.) (,) ut(cd) pal(ef'g~)ma(gv.e!g_4[uh:l]h) flo(fvED)ré(d.c!dw!evDCde)bit,(d.) (:) et(dede) sic(c)ut(e) ce(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/!ig/!h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)drus(e[ll:1]d..) (:) * mul(c)ti(d!fdf)pli(f)cá(ef!gvFE)bi(fg)tur.(g.) (,) (hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
     "latin": "Allelúia. ℣. Justus ut palma florébit : et sicut cedrus, quae in Líbano est, multiplicábitur.",
     "translation": "Alleluia. ℣. The just shall flourish like the palm tree: and shall grow up like the cedar that is in Lebanon.",
     "source": "Graduale Romanum (GregoBase #946)",
@@ -17707,14 +21138,6 @@ window.CHANT_INDEX = {
         "calendar": "modern",
         "feastKey": "common-confessor-doctor",
         "part": "alleluia",
-        "feastTitle": "St. Thomas Aquinas, Priest and Doctor of the Church",
-        "rank": "Optional Memorial",
-        "dateMD": "1-28"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "alleluia",
         "feastTitle": "St. Francis de Sales, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "1-29"
@@ -17798,16 +21221,12 @@ window.CHANT_INDEX = {
         "feastTitle": "St. John Chrysostom, Bishop and Doctor of the Church",
         "rank": "Optional Memorial",
         "dateMD": "9-13"
-      },
-      {
-        "calendar": "modern",
-        "feastKey": "common-confessor-doctor",
-        "part": "alleluia",
-        "feastTitle": "St. Gregory the Great, Pope and Doctor of the Church",
-        "rank": "Memorial",
-        "dateMD": "9-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 92 compares the just person to a flourishing palm and a cedar growing in Lebanon. The Common of a Doctor Alleluia gives those two living images to the Church's teacher.",
+      "source": "Ps. 92:13 (Vulgate numbering Ps. 91:13) (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb947": {
     "id": "gb947",
@@ -17836,7 +21255,11 @@ window.CHANT_INDEX = {
         "rank": "Solemnity",
         "dateMD": "3-25"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Diffusa est gratia draws from two verses of Psalm 45, but trims both. Verse 3 opens in the psalm with praise of beauty, \"Speciosus forma præ filiis hominum\" (\"Thou art beautiful above the sons of men\"), yet the gradual begins mid-verse, with the grace poured on the lips. Verse 4 is passed over entirely, and verse 5 is taken up only from its midpoint, leaving behind the opening words \"Specie tua et pulchritudine tua intende, prospere procede, et regna\" (\"With thy comeliness and thy beauty set out, proceed prosperously, and reign\"), to arrive at truth, meekness, and justice.",
+      "source": "Ps. 45:3, 5 (Vulgate numbering Ps. 44:3, 5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb95": {
     "id": "gb95",
@@ -17863,7 +21286,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Ego sum pastor bonus draws on John 10:14 but departs slightly from the Clementine Vulgate, which reads \"cognosco meas,\" meaning \"I know mine.\" The chant inserts \"oves\" to give \"cognósco oves meas,\" meaning \"I know my sheep,\" spelling out what the Latin pronoun implies. The verse that follows in the Gospel, John 10:15, continues with the words \"and I lay down my life for my sheep,\" a promise the antiphon leaves just outside its frame.",
+      "source": "John 10:14 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb952": {
     "id": "gb952",
@@ -17890,7 +21317,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Easter Sunday of the Resurrection of the Lord",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Pascha nostrum immolatus est names Christ as the Passover sacrifice and calls the Church to keep the feast with sincerity and truth. The Easter Day Epistle begins by telling the Corinthians to put away the old leaven before giving those words their paschal meaning.",
+      "source": "1 Cor. 5:7-8 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pasc0-0.txt [Officium heading]; Divinum Officium, Pasc0-0 (Missale Romanum formulary)"
+    }
   },
   "gb953": {
     "id": "gb953",
@@ -17919,7 +21350,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "7-3"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Mitte manum tuam draws from Christ's words to Thomas in John 20:27, but condenses the verse. The Vulgate reads in full: \"Infer digitum tuum huc, et vide manus meas, et affer manum tuam, et mitte in latus meum: et noli esse incredulus, sed fidelis,\" put in your finger and see my hands, bring your hand and put it into my side, be not faithless but believing. The antiphon drops the finger, drops the side, and focuses the gesture entirely on the hand and the places of the nails, before closing with the call to faith. The same antiphon text also serves as the Communion for Low Sunday, where the Thomas scene from John 20:24-29 is again the Gospel of the Mass.",
+      "source": "John 20:27 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb957": {
     "id": "gb957",
@@ -17939,7 +21374,11 @@ window.CHANT_INDEX = {
         "feastTitle": "10th Sunday in Ordinary Time (Year B)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Quicumque fecerit draws on a single verse, the closing line of an exchange in Matthew 12 where Jesus is told his mother and brothers are standing outside. The two verses immediately before it show him stretching his hand toward his disciples and saying, in the Douay-Rheims rendering, \"Behold my mother and my brethren.\" Verse 50, which the chant quotes, is the explanation of that gesture, and the Vulgate opens it with \"enim,\" meaning \"for\" or \"because,\" a connective word the chant sets aside as it lifts the verse free of its narrative frame.",
+      "source": "Matt. 12:50 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb960": {
     "id": "gb960",
@@ -17975,7 +21414,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Assumption of the Blessed Virgin Mary (alternate Mass)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Assumpta est Maria proclaims Mary in heaven for the Assumption's Alleluia. The short verse turns immediately to the rejoicing of the angels, so the feast is sung as shared heavenly joy.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb962": {
     "id": "gb962",
@@ -18016,7 +21459,11 @@ window.CHANT_INDEX = {
         "feastTitle": "15th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 25, verses one through three, opens with the words \"Ad te Domine levavi,\" and the chant takes those verses in full, beginning exactly where the psalm itself begins. One small but telling difference appears in the final phrase: where the Clementine Vulgate reads \"universi qui sustinent te, non confundentur,\" the chant sings \"universi qui te exspéctant, non confundéntur.\" Both carry the same assurance that those who wait on God will not be put to shame, but the chant's word reaches toward expectant, forward-looking waiting, fitting for an Advent offertory.",
+      "source": "Ps. 25:1-3 (Vulgate numbering Ps. 24:1-3) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb965": {
     "id": "gb965",
@@ -18043,7 +21490,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Trinity",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedictus es Domine gathers two blessings from Daniel's canticle: one praises the Lord who looks upon the depths and sits above the Cherubim, the other praises him in heaven's firmament. The Gradual lets both settings of God's majesty sound together.",
+      "source": "Dan. 3:55-56 (Douay-Rheims; Latin from the Clementine Vulgate); Divinum Officium, Pent01-0.txt [Officium heading]; Divinum Officium, Pent01-0 (Missale Romanum formulary)"
+    }
   },
   "gb966": {
     "id": "gb966",
@@ -18070,7 +21521,11 @@ window.CHANT_INDEX = {
         "feastTitle": "2nd Sunday of Advent",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Jerusalem surge is woven from two separate verses in Baruch. The opening command to arise and stand on high comes from Baruch 5:5, which in full reads, in the Latin of the Vulgate, \"Exsurge, Jerusalem, et sta in excelso: et circumspice ad orientem, et vide collectos filios tuos,\" calling Jerusalem to look eastward and behold her scattered children gathering from sunrise to sunset. The antiphon then sets aside that vision entirely and closes instead with the promise from Baruch 4:36, \"vide jucunditatem a Deo tibi venientem,\" turning from the return of the exiles to a single word: joy.",
+      "source": "Bar. 5:5; Bar. 4:36 (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb967": {
     "id": "gb967",
@@ -18104,7 +21559,11 @@ window.CHANT_INDEX = {
         "feastTitle": "19th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 31 places verses 15 and 16 in a moment of real distress: the psalmist is surrounded by enemies who have conspired to take his life. This offertory lifts out only the act of trust that follows, leaving that surrounding anguish behind. It also stops partway through verse 16, before the Vulgate's petition to be delivered from enemies and persecutors, closing instead on the quiet declaration that God holds all times in his hands.",
+      "source": "Ps. 31:15-16 (Vulgate numbering Ps. 30:15-16) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb979": {
     "id": "gb979",
@@ -18112,7 +21571,7 @@ window.CHANT_INDEX = {
     "title": "Deus enim firmavit",
     "part": "offertory",
     "mode": "Offertory · The Nativity of the Lord (Mass at Dawn) · Mode VIII",
-    "gabc": "(c4) DE(h)us(fhg) e(g)nim(g.) *() fir(hg~)má(hjh___!iwj)vit(g.) (,) or(fgh!jjj_h/jjjh~)bem(hv.f!hfg) ter(g)rae,(g/jjh giHG'gf.0) (;) qui(fg) non(gh!jjjvHGjjjvHG'g/fg~) com(g)mo(ghfg)vé(g)bi(ghg___)tur :(g.) (:) pa(j)rá(ikjj'j)ta(h_g) (,) se(j_i//jjj_g/j)des(j.jjj) tu(h_g)a,(g_[oh:h]f) De(giH'G)us,(g.) (,) ex(f) tunc,(g_h_g_2/h_[oh:h]i_[oh:h]h._[oh:h]) (:) a(g) saé(g!jjj)cu(h.g!hwi_[oh:h]h)lo(hggf.0) (,) tu(fg'h//fg!hih/ig/hhg) es.(g.) (::)",
+    "gabc": "(c4) DE(h)us(fhg) e(g)nim(g.) *() fir(hg~)má(hjh___!iwj)vit(g.) (,) or(fgh!jjj_h/jjjh~)bem(hv.f!hfg) ter(g)rae,(g/jjhgiHG'gf.0) (;) qui(fg) non(gh!jjjvHGjjjvHG'g/fg~) com(g)mo(ghfg)vé(g)bi(ghg___)tur :(g.) (:) pa(j)rá(ikjj'j)ta(h_g) (,) se(j_i//jjj_g/j)des(j.jjj) tu(h_g)a,(g_[oh:h]f) De(giH'G)us,(g.) (,) ex(f) tunc,(g_h_g_2/h_[oh:h]i_[oh:h]h._[oh:h]) (:) a(g) saé(g!jjj)cu(h.g!hwi_[oh:h]h)lo(hggf.0) (,) tu(fg'h//fg!hih/ig/hhg) es.(g.) (::)",
     "latin": "Deus enim firmávit orbem terrae, qui non commovébitur : paráta sedes tua, Deus, ex tunc, a saéculo tu es.",
     "translation": "For God has established the world, which shall not be moved: your throne, O God, is prepared from of old: you are from everlasting.",
     "source": "Graduale Romanum (GregoBase #979)",
@@ -18138,7 +21597,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Nativity of the Lord (Mass at Dawn)",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Deus enim firmavit draws from Psalm 93, verses 1 and 2, taking only the second half of verse 1 and setting aside its opening lines about the Lord reigning and being clothed with strength and beauty. Where the psalm's Latin reads \"Etenim firmavit,\" meaning for indeed he has established, the Offertory opens instead with \"Deus enim firmavit,\" inserting God's name directly and turning a subordinate clause into a declaration. The verses the chant leaves aside speak of floods lifting their voice and the surges of the sea.",
+      "source": "Ps. 93:1-2 (Vulgate numbering Ps. 92:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb980": {
     "id": "gb980",
@@ -18146,7 +21609,7 @@ window.CHANT_INDEX = {
     "title": "Confitebor tibi Domine Deus meus",
     "part": "offertory",
     "mode": "Offertory · Mode I",
-    "gabc": "(c4) COn(c)fi(d)té(ixdh'!iv)bor(h) *() ti(hjh)bi,(ghg.) (,) Dó(hf)mi(ghg)ne(hg) De(hv.g!jjj)us(fg) me(ixfh!jvHGig/hi)us,(h.) (;) in(h) to(jh//jvGF'fvD'Cd)to(d.) (,) cor(fg/h_f/ghg___/jkjj'jjvI~H~)de(hg) (,) me(gv.fhhghv.gh!jjjh)o,(hhgh.) (:) et(jk) glo(klkl)ri(j_h)fi(hg)cá(hj/kjk)bo(k_[hl:1]h_[hl:1]) (,) no(jk[oll:1{1]/lkl[oll:}])men(j_h) tu(hj)um(jjj) (;) in(hhg) ae(g_[oh:h]fg)tér(fg/h_f/ghg___//jkj//j'j)num :(hjG'Fg.) (:) quó(f)ni(gh)am(hgh) tu,(gfg) Dó(ixivHG'gf)mi(gh)ne,(h.) (;) su(h)á(gji)vis(h) et(h) mi(gji)tis(hg) es :(ghggf.0) (:) et(h) mul(fg/hg)tae(gd) mi(d)se(e)ri(f)cór(gv.fhg)di(fe)ae(f.) (;) ó(hj)mni(h)bus(ghg) in(fh)vo(g)cán(ef!gh)ti(fe)bus(cd) te,(d!ewfgff/ded.) (:) al(fff_d/f/[1]{ix}f//hiH'GF'fe~)le(ghGF'/!ge/!f_d)(,)(fge/fhGF'fd//gf'/gff)lú(dc~){ia}.(d/fff_d/fff/d_[oh:h]e_[oh:h]d._[oh:h]) (::)",
+    "gabc": "(c4) COn(c)fi(d)té(ixdh'!iv)bor(h) *() ti(hjh)bi,(ghg.) (,) Dó(hf)mi(ghg)ne(hg) De(hv.g!jjj)us(fg) me(ixfh!jvHGig/hi)us,(h.) (;) in(h) to(jh//jvGF'fvD'Cd)to(d.) (,) cor(fg/h_f/ghg___/jkjj'jjvI~H~)de(hg) (,) me(gv.fhhghv.gh!jjjh)o,(hhgh.) (:) et(jk) glo(klkl)ri(j_h)fi(hg)cá(hj/kjk)bo(k_[hl:1]h_[hl:1]) (,) no(jk[oll:1{1]/lkl[oll:}])men(j_h) tu(hj)um(jjj) (;) in(hhg) ae(g_[oh:h]fg)tér(fg/h_f/ghg___//jkj//j'j)num :(hjG'Fg.) (:) quó(f)ni(gh)am(hgh) tu,(gfg) Dó(ixivHG'gf)mi(gh)ne,(h.) (;) su(h)á(gji)vis(h) et(h) mi(gji)tis(hg) es :(ghggf.0) (:) et(h) mul(fg/hg)tae(gd) mi(d)se(e)ri(f)cór(gv.fhg)di(fe)ae(f.) (;) ó(hj)mni(h)bus(ghg) in(fh)vo(g)cán(ef!gh)ti(fe)bus(cd) te,(d!ew!fgff/ded.) (:) al(fff_d/f/[1]{ix}f//hiH'GF'fe~)le(ghGF'/!ge/!f_d)(,)(fge/fhGF'fd//gf'/gff)lú(dc~){ia}.(d/fff_d/fff/d_[oh:h]e_[oh:h]d._[oh:h]) (::)",
     "latin": "Confitébor tibi, Dómine, Deus meus, in toto corde meo, et glorificábo nomen tuum in aetérnum : quóniam tu, Dómine, suávis et mitis es : et multae misericórdiae ómnibus invocántibus te, allelúia.",
     "translation": "I will give thanks to you, O Lord my God, with my whole heart, and I will glorify your name for ever: for you, O Lord, are sweet and mild: and plenteous in mercy to all that call upon you, alleluia.",
     "source": "Graduale Romanum (GregoBase #980)",
@@ -18158,7 +21621,11 @@ window.CHANT_INDEX = {
         "feastTitle": "The Most Holy Name of Jesus",
         "rank": "Feast"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 86 appears here in reverse order. The Offertory begins with verse 12, \"Confitebor tibi, Domine Deus meus, in toto corde meo,\" then closes with verse 5, \"quoniam tu, Domine, suavis et mitis,\" so praise comes before the reason given for it.",
+      "source": "Ps. 86:12, 5 (Vulgate numbering Ps. 85:12, 5) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb981": {
     "id": "gb981",
@@ -18178,7 +21645,11 @@ window.CHANT_INDEX = {
         "feastTitle": "6th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Non vos relinquam orphanos places Christ's promise to come again beside the heart's promised rejoicing. The communion for the sixth Sunday of Easter holds absence and return within one short Alleluia.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb984": {
     "id": "gb984",
@@ -18186,7 +21657,7 @@ window.CHANT_INDEX = {
     "title": "Dilexit Andream Dominus",
     "part": "alleluia",
     "mode": "Alleluia · St. Andrew, Apostle · Mode I",
-    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g) *(;) ij.(hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Di(h)lé(h_g)xit(g_[oh:h]e//fgf/gddc.) (,) An(cd)dré(ef'g)am(gv.e!g_4[uh:l]h) Dó(fvED)mi(d.c!dw!evDCde)nus(d.) (:) in(dede) o(ce)dó(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)rem(e[ll:1]d..) *(:) su(c)a(d!fdf)vi(ef!gvFE)tá(fg)tis.(g.) (;) (hvGFgvFEf_g hvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'ED de!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
+    "gabc": "(c4) AL(c)le(d!fdf)lú(ef!gvFEfg~){ia}.(g) *(;) ij.(hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::) ℣. Di(h)lé(h_g)xit(g_[oh:h]e//fgf/gddc.) (,) An(cd)dré(ef'g)am(gv.e!g_4[uh:l]h) Dó(fvED)mi(d.c!dw!evDCde)nus(d.) (:) in(dede) o(ce)dó(ixg_[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(ixce!g_4[uh:l]h/ig/h_e)(,)(fvEDfe/g_[oh:h]e//fvECe[ll:1]d/fd..)(;)(gv.ef/g_[oh:h]e/f_dev.)(,)(gv.ef/g_[oh:h]e/f_dev.c!dwe'!fv)rem(e[ll:1]d..) *(:) su(c)a(d!fdf)vi(ef!gvFE)tá(fg)tis.(g.) (;) (hvGFgvFEf_ghvGFgvFE'Cd.) (,) (dfE'DCddc.) (;) (ghF'EDde!f'g/ef/gddc.) (,) (e/gghF'ED//efefd.) (::)",
     "latin": "Allelúia. ℣. Diléxit Andréam Dóminus in odórem suavitátis.",
     "translation": "Alleluia. ℣. The Lord loved Andrew for an odor of sweetness.",
     "source": "Graduale Romanum (GregoBase #984)",
@@ -18207,7 +21678,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "11-30"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "St. Andrew's Alleluia speaks in one short sentence: the Lord loved Andrew with a sweet fragrance. The brief acclamation gives the apostle's feast a language of divine delight rather than biography.",
+      "source": "Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb985": {
     "id": "gb985",
@@ -18236,7 +21711,11 @@ window.CHANT_INDEX = {
         "rank": "Feast",
         "dateMD": "9-29"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Benedicite Dominum draws on a single verse from Psalm 103, one of three consecutive verses in which the psalm calls on the angels, then all the heavenly hosts, then all creation to bless the Lord. The next verse widens the call to the heavenly hosts who do his will, and the one after that to every work of God in every place. The Introit takes only the first of these three, addressing the angels alone, on the feast that bears their names.",
+      "source": "Ps. 103:20 (Vulgate numbering Ps. 102:20) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb986": {
     "id": "gb986",
@@ -18263,7 +21742,11 @@ window.CHANT_INDEX = {
         "feastTitle": "33rd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "De profundis clamavi draws its words from the opening two verses of Psalm 130, one of the six penitential psalms, but reshapes them. The psalm's second verse reads in full, \"Lord, hear my voice. Let thy ears be attentive to the voice of my supplication\"; this Offertory keeps only the first half, and changes \"vocem meam\" to \"orationem meam,\" so \"hear my voice\" becomes \"hear my prayer.\" The antiphon then closes by repeating the opening cry, \"de profundis clamavi ad te, Domine,\" giving the whole a circular, insistent shape that the psalm itself does not have.",
+      "source": "Ps. 130:1-2 (Vulgate numbering Ps. 129:1-2) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb989": {
     "id": "gb989",
@@ -18283,7 +21766,11 @@ window.CHANT_INDEX = {
         "feastTitle": "4th Sunday of Lent (Laetare Sunday)",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Lutum fecit ex sputo joins the Lord's act in John 9:6 to the healed man's later account in verse 11. Its short sequence of going, washing, seeing, and believing gives the Laetare Communion the shape of a witness's answer.",
+      "source": "John 9:6, 11 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry)"
+    }
   },
   "gb99": {
     "id": "gb99",
@@ -18317,7 +21804,11 @@ window.CHANT_INDEX = {
         "feastTitle": "Pentecost Sunday",
         "rank": "Solemnity"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Emitte Spiritum tuum draws a single verse from Psalm 104, a long meditation on God's care for creation. The verse sits just after a stark turn: the preceding verse describes God hiding his face, withdrawing breath, and creatures returning to dust. Verse 30 is the reversal of that desolation: \"Thou shalt send forth thy spirit, and they shall be created: and thou shalt renew the face of the earth.\" Sung at Pentecost, the verse carries the weight of everything that precedes it in the psalm.",
+      "source": "Ps. 104:30 (Vulgate numbering Ps. 103:30) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb990": {
     "id": "gb990",
@@ -18344,7 +21835,11 @@ window.CHANT_INDEX = {
         "feastTitle": "7th Sunday of Easter",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "This last Sunday of Eastertide, between Ascension Thursday and Pentecost, drew its older name, Exaudi Sunday, from the opening word of this Introit. The body of the text takes in verses from Psalm 27 (Psalm 26 in the Vulgate numbering), the same verses, \"tibi dixit cor meum, quaesivi vultum tuum,\" that form the entire text of this app's 2nd-Sunday-of-Lent Introit, here extended and brought to a close with the season's double Alleluia.",
+      "source": "chantblog, \"The Introit for the Seventh Sunday of Easter: Exaudi, Domine.\""
+    }
   },
   "gb993": {
     "id": "gb993",
@@ -18371,7 +21866,11 @@ window.CHANT_INDEX = {
         "feastTitle": "22nd Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Domine in auxilium is drawn from Psalm 40, verses 14 and 15, but not quite as the psalm reads. The chant passes over the opening of verse 14, \"Complaceat tibi, Domine, ut eruas me,\" and begins instead with that verse's second half: \"Domine, in auxilium meum respice.\" From verse 15 it takes only the first clause, leaving aside the continuation \"Let them be turned backward and be ashamed that desire evils to me.\" The opening phrase then returns as a closing refrain, a repetition that belongs to the chant, not to the psalm.",
+      "source": "Ps. 40:14, 15 (Vulgate numbering Ps. 39:14, 15) (Douay-Rheims; Latin from the Clementine Vulgate)"
+    }
   },
   "gb998": {
     "id": "gb998",
@@ -18398,6 +21897,10 @@ window.CHANT_INDEX = {
         "feastTitle": "29th Sunday in Ordinary Time",
         "rank": "Sunday"
       }
-    ]
+    ],
+    "commentary": {
+      "text": "Psalm 8 opens by acclaiming the Lord's name as admirable in all the earth, before extending that praise to God's majesty above the heavens. The Communion keeps the psalm's brief, world-spanning opening acclamation.",
+      "source": "Ps. 8:2 (Douay-Rheims; Latin from the Clementine Vulgate); Chant of the Day (this project's own chant entry); Divinum Officium, Nat2-0 (Missale Romanum formulary)"
+    }
   }
 };

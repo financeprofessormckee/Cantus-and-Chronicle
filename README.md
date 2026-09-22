@@ -9,6 +9,12 @@ and no scoring: read it, hear it, and follow where it belongs.
 
 - **▶ Hear it** plays the chant in a monophonic, free-rhythm synthesized voice and
   highlights the notation as it sounds.
+- **Tap any note or word** to start playback from that point. **Tempo**, **Pitch**, and
+  **Volume** sliders adjust playback and are remembered in your browser.
+- **℣ Psalm verse** adds the Introit's psalm verse and *Gloria Patri*, in notation and
+  text, where the chant has one.
+- **About this chant** gives a short note on the chant's text, liturgical place, or
+  history.
 - **Used in the liturgy on** shows where the chant occurs in the modern or 1962
   calendar.
 - **Other chants on this feast** follows the other parts of the same Mass.

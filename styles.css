@@ -98,18 +98,63 @@ body {
 .score .ChantNotationElement use,
 .score .ChantNotationElement text,
 .score .ChantNotationElement rect {
-  transition: fill 90ms linear;
+  transition: fill 90ms linear, opacity 90ms linear;
+}
+
+/* Multi-note neume: dim the whole syllable, then pick out the exact sounding note
+   at full strength. playback.js applies this split instead of plain .chant-active
+   whenever a neume's glyph count lines up 1:1 with its note count. */
+.score .ChantNotationElement.chant-active-syllable use,
+.score .ChantNotationElement.chant-active-syllable path,
+.score .ChantNotationElement.chant-active-syllable rect,
+.score .ChantNotationElement.chant-active-syllable text {
+  fill: var(--accent);
+  opacity: 0.5;
+}
+.score .ChantNotationElement.chant-active-syllable use.chant-note-active {
+  opacity: 1;
+  filter: drop-shadow(0 0 2px var(--accent));
+}
+
+/* Click-to-seek: tapping a note/word starts playback there. */
+.score .ChantNotationElement.chant-clickable {
+  cursor: pointer;
 }
 
 .score-tools {
   display: flex;
   align-items: center;
-  gap: 12px;
+  flex-wrap: wrap;
+  gap: 10px 18px;
   margin-top: 8px;
   padding-top: 12px;
   border-top: 1px dashed var(--cream-edge);
 }
 .play-note { font-size: 0.82rem; color: #6b5d44; }
+
+.tempo-control {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.82rem;
+  color: #6b5d44;
+}
+.tempo-control input[type="range"] {
+  accent-color: var(--gold);
+  width: 110px;
+}
+.tempo-control #tempo-value { min-width: 4.5em; }
+.tempo-control #pitch-value { min-width: 3.5em; }
+.tempo-control #volume-value { min-width: 3em; }
+.verse-toggle-control {
+  cursor: pointer;
+  gap: 7px;
+}
+.verse-toggle-control input[type="checkbox"] {
+  accent-color: var(--gold);
+  width: 15px;
+  height: 15px;
+}
 
 /* ---- Buttons ---- */
 button {
@@ -150,6 +195,21 @@ button.primary:disabled { opacity: 0.5; cursor: default; }
   color: var(--gold-soft);
 }
 .chant-translation { margin: 8px 0 0; font-style: italic; opacity: 0.86; line-height: 1.45; }
+.verse-block {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px dashed var(--cream-edge);
+}
+.verse-label {
+  margin: 0 0 4px;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.6px;
+  color: var(--gold-soft);
+  opacity: 0.75;
+}
+.verse-block .chant-translation:last-child { margin-bottom: 0; }
+.verse-block #gloria-patri-label { margin-top: 10px; }
 
 /* ---- Usages ("Used in the liturgy on:") ---- */
 .chant-usages { width: 100%; max-width: 600px; text-align: center; }
