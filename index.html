@@ -3,48 +3,68 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Name the Gregorian chant from its opening notes. A liturgical trivia drill with notation and playback." />
-  <title>Name That Chant</title>
+  <meta name="description" content="Explore the sung chants of the Mass — a random Gregorian chant in square-note notation with playback, Latin, and English translation." />
+  <title>Cantus &amp; Chronicle</title>
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <main class="console">
     <header class="masthead">
-      <h1>Name That Chant</h1>
-      <p class="subtitle">Read the chant &mdash; name it and its place in the liturgy.</p>
+      <h1>Cantus &amp; Chronicle</h1>
+      <p class="subtitle">A random chant from the Church's sung repertoire &mdash; read it, hear it, place it.</p>
     </header>
 
+    <section class="chant-head">
+      <h2 class="chant-title" id="chant-title"></h2>
+      <p class="chant-mode" id="chant-mode"></p>
+    </section>
+
     <section class="score-card">
-      <div id="score" class="score" aria-label="Musical notation for the mystery chant"></div>
+      <div id="score" class="score" aria-label="Square-note notation for the chant"></div>
       <div class="score-tools">
-        <button type="button" id="play-btn" class="ghost">▶ Hear it</button>
+        <button type="button" id="play-btn" class="ghost">&#9654; Hear it</button>
         <span id="play-note" class="play-note"></span>
       </div>
     </section>
 
-    <section class="options" id="options" aria-label="Answer choices">
-      <!-- option buttons injected by app.js -->
+    <section class="chant-text" aria-label="The chant text">
+      <p class="chant-latin" id="chant-latin"></p>
+      <p class="chant-translation" id="chant-translation"></p>
     </section>
 
-    <section class="verdict">
-      <p id="result" class="result" role="status" aria-live="polite"></p>
-      <p id="fact" class="fact" aria-live="polite"></p>
-      <button type="button" id="next-btn" class="primary" hidden>Next chant</button>
+    <section class="chant-usages" id="chant-usages"></section>
+
+    <section class="chant-related" id="chant-related"></section>
+
+    <section class="chant-commentary" id="chant-commentary-section" hidden>
+      <details>
+        <summary>About this chant</summary>
+        <p class="chant-commentary-text" id="chant-commentary-text"></p>
+        <p class="chant-commentary-source" id="chant-commentary-source" hidden></p>
+      </details>
     </section>
 
-    <footer class="stats" id="stats">
-      <span class="stat"><strong id="stat-streak">0</strong><span>streak</span></span>
-      <span class="stat"><strong id="stat-best">0</strong><span>best</span></span>
-      <span class="stat"><strong id="stat-accuracy">&mdash;</strong><span>accuracy</span></span>
-      <span class="stat"><strong id="stat-rounds">0</strong><span>played</span></span>
+    <section class="actions">
+      <button type="button" id="back-btn" class="ghost" hidden>&#8592; Back</button>
+      <button type="button" id="random-btn" class="primary">&#127922; Another chant</button>
+    </section>
+
+    <footer class="footnotes">
+      <p class="source-note" id="source-note"></p>
+      <p class="draft-note">English translations are original renderings after the Douay-Rheims; melodies are public domain. Chants are drawn from the <em>Chant of the Day</em> repertoire (GregoBase / Graduale Romanum).</p>
+      <p class="draft-note"><a href="sources.html">Sources &amp; provenance</a></p>
     </footer>
-
-    <p class="hint">Pick with the mouse or keys <kbd>1</kbd>&ndash;<kbd>4</kbd>; <kbd>Enter</kbd> or <kbd>N</kbd> for the next chant.</p>
-    <p class="draft-note">The notation is a first-pass draft &mdash; flag any wrong notes and they're a quick fix.</p>
   </main>
 
-  <script src="vendor/abcjs-basic-min.js"></script>
-  <script src="data/chants.js"></script>
-  <script src="app.js"></script>
+  <script src="vendor/exsurge.min.js"></script>
+  <script src="data/introits.js"></script>
+  <script src="data/introits-1962.js"></script>
+  <script src="data/propers.js"></script>
+  <script src="data/propers-1962.js"></script>
+  <script src="data/common-introits.js"></script>
+  <script src="data/common-propers.js"></script>
+  <script src="data/chant-index.js"></script>
+  <script src="playback.js"></script>
+  <script src="app.js?v=7"></script>
 </body>
 </html>
