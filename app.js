@@ -160,50 +160,16 @@ function layoutScore(ctxt, score, onDone, onFail) {
   })();
 }
 
-/* ---- Build the renderable chant list ------------------------------------
-   A few chants in the repertoire carry gabc that the minified Exsurge build can't
-   parse (e.g. a GregoBase spacing hint it mistakes for a custos → "Custod is not
-   defined"). Chant of the Day surfaces one chant per day so it rarely meets these;
-   the explorer picks at random from all ~500, so pre-flight parse each and drop the
-   handful that throw, keeping "Another chant" from ever landing on a dead render.
-   Runs after the workarounds above so accidental-bearing chants validate correctly. */
+/* ---- The chant list -------------------------------------------------------
+   A few chants carry gabc the minified Exsurge build can't parse or lay out.
+   Don't pre-flight them at boot: parsing costs ~150 ms per chant, so checking all
+   ~500 froze the page for seconds (Chant of the Day only ever parses one).
+   Instead renderChant reports failures and showChant skips/flags them lazily. */
 
-function isRenderable(gabc) {
-  try {
-    const ctxt = new window.exsurge.ChantContext();
-    const score = window.exsurge.Gabc.loadChantScore(ctxt, sanitizeGabc(gabc), true);
-    // The fatal cases (e.g. "Custod is not defined") throw in performLayout's
-    // synchronous preamble, not at parse. Run only that preamble: the full
-    // score.performLayout would queue a multi-second async layout of every chant
-    // in the background and starve the chant actually being shown.
-    layoutPreamble(ctxt, score);
-    return true;
-  } catch (_) {
-    return false;
-  }
-}
+const CHANTS = collectChants();
 
-const CHANTS = (function () {
-  const all = collectChants();
-  // Exsurge logs freely to console.log during layout ("no glyphCode assigned!"),
-  // which the validation pass multiplies across the whole repertoire. Mute it for
-  // the duration so a clean console is left for real diagnostics.
-  const realLog = console.log;
-  console.log = function () {};
-  let ok;
-  try {
-    ok = all.filter((c) => isRenderable(c.gabc));
-  } finally {
-    console.log = realLog;
-  }
-  const dropped = all.length - ok.length;
-  if (dropped > 0) console.info("Cantus & Chronicle: skipped " + dropped + " unparseable chant(s) of " + all.length + ".");
-  return ok;
-})();
-
-// O(1) id -> entry lookup for chip/deep-link navigation. Note this only covers
-// renderable chants (CHANTS already dropped unparseable ones above), so a related
-// chip whose target id isn't here must no-op rather than throw.
+// O(1) id -> entry lookup for chip/deep-link navigation. An id missing here
+// (not in the repertoire) must no-op rather than throw.
 const chantsById = new Map(CHANTS.map((c) => [c.id, c]));
 
 /* ---- Rendering (Exsurge) ------------------------------------------------- */
@@ -383,8 +349,8 @@ function renderRelated(entry) {
       const chip = document.createElement("button");
       chip.type = "button";
       chip.className = "related-chip";
-      // A related chant can be indexed but dropped from CHANTS as unparseable
-      // by Exsurge -- disable rather than link to a dead render.
+      // A related chant can be indexed but missing from CHANTS (no gabc) --
+      // disable rather than link to a dead render.
       if (!chantsById.has(r.id)) {
         chip.disabled = true;
       } else {
